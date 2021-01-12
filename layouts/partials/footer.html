@@ -1,8 +1,66 @@
 <footer class="footer" data-scroll-section>
-  <div class="footer__copyright flex-center">
+  <div class="container-wide flex padding-top-5 padding-bottom-5">
+    <div class="footer__contact w-20 flex flex-column">
+      <a class="brand-logo" href="{{ site.BaseURL }}">
+        <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" class="img-responsive dim" />
+      </a>
+      <a href="#">{{ site.Params.addressSt }}<br>{{ site.Params.addressCity }}</a>
+      <a href="tel:{{ site.Params.phone }}">{{ site.Params.phone }}</a>
+    </div>
+    <div class="footer__menu w-25 flex flex-column">
+      <h5>Menu</h5>
+      <nav class="footer__nav">
+        {{ with .Site.Menus.main }}
+        <ul class="footer__nav-list">
+          {{ range . }}
+          <li class="footer__nav-list-item">
+            <a class="footer__nav-item" href="{{ .URL }}" aria-label="{{ .Name }}"
+              title="{{ .Name }}">{{ .Name }}</a>
+          </li>
+          {{ end }}
+        </ul>
+      {{ end }}
+      </nav>
+    </div>
+    <div class="footer__services w-25 flex flex-column">
+      <h5>Services</h5>
+      <nav class="footer__services-nav">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-list-item">
+            <a class="footer__nav-item" href="#" aria-label=""
+              title="">Content</a>
+          </li>
+          <li class="footer__nav-list-item">
+            <a class="footer__nav-item" href="#" aria-label=""
+              title="">Web</a>
+          </li>
+          <li class="footer__nav-list-item">
+            <a class="footer__nav-item" href="#" aria-label=""
+              title="">Digital</a>
+          </li>
+          <li class="footer__nav-list-item">
+            <a class="footer__nav-item" href="#" aria-label=""
+              title="">Media</a>
+          </li>
+          <li class="footer__nav-list-item">
+            <a class="footer__nav-item" href="#" aria-label=""
+              title="">Design</a>
+          </li>
+          <li class="footer__nav-list-item">
+            <a class="footer__nav-item" href="#" aria-label=""
+              title="">Studio</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="w-30 flex flex-column">
+      <h5>Sign up for our newsletter</h5>
+    </div>
+  </div>
+  <div class="footer__copyright container-wide flex-center padding-top-2 padding-bottom-2">
     <p>© {{ dateFormat "2006" now }} {{ .Site.Params.author }} All Rights Reserved.</p>
     <nav class="footer__nav">
-      <ul class="footer__nav-list">
+      <ul class="footer__copyright-nav-list">
         <li class="footer__nav-list-item"><a href="/privacy-policy/" class="footer__nav-item">Privacy Policy</a> | </li>
         <li class="footer__nav-list-item"><a href="/sitemap/" class="footer__nav-item">Sitemap</a> | </li>
         <li class="footer__nav-list-item"><a href="/contact/" class="footer__nav-item">Contact Us</a></li>

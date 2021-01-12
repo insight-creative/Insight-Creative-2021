@@ -11,7 +11,7 @@ input,
 select,
 optgroup,
 textarea {
-  color: $darkBlue;
+  color: $lightGrey;
   font-family: $primaryFont;
   font-size: 2rem;
   line-height: 3rem;
@@ -22,45 +22,38 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $secondaryFont;
+  font-family: $primaryFont;
   font-weight: 500;
-  color: $darkBlue;
+  color: $lightGrey;
   line-height: 1.1em;
   margin-top: 0;
   margin-bottom: 2rem;
 }
 p {
-  margin: 0 auto 20px auto;
+  margin: 0 auto 2.5rem auto;
 }
 /* Font-scale of a major third */
 h1,
 .g1 {
-  font-size: 3rem;
-  @include breakpoint(md) {
-    font-size: 4.8rem;
-  }
+  font-size: 6.1rem;
 }
 h2,
 .g2 {
-  font-size: 3.2rem;
-  @include breakpoint(md) {
-    font-size: 4.6rem;
-  }
+  font-size: 4.9rem;
 }
 h3,
 .g3 {
-  font-size: 3.2rem;
-  @include breakpoint(md) {
-    font-size: 4.6rem;
-  }
+  font-size: 3.9rem;
 }
 h4,
 .g4 {
-  font-size: 3rem;
+  font-size: 3.1rem;
+  font-weight: 700;
 }
 h5,
 .g5 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 500;
 }
 h6,
 .g6 {
@@ -72,6 +65,33 @@ h6,
 }
 .g8 {
   font-size: 1.6rem;
+}
+.emphasis-red {
+  background-color: $primaryColor;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+}
+.emphasis-white {
+  background-color: $lightGrey;
+  color: $primaryColor;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+}
+.emphasis-underline {
+  font-family: "Friday Vibes";
+  font-size: 8rem;
+  position: relative;
+  top: 8px;
+  &:after {
+    position: absolute;
+    content: "";
+    bottom: 10px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: $tertiaryColor;
+    z-index: -1;
+  }
 }
 .text-left {
   text-align: left !important;

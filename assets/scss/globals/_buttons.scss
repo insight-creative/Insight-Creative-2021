@@ -12,12 +12,28 @@
   transition: 0.3s ease-in-out;
 }
 .btn-primary {
-  color: $medBlue;
-  background-color: $white;
+  color: $lightGrey;
+  position: relative;
+  padding: 0.5rem 2.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  &:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 40px;
+    border-radius: 50px;
+    background-color: $primaryColor;
+    z-index: -1;
+    transition: 0.3s ease;
+  }
   &:hover,
   &:focus {
-    color: $medBlue;
-    background-color: rgba($white, 0.8);
+    &:before {
+      width: 100%;
+    }
   }
 }
 .btn-secondary {
@@ -27,6 +43,32 @@
   &:focus {
     color: $white;
     background-image: $blueGradientReverse;
+  }
+}
+.btn-tertiary {
+  color: $lightGrey;
+  position: relative;
+  padding: 0.5rem 2.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  &:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 40px;
+    border-radius: 50px;
+    background-color: $tertiaryColor;
+    z-index: -1;
+    transition: 0.3s ease;
+  }
+  &:hover,
+  &:focus {
+    color: $brandBlack;
+    &:before {
+      width: 100%;
+    }
   }
 }
 .center-button {

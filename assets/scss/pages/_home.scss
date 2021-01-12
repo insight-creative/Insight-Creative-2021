@@ -1,62 +1,128 @@
-.home-hero {
-  background-image: url("/images/background-images/simplifying-the-workers-compensation-home-modification-process-800.jpg");
-  @include breakpoint(md) {
-    background-image: url("/images/background-images/simplifying-the-workers-compensation-home-modification-process-1400.jpg");
-  }
-  @include breakpoint(xl) {
-    background-image: url("/images/background-images/simplifying-the-workers-compensation-home-modification-process-1800.jpg");
-  }
-}
-.center-underline {
-  position: relative;
-  left: 50%;
-  transform: translate(-50%);
-  display: block;
-  background-color: $medOrange;
-  height: 6px;
-  width: 14rem;
-  margin: 3rem 0;
-}
-.benefit {
-  &__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 8rem 2rem;
-    background-color: $darkBlue;
-    color: $white;
-  }
-  &__content-inner {
-    max-width: 65rem;
-    margin: 0 auto;
-  }
-  &__heading {
-    color: $white;
-    line-height: 1.3em;
-  }
-  &__image {
-    overflow: hidden;
-  }
-}
-.cta {
-  background-image: url("/images/background-images/CorHome-CTA-optimized.jpg");
+.service-list {
+  background-image: url("/images/background-images/studio-equipment-background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 10rem 2rem;
-  margin-bottom: -2px;
-}
-.services {
-  &__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  &__col {
-    flex: 1 1 300px; /*  No stretching: */
-    margin: 1rem;
-    p {
-      margin: 0 auto;
+  &__intro {
+    position: relative;
+    z-index: 1;
+    h3 {
+      margin-bottom: 5rem;
     }
+  }
+  &__grid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 80%;
+    margin: 0 auto;
+    @media (min-width: 48em) {
+      width: 100%;
+    }
+    @media (min-width: 81.25em) {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    @media (min-width: 100em) {
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+  }
+  &__link {
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__service-card {
+    background-color: #282728;
+    margin: 0.4rem;
+    padding: 2rem;
+    border-radius: $radius;
+    transition: 0.3s ease;
+    &:hover,
+    &:focus {
+      background-color: $primaryColor;
+      .service-list__service-heading {
+        color: $lightGrey;
+      }
+    }
+  }
+  &__icon-wrapper {
+    margin-right: 2rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__icon {
+    position: relative;
+    z-index: 1;
+    background-color: $white;
+    border-radius: 50%;
+    height: 108px;
+    width: 108px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      width: 70px;
+    }
+    &:after {
+      position: absolute;
+      content: "";
+      top: -4px;
+      left: 4px;
+      height: 100%;
+      width: 100%;
+      border: 2px solid $secondaryColor;
+      border-radius: 50%;
+    }
+  }
+  &__service-heading {
+    color: $tertiaryColor;
+    margin-bottom: 0.5rem;
+  }
+  &__service-preview {
+    padding: 0;
+  }
+  &__service-item {
+    list-style-type: none;
+  }
+}
+.featured-projects {
+  margin-top: 5rem;
+  &__heading {
+    margin-bottom: 0;
+  }
+  &__row-1 &__project:nth-of-type(1) {
+    margin: 0 0.5rem 0.5rem 0;
+  }
+  &__row-1 &__project:nth-of-type(2) {
+    margin: 0 0 0.5rem 0.5rem;
+  }
+  &__row-2 &__project:nth-of-type(1) {
+    margin: 0.5rem 0.5rem 0 0;
+  }
+  &__row-2 &__project:nth-of-type(2) {
+    margin: 0.5rem 0 0 0.5rem;
+  }
+  .project-tall &__image {
+    height: 70vh;
+  }
+  .project-short &__image {
+    height: 45vh;
+  }
+  &__image {
+    overflow: hidden;
+    img {
+      border-radius: $radius;
+    }
+  }
+}
+.site-cta {
+  text-align: center;
+  &__content {
+    border-radius: $radius;
+    position: relative;
+    z-index: 1;
   }
 }

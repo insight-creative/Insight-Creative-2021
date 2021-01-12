@@ -7,7 +7,7 @@
       @content;
     }
   } @else if $point == md {
-    @media (min-width: 62em) {
+    @media (min-width: 56.25em) {
       @content;
     }
   } @else if $point == lg {

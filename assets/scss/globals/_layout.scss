@@ -373,7 +373,7 @@
   margin: 0 auto;
   width: auto;
   @include breakpoint(md) {
-    width: 1000px;
+    max-width: 1000px;
   }
 }
 .container-wide {
@@ -382,6 +382,9 @@
   margin-left: auto;
   padding: 0 2rem;
   @include breakpoint(md) {
+    width: 90%;
+  }
+  @include breakpoint(lg) {
     width: 80%;
   }
 }
@@ -437,6 +440,9 @@
 .padding-top-4 {
   padding-top: 4rem;
 }
+.padding-top-5 {
+  padding-top: 5rem;
+}
 .padding-top-6 {
   padding-top: 6rem;
 }
@@ -451,6 +457,9 @@
 }
 .padding-bottom-4 {
   padding-bottom: 4rem;
+}
+.padding-bottom-5 {
+  padding-bottom: 5rem;
 }
 .padding-bottom-6 {
   padding-bottom: 6rem;
