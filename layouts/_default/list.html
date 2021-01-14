@@ -2,14 +2,15 @@
 {{ if eq .Title "Services" }}
 {{ partial "services" . }}
 {{ end }}
-<div class="mw7 center">
+{{ if eq .Title "Blog" }}
+<div class="container mw7 center" data-scroll-section>
   <ul class="flex-ns flex-wrap mhn1-ns pa3">
-      {{ $pages := .Site.RegularPages }}
-      {{ $posts := where $pages "Type" "blog" }}
-      {{ range $posts }}
+      {{ $paginator := .Paginate (.Data.Pages) }}
+      {{ range $paginator.Pages }}
       {{ .Render "blog-cards" }}
       {{ end }}
   </ul>
   {{ partial "pagination" . }}
 </div>
+{{ end }}
 {{ end }}

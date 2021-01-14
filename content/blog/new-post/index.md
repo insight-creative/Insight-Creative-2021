@@ -1,9 +1,6 @@
 ---
-layout: blog
-date: 2021-01-12T07:30:14-06:00
-title: "Change can Lead to Great Opportunities"
-author: Niki Petit
-description: "COVID-19 has taught us innovation and adaptability lead to success."
+title: "New Post"
+date: 2021-01-14T07:30:14-06:00
 image: change-is-necessary.jpg
 tag: blog
 ---

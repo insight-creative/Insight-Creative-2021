@@ -11,28 +11,30 @@ import { pageTransitionOut, pageTransitionIn, contentAnimation, updateMenu } fro
 barba.use(barbaPrefetch);
 gsap.registerPlugin(ScrollTrigger);
 
-var mySwiper = new Swiper('.swiper-container', {
-    // Optional parameters
-    loop: true,
-    grabCursor: true,
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      dynamicBullets: true,
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  })
-
 const menuButton = document.querySelector(".menu-button-wrap");
 const menu = document.querySelector(".nav-list");
 const hamburger = document.querySelector(".hamburger");
 
 menuButton.addEventListener("click", toggleMobileMenu);
+
+function initSwiper() {
+    var mySwiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        loop: true,
+        grabCursor: true,
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          dynamicBullets: true,
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      })
+}
 
 function toggleMobileMenu() {
     menu.classList.toggle("nav-open");
@@ -121,6 +123,7 @@ function initZoom() {
 function homepageAnimations() {
     fadeInContent();
     initZoom();
+    initSwiper();
 }
 
 function removeScrollbar() {
