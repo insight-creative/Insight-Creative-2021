@@ -12,10 +12,13 @@
 @import "globals/videos";
 @import "globals/typography";
 @import "globals/background";
+@import "libs/locomotive-scroll";
+@import "libs/swiper-bundle";
 @import "elements/hamburger";
 @import "elements/header";
 @import "elements/cta";
 @import "elements/footer";
+@import "elements/slider";
 @import "pages/default";
 @import "pages/home";
 @import "pages/services";

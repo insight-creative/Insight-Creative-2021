@@ -13,7 +13,6 @@ $darkBlue: #1c252e;
 $medBlue: #415368;
 $white: #ffffff;
 
-$radius: 5px;
 // Gradients
 $orangeGradient: linear-gradient(180deg, #f09028 0%, #c46627 100%);
 $orangeGradientReverse: linear-gradient(180deg, #c46627 0%, #f09028 100%);
@@ -28,6 +27,7 @@ $secondaryFont: sans-serif;
   src: url("/fonts/Friday_Vibes.woff"), url("/fonts/Friday_Vibes.ttf"),
     url("/fonts/Friday_Vibes.otf");
 }
-
+// Other site variables
+$radius: 5px;
 $mobileHeader: 70px;
 $desktopHeader: 140px;

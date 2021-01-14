@@ -6,31 +6,38 @@
     text-decoration: none;
   }
   .brand-logo {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     max-width: 200px;
   }
   &__contact {
+    margin-bottom: 2.5rem;
     a {
       font-weight: 700;
     }
-  }
-  &__copyright {
-    text-align: center;
-    border-top: 1px solid $bodyBlack;
-    font-size: 1.6rem;
-    @include breakpoint(md) {
-      display: flex;
-      p {
-        margin: 0;
-        margin-right: 0.5rem;
-        margin-bottom: 0;
-      }
+    a + a {
+      margin-top: 1rem;
     }
   }
-  &__menu {
-    padding: 0 2rem;
+  &__menu-wrapper {
+    justify-content: space-evenly;
+  }
+  &__menu,
+  &__services {
+    margin-bottom: 2.5rem;
+    @include breakpoint(lg) {
+      align-items: center;
+    }
+  }
+  &__menu,
+  &__services,
+  &__newsletter {
+    h5 {
+      font-weight: 700;
+    }
   }
   &__nav {
+    display: flex;
+    justify-content: center;
     ul {
       margin-bottom: 0;
     }
@@ -38,6 +45,20 @@
   &__nav-list {
     position: relative;
     padding: 0;
+  }
+  &__copyright {
+    text-align: center;
+    border-top: 1px solid $bodyBlack;
+    font-size: 1.6rem;
+    @include breakpoint(md) {
+      display: flex;
+      align-items: center;
+      p {
+        margin: 0;
+        margin-right: 0.5rem;
+        margin-bottom: 0;
+      }
+    }
   }
   &__copyright-nav-list {
     position: relative;
@@ -54,7 +75,15 @@
       color: $lightOrange;
     }
   }
-  &__nav-list-item + &__nav-list-item {
-    margin-left: 0.5rem;
-  }
+}
+.separator {
+  position: relative;
+  display: block;
+  top: 18px;
+  left: 0;
+  height: 5px;
+  width: 5px;
+  margin: 0 10px;
+  background-color: $lightGrey;
+  border-radius: 50%;
 }

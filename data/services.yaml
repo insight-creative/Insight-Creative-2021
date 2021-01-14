@@ -1,0 +1,30 @@
+Service 1:
+  name: Content
+  subservice1: Copywriting
+  subservice2: Public Relations
+  subservice3: Social Media
+Service 2:
+  name: Web
+  subservice1: Design
+  subservice2: Development
+  subservice3: eCommerce
+Service 3:
+  name: Digital
+  subservice1: Media Buying
+  subservice2: Real-time Analytics
+  subservice3: Reporting
+Service 4:
+  name: Media
+  subservice1: Research
+  subservice2: Strategy
+  subservice3: Buying
+Service 5:
+  name: Design
+  subservice1: Branding
+  subservice2: Illustration
+  subservice3: Packaging
+Service 6:
+  name: Studio
+  subservice1: Photography
+  subservice2: Videography
+  subservice3: Drone

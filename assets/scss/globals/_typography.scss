@@ -25,9 +25,9 @@ h6 {
   font-family: $primaryFont;
   font-weight: 500;
   color: $lightGrey;
-  line-height: 1.1em;
+  line-height: 1.5em;
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 p {
   margin: 0 auto 2.5rem auto;
@@ -39,20 +39,32 @@ h1,
 }
 h2,
 .g2 {
-  font-size: 4.9rem;
+  font-size: 3.9rem;
+  @include breakpoint(sm) {
+    font-size: 4.9rem;
+  }
 }
 h3,
 .g3 {
-  font-size: 3.9rem;
+  font-size: 2.9rem;
+  @include breakpoint(sm) {
+    font-size: 3.9rem;
+  }
 }
 h4,
 .g4 {
-  font-size: 3.1rem;
+  font-size: 2.1rem;
   font-weight: 700;
+  @include breakpoint(sm) {
+    font-size: 3.1rem;
+  }
 }
 h5,
 .g5 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  @include breakpoint(sm) {
+    font-size: 2.5rem;
+  }
   font-weight: 500;
 }
 h6,

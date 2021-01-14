@@ -1,22 +1,19 @@
 .btn {
-  position: relative;
-  z-index: 1;
   display: inline-block;
-  letter-spacing: 1px;
-  font-size: 2.4rem;
-  font-weight: 700;
-  letter-spacing: 0.015em;
-  padding: 2.25rem 5rem;
-  text-decoration: none;
-  border-radius: 15px;
-  transition: 0.3s ease-in-out;
-}
-.btn-primary {
-  color: $lightGrey;
-  position: relative;
   padding: 0.5rem 2.5rem;
   text-decoration: none;
   text-transform: uppercase;
+  font-size: 1.6rem;
+  @include breakpoint(md) {
+    font-size: 2rem;
+  }
+}
+.btn-primary,
+.btn-secondary,
+.btn-tertiary {
+  position: relative;
+  z-index: 1;
+  color: $lightGrey;
   &:before {
     position: absolute;
     content: "";
@@ -25,7 +22,6 @@
     height: 100%;
     width: 40px;
     border-radius: 50px;
-    background-color: $primaryColor;
     z-index: -1;
     transition: 0.3s ease;
   }
@@ -34,45 +30,30 @@
     &:before {
       width: 100%;
     }
+  }
+}
+.btn-primary {
+  &:before {
+    background-color: $primaryColor;
   }
 }
 .btn-secondary {
-  color: $white;
-  background-image: $blueGradient;
-  &:hover,
-  &:focus {
-    color: $white;
-    background-image: $blueGradientReverse;
+  color: $primaryColor;
+  &:before {
+    background-color: $lightGrey;
   }
 }
 .btn-tertiary {
-  color: $lightGrey;
-  position: relative;
-  padding: 0.5rem 2.5rem;
-  text-decoration: none;
-  text-transform: uppercase;
   &:before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 40px;
-    border-radius: 50px;
     background-color: $tertiaryColor;
-    z-index: -1;
-    transition: 0.3s ease;
   }
   &:hover,
   &:focus {
-    color: $brandBlack;
+    color: $bodyBlack;
     &:before {
       width: 100%;
     }
   }
-}
-.center-button {
-  margin: 0 auto;
 }
 button {
   cursor: pointer;

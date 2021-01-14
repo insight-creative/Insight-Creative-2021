@@ -14,8 +14,7 @@
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    width: 80%;
-    margin: 0 auto;
+    place-content: center;
     @media (min-width: 48em) {
       width: 100%;
     }
@@ -51,7 +50,7 @@
   &__icon-wrapper {
     margin-right: 2rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
   }
   &__icon {
     position: relative;
@@ -86,6 +85,13 @@
   }
   &__service-item {
     list-style-type: none;
+    font-size: 2rem;
+    @include breakpoint(lg) {
+      font-size: 1.6rem;
+    }
+    @include breakpoint(xl) {
+      font-size: 2rem;
+    }
   }
 }
 .featured-projects {
@@ -93,17 +99,22 @@
   &__heading {
     margin-bottom: 0;
   }
-  &__row-1 &__project:nth-of-type(1) {
-    margin: 0 0.5rem 0.5rem 0;
+  &__project {
+    margin: 10px 0;
   }
-  &__row-1 &__project:nth-of-type(2) {
-    margin: 0 0 0.5rem 0.5rem;
-  }
-  &__row-2 &__project:nth-of-type(1) {
-    margin: 0.5rem 0.5rem 0 0;
-  }
-  &__row-2 &__project:nth-of-type(2) {
-    margin: 0.5rem 0 0 0.5rem;
+  @include breakpoint(md) {
+    &__row-1 &__project:nth-of-type(1) {
+      margin: 0 0.5rem 0.5rem 0;
+    }
+    &__row-1 &__project:nth-of-type(2) {
+      margin: 0 0 0.5rem 0.5rem;
+    }
+    &__row-2 &__project:nth-of-type(1) {
+      margin: 0.5rem 0.5rem 0 0;
+    }
+    &__row-2 &__project:nth-of-type(2) {
+      margin: 0.5rem 0 0 0.5rem;
+    }
   }
   .project-tall &__image {
     height: 70vh;
@@ -124,5 +135,8 @@
     border-radius: $radius;
     position: relative;
     z-index: 1;
+  }
+  &__inner {
+    padding: 1rem;
   }
 }
