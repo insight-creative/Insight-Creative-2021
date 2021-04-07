@@ -1,33 +1,23 @@
 <section class="testimonials container-wide padding-bottom-10" data-scroll-section>
     <div class="lane padding-top-10 padding-bottom-10">
-        <h3>Hire a <span class="emphasis-red">grounded</span> agency with a <span class="emphasis-underline">proven</span>  track record.</h3>
+        <h3>{{ .Params.Testimonials.Subhead | markdownify }}</h3>
     </div>
     <div class="lane swiper-container">
         <div class="testimonials__icon">
             {{ partial "svg-icons/quote.svg" . }}
         </div>
         <div class="swiper-wrapper">
+            {{ with .Params.Testimonials }}
+            {{ range .Testimonial }}
             <div class="lane swiper-slide">
                 <p>
-                    Insight Creative was instrumental in the success of our [rebranding] project. They were able to come up with a marketing plan that captured the essence of our bank and was very well received by our community and customers.”
+                    {{ .copy }}
                 </p>
-                <h5>Tim Treml, Bank of Luxemburg</h5>
-                <a href="#" class="btn btn-primary">View Case Study</a>
+                <h5>{{ .author }}</h5>
+                <a href="{{ .project_link }}" class="btn btn-primary">View Case Study</a>
             </div>
-            <div class="lane swiper-slide">
-                <p>
-                    Insight Creative was instrumental in the success of our [rebranding] project. They were able to come up with a marketing plan that captured the essence of our bank and was very well received by our community and customers.”
-                </p>
-                <h5>Tim Treml, Bank of Luxemburg</h5>
-                <a href="#" class="btn btn-primary">View Case Study</a>
-            </div>
-            <div class="lane swiper-slide">
-                <p>
-                    Insight Creative was instrumental in the success of our [rebranding] project. They were able to come up with a marketing plan that captured the essence of our bank and was very well received by our community and customers.”
-                </p>
-                <h5>Tim Treml, Bank of Luxemburg</h5>
-                <a href="#" class="btn btn-primary">View Case Study</a>
-            </div>
+            {{ end }}
+            {{ end }}
         </div>
     </div>
     <div class="swiper-pagination"></div>

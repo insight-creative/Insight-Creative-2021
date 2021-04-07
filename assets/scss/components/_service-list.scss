@@ -1,0 +1,96 @@
+.service-list {
+  background-image: url("/images/background-images/studio-equipment-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  &__intro {
+    position: relative;
+    z-index: 1;
+    h3 {
+      margin-bottom: 5rem;
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    place-content: center;
+    @media (min-width: 48em) {
+      width: 100%;
+    }
+    @media (min-width: 81.25em) {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    @media (min-width: 100em) {
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+  }
+  &__link {
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__service-card {
+    background-color: #282728;
+    margin: 0.4rem;
+    padding: 2rem;
+    border-radius: $radius;
+    transition: 0.3s ease;
+    &:hover,
+    &:focus {
+      background-color: $primaryColor;
+      .service-list__service-heading {
+        color: $lightGrey;
+      }
+    }
+  }
+  &__icon-wrapper {
+    margin-right: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  &__icon {
+    position: relative;
+    z-index: 1;
+    background-color: $white;
+    border-radius: 50%;
+    height: 108px;
+    width: 108px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      width: 70px;
+    }
+    &:after {
+      position: absolute;
+      content: "";
+      top: -4px;
+      left: 4px;
+      height: 100%;
+      width: 100%;
+      border: 2px solid $secondaryColor;
+      border-radius: 50%;
+    }
+  }
+  &__service-heading {
+    color: $tertiaryColor;
+    margin-bottom: 0.5rem;
+  }
+  &__service-preview {
+    padding: 0;
+  }
+  &__service-item {
+    list-style-type: none;
+    font-size: 2rem;
+    @include breakpoint(lg) {
+      font-size: 1.6rem;
+    }
+    @include breakpoint(xl) {
+      font-size: 2rem;
+    }
+  }
+}

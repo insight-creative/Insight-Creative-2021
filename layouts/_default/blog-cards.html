@@ -1,4 +1,6 @@
 <a href="{{ .RelPermalink }}" class="blog-card">
-    <img src="{{ .Permalink }}{{ .Params.image }}" alt="" class="blog-card__image">
+    <div class="blog-card__image-wrapper">
+        <img src="{{ .Permalink }}{{ .Params.image }}" alt="{{ .Params.image_alt }}" class="blog-card__image">
+    </div>
     <h5 class="blog-card__title">{{ .Title }}</h5>
 </a>

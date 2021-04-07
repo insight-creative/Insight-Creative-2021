@@ -1,24 +1,11 @@
 {{ define "main" }}
 <div class="hero-video__flex" data-scroll-section>
   <div class="hero-video__flex-video"> 
-    <video aria-hidden="true" class="hero-video__flex-video-video" id="hero-video" autoplay="" loop="" muted="" playsinline=""> <source src="https://www.hiebing.com/wp-content/uploads/2020/07/Hiebing-CCI-web_vp9-1.webm" type="video/webm"> <!--<source src="https://www.hiebing.com/wp-content/uploads/2020/07/Hiebing-CCI-web_vp8.webm" type="video/webm" />--> <source src="https://www.hiebing.com/wp-content/uploads/2020/07/Hiebing-CCI-web_h265.mov" type="video/quicktime"> <source src="https://www.hiebing.com/wp-content/uploads/2020/07/Hiebing-CCI-web_h264.mp4" type="video/mp4"> <!--[if lt IE 9]><img src="https://www.hiebing.com/wp-content/uploads/2020/06/hiebing-share.png" alt="" /><![endif]--> <noscript><img src="https://www.hiebing.com/wp-content/uploads/2020/06/hiebing-share.png" alt="" /></noscript> <img id="hero-video__video-fallback" data-src="https://www.hiebing.com/wp-content/uploads/2020/06/hiebing-share.png" alt=""> 
+    <video aria-hidden="true" class="hero-video__flex-video-video" id="hero-video" autoplay="" loop="" muted="" playsinline="">  <source src="/video/Insight-Background-Video.mp4" type="video/mp4"> <!--[if lt IE 9]><img src="https://www.hiebing.com/wp-content/uploads/2020/06/hiebing-share.png" alt="" /><![endif]--> <noscript><img src="https://www.hiebing.com/wp-content/uploads/2020/06/hiebing-share.png" alt="" /></noscript> <img id="hero-video__video-fallback" data-src="https://www.hiebing.com/wp-content/uploads/2020/06/hiebing-share.png" alt=""> 
     </video>  
   </div> 
 </div>
-<div class="container padding-top-10 padding-bottom-10" data-scroll-section>
-  <!-- <div class="intro g5"><p>{{ .Params.Intro.Text }}</p></div> -->
-  <div class="intro g5">
-    <p>
-      When it comes to communication, making a connection is paramount. The last
-    thing you need is fluff. That’s why our full-service team of marketing
-    professionals delivers communication with substance. We skip the jargon,
-    buzz words and clichés to focus on what’s truly important. <strong>We believe that
-    clear communication leads to effective communication and effective
-    communication leads to results!</strong>
-    </p>
-  </div>
-  <a href="/about" class="btn btn-primary">Learn more about Insight</a>
-</div>
+{{ block "intro" . }}{{ partial "intro" . }}{{ end }}
 {{ block "services" . }}{{ partial "services" . }}{{ end }}
 {{ block "featured-work" . }}{{ partial "featured-work" . }}{{ end }}
 {{ block "testimonials" . }}{{ partial "testimonials" . }}{{ end }}

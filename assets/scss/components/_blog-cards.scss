@@ -1,0 +1,24 @@
+.blog-card {
+  text-decoration: none;
+  @include breakpoint(md) {
+    width: 50%;
+  }
+  &__image-wrapper {
+    margin-bottom: 1rem;
+  }
+  &__image {
+    border-radius: $radius;
+    height: 300px;
+    object-fit: cover;
+  }
+  &__title {
+    font-weight: 700;
+    transition: 0.3s ease;
+  }
+  &:hover,
+  &:focus {
+    .blog-card__title {
+      color: $primaryColor;
+    }
+  }
+}

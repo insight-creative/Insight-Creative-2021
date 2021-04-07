@@ -1,7 +1,7 @@
 <div class="service-list padding-top-10 padding-bottom-10" data-scroll-section>
     <div class="container">
       <div class="service-list__intro">
-        <h3><span class="emphasis-red">Elevate</span> your brand with <span class="emphasis-underline">ultimate efficiency.</span></h3>
+        <h3>{{ .Params.Services.Subhead | markdownify }}</h3>
         <p class="g5">
           {{ .Params.Services.Description }}
         </p>
