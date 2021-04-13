@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: "Award-winning Dr. Johnson Leads New Word Series"
-date: 2020-11-6
+date: 2020-11-06
 author: Emily Morehart
 description: "A fun collaboration to create communication with substance."
 text-color: "ffffff"

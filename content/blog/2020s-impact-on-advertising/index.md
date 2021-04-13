@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: "2020’s Impact on Advertising"
-date: 2021-2-11
+date: 2021-02-11
 author: Sam Rowe
 description: ""
 text-color: "ffffff"

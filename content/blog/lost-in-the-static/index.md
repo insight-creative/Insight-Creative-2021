@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: "Lost in the Static"
-date: 2020-12-2
+date: 2020-12-02
 author: Justin Parsons
 description: "Learn how building a statically generated site can make your website lightweight, secure, and fast!"
 text-color: "ffffff"

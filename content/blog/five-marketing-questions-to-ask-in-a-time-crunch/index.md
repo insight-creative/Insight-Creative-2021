@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: "Five Marketing Questions to ask in a Time Crunch"
-date: 2021-1-25
+date: 2021-01-25
 author: Emily Morehart
 description: "Do your recent quick-turn creative projects meet this criteria?"
 text-color: "ffffff"

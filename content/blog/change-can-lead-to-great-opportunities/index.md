@@ -1,14 +1,15 @@
 ---
 layout: blog
-date: 2021-01-12T07:30:14-06:00
+date: 2021-01-12
 title: "Change can Lead to Great Opportunities"
 author: Niki Petit
 description: "COVID-19 has taught us innovation and adaptability lead to success."
 image: change-is-necessary.jpg
+image_alt: Change can Lead to Great Opportunities
 tag: blog
 ---
 
-![Alt Text](change-is-necessary.jpg)
+![Change can Lead to Great Opportunities](change-is-necessary.jpg)
 
 I’ve been married to Dominic for 24 years and during that time we’ve lived in six homes. It started with a small Cape Cod in a rundown neighborhood which was all we could afford. A year later, we took on a massive remodel of an old Victorian downtown. That led us to a quaint home in the woods near our son’s elementary school. However, a move to Suamico was in order to live near my parents who needed ongoing medical assistance. That was our longest stay at 14 years. But eventually, we saw the need to get off our busy street, find some peace and quiet in the woods, and purchase what would become our dream home. We thought we would live there forever.
 
