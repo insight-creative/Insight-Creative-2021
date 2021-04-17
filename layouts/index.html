@@ -1,15 +1,5 @@
 {{ define "main" }}
-<!-- <div class="hero-video__flex" data-scroll-section>
-  <div class="hero-video__flex-video"> 
-    <video aria-hidden="true" class="hero-video__flex-video-video" id="hero-video" autoplay="" loop="" muted="" playsinline="">  <source src="/video/Insight-Background-Video.mp4" type="video/mp4"> <!--[if lt IE 9]><img src="https://www.hiebing.com/wp-content/uploads/2020/06/hiebing-share.png" alt="" /><![endif]--> <!--<noscript><img src="https://www.hiebing.com/wp-content/uploads/2020/06/hiebing-share.png" alt="" /></noscript> <img id="hero-video__video-fallback" data-src="https://www.hiebing.com/wp-content/uploads/2020/06/hiebing-share.png" alt=""> 
-    </video>  
-  </div> 
-</div> -->
-<div class="hero-video__flex" data-scroll-section>
-  <div class="hero-video__flex-video"> 
-    <script src="https://fast.wistia.com/embed/medias/fu935ez844.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_fu935ez844 videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>
-  </div> 
-</div>
+{{ block "video-hero" . }}{{ partial "video-hero" . }}{{ end }}
 {{ block "intro" . }}{{ partial "intro" . }}{{ end }}
 {{ block "services" . }}{{ partial "services" . }}{{ end }}
 {{ block "featured-work" . }}{{ partial "featured-work" . }}{{ end }}

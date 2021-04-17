@@ -17,6 +17,24 @@ const hamburger = document.querySelector(".hamburger");
 
 menuButton.addEventListener("click", toggleMobileMenu);
 
+function selectVideo() {
+    //get screen width and pixel ratio
+    var width = screen.width;
+    //initialise 2 videos — 
+    //“small” is 960 pixels wide (), large is 1920 pixels wide ()
+    var mobileVideo="/video/Insight-Background-Video-Mobile.mp4";
+    var desktopVideo = "/video/Insight-Background-Video.mp4";
+
+    if (width<1000){
+        var sourceTag = "\<source src=\"" +mobileVideo +"\"/\>";
+        document.getElementById('hero-video__video').innerHTML = sourceTag;
+        }
+    else {
+        var sourceTag = "\<source src=\"" +desktopVideo +"\"/\>";
+        document.getElementById('hero-video__video').innerHTML = sourceTag;
+    }
+}
+
 function initSwiper() {
     var mySwiper = new Swiper('.swiper-container', {
         // Optional parameters
@@ -122,6 +140,7 @@ function initZoom() {
 
 function homepageAnimations() {
     fadeInContent();
+    selectVideo();
     initZoom();
     initSwiper();
 }
