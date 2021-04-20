@@ -21,7 +21,7 @@
 			{{ range . }}
       <li class="nav-list-item">
         <a class="nav-item" class="nav-item" href="{{ .URL | absURL }}" aria-label="{{ .Name }}"
-          title="{{ .Name }}">{{ .Name }}</a>
+          title="{{ .Name }}"><span>{{ .Name }}</span></a>
       </li>
 			{{ end }}
 			</ul>

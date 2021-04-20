@@ -1,38 +1,3 @@
-.featured-projects {
-  margin-top: 5rem;
-  &__heading {
-    margin-bottom: 0;
-  }
-  &__project {
-    margin: 10px 0;
-  }
-  @include breakpoint(md) {
-    &__row-1 &__project:nth-of-type(1) {
-      margin: 0 0.5rem 0.5rem 0;
-    }
-    &__row-1 &__project:nth-of-type(2) {
-      margin: 0 0 0.5rem 0.5rem;
-    }
-    &__row-2 &__project:nth-of-type(1) {
-      margin: 0.5rem 0.5rem 0 0;
-    }
-    &__row-2 &__project:nth-of-type(2) {
-      margin: 0.5rem 0 0 0.5rem;
-    }
-  }
-  .project-tall &__image {
-    height: 70vh;
-  }
-  .project-short &__image {
-    height: 45vh;
-  }
-  &__image {
-    overflow: hidden;
-    img {
-      border-radius: $radius;
-    }
-  }
-}
 .recent-posts {
   @include breakpoint(lg) {
     .blog-card:nth-of-type(1) {

@@ -13,7 +13,43 @@ gsap.registerPlugin(ScrollTrigger);
 
 const menuButton = document.querySelector(".menu-button-wrap");
 const menu = document.querySelector(".nav-list");
+const menuListItem = document.querySelector(".nav-list-item");
+const menuItems = document.querySelectorAll(".nav-item");
 const hamburger = document.querySelector(".hamburger");
+const cursor = document.querySelector(".cursor");
+const projectLinks = document.querySelectorAll(".featured-projects__link");
+const body = document.querySelector("body");
+
+window.addEventListener("mousemove", updateCursor);
+body.addEventListener("mouseleave", hideCursor);
+
+function updateCursor(e) {
+    cursor.classList.remove("cursor-hide");
+    cursor.style.top = e.pageY + "px";
+    cursor.style.left = e.pageX + "px";
+}
+
+function hideCursor() {
+    cursor.classList.add("cursor-hide");
+}
+
+menuItems.forEach(item => {
+    item.addEventListener("mouseover", () => {
+        cursor.classList.add("cursor-grow");
+    });
+    item.addEventListener("mouseout", () => {
+        cursor.classList.remove("cursor-grow");
+    });
+})
+
+projectLinks.forEach(item => {
+    item.addEventListener("mouseover", () => {
+        cursor.classList.add("cursor-project");
+    });
+    item.addEventListener("mouseout", () => {
+        cursor.classList.remove("cursor-project");
+    });
+})
 
 menuButton.addEventListener("click", toggleMobileMenu);
 

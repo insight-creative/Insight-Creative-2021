@@ -5,6 +5,7 @@
 {{ $mainClass := lower .Page.Title }}
 
 <body data-barba="wrapper">
+  <div class="cursor"></div>
   {{ block "header" . }}{{ partial "header" . }}{{end}}
   <main id="main-content" class="site-main {{ .Params.page_class }} {{ anchorize $mainClass }}" role="main"
     data-barba="container" data-barba-namespace="{{ anchorize $namespace }}">
