@@ -2,7 +2,6 @@ import barba from '@barba/core';
 import barbaPrefetch from '@barba/prefetch';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import LocomotiveScroll from 'locomotive-scroll';
 // import Swiper JS
 import Swiper, { Navigation, Pagination } from 'swiper';
 Swiper.use([Navigation, Pagination]);
@@ -18,61 +17,128 @@ const menuItems = document.querySelectorAll(".nav-item");
 const hamburger = document.querySelector(".hamburger");
 const cursor = document.querySelector(".cursor");
 const projectLinks = document.querySelectorAll(".featured-projects__link");
+const blogLinks = document.querySelectorAll(".blog-card");
 const body = document.querySelector("body");
+const siteHeader = document.querySelector('.site-header');
+const primaryNav = document.querySelector('.primary-nav');
+const container = document.querySelector('.scroll-container');
 
-window.addEventListener("mousemove", updateCursor);
-body.addEventListener("mouseleave", hideCursor);
+// let scrollState = 0;
 
-function updateCursor(e) {
-    cursor.classList.remove("cursor-hide");
-    cursor.style.top = e.pageY + "px";
-    cursor.style.left = e.pageX + "px";
+// const scrollTop = function() {
+//   return window.scrollY;
+// };
+
+// const scrollDetect = function(collapse, expand) {
+//   const currentScroll = scrollTop();
+//   if (currentScroll > scrollState) {
+//     collapse();
+//   } else {
+//     expand();
+//   }
+//   scrollState = scrollTop();
+// };
+
+// function collapseNav() {
+//   siteHeader.classList.remove('expand');
+//   siteHeader.classList.add('collapse');
+// }
+
+// function expandNav() {
+//   siteHeader.classList.remove('collapse');
+//   siteHeader.classList.add('expand');
+// }
+
+// window.addEventListener("scroll", function() {
+//   scrollDetect(collapseNav, expandNav);
+// });
+
+var animateNav = gsap.to(siteHeader, {
+    y:'-=150', 
+    duration:0.5, 
+    ease:'power2.in', 
+    autoAlpha: 0, 
+    paused:true
+});
+
+ScrollTrigger.create({
+  trigger: "siteHeader",
+  start: "100px top",
+  end: "bottom bottom-=20",
+  onUpdate: ({progress, direction, isActive}) => {
+    if (direction == -1) {
+      animateNav.reverse()
+    } if (direction == 1 ) {
+      animateNav.play()
+    } else if (direction == 1 && isActive == true) {
+      animateNav.play()
+    }
+  }
+});
+
+function initCursor() {
+    function updateCursor(e) {
+        cursor.classList.remove("cursor-hide");
+        cursor.setAttribute("style","top: "+(e.pageY - scrollY)+"px; left: "+(e.pageX)+"px")
+    }
+    
+    function hideCursor() {
+        cursor.classList.add("cursor-hide");
+    }
+    
+    menuItems.forEach(item => {
+        item.addEventListener("mouseover", () => {
+            cursor.classList.add("cursor-grow");
+        });
+        item.addEventListener("mouseout", () => {
+            cursor.classList.remove("cursor-grow");
+        });
+    })
+    
+    projectLinks.forEach(item => {
+        item.addEventListener("mouseover", () => {
+            cursor.classList.add("cursor-project");
+        });
+        item.addEventListener("mouseout", () => {
+            cursor.classList.remove("cursor-project");
+        });
+    })
+    
+    blogLinks.forEach(item => {
+        item.addEventListener("mouseover", () => {
+            cursor.classList.add("cursor-blog");
+        });
+        item.addEventListener("mouseout", () => {
+            cursor.classList.remove("cursor-blog");
+        });
+    })
+    
+    window.addEventListener("mousemove", updateCursor);
+    body.addEventListener("mouseleave", hideCursor);
 }
-
-function hideCursor() {
-    cursor.classList.add("cursor-hide");
-}
-
-menuItems.forEach(item => {
-    item.addEventListener("mouseover", () => {
-        cursor.classList.add("cursor-grow");
-    });
-    item.addEventListener("mouseout", () => {
-        cursor.classList.remove("cursor-grow");
-    });
-})
-
-projectLinks.forEach(item => {
-    item.addEventListener("mouseover", () => {
-        cursor.classList.add("cursor-project");
-    });
-    item.addEventListener("mouseout", () => {
-        cursor.classList.remove("cursor-project");
-    });
-})
 
 menuButton.addEventListener("click", toggleMobileMenu);
 
 function selectVideo() {
     //get screen width and pixel ratio
-    var width = screen.width;
+    const width = screen.width;
     //initialise 2 videos — 
     //“small” is 960 pixels wide (), large is 1920 pixels wide ()
-    var mobileVideo="/video/Insight-Background-Video-Mobile.mp4";
-    var desktopVideo = "/video/Insight-Background-Video.mp4";
+    const mobileVideo="/video/Insight-Background-Video-Mobile.mp4";
+    const desktopVideo = "/video/Insight-Background-Video.mp4";
 
     if (width<1000){
-        var sourceTag = "\<source src=\"" +mobileVideo +"\"/\>";
+        const sourceTag = "\<source src=\"" +mobileVideo +"\"/\>";
         document.getElementById('hero-video__video').innerHTML = sourceTag;
         }
     else {
-        var sourceTag = "\<source src=\"" +desktopVideo +"\"/\>";
+        const sourceTag = "\<source src=\"" +desktopVideo +"\"/\>";
         document.getElementById('hero-video__video').innerHTML = sourceTag;
     }
 }
 
 function initSwiper() {
-    var mySwiper = new Swiper('.swiper-container', {
+    const mySwiper = new Swiper('.swiper-container', {
         // Optional parameters
         loop: true,
         grabCursor: true,
@@ -95,8 +161,16 @@ function toggleMobileMenu() {
     hamburger.classList.toggle("is-active");
 }
 
-let scroll;
-const selectAll = (e) => document.querySelectorAll(e);
+function fadeNavigation() {
+    gsap.from(primaryNav, {
+        opacity: 0,
+        y: -150,
+        duration: 1,
+        ease: 'Power2.in'
+    });
+}
+
+fadeNavigation();
 
 function fadeInContent() {
     const introSection = document.querySelector(".intro-section");
@@ -159,37 +233,135 @@ function fadeInContent() {
     }
 }
 
-function initZoom() {
-    const zoomImages = document.querySelectorAll(".zoom-image");
-    gsap.utils.toArray(zoomImages).forEach((section) => {
+// function initZoom() {
+//     const zoomImages = document.querySelectorAll(".zoom-image");
+//     gsap.utils.toArray(zoomImages).forEach((section) => {
+//         const image = section.querySelector('img');
+//         gsap.to(image, {
+//             scale: 1.2,
+//             scrollTrigger: {
+//                 trigger: section,
+//                 scrub: true,
+//             }
+//         })
+//     });
+// }
+
+function initImageParallax() {
+    gsap.utils.toArray('.with-parallax').forEach(section => {
         const image = section.querySelector('img');
+
         gsap.to(image, {
-            scale: 1.1,
+            yPercent: 20,
+            ease: 'none',
             scrollTrigger: {
                 trigger: section,
-                scrub: true,
-                scroller: ".smooth-scroll",
+                start: 'top bottom',
+                scrub: 1,
             }
-        })
+        });
     });
 }
 
-function homepageAnimations() {
-    fadeInContent();
-    selectVideo();
-    initZoom();
-    initSwiper();
+function initSmoothScroll() {
+    document.body.style.height = `${container.clientHeight}px`;
+
+    let height; 
+    function setHeight() {
+        height = container.clientHeight;
+        document.body.style.height = `${height}px`
+    }
+    ScrollTrigger.addEventListener('refreshInit', setHeight);
+
+    gsap.to(container, {
+        y: () => -(height - document.documentElement.clientHeight),
+        ease: 'none',
+        scrollTrigger: {
+            trigger: document.body,
+            start: 'top top', 
+            end: 'bottom bottom', 
+            scrub: 1,
+            invalidateOnRefresh: true
+        }
+    });
+
+    // var html = document.documentElement;
+
+    // var scroller = {
+    // target: document.querySelector("#scroll-container"),
+    // ease: 0.05, // <= scroll speed
+    // endY: 0,
+    // y: 0,
+    // resizeRequest: 1,
+    // scrollRequest: 0,
+    // };
+
+    // var requestId = null;
+
+    // TweenLite.set(scroller.target, {
+    // rotation: 0.01,
+    // force3D: true
+    // });
+
+    // window.addEventListener("load", onLoad);
+
+    // function onLoad() {    
+    // updateScroller();  
+    // window.focus();
+    // window.addEventListener("resize", onResize);
+    // document.addEventListener("scroll", onScroll); 
+    // }
+
+    // function updateScroller() {
+    
+    // var resized = scroller.resizeRequest > 0;
+        
+    // if (resized) {    
+    //     var height = scroller.target.clientHeight;
+    //     body.style.height = height + "px";
+    //     scroller.resizeRequest = 0;
+    // }
+        
+    // var scrollY = window.pageYOffset || html.scrollTop || body.scrollTop || 0;
+
+    // scroller.endY = scrollY;
+    // scroller.y += (scrollY - scroller.y) * scroller.ease;
+
+    // if (Math.abs(scrollY - scroller.y) < 0.05 || resized) {
+    //     scroller.y = scrollY;
+    //     scroller.scrollRequest = 0;
+    // }
+    
+    // TweenLite.set(scroller.target, { 
+    //     y: -scroller.y 
+    // });
+    
+    // requestId = scroller.scrollRequest > 0 ? requestAnimationFrame(updateScroller) : null;
+    // }
+
+    // function onScroll() {
+    // scroller.scrollRequest++;
+    // if (!requestId) {
+    //     requestId = requestAnimationFrame(updateScroller);
+    // }
+    // }
+
+    // function onResize() {
+    // scroller.resizeRequest++;
+    // if (!requestId) {
+    //     requestId = requestAnimationFrame(updateScroller);
+    // }
+    // }
 }
 
-function removeScrollbar() {
-    //Remove Old Locomotive Scrollbar otherwise there will be two
-    const scrollbar = selectAll('.c-scrollbar');
-
-    console.log(scrollbar);
-
-    if (scrollbar.length > 1) {
-        scrollbar[0].remove();
-    }
+function homepageInit() {
+    fadeInContent();
+    selectVideo();
+    initCursor();
+    initSmoothScroll();
+    initImageParallax();
+    initZoom();
+    initSwiper();
 }
 
 function initPageTransitions() {
@@ -200,10 +372,10 @@ function initPageTransitions() {
 
     // do something after the transition finishes
     barba.hooks.after(() => {
-        // reinit locomotive scroll
-        scroll.init();
-        homepageAnimations();
-        removeScrollbar();
+        homepageInit();
+        updateAria();
+        ga('set', 'page', window.location.pathname);
+        ga('send', 'pageview');
     });
 
     // scroll to the top of the page
@@ -218,8 +390,7 @@ function initPageTransitions() {
             once(data) {
                 contentAnimation();
                 // do something once on the initial page load
-                initSmoothScroll(data.next.container);
-                homepageAnimations();
+                homepageInit();
             },
             async leave(data) {
                 // animate loading screen in
@@ -233,40 +404,10 @@ function initPageTransitions() {
             async beforeEnter(data) {
                 contentAnimation();
                 ScrollTrigger.getAll().forEach(t => t.kill());
-                scroll.destroy();
-                initSmoothScroll(data.next.container);
             }
 
         }]
     });
-
-    function initSmoothScroll(container) {
-        // borrowed from the pens https://codepen.io/mulegoat/project/editor/XvJVNP and https://codepen.io/GreenSock/pen/1dc38ca14811bc76e25c4b8c686b653d
-        scroll = new LocomotiveScroll({
-            el: container.querySelector('[data-scroll-container]'),
-            smooth: true,
-            getDirection: true
-        });
-
-        scroll.on("scroll", ScrollTrigger.update);
-
-        ScrollTrigger.scrollerProxy('[data-scroll-container]', {
-            scrollTop(value) {
-                return arguments.length ? scroll.scrollTo(value, 0, 0) : scroll.scroll.instance.scroll.y;
-            }, // we don't have to define a scrollLeft because we're only scrolling vertically.
-            getBoundingClientRect() {
-                return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
-            },
-            // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
-            pinType: container.querySelector('[data-scroll-container]').style.transform ? "transform" : "fixed"
-        });
-
-        // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
-        ScrollTrigger.addEventListener('refresh', () => scroll.update());
-
-        // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
-        ScrollTrigger.refresh();
-    }
 }
 
 initPageTransitions();

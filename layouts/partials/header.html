@@ -1,8 +1,8 @@
 {{ "<!-- Header -->" | safeHTML }}
 <a class="screen-reader-skip-to-content" href="#main-content" tabindex="0">Skip to main content</a>
 <a class="screen-reader-skip-to-content" href="#footer" tabindex="0">Skip to footer content</a>
-<header class="site-header" data-scroll-sticky data-scroll-target="header">
-  <nav class="nav primary-nav container-wide">
+<header class="site-header" data-scroll-sticky data-scroll-target="header" role="banner">
+  <nav class="nav primary-nav container-wide" role="navigation" aria-label="Primary Navigation">
     <div class="logo-wrapper">
       <a class="brand-logo" href="{{ site.BaseURL }}">
         <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" class="img-responsive dim" />
@@ -27,5 +27,4 @@
 			</ul>
 	{{ end }}
   </nav>
-  
 </header>

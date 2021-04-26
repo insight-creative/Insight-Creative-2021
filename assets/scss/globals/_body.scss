@@ -5,6 +5,22 @@ body {
   background-color: $bodyBlack;
   font-family: $primaryFont;
   overflow-x: hidden;
+  overflow-y: scroll;
+}
+.viewport {
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.scroll-container {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  will-change: transform;
+  backface-visibility: hidden;
 }
 .site-main {
   opacity: 1;

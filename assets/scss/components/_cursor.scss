@@ -1,12 +1,14 @@
 .cursor {
-  position: absolute;
+  position: fixed;
+  top: -20px;
+  left: -20px;
   height: 10px;
   width: 10px;
   background: $tertiaryColor;
   border-radius: 50%;
   z-index: 9;
   transform: translate(-50%, -50%);
-  transition: 0.2s ease-out;
+  transition: 0.1s ease-out;
   pointer-events: none;
   mix-blend-mode: exclusion;
 }
@@ -16,17 +18,36 @@
 .cursor-hide {
   transform: scale(0);
 }
-.cursor-project {
+.cursor-project,
+.cursor-blog {
   height: 100px;
   width: 100px;
   background: $primaryColor;
-  mix-blend-mode: normal;
+  mix-blend-mode: initial;
+  // mix-blend-mode: darken;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0.9;
   &:after {
-    content: "View Project";
+    opacity: 0;
     text-align: center;
     line-height: 1.1em;
+    content: "+";
+    color: $white;
+    // font-size: 6rem;
+  }
+}
+.cursor-project {
+  &:after {
+    opacity: 1;
+    content: "View Project";
+  }
+}
+.cursor-blog {
+  &:after {
+    opacity: 1;
+    content: "Read Post";
+    padding: 1rem;
   }
 }

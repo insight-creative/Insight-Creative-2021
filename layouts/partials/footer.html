@@ -1,4 +1,4 @@
-<footer class="footer" data-scroll-section>
+<footer class="footer" data-scroll-section role="contentinfo">
   <div class="container-wide flex flex-column flex-row-m padding-top-5 padding-bottom-5">
     <div class="footer__contact w-100 w-20-m flex flex-column">
       <a class="brand-logo" href="{{ site.BaseURL }}">
@@ -9,7 +9,7 @@
     </div>
     <div class="footer__menu-wrapper flex flex-row w-100 w-50-m">
       <div class="footer__menu w-50 w-25-m flex flex-column">
-        <nav class="footer__menu-nav">
+        <nav class="footer__menu-nav" role="navigation" aria-label="Footer Navigation">
           <h5>Menu</h5>
           {{ with .Site.Menus.main }}
           <ul class="footer__nav-list">
@@ -24,7 +24,7 @@
         </nav>
       </div>
       <div class="footer__services w-50 w-25-m flex flex-column">
-        <nav class="footer__services-nav">
+        <nav class="footer__services-nav" role="navigation" aria-label="Services Navigation">
           <h5>Services</h5>
           <ul class="footer__nav-list">
             <li class="footer__nav-list-item">
@@ -61,13 +61,13 @@
   </div>
   <div class="footer__copyright container-wide padding-top-2 padding-bottom-2">
     <p>© {{ dateFormat "2006" now }} {{ .Site.Params.author }} All Rights Reserved.</p>
-    <nav class="footer__nav">
+    <div class="footer__nav">
       <ul class="footer__copyright-nav-list">
         <span class="separator"></span><li class="footer__nav-list-item"><a href="/privacy-policy/" class="footer__nav-item">Privacy Policy</a></li>
         <span class="separator"></span><li class="footer__nav-list-item"><a href="/sitemap/" class="footer__nav-item">Sitemap</a></li>
         <span class="separator"></span><li class="footer__nav-list-item"><a href="/contact/" class="footer__nav-item">Contact Us</a></li>
       </ul>
-    </nav>
+    </div>
   </div>
 </footer>
 {{ partial "scripts" . }}

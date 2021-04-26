@@ -34,8 +34,15 @@
   }
   &__image {
     overflow: hidden;
+    border-radius: 5px;
+    position: relative;
     img {
-      border-radius: $radius;
+      height: 120%;
+      position: relative;
+      top: -20%;
+      left: 0;
+      object-fit: cover;
+      object-position: center;
     }
   }
 }
