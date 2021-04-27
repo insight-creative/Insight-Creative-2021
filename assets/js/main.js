@@ -2,56 +2,35 @@ import barba from '@barba/core';
 import barbaPrefetch from '@barba/prefetch';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import Swiper JS
 import Swiper, { Navigation, Pagination } from 'swiper';
 Swiper.use([Navigation, Pagination]);
-import { pageTransitionOut, pageTransitionIn, contentAnimation, updateMenu } from './partials';
+import Scrollbar from 'smooth-scrollbar';
+// import { pageTransitionOut, pageTransitionIn, contentAnimation, updateMenu } from './partials';
 
 barba.use(barbaPrefetch);
 gsap.registerPlugin(ScrollTrigger);
 
+let bodyScrollBar;
+
+const select = (e) => document.querySelector(e);
+const selectAll = (e) => document.querySelectorAll(e);
+
 const menuButton = document.querySelector(".menu-button-wrap");
 const menu = document.querySelector(".nav-list");
-const menuListItem = document.querySelector(".nav-list-item");
+// const menuListItem = document.querySelector(".nav-list-item");
 const menuItems = document.querySelectorAll(".nav-item");
-const hamburger = document.querySelector(".hamburger");
-const cursor = document.querySelector(".cursor");
+// const links = document.querySelectorAll("a");
 const projectLinks = document.querySelectorAll(".featured-projects__link");
 const blogLinks = document.querySelectorAll(".blog-card");
-const body = document.querySelector("body");
+const serviceLinks = document.querySelectorAll(".service-list__link");
+const hamburger = document.querySelector(".hamburger");
+const follow = document.querySelector('.follower');
+const followerText = document.querySelector('.follower__text');
+// const body = document.querySelector("body");
 const siteHeader = document.querySelector('.site-header');
 const primaryNav = document.querySelector('.primary-nav');
 const container = document.querySelector('.scroll-container');
-
-// let scrollState = 0;
-
-// const scrollTop = function() {
-//   return window.scrollY;
-// };
-
-// const scrollDetect = function(collapse, expand) {
-//   const currentScroll = scrollTop();
-//   if (currentScroll > scrollState) {
-//     collapse();
-//   } else {
-//     expand();
-//   }
-//   scrollState = scrollTop();
-// };
-
-// function collapseNav() {
-//   siteHeader.classList.remove('expand');
-//   siteHeader.classList.add('collapse');
-// }
-
-// function expandNav() {
-//   siteHeader.classList.remove('collapse');
-//   siteHeader.classList.add('expand');
-// }
-
-// window.addEventListener("scroll", function() {
-//   scrollDetect(collapseNav, expandNav);
-// });
+const scroller = document.querySelector('#viewport');
 
 var animateNav = gsap.to(siteHeader, {
     y:'-=150', 
@@ -76,50 +55,137 @@ ScrollTrigger.create({
   }
 });
 
+// function initCursor() {
+//     function updateCursor(e) {
+//         cursor.classList.remove("cursor-hide");
+//         cursor.setAttribute("style","top: "+(e.pageY - scrollY)+"px; left: "+(e.pageX)+"px")
+//     }
+    
+//     function hideCursor() {
+//         cursor.classList.add("cursor-hide");
+//     }
+    
+//     menuItems.forEach(item => {
+//         item.addEventListener("mouseover", () => {
+//             cursor.classList.add("cursor-grow");
+//         });
+//         item.addEventListener("mouseout", () => {
+//             cursor.classList.remove("cursor-grow");
+//         });
+//     })
+    
+//     projectLinks.forEach(item => {
+//         item.addEventListener("mouseover", () => {
+//             cursor.classList.add("cursor-project");
+//         });
+//         item.addEventListener("mouseout", () => {
+//             cursor.classList.remove("cursor-project");
+//         });
+//     })
+    
+//     blogLinks.forEach(item => {
+//         item.addEventListener("mouseover", () => {
+//             cursor.classList.add("cursor-blog");
+//         });
+//         item.addEventListener("mouseout", () => {
+//             cursor.classList.remove("cursor-blog");
+//         });
+//     })
+    
+//     window.addEventListener("mousemove", updateCursor);
+//     body.addEventListener("mouseleave", hideCursor);
+// }
+
 function initCursor() {
-    function updateCursor(e) {
-        cursor.classList.remove("cursor-hide");
-        cursor.setAttribute("style","top: "+(e.pageY - scrollY)+"px; left: "+(e.pageX)+"px")
-    }
-    
-    function hideCursor() {
-        cursor.classList.add("cursor-hide");
-    }
-    
-    menuItems.forEach(item => {
-        item.addEventListener("mouseover", () => {
-            cursor.classList.add("cursor-grow");
+    gsap.set('.follower',{xPercent:-50,yPercent:-50,backgroundColor: '#8bc0c6'});
+    gsap.set('.cursor',{xPercent:-50,yPercent:-50});
+
+    window.addEventListener('mousemove',e => {
+        gsap.to(follow,0.3,{x:e.clientX,y:e.clientY});
+    });
+
+    menuItems.forEach(link => {
+        link.addEventListener("mouseover", () => {
+            gsap.to(follow, 0.3, {
+                scale: 6
+            });
         });
-        item.addEventListener("mouseout", () => {
-            cursor.classList.remove("cursor-grow");
+        link.addEventListener("mouseout", () => {
+            gsap.to(follow, 0.3, {
+                scale: 1
+            });
+        });
+    })
+
+    serviceLinks.forEach(link => {
+        link.addEventListener("mouseover", () => {
+            gsap.to(follow, 0.3, {
+                scale: 6
+            });
+        });
+        link.addEventListener("mouseout", () => {
+            gsap.to(follow, 0.3, {
+                scale: 1
+            });
+        });
+    })
+
+    projectLinks.forEach(link => {
+        link.addEventListener("mouseover", () => {
+            followerText.innerHTML = "View Project";
+            gsap.to(follow, 0.3, {
+                scale: 10,
+                backgroundColor: '#cd1f40',
+                autoAlpha: .9,
+                mixBlendMode: 'initial'
+            });
+            gsap.to(followerText, 0.3, {
+                autoAlpha: 1,
+            });
+        });
+        link.addEventListener("mouseout", () => {
+            gsap.to(follow, 0.3, {
+                scale: 1,
+                backgroundColor: '#8bc0c6',
+                autoAlpha: 1,
+                mixBlendMode: 'exclusion'
+            });
+            gsap.to(followerText, 0.3, {
+                autoAlpha: 0,
+            });
         });
     })
     
-    projectLinks.forEach(item => {
-        item.addEventListener("mouseover", () => {
-            cursor.classList.add("cursor-project");
+    blogLinks.forEach(link => {
+        link.addEventListener("mouseover", () => {
+            followerText.innerHTML = "View Post";
+            gsap.to(follow, 0.3, {
+                scale: 10,
+                backgroundColor: '#cd1f40',
+                autoAlpha: .9,
+                mixBlendMode: 'initial'
+            });
+            gsap.to(followerText, 0.3, {
+                autoAlpha: 1,
+            });
         });
-        item.addEventListener("mouseout", () => {
-            cursor.classList.remove("cursor-project");
+        link.addEventListener("mouseout", () => {
+            gsap.to(follow, 0.3, {
+                scale: 1,
+                backgroundColor: '#8bc0c6',
+                autoAlpha: 1,
+                mixBlendMode: 'exclusion'
+            });
+            gsap.to(followerText, 0.3, {
+                autoAlpha: 0,
+            });
         });
     })
-    
-    blogLinks.forEach(item => {
-        item.addEventListener("mouseover", () => {
-            cursor.classList.add("cursor-blog");
-        });
-        item.addEventListener("mouseout", () => {
-            cursor.classList.remove("cursor-blog");
-        });
-    })
-    
-    window.addEventListener("mousemove", updateCursor);
-    body.addEventListener("mouseleave", hideCursor);
 }
 
 menuButton.addEventListener("click", toggleMobileMenu);
 
-function selectVideo() {
+function initVideo() {
     //get screen width and pixel ratio
     const width = screen.width;
     //initialise 2 videos — 
@@ -171,81 +237,6 @@ function fadeNavigation() {
 }
 
 fadeNavigation();
-
-function fadeInContent() {
-    const introSection = document.querySelector(".intro-section");
-    const fadeWrapper = document.querySelector(".fade-wrapper .container");
-    const fadeUp = document.querySelectorAll(".fade-up");
-    const blog = document.querySelector(".blog-container");
-
-    gsap.from(introSection, {
-        opacity: 0,
-        y: 20,
-        duration: 1,
-        ease: 'Power2.in',
-        scrollTrigger: {
-            trigger: introSection,
-            start: "top bottom-=50",
-            toggleActions: "play none none reset",
-            scroller: ".smooth-scroll",
-        }
-    });
-    gsap.utils.toArray(fadeUp).forEach((fade) => {
-        gsap.from(fade, {
-            opacity: 0,
-            y: 20,
-            duration: 1,
-            ease: 'Power2.in',
-            scrollTrigger: {
-                trigger: fade,
-                toggleActions: "play none none reset",
-                scroller: ".smooth-scroll",
-            }
-        })
-    });
-    gsap.from(fadeWrapper, {
-        opacity: 0,
-        y: 20,
-        duration: 1,
-        ease: 'Power2.in',
-        delay: 1,
-        scrollTrigger: {
-            trigger: fadeWrapper,
-            start: "top bottom-=25",
-            toggleActions: "play none none reset",
-            scroller: ".smooth-scroll",
-        }
-    });
-    if (document.body.contains(blog)) {
-        gsap.from(blog, {
-            opacity: 0,
-            y: 20,
-            duration: 1,
-            ease: 'Power2.in',
-            delay: 1.5,
-            scrollTrigger: {
-                trigger: blog,
-                start: "top bottom-=25",
-                toggleActions: "play none none reset",
-                scroller: ".smooth-scroll",
-            }
-        });
-    }
-}
-
-// function initZoom() {
-//     const zoomImages = document.querySelectorAll(".zoom-image");
-//     gsap.utils.toArray(zoomImages).forEach((section) => {
-//         const image = section.querySelector('img');
-//         gsap.to(image, {
-//             scale: 1.2,
-//             scrollTrigger: {
-//                 trigger: section,
-//                 scrub: true,
-//             }
-//         })
-//     });
-// }
 
 function initImageParallax() {
     gsap.utils.toArray('.with-parallax').forEach(section => {
@@ -354,28 +345,78 @@ function initSmoothScroll() {
     // }
 }
 
-function homepageInit() {
-    fadeInContent();
-    selectVideo();
-    initCursor();
+function initSmoothScrollbar() {
+    // Scrollbar.init(document.querySelector('#viewport'));
+
+    bodyScrollBar = Scrollbar.init(select('#viewport'), {damping: 0.05});
+
+    // remove horizontal scrollbar
+    bodyScrollBar.track.xAxis.element.remove();
+
+    // keep ScrollTrigger in sync with Smooth Scrollbar
+    ScrollTrigger.scrollerProxy(document.body, {
+        scrollTop(value) {
+            if (arguments.length) {
+                bodyScrollBar.scrollTop = value; // setter
+            }
+            return bodyScrollBar.scrollTop;    // getter
+        }
+    });
+    
+    // when the smooth scroller updates, tell ScrollTrigger to update() too: 
+    bodyScrollBar.addListener(ScrollTrigger.update);
+
+}
+
+function pageInit() {
+    // initSmoothScrollbar();
     initSmoothScroll();
+    initCursor();
     initImageParallax();
-    initZoom();
     initSwiper();
 }
 
+function pageTransitionIn() {
+    console.log('pageTransitionIn');
+    // return gsap.to('.transition', {duration: 1, yPercent: -100, ease: 'power1.inOut'});
+    const tl = gsap.timeline({
+        defaults: {
+            duration: 1.3,
+            ease: 'power1.inOut'
+        },
+        onComplete: () => pageInit()
+    });
+    tl.to('.transition', {
+        yPercent: -100
+    });
+    return tl;
+}
+
+function pageTransitionOut() {
+    console.log('pageTransitionOut');
+    // return gsap.to('.transition', {duration: 1, yPercent: 0, ease: 'power1.inOut'});
+    const tl = gsap.timeline({
+        defaults: {
+            duration: 1.3,
+            ease: 'power1.inOut'
+        },
+        onComplete: () => pageInit()
+    });
+    tl.to('.transition', {
+        yPercent: 0
+    });
+    return tl;
+}
+
 function initPageTransitions() {
+
     // do something before the transition starts
     barba.hooks.before(() => {
-        updateMenu();
+        select('html').classList.add('is-transitioning');
     });
-
     // do something after the transition finishes
     barba.hooks.after(() => {
-        homepageInit();
-        updateAria();
-        ga('set', 'page', window.location.pathname);
-        ga('send', 'pageview');
+        select('html').classList.remove('is-transitioning');
     });
 
     // scroll to the top of the page
@@ -384,26 +425,19 @@ function initPageTransitions() {
     });
 
     barba.init({
-        timeout: 7000,
         transitions: [{
-            name: 'fade-transition',
-            once(data) {
-                contentAnimation();
+            once() {
                 // do something once on the initial page load
-                homepageInit();
+                pageInit();
+                initVideo();
             },
-            async leave(data) {
+            async leave() {
                 // animate loading screen in
-                await pageTransitionOut(data.current);
-                data.current.container.remove();
+                await pageTransitionIn();
             },
-            async enter(data) {
+            enter() {
                 // animate loading screen away
-                pageTransitionIn(data.next);
-            },
-            async beforeEnter(data) {
-                contentAnimation();
-                ScrollTrigger.getAll().forEach(t => t.kill());
+                pageTransitionOut();
             }
 
         }]
