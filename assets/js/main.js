@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Swiper, { Navigation, Pagination } from 'swiper';
 Swiper.use([Navigation, Pagination]);
-import Scrollbar from 'smooth-scrollbar';
+// import Scrollbar from 'smooth-scrollbar';
 // import { pageTransitionOut, pageTransitionIn, contentAnimation, updateMenu } from './partials';
 
 barba.use(barbaPrefetch);
@@ -32,28 +32,31 @@ const primaryNav = document.querySelector('.primary-nav');
 const container = document.querySelector('.scroll-container');
 const scroller = document.querySelector('#viewport');
 
-var animateNav = gsap.to(siteHeader, {
-    y:'-=150', 
-    duration:0.5, 
-    ease:'power2.in', 
-    autoAlpha: 0, 
-    paused:true
-});
-
-ScrollTrigger.create({
-  trigger: "siteHeader",
-  start: "100px top",
-  end: "bottom bottom-=20",
-  onUpdate: ({progress, direction, isActive}) => {
-    if (direction == -1) {
-      animateNav.reverse()
-    } if (direction == 1 ) {
-      animateNav.play()
-    } else if (direction == 1 && isActive == true) {
-      animateNav.play()
-    }
-  }
-});
+function animateNav() {
+    var animateNav = gsap.to(siteHeader, {
+        y:'-=150', 
+        duration:0.5, 
+        ease:'power2.in', 
+        autoAlpha: 0, 
+        paused:true
+    });
+    
+    ScrollTrigger.create({
+      trigger: "siteHeader",
+      start: "100px top",
+      end: "bottom bottom-=20",
+      onUpdate: ({progress, direction, isActive}) => {
+        if (direction == -1) {
+            console.log(direction);
+          animateNav.reverse()
+        } if (direction == 1 ) {
+          animateNav.play()
+        } else if (direction == 1 && isActive == true) {
+          animateNav.play()
+        }
+      }
+    });
+}
 
 // function initCursor() {
 //     function updateCursor(e) {
@@ -181,6 +184,12 @@ function initCursor() {
             });
         });
     })
+
+    // function hideCursor() {
+    //     cursor.classList.add("cursor-hide");
+    // }
+
+    // body.addEventListener("mouseleave", hideCursor);
 }
 
 menuButton.addEventListener("click", toggleMobileMenu);
@@ -369,9 +378,10 @@ function initSmoothScrollbar() {
 }
 
 function pageInit() {
-    // initSmoothScrollbar();
-    initSmoothScroll();
+    initSmoothScrollbar();
+    // initSmoothScroll();
     initCursor();
+    animateNav();
     initImageParallax();
     initSwiper();
 }

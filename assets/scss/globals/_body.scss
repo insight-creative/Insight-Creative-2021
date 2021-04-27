@@ -4,8 +4,6 @@
 body {
   background-color: $bodyBlack;
   font-family: $primaryFont;
-  overflow-x: hidden;
-  overflow-y: scroll;
 }
 // .viewport {
 //   overflow: hidden;
@@ -23,12 +21,8 @@ body {
   top: 0;
   left: 0;
 }
-.scroll-container {
-  position: absolute;
-  overflow: hidden;
-  width: 100%;
-  will-change: transform;
-  backface-visibility: hidden;
+.scroll-content {
+  padding-bottom: 5rem;
 }
 .site-main {
   opacity: 1;
