@@ -2,6 +2,14 @@
   margin-top: 5rem;
   &__link {
     text-decoration: none;
+    @include breakpoint(md) {
+      &:hover,
+      &:focus {
+        .featured-projects__overlay {
+          opacity: 0.95;
+        }
+      }
+    }
   }
   &__heading {
     margin-bottom: 0;
@@ -11,6 +19,33 @@
     @include breakpoint(md) {
       margin: 0;
     }
+  }
+  &__overlay {
+    background: rgba(0, 0, 0, 0.9);
+    background: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    background: radial-gradient(
+      circle at 50% 50%,
+      #1d1d1d,
+      #191919,
+      #161616,
+      #121212,
+      #0d0d0d,
+      #070707,
+      #000000
+    );
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
   }
   @include breakpoint(md) {
     &__row-1 &__link:nth-of-type(1) {

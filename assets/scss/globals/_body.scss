@@ -21,15 +21,14 @@ body {
   top: 0;
   left: 0;
 }
-.scroll-content {
-  padding-bottom: 5rem;
+.scrollbar-track {
+  z-index: 9999;
 }
+// .scroll-content {
+//   padding-bottom: 3rem;
+// }
 .site-main {
   opacity: 1;
-  margin-top: $mobileHeader;
-  @include breakpoint(md) {
-    margin-top: $desktopHeader;
-  }
 }
 ul {
   margin: 0;

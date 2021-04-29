@@ -7,8 +7,8 @@
 <body data-barba="wrapper">
   <div class="cursor"></div>
   <div class="follower"><span class="follower__text">View Project</span></div>
-  {{ block "header" . }}{{ partial "header" . }}{{end}}
   <div id="viewport" class="viewport">
+    {{ block "header" . }}{{ partial "header" . }}{{end}}
     <main id="main-content" class="site-main {{ .Params.page_class }} {{ anchorize $mainClass }}" role="main" data-barba="container" data-barba-namespace="{{ anchorize $namespace }}">
       <div class="smooth-scroll" data-scroll-container>
         {{ block "main" . }}{{ end }}
@@ -16,7 +16,6 @@
     </main><div class="transition" style="position: fixed; bottom: 0; left: 250px; background-color: #f9f9f9; color: black;padding: 20px; z-index: 5; transform: translateY(100%);">Transition Test Div</div>
     {{ block "footer" . }}{{ partial "footer" . }}{{end}}
   </div>
-  <script src="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js"></script>
   {{ partial "scripts" . }}
 </body>
 </html>

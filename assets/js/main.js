@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Swiper, { Navigation, Pagination } from 'swiper';
 Swiper.use([Navigation, Pagination]);
-// import Scrollbar from 'smooth-scrollbar';
+import Scrollbar from 'smooth-scrollbar';
 // import { pageTransitionOut, pageTransitionIn, contentAnimation, updateMenu } from './partials';
 
 barba.use(barbaPrefetch);
@@ -31,32 +31,82 @@ const siteHeader = document.querySelector('.site-header');
 const primaryNav = document.querySelector('.primary-nav');
 const container = document.querySelector('.scroll-container');
 const scroller = document.querySelector('#viewport');
+const width = screen.width;
+
 
 function animateNav() {
-    var animateNav = gsap.to(siteHeader, {
-        y:'-=150', 
-        duration:0.5, 
-        ease:'power2.in', 
-        autoAlpha: 0, 
-        paused:true
-    });
+    // var animateNav = gsap.to(siteHeader, {
+    //     y:'-=150', 
+    //     duration:0.5, 
+    //     ease:'power2.in', 
+    //     autoAlpha: 0, 
+    //     paused:true
+    // });
     
-    ScrollTrigger.create({
-      trigger: "siteHeader",
-      start: "100px top",
-      end: "bottom bottom-=20",
-      onUpdate: ({progress, direction, isActive}) => {
-        if (direction == -1) {
-            console.log(direction);
-          animateNav.reverse()
-        } if (direction == 1 ) {
-          animateNav.play()
-        } else if (direction == 1 && isActive == true) {
-          animateNav.play()
-        }
-      }
+    // ScrollTrigger.create({
+    //   trigger: "scroller",
+    //   start: "100px top",
+    //   end: "bottom bottom-=20",
+    //   onUpdate: ({direction, isActive}) => {
+    //     if (direction === -1) {
+    //         console.log(direction);
+    //       animateNav.reverse()
+    //     } if (direction === 1 ) {
+    //         console.log(direction);
+    //       animateNav.play()
+    //     } else if (direction === 1 && isActive === true) {
+    //         console.log(direction);
+    //       animateNav.play()
+    //     }
+    //   }
+    // });
+
+
+    let scrollState = 0;
+
+    var scrollTop = function() {
+        console.log(window.scrollY);
+    return window.scrollY;
+    };
+
+    var scrollDetect = function(collapse, expand) {
+    var currentScroll = scrollTop();
+    console.log(currentScroll);
+    if (currentScroll > scrollState) {
+        console.log(currentScroll);
+        collapse();
+    } else {
+        expand();
+    }
+    scrollState = scrollTop();
+    };
+
+    function collapseNav() {
+    navClasses.classList.remove('expand');
+    navClasses.classList.add('collapse');
+    }
+
+    function expandNav() {
+    navClasses.classList.remove('collapse');
+    navClasses.classList.add('expand');
+    }
+
+    window.addEventListener("scroll", function() {
+    scrollDetect(collapseNav, expandNav);
     });
+
 }
+
+// function initProgress() {
+//     gsap.to('progress', {
+//         value: 100, 
+//         scrollTrigger: {
+//             scrub: 0.3, 
+//             horizontal: true, 
+//             scroller: scrollbar
+//         }
+//     });
+// }
 
 // function initCursor() {
 //     function updateCursor(e) {
@@ -195,14 +245,12 @@ function initCursor() {
 menuButton.addEventListener("click", toggleMobileMenu);
 
 function initVideo() {
-    //get screen width and pixel ratio
-    const width = screen.width;
     //initialise 2 videos — 
     //“small” is 960 pixels wide (), large is 1920 pixels wide ()
     const mobileVideo="/video/Insight-Background-Video-Mobile.mp4";
     const desktopVideo = "/video/Insight-Background-Video.mp4";
 
-    if (width<1000){
+    if (width<992){
         const sourceTag = "\<source src=\"" +mobileVideo +"\"/\>";
         document.getElementById('hero-video__video').innerHTML = sourceTag;
         }
@@ -355,7 +403,8 @@ function initSmoothScroll() {
 }
 
 function initSmoothScrollbar() {
-    // Scrollbar.init(document.querySelector('#viewport'));
+    if (width>992){
+        // Scrollbar.init(document.querySelector('#viewport'));
 
     bodyScrollBar = Scrollbar.init(select('#viewport'), {damping: 0.05});
 
@@ -369,12 +418,22 @@ function initSmoothScrollbar() {
                 bodyScrollBar.scrollTop = value; // setter
             }
             return bodyScrollBar.scrollTop;    // getter
+        },
+        getBoundingClientRect() {
+          return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
         }
     });
     
     // when the smooth scroller updates, tell ScrollTrigger to update() too: 
     bodyScrollBar.addListener(ScrollTrigger.update);
-
+    bodyScrollBar.addListener(function(status) {
+        var offset = status.offset;
+       
+       siteHeader.style.top = offset.y + 'px';
+       siteHeader.style.left = offset.x + 'px';
+     });
+    scroller.focus();
+    }
 }
 
 function pageInit() {
