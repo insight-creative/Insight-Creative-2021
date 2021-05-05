@@ -7,15 +7,26 @@
 <body data-barba="wrapper">
   <div class="cursor"></div>
   <div class="follower"><span class="follower__text">View Project</span></div>
-  <div id="viewport" class="viewport">
-    {{ block "header" . }}{{ partial "header" . }}{{end}}
-    <main id="main-content" class="site-main {{ .Params.page_class }} {{ anchorize $mainClass }}" role="main" data-barba="container" data-barba-namespace="{{ anchorize $namespace }}">
-      <div class="smooth-scroll" data-scroll-container>
-        {{ block "main" . }}{{ end }}
+  <div class="preloader">
+    <div class="preloader__inner">
+      <div class="preloader__inner-mask">
+        <div class="preloader__inner-content-wrapper">
+          <span class="preloader__inner-content">Communication <span class="friday-vibes-white">with</span> <div class="mask"><span class="emphasis-red">substance.<sup>SM</sup></span></div></span>
+        </div>
       </div>
-    </main><div class="transition" style="position: fixed; bottom: 0; left: 250px; background-color: #f9f9f9; color: black;padding: 20px; z-index: 5; transform: translateY(100%);">Transition Test Div</div>
-    {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+    </div>
   </div>
+  <div class="loader">
+    <div class="loader__inner"></div>
+  </div>
+  {{ block "header" . }}{{ partial "header" . }}{{end}}
+  <div id="viewport" class="viewport">
+    <main id="main-content" class="site-main {{ .Params.page_class }} {{ anchorize $mainClass }}" role="main" data-barba="container" data-barba-namespace="{{ anchorize $namespace }}">
+      {{ block "main" . }}{{ end }}
+    </main>
+  </div>
+  {{ block "social" . }}{{ partial "social" . }}{{ end }}
+  {{ block "footer" . }}{{ partial "footer" . }}{{end}}
   {{ partial "scripts" . }}
 </body>
 </html>

@@ -1,8 +1,11 @@
-.cta-container {
-    background-color: $medBlue;
-    padding: 2em;
-    .cta-inner {
-        max-width: 70ch;
-        margin: 0 auto;
-    }
+.site-cta {
+  text-align: center;
+  &__content {
+    border-radius: $radius;
+    position: relative;
+    z-index: 1;
+  }
+  &__inner {
+    padding: 1rem;
+  }
 }

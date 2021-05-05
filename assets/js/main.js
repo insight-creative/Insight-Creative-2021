@@ -6,6 +6,7 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 Swiper.use([Navigation, Pagination]);
 import Scrollbar from 'smooth-scrollbar';
 // import { pageTransitionOut, pageTransitionIn, contentAnimation, updateMenu } from './partials';
+import { updateMenu } from './partials';
 
 barba.use(barbaPrefetch);
 gsap.registerPlugin(ScrollTrigger);
@@ -15,94 +16,53 @@ let bodyScrollBar;
 const select = (e) => document.querySelector(e);
 const selectAll = (e) => document.querySelectorAll(e);
 
-const menuButton = document.querySelector(".menu-button-wrap");
-const menu = document.querySelector(".nav-list");
-// const menuListItem = document.querySelector(".nav-list-item");
-const menuItems = document.querySelectorAll(".nav-item");
-// const links = document.querySelectorAll("a");
-const projectLinks = document.querySelectorAll(".featured-projects__link");
-const blogLinks = document.querySelectorAll(".blog-card");
-const serviceLinks = document.querySelectorAll(".service-list__link");
-const hamburger = document.querySelector(".hamburger");
-const follow = document.querySelector('.follower');
-const followerText = document.querySelector('.follower__text');
-// const body = document.querySelector("body");
-const siteHeader = document.querySelector('.site-header');
-const primaryNav = document.querySelector('.primary-nav');
-const container = document.querySelector('.scroll-container');
-const scroller = document.querySelector('#viewport');
+const menu = select(".nav-list");
+const logo = select(".brand-logo");
+const menuItems = selectAll(".nav-item");
+const hamburger = select(".hamburger");
+const follow = select('.follower');
+const followerText = select('.follower__text');
+const siteHeader = select('.site-header');
+const primaryNav = select('.primary-nav');
+const scroller = select('#viewport');
 const width = screen.width;
+const footer = select('.footer');
+const scrollContainer = select('.scroll-content');
+const social = select(".social");
 
+hamburger.addEventListener("click", toggleMobileMenu);
 
-function animateNav() {
-    // var animateNav = gsap.to(siteHeader, {
-    //     y:'-=150', 
-    //     duration:0.5, 
-    //     ease:'power2.in', 
-    //     autoAlpha: 0, 
-    //     paused:true
-    // });
-    
-    // ScrollTrigger.create({
-    //   trigger: "scroller",
-    //   start: "100px top",
-    //   end: "bottom bottom-=20",
-    //   onUpdate: ({direction, isActive}) => {
-    //     if (direction === -1) {
-    //         console.log(direction);
-    //       animateNav.reverse()
-    //     } if (direction === 1 ) {
-    //         console.log(direction);
-    //       animateNav.play()
-    //     } else if (direction === 1 && isActive === true) {
-    //         console.log(direction);
-    //       animateNav.play()
-    //     }
-    //   }
-    // });
-
-
-    let scrollState = 0;
-
-    var scrollTop = function() {
-        console.log(window.scrollY);
-    return window.scrollY;
-    };
-
-    var scrollDetect = function(collapse, expand) {
-    var currentScroll = scrollTop();
-    console.log(currentScroll);
-    if (currentScroll > scrollState) {
-        console.log(currentScroll);
-        collapse();
-    } else {
-        expand();
-    }
-    scrollState = scrollTop();
-    };
-
-    function collapseNav() {
-    navClasses.classList.remove('expand');
-    navClasses.classList.add('collapse');
-    }
-
-    function expandNav() {
-    navClasses.classList.remove('collapse');
-    navClasses.classList.add('expand');
-    }
-
-    window.addEventListener("scroll", function() {
-    scrollDetect(collapseNav, expandNav);
+function initAnimatedNav() {
+    var animateNav = gsap.to(siteHeader, {
+        y:'-=150',
+        duration:1,
+        ease:'power2.in',
+        autoAlpha: 0,
+        paused:true
     });
 
+    ScrollTrigger.create({
+      trigger: siteHeader,
+      start: "100px top",
+      end: "+=999999",
+      onUpdate: ({direction, isActive}) => {
+        if (direction === -1) {
+            animateNav.reverse()
+        } if (direction === 1 ) {
+            animateNav.play()
+        } else if (direction === 1 && isActive === true) {
+            animateNav.play()
+        }
+      }
+    });
 }
 
 // function initProgress() {
 //     gsap.to('progress', {
-//         value: 100, 
+//         value: 100,
 //         scrollTrigger: {
-//             scrub: 0.3, 
-//             horizontal: true, 
+//             scrub: 0.3,
+//             horizontal: true,
 //             scroller: scrollbar
 //         }
 //     });
@@ -113,11 +73,11 @@ function animateNav() {
 //         cursor.classList.remove("cursor-hide");
 //         cursor.setAttribute("style","top: "+(e.pageY - scrollY)+"px; left: "+(e.pageX)+"px")
 //     }
-    
+
 //     function hideCursor() {
 //         cursor.classList.add("cursor-hide");
 //     }
-    
+
 //     menuItems.forEach(item => {
 //         item.addEventListener("mouseover", () => {
 //             cursor.classList.add("cursor-grow");
@@ -126,7 +86,7 @@ function animateNav() {
 //             cursor.classList.remove("cursor-grow");
 //         });
 //     })
-    
+
 //     projectLinks.forEach(item => {
 //         item.addEventListener("mouseover", () => {
 //             cursor.classList.add("cursor-project");
@@ -135,7 +95,7 @@ function animateNav() {
 //             cursor.classList.remove("cursor-project");
 //         });
 //     })
-    
+
 //     blogLinks.forEach(item => {
 //         item.addEventListener("mouseover", () => {
 //             cursor.classList.add("cursor-blog");
@@ -144,12 +104,32 @@ function animateNav() {
 //             cursor.classList.remove("cursor-blog");
 //         });
 //     })
-    
+
 //     window.addEventListener("mousemove", updateCursor);
 //     body.addEventListener("mouseleave", hideCursor);
 // }
 
+function resetCursor() {
+    gsap.to(follow, 0.3, {
+        scale: 1,
+        backgroundColor: '#8bc0c6',
+        autoAlpha: 1,
+        mixBlendMode: 'exclusion'
+    });
+    gsap.to(followerText, {
+        opacity: 0,
+    });
+}
+
 function initCursor() {
+
+    const serviceLink = select(".service-list__link");
+    const serviceLinks = selectAll(".service-list__link");
+    const projectLink = select(".featured-projects__link");
+    const projectLinks = selectAll(".featured-projects__link");
+    const blogLink = select(".blog-card");
+    const blogLinks = selectAll(".blog-card");
+
     gsap.set('.follower',{xPercent:-50,yPercent:-50,backgroundColor: '#8bc0c6'});
     gsap.set('.cursor',{xPercent:-50,yPercent:-50});
 
@@ -157,6 +137,16 @@ function initCursor() {
         gsap.to(follow,0.3,{x:e.clientX,y:e.clientY});
     });
 
+    logo.addEventListener("mouseover", () => {
+        gsap.to(follow, 0.3, {
+            scale: 6
+        });
+    });
+    logo.addEventListener("mouseout", () => {
+        gsap.to(follow, 0.3, {
+            scale: 1
+        });
+    });
     menuItems.forEach(link => {
         link.addEventListener("mouseover", () => {
             gsap.to(follow, 0.3, {
@@ -170,70 +160,75 @@ function initCursor() {
         });
     })
 
-    serviceLinks.forEach(link => {
-        link.addEventListener("mouseover", () => {
-            gsap.to(follow, 0.3, {
-                scale: 6
+    if (document.body.contains(serviceLink)) {
+        serviceLinks.forEach(link => {
+            link.addEventListener("mouseover", () => {
+                gsap.to(follow, 0.3, {
+                    scale: 6
+                });
             });
-        });
-        link.addEventListener("mouseout", () => {
-            gsap.to(follow, 0.3, {
-                scale: 1
+            link.addEventListener("mouseout", () => {
+                gsap.to(follow, 0.3, {
+                    scale: 1
+                });
             });
-        });
-    })
+        })
+    }
 
-    projectLinks.forEach(link => {
-        link.addEventListener("mouseover", () => {
-            followerText.innerHTML = "View Project";
-            gsap.to(follow, 0.3, {
-                scale: 10,
-                backgroundColor: '#cd1f40',
-                autoAlpha: .9,
-                mixBlendMode: 'initial'
+    if (document.body.contains(projectLink)) {
+        projectLinks.forEach(link => {
+            link.addEventListener("mouseover", () => {
+                followerText.innerHTML = "View Project";
+                gsap.to(follow, 0.3, {
+                    scale: 10,
+                    backgroundColor: '#cd1f40',
+                    autoAlpha: .9,
+                    mixBlendMode: 'initial'
+                });
+                gsap.to(followerText, 0.3, {
+                    autoAlpha: 1,
+                });
             });
-            gsap.to(followerText, 0.3, {
-                autoAlpha: 1,
+            link.addEventListener("mouseout", () => {
+                gsap.to(follow, 0.3, {
+                    scale: 1,
+                    backgroundColor: '#8bc0c6',
+                    autoAlpha: 1,
+                    mixBlendMode: 'exclusion'
+                });
+                gsap.to(followerText, 0.3, {
+                    autoAlpha: 0,
+                });
             });
-        });
-        link.addEventListener("mouseout", () => {
-            gsap.to(follow, 0.3, {
-                scale: 1,
-                backgroundColor: '#8bc0c6',
-                autoAlpha: 1,
-                mixBlendMode: 'exclusion'
+        })
+    }
+    if (document.body.contains(blogLink)) {
+        blogLinks.forEach(link => {
+            link.addEventListener("mouseover", () => {
+                followerText.innerHTML = "View Post";
+                gsap.to(follow, 0.3, {
+                    scale: 10,
+                    backgroundColor: '#cd1f40',
+                    autoAlpha: .9,
+                    mixBlendMode: 'initial'
+                });
+                gsap.to(followerText, 0.3, {
+                    autoAlpha: 1,
+                });
             });
-            gsap.to(followerText, 0.3, {
-                autoAlpha: 0,
+            link.addEventListener("mouseout", () => {
+                gsap.to(follow, 0.3, {
+                    scale: 1,
+                    backgroundColor: '#8bc0c6',
+                    autoAlpha: 1,
+                    mixBlendMode: 'exclusion'
+                });
+                gsap.to(followerText, 0.3, {
+                    autoAlpha: 0,
+                });
             });
-        });
-    })
-    
-    blogLinks.forEach(link => {
-        link.addEventListener("mouseover", () => {
-            followerText.innerHTML = "View Post";
-            gsap.to(follow, 0.3, {
-                scale: 10,
-                backgroundColor: '#cd1f40',
-                autoAlpha: .9,
-                mixBlendMode: 'initial'
-            });
-            gsap.to(followerText, 0.3, {
-                autoAlpha: 1,
-            });
-        });
-        link.addEventListener("mouseout", () => {
-            gsap.to(follow, 0.3, {
-                scale: 1,
-                backgroundColor: '#8bc0c6',
-                autoAlpha: 1,
-                mixBlendMode: 'exclusion'
-            });
-            gsap.to(followerText, 0.3, {
-                autoAlpha: 0,
-            });
-        });
-    })
+        })
+    }
 
     // function hideCursor() {
     //     cursor.classList.add("cursor-hide");
@@ -242,22 +237,72 @@ function initCursor() {
     // body.addEventListener("mouseleave", hideCursor);
 }
 
-menuButton.addEventListener("click", toggleMobileMenu);
+function initContentFade() {
+    const fadeUp = selectAll(".fade-up");
+    const fadeOut = selectAll(".fade-out");
+
+    gsap.utils.toArray(fadeUp).forEach((fade) => {
+        gsap.from(fade, {
+            opacity: 0,
+            y: 20,
+            duration: .5,
+            ease: 'Power2.in',
+            scrollTrigger: {
+                trigger: fade,
+                start: "top bottom-=50",
+                toggleActions: "play none none reverse",
+            }
+        })
+    });
+    gsap.utils.toArray(fadeOut).forEach((fade) => {
+        gsap.to(fade, {
+            opacity: 0,
+            duration: .5,
+            ease: 'Power2.in',
+            scrollTrigger: {
+                trigger: fade,
+                start: "bottom-=50 top+=200",
+                scrub: true,
+                markers: true,
+            }
+        })
+    });
+}
 
 function initVideo() {
-    //initialise 2 videos — 
-    //“small” is 960 pixels wide (), large is 1920 pixels wide ()
-    const mobileVideo="/video/Insight-Background-Video-Mobile.mp4";
-    const desktopVideo = "/video/Insight-Background-Video.mp4";
+    const home = window.location.pathname;
+    if(home === "/"){
+        //initialise 2 videos —
+        //“small” is 960 pixels wide (), large is 1920 pixels wide ()
+        const mobileVideo="/video/Insight-Background-Video-Mobile.mp4";
+        const desktopVideo = "/video/Insight-Background-Video.mp4";
 
-    if (width<992){
-        const sourceTag = "\<source src=\"" +mobileVideo +"\"/\>";
-        document.getElementById('hero-video__video').innerHTML = sourceTag;
+        if (width<992){
+            const sourceTag = "\<source src=\"" +mobileVideo +"\"/\>";
+            document.getElementById('hero-video__video').innerHTML = sourceTag;
+            document.getElementById('hero-video__video').play();
+            }
+        else {
+            const sourceTag = "\<source src=\"" +desktopVideo +"\"/\>";
+            document.getElementById('hero-video__video').innerHTML = sourceTag;
+            document.getElementById('hero-video__video').play();
         }
-    else {
-        const sourceTag = "\<source src=\"" +desktopVideo +"\"/\>";
-        document.getElementById('hero-video__video').innerHTML = sourceTag;
     }
+}
+
+function initSocial() {
+    gsap.to(social, {
+        opacity: 1,
+        y: 0,
+        duration: .3,
+        ease: 'power2.out',
+        scrollTrigger: {
+            trigger: siteHeader, 
+            start: "500px top",
+            scrub: true,
+            markers: true
+        }
+    });
 }
 
 function initSwiper() {
@@ -270,7 +315,7 @@ function initSwiper() {
           el: '.swiper-pagination',
           dynamicBullets: true,
         },
-      
+
         // Navigation arrows
         navigation: {
           nextEl: '.swiper-button-next',
@@ -280,17 +325,35 @@ function initSwiper() {
 }
 
 function toggleMobileMenu() {
-    menu.classList.toggle("nav-open");
-    hamburger.classList.toggle("is-active");
+    if(menu.classList.contains("nav-open")) {
+        this.setAttribute("aria-expanded", "false");
+        this.setAttribute("aria-label", "open mobile menu");
+        menu.classList.remove("nav-open");
+        hamburger.classList.remove("is-active");
+    } else {
+        menu.classList.add("nav-open");
+        hamburger.classList.add("is-active");
+        this.setAttribute("aria-expanded","true");
+        this.setAttribute("aria-label","close mobile menu");
+    }
 }
 
 function fadeNavigation() {
-    gsap.from(primaryNav, {
-        opacity: 0,
-        y: -150,
-        duration: 1,
-        ease: 'Power2.in'
+    // gsap.from(primaryNav, {
+    //     opacity: 0,
+    //     y: -150,
+    //     duration: 1,
+    //     ease: 'Power2.in'
+    // });
+    let tl = gsap.timeline({
+        defaults: {
+            autoAlpha: 1,
+            ease: "none",
+            stagger: 0.1,
+        }
     });
+    tl.to(logo, { duration: 1 });
+    tl.to(menuItems, { duration: 0.7, x: 5 });
 }
 
 fadeNavigation();
@@ -310,139 +373,145 @@ function initImageParallax() {
         });
     });
 }
-
-function initSmoothScroll() {
-    document.body.style.height = `${container.clientHeight}px`;
-
-    let height; 
-    function setHeight() {
-        height = container.clientHeight;
-        document.body.style.height = `${height}px`
+function initFooter() {
+    // add padding to our scroll container to account for the fixed footer spacing
+    const footerHeight = footer.offsetHeight;
+    const scrollContainer = select('.scroll-content');
+    const home = window.location.pathname;
+    if(home === "/"){ 
+        scrollContainer.style.paddingBottom = "calc(" + footerHeight + "px" + " + 100px )";
+    } else {
+        scrollContainer.style.paddingBottom = footerHeight + "px";
     }
-    ScrollTrigger.addEventListener('refreshInit', setHeight);
-
-    gsap.to(container, {
-        y: () => -(height - document.documentElement.clientHeight),
+    // animate footer opacity and add a slight parallax movement
+    gsap.to(footer,{
+        y: 0,
+        opacity: 1,
+        duration: 1,
         ease: 'none',
         scrollTrigger: {
-            trigger: document.body,
-            start: 'top top', 
-            end: 'bottom bottom', 
+            trigger: '.site-main',
+            start: "bottom bottom",
+            end: "bottom 80%",
             scrub: 1,
-            invalidateOnRefresh: true
         }
     });
-
-    // var html = document.documentElement;
-
-    // var scroller = {
-    // target: document.querySelector("#scroll-container"),
-    // ease: 0.05, // <= scroll speed
-    // endY: 0,
-    // y: 0,
-    // resizeRequest: 1,
-    // scrollRequest: 0,
-    // };
-
-    // var requestId = null;
-
-    // TweenLite.set(scroller.target, {
-    // rotation: 0.01,
-    // force3D: true
-    // });
-
-    // window.addEventListener("load", onLoad);
-
-    // function onLoad() {    
-    // updateScroller();  
-    // window.focus();
-    // window.addEventListener("resize", onResize);
-    // document.addEventListener("scroll", onScroll); 
-    // }
-
-    // function updateScroller() {
-    
-    // var resized = scroller.resizeRequest > 0;
-        
-    // if (resized) {    
-    //     var height = scroller.target.clientHeight;
-    //     body.style.height = height + "px";
-    //     scroller.resizeRequest = 0;
-    // }
-        
-    // var scrollY = window.pageYOffset || html.scrollTop || body.scrollTop || 0;
-
-    // scroller.endY = scrollY;
-    // scroller.y += (scrollY - scroller.y) * scroller.ease;
-
-    // if (Math.abs(scrollY - scroller.y) < 0.05 || resized) {
-    //     scroller.y = scrollY;
-    //     scroller.scrollRequest = 0;
-    // }
-    
-    // TweenLite.set(scroller.target, { 
-    //     y: -scroller.y 
-    // });
-    
-    // requestId = scroller.scrollRequest > 0 ? requestAnimationFrame(updateScroller) : null;
-    // }
-
-    // function onScroll() {
-    // scroller.scrollRequest++;
-    // if (!requestId) {
-    //     requestId = requestAnimationFrame(updateScroller);
-    // }
-    // }
-
-    // function onResize() {
-    // scroller.resizeRequest++;
-    // if (!requestId) {
-    //     requestId = requestAnimationFrame(updateScroller);
-    // }
-    // }
 }
+function resetFooter() {
+    footer.style.opacity = "0";
+    footer.style.transform = "translate(0px, 100px)";
+}
+// function initAnimateEmphasis() {
+//     gsap.utils.toArray('.emphasis-red__inner').forEach(emphasis => {
+//         gsap.to(emphasis, {
+//             x: 0,
+//             duration: .7,
+//             scrollTrigger: {
+//                 trigger: emphasis, 
+//                 start: 'top bottom',
+//                 toggleActions: "play none none reverse"
+//             }
+//         });
+//     });
+
+//     gsap.utils.toArray('.emphasis-underline__line').forEach(underline => {
+//         gsap.to(underline, {
+//             x: 0,
+//             duration: 1, // seconds
+//             delay: .7,
+//             scrollTrigger: {
+//                 trigger: underline,
+//                 start: 'top bottom',
+//                 toggleActions: 'play none none reverse',
+//             }
+//         });
+//     });
+// }
+// function initImageZoom() {
+//     gsap.utils.toArray('.with-parallax').forEach(section => {
+//         const image = section.querySelector('img');
+
+//         gsap.from(image, {
+//             scale: 1.2,
+//             ease: 'none',
+//             scrollTrigger: {
+//                 trigger: section,
+//                 start: 'top bottom',
+//                 end: 'top 80%',
+//                 scrub: 1,
+//                 markers: true,
+//             }
+//         });
+//     });
+// }
 
 function initSmoothScrollbar() {
     if (width>992){
+
         // Scrollbar.init(document.querySelector('#viewport'));
+        bodyScrollBar = Scrollbar.init(select('#viewport'), {damping: 0.05});
 
-    bodyScrollBar = Scrollbar.init(select('#viewport'), {damping: 0.05});
+        // scrollContent.style.transform = "translate3d(0, 0, 0)";
 
-    // remove horizontal scrollbar
-    bodyScrollBar.track.xAxis.element.remove();
+        // remove horizontal scrollbar
+        bodyScrollBar.track.xAxis.element.remove();
 
-    // keep ScrollTrigger in sync with Smooth Scrollbar
-    ScrollTrigger.scrollerProxy(document.body, {
-        scrollTop(value) {
-            if (arguments.length) {
-                bodyScrollBar.scrollTop = value; // setter
+        // keep ScrollTrigger in sync with Smooth Scrollbar
+        ScrollTrigger.scrollerProxy(document.body, {
+            scrollTop(value) {
+                if (arguments.length) {
+                    bodyScrollBar.scrollTop = value; // setter
+                }
+                return bodyScrollBar.scrollTop;    // getter
+            },
+            getBoundingClientRect() {
+            return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
             }
-            return bodyScrollBar.scrollTop;    // getter
-        },
-        getBoundingClientRect() {
-          return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
-        }
-    });
-    
-    // when the smooth scroller updates, tell ScrollTrigger to update() too: 
-    bodyScrollBar.addListener(ScrollTrigger.update);
-    bodyScrollBar.addListener(function(status) {
-        var offset = status.offset;
-       
-       siteHeader.style.top = offset.y + 'px';
-       siteHeader.style.left = offset.x + 'px';
-     });
-    scroller.focus();
+        });
+
+        // when the smooth scroller updates, tell ScrollTrigger to update() too:
+        bodyScrollBar.addListener(ScrollTrigger.update);
+        // bodyScrollBar.addListener(function(status) {
+        //     var offset = status.offset;
+
+        // siteHeader.style.top = offset.y + 'px';
+        // siteHeader.style.left = offset.x + 'px';
+        // });
+        // bodyScrollBar.addListener(({ offset }) => {  
+        //     footer.style.top = offset.y + 'px';
+        // });
+        scroller.focus();
     }
 }
 
-function pageInit() {
-    initSmoothScrollbar();
-    // initSmoothScroll();
-    initCursor();
-    animateNav();
-    initImageParallax();
-    initSwiper();
+function destroySmoothScrollbar() {
+    bodyScrollBar.destroy();
+}
+
+function killScrollTriggers() {
+    let triggers = ScrollTrigger.getAll();
+    triggers.forEach( trigger => {
+        trigger.kill();
+    });
+}
+
+function initPreloader() {
+    const preloader = select(".preloader");
+    const preloaderInner = select(".preloader__inner-content-wrapper");
+    const preloaderContent = select(".preloader__inner-content");
+    console.log('preloader out');
+    const tl = gsap.timeline({
+        defaults: {
+            delay: 1
+        }
+    });
+    tl.to(preloaderInner, {
+        y: 0,
+    });
+    tl.to(preloader, {
+        scale: 0,
+        duration: 0.1,
+    });
 }
 
 function pageTransitionIn() {
@@ -450,13 +519,15 @@ function pageTransitionIn() {
     // return gsap.to('.transition', {duration: 1, yPercent: -100, ease: 'power1.inOut'});
     const tl = gsap.timeline({
         defaults: {
-            duration: 1.3,
+            duration: .7,
             ease: 'power1.inOut'
-        },
-        onComplete: () => pageInit()
+        }
     });
-    tl.to('.transition', {
-        yPercent: -100
+    tl.to(scroller, {
+        opacity: 0,
+    });
+    tl.to(footer, {
+        opacity: 0,
     });
     return tl;
 }
@@ -466,15 +537,31 @@ function pageTransitionOut() {
     // return gsap.to('.transition', {duration: 1, yPercent: 0, ease: 'power1.inOut'});
     const tl = gsap.timeline({
         defaults: {
-            duration: 1.3,
+            duration: .7,
             ease: 'power1.inOut'
         },
-        onComplete: () => pageInit()
+        onComplete: () => initPage()
     });
-    tl.to('.transition', {
-        yPercent: 0
+    tl.to(scroller, {
+        opacity: 1,
     });
     return tl;
+}
+
+function initPage() {
+    killScrollTriggers();
+    initSmoothScrollbar();
+    initAnimatedNav();
+    initVideo();
+    initCursor();
+    initSocial();
+    initContentFade();
+    initImageParallax();
+    // initImageZoom();
+    initSwiper();
+    // initAnimateEmphasis();
+    initFooter();
+    resetFooter();
 }
 
 function initPageTransitions() {
@@ -482,35 +569,40 @@ function initPageTransitions() {
     // do something before the transition starts
     barba.hooks.before(() => {
         select('html').classList.add('is-transitioning');
+        destroySmoothScrollbar();
+        resetCursor();
+        // killScrollTriggers();
     });
     // do something after the transition finishes
     barba.hooks.after(() => {
         select('html').classList.remove('is-transitioning');
+        updateMenu();
     });
 
-    // scroll to the top of the page
-    barba.hooks.enter(() => {
-        window.scrollTo(0, 0);
+     // scroll to the top of the page
+     barba.hooks.enter(() => {
+        initSmoothScrollbar();
+        bodyScrollBar.setPosition(0, 0);
     });
 
     barba.init({
         transitions: [{
             once() {
                 // do something once on the initial page load
-                pageInit();
-                initVideo();
+                initPage();
             },
-            async leave() {
+            async leave({current}) {
                 // animate loading screen in
-                await pageTransitionIn();
+                await pageTransitionIn(current);
             },
-            enter() {
+            enter({next}) {
                 // animate loading screen away
-                pageTransitionOut();
+                pageTransitionOut(next);
             }
 
         }]
     });
 }
 
+// initPreloader();
 initPageTransitions();

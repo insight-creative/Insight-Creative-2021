@@ -12,7 +12,7 @@ a {
 .secondary-link {
   text-decoration: none;
   position: relative;
-  color: $darkOrange;
+  color: $primaryColor;
   display: inline-block;
 }
 .primary-link:after,
@@ -28,7 +28,21 @@ a {
 }
 .secondary-link:after {
   content: "";
-  background-color: $darkOrange;
+  background-color: $primaryColor;
+}
+.possible-link-idea {
+  text-decoration: none;
+  background-image: linear-gradient(
+      90deg,
+      rgb(139, 192, 198),
+      rgb(139, 192, 198)
+    ),
+    linear-gradient(90deg, rgb(139, 192, 198), rgb(139, 192, 198));
+  background-size: 20px 4px, 0% 4px;
+  background-repeat: no-repeat;
+  background-position-x: calc(20px * -1), 0;
+  background-position-y: 100%;
+  transition: background-position-x 0.5s;
 }
 .primary-link,
 .secondary-link {

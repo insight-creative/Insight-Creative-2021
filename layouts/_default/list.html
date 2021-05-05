@@ -3,7 +3,7 @@
 {{ partial "services" . }}
 {{ end }}
 {{ if eq .Title "Blog" }}
-<div class="container mw7 center" data-scroll-section>
+<div class="container mw7 center">
   <ul class="flex-ns flex-wrap mhn1-ns pa3">
       {{ $paginator := .Paginate (.Data.Pages) }}
       {{ range $paginator.Pages }}

@@ -1,8 +1,8 @@
-<footer class="footer" data-scroll-section role="contentinfo">
+<footer class="footer" role="contentinfo">
   <div class="container-wide flex flex-column flex-row-m padding-top-5 padding-bottom-5">
     <div class="footer__contact w-100 w-20-m flex flex-column">
       <a class="brand-logo" href="{{ site.BaseURL }}">
-        <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" class="img-responsive dim" />
+        <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" class="img-responsive dim" width="200" height="70">
       </a>
       <a href="#">{{ site.Params.addressSt }}<br>{{ site.Params.addressCity }}</a>
       <a href="tel:{{ site.Params.phone }}">{{ site.Params.phone }}</a>
@@ -10,7 +10,7 @@
     <div class="footer__menu-wrapper flex flex-row w-100 w-50-m">
       <div class="footer__menu w-50 w-25-m flex flex-column">
         <nav class="footer__menu-nav" role="navigation" aria-label="Footer Navigation">
-          <h5>Menu</h5>
+          <h4 class="g5">Menu</h4>
           {{ with .Site.Menus.main }}
           <ul class="footer__nav-list">
             {{ range . }}
@@ -25,7 +25,7 @@
       </div>
       <div class="footer__services w-50 w-25-m flex flex-column">
         <nav class="footer__services-nav" role="navigation" aria-label="Services Navigation">
-          <h5>Services</h5>
+          <h4 class="g5">Services</h4>
           <ul class="footer__nav-list">
             <li class="footer__nav-list-item">
               <a class="footer__nav-item" href="#" aria-label=""
@@ -56,7 +56,7 @@
       </div>
     </div>
     <div class="footer__newsletter w-100 w-30-m flex flex-column">
-      <h5>Sign up for our newsletter</h5>
+      <h4 class="g5">Sign up for our newsletter</h4>
     </div>
   </div>
   <div class="footer__copyright container-wide padding-top-2 padding-bottom-2">

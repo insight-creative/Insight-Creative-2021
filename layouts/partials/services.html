@@ -1,5 +1,5 @@
-<div class="service-list padding-top-10 padding-bottom-10" data-scroll-section>
-    <div class="container">
+<div class="service-list padding-top-10 padding-bottom-10">
+    <div class="container fade-up">
       <div class="service-list__intro">
         <h3>{{ .Params.Services.Subhead | markdownify }}</h3>
         <p class="g5">
@@ -7,7 +7,7 @@
         </p>
       </div>
     </div>
-    <div class="container-wide">
+    <div class="container-wide fade-up">
       <div class="service-list__grid">
         {{ range .Site.Data.services }}
         <a href="/services/{{ lower .name }}" class="service-list__link">

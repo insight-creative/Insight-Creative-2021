@@ -5,7 +5,7 @@
   <nav class="nav primary-nav container-wide" role="navigation" aria-label="Primary Navigation">
     <div class="logo-wrapper">
       <a class="brand-logo" href="{{ site.BaseURL }}">
-        <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" class="img-responsive dim" />
+        <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" class="img-responsive dim" width="200" height="70">
       </a>
     </div>
     <div class="menu-button-wrap" aria-label="mobile menu toggle button" tabindex="0">
@@ -16,15 +16,14 @@
         </span>
       </button>
     </div>
-    {{ with .Site.Menus.main }}
-  <ul class="nav-list">
-			{{ range . }}
+    {{ $currentPage := . }}
+    <ul class="nav-list">
+			{{ range .Site.Menus.main }}
       <li class="nav-list-item">
-        <a class="nav-item" class="nav-item" href="{{ .URL | absURL }}" aria-label="{{ .Name }}"
+        <a href="{{ .URL }}" {{ if $currentPage.IsMenuCurrent "main" . }} class="nav-item current" {{ else }} class="nav-item" {{ end }} aria-label="{{ .Name }}"
           title="{{ .Name }}"><span>{{ .Name }}</span></a>
       </li>
 			{{ end }}
-			</ul>
-	{{ end }}
+    </ul>
   </nav>
 </header>

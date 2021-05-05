@@ -12,9 +12,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  overflow: hidden;
+  // overflow: hidden;
 }
 .brand-logo {
+  opacity: 0;
   img {
     width: 200px;
     @include breakpoint(sm) {
@@ -56,11 +57,8 @@
   text-decoration: none;
   color: $lightGrey;
   padding: 1.2rem 5rem;
-  font-weight: 400;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.015em;
-  white-space: nowrap;
+  opacity: 0;
+  transform: translateX(-5px);
   @include breakpoint(md) {
     padding: 2rem 2.5rem;
   }
@@ -71,17 +69,18 @@
   &:before {
     background: $primaryColor;
     height: 100%;
-    width: 5px;
+    width: 2px;
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
     content: "";
     opacity: 1;
     @include breakpoint(md) {
-      height: 25px;
-      width: 100%;
-      top: -10px;
+      height: 2px;
+      width: 50%;
+      bottom: 20px;
+      transform: translateX(50%);
     }
   }
 }
@@ -132,45 +131,5 @@
   align-items: center;
   @include breakpoint(md) {
     display: none;
-  }
-}
-.mobile-menu-wrapper {
-  transform: translateY(-100%);
-  @include breakpoint(md) {
-    display: none;
-  }
-}
-.collapse {
-  @include breakpoint(md) {
-    animation: collapse 0.5s ease forwards;
-  }
-}
-
-// Open nav bar on scroll up
-.expand {
-  @include breakpoint(md) {
-    animation: expand 0.5s ease forwards;
-  }
-}
-
-@keyframes collapse {
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  to {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-}
-
-@keyframes expand {
-  from {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }

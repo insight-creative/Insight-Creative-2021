@@ -1,6 +1,6 @@
-<a href="{{ .RelPermalink }}" class="blog-card">
+<a href="{{ .RelPermalink }}" class="blog-card fade-up">
     <div class="blog-card__image-wrapper with-parallax">
-        <img src="{{ .Permalink }}{{ .Params.image }}" alt="{{ .Params.image_alt }}" class="blog-card__image">
+        <img src="{{ .Permalink }}{{ .Params.image }}" alt="{{ .Params.image_alt }}" class="blog-card__image" width="500" height="350">
     </div>
-    <h5 class="blog-card__title">{{ .Title }}</h5>
+    <h4 class="g5 blog-card__title">{{ .Title }}</h4>
 </a>
