@@ -7,6 +7,9 @@
     @include breakpoint(lg) {
       padding: 3rem 7rem;
     }
+    @include breakpoint(xl) {
+      padding: 5rem 10rem;
+    }
   }
   &__underline {
     width: 100%;

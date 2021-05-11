@@ -9,7 +9,7 @@ back-color: d31145
 image: "streaming-tv-2500.jpg"
 image_alt: Close up of remote with TV in the background
 tag: blog
-department: ["Media"]
+page_class: single-post
 ---
 
 ![Close up of remote with TV in the background](streaming-tv-2500.jpg)

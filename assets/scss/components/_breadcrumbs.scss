@@ -64,3 +64,17 @@
     transition: 0.3s ease;
   }
 }
+.single-post {
+  .breadcrumbs {
+    li:nth-of-type(2) {
+      .breadcrumbs__link {
+        &:after {
+          display: none;
+        }
+      }
+    }
+    &__list-item:last-child {
+      display: none;
+    }
+  }
+}
