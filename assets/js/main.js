@@ -29,6 +29,8 @@ const width = screen.width;
 const footer = select('.footer');
 const scrollContainer = select('.scroll-content');
 const social = select(".social");
+const breadcrumbs = select(".breadcrumbs__inner");
+const breadcrumbsProgressBar = select(".breadcrumbs__progress-bar-inner");
 
 hamburger.addEventListener("click", toggleMobileMenu);
 
@@ -57,16 +59,16 @@ function initAnimatedNav() {
     });
 }
 
-// function initProgress() {
-//     gsap.to('progress', {
-//         value: 100,
-//         scrollTrigger: {
-//             scrub: 0.3,
-//             horizontal: true,
-//             scroller: scrollbar
-//         }
-//     });
-// }
+function initProgress() {
+    gsap.to(breadcrumbsProgressBar, {
+        scale: 1,
+        scrollTrigger: {
+            scrub: 0.3,
+            horizontal: true,
+            scroller: scrollContainer
+        }
+    });
+}
 
 // function initCursor() {
 //     function updateCursor(e) {
@@ -110,6 +112,7 @@ function initAnimatedNav() {
 // }
 
 function resetCursor() {
+    follow.style.transform = "scale(1)";
     gsap.to(follow, 0.3, {
         scale: 1,
         backgroundColor: '#8bc0c6',
@@ -290,6 +293,31 @@ function initVideo() {
     }
 }
 
+function initBreadcrumbs() {
+    const breadcrumbs = select(".breadcrumbs__inner");
+    const breadcrumbsProgressBar = select(".breadcrumbs__progress-bar-inner");
+    gsap.to(breadcrumbs, {
+        opacity: 1,
+        x: 0,
+        duration: .3,
+        ease: 'power2.out',
+        scrollTrigger: {
+            trigger: siteHeader, 
+            start: "400px top",
+            scrub: true,
+        }
+    });
+    gsap.to(breadcrumbsProgressBar, {
+        scaleX: 1,
+        scrollTrigger: {
+            trigger: ".site-main", 
+            start: 'top top',
+            end: 'bottom bottom',
+            scrub: true
+        }
+    });
+}
+
 function initSocial() {
     gsap.to(social, {
         opacity: 1,
@@ -298,9 +326,8 @@ function initSocial() {
         ease: 'power2.out',
         scrollTrigger: {
             trigger: siteHeader, 
-            start: "500px top",
+            start: "400px top",
             scrub: true,
-            markers: true
         }
     });
 }
@@ -375,32 +402,46 @@ function initImageParallax() {
 }
 function initFooter() {
     // add padding to our scroll container to account for the fixed footer spacing
-    const footerHeight = footer.offsetHeight;
-    const scrollContainer = select('.scroll-content');
-    const home = window.location.pathname;
-    if(home === "/"){ 
-        scrollContainer.style.paddingBottom = "calc(" + footerHeight + "px" + " + 100px )";
-    } else {
-        scrollContainer.style.paddingBottom = footerHeight + "px";
-    }
+    // const home = window.location.pathname;
+    // const footerHeight = footer.offsetHeight;
+    // const scrollContainer = select('.scroll-content');
+    // if(home === "/"){ 
+    //     scrollContainer.style.paddingBottom = "calc(" + footerHeight + "px" + " + 100px )";
+    // } else {
+    //     scrollContainer.style.paddingBottom = footerHeight + "px";
+    // }
     // animate footer opacity and add a slight parallax movement
-    gsap.to(footer,{
-        y: 0,
-        opacity: 1,
-        duration: 1,
-        ease: 'none',
-        scrollTrigger: {
-            trigger: '.site-main',
-            start: "bottom bottom",
-            end: "bottom 80%",
-            scrub: 1,
-        }
+    // gsap.to(footer,{
+    //     y: 0,
+    //     opacity: 1,
+    //     ease: 'power4.out',
+    //     scrollTrigger: {
+    //         trigger: '.site-main',
+    //         start: "bottom bottom",
+    //         end: "bottom 80%",
+    //         scrub: 1,
+    //     }
+    // });
+    gsap.set('.footer__container', { yPercent: -25 })
+
+    const uncover = gsap.timeline({ paused:true })
+
+    uncover
+    .to('.footer__container', { opacity: 1, yPercent: 0, ease: 'none' })
+    ;
+
+    ScrollTrigger.create({  
+    trigger: '.site-main',
+    start: 'bottom bottom',
+    end: 'bottom 70%',
+    animation: uncover,
+    scrub: true,  
     });
 }
-function resetFooter() {
-    footer.style.opacity = "0";
-    footer.style.transform = "translate(0px, 100px)";
-}
+// function resetFooter() {
+//     footer.style.opacity = "0";
+//     footer.style.transform = "translate(0px, 100px)";
+// }
 // function initAnimateEmphasis() {
 //     gsap.utils.toArray('.emphasis-red__inner').forEach(emphasis => {
 //         gsap.to(emphasis, {
@@ -446,10 +487,11 @@ function resetFooter() {
 // }
 
 function initSmoothScrollbar() {
+    const breadcrumbs = select(".breadcrumbs");
     if (width>992){
 
         // Scrollbar.init(document.querySelector('#viewport'));
-        bodyScrollBar = Scrollbar.init(select('#viewport'), {damping: 0.05});
+        bodyScrollBar = Scrollbar.init(select('#viewport'), {damping: 0.04});
 
         // scrollContent.style.transform = "translate3d(0, 0, 0)";
 
@@ -470,16 +512,15 @@ function initSmoothScrollbar() {
         });
 
         // when the smooth scroller updates, tell ScrollTrigger to update() too:
-        bodyScrollBar.addListener(ScrollTrigger.update);
+        // bodyScrollBar.addListener(ScrollTrigger.update);
         // bodyScrollBar.addListener(function(status) {
-        //     var offset = status.offset;
+        // var offset = status.offset;
 
-        // siteHeader.style.top = offset.y + 'px';
-        // siteHeader.style.left = offset.x + 'px';
+        // breadcrumbs.style.top = offset.y + 'px';
         // });
-        // bodyScrollBar.addListener(({ offset }) => {  
-        //     footer.style.top = offset.y + 'px';
-        // });
+        bodyScrollBar.addListener(({ offset }) => {  
+            breadcrumbs.style.top = "calc(" + offset.y + 'px' + " + 82.75vh )";
+        });
         scroller.focus();
     }
 }
@@ -526,9 +567,9 @@ function pageTransitionIn() {
     tl.to(scroller, {
         opacity: 0,
     });
-    tl.to(footer, {
-        opacity: 0,
-    });
+    // tl.to(footer, {
+    //     opacity: 0,
+    // });
     return tl;
 }
 
@@ -554,6 +595,7 @@ function initPage() {
     initAnimatedNav();
     initVideo();
     initCursor();
+    initBreadcrumbs();
     initSocial();
     initContentFade();
     initImageParallax();
@@ -561,7 +603,6 @@ function initPage() {
     initSwiper();
     // initAnimateEmphasis();
     initFooter();
-    resetFooter();
 }
 
 function initPageTransitions() {
@@ -570,7 +611,6 @@ function initPageTransitions() {
     barba.hooks.before(() => {
         select('html').classList.add('is-transitioning');
         destroySmoothScrollbar();
-        resetCursor();
         // killScrollTriggers();
     });
     // do something after the transition finishes
@@ -583,6 +623,7 @@ function initPageTransitions() {
      barba.hooks.enter(() => {
         initSmoothScrollbar();
         bodyScrollBar.setPosition(0, 0);
+        resetCursor();
     });
 
     barba.init({

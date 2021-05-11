@@ -2,13 +2,25 @@
   background-color: $darkBlack;
   color: $white;
   font-size: 2rem;
-  position: fixed;
-  bottom: 0;
+  // position: fixed;
+  // bottom: 0;
+  position: relative;
   left: 0;
   right: 0;
   z-index: -1;
-  opacity: 0;
-  transform: translate(0px, 100px);
+  // transform: translateY(-250px);
+  transition: 1s ease-out;
+  // min-height: 608px;
+  height: 927px;
+  overflow: hidden;
+  @include breakpoint(md) {
+    height: 608px;
+  }
+  &__container {
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s ease-out;
+  }
   a {
     text-decoration: none;
   }
@@ -92,6 +104,6 @@
   height: 5px;
   width: 5px;
   margin: 0 10px;
-  background-color: $lightGrey;
+  background-color: $lightGray;
   border-radius: 50%;
 }

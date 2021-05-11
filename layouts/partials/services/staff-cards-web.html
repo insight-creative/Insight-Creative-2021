@@ -1,0 +1,24 @@
+{{ range sort .Site.Data.staff "weight" "asc" }}
+{{ if eq .department "Web" }}
+<a href="#" class="staff-card bg-black">
+    <div class="staff-card__inner text-center">
+            <div class="staff-card__image-wrapper">
+                <img src="{{ .image_jpg }}" alt="headshot of Insight Creative's {{ .job_title }}, {{ .name }}" class="staff-card__image">
+            </div>
+            <h5 class="staff-card__name g3">{{ .name }}</h5>
+            <h6 class="staff-card__job-title text-tertiary shift-up">{{ .job_title }}</h6>
+    </div>
+</a>
+{{ end }}
+{{ if eq .department "Design" }}
+<a href="#" class="staff-card bg-black">
+    <div class="staff-card__inner text-center">
+            <div class="staff-card__image-wrapper">
+                <img src="{{ .image_jpg }}" alt="headshot of Insight Creative's {{ .job_title }}, {{ .name }}" class="staff-card__image">
+            </div>
+            <h5 class="staff-card__name g3">{{ .name }}</h5>
+            <h6 class="staff-card__job-title text-tertiary shift-up">{{ .job_title }}</h6>
+    </div>
+</a>
+{{ end }}
+{{ end }}

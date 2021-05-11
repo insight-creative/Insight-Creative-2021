@@ -1,5 +1,12 @@
 {{ define "main" }}
-    <div class="post-content container">
+    <div class="post-content container padding-bottom-10">
     {{ .Content }}
+    {{ if isset .Params "author" }}
+    <div class="test">Test</div>
+    {{ (index .Site.Data.staff .Params.author).name }}
+    {{ (index .Site.Data.staff .Params.author).job_title }}
+    {{ (index .Site.Data.staff .Params.author).bio }}
+    {{ (index .Site.Data.staff .Params.author).department }}
+    {{ end }}
     </div>
 {{ end }}

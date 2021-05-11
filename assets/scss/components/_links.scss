@@ -1,11 +1,11 @@
 a {
-  color: $lightGrey;
+  color: $lightGray;
   transition: 0.3s ease;
   display: inline-block;
   &:hover,
   &:focus {
-    color: $lightGrey;
-    outline-color: $lightGrey;
+    color: $lightGray;
+    outline-color: $lightGray;
   }
 }
 .primary-link,

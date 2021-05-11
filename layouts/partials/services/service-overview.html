@@ -1,0 +1,38 @@
+<section class="service-overview fade-up">
+    <div class="container padding-top-10">
+        <div class="text-center fade-up">
+            <h3 class="g5 text-secondary shift-up">{{ .Params.service_overview.subhead_small | markdownify }}</h3>
+            <h3>{{ .Params.service_overview.subhead | markdownify }}</h3>
+            <p>
+            {{ .Params.service_overview.description | markdownify }}
+            </p>
+        </div>
+    </div>
+    <div class="container-wide">
+        {{ block "service-cards" . }}{{ partial "services/service-cards" . }}{{ end }}
+    </div>
+    <div class="container department-feed">
+        <h4 class="text-center">Get to know our {{ lower .Title }} department!</h4>
+        <div class="staff-card-wrapper">
+        {{ if eq .Title "Content" }}
+        {{ block "staff-cards-content" . }}{{ partial "services/staff-cards-content" . }}{{ end }}
+        {{ else if eq .Title "Web"}}
+        {{ block "staff-cards-web" . }}{{ partial "services/staff-cards-web" . }}{{ end }}
+        {{ else if eq .Title "Digital"}}
+        {{ block "staff-cards-digital" . }}{{ partial "services/staff-cards-digital" . }}{{ end }}
+        {{ else if eq .Title "Media"}}
+        {{ block "staff-cards-media" . }}{{ partial "services/staff-cards-media" . }}{{ end }}
+        {{ else if eq .Title "Design"}}
+        {{ block "staff-cards-design" . }}{{ partial "services/staff-cards-design" . }}{{ end }}
+        {{ end }}
+        </div>
+        <div class="text-center margin-top-2">
+            <a href="#" class="btn btn-tertiary">Meet the team</a>
+        </div>
+    </div>
+    <div class="container studio-cta padding-top-10">
+        {{ with .Params.service_cta }}
+        <h4>{{ .heading }}</h4>
+        {{ end }}
+    </div>
+</section>

@@ -21,12 +21,14 @@
   </div>
   {{ block "header" . }}{{ partial "header" . }}{{end}}
   <div id="viewport" class="viewport">
-    <main id="main-content" class="site-main {{ .Params.page_class }} {{ anchorize $mainClass }}" role="main" data-barba="container" data-barba-namespace="{{ anchorize $namespace }}">
+    <main id="main-content" class="site-main {{ if .Params.page_class }}{{ .Params.page_class }} {{ end }}{{ anchorize $mainClass }}" role="main" data-barba="container" data-barba-namespace="{{ anchorize $namespace }}">
       {{ block "main" . }}{{ end }}
+      {{ block "breadcrumbs" . }}{{ partial "breadcrumbs" . }}{{ end }}
     </main>
+    {{ block "footer" . }}{{ partial "footer" . }}{{end}}
   </div>
   {{ block "social" . }}{{ partial "social" . }}{{ end }}
-  {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+  
   {{ partial "scripts" . }}
 </body>
 </html>

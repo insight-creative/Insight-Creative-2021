@@ -1,5 +1,11 @@
 .service-intro {
   margin-top: -1px;
+  &__desc {
+    h2 {
+      max-width: 70rem;
+      margin: 0 auto;
+    }
+  }
 }
 .service-list {
   .flex-container {
@@ -62,4 +68,17 @@
     margin-right: -147px;
     margin-bottom: 0;
   }
+}
+.services-hero {
+  .service-hero__icon-title {
+    display: none;
+  }
+}
+.service-list__intro {
+}
+.department-feed {
+  padding-top: 10rem;
+}
+.studio-cta {
+  display: none;
 }

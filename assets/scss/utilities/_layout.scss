@@ -373,6 +373,7 @@
   margin: 0 auto;
   width: auto;
   @include breakpoint(md) {
+    width: 90%;
     max-width: 1000px;
   }
 }

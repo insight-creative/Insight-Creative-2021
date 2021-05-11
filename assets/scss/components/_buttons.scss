@@ -13,7 +13,7 @@
 .btn-tertiary {
   position: relative;
   z-index: 1;
-  color: $lightGrey;
+  color: $lightGray;
   &:before {
     position: absolute;
     content: "";
@@ -40,7 +40,7 @@
 .btn-secondary {
   color: $primaryColor;
   &:before {
-    background-color: $lightGrey;
+    background-color: $lightGray;
   }
 }
 .btn-tertiary {

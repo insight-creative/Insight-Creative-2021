@@ -3,7 +3,7 @@
       <div class="service-list__intro">
         <h3>{{ .Params.Services.Subhead | markdownify }}</h3>
         <p class="g5">
-          {{ .Params.Services.Description }}
+          {{ .Params.Services.Description | markdownify }}
         </p>
       </div>
     </div>

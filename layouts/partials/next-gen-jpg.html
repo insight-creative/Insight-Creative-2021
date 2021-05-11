@@ -1,0 +1,6 @@
+<picture>
+  <source srcset="/images/{{ .image }}.avif" type="image/avif" >
+  <source srcset="/images/{{ .image }}.webp" type="image/webp" >
+  <source srcset="/images/{{ .image }}.jpg" type="image/jpg" > 
+  <img src="/images/{{ .image }}.jpg" alt="{{ .image_alt }}" height="500" width="600" loading="lazy">
+</picture>

@@ -1,0 +1,66 @@
+.breadcrumbs {
+  display: none;
+  @include breakpoint(md) {
+    display: block;
+    position: fixed;
+    left: 2.5rem;
+    transform: rotate(-90deg);
+    transform-origin: left;
+    z-index: 9;
+  }
+  &__inner {
+    opacity: 0;
+    transition: 0.7s ease-out;
+    transform: translateX(-20px);
+  }
+  &__nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__list-item:not(:nth-last-child(2)) {
+    .breadcrumbs__link {
+      &:after {
+        display: none;
+      }
+    }
+  }
+  &__list-item:last-child {
+    pointer-events: none;
+  }
+  &__link {
+    text-decoration: none;
+    padding: 1rem;
+    color: $tertiaryColor;
+    font-size: 1.4rem;
+    position: relative;
+    transition: 0.3s ease;
+    &:hover,
+    &:focus {
+      color: $secondaryColor;
+    }
+    &:after {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      content: "";
+      height: 15px;
+      width: 1px;
+      background: $tertiaryColor;
+    }
+  }
+  &__progress-bar {
+    height: 2px;
+    width: 50px;
+    background: $darkBlack;
+  }
+  &__progress-bar-inner {
+    height: 2px;
+    width: 50px;
+    background: $tertiaryColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.3s ease;
+  }
+}

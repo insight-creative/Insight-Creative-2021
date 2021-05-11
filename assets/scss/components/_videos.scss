@@ -3,9 +3,3 @@ video {
   height: auto;
   display: block;
 }
-.hero-video {
-  margin-top: $mobileHeader;
-  @include breakpoint(md) {
-    margin-top: $desktopHeader;
-  }
-}

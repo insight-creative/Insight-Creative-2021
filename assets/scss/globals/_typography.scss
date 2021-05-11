@@ -7,7 +7,7 @@ input,
 select,
 optgroup,
 textarea {
-  color: $lightGrey;
+  color: $lightGray;
   font-family: $primaryFont;
   font-size: 2rem;
   line-height: 3rem;
@@ -20,8 +20,8 @@ h5,
 h6 {
   font-family: $primaryFont;
   font-weight: 500;
-  color: $lightGrey;
-  line-height: 1.5em;
+  color: $lightGray;
+  line-height: 1.3em;
   margin-top: 0;
   margin-bottom: 2.5rem;
 }
@@ -31,7 +31,10 @@ p {
 /* Font-scale of a major third */
 h1,
 .g1 {
-  font-size: 6.1rem;
+  font-size: 4.1rem;
+  @include breakpoint(sm) {
+    font-size: 6.1rem;
+  }
 }
 h2,
 .g2 {
@@ -78,6 +81,7 @@ h6,
   font-family: $secondaryFont;
   background: $primaryColor;
   padding: 0 1rem;
+  color: $white;
   // overflow: hidden;
   // display: inline-block;
   // position: relative;
@@ -90,7 +94,7 @@ h6,
 }
 .emphasis-white {
   font-family: $secondaryFont;
-  background-color: $lightGrey;
+  background-color: $lightGray;
   color: $primaryColor;
   padding: 0rem 1rem;
 }
@@ -214,4 +218,16 @@ h6,
 }
 .text-white {
   color: $white;
+}
+.text-dark-gray {
+  color: $darkGray;
+}
+.text-primary {
+  color: $primaryColor;
+}
+.text-secondary {
+  color: $secondaryColor;
+}
+.text-tertiary {
+  color: $tertiaryColor;
 }

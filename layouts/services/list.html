@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ block "service-hero" . }}{{ partial "services/service-hero" . }}{{ end }}
 {{ block "services" . }}{{ partial "services" . }}{{ end }}
 {{ block "cta" . }}{{ partial "cta" . }}{{ end }}
 {{ end }}

@@ -19,6 +19,7 @@
 @import "components/cta";
 @import "components/footer";
 @import "components/hero";
+@import "components/service-hero";
 @import "components/testimonials-slider";
 @import "components/featured-posts";
 @import "components/links";
@@ -30,6 +31,9 @@
 @import "components/loader";
 @import "components/scrollbar";
 @import "components/social";
+@import "components/breadcrumbs";
+@import "components/service-cards";
+@import "components/staff-cards";
 
 @import "pages/default";
 @import "pages/home";
@@ -41,3 +45,5 @@
 @import "pages/referral";
 @import "pages/privacy";
 @import "pages/sitemap";
+@import "pages/content";
+@import "pages/studio";

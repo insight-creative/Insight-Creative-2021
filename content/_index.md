@@ -3,6 +3,7 @@ title: Home
 seo:
   title: Advertising Agency in Green Bay, WI
   description: An advertising agency with a vision to bring complete strategic development and creative execution capabilities into one roll-up-your-sleeves, hard-working kind of ad agency.
+  featured_image: "/images/background-images/Insight Services Brand Collage Gray.jpg"
 
 intro: "When it comes to communication, making a connection is paramount. The last thing you need is fluff. That’s why our full-service team of marketing professionals delivers communication with substance. We skip the jargon, buzz words and clichés to focus on what’s truly important. <strong>We believe that clear communication leads to effective communication and effective communication leads to results!</strong>"
 

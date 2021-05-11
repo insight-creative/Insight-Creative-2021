@@ -1,6 +1,15 @@
 ---
 title: Services
-description: null
+seo:
+  title: Advertising Services in Green Bay, WI
+  description: An advertising agency with a vision to bring complete strategic development and creative execution capabilities into one roll-up-your-sleeves, hard-working kind of ad agency.
+  featured_image: "/images/background-images/Insight Services Brand Collage Gray.jpg"
+
+hero_title: 'What you see is <span class="emphasis-red">everything</span> you get.'
+
 services:
-  description: "Insight offers all marketing services—including a large commercial video and photography studio—under one roof. Some may refer to this as “fully integrated” or “omnichannel marketing” but it’s really just … smart. When you partner with Insight, you’ll gain access to a team of dedicated employees working side by side, not a network of freelancers or a revolving door of “creative partners.” You can count on our in-house staff to build comprehensive and effective plans that get results. You can also rely on Insight to be consistent in customer service, creative processes and, most importantly, quality of work. We draw on decades of experience, combined with ever-evolving technology, to create the ultimate media mix. Our single-source process is incredibly streamlined and efficient, providing you with what’s most important: great results!"
+  subhead: '<span class="emphasis-red">Elevate</span> your brand with <span class="emphasis-underline">ultimate efficiency.</span>'
+  description: "<p>Insight offers all marketing services—including a large commercial video and photography studio—under one roof. Some may refer to this as “fully integrated” or “omnichannel marketing” but it’s really just … smart.</p>
+
+  <p>At Insight, you’ll gain access to a full team of dedicated employees working side by side, not a network of freelancers or a revolving door of “creative partners.” Our multi-talented in-house staff consistently delivers quality work with streamlined processes that will save you time, money and unnecessary coordination. Browse our services below to see how our capabilities combine to create communication with substance that leads to results!</p>"
 ---

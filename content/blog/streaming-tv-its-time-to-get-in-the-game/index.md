@@ -2,13 +2,14 @@
 layout: blog
 date: 2021-03-29
 title: "Streaming TV: It’s Time to Get in the Game!"
-author: Molly Setzer
+author: "Molly Setzer"
 description: ""
 text-color: ffffff
 back-color: d31145
 image: "streaming-tv-2500.jpg"
 image_alt: Close up of remote with TV in the background
 tag: blog
+department: ["Media"]
 ---
 
 ![Close up of remote with TV in the background](streaming-tv-2500.jpg)
