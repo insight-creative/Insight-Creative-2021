@@ -5,26 +5,26 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <title>{{ if .Params.seo.title }}{{ .Params.seo.title }}{{ else }}{{ .Title }}{{ end }} | {{ .Site.Title }}</title>
 
-    <meta itemprop="name" content="{{ .Title }}" />
-    <meta itemprop="description" content="{{ .Params.seo.description }}" />
-    <meta itemprop="image" content="{{ .Params.seo.featured_image }}" />
+    <meta itemprop="name" content="{{ if .Params.seo.title }}{{ .Params.seo.title }}{{ else }}{{ .Title }}{{ end }} | {{ .Site.Title }}">
+    <meta itemprop="description" content="{{ .Params.seo.description }}">
+    <meta itemprop="image" content="{{ .Permalink }}{{ .Params.seo.featured_image }}">
 
-    <meta property="og:site_name" content="{{ .Site.Title }}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="{{ .Title }}" />
-    <meta property="og:url" content="{{ .Permalink }}" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:image" content="{{ .Permalink }}{{ .Params.seo.featured_image }}" />
-    <meta property="og:description" content="{{ .Params.seo.description }}" />
-    <meta name="description" content="{{ .Params.seo.description }}" />
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ if .Params.seo.title }}{{ .Params.seo.title }}{{ else }}{{ .Title }}{{ end }} | {{ .Site.Title }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="{{ .Permalink }}{{ .Params.seo.featured_image }}">
+    <meta property="og:description" content="{{ .Params.seo.description }}">
+    <meta name="description" content="{{ .Params.seo.description }}">
 
     <link rel="canonical" href="{{ .Permalink }}">
 
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="{{ .Title }}" />
-    <meta name="twitter:description" content="{{ .Params.seo.description }}" />
-    <meta name="twitter:site" content="@p4lm" />
-    <meta name="twitter:image" content="{{ .Permalink }}{{ .Params.seo.featured_image }}" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ if .Params.seo.title }}{{ .Params.seo.title }}{{ else }}{{ .Title }}{{ end }} | {{ .Site.Title }}">
+    <meta name="twitter:description" content="{{ .Params.seo.description }}">
+    <meta name="twitter:site" content="@p4lm">
+    <meta name="twitter:image" content="{{ .Permalink }}{{ .Params.seo.featured_image }}">
 
     {{ $scss := resources.Get "scss/main.scss" | toCSS }}
     {{ $postcss := $scss | resources.PostCSS | minify }}
