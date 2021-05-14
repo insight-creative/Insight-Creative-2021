@@ -1,0 +1,65 @@
+.blog-card {
+  @include breakpoint(md) {
+    width: 50%;
+  }
+  a {
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      .staff-card__image {
+        filter: grayscale(0);
+      }
+    }
+  }
+  &__image-wrapper {
+    margin-bottom: 1rem;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+    height: 300px;
+  }
+  &__image {
+    border-radius: $radius;
+    height: 120%;
+    position: relative;
+    top: -20%;
+    left: 0;
+    object-fit: cover;
+    object-position: center;
+  }
+  &__meta {
+    position: relative;
+    top: -65px;
+  }
+  &__meta-inner {
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+  &__staff-image-wrapper {
+    position: relative;
+    margin-bottom: 1.5rem;
+    background: $white;
+    border-radius: 50%;
+    &:after {
+      position: absolute;
+      content: "";
+      top: -4px;
+      left: 4px;
+      height: 102%;
+      width: 102%;
+      border: 2px solid $secondaryColor;
+      border-radius: 50%;
+    }
+  }
+  &__staff-image {
+    max-width: 100px;
+    border-radius: 50%;
+    filter: grayscale(1);
+    transition: 0.3s ease-out;
+  }
+  &__title {
+    font-weight: 700;
+    transition: 0.3s ease;
+  }
+}

@@ -9,6 +9,7 @@ back-color: "d31145"
 image: Creativity-Hero-2500.jpg
 image_alt: adding creativity to your routine with colored pencils underneath
 tag: blog
+page_class: single-post
 ---
 
 ![adding creativity to your routine with colored pencils underneath](Creativity-Hero-2500.jpg)

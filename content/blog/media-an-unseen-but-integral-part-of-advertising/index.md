@@ -2,13 +2,14 @@
 layout: blog
 title: "Media: An Unseen, but Integral, Part of Advertising"
 date: 2020-10-30
-author: Andy VanRemortel
+author: Insight Creative
 description: ""
 text-color: "ffffff"
 back-color: "d31145"
 image: analytics-dashboard-on-laptop.jpg
 image_alt: laptop sitting on desk with analytics dashboard on display
 tag: blog
+page_class: single-post
 ---
 
 ![laptop sitting on desk with analytics dashboard on display](analytics-dashboard-on-laptop.jpg)

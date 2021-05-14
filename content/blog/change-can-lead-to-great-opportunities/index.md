@@ -7,6 +7,7 @@ description: "COVID-19 has taught us innovation and adaptability lead to success
 image: change-is-necessary.jpg
 image_alt: Change can Lead to Great Opportunities
 tag: blog
+page_class: single-post
 ---
 
 ![Change can Lead to Great Opportunities](change-is-necessary.jpg)

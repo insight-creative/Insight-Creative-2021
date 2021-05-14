@@ -9,6 +9,7 @@ back-color: "d31145"
 image: how-to-pivot-your-marketing-plan-during-covid-19-2400.jpg
 image_alt: Empty shelves at store during COVID-19
 tag: blog
+page_class: single-post
 ---
 
 ![Empty shelves at store during COVID-19](how-to-pivot-your-marketing-plan-during-covid-19-2400.jpg)

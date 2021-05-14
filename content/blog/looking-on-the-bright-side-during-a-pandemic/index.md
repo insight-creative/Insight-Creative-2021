@@ -9,6 +9,7 @@ back-color: "d31145"
 image: looking-on-the-bright-side-2400.jpg
 image_alt: Looking at the bright side during COVID-19
 tag: blog
+page_class: single-post
 ---
 
 ![Looking at the bright side during COVID-19](looking-on-the-bright-side-2400.jpg)

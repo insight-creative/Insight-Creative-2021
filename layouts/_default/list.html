@@ -1,16 +1,11 @@
 {{ define "main" }}
-{{ if eq .Title "Services" }}
-{{ partial "services" . }}
-{{ end }}
-{{ if eq .Title "Blog" }}
-<div class="container mw7 center">
-  <ul class="flex-ns flex-wrap mhn1-ns pa3">
-      {{ $paginator := .Paginate (.Data.Pages) }}
-      {{ range $paginator.Pages }}
-      {{ .Render "blog-cards" }}
-      {{ end }}
-  </ul>
-  {{ partial "pagination" . }}
+<div class="container padding-top-10">
+  <h1>{{ .Title }}</h1>
 </div>
-{{ end }}
+<div class="post-wrapper container padding-top-10 padding-bottom-10">
+  {{ $paginator := .Paginate ( where .Data.Pages "Type" "blog" ) }}
+  {{ range $paginator.Pages }}
+  {{ .Render "blog-cards" }}
+  {{ end }}
+</div>
 {{ end }}

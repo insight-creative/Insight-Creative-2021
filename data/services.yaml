@@ -7,7 +7,7 @@ Service 2:
   name: Web
   subservice1: Design
   subservice2: Development
-  subservice3: eCommerce
+  subservice3: Maintenance
 Service 3:
   name: Digital
   subservice1: Media Buying
@@ -21,8 +21,8 @@ Service 4:
 Service 5:
   name: Design
   subservice1: Branding
-  subservice2: Illustration
-  subservice3: Packaging
+  subservice2: Digital
+  subservice3: Print
 Service 6:
   name: Studio
   subservice1: Photography

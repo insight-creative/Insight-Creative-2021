@@ -1,0 +1,29 @@
+.author {
+  &__image-wrapper {
+    position: relative;
+    margin-bottom: 1.5rem;
+    background: $white;
+    border-radius: 50%;
+    max-width: 250px;
+    margin: 0 auto;
+    &:after {
+      position: absolute;
+      content: "";
+      top: -7px;
+      left: 7px;
+      height: 102%;
+      width: 102%;
+      border: 5px solid $secondaryColor;
+      border-radius: 50%;
+    }
+  }
+  &__image {
+    border-radius: 50%;
+    filter: grayscale(1);
+    transition: 0.3s ease-out;
+  }
+  &__name {
+    font-family: "Friday Vibes";
+    margin-bottom: 1.5rem;
+  }
+}

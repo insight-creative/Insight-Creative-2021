@@ -9,6 +9,7 @@ back-color: "d31145"
 image: how-to-effectively-work-from-home-2500.jpg
 image_alt: How to Effectively Work From Home
 tag: blog
+page_class: single-post
 ---
 
 ![How to Effectively Work From Home](how-to-effectively-work-from-home-2500.jpg)

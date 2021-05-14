@@ -6,7 +6,8 @@ author: Insight Creative
 description: "When you’re talking about taking photography and videography to the next level a drone provides aerial content to capture unique and desirable looking photos and videos. Learn how drone photography and videography can enhance your marketing efforts."
 image: drone-shot-cover-low.jpg
 image_alt: Drone shot of downtown Green Bay, WI
-tag: blog
+categories: ["Studio"]
+page_class: single-post
 ---
 
 <span class="wistia_embed wistia_async_nyt8kaivlg popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:500px;position:relative;width:100%">&nbsp;</span>

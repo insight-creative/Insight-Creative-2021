@@ -6,7 +6,7 @@ author: Niki Petit
 description: "If you’re like me, you’re still shaking your head wondering what happened to Port Plaza Mall."
 image: WhatisHappeningtotheRetailLandscapeinGreenBay.jpg
 image_alt: Door to small boutique clothing store with we're open sign on front door
-tag: blog
+page_class: single-post
 ---
 
 ![Door to small boutique clothing store with we're open sign on front door](WhatisHappeningtotheRetailLandscapeinGreenBay.jpg)

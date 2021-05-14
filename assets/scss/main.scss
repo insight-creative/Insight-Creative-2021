@@ -10,6 +10,8 @@
 @import "utilities/hover";
 @import "utilities/background";
 @import "utilities/layout";
+@import "utilities/lists";
+@import "utilities/links";
 
 @import "libs/locomotive-scroll";
 @import "libs/swiper-bundle";
@@ -22,7 +24,6 @@
 @import "components/service-hero";
 @import "components/testimonials-slider";
 @import "components/featured-posts";
-@import "components/links";
 @import "components/buttons";
 @import "components/videos";
 @import "components/service-list";
@@ -34,6 +35,12 @@
 @import "components/breadcrumbs";
 @import "components/service-cards";
 @import "components/staff-cards";
+@import "components/blog/author";
+@import "components/blog/post-navigation";
+@import "components/blog/share-buttons";
+@import "components/blog/blog-cards";
+@import "components/blog/post-sidebar";
+@import "components/blog/single-post";
 
 @import "pages/default";
 @import "pages/home";

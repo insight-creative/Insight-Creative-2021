@@ -8,6 +8,7 @@ text-color: "ffffff"
 back-color: "d31145"
 image: Word-Insights-Cover.jpg
 tag: blog
+page_class: single-post
 ---
 
 ![Word Insights with Dr. Johnson](Word-Insights-Cover.jpg)

@@ -7,6 +7,7 @@ description: "When I started my career at Insight Creative, Inc. I envisioned th
 image: return-to-nam-cover-1200.jpg
 image_alt: Return to Nam
 tag: blog
+page_class: single-post
 ---
 
 ![Return to Nam](return-to-nam-cover-1200.jpg)

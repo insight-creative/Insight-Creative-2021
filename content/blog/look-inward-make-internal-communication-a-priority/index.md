@@ -7,6 +7,7 @@ description: "If you’re on the fence regarding an internal communications plan
 image: LookInwardMakeInternalCommunicationsAPriority.jpg
 image_alt: Illustrative graphic of communication
 tag: blog
+page_class: single-post
 ---
 
 ![Illustrative graphic of communication](LookInwardMakeInternalCommunicationsAPriority.jpg)

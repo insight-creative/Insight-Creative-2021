@@ -1,6 +1,6 @@
 {{ define "main" }}
-{{ block "service-hero" . }}{{ partial "services/service-hero" . }}{{ end }}
-{{ block "service-intro" . }}{{ partial "services/service-intro" . }}{{ end }}
-{{ block "service-overview" . }}{{ partial "services/service-overview" . }}{{ end }}
-{{ block "cta" . }}{{ partial "cta" . }}{{ end }}
+{{ partial "services/service-hero" . }}
+{{ partial "services/service-intro" . }}
+{{ partial "services/service-overview" . }}
+{{ partialCached "cta" . }}
 {{ end }}

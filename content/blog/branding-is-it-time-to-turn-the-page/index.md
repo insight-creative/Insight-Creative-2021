@@ -7,6 +7,7 @@ description: "Rebranding is a huge step for any company. When executed successfu
 image: Bank-of-Luxemburg-Rebrand-2400.jpg
 image_alt: Bank of Lexemburg new logo being revealed
 tag: blog
+page_class: single-post
 ---
 
 ![Bank of Lexemburg new logo being revealed](Bank-of-Luxemburg-Rebrand-2400.jpg)

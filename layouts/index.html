@@ -1,9 +1,9 @@
 {{ define "main" }}
-{{ block "video-hero" . }}{{ partial "video-hero" . }}{{ end }}
-{{ block "intro" . }}{{ partial "intro" . }}{{ end }}
-{{ block "services" . }}{{ partial "services" . }}{{ end }}
-{{ block "featured-projects" . }}{{ partial "featured-projects" . }}{{ end }}
-{{ block "testimonials" . }}{{ partial "testimonials-slider" . }}{{ end }}
-{{ block "featured-posts" . }}{{ partial "featured-posts" . }}{{ end }}
-{{ block "cta" . }}{{ partial "cta" . }}{{ end }}
+{{ partialCached "video-hero" . }}
+{{ partialCached "intro" . }}
+{{ partialCached "services" . }}
+{{ partialCached "featured-projects" . }}
+{{ partialCached "testimonials-slider" . }}
+{{ partialCached "featured-posts" . }}
+{{ partialCached "cta" . }}
 {{ end }}

@@ -90,6 +90,7 @@
   &__service-item {
     list-style-type: none;
     font-size: 2rem;
+    padding: 0;
     @include breakpoint(lg) {
       font-size: 1.6rem;
     }

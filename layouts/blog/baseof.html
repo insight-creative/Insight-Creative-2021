@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+{{ block "head" . }}{{ partial "head" . }}{{ end }}
+{{ $namespace := lower .Page.Title }}
+{{ $mainClass := lower .Page.Title }}
+
+<body data-barba="wrapper">
+  <div class="cursor"></div>
+  <div class="follower"><span class="follower__text">View Project</span></div>
+  <div class="preloader">
+    <div class="preloader__inner">
+      <div class="preloader__inner-mask">
+        <div class="preloader__inner-content-wrapper">
+          <span class="preloader__inner-content">Communication <span class="friday-vibes-white">with</span> <div class="mask"><span class="emphasis-red">substance.<sup>SM</sup></span></div></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="loader">
+    <div class="loader__inner"></div>
+  </div>
+  {{ partialCached "header" . }}
+  <div id="viewport" class="viewport">
+    <main id="main-content" class="site-main {{ if .Params.page_class }}{{ .Params.page_class }} {{ end }}{{ anchorize $mainClass }}" role="main" data-barba="container" data-barba-namespace="{{ anchorize $namespace }}">
+      {{ block "main" . }}{{ end }}
+      {{ partialCached "breadcrumbs" . }}
+    </main>
+    {{ partialCached "footer" . }}
+  </div>
+  {{ partialCached "social" . }}
+  {{ partial "scripts" . }}
+</body>
+</html>

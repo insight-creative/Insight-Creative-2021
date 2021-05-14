@@ -19,15 +19,15 @@
   <div class="loader">
     <div class="loader__inner"></div>
   </div>
-  {{ block "header" . }}{{ partial "header" . }}{{end}}
+  {{ partialCached "header" . }}
   <div id="viewport" class="viewport">
     <main id="main-content" class="site-main {{ if .Params.page_class }}{{ .Params.page_class }} {{ end }}{{ anchorize $mainClass }}" role="main" data-barba="container" data-barba-namespace="{{ anchorize $namespace }}">
       {{ block "main" . }}{{ end }}
-      {{ block "breadcrumbs" . }}{{ partial "breadcrumbs" . }}{{ end }}
+      {{ partial "breadcrumbs" . }}
     </main>
-    {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+    {{ partialCached "footer" . }}
   </div>
-  {{ block "social" . }}{{ partial "social" . }}{{ end }}
+  {{ partialCached "social" . }}
   {{ partial "scripts" . }}
 </body>
 </html>

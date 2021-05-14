@@ -131,7 +131,7 @@ function initCursor() {
     const projectLink = select(".featured-projects__link");
     const projectLinks = selectAll(".featured-projects__link");
     const blogLink = select(".blog-card");
-    const blogLinks = selectAll(".blog-card");
+    const blogLinks = selectAll(".blog-card a");
 
     gsap.set('.follower',{xPercent:-50,yPercent:-50,backgroundColor: '#8bc0c6'});
     gsap.set('.cursor',{xPercent:-50,yPercent:-50});

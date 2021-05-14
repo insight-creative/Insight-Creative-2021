@@ -9,6 +9,7 @@ back-color: "d31145"
 image: write-better-press-releases-2500.jpg
 image_alt: Typewriter with Do's and Don'ts title typed out on a piece of paper
 tag: blog
+page_class: single-post
 ---
 
 ![Typewriter with Do's and Don'ts title typed out on a piece of paper](write-better-press-releases-2500.jpg)

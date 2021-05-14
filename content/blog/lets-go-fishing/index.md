@@ -7,6 +7,7 @@ description: "I’ve been in a sales or account management position for quite a 
 image: letsGoFishing.jpg
 image_alt: Fishing bobber with Insight logo sitting on the surface of water
 tag: blog
+page_class: single-post
 ---
 
 ![Fishing bobber with Insight logo sitting on the surface of water](letsGoFishing.jpg)

@@ -7,6 +7,7 @@ description: "The Jeep Wave is simple but means so much. How will you develop a 
 image: joining-the-jeep-wave.jpg
 image_alt: Joining the Jeep Wave
 tag: blog
+page_class: single-post
 ---
 
 ![Joining the Jeep Wave](joining-the-jeep-wave.jpg)

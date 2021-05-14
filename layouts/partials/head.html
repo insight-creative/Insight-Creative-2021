@@ -1,29 +1,34 @@
 <head>
-    <meta charset="UTF-8" />
-    <meta name="referrer" content="no-referrer" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <title>{{ if .Params.seo.title }}{{ .Params.seo.title }}{{ else }}{{ .Title }}{{ end }} | {{ .Site.Title }}</title>
 
-    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta itemprop="name" content="{{ .Title }}" />
+    <meta itemprop="description" content="{{ .Params.seo.description }}" />
+    <meta itemprop="image" content="{{ .Params.seo.featured_image }}" />
+
+    <meta property="og:site_name" content="{{ .Site.Title }}" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{ .Title }}" />
     <meta property="og:url" content="{{ .Permalink }}" />
     <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="{{ .Permalink }}{{ .Params.seo.featured_image }}" />
+    <meta property="og:description" content="{{ .Params.seo.description }}" />
+    <meta name="description" content="{{ .Params.seo.description }}" />
 
-    {{ if .Description }}
-    <meta property="og:description" content="{{ .Description }}" />
-    <meta name="description" content="{{ .Description }}">
-    {{ end }}
-
-    <link rel="canonical" href="{{ .Permalink }}" />
+    <link rel="canonical" href="{{ .Permalink }}">
 
     <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{{ .Title }}" />
+    <meta name="twitter:description" content="{{ .Params.seo.description }}" />
     <meta name="twitter:site" content="@p4lm" />
+    <meta name="twitter:image" content="{{ .Permalink }}{{ .Params.seo.featured_image }}" />
 
     {{ $scss := resources.Get "scss/main.scss" | toCSS }}
     {{ $postcss := $scss | resources.PostCSS | minify }}
-    <link rel="stylesheet" href="{{ $postcss.Permalink }}" media="screen" />
+    <link rel="stylesheet" href="{{ $postcss.Permalink }}" media="screen">
 
     <link rel="preconnect" href="https://www.google-analytics.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">

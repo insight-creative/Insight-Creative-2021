@@ -9,6 +9,7 @@ back-color: "d31145"
 image: think-outside-of-the-box-2500.jpg
 image_alt: "Sales during crisis: Take a supportive role"
 tag: blog
+page_class: single-post
 ---
 
 ![Sales during crisis: Take a supportive role](think-outside-of-the-box-2500.jpg)

@@ -1,22 +1,23 @@
 {{ define "main" }}
-    <div class="post-content container padding-bottom-10">
-    {{ .Content }}
-    {{ if isset .Params "author" }}
-    <a href="/author/{{ .Params.Author | urlize }}" class="staff-card bg-black">
-        <div class="staff-card__inner flex">
-            <div class="staff-card__wrapper text-center w-100 w-30-m">
-                <div class="staff-card__image-wrapper">
-                    <img src="{{ (index .Site.Data.staff .Params.author).image_jpg }}" alt="headshot of Insight Creative's {{ (index .Site.Data.staff .Params.author).job_title }}, {{ (index .Site.Data.staff .Params.author).name }}" class="staff-card__image">
-                </div>
-            </div>
-            <div class="staff-card__bio w-100 w-70-m">
-                <span class="staff-card__written-by text-tertiary">Written By</span>
-                <h5 class="staff-card__name g3">{{ (index .Site.Data.staff .Params.author).name }}</h5>
-                <h6 class="staff-card__job-title text-tertiary shift-up">{{ (index .Site.Data.staff .Params.author).job_title }}</h6>
-                <p>{{ (index .Site.Data.staff .Params.author).bio }}</p>
+    <div class="post-content">
+        <div class="container-wide flex flex-column flex-row-m padding-top-6">
+            {{ partial "blog/blog-sidebar" . }}
+            <div class="post">
+                <article>
+                    {{ if .Params.Categories }}
+                    <span class="categories">{{ range $index, $elements := .Params.Categories }}<a href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}" class="categories__link">{{ if ne $index 0 }}{{ end }}
+                        {{ . | title }}</a> {{ end}}</span>
+                    {{ end }}
+                    <h1>{{ .Title }}</h1>
+                    {{ .Content }}
+                </article>
+                {{ partialCached "blog/share-buttons" . }}
+                {{ partial "blog/post-navigation" . }}
+                {{ partial "blog/post-author" . }}
             </div>
         </div>
-    </a>
-    {{ end }}
+        <div class="container-wide">
+            {{ partial "blog/related-posts" . }}
+        </div>
     </div>
 {{ end }}

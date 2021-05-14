@@ -7,6 +7,7 @@ description: "During the Super Bowl, there was a plethora of ads featuring dogs,
 image: Bill-Murray-Groundhog-Jeep-Commercial-1500.jpg
 image_alt: Bill Murray and the Groundhog in Jeep Super Bowl commercial
 tag: blog
+page_class: single-post
 ---
 
 ![Bill Murray and the Groundhog in Jeep Super Bowl commercial](Bill-Murray-Groundhog-Jeep-Commercial-1500.jpg)

@@ -8,6 +8,7 @@ text-color: "ffffff"
 back-color: "d31145"
 image: 2020-Impact-on-Advertising-2500.jpg
 tag: blog
+page_class: single-post
 ---
 
 ![Series of photos showing a variety of things that changed during the pandemic](2020-Impact-on-Advertising-2500.jpg)

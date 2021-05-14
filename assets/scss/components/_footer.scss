@@ -66,6 +66,9 @@
     position: relative;
     padding: 0;
   }
+  &__nav-list-item {
+    padding: 0;
+  }
   &__copyright {
     text-align: center;
     border-top: 1px solid $bodyBlack;

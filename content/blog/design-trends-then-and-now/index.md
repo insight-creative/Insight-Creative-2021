@@ -6,7 +6,8 @@ author: Jay Bauer
 description: "What I’ve witnessed in 20+ years of design and where I think we’re headed."
 image: OldvNewWebpage.jpg
 image_alt: One outdated and one modern website design example side by side
-tag: blog
+categories: ["Design"]
+page_class: single-post
 ---
 
 ![One outdated and one modern website design example side by side](OldvNewWebpage.jpg)

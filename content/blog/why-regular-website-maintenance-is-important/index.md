@@ -6,7 +6,8 @@ author: Justin Parsons
 description: "Learn more about the importance of regular website maintenance."
 image: website-maintenance.jpg
 image_alt: Laptop on wooden desk with the WordPress admin dashboard on display
-tag: blog
+categories: ["Web"]
+page_class: single-post
 ---
 
 ![Laptop on wooden desk with the WordPress admin dashboard on display](website-maintenance.jpg)

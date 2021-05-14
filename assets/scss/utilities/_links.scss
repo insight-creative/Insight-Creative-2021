@@ -54,19 +54,18 @@ a {
 }
 .link {
   text-decoration: none;
-  transition: color 0.15s ease-in;
+  box-shadow: inset 0 -2px 0 $secondaryColor;
+  transition: 0.3s cubic-bezier(0.17, 0.88, 0.5, 1.5);
+  &:hover,
+  &:focus {
+    box-shadow: inset 0 -13px 0 $secondaryColor !important;
+    outline-color: $secondaryColor;
+  }
 }
-.link:link,
-.link:visited {
-  transition: color 0.15s ease-in;
-}
-.link:hover {
-  transition: color 0.15s ease-in;
-}
-.link:active {
-  transition: color 0.15s ease-in;
-}
-.link:focus {
-  transition: color 0.15s ease-in;
-  outline: 1px dotted currentColor;
-}
+// .link:link,
+// .link:visited {
+//   transition: color 0.15s ease-in;
+// }
+// .link:active {
+//   transition: color 0.15s ease-in;
+// }

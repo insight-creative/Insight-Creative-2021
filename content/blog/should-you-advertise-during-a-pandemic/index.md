@@ -9,6 +9,7 @@ back-color: "d31145"
 image: should-you-advertise-during-pandemic-2000.jpg
 image_alt: Should you advertise during a pandemic
 tag: blog
+page_class: single-post
 ---
 
 ![Should you advertise during a pandemic](should-you-advertise-during-pandemic-2000.jpg)

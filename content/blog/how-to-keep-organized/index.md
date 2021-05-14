@@ -9,6 +9,7 @@ back-color: "d31145"
 image: how-to-keep-organized-2500.jpg
 image_alt: Calendar, pencils, and phones laid out on a desk
 tag: blog
+page_class: single-post
 ---
 
 ![Calendar, pencils, and phones laid out on a desk](how-to-keep-organized-2500.jpg)

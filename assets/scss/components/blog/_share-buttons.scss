@@ -1,0 +1,60 @@
+.share-this {
+  display: none;
+  @include breakpoint(sm) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+}
+.share-buttons {
+  list-style: none;
+  padding: 0;
+  &__icon-wrapper {
+    position: relative;
+    margin-bottom: 1.5rem;
+    background: $white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: grid;
+    place-items: center;
+    &:after {
+      position: absolute;
+      content: "";
+      top: -2px;
+      left: 2px;
+      height: 102%;
+      width: 102%;
+      border: 2px solid $secondaryColor;
+      border-radius: 50%;
+    }
+  }
+  &__link {
+    padding: 0 2rem;
+    &:hover,
+    &:focus {
+      svg {
+        fill: $secondaryColor;
+      }
+    }
+  }
+  svg {
+    height: 25px;
+    width: auto;
+    fill: $tertiaryColor;
+    transition: 0.3s ease;
+  }
+}
+ul.share-buttons li {
+  display: inline;
+}
+ul.share-buttons .sr-only {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}

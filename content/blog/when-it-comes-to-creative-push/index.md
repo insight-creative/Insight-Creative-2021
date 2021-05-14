@@ -6,7 +6,8 @@ author: Emily Morehart
 description: "Anyone in a creative role can attest, there are good and bad days. At times, inspiration strikes like lightning and the work circuits seamlessly through you. Conversely, some people experience a “creative block” almost like a wall holding back all your good ideas. Learn ways to fend off creative complacency."
 image: insight-group-collaboration.jpg
 image_alt: Three Insight team members collaborating on a project
-tag: blog
+categories: ["Content"]
+page_class: single-post
 ---
 
 ![Three Insight team members collaborating on a project](insight-group-collaboration.jpg)

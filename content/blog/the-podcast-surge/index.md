@@ -7,6 +7,7 @@ description: "Have you noticed how popular podcasts have become? Between celebri
 image: The-Podcast-Surge-2400.jpg
 image_alt: A podcast production style setup with microphone and headphones on a table
 tag: blog
+page_class: single-post
 ---
 
 ![A podcast production style setup with microphone and headphones on a table](The-Podcast-Surge-2400.jpg)

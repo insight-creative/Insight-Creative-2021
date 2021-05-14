@@ -8,6 +8,7 @@ text-color: "ffffff"
 back-color: "d31145"
 image: hourglass-with-time-running-out-2500.jpg
 tag: blog
+page_class: single-post
 ---
 
 ![Hourglass sitting on white marble counter with time running out](hourglass-with-time-running-out-2500.jpg)

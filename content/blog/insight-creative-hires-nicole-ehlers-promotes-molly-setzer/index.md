@@ -7,7 +7,8 @@ description: ""
 text-color: "ffffff"
 back-color: "d31145"
 image: Insight-News-2500.jpg
-tag: blog
+categories: ["News"]
+page_class: single-post
 ---
 
 <img data-aos="fade-up" src="Nicole_HeadShot.jpg"

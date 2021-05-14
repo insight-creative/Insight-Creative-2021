@@ -6,7 +6,8 @@ author: Molly Setzer
 description: "Molly Setzer, Senior Media Buyer at Insight Creative, explains the role of a media buyer, how they can support your company's marketing efforts and how they help you get the most out of your marketing budget."
 image: MollySetzerMediaBuying2.jpg
 image_alt: Molly Setzer explaining the role of a media buying
-tag: blog
+categories: ["Media"]
+page_class: single-post
 ---
 
 <span class="wistia_embed wistia_async_ovd4jg0xat popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:500px;position:relative;width:100%">&nbsp;</span>

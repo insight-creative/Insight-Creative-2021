@@ -3,14 +3,26 @@
 {{ partial "services" . }}
 {{ end }}
 {{ if eq .Title "Blog" }}
-<div class="container mw7 center">
-  <ul class="flex-ns flex-wrap mhn1-ns pa3">
-      {{ $paginator := .Paginate (.Data.Pages) }}
-      {{ range $paginator.Pages }}
-      {{ .Render "blog-cards" }}
-      {{ end }}
+<div class="container padding-top-10">
+  <h1 class="text-center">Insight Blog</h1>
+  {{- if isset site.Taxonomies "categories" }}
+  {{- if not (eq (len site.Taxonomies.categories) 0) }}
+  <ul class="categories-list">
+    {{- range .Site.Taxonomies.categories }}
+    <li class="categories-list__item"><a href="{{ .Page.Permalink }}" class="link categories-list__link">{{ .Page.Title }}</a></li>
+    {{- end }}
   </ul>
-  {{ partial "pagination" . }}
+  {{- end }}
+  {{- end }}
+</div>
+<div class="container post-wrapper padding-top-10">
+  {{ $paginator := .Paginate (.Data.Pages) }}
+  {{ range $paginator.Pages }}
+  {{ .Render "blog-cards" }}
+  {{ end }}
+</div>
+<div class="container padding-bottom-10">
+  {{ partial "blog/custom-pagination.html" . }}
 </div>
 {{ end }}
 {{ end }}

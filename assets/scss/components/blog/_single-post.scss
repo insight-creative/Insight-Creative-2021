@@ -1,0 +1,93 @@
+.single-post {
+  .staff-card {
+    margin: 10rem 0 0 0;
+    &__written-by {
+      font-size: 1.6rem;
+    }
+    &__image-wrapper {
+      margin: 0 auto;
+      max-width: 25%;
+      @include breakpoint(lg) {
+        margin: 1.5rem auto 1.5rem 0;
+        max-width: 80%;
+      }
+    }
+    &__bio {
+      font-size: 1.6rem;
+      line-height: 1.5;
+    }
+  }
+}
+.post-sidebar {
+  display: none;
+  @include breakpoint(md) {
+    display: block;
+    width: 25%;
+  }
+  @include breakpoint(lg) {
+    width: 20%;
+  }
+  .staff-card {
+    margin: 0 1rem;
+    &__inner {
+      padding: 1rem;
+      @include breakpoint(lg) {
+        padding: 2.5rem 2rem;
+      }
+    }
+    &__image-wrapper {
+      margin: 2rem auto;
+    }
+    &__name {
+      text-align: center;
+    }
+  }
+  .share-this {
+    margin: 2.5rem auto;
+  }
+  .share-this,
+  .share-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.post {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3.6rem;
+  }
+  h3 {
+    font-size: 3.2rem;
+  }
+  h4 {
+    font-size: 2.8rem;
+  }
+  @include breakpoint(md) {
+    width: 75%;
+    margin-left: 2rem;
+  }
+  @include breakpoint(lg) {
+    max-width: 750px;
+  }
+  .post-meta {
+    margin-bottom: 1.5rem;
+  }
+  // img:first-of-type {
+  //   object-fit: cover;
+  //   height: 400px;
+  // }
+  ul {
+    margin: 2rem 0;
+  }
+}
+.categories {
+  background: $primaryColor;
+  padding: 0.5rem 3rem;
+  border-radius: $radius;
+  &__link {
+    text-decoration: none;
+    margin-bottom: 2.5rem;
+  }
+}

@@ -9,21 +9,21 @@
         </div>
     </div>
     <div class="container-wide">
-        {{ block "service-cards" . }}{{ partial "services/service-cards" . }}{{ end }}
+        {{ partial "services/service-cards" . }}
     </div>
     <div class="container department-feed">
         <h4 class="text-center">Get to know our {{ lower .Title }} department!</h4>
         <div class="staff-card-wrapper">
         {{ if eq .Title "Content" }}
-        {{ block "staff-cards-content" . }}{{ partial "services/staff-cards-content" . }}{{ end }}
+            {{ partialCached "services/staff-cards-content" . }}
         {{ else if eq .Title "Web"}}
-        {{ block "staff-cards-web" . }}{{ partial "services/staff-cards-web" . }}{{ end }}
+            {{ partialCached "services/staff-cards-web" . }}
         {{ else if eq .Title "Digital"}}
-        {{ block "staff-cards-digital" . }}{{ partial "services/staff-cards-digital" . }}{{ end }}
+            {{ partialCached "services/staff-cards-digital" . }}
         {{ else if eq .Title "Media"}}
-        {{ block "staff-cards-media" . }}{{ partial "services/staff-cards-media" . }}{{ end }}
+            {{ partialCached "services/staff-cards-media" . }}
         {{ else if eq .Title "Design"}}
-        {{ block "staff-cards-design" . }}{{ partial "services/staff-cards-design" . }}{{ end }}
+            {{ partialCached "services/staff-cards-design" . }}
         {{ end }}
         </div>
         <div class="text-center margin-top-2">
@@ -32,7 +32,7 @@
     </div>
     <div class="container studio-cta padding-top-10">
         {{ with .Params.service_cta }}
-        <h4>{{ .heading }}</h4>
+        <h4 class="text-center">{{ .heading }}</h4>
         {{ end }}
     </div>
 </section>

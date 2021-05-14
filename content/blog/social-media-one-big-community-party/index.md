@@ -7,6 +7,7 @@ description: "A common marketing goal for small businesses is to grow and engage
 image: social-media-one-big-community-party.jpg
 image_alt: "Social media: one big community party"
 tag: blog
+page_class: single-post
 ---
 
 ![Social media: one big community party](social-media-one-big-community-party.jpg)

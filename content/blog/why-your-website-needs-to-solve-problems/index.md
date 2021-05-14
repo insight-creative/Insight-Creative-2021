@@ -6,7 +6,8 @@ author: Justin Parsons
 description: "People often visit websites because they’re seeking a solution to a problem they’re having. They may need a product, service or information as a solution. Learn more about why your website needs to focus on solving these problems and delivering value to real people."
 image: website-planning-2500.jpg
 image_alt: Two people planning a website design on a whiteboard
-tag: blog
+categories: ["Web"]
+page_class: single-post
 ---
 
 ![Two people planning a website design on a whiteboard](website-planning-2500.jpg)
