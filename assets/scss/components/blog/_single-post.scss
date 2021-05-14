@@ -81,6 +81,14 @@
   ul {
     margin: 2rem 0;
   }
+  blockquote {
+    margin-left: 0;
+    border-top: 1px solid $secondaryColor;
+    border-bottom: 1px solid $secondaryColor;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+  }
 }
 .categories {
   background: $primaryColor;

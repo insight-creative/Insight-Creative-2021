@@ -11,7 +11,7 @@
                     <h1>{{ .Title }}</h1>
                     {{ .Content }}
                 </article>
-                {{ partialCached "blog/share-buttons" . }}
+                {{ partial "blog/share-buttons" . }}
                 {{ partial "blog/post-navigation" . }}
                 {{ partial "blog/post-author" . }}
             </div>
