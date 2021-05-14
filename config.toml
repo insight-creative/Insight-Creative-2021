@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "insight-creative-2021-dev.netlify.app"
 languageCode = "en-us"
 title = "Insight Creative, Inc."
 enableRobotsTXT = true
