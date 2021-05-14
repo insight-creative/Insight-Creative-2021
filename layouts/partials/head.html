@@ -7,14 +7,14 @@
 
     <meta itemprop="name" content="{{ if .Params.seo.title }}{{ .Params.seo.title }}{{ else }}{{ .Title }}{{ end }} | {{ .Site.Title }}">
     <meta itemprop="description" content="{{ .Params.seo.description }}">
-    <meta itemprop="image" content="{{ .Site.BaseURL }}{{ .Permalink }}{{ .Params.seo.featured_image }}">
+    <meta itemprop="image" content="{{ if .Params.seo.featured_image }}{{ .Permalink }}{{ .Params.seo.featured_image }}{{ else }}{{ .Site.BaseURL }}/images/background-images/Insight Services Brand Collage Gray.jpg{{ end }}">
 
     <meta property="og:site_name" content="{{ .Site.Title }}">
     <meta property="og:type" content="website">
     <meta property="og:title" content="{{ if .Params.seo.title }}{{ .Params.seo.title }}{{ else }}{{ .Title }}{{ end }} | {{ .Site.Title }}">
-    <meta property="og:url" content="{{ .Site.BaseURL }}{{ .Permalink }}">
+    <meta property="og:url" content="{{ .Permalink }}">
     <meta property="og:locale" content="en_US">
-    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Permalink }}{{ .Params.seo.featured_image }}">
+    <meta property="og:image" content="{{ if .Params.seo.featured_image }}{{ .Permalink }}{{ .Params.seo.featured_image }}{{ else }}{{ .Site.BaseURL }}/images/background-images/Insight Services Brand Collage Gray.jpg{{ end }}">
     <meta property="og:description" content="{{ .Params.seo.description }}">
     <meta name="description" content="{{ .Params.seo.description }}">
 
@@ -24,7 +24,7 @@
     <meta name="twitter:title" content="{{ if .Params.seo.title }}{{ .Params.seo.title }}{{ else }}{{ .Title }}{{ end }} | {{ .Site.Title }}">
     <meta name="twitter:description" content="{{ .Params.seo.description }}">
     <meta name="twitter:site" content="@p4lm">
-    <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Permalink }}{{ .Params.seo.featured_image }}">
+    <meta name="twitter:image" content="{{ if .Params.seo.featured_image }}{{ .Permalink }}{{ .Params.seo.featured_image }}{{ else }}{{ .Site.BaseURL }}/images/background-images/Insight Services Brand Collage Gray.jpg{{ end }}">
 
     {{ $scss := resources.Get "scss/main.scss" | toCSS }}
     {{ $postcss := $scss | resources.PostCSS | minify }}
