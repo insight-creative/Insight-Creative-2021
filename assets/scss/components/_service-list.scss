@@ -1,3 +1,5 @@
+@use '../globals';
+
 .service-list {
   background-image: url("/images/background-images/studio-equipment-background.jpg");
   background-size: cover;
@@ -37,13 +39,13 @@
     background-color: #282728;
     margin: 0.4rem;
     padding: 2rem;
-    border-radius: $radius;
+    border-radius: globals.$radius;
     transition: 0.3s ease;
     &:hover,
     &:focus {
-      background-color: $primaryColor;
+      background-color: globals.$primaryColor;
       .service-list__service-heading {
-        color: $lightGray;
+        color: globals.$lightGray;
       }
       // .service-list__icon:after {
       //   animation: service-card-animation 3s linear infinite;
@@ -58,7 +60,7 @@
   &__icon {
     position: relative;
     z-index: 1;
-    background-color: $white;
+    background-color: globals.$white;
     border-radius: 50%;
     height: 108px;
     width: 108px;
@@ -75,13 +77,13 @@
       left: 4px;
       height: 100%;
       width: 100%;
-      border: 2px solid $secondaryColor;
+      border: 2px solid globals.$secondaryColor;
       border-radius: 50%;
       // animation: service-card-animation 3s linear infinite;
     }
   }
   &__service-heading {
-    color: $tertiaryColor;
+    color: globals.$tertiaryColor;
     margin-bottom: 0.5rem;
   }
   &__service-preview {
@@ -91,10 +93,10 @@
     list-style-type: none;
     font-size: 2rem;
     padding: 0;
-    @include breakpoint(lg) {
+    @include globals.breakpoint(lg) {
       font-size: 1.6rem;
     }
-    @include breakpoint(xl) {
+    @include globals.breakpoint(xl) {
       font-size: 2rem;
     }
   }

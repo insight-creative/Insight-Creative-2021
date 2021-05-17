@@ -1,3 +1,6 @@
+@use '../globals/breakpoints';
+@use '../globals/variables';
+
 html {
   font-size: 62.5%;
 }
@@ -7,8 +10,8 @@ input,
 select,
 optgroup,
 textarea {
-  color: $lightGray;
-  font-family: $primaryFont;
+  color: variables.$lightGray;
+  font-family: variables.$primaryFont;
   font-size: 2rem;
   line-height: 3rem;
 }
@@ -18,9 +21,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $primaryFont;
+  font-family: variables.$primaryFont;
   font-weight: 500;
-  color: $lightGray;
+  color: variables.$lightGray;
   line-height: 1.3em;
   margin-top: 0;
   margin-bottom: 2.5rem;
@@ -32,21 +35,21 @@ p {
 h1,
 .g1 {
   font-size: 4.1rem;
-  @include breakpoint(sm) {
+  @include breakpoints.breakpoint(sm) {
     font-size: 6.1rem;
   }
 }
 h2,
 .g2 {
   font-size: 3.9rem;
-  @include breakpoint(sm) {
+  @include breakpoints.breakpoint(sm) {
     font-size: 4.9rem;
   }
 }
 h3,
 .g3 {
   font-size: 2.9rem;
-  @include breakpoint(sm) {
+  @include breakpoints.breakpoint(sm) {
     font-size: 3.9rem;
   }
 }
@@ -54,14 +57,14 @@ h4,
 .g4 {
   font-size: 2.1rem;
   font-weight: 700;
-  @include breakpoint(sm) {
+  @include breakpoints.breakpoint(sm) {
     font-size: 3.1rem;
   }
 }
 h5,
 .g5 {
   font-size: 2rem;
-  @include breakpoint(sm) {
+  @include breakpoints.breakpoint(sm) {
     font-size: 2.5rem;
   }
   font-weight: 500;
@@ -78,10 +81,10 @@ h6,
   font-size: 1.6rem;
 }
 .emphasis-red {
-  font-family: $secondaryFont;
-  background: $primaryColor;
+  font-family: variables.$secondaryFont;
+  background: variables.$primaryColor;
   padding: 0 1rem;
-  color: $white;
+  color: variables.$white;
   // overflow: hidden;
   // display: inline-block;
   // position: relative;
@@ -93,9 +96,9 @@ h6,
   // }
 }
 .emphasis-white {
-  font-family: $secondaryFont;
-  background-color: $lightGray;
-  color: $primaryColor;
+  font-family: variables.$secondaryFont;
+  background-color: variables.$lightGray;
+  color: variables.$primaryColor;
   padding: 0rem 1rem;
 }
 .emphasis-underline {
@@ -111,7 +114,7 @@ h6,
     left: 0;
     height: 4px;
     width: 100%;
-    background-color: $tertiaryColor;
+    background-color: variables.$tertiaryColor;
     z-index: -1;
   }
   // &__line-mask {
@@ -147,7 +150,7 @@ h6,
 .text-center {
   text-align: center !important;
 }
-@include breakpoint(sm) {
+@include breakpoints.breakpoint(sm) {
   .text-left-s {
     text-align: left !important;
   }
@@ -158,7 +161,7 @@ h6,
     text-align: center !important;
   }
 }
-@include breakpoint(md) {
+@include breakpoints.breakpoint(md) {
   .text-left-m {
     text-align: left !important;
   }
@@ -169,7 +172,7 @@ h6,
     text-align: center !important;
   }
 }
-@include breakpoint(lg) {
+@include breakpoints.breakpoint(lg) {
   .text-left-l {
     text-align: left !important;
   }
@@ -217,17 +220,17 @@ h6,
   margin: 0;
 }
 .text-white {
-  color: $white;
+  color: variables.$white;
 }
 .text-dark-gray {
-  color: $darkGray;
+  color: variables.$darkGray;
 }
 .text-primary {
-  color: $primaryColor;
+  color: variables.$primaryColor;
 }
 .text-secondary {
-  color: $secondaryColor;
+  color: variables.$secondaryColor;
 }
 .text-tertiary {
-  color: $tertiaryColor;
+  color: variables.$tertiaryColor;
 }

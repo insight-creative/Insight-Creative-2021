@@ -1,10 +1,12 @@
+@use '../globals';
+
 .staff-card-wrapper {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 .staff-card {
-  border-radius: $radius;
+  border-radius: globals.$radius;
   margin: 2rem;
   text-decoration: none;
   flex: 0 0 250px;
@@ -20,7 +22,7 @@
   &__image-wrapper {
     position: relative;
     margin-bottom: 1.5rem;
-    background: $white;
+    background: globals.$white;
     border-radius: 50%;
     &:after {
       position: absolute;
@@ -29,7 +31,7 @@
       left: 7px;
       height: 102%;
       width: 102%;
-      border: 5px solid $secondaryColor;
+      border: 5px solid globals.$secondaryColor;
       border-radius: 50%;
     }
   }

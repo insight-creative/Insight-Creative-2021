@@ -1,3 +1,5 @@
+@use '../../globals';
+
 .single-post {
   .staff-card {
     margin: 10rem 0 0 0;
@@ -7,7 +9,7 @@
     &__image-wrapper {
       margin: 0 auto;
       max-width: 25%;
-      @include breakpoint(lg) {
+      @include globals.breakpoint(lg) {
         margin: 1.5rem auto 1.5rem 0;
         max-width: 80%;
       }
@@ -20,18 +22,18 @@
 }
 .post-sidebar {
   display: none;
-  @include breakpoint(md) {
+  @include globals.breakpoint(md) {
     display: block;
     width: 25%;
   }
-  @include breakpoint(lg) {
+  @include globals.breakpoint(lg) {
     width: 20%;
   }
   .staff-card {
     margin: 0 1rem;
     &__inner {
       padding: 1rem;
-      @include breakpoint(lg) {
+      @include globals.breakpoint(lg) {
         padding: 2.5rem 2rem;
       }
     }
@@ -64,11 +66,11 @@
   h4 {
     font-size: 2.8rem;
   }
-  @include breakpoint(md) {
+  @include globals.breakpoint(md) {
     width: 75%;
     margin-left: 2rem;
   }
-  @include breakpoint(lg) {
+  @include globals.breakpoint(lg) {
     max-width: 750px;
   }
   .post-meta {
@@ -83,19 +85,10 @@
   }
   blockquote {
     margin-left: 0;
-    border-top: 1px solid $secondaryColor;
-    border-bottom: 1px solid $secondaryColor;
+    border-top: 1px solid globals.$secondaryColor;
+    border-bottom: 1px solid globals.$secondaryColor;
     padding-top: 2rem;
     padding-bottom: 1rem;
     margin-top: 2rem;
-  }
-}
-.categories {
-  background: $primaryColor;
-  padding: 0.5rem 3rem;
-  border-radius: $radius;
-  &__link {
-    text-decoration: none;
-    margin-bottom: 2.5rem;
   }
 }

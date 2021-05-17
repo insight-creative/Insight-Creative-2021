@@ -1,3 +1,5 @@
+@use '../globals/breakpoints';
+
 img,
 iframe {
   display: block;
@@ -26,7 +28,7 @@ iframe {
     height: auto;
     width: 100%;
     position: relative;
-    @include breakpoint(md) {
+    @include breakpoints.breakpoint(md) {
       height: 100%;
     }
   }

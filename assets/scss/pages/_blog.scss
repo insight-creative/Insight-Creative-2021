@@ -1,8 +1,10 @@
+@use '../globals';
+
 .post-wrapper {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  border-top: 1px solid $darkBlack;
+  border-top: 1px solid globals.$darkBlack;
   .blog-card {
     width: 100%;
   }
@@ -17,6 +19,16 @@
     text-decoration: none;
   }
 }
+.categories {
+  background: globals.$primaryColor;
+  padding: 0.5rem 3rem;
+  border-radius: globals.$radius;
+  font-size: 1.6rem;
+  &__link {
+    text-decoration: none;
+    margin-bottom: 2.5rem;
+  }
+}
 .blog-content {
   padding: 0 2rem 6rem 2rem;
   margin-top: -50px;
@@ -25,7 +37,7 @@
     margin: 0 auto;
   }
   blockquote {
-    border-left: 5px solid $primaryColor;
+    border-left: 5px solid globals.$primaryColor;
     padding: 2rem;
     p {
       margin-bottom: 0;
@@ -34,7 +46,7 @@
 }
 .blog-summary {
   margin-bottom: 4rem;
-  border-bottom: 1px solid $primaryColor;
+  border-bottom: 1px solid globals.$primaryColor;
   &__link {
     text-decoration: none;
     h3 {
@@ -44,15 +56,15 @@
     &:focus {
       h3,
       span {
-        color: $secondaryColor;
+        color: globals.$secondaryColor;
       }
       .blog-summary__entry-meta,
       p.blog-summary__summary {
-        color: $primaryColor;
+        color: globals.$primaryColor;
       }
       .blog-summary__read-more {
         svg {
-          fill: $secondaryColor;
+          fill: globals.$secondaryColor;
           transform: translateX(5px);
         }
       }
@@ -69,7 +81,7 @@
     transition: opacity 0.3s ease-out;
   }
   &__content {
-    @include breakpoint(md) {
+    @include globals.breakpoint(md) {
       padding: 0 2rem;
     }
   }
@@ -116,14 +128,14 @@
     display: flex;
     align-items: center;
     margin: 0 10px;
-    color: $white;
-    background: $primaryColor;
+    color: globals.$white;
+    background: globals.$primaryColor;
     &:hover,
     &:focus {
-      background: $primaryColor;
+      background: globals.$primaryColor;
     }
     svg {
-      fill: $white;
+      fill: globals.$white;
       width: 20px;
       transition: 0.3s ease-out;
     }

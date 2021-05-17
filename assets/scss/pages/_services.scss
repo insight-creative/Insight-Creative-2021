@@ -1,3 +1,5 @@
+@use '../globals';
+
 .service-intro {
   margin-top: -1px;
   &__desc {
@@ -11,7 +13,7 @@
   .flex-container {
     display: flex;
     flex-direction: column;
-    @include breakpoint(xl) {
+    @include globals.breakpoint(xl) {
       flex-direction: row;
     }
   }
@@ -19,7 +21,7 @@
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-around;
-    @include breakpoint(xl) {
+    @include globals.breakpoint(xl) {
       flex-direction: row;
     }
   }
@@ -28,10 +30,10 @@
     flex-direction: column;
     justify-content: center;
     padding: 4rem 2rem;
-    @include breakpoint(md) {
+    @include globals.breakpoint(md) {
       padding: 4rem 8rem;
     }
-    @include breakpoint(lg) {
+    @include globals.breakpoint(lg) {
       padding: 8rem;
     }
   }
@@ -50,7 +52,7 @@
   z-index: 1;
   top: -73.5px;
   margin-bottom: -73.5px;
-  @include breakpoint(md) {
+  @include globals.breakpoint(md) {
     align-items: center;
     top: 0;
     right: -73.5px;
@@ -59,7 +61,7 @@
   }
 }
 .icon-container-center {
-  @include breakpoint(lg) {
+  @include globals.breakpoint(lg) {
     align-items: center;
     top: 0;
     right: 0;
@@ -73,8 +75,6 @@
   .service-hero__icon-title {
     display: none;
   }
-}
-.service-list__intro {
 }
 .department-feed {
   padding-top: 10rem;

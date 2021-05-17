@@ -1,18 +1,20 @@
+@use '../globals';
+
 a {
-  color: $lightGray;
+  color: globals.$lightGray;
   transition: 0.3s ease;
   display: inline-block;
   &:hover,
   &:focus {
-    color: $lightGray;
-    outline-color: $lightGray;
+    color: globals.$lightGray;
+    outline-color: globals.$lightGray;
   }
 }
 .primary-link,
 .secondary-link {
   text-decoration: none;
   position: relative;
-  color: $primaryColor;
+  color: globals.$primaryColor;
   display: inline-block;
 }
 .primary-link:after,
@@ -28,7 +30,7 @@ a {
 }
 .secondary-link:after {
   content: "";
-  background-color: $primaryColor;
+  background-color: globals.$primaryColor;
 }
 .possible-link-idea {
   text-decoration: none;
@@ -54,12 +56,12 @@ a {
 }
 .link {
   text-decoration: none;
-  box-shadow: inset 0 -2px 0 $secondaryColor;
+  box-shadow: inset 0 -2px 0 globals.$secondaryColor;
   transition: 0.3s cubic-bezier(0.17, 0.88, 0.5, 1.5);
   &:hover,
   &:focus {
-    box-shadow: inset 0 -13px 0 $secondaryColor !important;
-    outline-color: $secondaryColor;
+    box-shadow: inset 0 -13px 0 globals.$secondaryColor !important;
+    outline-color: globals.$secondaryColor;
   }
 }
 // .link:link,

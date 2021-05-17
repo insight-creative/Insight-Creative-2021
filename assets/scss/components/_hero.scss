@@ -1,3 +1,5 @@
+@use '../globals';
+
 .hero {
   display: flex;
   justify-content: center;
@@ -7,10 +9,10 @@
   background-repeat: no-repeat;
   margin-left: auto;
   padding: 6rem 1rem;
-  margin-top: $mobileHeader;
-  @include breakpoint(md) {
+  margin-top: globals.$mobileHeader;
+  @include globals.breakpoint(md) {
     height: 80vh;
-    margin-top: $desktopHeader;
+    margin-top: globals.$desktopHeader;
   }
 }
 .hero,
@@ -18,7 +20,7 @@
   &__inner {
     height: 100%;
     text-align: center;
-    @include breakpoint(md) {
+    @include globals.breakpoint(md) {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -29,11 +31,11 @@
   }
   &__subtitle {
     font-weight: 400;
-    font-family: $primaryFont;
+    font-family: globals.$primaryFont;
     font-size: 2rem;
     letter-spacing: 0.015em;
     margin-bottom: 40px;
-    @include breakpoint(lg) {
+    @include globals.breakpoint(lg) {
       font-size: 3rem;
     }
   }
@@ -41,10 +43,10 @@
 .short-hero {
   position: relative;
   margin-top: 70px;
-  @include breakpoint(sm) {
+  @include globals.breakpoint(sm) {
     margin-top: 85px;
   }
-  @include breakpoint(md) {
+  @include globals.breakpoint(md) {
     margin-top: 140px;
   }
   &__inner {
@@ -58,7 +60,7 @@
 }
 .hero__title,
 .hero__subtitle {
-  color: $white;
+  color: globals.$white;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
 }
 .hero-inner {
@@ -77,7 +79,7 @@
   margin-left: auto;
   padding: 6rem 1rem;
   margin-top: 70px;
-  @include breakpoint(md) {
+  @include globals.breakpoint(md) {
     margin-top: 140px;
   }
   .center-underline {

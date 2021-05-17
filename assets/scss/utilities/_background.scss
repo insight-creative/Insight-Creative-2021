@@ -1,11 +1,13 @@
+@use '../globals';
+
 .bg-red {
-  background-color: $primaryColor;
+  background-color: globals.$primaryColor;
 }
 .bg-black {
-  background-color: $darkBlack;
+  background-color: globals.$darkBlack;
 }
 .bg-black-2 {
-  background-color: $bodyBlack;
+  background-color: globals.$bodyBlack;
 }
 .background-cover {
   background-size: cover;

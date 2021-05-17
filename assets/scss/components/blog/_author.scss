@@ -1,8 +1,10 @@
+@use '../../globals';
+
 .author {
   &__image-wrapper {
     position: relative;
     margin-bottom: 1.5rem;
-    background: $white;
+    background: globals.$white;
     border-radius: 50%;
     max-width: 250px;
     margin: 0 auto;
@@ -13,7 +15,7 @@
       left: 7px;
       height: 102%;
       width: 102%;
-      border: 5px solid $secondaryColor;
+      border: 5px solid globals.$secondaryColor;
       border-radius: 50%;
     }
   }

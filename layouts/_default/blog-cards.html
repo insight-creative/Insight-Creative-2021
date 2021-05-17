@@ -1,7 +1,7 @@
 <article class="blog-card fade-up">
     <a href="{{ .RelPermalink }}">
         <div class="blog-card__image-wrapper with-parallax">
-            <img src="{{ .Permalink }}{{ .Params.image }}" alt="{{ .Params.image_alt }}" class="blog-card__image" width="500" height="350">
+            <img src="{{ .Permalink }}{{ .Params.seo.featured_image }}" alt="{{ .Params.seo.featured_image_alt }}" class="blog-card__image" width="500" height="350">
         </div>
         <div class="blog-card__meta">
             <div class="blog-card__meta-inner flex">
