@@ -1,12 +1,10 @@
-@use '../globals';
-
 .btn {
   display: inline-block;
   padding: 0.5rem 2.5rem;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.6rem;
-  @include globals.breakpoint(md) {
+  @include breakpoint(md) {
     font-size: 2rem;
   }
 }
@@ -15,7 +13,7 @@
 .btn-tertiary {
   position: relative;
   z-index: 1;
-  color: globals.$lightGray;
+  color: $lightGray;
   &:before {
     position: absolute;
     content: "";
@@ -36,22 +34,22 @@
 }
 .btn-primary {
   &:before {
-    background-color: globals.$primaryColor;
+    background-color: $primaryColor;
   }
 }
 .btn-secondary {
-  color: globals.$primaryColor;
+  color: $primaryColor;
   &:before {
-    background-color: globals.$lightGray;
+    background-color: $lightGray;
   }
 }
 .btn-tertiary {
   &:before {
-    background-color: globals.$tertiaryColor;
+    background-color: $tertiaryColor;
   }
   &:hover,
   &:focus {
-    color: globals.$bodyBlack;
+    color: $bodyBlack;
     &:before {
       width: 100%;
     }

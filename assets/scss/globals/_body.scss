@@ -1,11 +1,9 @@
-@use '../globals/variables';
-
 * {
   box-sizing: border-box;
 }
 body {
-  background-color: variables.$bodyBlack;
-  font-family: variables.$primaryFont;
+  background-color: $bodyBlack;
+  font-family: $primaryFont;
 }
 // .viewport {
 //   overflow: hidden;
@@ -31,7 +29,7 @@ body {
 // }
 .site-main {
   opacity: 1;
-  margin-top: variables.$desktopHeader;
+  margin-top: $desktopHeader;
   // margin-bottom: 508px;
 }
 ul {
@@ -40,13 +38,13 @@ ul {
 // Style highlight to match our themes colors
 ::-moz-selection {
   background: rgba(205, 31, 64, 0.8);
-  color: variables.$white;
+  color: $white;
 }
 ::selection {
   background: rgba(205, 31, 64, 0.8);
-  color: variables.$white;
+  color: $white;
 }
 ::-ms-selection {
   background: rgba(205, 31, 64, 0.8);
-  color: variables.$white;
+  color: $white;
 }

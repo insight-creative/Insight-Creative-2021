@@ -1,7 +1,5 @@
-@use '../../globals';
-
 .blog-card {
-  @include globals.breakpoint(md) {
+  @include breakpoint(md) {
     width: 50%;
   }
   a {
@@ -21,7 +19,7 @@
     height: 300px;
   }
   &__image {
-    border-radius: globals.$radius;
+    border-radius: $radius;
     height: 120%;
     position: relative;
     top: -20%;
@@ -41,7 +39,7 @@
   &__staff-image-wrapper {
     position: relative;
     margin-bottom: 1.5rem;
-    background: globals.$white;
+    background: $white;
     border-radius: 50%;
     &:after {
       position: absolute;
@@ -50,7 +48,7 @@
       left: 4px;
       height: 102%;
       width: 102%;
-      border: 2px solid globals.$secondaryColor;
+      border: 2px solid $secondaryColor;
       border-radius: 50%;
     }
   }

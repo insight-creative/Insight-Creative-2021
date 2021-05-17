@@ -29,13 +29,13 @@
     <meta name="twitter:site" content="@insightwi">
     <meta name="twitter:image" content="{{ if .Params.seo.featured_image }}{{ .Permalink }}{{ .Params.seo.featured_image }}{{ else }}{{ .Site.BaseURL }}/images/background-images/Insight-Creative-Inc-Communication-With-Substance-Cover.jpg{{ end }}">
 
-    <!-- {{ $scss := resources.Get "scss/main.scss" | toCSS }}
+    {{ $scss := resources.Get "scss/main.scss" | toCSS }}
     {{ $postcss := $scss | resources.PostCSS | minify }}
-    <link rel="stylesheet" href="{{ $postcss.Permalink }}" media="screen"> -->
+    <link rel="stylesheet" href="{{ $postcss.Permalink }}" media="screen">
 
-    {{- $scss := resources.Get "scss/main.scss" -}}
+    <!-- {{- $scss := resources.Get "scss/main.scss" -}}
     {{- $mainStyle := $scss | toCSS (dict "transpiler" "dartsass") | resources.PostCSS | minify -}}
-    <link rel="stylesheet" href="{{ $mainStyle.RelPermalink }}">
+    <link rel="stylesheet" href="{{ $mainStyle.RelPermalink }}"> -->
 
     <link rel="preconnect" href="https://www.google-analytics.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">

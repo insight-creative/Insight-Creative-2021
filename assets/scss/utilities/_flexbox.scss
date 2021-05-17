@@ -1,12 +1,10 @@
-@use '../globals';
-
 .flex {
   display: flex;
 }
 .flex-container {
   display: flex;
   flex-direction: column;
-  @include globals.breakpoint(lg) {
+  @include breakpoint(lg) {
     flex-direction: row;
   }
 }
@@ -14,7 +12,7 @@
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-around;
-  @include globals.breakpoint(lg) {
+  @include breakpoint(lg) {
     flex-direction: row;
   }
 }
@@ -22,7 +20,7 @@
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  @include globals.breakpoint(md) {
+  @include breakpoint(md) {
     flex-direction: row;
   }
 }
@@ -41,7 +39,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  @include globals.breakpoint(lg) {
+  @include breakpoint(lg) {
     justify-content: flex-start;
   }
 }
@@ -99,7 +97,7 @@
   justify-content: space-around;
 }
 
-@include globals.breakpoint(sm) {
+@include breakpoint(sm) {
   .flex-column-s {
     flex-direction: column;
   }
@@ -152,7 +150,7 @@
     justify-content: space-around;
   }
 }
-@include globals.breakpoint(md) {
+@include breakpoint(md) {
   .flex-m {
     display: flex;
   }
@@ -214,7 +212,7 @@
     justify-content: space-around;
   }
 }
-@include globals.breakpoint(lg) {
+@include breakpoint(lg) {
   .flex-none-l {
     flex: none;
   }

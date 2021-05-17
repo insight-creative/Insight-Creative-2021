@@ -1,8 +1,6 @@
-@use '../globals';
-
 .footer {
-  background-color: globals.$darkBlack;
-  color: globals.$white;
+  background-color: $darkBlack;
+  color: $white;
   font-size: 2rem;
   // position: fixed;
   // bottom: 0;
@@ -15,7 +13,7 @@
   // min-height: 608px;
   height: 927px;
   overflow: hidden;
-  @include globals.breakpoint(md) {
+  @include breakpoint(md) {
     height: 608px;
   }
   &__container {
@@ -46,7 +44,7 @@
   &__menu,
   &__services {
     margin-bottom: 2.5rem;
-    @include globals.breakpoint(lg) {
+    @include breakpoint(lg) {
       align-items: center;
     }
   }
@@ -73,9 +71,9 @@
   }
   &__copyright {
     text-align: center;
-    border-top: 1px solid globals.$bodyBlack;
+    border-top: 1px solid $bodyBlack;
     font-size: 1.6rem;
-    @include globals.breakpoint(md) {
+    @include breakpoint(md) {
       display: flex;
       align-items: center;
       p {
@@ -94,10 +92,10 @@
     list-style-type: none;
   }
   &__nav-item {
-    color: globals.$white;
+    color: $white;
     padding: 0.5rem 0;
     &:hover {
-      color: globals.$secondaryColor;
+      color: $secondaryColor;
     }
   }
 }
@@ -109,6 +107,6 @@
   height: 5px;
   width: 5px;
   margin: 0 10px;
-  background-color: globals.$lightGray;
+  background-color: $lightGray;
   border-radius: 50%;
 }

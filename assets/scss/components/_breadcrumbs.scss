@@ -1,8 +1,6 @@
-@use '../globals';
-
 .breadcrumbs {
   display: none;
-  @include globals.breakpoint(md) {
+  @include breakpoint(md) {
     display: block;
     position: fixed;
     left: 2.5rem;
@@ -33,13 +31,13 @@
   &__link {
     text-decoration: none;
     padding: 1rem;
-    color: globals.$tertiaryColor;
+    color: $tertiaryColor;
     font-size: 1.4rem;
     position: relative;
     transition: 0.3s ease;
     &:hover,
     &:focus {
-      color: globals.$secondaryColor;
+      color: $secondaryColor;
     }
     &:after {
       position: absolute;
@@ -49,18 +47,18 @@
       content: "";
       height: 15px;
       width: 1px;
-      background: globals.$tertiaryColor;
+      background: $tertiaryColor;
     }
   }
   &__progress-bar {
     height: 2px;
     width: 50px;
-    background: globals.$darkBlack;
+    background: $darkBlack;
   }
   &__progress-bar-inner {
     height: 2px;
     width: 50px;
-    background: globals.$tertiaryColor;
+    background: $tertiaryColor;
     transform: scaleX(0);
     transform-origin: left;
     transition: 0.3s ease;

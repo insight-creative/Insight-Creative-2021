@@ -1,5 +1,3 @@
-@use '../globals';
-
 .testimonials {
   position: relative;
   .container-wide {
@@ -17,8 +15,8 @@
 .swiper-button-next {
   top: 60%;
   z-index: 1;
-  color: globals.$secondaryColor;
-  border: 1px solid globals.$secondaryColor;
+  color: $secondaryColor;
+  border: 1px solid $secondaryColor;
   border-radius: 50%;
   padding: 3rem;
   &:before {
@@ -29,7 +27,7 @@
     top: 49%;
     left: 25%;
     opacity: 0;
-    background-color: globals.$secondaryColor;
+    background-color: $secondaryColor;
     transition: 0.2s ease;
   }
   &:after {
@@ -90,17 +88,17 @@
 .swiper-pagination-bullet {
   width: 6px;
   height: 6px;
-  background-color: globals.$secondaryColor !important;
+  background-color: $secondaryColor !important;
   margin: 0 8px !important;
 }
 .swiper-pagination-bullet-active {
-  background: globals.$secondaryColor;
+  background: $secondaryColor;
   transform: scale(1.3) !important;
   position: relative;
   &:after {
     position: absolute;
     content: "";
-    border: 1px solid globals.$secondaryColor;
+    border: 1px solid $secondaryColor;
     height: 12px;
     width: 12px;
     border-radius: 50%;

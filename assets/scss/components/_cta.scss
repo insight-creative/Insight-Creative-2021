@@ -1,9 +1,7 @@
-@use '../globals';
-
 .site-cta {
   text-align: center;
   &__content {
-    border-radius: globals.$radius;
+    border-radius: $radius;
     position: relative;
     z-index: 1;
   }

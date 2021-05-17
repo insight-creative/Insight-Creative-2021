@@ -1,5 +1,3 @@
-@use '../globals';
-
 .w-10 {
   width: 10%;
 }
@@ -55,7 +53,7 @@
   width: auto;
 }
 
-@include globals.breakpoint(sm) {
+@include breakpoint(sm) {
   .w-10-s {
     width: 10%;
   }
@@ -111,7 +109,7 @@
     width: auto;
   }
 }
-@include globals.breakpoint(md) {
+@include breakpoint(md) {
   .w-10-m {
     width: 10%;
   }
@@ -167,7 +165,7 @@
     width: auto;
   }
 }
-@include globals.breakpoint(lg) {
+@include breakpoint(lg) {
   .w-10-l {
     width: 10%;
   }
@@ -223,7 +221,7 @@
     width: auto;
   }
 }
-@include globals.breakpoint(xl) {
+@include breakpoint(xl) {
   .w-10-xl {
     width: 10%;
   }
@@ -287,49 +285,49 @@
 }
 .col-20 {
   width: 100%;
-  @include globals.breakpoint(lg) {
+  @include breakpoint(lg) {
     width: 20%;
   }
 }
 .col-25 {
   width: 100%;
-  @include globals.breakpoint(lg) {
+  @include breakpoint(lg) {
     width: 25%;
   }
 }
 .col-30 {
   width: 100%;
-  @include globals.breakpoint(lg) {
+  @include breakpoint(lg) {
     width: 33.3333%;
   }
 }
 .col-40 {
   width: 100%;
-  @include globals.breakpoint(lg) {
+  @include breakpoint(lg) {
     width: 40%;
   }
 }
 .col-50 {
   width: 100%;
-  @include globals.breakpoint(lg) {
+  @include breakpoint(lg) {
     width: 50%;
   }
 }
 .col-60 {
   width: 100%;
-  @include globals.breakpoint(lg) {
+  @include breakpoint(lg) {
     width: 60%;
   }
 }
 .col-70 {
   width: 100%;
-  @include globals.breakpoint(lg) {
+  @include breakpoint(lg) {
     width: 70%;
   }
 }
 .col-80 {
   width: 100%;
-  @include globals.breakpoint(lg) {
+  @include breakpoint(lg) {
     width: 80%;
   }
 }
@@ -346,7 +344,7 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 0;
-  @include globals.breakpoint(lg) {
+  @include breakpoint(lg) {
     padding: 20px;
   }
 }
@@ -372,7 +370,7 @@
   padding-left: 20px;
   margin: 0 auto;
   width: auto;
-  @include globals.breakpoint(md) {
+  @include breakpoint(md) {
     width: 90%;
     max-width: 1000px;
   }
@@ -382,10 +380,10 @@
   margin-right: auto;
   margin-left: auto;
   padding: 0 2rem;
-  @include globals.breakpoint(md) {
+  @include breakpoint(md) {
     width: 90%;
   }
-  @include globals.breakpoint(lg) {
+  @include breakpoint(lg) {
     width: 80%;
   }
 }
@@ -394,13 +392,13 @@
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
-  @include globals.breakpoint(md) {
+  @include breakpoint(md) {
     width: 90%;
   }
 }
 .text-wrap {
   padding: 0 10px;
-  @include globals.breakpoint(md) {
+  @include breakpoint(md) {
     padding: 0 20px;
   }
 }
@@ -408,7 +406,7 @@
   max-width: 1000px;
   display: flex;
   flex-direction: column;
-  @include globals.breakpoint(md) {
+  @include breakpoint(md) {
     max-width: 700px;
   }
 }
@@ -486,7 +484,7 @@
 .margin-bottom-4 {
   margin-bottom: 4rem;
 }
-@include globals.breakpoint(sm) {
+@include breakpoint(sm) {
   .padding-10-s {
     padding: 10px;
   }
@@ -512,7 +510,7 @@
     padding-bottom: 50px;
   }
 }
-@include globals.breakpoint(md) {
+@include breakpoint(md) {
   .padding-10-m {
     padding: 10px;
   }
@@ -538,7 +536,7 @@
     padding-bottom: 50px;
   }
 }
-@include globals.breakpoint(lg) {
+@include breakpoint(lg) {
   .padding-10-l {
     padding: 10px;
   }

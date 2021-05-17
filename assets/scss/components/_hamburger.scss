@@ -1,5 +1,3 @@
-@use '../globals';
-
 // Add Animation to our hamburger Menu
 .hamburger {
   display: inline-block;
@@ -30,7 +28,7 @@
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner:before,
 .hamburger.is-active .hamburger-inner:after {
-  background-color: globals.$lightGray;
+  background-color: $lightGray;
 }
 .hamburger-box {
   width: 30px;
@@ -48,7 +46,7 @@
 .hamburger-inner:after {
   width: 30px;
   height: 3px;
-  background-color: globals.$lightGray;
+  background-color: $lightGray;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;

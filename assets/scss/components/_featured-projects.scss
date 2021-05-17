@@ -1,10 +1,8 @@
-@use '../globals';
-
 .featured-projects {
   margin-top: 5rem;
   &__link {
     text-decoration: none;
-    @include globals.breakpoint(md) {
+    @include breakpoint(md) {
       &:hover,
       &:focus {
         .featured-projects__overlay {
@@ -26,7 +24,7 @@
   }
   &__project {
     margin: 10px 0;
-    @include globals.breakpoint(md) {
+    @include breakpoint(md) {
       margin: 0;
     }
   }
@@ -62,7 +60,7 @@
     transform: translateY(-100%);
     transition: 0.7s ease-out;
   }
-  @include globals.breakpoint(md) {
+  @include breakpoint(md) {
     &__row-1 &__link:nth-of-type(1) {
       margin: 0 0.5rem 0.5rem 0;
     }

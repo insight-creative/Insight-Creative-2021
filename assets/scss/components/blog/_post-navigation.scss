@@ -1,11 +1,9 @@
-@use '../../globals';
-
 .post-navigation {
-  border-top: 1px solid globals.$secondaryColor;
+  border-top: 1px solid $secondaryColor;
   padding: 2rem 0 0 0;
   justify-content: space-between;
   display: none;
-  @include globals.breakpoint(sm) {
+  @include breakpoint(sm) {
     display: flex;
   }
   &__next a,
@@ -15,7 +13,7 @@
     &:hover,
     &:focus {
       svg {
-        fill: globals.$tertiaryColor;
+        fill: $tertiaryColor;
       }
     }
   }
@@ -43,7 +41,7 @@
   }
   svg {
     width: 20px;
-    fill: globals.$secondaryColor;
+    fill: $secondaryColor;
     transition: 0.3s ease;
   }
 }

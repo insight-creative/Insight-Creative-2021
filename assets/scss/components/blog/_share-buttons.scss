@@ -1,8 +1,6 @@
-@use '../../globals';
-
 .share-this {
   display: none;
-  @include globals.breakpoint(sm) {
+  @include breakpoint(sm) {
     display: flex;
     align-items: center;
     margin-bottom: 2rem;
@@ -14,7 +12,7 @@
   &__icon-wrapper {
     position: relative;
     margin-bottom: 1.5rem;
-    background: globals.$white;
+    background: $white;
     border-radius: 50%;
     height: 50px;
     width: 50px;
@@ -27,7 +25,7 @@
       left: 2px;
       height: 102%;
       width: 102%;
-      border: 2px solid globals.$secondaryColor;
+      border: 2px solid $secondaryColor;
       border-radius: 50%;
     }
   }
@@ -36,14 +34,14 @@
     &:hover,
     &:focus {
       svg {
-        fill: globals.$secondaryColor;
+        fill: $secondaryColor;
       }
     }
   }
   svg {
     height: 25px;
     width: auto;
-    fill: globals.$tertiaryColor;
+    fill: $tertiaryColor;
     transition: 0.3s ease;
   }
 }
