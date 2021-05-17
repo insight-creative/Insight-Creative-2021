@@ -33,10 +33,6 @@
     {{ $postcss := $scss | resources.PostCSS | minify }}
     <link rel="stylesheet" href="{{ $postcss.Permalink }}" media="screen">
 
-    <!-- {{- $scss := resources.Get "scss/main.scss" -}}
-    {{- $mainStyle := $scss | toCSS (dict "transpiler" "dartsass") | resources.PostCSS | minify -}}
-    <link rel="stylesheet" href="{{ $mainStyle.RelPermalink }}"> -->
-
     <link rel="preconnect" href="https://www.google-analytics.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
