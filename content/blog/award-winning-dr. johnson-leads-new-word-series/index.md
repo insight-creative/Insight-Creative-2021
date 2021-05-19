@@ -1,13 +1,13 @@
 ---
 layout: blog
-title: "Award-winning Dr. Johnson Leads New Word Series"
+seo:
+  title: "Award-winning Dr. Johnson Leads New Word Series"
+  description: "A fun collaboration to create communication with substance."
+  featured_image: Word-Insights-Cover.jpg
+  featured_image_alt: Word Insights with Dr. Johnson
 date: 2020-11-06
 author: Emily Morehart
-description: "A fun collaboration to create communication with substance."
-text-color: "ffffff"
-back-color: "d31145"
-image: Word-Insights-Cover.jpg
-tag: blog
+categories: ["Content"]
 page_class: single-post
 ---
 

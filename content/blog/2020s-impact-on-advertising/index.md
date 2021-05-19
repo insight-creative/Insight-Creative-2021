@@ -1,13 +1,13 @@
 ---
 layout: blog
-title: "2020’s Impact on Advertising"
+seo:
+  title: "2020’s Impact on Advertising"
+  description: ""
+  featured_image: 2020-Impact-on-Advertising-2500.jpg
+  featured_image_alt: Series of photos showing a variety of things that changed during the pandemic
 date: 2021-02-11
 author: Sam Rowe
-description: ""
-text-color: "ffffff"
-back-color: "d31145"
-image: 2020-Impact-on-Advertising-2500.jpg
-tag: blog
+categories: ["Design"]
 page_class: single-post
 ---
 
@@ -19,33 +19,26 @@ On both the national and local level, advertisers leaned into the events of 2020
 
 When we live through hard times, opportunities for creativity and new ideas often become even more apparent, notably with these new “shared” (and socially distant) experiences. Apple took advantage of the “Work from Home” moment to display how their products can help make working remotely easier, especially when your home life is chaotic already.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6_pru8U2RmM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="aspect-ratio">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6_pru8U2RmM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 In a lighthearted response to a very dark year, other companies took a humorous approach, like Match.com employing Satan himself as a character who romantically “matched” with the year 2020.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/L4l0rCjatGI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="aspect-ratio">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/L4l0rCjatGI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 Other advertisers used their platforms to spread messages of hope and resilience in the face of hard times. Nike masterfully edited together familiar clips of different sports moments that fit together so well, tugging at our heartstrings and making us yearn for a time when sports (and stands full of fans) are safe again.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WA4dDs0T7sM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="aspect-ratio">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/WA4dDs0T7sM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 Here at Insight, we’ve had to tackle many unconventional projects due to the pandemic. From lobby closures and new procedure notices at Bank of Luxemburg to implementing social distancing guidelines through environmental and social graphics at Ho-Chunk Gaming Nekoosa, we’ve been able to creatively and quickly respond to the changing needs of our clients throughout 2020.
 
-<img data-aos="fade-up" src="/img/blog/BOL-2020-campaign-graphics-1800.jpg"
-alt="Bank of Luxemburg COVID-19 campaign effort"
-srcset="
-/img/blog/BOL-2020-campaign-graphics-1800.jpg 1800w,
-/img/blog/BOL-2020-campaign-graphics-1200.jpg 1200w,
-/img/blog/BOL-2020-campaign-graphics-800.jpg 900w,
-/img/blog/BOL-2020-campaign-graphics-600.jpg 600w" />
-
-<img data-aos="fade-up" src="/img/blog/HCGN-Safety-Campaign-1800.jpg"
-alt="Bank of Luxemburg COVID-19 campaign effort"
-srcset="
-/img/blog/HCGN-Safety-Campaign-1800.jpg 1800w,
-/img/blog/HCGN-Safety-Campaign-1200.jpg 1200w,
-/img/blog/HCGN-Safety-Campaign-800.jpg 900w,
-/img/blog/HCGN-Safety-Campaign-600.jpg 600w" />
+![Bank of Luxemburg COVID-19 campaign effort](BOL-2020-campaign-graphics-1800.jpg)
+![Bank of Luxemburg COVID-19 campaign effort](HCGN-Safety-Campaign-1800.jpg)
 
 This year, I’ve also had the honor and responsibility of organizing the American Advertising Awards for our local American Advertising Federation chapter, AAF Fox River, as the vice president. Aside from visually stunning work, these same themes have proven to work well on a local level: connection, humor, hope, optimism and resilience. Many strong entries aimed to reunite our communities and bring people together even when we have to stay physically apart.
 

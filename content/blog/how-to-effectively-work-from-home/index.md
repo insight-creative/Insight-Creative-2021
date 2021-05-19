@@ -1,14 +1,13 @@
 ---
 layout: blog
-title: "How to Effectively Work From Home"
+seo:
+  title: "How to Effectively Work From Home"
+  description: ""
+  featured_image: how-to-effectively-work-from-home-2500.jpg
+  featured_image_alt: How to Effectively Work From Home
 date: 2020-05-19
 author: Insight Creative
 description: ""
-text-color: "ffffff"
-back-color: "d31145"
-image: how-to-effectively-work-from-home-2500.jpg
-image_alt: How to Effectively Work From Home
-tag: blog
 page_class: single-post
 ---
 

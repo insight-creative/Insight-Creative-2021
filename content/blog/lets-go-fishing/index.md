@@ -1,12 +1,12 @@
 ---
 layout: blog
-title: "Let’s Go Fishin’!"
+seo:
+  title: "Let’s Go Fishin’!"
+  description: "I’ve been in a sales or account management position for quite a few years now. Along the way I’ve heard the question posed"
+  featured_image: letsGoFishing.jpg
+  featured_image_alt: Fishing bobber with Insight logo sitting on the surface of water
 date: 2019-04-10
 author: Brian Brost
-description: "I’ve been in a sales or account management position for quite a few years now. Along the way I’ve heard the question posed "
-image: letsGoFishing.jpg
-image_alt: Fishing bobber with Insight logo sitting on the surface of water
-tag: blog
 page_class: single-post
 ---
 

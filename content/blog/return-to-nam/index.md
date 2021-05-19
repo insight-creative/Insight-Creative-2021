@@ -1,12 +1,12 @@
 ---
 layout: blog
-title: "Finding the personal reward in PR"
+seo:
+  title: "Finding the personal reward in PR"
+  description: "When I started my career at Insight Creative, Inc. I envisioned the opportunity to update or develop new brands, work on media campaigns and perhaps help the occasional non-profit.   Never did I think I’d have the chance to rewrite history.  That changed when a marketing colleague asked me to help Honor Flight’s Return to Nam Project."
+  featured_image: return-to-nam-cover-1200.jpg
+  featured_image_alt: Return to Nam
 date: 2019-09-26
 author: Niki Petit
-description: "When I started my career at Insight Creative, Inc. I envisioned the opportunity to update or develop new brands, work on media campaigns and perhaps help the occasional non-profit.   Never did I think I’d have the chance to rewrite history.  That changed when a marketing colleague asked me to help Honor Flight’s Return to Nam Project."
-image: return-to-nam-cover-1200.jpg
-image_alt: Return to Nam
-tag: blog
 page_class: single-post
 ---
 

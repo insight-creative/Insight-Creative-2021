@@ -248,8 +248,8 @@ function initContentFade() {
         gsap.from(fade, {
             opacity: 0,
             y: 20,
-            duration: .5,
-            ease: 'Power2.in',
+            duration: .7,
+            ease: 'none',
             scrollTrigger: {
                 trigger: fade,
                 start: "top bottom-=50",

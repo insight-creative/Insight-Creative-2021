@@ -1,14 +1,13 @@
 ---
 layout: blog
-title: "Write Better Press Releases"
+seo:
+  title: "Write Better Press Releases"
+  description: "Tried-and-true tips from a seasoned PR professional."
+  featured_image: write-better-press-releases-2500.jpg
+  featured_image_alt: Typewriter with Do's and Don'ts title typed out on a piece of paper
 date: 2020-05-29
 author: Emily Morehart
-description: "Tried-and-true tips from a seasoned PR professional."
-text-color: "ffffff"
-back-color: "d31145"
-image: write-better-press-releases-2500.jpg
-image_alt: Typewriter with Do's and Don'ts title typed out on a piece of paper
-tag: blog
+content: ["Content"]
 page_class: single-post
 ---
 

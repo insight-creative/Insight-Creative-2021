@@ -1,12 +1,13 @@
 ---
 layout: blog
+seo:
+  title: "Change can Lead to Great Opportunities"
+  description: "COVID-19 has taught us innovation and adaptability lead to success."
+  featured_image: change-is-necessary.jpg
+  featured_image_alt: Change can Lead to Great Opportunities
 date: 2021-01-12
-title: "Change can Lead to Great Opportunities"
 author: Niki Petit
-description: "COVID-19 has taught us innovation and adaptability lead to success."
-image: change-is-necessary.jpg
-image_alt: Change can Lead to Great Opportunities
-tag: blog
+categories: ["Design"]
 page_class: single-post
 ---
 

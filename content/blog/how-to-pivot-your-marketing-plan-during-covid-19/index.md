@@ -1,14 +1,12 @@
 ---
 layout: blog
-title: "How to Pivot Your Marketing Plan During COVID-19"
+seo:
+  title: "How to Pivot Your Marketing Plan During COVID-19"
+  description: "It’s critical to keep your brand top of mind, even in trying times."
+  featured_image: how-to-pivot-your-marketing-plan-during-covid-19-2400.jpg
+  featured_image_alt: Empty shelves at store during COVID-19
 date: 2020-08-10
 author: Niki Petit
-description: "It’s critical to keep your brand top of mind, even in trying times."
-text-color: "ffffff"
-back-color: "d31145"
-image: how-to-pivot-your-marketing-plan-during-covid-19-2400.jpg
-image_alt: Empty shelves at store during COVID-19
-tag: blog
 page_class: single-post
 ---
 

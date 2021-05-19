@@ -1,11 +1,12 @@
 ---
 layout: blog
-title: "What is Happening to the Retail Landscape in Green Bay?"
+seo:
+  title: "What is Happening to the Retail Landscape in Green Bay?"
+  description: "If you’re like me, you’re still shaking your head wondering what happened to Port Plaza Mall."
+  featured_image: WhatisHappeningtotheRetailLandscapeinGreenBay.jpg
+  featured_image_alt: Door to small boutique clothing store with we're open sign on front door
 date: 2019-03-21
 author: Niki Petit
-description: "If you’re like me, you’re still shaking your head wondering what happened to Port Plaza Mall."
-image: WhatisHappeningtotheRetailLandscapeinGreenBay.jpg
-image_alt: Door to small boutique clothing store with we're open sign on front door
 page_class: single-post
 ---
 

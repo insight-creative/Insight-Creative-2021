@@ -1,18 +1,19 @@
 ---
 layout: blog
+seo:
+  title: "Insight Creative, Inc. Hires Nicole Ehlers as Account Executive and Promotes Molly Setzer to Media Director"
+  description: ""
+  featured_image: Insight-News-2500.jpg
+  featured_image_alt: Nicole Ehlers Headshot
 date: 2021-03-18
-title: "Insight Creative, Inc. Hires Nicole Ehlers as Account Executive and Promotes Molly Setzer to Media Director"
-author: Emily Morehart
-description: ""
-text-color: "ffffff"
-back-color: "d31145"
+author: Insight Creative
 image: Insight-News-2500.jpg
 categories: ["News"]
 page_class: single-post
 ---
 
 <img data-aos="fade-up" src="Nicole_HeadShot.jpg"
-  alt="Nicole Ehlers Headshot" class="headshot-image"/>
+alt="Nicole Ehlers Headshot" class="headshot-image"/>
 
 Insight Creative, Inc. recently hired Nicole Ehlers as account executive to serve the agency’s growing client base. Ehlers brings over 20 years of client services and marketing experience to Insight.
 

@@ -5,14 +5,8 @@ seo:
   description: "Learn how building a statically generated site can make your website lightweight, secure, and fast!"
   featured_image: static-website-development.jpg
   featured_image_alt: Computer on desk with code on screen
-title: "Lost in the Static"
 date: 2020-12-02
 author: Justin Parsons
-description: "Learn how building a statically generated site can make your website lightweight, secure, and fast!"
-text-color: "ffffff"
-back-color: "d31145"
-image: static-website-development.jpg
-image_alt: Computer on desk with code on screen
 categories: ["Web"]
 page_class: single-post
 ---

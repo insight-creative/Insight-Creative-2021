@@ -1,13 +1,13 @@
 ---
 layout: blog
-title: "Five Marketing Questions to ask in a Time Crunch"
+seo:
+  title: "Five Marketing Questions to ask in a Time Crunch"
+  description: "Do your recent quick-turn creative projects meet this criteria?"
+  featured_image: hourglass-with-time-running-out-2500.jpg
+  featured_image_alt: Hourglass sitting on white marble counter with time running out
 date: 2021-01-25
 author: Emily Morehart
-description: "Do your recent quick-turn creative projects meet this criteria?"
-text-color: "ffffff"
-back-color: "d31145"
-image: hourglass-with-time-running-out-2500.jpg
-tag: blog
+categories: ["Content"]
 page_class: single-post
 ---
 

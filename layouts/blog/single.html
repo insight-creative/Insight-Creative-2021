@@ -1,14 +1,14 @@
 {{ define "main" }}
     <div class="post-content">
-        <div class="container-wide flex flex-column flex-row-m padding-top-6">
+        <div class="lane-wide flex flex-column flex-row-m padding-top-6">
             {{ partial "blog/blog-sidebar" . }}
             <div class="post">
-                <article>
+                <article role="article">
                     {{ if .Params.Categories }}
                     <span class="categories">{{ range $index, $elements := .Params.Categories }}<a href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}" class="categories__link">{{ if ne $index 0 }}{{ end }}
                         {{ . | title }}</a> {{ end}}</span>
                     {{ end }}
-                    <h1>{{ .Title }}</h1>
+                    <h1>{{ .Params.seo.title }}</h1>
                     {{ .Content }}
                 </article>
                 {{ partial "blog/share-buttons" . }}
@@ -16,8 +16,6 @@
                 {{ partial "blog/post-author" . }}
             </div>
         </div>
-        <div class="container-wide">
-            {{ partial "blog/related-posts" . }}
-        </div>
+        {{ partial "blog/related-posts" . }}
     </div>
 {{ end }}

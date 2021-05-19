@@ -1,12 +1,12 @@
 ---
 layout: blog
-title: "Why using pets in your ad campaign sells"
+seo:
+  title: "Why using pets in your ad campaign sells"
+  description: "During the Super Bowl, there was a plethora of ads featuring dogs, cats, horses and many other lovable creatures. Jeep even brought back the groundhog. Why are advertisers focusing on our furry friends to sell goods and services?"
+  featured_image: Bill-Murray-Groundhog-Jeep-Commercial-1500.jpg
+  featured_image_alt: Bill Murray and the Groundhog in Jeep Super Bowl commercial
 date: 2020-02-13
 author: Niki Petit
-description: "During the Super Bowl, there was a plethora of ads featuring dogs, cats, horses and many other lovable creatures. Jeep even brought back the groundhog. Why are advertisers focusing on our furry friends to sell goods and services?"
-image: Bill-Murray-Groundhog-Jeep-Commercial-1500.jpg
-image_alt: Bill Murray and the Groundhog in Jeep Super Bowl commercial
-tag: blog
 page_class: single-post
 ---
 

@@ -1,11 +1,12 @@
 ---
 layout: blog
-title: "Elevate your marketing with drone footage"
+seo:
+  title: "Elevate your marketing with drone footage"
+  description: "When you’re talking about taking photography and videography to the next level a drone provides aerial content to capture unique and desirable looking photos and videos. Learn how drone photography and videography can enhance your marketing efforts."
+  featured_image: drone-shot-cover-low.jpg
+  featured_image_alt: Drone shot of downtown Green Bay, WI
 date: 2019-10-14
 author: Insight Creative
-description: "When you’re talking about taking photography and videography to the next level a drone provides aerial content to capture unique and desirable looking photos and videos. Learn how drone photography and videography can enhance your marketing efforts."
-image: drone-shot-cover-low.jpg
-image_alt: Drone shot of downtown Green Bay, WI
 categories: ["Studio"]
 page_class: single-post
 ---

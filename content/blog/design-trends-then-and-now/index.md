@@ -1,11 +1,12 @@
 ---
 layout: blog
-title: "Design Trends: Then & Now"
+seo:
+  title: "Design Trends: Then & Now"
+  description: "What I’ve witnessed in 20+ years of design and where I think we’re headed."
+  featured_image: OldvNewWebpage.jpg
+  featured_image_alt: One outdated and one modern website design example side by side
 date: 2020-02-04
 author: Jay Bauer
-description: "What I’ve witnessed in 20+ years of design and where I think we’re headed."
-image: OldvNewWebpage.jpg
-image_alt: One outdated and one modern website design example side by side
 categories: ["Design"]
 page_class: single-post
 ---

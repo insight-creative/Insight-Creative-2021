@@ -1,14 +1,12 @@
 ---
 layout: blog
-title: "How to Keep Organized"
+seo:
+  title: "How to Keep Organized"
+  description: "You don't have to wait until Jan.1 to start a new habit."
+  featured_image: how-to-keep-organized-2500.jpg
+  featured_image_alt: Calendar, pencils, and phones laid out on a desk
 date: 2020-09-18
 author: Molly Setzer
-description: "You don't have to wait until Jan.1 to start a new habit."
-text-color: "ffffff"
-back-color: "d31145"
-image: how-to-keep-organized-2500.jpg
-image_alt: Calendar, pencils, and phones laid out on a desk
-tag: blog
 page_class: single-post
 ---
 

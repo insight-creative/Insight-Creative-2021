@@ -1,11 +1,12 @@
 ---
 layout: blog
-title: "When it comes to creative, PUSH."
+seo:
+  title: "When it comes to creative, PUSH."
+  description: "Anyone in a creative role can attest, there are good and bad days. At times, inspiration strikes like lightning and the work circuits seamlessly through you. Conversely, some people experience a “creative block” almost like a wall holding back all your good ideas. Learn ways to fend off creative complacency."
+  featured_image: insight-group-collaboration.jpg
+  featured_image_alt: Three Insight team members collaborating on a project
 date: 2020-01-09
 author: Emily Morehart
-description: "Anyone in a creative role can attest, there are good and bad days. At times, inspiration strikes like lightning and the work circuits seamlessly through you. Conversely, some people experience a “creative block” almost like a wall holding back all your good ideas. Learn ways to fend off creative complacency."
-image: insight-group-collaboration.jpg
-image_alt: Three Insight team members collaborating on a project
 categories: ["Content"]
 page_class: single-post
 ---

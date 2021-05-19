@@ -1,14 +1,13 @@
 ---
 layout: blog
-title: "Benefits of Creativity"
+seo:
+  title: "Benefits of Creativity"
+  description: "There are many mental and physical health benefits of creative living."
+  featured_image: Creativity-Hero-2500.jpg
+  featured_image_alt: adding creativity to your routine with colored pencils underneath
 date: 2020-06-11
 author: Sam Rowe
-description: "There are many mental and physical health benefits of creative living."
-text-color: "ffffff"
-back-color: "d31145"
-image: Creativity-Hero-2500.jpg
-image_alt: adding creativity to your routine with colored pencils underneath
-tag: blog
+categories: ["Design"]
 page_class: single-post
 ---
 

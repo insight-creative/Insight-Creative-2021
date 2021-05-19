@@ -1,10 +1,7 @@
 {{ define "main" }}
-{{ if eq .Title "Services" }}
-{{ partial "services" . }}
-{{ end }}
-{{ if eq .Title "Blog" }}
-<div class="container padding-top-10">
-  <h1 class="text-center">Insight Blog</h1>
+<div class="container padding-top-10 text-center">
+  <h1 class="no-margin">Insight Blog</h1>
+  <h2 class="g4">Insight Blog Subtitle?</h2>
   {{- if isset site.Taxonomies "categories" }}
   {{- if not (eq (len site.Taxonomies.categories) 0) }}
   <ul class="categories-list">
@@ -16,13 +13,12 @@
   {{- end }}
 </div>
 <div class="container post-wrapper padding-top-10">
-  {{ $paginator := .Paginate (.Data.Pages) }}
+  {{ $paginator := .Paginate ( where .Data.Pages "Type" "blog" ) }}
   {{ range $paginator.Pages }}
-  {{ .Render "blog-cards" }}
+  {{ .Render "blog-cards-alt" }}
   {{ end }}
 </div>
 <div class="container padding-bottom-10">
   {{ partial "blog/custom-pagination.html" . }}
 </div>
-{{ end }}
 {{ end }}

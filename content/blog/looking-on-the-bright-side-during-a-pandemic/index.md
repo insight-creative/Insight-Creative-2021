@@ -1,14 +1,12 @@
 ---
 layout: blog
-title: "Looking on the Bright Side During a Pandemic"
+seo:
+  title: "Looking on the Bright Side During a Pandemic"
+  description: "There's opportunity in every situation if you look for it."
+  featured_image: looking-on-the-bright-side-2400.jpg
+  featured_image_alt: Looking at the bright side during COVID-19
 date: 2020-08-17
 author: Jay Bauer
-description: "There's opportunity in every situation if you look for it."
-text-color: "ffffff"
-back-color: "d31145"
-image: looking-on-the-bright-side-2400.jpg
-image_alt: Looking at the bright side during COVID-19
-tag: blog
 page_class: single-post
 ---
 

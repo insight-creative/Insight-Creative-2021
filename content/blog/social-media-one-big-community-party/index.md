@@ -1,12 +1,13 @@
 ---
 layout: blog
-title: "Social Media—One Big Community Party"
+seo:
+  title: "Social Media—One Big Community Party"
+  description: "A common marketing goal for small businesses is to grow and engage with followers on social media. Here are four ‘go-to’ social media content strategies to get you on the right track."
+  featured_image: social-media-one-big-community-party.jpg
+  featured_image_alt: "Social media: one big community party"
 date: 2019-06-24
 author: Insight Creative
-description: "A common marketing goal for small businesses is to grow and engage with followers on social media. Here are four ‘go-to’ social media content strategies to get you on the right track."
-image: social-media-one-big-community-party.jpg
-image_alt: "Social media: one big community party"
-tag: blog
+categories: ["Content"]
 page_class: single-post
 ---
 

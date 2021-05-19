@@ -1,7 +1,7 @@
 <div class="post-author padding-bottom-10">
     {{ if isset .Params "author" }}
         {{ if (not ( eq .Params.author "Insight Creative" ) ) }}
-        <a href="/author/{{ .Params.Author | urlize }}" class="staff-card bg-black">
+        <a href="/author/{{ .Params.Author | urlize }}" class="staff-card staff-card--post bg-black">
             <div class="staff-card__inner flex flex-column flex-row-l">
                 <div class="staff-card__wrapper text-center w-100 w-30-l">
                     <div class="staff-card__image-wrapper">

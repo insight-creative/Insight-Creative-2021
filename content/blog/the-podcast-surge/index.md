@@ -1,12 +1,13 @@
 ---
 layout: blog
-title: "The podcast surge"
+seo:
+  title: "The podcast surge"
+  description: "Have you noticed how popular podcasts have become? Between celebrities, journalists, industry experts or even some of your own friends and family, it seems everyone has a launched their own podcast. Learn how advertising on podcasts can benefit your business."
+  featured_image: The-Podcast-Surge-2400.jpg
+  featured_image_alt: A podcast production style setup with microphone and headphones on a table
 date: 2019-11-14
 author: Insight Creative
-description: "Have you noticed how popular podcasts have become? Between celebrities, journalists, industry experts or even some of your own friends and family, it seems everyone has a launched their own podcast. Learn how advertising on podcasts can benefit your business."
-image: The-Podcast-Surge-2400.jpg
-image_alt: A podcast production style setup with microphone and headphones on a table
-tag: blog
+categories: ["Content"]
 page_class: single-post
 ---
 

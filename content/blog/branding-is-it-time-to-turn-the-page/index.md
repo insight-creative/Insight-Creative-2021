@@ -1,12 +1,13 @@
 ---
 layout: blog
-title: "Branding: Is it time to turn the page?"
+seo:
+  title: "Branding: Is it time to turn the page?"
+  description: "Rebranding is a huge step for any company. When executed successfully, a rebrand can help a business grow, boost brand recognition, and create enthusiasm. Learn more about when it may be time for a rebrand."
+  featured_image: Bank-of-Luxemburg-Rebrand-2400.jpg
+  featured_image_alt: Bank of Lexemburg new logo being revealed
 date: 2019-12-12
 author: Sam Rowe
-description: "Rebranding is a huge step for any company. When executed successfully, a rebrand can help a business grow, boost brand recognition, and create enthusiasm. Learn more about when it may be time for a rebrand."
-image: Bank-of-Luxemburg-Rebrand-2400.jpg
-image_alt: Bank of Lexemburg new logo being revealed
-tag: blog
+categories: ["Design"]
 page_class: single-post
 ---
 

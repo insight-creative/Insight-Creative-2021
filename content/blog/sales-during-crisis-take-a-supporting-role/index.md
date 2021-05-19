@@ -1,14 +1,12 @@
 ---
 layout: blog
-title: "Sales during crisis: Take a supportive role"
+seo:
+  title: "Sales during crisis: Take a supportive role"
+  description: "There are many ways salespeople can lend support to businesses today."
+  featured_image: think-outside-of-the-box-2500.jpg
+  featured_image_alt: "Sales during crisis: Take a supportive role"
 date: 2020-04-27
 author: Brian Brost
-description: "There are many ways salespeople can lend support to businesses today."
-text-color: "ffffff"
-back-color: "d31145"
-image: think-outside-of-the-box-2500.jpg
-image_alt: "Sales during crisis: Take a supportive role"
-tag: blog
 page_class: single-post
 ---
 

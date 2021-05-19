@@ -1,11 +1,23 @@
 {{ define "main" }}
-<div class="container padding-top-10">
-  <h1>{{ .Title }}</h1>
+<div class="container padding-top-10 text-center">
+  <h1 class="no-margin">{{ .Title }}</h1>
+  <h2 class="g4">Category Subtitle?</h2>
+</div>
+<div class="container">
+  {{- if isset site.Taxonomies "categories" }}
+  {{- if not (eq (len site.Taxonomies.categories) 0) }}
+  <ul class="categories-list">
+    {{- range .Site.Taxonomies.categories }}
+    <li class="categories-list__item"><a href="{{ .Page.Permalink }}" class="categories categories-list__link">{{ .Page.Title }}<span class="ml-2"> ({{ .Count }})</span></a></li>
+    {{- end }}
+  </ul>
+  {{- end }}
+  {{- end }}
 </div>
 <div class="post-wrapper container padding-top-10 padding-bottom-10">
   {{ $paginator := .Paginate ( where .Data.Pages "Type" "blog" ) }}
   {{ range $paginator.Pages }}
-  {{ .Render "blog-cards" }}
+  {{ .Render "blog-cards-alt" }}
   {{ end }}
 </div>
 {{ end }}

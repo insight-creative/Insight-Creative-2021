@@ -1,14 +1,14 @@
 ---
 layout: blog
-title: "Media: An Unseen, but Integral, Part of Advertising"
+seo:
+  title: "Media: An Unseen, but Integral, Part of Advertising"
+  description: "Learn how building a statically generated site can make your website lightweight, secure, and fast!"
+  featured_image: analytics-dashboard-on-laptop.jpg
+  featured_image_alt: laptop sitting on desk with analytics dashboard on display
 date: 2020-10-30
 author: Insight Creative
 description: ""
-text-color: "ffffff"
-back-color: "d31145"
-image: analytics-dashboard-on-laptop.jpg
-image_alt: laptop sitting on desk with analytics dashboard on display
-tag: blog
+categories: ["Media"]
 page_class: single-post
 ---
 

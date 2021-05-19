@@ -1,12 +1,13 @@
 ---
 layout: blog
-title: "Look Inward: Make Internal Communications a Priority"
+seo:
+  title: "Look Inward: Make Internal Communications a Priority"
+  description: "If you’re on the fence regarding an internal communications plan, I can assure you there is value in a program that is executed properly. Here are five simple ideas to consider:"
+  featured_image: LookInwardMakeInternalCommunicationsAPriority.jpg
+  featured_image_alt: Illustrative graphic of communication
 date: 2019-03-06
 author: Emily Morehart
-description: "If you’re on the fence regarding an internal communications plan, I can assure you there is value in a program that is executed properly. Here are five simple ideas to consider:"
-image: LookInwardMakeInternalCommunicationsAPriority.jpg
-image_alt: Illustrative graphic of communication
-tag: blog
+categories: ["Content"]
 page_class: single-post
 ---
 

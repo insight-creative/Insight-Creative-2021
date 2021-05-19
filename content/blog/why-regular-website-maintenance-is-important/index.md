@@ -1,11 +1,12 @@
 ---
 layout: blog
-title: "Why Regular Website Maintenance Is Important"
+seo:
+  title: "Why Regular Website Maintenance Is Important"
+  description: "Learn more about the importance of regular website maintenance."
+  featured_image: website-maintenance.jpg
+  featured_image_alt: Laptop on wooden desk with the WordPress admin dashboard on display
 date: 2020-08-25
 author: Justin Parsons
-description: "Learn more about the importance of regular website maintenance."
-image: website-maintenance.jpg
-image_alt: Laptop on wooden desk with the WordPress admin dashboard on display
 categories: ["Web"]
 page_class: single-post
 ---
