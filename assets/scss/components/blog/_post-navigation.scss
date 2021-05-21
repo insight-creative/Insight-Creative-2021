@@ -46,3 +46,23 @@
     transition: 0.3s ease;
   }
 }
+.post-navigation--alt {
+  border-bottom: 1px solid $darkBlack;
+  padding: 0;
+  .post-navigation__link {
+    padding: 10rem;
+    height: 100%;
+    transition: 0.5s ease-out;
+    &:hover,
+    &:focus {
+      background: $primaryColor;
+      color: $white;
+    }
+  }
+  .post-navigation__label {
+    margin-bottom: 1.5rem;
+  }
+  .post-navigation__button + .post-navigation__button {
+    border-left: 1px solid $darkBlack;
+  }
+}

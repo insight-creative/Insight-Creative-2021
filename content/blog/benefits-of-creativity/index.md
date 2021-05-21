@@ -27,15 +27,7 @@ Despite being someone who is creative at/for work, it often feels challenging to
 
 You do not need to be a naturally creative or talented individual to enjoy the many benefits of creativity. A good idea is to start small, reserve self-judgment, and don’t be afraid to fail. Anything can be art as long as you’re trying and stretching your creative muscles! Creativity is learned with practice just like any other hobby or skill, so don’t worry if you aren’t in love with your first creations. The result of your artistic endeavor doesn’t really matter. Simply take the time to enjoy yourself and explore your imaginative side.
 
-<img data-aos="fade-up" src="/img/blog/Picasso-Quote-2500.jpg"
-alt="Every child is an artist Pablo Picasso Quote"
-srcset="
-/img/blog/Picasso-Quote-2500.jpg 2400w,
-/img/blog/Picasso-Quote-1800.jpg 1800w,
-/img/blog/Picasso-Quote-1200.jpg 1200w,
-/img/blog/Picasso-Quote-900.jpg 900w,
-/img/blog/Picasso-Quote-600.jpg 600w,
-/img/blog/Picasso-Quote-600.jpg 400w" />
+!["Every child is an artist, the problem is staying an artist when you grow up" - Pablo Picasso](Picasso-Quote-2500.jpg)
 
 Small ways to introduce creativity into your routine, especially at home:
 
@@ -50,14 +42,7 @@ Small ways to introduce creativity into your routine, especially at home:
 - **Play.** Find creatively challenging games that make you think like a kid again. Consider video games (I’ve seen some incredibly cool builds in Minecraft), interactive board games, Lego® or literally any other game that requires your imagination.
 
 Still not sure where to start? Try using these fun prompts to take your creativity to the next level!
-<img data-aos="fade-up" src="/img/blog/Creative-Prompts-2500.jpg"
-alt="word cloud filled with creative prompts"
-srcset="
-/img/blog/Creative-Prompts-2500.jpg 2400w,
-/img/blog/Creative-Prompts-1800.jpg 1800w,
-/img/blog/Creative-Prompts-1200.jpg 1200w,
-/img/blog/Creative-Prompts-900.jpg 900w,
-/img/blog/Creative-Prompts-600.jpg 600w,
-/img/blog/Creative-Prompts-600.jpg 400w" />
+
+![Word cloud with a variety of creative prompts such as wild, mustache, cowboy, holiday](Creative-Prompts-2500.jpg)
 
 Ultimately, the most important thing to keep in mind when approaching creativity is to be gentle with yourself and don’t be afraid to fail. Happy creating!

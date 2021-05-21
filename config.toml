@@ -1,6 +1,7 @@
 baseURL = "https://insight-creative-2021-dev.netlify.app"
 languageCode = "en-us"
 title = "Insight Creative, Inc."
+googleAnalytics = ""
 enableRobotsTXT = true
 disableAliases = true
 summaryLength = 30
@@ -19,8 +20,6 @@ summaryLength = 30
   email = "info@insightcreative.com"
   location = " "
   disallowSearchEngines = true
-  # Google Analitycs
-  googleAnalytics = " " # Your ID# search 
   minifyBundles = true
 
 # CSS Plugins

@@ -1,7 +1,15 @@
+{{ $image := (.Resources.GetMatch (index .Params.seo.featured_image)) }}
+{{ $smallwebp := $image.Resize "600x q80 webp" }}
+{{ $smalljpg := $image.Resize "600x q80" }}
 <article class="blog-card">
     <a href="{{ .RelPermalink }}">
         <div class="blog-card__image-wrapper with-parallax">
-            <img src="{{ .Permalink }}{{ .Params.seo.featured_image }}" alt="{{ .Params.seo.featured_image_alt }}" class="blog-card__image" width="500" height="350">
+            <picture>
+                <source sizes="50vw" srcset="{{ $smallwebp.RelPermalink }}" type="image/webp" >
+                <source sizes="50vw" srcset="{{ $smalljpg.RelPermalink }}" type="image/jpg" >
+                <img sizes="50vw" loading="lazy"
+                    src="{{ $image.RelPermalink }}" width="500" height="300" alt="{{ .Params.seo.featured_image_alt }}" class="blog-card__image">
+            </picture>
         </div>
         <div class="blog-card__meta">
             <div class="blog-card__meta-inner flex">

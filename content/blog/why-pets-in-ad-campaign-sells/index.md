@@ -7,6 +7,7 @@ seo:
   featured_image_alt: Bill Murray and the Groundhog in Jeep Super Bowl commercial
 date: 2020-02-13
 author: Niki Petit
+categories: ["Media"]
 page_class: single-post
 ---
 

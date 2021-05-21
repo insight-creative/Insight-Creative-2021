@@ -3,7 +3,7 @@
         <div class="lane-wide flex flex-column flex-row-m padding-top-6">
             {{ partial "blog/blog-sidebar" . }}
             <div class="post">
-                <article role="article">
+                <article role="article" class="post__body">
                     {{ if .Params.Categories }}
                     <span class="categories">{{ range $index, $elements := .Params.Categories }}<a href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}" class="categories__link">{{ if ne $index 0 }}{{ end }}
                         {{ . | title }}</a> {{ end}}</span>
@@ -12,10 +12,10 @@
                     {{ .Content }}
                 </article>
                 {{ partial "blog/share-buttons" . }}
-                {{ partial "blog/post-navigation" . }}
                 {{ partial "blog/post-author" . }}
             </div>
         </div>
+        {{ partial "blog/post-navigation-alt" . }}
         {{ partial "blog/related-posts" . }}
     </div>
 {{ end }}

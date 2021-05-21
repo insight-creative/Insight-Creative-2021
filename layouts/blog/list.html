@@ -13,8 +13,7 @@
   {{- end }}
 </div>
 <div class="container post-wrapper padding-top-10">
-  {{ $paginator := .Paginate ( where .Data.Pages "Type" "blog" ) }}
-  {{ range $paginator.Pages }}
+  {{ range (.Paginate ( where .Site.RegularPages "Type" "blog" )).Pages }}
   {{ .Render "blog-cards-alt" }}
   {{ end }}
 </div>

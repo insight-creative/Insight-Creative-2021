@@ -1,4 +1,7 @@
 .post {
+  &__body {
+    border-bottom: 1px solid $darkBlack;
+  }
   h1 {
     font-size: 4rem;
   }
@@ -62,7 +65,7 @@
   }
 }
 .staff-card--post {
-  margin: 10rem 0 0 0;
+  margin: 0;
   .staff-card__written-by {
     font-size: 1.6rem;
   }
@@ -82,5 +85,10 @@
 .related-posts {
   .post-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .blog-card.blog-card:nth-of-type(even) {
+    @include breakpoint(md) {
+      margin-top: 0;
+    }
   }
 }

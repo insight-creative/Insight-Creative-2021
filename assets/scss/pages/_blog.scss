@@ -6,6 +6,11 @@
   .blog-card {
     width: 100%;
   }
+  .blog-card:nth-of-type(even) {
+    @include breakpoint(md) {
+      margin-top: 50px;
+    }
+  }
 }
 .categories-list {
   display: flex;

@@ -7,7 +7,7 @@ seo:
   featured_image_alt: Should you advertise during a pandemic
 date: 2020-04-13
 author: Molly Setzer
-categories: ["Design"]
+categories: ["Media"]
 page_class: single-post
 ---
 
