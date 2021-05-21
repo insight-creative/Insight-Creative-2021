@@ -19,7 +19,7 @@
                         {{ . | title }} {{ end}}</span>
                     {{ end }}
                 </div>
-                <div class="blog-card__staff-image-wrapper">
+                <div class="blog-card__staff-image-wrapper background-circle background-circle--md">
                     <img src="{{ (index .Site.Data.staff .Params.author).image_jpg }}" alt="headshot of Insight Creative's {{ (index .Site.Data.staff .Params.author).job_title }}, {{ (index .Site.Data.staff .Params.author).name }}" class="blog-card__staff-image">
                 </div>
             </div>

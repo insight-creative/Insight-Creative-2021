@@ -45,9 +45,6 @@
       .service-list__service-heading {
         color: $lightGray;
       }
-      // .service-list__icon:after {
-      //   animation: service-card-animation 3s linear infinite;
-      // }
     }
   }
   &__icon-wrapper {
@@ -56,10 +53,7 @@
     justify-content: center;
   }
   &__icon {
-    position: relative;
     z-index: 1;
-    background-color: $white;
-    border-radius: 50%;
     height: 108px;
     width: 108px;
     display: flex;
@@ -67,17 +61,6 @@
     justify-content: center;
     svg {
       width: 70px;
-    }
-    &:after {
-      position: absolute;
-      content: "";
-      top: -4px;
-      left: 4px;
-      height: 100%;
-      width: 100%;
-      border: 2px solid $secondaryColor;
-      border-radius: 50%;
-      // animation: service-card-animation 3s linear infinite;
     }
   }
   &__service-heading {

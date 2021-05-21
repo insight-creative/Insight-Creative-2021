@@ -18,20 +18,20 @@
     padding: 2.5rem 2rem;
   }
   &__image-wrapper {
-    position: relative;
+    // position: relative;
     margin-bottom: 1.5rem;
-    background: $white;
-    border-radius: 50%;
-    &:after {
-      position: absolute;
-      content: "";
-      top: -7px;
-      left: 7px;
-      height: 102%;
-      width: 102%;
-      border: 5px solid $secondaryColor;
-      border-radius: 50%;
-    }
+    // background: $white;
+    // border-radius: 50%;
+    // &:after {
+    //   position: absolute;
+    //   content: "";
+    //   top: -7px;
+    //   left: 7px;
+    //   height: 102%;
+    //   width: 102%;
+    //   border: 5px solid $secondaryColor;
+    //   border-radius: 50%;
+    // }
   }
   &__image {
     border-radius: 50%;

@@ -4,7 +4,7 @@
         <a href="/author/{{ .Params.Author | urlize }}" class="staff-card staff-card--post bg-black">
             <div class="staff-card__inner flex flex-column flex-row-l">
                 <div class="staff-card__wrapper text-center w-100 w-30-l">
-                    <div class="staff-card__image-wrapper">
+                    <div class="staff-card__image-wrapper background-circle background-circle--xl">
                         <img src="{{ (index .Site.Data.staff .Params.author).image_jpg }}" alt="headshot of Insight Creative's {{ (index .Site.Data.staff .Params.author).job_title }}, {{ (index .Site.Data.staff .Params.author).name }}" class="staff-card__image">
                     </div>
                 </div>

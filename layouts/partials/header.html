@@ -21,7 +21,7 @@
 			{{ range .Site.Menus.main }}
       <li class="nav-list-item">
         <a href="{{ .URL }}" {{ if $currentPage.IsMenuCurrent "main" . }} class="nav-item current" {{ else }} class="nav-item" {{ end }} aria-label="{{ .Name }}"
-          title="{{ .Name }}"><span>{{ .Name }}</span></a>
+          title="{{ .Name }}">{{ .Name }}</a>
       </li>
 			{{ end }}
     </ul>

@@ -2,7 +2,7 @@
     <a href="/author/{{ .Params.Author | urlize }}" class="staff-card staff-card--sidebar bg-black">
         <div class="staff-card__inner flex">
             <div class="staff-card__wrapper text-center">
-                <div class="staff-card__image-wrapper">
+                <div class="staff-card__image-wrapper background-circle background-circle--lg">
                     <img src="{{ (index .Site.Data.staff .Params.author).image_jpg }}" alt="headshot of Insight Creative's {{ (index .Site.Data.staff .Params.author).job_title }}, {{ (index .Site.Data.staff .Params.author).name }}" class="staff-card__image">
                 </div>
                 <span class="staff-card__written-by text-tertiary">Written By</span>

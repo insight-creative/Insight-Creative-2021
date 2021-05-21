@@ -10,24 +10,11 @@
   list-style: none;
   padding: 0;
   &__icon-wrapper {
-    position: relative;
     margin-bottom: 1.5rem;
-    background: $white;
-    border-radius: 50%;
     height: 50px;
     width: 50px;
     display: grid;
     place-items: center;
-    &:after {
-      position: absolute;
-      content: "";
-      top: -2px;
-      left: 2px;
-      height: 102%;
-      width: 102%;
-      border: 2px solid $secondaryColor;
-      border-radius: 50%;
-    }
   }
   &__link {
     padding: 0 2rem;

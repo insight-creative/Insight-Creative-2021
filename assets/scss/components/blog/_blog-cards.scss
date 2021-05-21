@@ -39,20 +39,7 @@
     padding: 0 2rem;
   }
   &__staff-image-wrapper {
-    position: relative;
     margin-bottom: 1.5rem;
-    background: $white;
-    border-radius: 50%;
-    &:after {
-      position: absolute;
-      content: "";
-      top: -4px;
-      left: 4px;
-      height: 102%;
-      width: 102%;
-      border: 2px solid $secondaryColor;
-      border-radius: 50%;
-    }
   }
   &__staff-image {
     max-width: 100px;
