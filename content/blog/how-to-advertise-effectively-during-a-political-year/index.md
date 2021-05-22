@@ -5,7 +5,7 @@ seo:
   description: "Advertising during a political year can be a very daunting task. Here are tips to help you succeed!"
   featured_image: vote-with-flag-background.jpg
   featured_image_alt: 10 Tips that Ring True Long After Graduating as a Creative
-date: 2018-10-3
+date: 2018-10-03
 author: Molly Setzer
 categories: ["Media"]
 page_class: single-post
