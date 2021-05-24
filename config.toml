@@ -5,7 +5,7 @@ googleAnalytics = " "
 enableRobotsTXT = true
 disableAliases = true
 summaryLength = 30
-timeout = 30000
+timeout = 100000
 
 #################### default parameters ################################
 
