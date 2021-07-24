@@ -17,19 +17,19 @@ As we make our way into 2017, we look back on news-worthy events in 2016: The U.
 
 As businesses, we can learn something from these phenomenons even if water polo, catching Pikachu or knowing if Jon Snow lives doesn’t appeal to your consumers. If you understand _how_ they became viral, you can apply the same concepts to your business.
 
-### Tug On Their Emotions
+## Tug On Their Emotions
 
 Marketing to your audience's emotions can be tricky. To be successful at it, you must hit the core emotion as to why they care. Not necessarily a positive emotion, but one that encourages them to take action.
 
 Since the 2012 Olympic games, Proctor & Gamble's "Thank You, Mom" commercials feature stories from mothers of various US Olympians and how, "it takes someone strong to make someone strong." People associate themselves with this campaign as the mother or the Olympian and strive to have an ideal relationship between a parent and a child. Take a look at this year’s commercial featuring US Olympic Gold Medalist Simone Biles:
 
-### It's All About Timing
+## It's All About Timing
 
 Do you think Pokémon Go would have been successful five years ago? Not coincidentally, as The Pokémon Company celebrated its 20th anniversary this year, everyone who loved Pokémon as a kid now has significant buying power. If it launched five years ago, this audience wouldn’t be filled with nostalgia for the game.
 
 Now in their seventh season, _Game of Thrones_ excels at captivating their audience with storytelling. The timing of when they kill off characters, when they establish new relationships and when they bring characters back from the past isn’t a coincidence; it’s what makes the show successful. A suspenseful, engaging plot keeps people intrigued and curious as to what could happen next.
 
-### The Power of Social Proof
+## The Power of Social Proof
 
 When friends and family enjoy something, you tend to follow. People won't buy a product or service unless someone reviewed it first. People don't pay attention to something unless it becomes a sensation. With Pokémon Go, people see others playing the game everywhere they go. If they see others having a positive experience, why wouldn't they want to get involved?
 
@@ -37,7 +37,7 @@ When friends and family enjoy something, you tend to follow. People won't buy a 
 
 The Rio 2016 Summer Olympics demonstrated social proof as well. Even if someone wasn't in Rio, they watched videos and read articles on Facebook, Twitter and other social media platforms. When they see Olympians perform right in front of their eyes, there’s no easier way for them to become a dedicated fan.
 
-### Sense of Identity and Branding
+## Sense of Identity and Branding
 
 Everyone has heard of _Game of Thrones_. Everyone knows someone who loves Pokémon. Why? Because they've successfully established their brands. Being able to give your audience a sense of belonging will lead to loyal consumers.
 

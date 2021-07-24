@@ -7,10 +7,10 @@ seo:
 
 department: "Content"
 
-hero_title: "We don’t just color all day … even though we’d like to."
+hero_title: "We don’t just <span class='emphasis-red'>color</span> all day … even though we’d like to."
 
 intro:
-  subhead: Our design approach is rooted in thoughtful strategy for maximum impact.
+  subhead: Our design approach is rooted in thoughtful strategy for <span class="emphasis-red">maximum</span> impact.
   description: "<p>Effective creative comes from strong ideas. And the strongest ideas come from quality information and collaboration. That’s why our talented artists will visit your company, meet your people and learn all about your operation—inside and out—before putting pencil to paper. They’ll also work side-by-side with writers and strategists to consider messaging and tactics as inspiration takes over. This thoughtful approach combined with the latest technology—and a whole lot of imagination—can bring your brand to a whole new level.</p>"
 
 service_overview:

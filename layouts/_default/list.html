@@ -14,10 +14,13 @@
   {{- end }}
   {{- end }}
 </div>
-<div class="post-wrapper container padding-top-10 padding-bottom-10">
+<div class="post-wrapper container padding-top-10">
   {{ $paginator := .Paginate ( where .Data.Pages "Type" "blog" ) }}
   {{ range $paginator.Pages }}
   {{ .Render "blog-cards-alt" }}
   {{ end }}
+</div>
+<div class="container padding-bottom-10">
+  {{ partial "blog/custom-pagination.html" . }}
 </div>
 {{ end }}

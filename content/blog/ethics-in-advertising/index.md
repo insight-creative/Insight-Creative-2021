@@ -7,7 +7,6 @@ seo:
   featured_image_alt: Word cloud with all subjects surrounding ethics
 date: 2017-01-10
 author: Niki Petit
-categories: ["Design"]
 page_class: single-post
 ---
 

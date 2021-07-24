@@ -23,6 +23,15 @@
                     {{ if eq .heading "Drone" }}
                         {{ partial "svg-icons/drone.svg" . }}
                     {{ end }}
+                    {{ if eq .heading "Branding" }}
+                        {{ partial "svg-icons/branding.svg" . }}
+                    {{ end }}
+                    {{ if eq .heading "Digital" }}
+                        {{ partial "svg-icons/digital-design.svg" . }}
+                    {{ end }}
+                    {{ if eq .heading "Print" }}
+                        {{ partial "svg-icons/print.svg" . }}
+                    {{ end }}
                 </div>
                 {{ if .logos }}
                 <div class="service-card__logos">

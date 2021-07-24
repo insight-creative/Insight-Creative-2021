@@ -6,6 +6,7 @@
   }
   .staff-card--sidebar {
     margin: 0 1rem;
+    display: block;
     .staff-card__inner {
       padding: 1rem;
       @include breakpoint(lg) {

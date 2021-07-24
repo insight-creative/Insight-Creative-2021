@@ -23,7 +23,7 @@
                     <img src="{{ (index .Site.Data.staff .Params.author).image_jpg }}" alt="headshot of Insight Creative's {{ (index .Site.Data.staff .Params.author).job_title }}, {{ (index .Site.Data.staff .Params.author).name }}" class="blog-card__staff-image">
                 </div>
             </div>
-            <h4 class="g5 blog-card__title">{{ .Params.seo.title }}</h4>
+            <h4 class="g5 blog-card__title">{{ .Params.seo.title | markdownify }}</h4>
         </div>
     </a>
 </article>

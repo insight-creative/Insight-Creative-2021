@@ -66,12 +66,16 @@
 }
 .staff-card--post {
   margin: 0;
+  display: block;
   .staff-card__written-by {
     font-size: 1.6rem;
   }
   .staff-card__image-wrapper {
     margin: 0 auto;
-    max-width: 25%;
+    max-width: 50%;
+    @include breakpoint(sm) {
+      max-width: 25%;
+    }
     @include breakpoint(lg) {
       margin: 1.5rem auto 1.5rem 0;
       max-width: 80%;

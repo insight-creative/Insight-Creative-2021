@@ -31,6 +31,8 @@ const scrollContainer = select('.scroll-content');
 const social = select(".social");
 const breadcrumbs = select(".breadcrumbs__inner");
 const breadcrumbsProgressBar = select(".breadcrumbs__progress-bar-inner");
+const loader = select(".preloader");
+const loaderInner = select(".preloader__inner");
 
 hamburger.addEventListener("click", toggleMobileMenu);
 
@@ -128,10 +130,19 @@ function initCursor() {
 
     const serviceLink = select(".service-list__link");
     const serviceLinks = selectAll(".service-list__link");
+    const primaryBtn = select(".btn-primary");
+    const primaryBtns = selectAll(".btn-primary");
+    const tertiaryBtn = select(".btn-tertiary");
+    const tertiaryBtns = selectAll(".btn-tertiary");
     const projectLink = select(".featured-projects__link");
     const projectLinks = selectAll(".featured-projects__link");
     const blogLink = select(".blog-card");
     const blogLinks = selectAll(".blog-card a");
+    const socialLink = select(".social__link");
+    const socialLinks = selectAll(".social__link");
+    const slide = select(".swiper-slide");
+    const slides = selectAll(".swiper-slide");
+    const footerLinks = selectAll(".footer a");
 
     gsap.set('.follower',{xPercent:-50,yPercent:-50,backgroundColor: '#8bc0c6'});
     gsap.set('.cursor',{xPercent:-50,yPercent:-50});
@@ -150,7 +161,21 @@ function initCursor() {
             scale: 1
         });
     });
+
     menuItems.forEach(link => {
+        link.addEventListener("mouseover", () => {
+            gsap.to(follow, 0.3, {
+                scale: 6
+            });
+        });
+        link.addEventListener("mouseout", () => {
+            gsap.to(follow, 0.3, {
+                scale: 1
+            });
+        });
+    })
+
+    footerLinks.forEach(link => {
         link.addEventListener("mouseover", () => {
             gsap.to(follow, 0.3, {
                 scale: 6
@@ -168,6 +193,49 @@ function initCursor() {
             link.addEventListener("mouseover", () => {
                 gsap.to(follow, 0.3, {
                     scale: 6
+                });
+            });
+            link.addEventListener("mouseout", () => {
+                gsap.to(follow, 0.3, {
+                    scale: 1
+                });
+            });
+        })
+    }
+
+    if (document.body.contains(primaryBtn)) {
+        primaryBtns.forEach(link => {
+            link.addEventListener("mouseover", () => {
+                gsap.to(follow, 0.3, {
+                    scale: 0
+                });
+            });
+            link.addEventListener("mouseout", () => {
+                gsap.to(follow, 0.3, {
+                    scale: 1
+                });
+            });
+        })
+    }
+
+    socialLinks.forEach(link => {
+        link.addEventListener("mouseover", () => {
+            gsap.to(follow, 0.3, {
+                scale: 0
+            });
+        });
+        link.addEventListener("mouseout", () => {
+            gsap.to(follow, 0.3, {
+                scale: 1
+            });
+        });
+    })
+
+    if (document.body.contains(tertiaryBtn)) {
+        tertiaryBtns.forEach(link => {
+            link.addEventListener("mouseover", () => {
+                gsap.to(follow, 0.3, {
+                    scale: 0
                 });
             });
             link.addEventListener("mouseout", () => {
@@ -205,6 +273,7 @@ function initCursor() {
             });
         })
     }
+
     if (document.body.contains(blogLink)) {
         blogLinks.forEach(link => {
             link.addEventListener("mouseover", () => {
@@ -232,6 +301,34 @@ function initCursor() {
             });
         })
     }
+
+    // if (document.body.contains(slide)) {
+    //     slides.forEach(link => {
+    //         link.addEventListener("mouseover", () => {
+    //             followerText.innerHTML = "Drag";
+    //             gsap.to(follow, 0.3, {
+    //                 scale: 10,
+    //                 backgroundColor: '#cd1f40',
+    //                 autoAlpha: .9,
+    //                 mixBlendMode: 'initial'
+    //             });
+    //             gsap.to(followerText, 0.3, {
+    //                 autoAlpha: 1,
+    //             });
+    //         });
+    //         link.addEventListener("mouseout", () => {
+    //             gsap.to(follow, 0.3, {
+    //                 scale: 1,
+    //                 backgroundColor: '#8bc0c6',
+    //                 autoAlpha: 1,
+    //                 mixBlendMode: 'exclusion'
+    //             });
+    //             gsap.to(followerText, 0.3, {
+    //                 autoAlpha: 0,
+    //             });
+    //         });
+    //     })
+    // }
 
     // function hideCursor() {
     //     cursor.classList.add("cursor-hide");
@@ -422,18 +519,18 @@ function initFooter() {
     //         scrub: 1,
     //     }
     // });
-    gsap.set('.footer__container', { yPercent: -25 })
+    gsap.set('.footer__container', { yPercent: 0 })
 
     const uncover = gsap.timeline({ paused:true })
 
     uncover
-    .to('.footer__container', { opacity: 1, yPercent: 0, ease: 'none' })
+    .to('.footer__container', { yPercent: 0 })
     ;
 
     ScrollTrigger.create({  
     trigger: '.site-main',
     start: 'bottom bottom',
-    end: 'bottom 70%',
+    end: 'bottom 45%',
     animation: uncover,
     scrub: true,  
     });
@@ -520,6 +617,7 @@ function initSmoothScrollbar() {
         // });
         bodyScrollBar.addListener(({ offset }) => {  
             breadcrumbs.style.top = "calc(" + offset.y + 'px' + " + 82.75vh )";
+            footer.style.top = "calc(" + offset.y + 'px' + " - 90px )";
         });
         scroller.focus();
     }
@@ -555,37 +653,66 @@ function initPreloader() {
     });
 }
 
-function pageTransitionIn() {
+function pageTransitionIn({container}) {
     console.log('pageTransitionIn');
     // return gsap.to('.transition', {duration: 1, yPercent: -100, ease: 'power1.inOut'});
+    // const tl = gsap.timeline({
+    //     defaults: {
+    //         duration: .7,
+    //         ease: 'power1.inOut'
+    //     }
+    // });
+    // tl.to(scroller, {
+    //     opacity: 0,
+    // })
     const tl = gsap.timeline({
         defaults: {
-            duration: .7,
+            duration: .9,
             ease: 'power1.inOut'
         }
     });
-    tl.to(scroller, {
-        opacity: 0,
-    });
-    // tl.to(footer, {
-    //     opacity: 0,
-    // });
+    tl.fromTo(loader, {
+        opacity: 1,
+        yPercent: -100
+    }, {
+        yPercent: 0
+    })
+    tl.fromTo(loaderInner, {
+        yPercent: 80
+    }, {
+        yPercent: 0
+    }, 0)
+    .to(container, { y: 150 }, 0)
     return tl;
 }
 
-function pageTransitionOut() {
+function pageTransitionOut({container}) {
     console.log('pageTransitionOut');
     // return gsap.to('.transition', {duration: 1, yPercent: 0, ease: 'power1.inOut'});
+    // const tl = gsap.timeline({
+    //     defaults: {
+    //         duration: .7,
+    //         ease: 'power1.inOut'
+    //     },
+    //     onComplete: () => initPage()
+    // });
+    // tl.to(scroller, {
+    //     opacity: 1,
+    // })
     const tl = gsap.timeline({
         defaults: {
-            duration: .7,
+            duration: .9,
             ease: 'power1.inOut'
         },
         onComplete: () => initPage()
     });
-    tl.to(scroller, {
-        opacity: 1,
-    });
+    tl.to(loader, {
+        yPercent: 100,
+    })
+    tl.to(loaderInner, {
+        yPercent: -80,
+    }, 0)
+    .from(container, { y: -150 }, 0)
     return tl;
 }
 
@@ -599,9 +726,7 @@ function initPage() {
     initSocial();
     initContentFade();
     initImageParallax();
-    // initImageZoom();
     initSwiper();
-    // initAnimateEmphasis();
     initFooter();
 }
 

@@ -8,10 +8,12 @@
                     {{ range $index, $elements := .Params.Categories }}<a href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}" class="categories categories__link">{{ if ne $index 0 }}{{ end }}
                         {{ . | title }}</a> {{ end}}
                     {{ end }}
-                    <h1>{{ .Params.seo.title }}</h1>
+                    <h1>{{ .Params.seo.title | markdownify }}</h1>
                     {{ .Content }}
                 </article>
-                {{ partial "blog/share-buttons" . }}
+                <div class="share-this share-this--row">
+                    {{ partial "blog/share-buttons" . }}
+                </div>
                 {{ partial "blog/post-author" . }}
             </div>
         </div>

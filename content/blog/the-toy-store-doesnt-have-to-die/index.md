@@ -16,7 +16,7 @@ Now that Toys"R"Us is facing extinction, I realize that the big fun toy store co
 
 There are many ways to reinvent the toy store starting with the **experience.**
 
-### 1. Make it a destination that kids will love!
+## 1. Make it a destination that kids will love!
 
 Turn it into the Scheels or Cabela’s of toys with fun and interactive exhibits that feature the newest toys.
 Allow kids to play with and interact with the coolest toys, something Amazon and other online retailers can’t offer.
@@ -41,17 +41,17 @@ The possibilities are endless with what you could offer for interactive exhibits
 
 ![kids unboxing toys](ToyKidsUnboxingSmall.jpg)
 
-### 2. Host cool toy opening events and tie them in with social media.
+## 2. Host cool toy opening events and tie them in with social media.
 
 Unveiling the latest toys at your stores first could be another great way to bring people into the stores. We’ve all heard of the frenzy on YouTube where these young kids unbox new toys and give their opinions on those toys and these videos receive millions of views. You could have social influencers partner with the store to help host these events and they, in turn, would bring in a large social following. Get someone like Ryan ToysReview or RadioJH (shown above) and show it live on YouTube, Twitter or Facebook.
 
-### 3. Create a great rewards program.
+## 3. Create a great rewards program.
 
 A great rewards program can bring customers back again and again. But this rewards program must be next level. Sure, do stuff where you get store credit (like Kohl’s cash). My wife loves that stuff! But also tie it in with fitness or a charity. You could partner with the NFL and their Play 60 program. The NFL could come into the store and run a Play 60 event outside and they will donate to a local charity and customers could receive store credit or discounts on select items. It would be even better if the local pro football team could send some players to the event as well (#greenbaypackers). You could work with the local elementary school and even come up with an incentive program. It could be focused on fitness or reading to motivate them to receive store credit or rewards.
 
 ![NFL Play 60 logo with kids running and playing football together](Play60Small.jpg)
 
-### 4. Make sure to market and promote it well.
+## 4. Make sure to market and promote it well.
 
 Start with a strong logo, tagline or slogan that will be remembered and represents your brand. Promote all these concepts with a strong digital campaign that could include Facebook, YouTube and in-app ads that reach kids and parents where they consume content. You could launch the idea with a great television ad on network TV,
 Hulu or Netflix. Consider guerilla marketing like having a cool new mascot or creature that shows up around town promoting the new toy store with coupons and incentives. A great social buzz could also be created if done correctly.

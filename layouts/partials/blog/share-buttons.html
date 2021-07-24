@@ -1,33 +1,31 @@
-<div class="share-this">
-    <div><span>Share This</span></div>
-    <ul class="share-buttons">
-        <li class="share-buttons__list-items">
-            <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" title="Share on Facebook" target="_blank" class="share-buttons__link">
-                <div class="share-buttons__icon-wrapper background-circle background-circle--sm">
-                    {{ partial "svg-icons/facebook.svg" . }}
-                </div>
-            </a>
-        </li>
-        <li class="share-buttons__list-items">
-            <a href="https://twitter.com/intent/tweet?source={{ .Permalink }}" target="_blank" title="Tweet" class="share-buttons__link">
-                <div class="share-buttons__icon-wrapper background-circle background-circle--sm">
-                    {{ partial "svg-icons/twitter.svg" . }}
-                </div>
-            </a>
-        </li>
-        <li class="share-buttons__list-items">
-            <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}" target="_blank" title="Share on LinkedIn" class="share-buttons__link">
-                <div class="share-buttons__icon-wrapper background-circle background-circle--sm">
-                    {{ partial "svg-icons/linkedin.svg" . }}
-                </div>
-            </a>
-        </li>
-        <li class="share-buttons__list-items">
-            <a href="mailto:?subject=&body={{ .Permalink }}" target="_blank" title="Send email" class="share-buttons__link">
-                <div class="share-buttons__icon-wrapper background-circle background-circle--sm">
-                    {{ partial "svg-icons/email.svg" . }}
-                </div>
-            </a>
-        </li>
-    </ul>
-</div>
+<div><span>Share This</span></div>
+<ul class="share-buttons">
+    <li class="share-buttons__list-items">
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" title="Share on Facebook" target="_blank" class="share-buttons__link">
+            <div class="share-buttons__icon-wrapper background-circle background-circle--sm">
+                {{ partial "svg-icons/facebook.svg" . }}
+            </div>
+        </a>
+    </li>
+    <li class="share-buttons__list-items">
+        <a href="https://twitter.com/intent/tweet?source={{ .Permalink }}" target="_blank" title="Tweet" class="share-buttons__link">
+            <div class="share-buttons__icon-wrapper background-circle background-circle--sm">
+                {{ partial "svg-icons/twitter.svg" . }}
+            </div>
+        </a>
+    </li>
+    <li class="share-buttons__list-items">
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}" target="_blank" title="Share on LinkedIn" class="share-buttons__link">
+            <div class="share-buttons__icon-wrapper background-circle background-circle--sm">
+                {{ partial "svg-icons/linkedin.svg" . }}
+            </div>
+        </a>
+    </li>
+    <li class="share-buttons__list-items">
+        <a href="mailto:?subject=&body={{ .Permalink }}" target="_blank" title="Send email" class="share-buttons__link">
+            <div class="share-buttons__icon-wrapper background-circle background-circle--sm">
+                {{ partial "svg-icons/email.svg" . }}
+            </div>
+        </a>
+    </li>
+</ul>

@@ -27,10 +27,15 @@ body {
 // .scroll-content {
 //   padding-bottom: 508px;
 // }
+.is-transitioning {
+  pointer-events: none;
+  cursor: progress;
+}
 .site-main {
   opacity: 1;
   margin-top: $desktopHeader;
   // margin-bottom: 508px;
+  background-color: $bodyBlack;
 }
 ul {
   margin: 0;

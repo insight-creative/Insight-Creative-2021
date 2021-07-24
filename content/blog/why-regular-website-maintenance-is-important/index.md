@@ -60,7 +60,7 @@ Another important benefit of maintaining your website is how it performs in sear
 
 An outdated website may also start presenting users and search engines with broken links, broken navigation, dead pages, missing images or other software errors that create a poor user experience. When search engines start to see errors and bad user experiences like this, they may start penalizing your site and sending your search traffic to competitor sites. This can then be extremely hard--if not an impossible hit--to recover from.
 
-### We’re Looking Out for You
+## We’re Looking Out for You
 
 Especially with complex content management systems like WordPress, it’s important to remember this is software, and as we all know software is prone to bugs, glitches, and security vulnerabilities. When Insight Creative includes monthly maintenance in our website contracts and service packages, it’s because you have invested in a service, and we genuinely like to see that performing at a high level for you.
 

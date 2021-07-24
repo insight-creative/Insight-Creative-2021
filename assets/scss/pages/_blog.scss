@@ -24,20 +24,14 @@
     padding: 0;
     margin: 1rem;
   }
-  &__link.categories-list__link {
-    text-decoration: none;
-    padding: 0.5rem 2rem;
-  }
 }
 .categories {
   background: $primaryColor;
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 2rem;
   border-radius: $radius;
   font-size: 1.6rem;
-  &__link {
-    text-decoration: none;
-    margin-bottom: 2.5rem;
-  }
+  text-decoration: none;
+  margin-bottom: 2.5rem;
 }
 .blog-content {
   padding: 0 2rem 6rem 2rem;

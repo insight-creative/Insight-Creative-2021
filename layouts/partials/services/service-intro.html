@@ -1,5 +1,5 @@
 {{ $introClass := lower .Page.Title }}
-<section class="service-intro fade-up {{ anchorize $introClass }}-intro background-cover">
+<section class="service-intro {{ anchorize $introClass }}-intro background-cover">
     <div class="container padding-top-10 padding-bottom-10">
         <div class="service-intro__desc">
             <h2 class="text-center">{{ .Params.intro.subhead | markdownify }}</h2>

@@ -19,19 +19,22 @@
   border: 1px solid $secondaryColor;
   border-radius: 50%;
   padding: 3rem;
-  &:before {
-    position: absolute;
-    content: "";
-    height: 2px;
-    width: 3rem;
-    top: 49%;
-    left: 25%;
-    opacity: 0;
-    background-color: $secondaryColor;
-    transition: 0.2s ease;
-  }
+  // &:before {
+  //   position: absolute;
+  //   content: "";
+  //   height: 2px;
+  //   width: 3rem;
+  //   top: 49%;
+  //   left: 25%;
+  //   opacity: 0;
+  //   background-color: $secondaryColor;
+  //   transition: 0.2s ease;
+  // }
   &:after {
-    font-size: 2.5rem;
+    font-family: "friday vibes";
+    font-size: 3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 .swiper-button-prev {
@@ -41,18 +44,18 @@
   }
   &:after {
     position: absolute;
-    left: 20px;
+    // left: 20px;
     transition: 0.2s ease;
   }
   &:hover,
   &:focus {
-    &:before {
-      opacity: 1;
-      width: 3rem;
-      transition-delay: 0.1s;
-    }
+    // &:before {
+    //   opacity: 1;
+    //   width: 3rem;
+    //   transition-delay: 0.1s;
+    // }
     &:after {
-      left: 14px;
+      transform: translateX(-60%);
     }
   }
 }
@@ -65,7 +68,7 @@
   }
   &:after {
     position: absolute;
-    right: 20px;
+    // right: 20px;
     transition: 0.2s ease;
   }
   &:hover,
@@ -76,7 +79,7 @@
       transition-delay: 0.1s;
     }
     &:after {
-      right: 14px;
+      transform: translateX(-40%);
     }
   }
 }

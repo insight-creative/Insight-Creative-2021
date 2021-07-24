@@ -14,9 +14,9 @@
   }
   &__list-item {
     list-style-type: none;
-    padding: 0;
   }
   &__link {
+    padding: 1rem;
     &:hover,
     &:focus {
       transform: scale(1.2);

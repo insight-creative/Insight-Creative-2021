@@ -3,28 +3,28 @@
     <meta name="referrer" content="no-referrer">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-    <title>{{ if .Params.seo.title }}{{ .Params.seo.title }}{{ else }}{{ .Title }}{{ end }} | {{ .Site.Title }}</title>
+    <title>{{ if .Params.seo.title }}{{ .Params.seo.title | markdownify }}{{ else }}{{ .Title }}{{ end }} | {{ .Site.Title }}</title>
 
-    <meta itemprop="name" content="{{ if .Params.seo.title }}{{ .Params.seo.title }}{{ else }}{{ .Title }}{{ end }} | {{ .Site.Title }}">
+    <meta itemprop="name" content="{{ if .Params.seo.title }}{{ .Params.seo.title | markdownify }}{{ else }}{{ .Title }}{{ end }} | {{ .Site.Title }}">
     <meta itemprop="description" content="{{ .Params.seo.description }}">
     <meta itemprop="image" content="{{ if .Params.seo.featured_image }}{{ .Permalink }}{{ .Params.seo.featured_image }}{{ else }}{{ .Site.BaseURL }}/images/background-images/Insight-Creative-Inc-Communication-With-Substance-Cover.jpg{{ end }}">
 
     <meta property="og:site_name" content="{{ .Site.Title }}">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="{{ if .Params.seo.title }}{{ .Params.seo.title }}{{ else }}{{ .Title }}{{ end }} | {{ .Site.Title }}">
+    <meta property="og:title" content="{{ if .Params.seo.title }}{{ .Params.seo.title  | markdownify }}{{ else }}{{ .Title }}{{ end }} | {{ .Site.Title }}">
     <meta property="og:url" content="{{ .Permalink }}">
     <meta property="og:locale" content="en_US">
     <meta property="og:image" content="{{ if .Params.seo.featured_image }}{{ .Permalink }}{{ .Params.seo.featured_image }}{{ else }}{{ .Site.BaseURL }}/images/background-images/Insight-Creative-Inc-Communication-With-Substance-Cover.jpg{{ end }}">
     <meta property="og:image:width" content="1500">
     <meta property="og:image:height" content="1000">
-    <meta property="og:image:alt" content="{{ if .Params.seo.featured_image_alt }}{{ .Params.seo.featured_image_alt }}{{ else }}{{ .Params.seo.title }}{{ end }}">
+    <meta property="og:image:alt" content="{{ if .Params.seo.featured_image_alt }}{{ .Params.seo.featured_image_alt }}{{ else }}{{ .Params.seo.title | markdownify }}{{ end }}">
     <meta property="og:description" content="{{ .Params.seo.description }}">
     <meta name="description" content="{{ .Params.seo.description }}">
 
     <link rel="canonical" href="{{ .Permalink }}">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="{{ if .Params.seo.title }}{{ .Params.seo.title }}{{ else }}{{ .Title }}{{ end }} | {{ .Site.Title }}">
+    <meta name="twitter:title" content="{{ if .Params.seo.title }}{{ .Params.seo.title | markdownify }}{{ else }}{{ .Title }}{{ end }} | {{ .Site.Title }}">
     <meta name="twitter:description" content="{{ .Params.seo.description }}">
     <meta name="twitter:site" content="@insightwi">
     <meta name="twitter:image" content="{{ if .Params.seo.featured_image }}{{ .Permalink }}{{ .Params.seo.featured_image }}{{ else }}{{ .Site.BaseURL }}/images/background-images/Insight-Creative-Inc-Communication-With-Substance-Cover.jpg{{ end }}">

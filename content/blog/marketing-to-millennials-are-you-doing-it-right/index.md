@@ -1,5 +1,6 @@
 ---
 layout: blog
+draft: true
 seo:
   title: "Marketing to Millennials: Are You Doing It Right?"
   description: "In today's world, it appears nearly every brand is trying to target a specific group of people: millennials. Well, here's Jennifer Roger's advice ... don't target millennials."
@@ -11,7 +12,9 @@ categories: ["Content"]
 page_class: single-post
 ---
 
-<script src="https://fast.wistia.com/embed/medias/3f3s0pxtt7.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_3f3s0pxtt7 popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span></div></div>
+<script src="https://fast.wistia.com/embed/medias/3f3s0pxtt7.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_3f3s0pxtt7 videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/3f3s0pxtt7/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+
+<br>
 
 **Video Transcription**
 
