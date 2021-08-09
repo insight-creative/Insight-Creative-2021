@@ -14,6 +14,8 @@
       {{ partial "svg-icons/studio-alt.svg" . }}
       {{ else if eq .Page.Title "Design" }}
       {{ partial "svg-icons/design-alt.svg" . }}
+      {{ else if eq .Page.Title "Media" }}
+      {{ partial "svg-icons/media-alt.svg" . }}
       {{ end }}
       <div class="service-hero__icon-title shift-up">
         <span>{{ .Page.Title }}</span>

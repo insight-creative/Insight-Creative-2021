@@ -32,6 +32,15 @@
                     {{ if eq .heading "Print" }}
                         {{ partial "svg-icons/print.svg" . }}
                     {{ end }}
+                    {{ if eq .heading "Research" }}
+                        {{ partial "svg-icons/research.svg" . }}
+                    {{ end }}
+                    {{ if eq .heading "Strategy" }}
+                        {{ partial "svg-icons/strategy.svg" . }}
+                    {{ end }}
+                    {{ if eq .heading "Buying" }}
+                        {{ partial "svg-icons/digital-alt.svg" . }}
+                    {{ end }}
                 </div>
                 {{ if .logos }}
                 <div class="service-card__logos">

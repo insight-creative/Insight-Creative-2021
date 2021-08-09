@@ -28,7 +28,7 @@ services:
     - heading: Digital
       subhead: <span class="text-tertiary"><em>Capture attention quickly with clickable content.</em></span>
       description: We’ve designed digital media since its inception. For years, our artists have tested content and methods that attract audiences and lead them to act. We know the importance of readability, scalability and load time for various devices.
-      service_list: digital ads • websites • landing pages • social media ads • presentations • eblasts • videos • blogs • digital signage • web sliders • social media graphics
+      service_list: digital ads • websites • landing pages • social media ads • presentations • email marketing • videos • blogs • digital signage • web sliders • social media graphics
 
     - heading: Print
       subhead: <span class="text-tertiary"><em>Engage your audience with a fresh take on traditional media.</em></span>
