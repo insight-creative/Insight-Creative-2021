@@ -1,11 +1,12 @@
 .author {
   &__image-wrapper {
     position: relative;
-    margin-bottom: 1.5rem;
+    margin-bottom: $ic-200;
     background: $white;
     border-radius: 50%;
     max-width: 250px;
     margin: 0 auto;
+
     &:after {
       position: absolute;
       content: "";
@@ -13,17 +14,19 @@
       left: 7px;
       height: 102%;
       width: 102%;
-      border: 5px solid $secondaryColor;
+      border: 5px solid $secondary-color;
       border-radius: 50%;
     }
   }
+
   &__image {
     border-radius: 50%;
     filter: grayscale(1);
     transition: 0.3s ease-out;
   }
+
   &__name {
     font-family: "Friday Vibes";
-    margin-bottom: 1.5rem;
+    margin-bottom: $ic-200;
   }
 }

@@ -31,13 +31,13 @@
   &__link {
     text-decoration: none;
     padding: 1rem;
-    color: $tertiaryColor;
-    font-size: 1.4rem;
+    color: $tertiary-color;
+    font-size: $ic-100;
     position: relative;
     transition: 0.3s ease;
     &:hover,
     &:focus {
-      color: $secondaryColor;
+      color: $secondary-color;
     }
     &:after {
       position: absolute;
@@ -47,18 +47,18 @@
       content: "";
       height: 15px;
       width: 1px;
-      background: $tertiaryColor;
+      background: $tertiary-color;
     }
   }
   &__progress-bar {
     height: 2px;
     width: 50px;
-    background: $darkBlack;
+    background: $dark-black;
   }
   &__progress-bar-inner {
     height: 2px;
     width: 50px;
-    background: $tertiaryColor;
+    background: $tertiary-color;
     transform: scaleX(0);
     transform-origin: left;
     transition: 0.3s ease;

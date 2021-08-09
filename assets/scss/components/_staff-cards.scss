@@ -3,23 +3,27 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .staff-card {
   border-radius: $radius;
-  margin: 2rem;
+  margin: $ic-300;
   text-decoration: none;
   flex: 0 0 250px;
+
   &:hover,
   &:focus {
     .staff-card__image {
       filter: grayscale(0);
     }
   }
+
   &__inner {
-    padding: 2.5rem 2rem;
+    padding: $ic-400 $ic-300;
   }
+
   &__image-wrapper {
     // position: relative;
-    margin-bottom: 1.5rem;
+    margin-bottom: $ic-200;
     // background: $white;
     // border-radius: 50%;
     // &:after {
@@ -29,23 +33,27 @@
     //   left: 7px;
     //   height: 102%;
     //   width: 102%;
-    //   border: 5px solid $secondaryColor;
+    //   border: 5px solid $secondary-color;
     //   border-radius: 50%;
     // }
   }
+
   &__image {
     border-radius: 50%;
     filter: grayscale(1);
     transition: 0.3s ease-out;
   }
+
   &__name {
     font-family: "Friday Vibes";
-    margin-bottom: 1.5rem;
+    margin-bottom: $ic-200;
   }
+
   &__job-title {
-    font-size: 1.7rem;
+    font-size: $ic-200;
   }
 }
+
 .staff-card:nth-of-type(2) {
   .staff-card__image-wrapper {
     &:after {
@@ -53,6 +61,7 @@
     }
   }
 }
+
 .staff-card:nth-of-type(3) {
   .staff-card__image-wrapper {
     &:after {

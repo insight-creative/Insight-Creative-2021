@@ -7,10 +7,10 @@
   background-repeat: no-repeat;
   margin-left: auto;
   padding: 6rem 1rem;
-  margin-top: $mobileHeader;
+  margin-top: $mobile-header;
   @include breakpoint(md) {
     height: 80vh;
-    margin-top: $desktopHeader;
+    margin-top: $desktop-header;
   }
 }
 .hero,
@@ -29,7 +29,7 @@
   }
   &__subtitle {
     font-weight: 400;
-    font-family: $primaryFont;
+    font-family: $primary-font;
     font-size: 2rem;
     letter-spacing: 0.015em;
     margin-bottom: 40px;

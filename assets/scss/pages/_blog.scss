@@ -2,13 +2,15 @@
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  border-top: 1px solid $darkBlack;
+  border-top: 1px solid $dark-black;
+
   .blog-card {
     width: 100%;
   }
+
   .blog-card:nth-of-type(even) {
     @include breakpoint(md) {
-      margin-top: 50px;
+      margin-top: $ic-700;
     }
   }
 }
@@ -16,95 +18,115 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   @include breakpoint(lg) {
     justify-content: space-between;
   }
   &__item {
     list-style-type: none;
     padding: 0;
-    margin: 1rem;
   }
 }
+
 .categories {
-  background: $primaryColor;
-  padding: 0.5rem 2rem;
+  background: $primary-color;
+  padding: 0.5rem 1rem;
   border-radius: $radius;
-  font-size: 1.6rem;
+  font-size: $ic-200;
   text-decoration: none;
-  margin-bottom: 2.5rem;
+  margin-bottom: $ic-200;
 }
+
 .blog-content {
-  padding: 0 2rem 6rem 2rem;
-  margin-top: -50px;
+  padding: 0 $ic-300 $ic-800 $ic-300;
+  margin-top: -$ic-700;
   position: relative;
+
   figure img {
     margin: 0 auto;
   }
+
   blockquote {
-    border-left: 5px solid $primaryColor;
+    border-left: 5px solid $primary-color;
     padding: 2rem;
+
     p {
       margin-bottom: 0;
     }
   }
 }
+
 .blog-summary {
   margin-bottom: 4rem;
-  border-bottom: 1px solid $primaryColor;
+  border-bottom: 1px solid $primary-color;
+
   &__link {
     text-decoration: none;
+
     h3 {
       transition: 0.3s ease-out;
     }
+
     &:hover,
     &:focus {
       h3,
       span {
-        color: $secondaryColor;
+        color: $secondary-color;
       }
+
       .blog-summary__entry-meta,
       p.blog-summary__summary {
-        color: $primaryColor;
+        color: $primary-color;
       }
+
       .blog-summary__read-more {
         svg {
-          fill: $secondaryColor;
+          fill: $secondary-color;
           transform: translateX(5px);
         }
       }
+
       .blog-summary__img {
         opacity: 0.7;
       }
     }
   }
+
   &__image-wrap {
     margin-bottom: 2rem;
   }
+
   &__img {
     opacity: 1;
     transition: opacity 0.3s ease-out;
   }
+
   &__content {
     @include breakpoint(md) {
       padding: 0 2rem;
     }
   }
+
   &__title {
     margin-bottom: 0;
   }
+
   &__entry-meta {
-    font-size: 1.6rem;
-    margin-bottom: 1.5rem;
+    font-size: $ic-200;
+    margin-bottom: $ic-200;
     transition: 0.3s ease-out;
   }
+
   &__summary {
     transition: 0.3s ease-out;
   }
+
   &__read-more {
     margin: 1rem 0;
     display: flex;
     align-items: center;
     transition: 0.3s ease-out;
+
     svg {
       width: 20px;
       margin-left: 5px;

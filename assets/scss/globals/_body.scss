@@ -1,10 +1,26 @@
 * {
   box-sizing: border-box;
+  max-width: $measure;
 }
+
+html,
+body,
+div,
+section,
+header,
+nav,
+picture,
+video,
+main,
+footer {
+  max-width: none;
+}
+
 body {
-  background-color: $bodyBlack;
-  font-family: $primaryFont;
+  background-color: $body-black;
+  font-family: $primary-font;
 }
+
 // .viewport {
 //   overflow: hidden;
 //   position: fixed;
@@ -13,6 +29,7 @@ body {
 //   top: 0;
 //   left: 0;
 // }
+
 #viewport {
   overflow: hidden;
   position: fixed;
@@ -21,34 +38,51 @@ body {
   top: 0;
   left: 0;
 }
+
 .scrollbar-track {
   z-index: 9999;
 }
+
 // .scroll-content {
 //   padding-bottom: 508px;
 // }
+
 .is-transitioning {
   pointer-events: none;
   cursor: progress;
 }
+
 .site-main {
   opacity: 1;
-  margin-top: $desktopHeader;
+  margin-top: $desktop-header;
   // margin-bottom: 508px;
-  background-color: $bodyBlack;
+  background-color: $body-black;
 }
+
 ul {
   margin: 0;
 }
+
+:focus {
+  outline: 2px dashed $primary-color;
+  outline-offset: 0.25rem;
+}
+
+main:focus {
+  outline: none;
+}
+
 // Style highlight to match our themes colors
 ::-moz-selection {
   background: rgba(205, 31, 64, 0.8);
   color: $white;
 }
+
 ::selection {
   background: rgba(205, 31, 64, 0.8);
   color: $white;
 }
+
 ::-ms-selection {
   background: rgba(205, 31, 64, 0.8);
   color: $white;

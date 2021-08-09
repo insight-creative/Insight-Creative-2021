@@ -1,16 +1,13 @@
-html {
-  font-size: 62.5%;
-}
 body,
 button,
 input,
 select,
 optgroup,
 textarea {
-  color: $lightGray;
-  font-family: $primaryFont;
-  font-size: 2rem;
-  line-height: 3rem;
+  color: $light-gray;
+  font-family: $primary-font;
+  font-size: $ic-300;
+  line-height: 1.5;
 }
 h1,
 h2,
@@ -18,54 +15,61 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $primaryFont;
+  font-family: $primary-font;
   font-weight: 500;
-  color: $lightGray;
-  line-height: 1.3em;
+  color: $light-gray;
+  line-height: 1.2;
+  margin-bottom: 0.65em;
   margin-top: 0;
-  margin-bottom: 2.5rem;
 }
+
 p {
-  margin: 0 auto 2.5rem auto;
+  margin: 0;
 }
-/* Font-scale of a major third */
+
 h1,
-.g1 {
-  font-size: clamp(3rem, 4vw, 6.1rem);
+.h1 {
+  font-size: clamp($ic-500, 4vw, $ic-800);
 }
 h2,
-.g2 {
-  font-size: clamp(3.8rem, 4vw, 4.9rem);
+.h2 {
+  font-size: clamp($ic-500, 4vw, $ic-700);
 }
 h3,
-.g3 {
-  font-size: clamp(3.2rem, 4vw, 3.9rem);
+.h3 {
+  font-size: clamp($ic-500, 4vw, $ic-600);
 }
+
 h4,
-.g4 {
-  font-size: 2.8rem;
-  @include breakpoint(sm) {
-    font-size: 3.1rem;
+.h4 {
+  font-size: $ic-400;
+}
+
+h5,
+.h5 {
+  font-size: $ic-300;
+}
+
+h6,
+.h6 {
+  font-size: $ic-300;
+}
+
+@include breakpoint(md) {
+  h4,
+  .h4 {
+    font-size: $ic-500;
+  }
+
+  h5,
+  .h5 {
+    font-size: $ic-400;
   }
 }
-h5,
-.g5 {
-  font-size: 2.4rem;
-}
-h6,
-.g6 {
-  font-size: 2rem;
-}
-/* Type Scale Gears*/
-.g7 {
-  font-size: 1.8rem;
-}
-.g8 {
-  font-size: 1.6rem;
-}
+
 .emphasis-red {
-  font-family: $secondaryFont;
-  background: $primaryColor;
+  font-family: $secondary-font;
+  background: $primary-color;
   padding: 0 1rem;
   color: $white;
   // overflow: hidden;
@@ -74,33 +78,37 @@ h6,
   // top: 18px;
   // &__inner {
   //   // transform: translateX(-100%);
-  //   background: $primaryColor;
+  //   background: $primary-color;
   //   padding: 0 1rem;
   // }
 }
+
 .emphasis-white {
-  font-family: $secondaryFont;
-  background-color: $lightGray;
-  color: $primaryColor;
+  font-family: $secondary-font;
+  background-color: $light-gray;
+  color: $primary-color;
   padding: 0rem 1rem;
 }
+
 .emphasis-underline {
   font-family: "Friday Vibes";
-  font-size: 5rem;
+  font-size: $ic-700;
   position: relative;
   top: 8px;
   z-index: 1;
+
   @include breakpoint(md) {
-    font-size: 8rem;
+    font-size: $ic-900;
   }
-  &:after {
+
+  &::after {
     position: absolute;
     content: "";
     bottom: 10px;
     left: 0;
     height: 4px;
     width: 100%;
-    background-color: $tertiaryColor;
+    background-color: $tertiary-color;
     z-index: -1;
   }
   // &__line-mask {
@@ -117,106 +125,94 @@ h6,
   // }
   // &__line {
   //   height: 4px;
-  //   box-shadow: inset 0 -4px 0 $tertiaryColor;
+  //   box-shadow: inset 0 -4px 0 $tertiary-color;
   //   transition: 0.3s cubic-bezier(0.17, 0.88, 0.5, 1.5);
   //   transform: translateX(-101%);
   // }
 }
+
 .friday-vibes-white {
   font-family: "Friday Vibes";
-  font-size: 8rem;
-  margin: 0 15px;
+  font-size: $ic-900;
+  margin: 0 1rem;
 }
+
 .text-left {
   text-align: left !important;
 }
+
 .text-right {
   text-align: right !important;
 }
+
 .text-center {
   text-align: center !important;
 }
-@include breakpoint(sm) {
-  .text-left-s {
-    text-align: left !important;
-  }
-  .text-right-s {
-    text-align: right !important;
-  }
-  .text-center-s {
-    text-align: center !important;
-  }
-}
-@include breakpoint(md) {
-  .text-left-m {
-    text-align: left !important;
-  }
-  .text-right-m {
-    text-align: right !important;
-  }
-  .text-center-m {
-    text-align: center !important;
-  }
-}
-@include breakpoint(lg) {
-  .text-left-l {
-    text-align: left !important;
-  }
-  .text-right-l {
-    text-align: right !important;
-  }
-  .text-center-l {
-    text-align: center !important;
-  }
-}
+
 .i {
   font-style: italic;
 }
+
 .b {
   font-weight: bold;
 }
+
 .strike {
   text-decoration: line-through;
 }
+
 .shift-first {
   text-transform: capitalize;
 }
+
 .shift-up {
   text-transform: uppercase;
 }
+
 .fw4 {
   font-weight: 400;
 }
+
 .fw5 {
   font-weight: 500;
 }
+
 .fw6 {
   font-weight: 600;
 }
+
 .fw7 {
   font-weight: 700;
 }
+
 .fw8 {
   font-weight: 800;
 }
+
 .fw9 {
   font-weight: 900;
 }
+
 .no-margin {
   margin: 0;
 }
+
 .text-white {
   color: $white;
 }
+
 .text-dark-gray {
-  color: $darkGray;
+  color: $dark-gray;
 }
+
 .text-primary {
-  color: $primaryColor;
+  color: $primary-color;
 }
+
 .text-secondary {
-  color: $secondaryColor;
+  color: $secondary-color;
 }
+
 .text-tertiary {
-  color: $tertiaryColor;
+  color: $tertiary-color;
 }

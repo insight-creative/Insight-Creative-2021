@@ -1,29 +1,37 @@
 .post-sidebar {
   display: none;
+
   @include breakpoint(md) {
     display: block;
     width: 20%;
   }
+
   .staff-card--sidebar {
-    margin: 0 1rem;
+    margin: 0 $ic-100;
     display: block;
+
     .staff-card__inner {
-      padding: 1rem;
+      padding: $ic-100;
+
       @include breakpoint(lg) {
-        padding: 2.5rem 2rem;
+        padding: $ic-400 $ic-300;
       }
     }
+
     .staff-card__image-wrapper {
-      margin: 2rem auto;
+      margin: $ic-300 auto;
       max-width: 90%;
     }
+
     .staff-card__name {
       text-align: center;
     }
   }
+
   .share-this {
-    margin: 2.5rem auto;
+    margin: $ic-400 auto;
   }
+
   .share-this,
   .share-buttons {
     display: flex;

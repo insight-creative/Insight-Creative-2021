@@ -17,13 +17,13 @@ const select = (e) => document.querySelector(e);
 const selectAll = (e) => document.querySelectorAll(e);
 
 const menu = select(".nav-list");
-const logo = select(".brand-logo");
+const logo = select(".site-header__logo");
 const menuItems = selectAll(".nav-item");
 const hamburger = select(".hamburger");
 const follow = select('.follower');
 const followerText = select('.follower__text');
 const siteHeader = select('.site-header');
-const primaryNav = select('.primary-nav');
+const primaryNav = select('.site-header__inner');
 const scroller = select('#viewport');
 const width = screen.width;
 const footer = select('.footer');

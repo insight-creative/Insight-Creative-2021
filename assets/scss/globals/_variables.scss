@@ -1,17 +1,17 @@
 // Colors
-$brandBlack: #414042;
-$darkBlack: #1d1d1d;
-$bodyBlack: #292929;
-$primaryColor: #cd1f40;
-$secondaryColor: #92981b;
-$tertiaryColor: #8bc0c6;
-$darkGray: #a8a8a8;
-$lightGray: #f6f6f6;
+$brand-black: #414042;
+$dark-black: #1d1d1d;
+$body-black: #292929;
+$primary-color: #cd1f40;
+$secondary-color: #92981b;
+$tertiary-color: #8bc0c6;
+$dark-gray: #a8a8a8;
+$light-gray: #f6f6f6;
 $white: #ffffff;
 
 // Fonts
-$primaryFont: proxima-nova, sans-serif;
-$secondaryFont: futura-pt, sans-serif;
+$primary-font: proxima-nova, sans-serif;
+$secondary-font: futura-pt, sans-serif;
 @font-face {
   font-family: "Friday Vibes";
   src: url("/fonts/Friday_Vibes.woff");
@@ -21,5 +21,20 @@ $secondaryFont: futura-pt, sans-serif;
 
 // Other site variables
 $radius: 5px;
-$mobileHeader: 90px;
-$desktopHeader: 90px;
+$mobile-header: 90px;
+$desktop-header: 90px;
+
+// Scale and rhythm based on a major third
+$ic-100: 0.8rem;
+$ic-200: 1rem;
+$ic-300: 1.25rem;
+$ic-400: 1.563rem;
+$ic-500: 1.953rem;
+$ic-600: 2.441rem;
+$ic-700: 3.052rem;
+$ic-800: 3.815rem;
+$ic-900: 4.769rem;
+
+$measure-short: 60ch;
+$measure: 80ch;
+$measure-long: 90ch;

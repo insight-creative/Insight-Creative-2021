@@ -1,17 +1,17 @@
 <section class="service-overview fade-up">
-    <div class="container padding-top-10">
-        <div class="text-center fade-up">
-            <h3 class="g5 text-secondary shift-up">{{ .Params.service_overview.subhead_small | markdownify }}</h3>
-            <h3>{{ .Params.service_overview.subhead | markdownify }}</h3>
+    <div class="wrapper padding-top-9">
+        <div class="flow fade-up">
+            <h3 class="h5 text-center text-secondary shift-up">{{ .Params.service_overview.subhead_small | markdownify }}</h3>
+            <h3 class="text-center">{{ .Params.service_overview.subhead | markdownify }}</h3>
             <p>
             {{ .Params.service_overview.description | markdownify }}
             </p>
         </div>
     </div>
-    <div class="container-wide">
+    <div class="wrapper-wide">
         {{ partial "services/service-cards" . }}
     </div>
-    <div class="container department-feed">
+    <div class="wrapper department-feed">
         <h4 class="text-center">Get to know our {{ lower .Title }} department!</h4>
         <div class="staff-card-wrapper">
         {{ if eq .Title "Content" }}
@@ -30,7 +30,7 @@
             <a href="#" class="btn btn-tertiary">Meet the team</a>
         </div>
     </div>
-    <div class="container studio-cta padding-top-10">
+    <div class="wrapper studio-cta padding-top-9">
         {{ with .Params.service_cta }}
         <h4 class="text-center">{{ .heading }}</h4>
         {{ end }}

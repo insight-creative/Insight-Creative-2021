@@ -1,9 +1,9 @@
 {{ define "main" }}
-<div class="container padding-top-10 text-center">
+<div class="wrapper padding-top-9 text-center">
   <h1 class="no-margin">{{ .Title }}</h1>
   <h2 class="g4">Category Subtitle?</h2>
 </div>
-<div class="container">
+<div class="wrapper">
   {{- if isset site.Taxonomies "categories" }}
   {{- if not (eq (len site.Taxonomies.categories) 0) }}
   <ul class="categories-list">
@@ -14,13 +14,13 @@
   {{- end }}
   {{- end }}
 </div>
-<div class="post-wrapper container padding-top-10">
+<div class="post-wrapper wrapper padding-top-9">
   {{ $paginator := .Paginate ( where .Data.Pages "Type" "blog" ) }}
   {{ range $paginator.Pages }}
   {{ .Render "blog-cards-alt" }}
   {{ end }}
 </div>
-<div class="container padding-bottom-10">
+<div class="wrapper padding-bottom-9">
   {{ partial "blog/custom-pagination.html" . }}
 </div>
 {{ end }}

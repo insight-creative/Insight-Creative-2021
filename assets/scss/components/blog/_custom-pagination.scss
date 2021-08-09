@@ -2,8 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 4rem;
-  border-top: 1px solid $darkBlack;
+  margin-bottom: $ic-500;
+  border-top: 1px solid $dark-black;
+
   .pagination__next,
   .pagination__previous,
   .pagination__numbers {
@@ -16,19 +17,22 @@
     align-items: center;
     justify-content: center;
     margin: 0 10px;
-    color: $primaryColor;
-    height: 50px;
-    width: 50px;
+    color: $primary-color;
+    height: 65px;
+    width: 65px;
+
     &:hover,
     &:focus {
-      background: $primaryColor;
+      background: $primary-color;
       color: $white;
+
       svg {
         fill: $white;
       }
     }
+
     svg {
-      fill: $primaryColor;
+      fill: $primary-color;
       width: 20px;
       transition: 0.3s ease-out;
     }

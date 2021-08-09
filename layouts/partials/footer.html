@@ -73,7 +73,7 @@
   </div>
 </footer> -->
 <footer class="footer" role="contentinfo">
-  <div class="footer__container container-wide padding-top-5">
+  <div class="footer__container wrapper-wide padding-top-5">
     <div class="footer__contact footer__column">
       <a class="brand-logo" href="{{ site.BaseURL }}">
         <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" class="img-responsive dim" width="200" height="70">
@@ -83,7 +83,7 @@
     </div>
     <div class="footer__menu footer__column footer__column--center">
       <nav class="footer__menu-nav" role="navigation" aria-label="Footer Navigation">
-        <h4 class="g5">Menu</h4>
+        <h4 class="h5">Menu</h4>
         {{ with .Site.Menus.main }}
         <ul class="footer__nav-list">
           {{ range . }}
@@ -98,7 +98,7 @@
     </div>
     <div class="footer__services footer__column footer__column--center">
       <nav class="footer__services-nav" role="navigation" aria-label="Services Navigation">
-        <h4 class="g5">Services</h4>
+        <h4 class="h5">Services</h4>
         <ul class="footer__nav-list">
           <li class="footer__nav-list-item">
             <a class="footer__nav-item" href="/services/content" aria-label=""
@@ -128,7 +128,7 @@
       </nav>
     </div>
     <div class="footer__newsletter footer__column">
-      <h4 class="g5">Sign up for our newsletter</h4>
+      <h4 class="h5">Sign up for our newsletter</h4>
     </div>
     <div class="footer__copyright padding-top-2 padding-bottom-2">
       <p>© {{ dateFormat "2006" now }} {{ .Site.Params.author }} All Rights Reserved.</p>

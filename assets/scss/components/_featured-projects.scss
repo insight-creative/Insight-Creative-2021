@@ -1,7 +1,7 @@
 .featured-projects {
-  margin-top: 5rem;
   &__link {
     text-decoration: none;
+
     @include breakpoint(md) {
       &:hover,
       &:focus {
@@ -19,15 +19,19 @@
       }
     }
   }
+
   &__heading {
     margin-bottom: 0;
   }
+
   &__project {
     margin: 10px 0;
+
     @include breakpoint(md) {
       margin: 0;
     }
   }
+
   &__overlay {
     background: rgba(0, 0, 0, 0.7);
     // background: radial-gradient(
@@ -55,35 +59,44 @@
     opacity: 0;
     transition: 0.3s ease-out;
   }
+
   &__desc {
     padding: 2rem;
     transform: translateY(-100%);
     transition: 0.7s ease-out;
   }
+
   @include breakpoint(md) {
     &__row-1 &__link:nth-of-type(1) {
       margin: 0 0.5rem 0.5rem 0;
     }
+
     &__row-1 &__link:nth-of-type(2) {
       margin: 0 0 0.5rem 0.5rem;
     }
+
     &__row-2 &__link:nth-of-type(1) {
       margin: 0.5rem 0.5rem 0 0;
     }
+
     &__row-2 &__link:nth-of-type(2) {
       margin: 0.5rem 0 0 0.5rem;
     }
   }
+
   .project-tall &__image {
     height: 70vh;
   }
+
   .project-short &__image {
     height: 45vh;
   }
+
   &__image {
     overflow: hidden;
     border-radius: 5px;
     position: relative;
+
     img {
       height: 120%;
       position: relative;

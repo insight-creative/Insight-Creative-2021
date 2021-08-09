@@ -3,58 +3,68 @@
   padding: 0.5rem 2.5rem;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.6rem;
+  font-size: $ic-100;
+
   @include breakpoint(md) {
-    font-size: 2rem;
+    font-size: $ic-300;
   }
 }
+
 .btn-primary,
 .btn-secondary,
 .btn-tertiary {
   position: relative;
   z-index: 1;
-  color: $lightGray;
+  color: $light-gray;
+
   &:before {
     position: absolute;
     content: "";
     top: 0;
     left: 0;
     height: 100%;
-    width: 40px;
+    width: 46px;
     border-radius: 50px;
     z-index: -1;
     transition: 0.3s ease;
   }
+
   &:hover,
   &:focus {
-    &:before {
+    &::before {
       width: 100%;
     }
   }
 }
+
 .btn-primary {
-  &:before {
-    background-color: $primaryColor;
+  &::before {
+    background-color: $primary-color;
   }
 }
+
 .btn-secondary {
-  color: $primaryColor;
-  &:before {
-    background-color: $lightGray;
+  color: $primary-color;
+  &::before {
+    background-color: $light-gray;
   }
 }
+
 .btn-tertiary {
-  &:before {
-    background-color: $tertiaryColor;
+  &::before {
+    background-color: $tertiary-color;
   }
+
   &:hover,
   &:focus {
-    color: $bodyBlack;
-    &:before {
+    color: $body-black;
+
+    &::before {
       width: 100%;
     }
   }
 }
+
 button {
   cursor: pointer;
 }

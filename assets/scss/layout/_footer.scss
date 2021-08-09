@@ -1,7 +1,7 @@
 .footer {
-  background-color: $darkBlack;
+  background-color: $dark-black;
   color: $white;
-  font-size: 2rem;
+  font-size: $ic-300;
   // position: fixed;
   // bottom: 0;
   position: fixed;
@@ -16,6 +16,7 @@
   overflow: hidden;
   display: grid;
   place-items: end;
+
   &__container {
     // height: 100%;
     // opacity: 0;
@@ -23,49 +24,62 @@
     display: flex;
     flex-wrap: wrap;
   }
+
   &__column {
     flex: 0 0 100%;
+
     @include breakpoint(md) {
       flex: 0 0 25%;
     }
   }
+
   &__column:nth-of-type(2),
   &__column:nth-of-type(3) {
     display: none;
+
     @include breakpoint(md) {
       display: flex;
     }
   }
+
   &__column--center {
     display: flex;
     flex-direction: column;
   }
+
   a {
     text-decoration: none;
   }
+
   .brand-logo {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     max-width: 200px;
     opacity: 1;
   }
+
   &__contact {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2.5rem;
+    margin-bottom: $ic-400;
+
     a {
       font-weight: 700;
     }
+
     a + a {
-      margin-top: 1rem;
+      margin-top: 0.5rem;
     }
   }
+
   &__menu,
   &__services {
-    margin-bottom: 2.5rem;
+    margin-bottom: $ic-400;
+
     @include breakpoint(lg) {
       align-items: center;
     }
   }
+
   &__menu,
   &__services,
   &__newsletter {
@@ -73,29 +87,36 @@
       font-weight: 700;
     }
   }
+
   &__nav {
     display: flex;
     justify-content: center;
+
     ul {
       margin-bottom: 0;
     }
   }
+
   &__nav-list {
     position: relative;
     padding: 0;
   }
+
   &__nav-list-item {
     padding: 0;
   }
+
   &__copyright {
     text-align: center;
-    border-top: 1px solid $bodyBlack;
-    font-size: 1.6rem;
+    border-top: 1px solid $body-black;
+    font-size: $ic-100;
     width: 100%;
     margin-top: 50px;
+
     @include breakpoint(md) {
       display: flex;
       align-items: center;
+
       p {
         margin: 0;
         margin-right: 0.5rem;
@@ -103,39 +124,48 @@
       }
     }
   }
+
   &__copyright-nav-list {
     position: relative;
     display: flex;
     align-items: center;
     padding: 0;
+
     li {
       list-style-type: none;
     }
   }
+
   &__nav-list-item {
     list-style-type: none;
   }
+
   &__nav-item {
     color: $white;
     padding: 0.5rem 0;
     transform: translateX(0);
     display: block;
-    &:hover {
+
+    &:hover,
+    &:focus {
       transform: translateX(5px);
     }
   }
 }
+
 .ghost-footer {
-  height: 650px;
+  height: 675px;
   pointer-events: none;
+
   @include breakpoint(md) {
-    height: 600px;
+    height: 615px;
   }
 }
+
 .separator {
   height: 5px;
   width: 5px;
   margin: 0 10px;
-  background-color: $lightGray;
+  background-color: $light-gray;
   border-radius: 50%;
 }

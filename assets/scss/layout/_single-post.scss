@@ -1,23 +1,30 @@
 .post {
   &__body {
-    border-bottom: 1px solid $darkBlack;
+    border-bottom: 1px solid $dark-black;
+    padding-bottom: $ic-300;
   }
+
   h1 {
-    font-size: 4rem;
+    font-size: $ic-600;
   }
+
   h2 {
-    font-size: 3.6rem;
+    font-size: $ic-500;
   }
+
   h3 {
-    font-size: 3.2rem;
+    font-size: $ic-400;
   }
+
   h4 {
-    font-size: 2.8rem;
+    font-size: $ic-300;
   }
+
   @include breakpoint(md) {
     width: 75%;
     margin-left: auto;
   }
+
   .post-meta {
     margin-bottom: 1.5rem;
   }
@@ -30,17 +37,20 @@
     margin: 2rem 0;
     padding-left: 2.5rem;
   }
+
   ul + ol,
   ol + ul {
     margin: 0 0 2rem 0;
   }
+
   blockquote {
     margin-left: 0;
-    border-top: 1px solid $secondaryColor;
-    border-bottom: 1px solid $secondaryColor;
+    border-top: 1px solid $secondary-color;
+    border-bottom: 1px solid $secondary-color;
     padding: 2rem;
     margin-bottom: 2rem;
     position: relative;
+
     &:after {
       position: absolute;
       content: ' " ';
@@ -48,48 +58,60 @@
       left: 0;
       font-family: "Friday Vibes";
       font-size: 40rem;
-      color: $tertiaryColor;
+      color: $tertiary-color;
     }
+
     p {
       margin: 6rem auto 0 auto;
     }
   }
+
   hr {
-    border: 1px solid $darkBlack;
+    border: 1px solid $dark-black;
   }
 }
+
 .headshot-image {
   width: 100%;
+
   @include breakpoint(md) {
     width: 50%;
   }
 }
+
 .staff-card--post {
   margin: 0;
   display: block;
+
   .staff-card__written-by {
-    font-size: 1.6rem;
+    font-size: $ic-200;
   }
+
   .staff-card__image-wrapper {
     margin: 0 auto;
     max-width: 50%;
+
     @include breakpoint(sm) {
       max-width: 25%;
     }
+
     @include breakpoint(lg) {
-      margin: 1.5rem auto 1.5rem 0;
+      margin: $ic-200 auto $ic-200 0;
       max-width: 80%;
     }
   }
+
   .staff-card__bio {
-    font-size: 1.6rem;
+    font-size: $ic-200;
     line-height: 1.5;
   }
 }
+
 .related-posts {
   .post-wrapper {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
   }
+
   .blog-card.blog-card:nth-of-type(even) {
     @include breakpoint(md) {
       margin-top: 0;
