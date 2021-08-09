@@ -3,10 +3,8 @@
         <div class="breadcrumbs__progress-bar">
             <div class="breadcrumbs__progress-bar-inner"></div>
         </div>
-        <ol  class="breadcrumbs__nav">
-            <div class="breadcrumbs__nav-wrapper flex">
-                {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
-            </div>
+        <ol class="breadcrumbs__nav flex">
+            {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
         </ol>
         {{ define "breadcrumbnav" }}
         {{ if .p1.Parent }}

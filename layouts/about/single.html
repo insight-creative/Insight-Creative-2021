@@ -1,6 +1,6 @@
 {{ define "main" }}
 <section class="author">
-    <div class="author__hero container padding-top-10 padding-bottom-10">
+    <div class="author__hero wrapper block">
         <div class="author__image-wrapper">
             <img src="{{ (index .Site.Data.staff .Params.author).image_jpg }}" alt="headshot of Insight Creative's {{ (index .Site.Data.staff .Params.author).job_title }}, {{ (index .Site.Data.staff .Params.author).name }}" class="author__image">
         </div>
@@ -10,7 +10,7 @@
     </div>
 </section>
 <section class="authors-posts">
-    <div class="authors-posts__inner post-wrapper container">
+    <div class="authors-posts__inner post-wrapper wrapper">
         {{ $pages := .Site.RegularPages }}
         {{ $blog := where $pages "Type" "blog" }}
         {{ $posts := where $blog "Params.author" (.Title | title) }}

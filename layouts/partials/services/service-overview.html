@@ -11,7 +11,7 @@
     <div class="wrapper-wide">
         {{ partial "services/service-cards" . }}
     </div>
-    <div class="wrapper department-feed">
+    <div class="wrapper-wide department-feed">
         <h4 class="text-center">Get to know our {{ lower .Title }} department!</h4>
         <div class="staff-card-wrapper">
         {{ if eq .Title "Content" }}
@@ -19,7 +19,7 @@
         {{ else if eq .Title "Web"}}
             {{ partialCached "services/staff-cards-web" . }}
         {{ else if eq .Title "Digital"}}
-            {{ partialCached "services/staff-cards-digital" . }}
+            {{ partialCached "services/staff-cards-media" . }}
         {{ else if eq .Title "Media"}}
             {{ partialCached "services/staff-cards-media" . }}
         {{ else if eq .Title "Design"}}

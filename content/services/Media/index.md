@@ -25,6 +25,11 @@ services:
     - heading: Research
       subhead: <span class="text-tertiary"><em>Discover who and where your audience is. </em></span>
       description: Half of our in-depth research is getting to know you. The other half is getting to know your audience’s media consumption habits. With access to many resources, our team can employ advanced targeting by demographic, geographic and behavioral traits to achieve the most effective media mix.
+      partners: 
+      - partner: Nielson-Logo.png
+      - partner: comscore.png
+      - partner: experian.png
+      - partner: BluHorn-Logo.png
 
     - heading: Strategy
       subhead: <span class="text-tertiary"><em>Create a specific and sensible long-term media plan.</em></span>

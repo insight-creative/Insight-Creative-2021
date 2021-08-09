@@ -4,8 +4,8 @@
   @include breakpoint(md) {
     display: block;
     position: fixed;
-    bottom: 2.5rem;
-    right: 2.5rem;
+    bottom: 0.7rem;
+    right: 0.5rem;
     opacity: 0;
     transform: translateY(20px);
     transition: 0.7s ease-in-out;

@@ -1,81 +1,85 @@
 {{ with .Params.services }}
 <div class="flex flex-column">
     {{ range .service_focus }}
-    <div class="service-card bg-black fade-up w-100 w-30-m">
-        <div class="service-card__inner flex flex-column flex-row-m">
-            <div class="service-card__icon-wrapper w-100 w-30-m flex flex-column">
-                <div class="service-card__icon">
-                    {{ if eq .heading "Copywriting" }}
-                        {{ partial "svg-icons/copywriting.svg" . }}
-                    {{ end }}
-                    {{ if eq .heading "Social Media" }}
-                        {{ partial "svg-icons/social-media.svg" . }}
-                    {{ end }}
-                    {{ if eq .heading "Public Relations" }}
-                        {{ partial "svg-icons/public-relations.svg" . }}
-                    {{ end }}
-                    {{ if eq .heading "Photography" }}
-                        {{ partial "svg-icons/photography.svg" . }}
-                    {{ end }}
-                    {{ if eq .heading "Video" }}
-                        {{ partial "svg-icons/videography.svg" . }}
-                    {{ end }}
-                    {{ if eq .heading "Drone" }}
-                        {{ partial "svg-icons/drone.svg" . }}
-                    {{ end }}
-                    {{ if eq .heading "Branding" }}
-                        {{ partial "svg-icons/branding.svg" . }}
-                    {{ end }}
-                    {{ if eq .heading "Digital" }}
-                        {{ partial "svg-icons/digital-design.svg" . }}
-                    {{ end }}
-                    {{ if eq .heading "Print" }}
-                        {{ partial "svg-icons/print.svg" . }}
-                    {{ end }}
-                    {{ if eq .heading "Research" }}
-                        {{ partial "svg-icons/research.svg" . }}
-                    {{ end }}
-                    {{ if eq .heading "Strategy" }}
-                        {{ partial "svg-icons/strategy.svg" . }}
-                    {{ end }}
-                    {{ if eq .heading "Buying" }}
-                        {{ partial "svg-icons/digital-alt.svg" . }}
-                    {{ end }}
-                </div>
-                {{ if .logos }}
-                <div class="service-card__logos">
-                    <div class="service-card__logos-wrapper">
-                        {{ range .logos }}
-                            {{ if eq .logo "facebook" }}
-                                {{ partial "svg-icons/facebook-alt.svg" . }}
-                            {{ end }}
-                            {{ if eq .logo "instagram" }}
-                                {{ partial "svg-icons/instagram.svg" . }}
-                            {{ end }}
-                            {{ if eq .logo "linkedin" }}
-                                {{ partial "svg-icons/linkedin-alt.svg" . }}
-                            {{ end }}
-                            {{ if eq .logo "youtube" }}
-                                {{ partial "svg-icons/youtube.svg" . }}
-                            {{ end }}
-                            {{ if eq .logo "twitter" }}
-                                {{ partial "svg-icons/twitter.svg" . }}
-                            {{ end }}
-                            {{ if eq .logo "snapchat" }}
-                                {{ partial "svg-icons/snapchat.svg" . }}
-                            {{ end }}
+    <div class="service-card bg-black fade-up">
+        <div class="service-card__inner">
+            <div class="flex flex-column flex-row-m">
+                <div class="service-card__icon-wrapper w-100 w-30-m flex flex-column">
+                    <div class="service-card__icon">
+                        {{ if eq .heading "Copywriting" }}
+                            {{ partial "svg-icons/copywriting.svg" . }}
+                        {{ else if eq .heading "Social Media" }}
+                            {{ partial "svg-icons/social-media.svg" . }}
+                        {{ else if eq .heading "Public Relations" }}
+                            {{ partial "svg-icons/public-relations.svg" . }}
+                        {{ else if eq .heading "Photography" }}
+                            {{ partial "svg-icons/photography.svg" . }}
+                        {{ else if eq .heading "Video" }}
+                            {{ partial "svg-icons/videography.svg" . }}
+                        {{ else if eq .heading "Drone" }}
+                            {{ partial "svg-icons/drone.svg" . }}
+                        {{ else if eq .heading "Branding" }}
+                            {{ partial "svg-icons/branding.svg" . }}
+                        {{ else if eq .heading "Digital" }}
+                            {{ partial "svg-icons/digital-design.svg" . }}
+                        {{ else if eq .heading "Print" }}
+                            {{ partial "svg-icons/print.svg" . }}
+                        {{ else if eq .heading "Research" }}
+                            {{ partial "svg-icons/research.svg" . }}
+                        {{ else if eq .heading "Strategy" }}
+                            {{ partial "svg-icons/strategy.svg" . }}
+                        {{ else if eq .heading "Buying" }}
+                            {{ partial "svg-icons/buying.svg" . }}
+                        {{ else if eq .heading "Streaming Ads" }}
+                            {{ partial "svg-icons/streaming.svg" . }}
+                        {{ else if eq .heading "Display & Social" }}
+                            {{ partial "svg-icons/display-social.svg" . }}
+                        {{ else if eq .heading "Search Engine Marketing (SEM)" }}
+                            {{ partial "svg-icons/sem.svg" . }}
                         {{ end }}
                     </div>
+                    {{ if .logos }}
+                    <div class="service-card__logos">
+                        <div class="service-card__logos-wrapper">
+                            {{ range .logos }}
+                                {{ if eq .logo "facebook" }}
+                                    {{ partial "svg-icons/facebook-alt.svg" . }}
+                                {{ end }}
+                                {{ if eq .logo "instagram" }}
+                                    {{ partial "svg-icons/instagram.svg" . }}
+                                {{ end }}
+                                {{ if eq .logo "linkedin" }}
+                                    {{ partial "svg-icons/linkedin-alt.svg" . }}
+                                {{ end }}
+                                {{ if eq .logo "youtube" }}
+                                    {{ partial "svg-icons/youtube.svg" . }}
+                                {{ end }}
+                                {{ if eq .logo "twitter" }}
+                                    {{ partial "svg-icons/twitter.svg" . }}
+                                {{ end }}
+                                {{ if eq .logo "snapchat" }}
+                                    {{ partial "svg-icons/snapchat.svg" . }}
+                                {{ end }}
+                            {{ end }}
+                        </div>
+                    </div>
+                    {{ end }}
                 </div>
+                <div class="w-100 w-70-m">
+                    <h4 class="text-white no-margin">{{ .heading }}</h4>
+                    <div class="service-card__underline"></div>
+                    {{ .subhead | markdownify }}
+                    <p class="service-card__desc">{{ .description }}</p>
+                    <p class="service-card__service-list text-dark-gray">{{ .service_list }}</p>
+                </div>
+            </div>
+            {{ if .partners }}
+            <div class="service-card__partners flex flex-center">
+                {{ range .partners }}
+                    <img src="{{ .partner }}" alt="{{ .partner }}" width="100" height="25">
                 {{ end }}
             </div>
-            <div class="w-100 w-70-m">
-                <h4 class="text-white no-margin">{{ .heading }}</h4>
-                <div class="service-card__underline"></div>
-                {{ .subhead | markdownify }}
-                <p class="service-card__desc">{{ .description }}</p>
-                <p class="service-card__service-list text-dark-gray">{{ .service_list }}</p>
-            </div>
+            {{ end }}
         </div>
     </div>
     {{ end }}

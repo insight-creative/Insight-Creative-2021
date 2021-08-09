@@ -1,23 +1,27 @@
 .breadcrumbs {
   display: none;
+
   @include breakpoint(md) {
     display: block;
     position: fixed;
-    left: 2.5rem;
+    left: $ic-400;
     transform: rotate(-90deg);
     transform-origin: left;
     z-index: 9;
   }
+
   &__inner {
     opacity: 0;
     transition: 0.7s ease-out;
     transform: translateX(-20px);
   }
+
   &__nav {
     list-style-type: none;
     padding: 0;
     margin: 0;
   }
+
   &__list-item:not(:nth-last-child(2)) {
     .breadcrumbs__link {
       &:after {
@@ -25,9 +29,11 @@
       }
     }
   }
+
   &__list-item:last-child {
     pointer-events: none;
   }
+
   &__link {
     text-decoration: none;
     padding: 1rem;
@@ -35,11 +41,13 @@
     font-size: $ic-100;
     position: relative;
     transition: 0.3s ease;
+
     &:hover,
     &:focus {
       color: $secondary-color;
     }
-    &:after {
+
+    &::after {
       position: absolute;
       top: 50%;
       right: 0;
@@ -50,11 +58,13 @@
       background: $tertiary-color;
     }
   }
+
   &__progress-bar {
     height: 2px;
     width: 50px;
     background: $dark-black;
   }
+
   &__progress-bar-inner {
     height: 2px;
     width: 50px;
@@ -64,17 +74,20 @@
     transition: 0.3s ease;
   }
 }
+
 .single-post,
 .blog {
   .breadcrumbs {
     li:nth-of-type(2) {
       pointer-events: none;
+
       .breadcrumbs__link {
-        &:after {
+        &::after {
           display: none;
         }
       }
     }
+
     &__list-item:last-child {
       display: none;
     }

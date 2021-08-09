@@ -48,6 +48,7 @@
       }
     }
   }
+
   &__desc {
     margin: $ic-400 0 $ic-200 0;
   }
@@ -71,6 +72,15 @@
       margin: 1rem;
       width: 30px;
       height: 30px;
+    }
+  }
+
+  &__partners {
+    flex-wrap: wrap;
+
+    img {
+      max-width: 120px;
+      margin: $ic-400;
     }
   }
 }
