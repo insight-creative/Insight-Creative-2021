@@ -42,16 +42,20 @@
   mix-blend-mode: exclusion;
   user-select: none;
   pointer-events: none;
+
   &__text {
     opacity: 0;
   }
 }
+
 .cursor-grow {
   transform: scale(6);
 }
+
 .cursor-hide {
   transform: scale(0);
 }
+
 .cursor-project,
 .cursor-blog {
   height: 100px;
@@ -63,6 +67,7 @@
   justify-content: center;
   align-items: center;
   opacity: 0.9;
+
   &:after {
     opacity: 0;
     text-align: center;
@@ -72,12 +77,14 @@
     // font-size: 6rem;
   }
 }
+
 .cursor-project {
   &:after {
     opacity: 1;
     content: "View Project";
   }
 }
+
 .cursor-blog {
   &:after {
     opacity: 1;

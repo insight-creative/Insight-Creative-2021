@@ -76,11 +76,17 @@
   }
 
   &__partners {
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: $ic-400;
+    place-items: center;
 
     img {
-      max-width: 120px;
-      margin: $ic-400;
+      max-width: 150px;
+      width: auto;
+      max-height: 50px;
     }
+
   }
 }

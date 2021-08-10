@@ -74,11 +74,14 @@
                 </div>
             </div>
             {{ if .partners }}
-            <div class="service-card__partners flex flex-center">
+            <div class="service-card__partners">
                 {{ range .partners }}
-                    <img src="{{ .partner }}" alt="{{ .partner }}" width="100" height="25">
+                    <img src="/images/partners/{{ .logo }}" alt="{{ .image }}" width="100" height="25" aria-hidden="true">
                 {{ end }}
             </div>
+            {{ end }}
+            {{ if .outro }}
+                <p class="text-center text-secondary shift-up h5 margin-top-6">{{ .outro }}</p>
             {{ end }}
         </div>
     </div>

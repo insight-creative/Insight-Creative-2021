@@ -1,3 +1,31 @@
 .digital-intro {
   background-image: url("/images/background-images/digital-background.jpg");
 }
+
+.digital-hero {
+  .service-hero__icon {
+    svg {
+      position: relative;
+      top: -$ic-100;
+    }
+  }
+}
+
+.digital {
+  .service-card:nth-of-type(3) {
+    @include breakpoint (md) {
+      .service-card__partners {
+        display: flex;
+      justify-content: space-evenly;
+      width: 70%;
+      margin-left: auto;
+      margin-top: 1rem;
+
+      img {
+        max-width: 180px;
+        max-height: 100px;
+      }
+      }
+    }
+  }
+}

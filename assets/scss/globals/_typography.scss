@@ -9,6 +9,7 @@ textarea {
   font-size: $ic-300;
   line-height: 1.5;
 }
+
 h1,
 h2,
 h3,
@@ -31,10 +32,12 @@ h1,
 .h1 {
   font-size: clamp($ic-500, 4vw, $ic-800);
 }
+
 h2,
 .h2 {
   font-size: clamp($ic-500, 4vw, $ic-700);
 }
+
 h3,
 .h3 {
   font-size: clamp($ic-500, 4vw, $ic-600);
@@ -215,4 +218,8 @@ h6,
 
 .text-tertiary {
   color: $tertiary-color;
+}
+
+.text-underline {
+  text-decoration: underline;
 }

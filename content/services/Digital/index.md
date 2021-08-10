@@ -3,7 +3,7 @@ Title: Digital
 seo:
   title: Digital Services in Green Bay, WI
   description: An advertising agency with a vision to bring complete strategic development and creative execution capabilities into one roll-up-your-sleeves, hard-working kind of ad agency.
-  featured_image: /images/background-images/Insight Services Brand Collage Gray.jpg
+  featured_logo: /images/background-images/Insight Services Brand Collage Gray.jpg
 
 hero_title: 'The possibilities online are <span class="emphasis-red">infinite.</span>'
 
@@ -22,19 +22,37 @@ services:
       subhead: <span class="text-tertiary"><em>Pair your ads with your customers’ favorite content.</em></span>
       description: Using the latest research and decades of experience, our media buyers and creatives work together to build a full-service program that seamlessly places your brand message alongside your audience’s favorite sources of entertainment.
       partners:
-        - partner: Spotify.png
-        - partner: roku.png
-        - partner: Pandora.png
-        - partner: amazonfiretv.png
-        - partner: youtube.png
-        - partner: SXM-Media.png
+        - logo: Spotify.png
+        - logo: roku.png
+        - logo: Pandora.png
+        - logo: amazonfiretv.png
+        - logo: youtube.png
+        - logo: SXM-Media.png
 
     - heading: Display & Social
       subhead: <span class="text-tertiary"><em>Imagine your brand on the nation’s top sites.</em></span>
       description: There’s a lot of smart features at work behind today’s digital display and social ads. With ability to target mobile users by location or retarget consumers based on their online behavior in real time, our media specialists know how to leverage the latest technology in your strategic media plan.
+      partners:
+        - logo: People-Magazine.png
+        - logo: weather-channel.png
+        - logo: usa-today.png
+        - logo: facebook.png
+        - logo: Instagram.png
+        - logo: Time-Magazine.png
+        - logo: Rolling-Stone.png
+        - logo: espn.png
+        - logo: CNN.png
+        - logo: Forbes.png
+        - logo: HuffPost.png
+        - logo: CBS-News.png
+      outro: And More!
 
     - heading: Search Engine Marketing (SEM)
       subhead: <span class="text-tertiary"><em>Boost your name to the top of search rankings.</em></span>
       description: You can have the best website, but if no one can find it, it may as well not exist. Search engine marketing is essential to any digital marketing plan. Insight’s combined experience in media, copywriting and digital marketing can help your brand climb the ranks of popular search engines.
       service_list: keyword research • keyword management • reporting & analytics • ongoing communication with media representatives
+      partners: 
+        - logo: google.png
+        - logo: yahoo.png
+        - logo: bing.png
 ---

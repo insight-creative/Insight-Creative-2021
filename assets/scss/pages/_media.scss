@@ -1,3 +1,18 @@
 .media-intro {
   background-image: url("/images/background-images/media-background.jpg");
 }
+
+.media {
+  .service-card__partners {
+    grid-template-columns: repeat(2, 1fr);
+
+    @include breakpoint(md) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    img {
+      max-width: 250px;
+      max-height: 100px;
+    }
+  }
+}

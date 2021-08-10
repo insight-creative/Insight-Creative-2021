@@ -1,6 +1,7 @@
 .studio-intro {
   background-image: url("/images/background-images/studio-equipment-background.jpg");
 }
+
 .studio-hero {
   .service-hero__icon {
     svg {
@@ -8,13 +9,16 @@
     }
   }
 }
+
 .studio {
   .department-feed {
     display: none;
   }
+
   .studio-cta {
     display: block;
   }
+  
   .site-cta {
     padding-top: 0.5rem;
   }

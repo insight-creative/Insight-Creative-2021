@@ -1,10 +1,12 @@
 .site-cta {
   text-align: center;
+
   &__content {
     border-radius: $radius;
     position: relative;
     z-index: 1;
   }
+  
   &__inner {
     padding: 1rem;
   }

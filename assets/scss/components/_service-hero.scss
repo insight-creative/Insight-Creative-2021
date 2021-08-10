@@ -10,7 +10,7 @@
   }
 
   &__icon {
-    margin: 0 auto 5rem auto;
+    margin: 0 auto $ic-700 auto;
 
     svg {
       max-width: 170px;
@@ -44,50 +44,21 @@
 
   &__circle {
     background: #fff;
-    height: 34rem;
-    width: 34rem;
+    height: clamp(34rem, 80vw, 75rem);
+    width: clamp(34rem, 80vw, 75rem);
     border-radius: 50%;
     position: absolute;
-
-    @include breakpoint(sm) {
-      height: 40rem;
-      width: 40rem;
-    }
-
-    @include breakpoint(md) {
-      height: 60rem;
-      width: 60rem;
-    }
-
-    @include breakpoint(lg) {
-      height: 70rem;
-      width: 70rem;
-    }
 
     &::before {
       position: absolute;
       content: "";
       border: 5px solid $secondary-color;
-      height: 34rem;
-      width: 34rem;
+      height: clamp(34rem, 80vw, 75rem);
+      width: clamp(34rem, 80vw, 75rem);
       border-radius: 50%;
       top: -10px;
       left: 10px;
 
-      @include breakpoint(sm) {
-        height: 40rem;
-        width: 40rem;
-      }
-
-      @include breakpoint(md) {
-        height: 60rem;
-        width: 60rem;
-      }
-
-      @include breakpoint(lg) {
-        height: 70rem;
-        width: 70rem;
-      }
     }
   }
 

@@ -14,14 +14,14 @@ intro:
   description: "<p>Effective creative comes from strong ideas. And the strongest ideas come from quality information and collaboration. That’s why our talented artists will visit your company, meet your people and learn all about your operation—inside and out—before putting pencil to paper. They’ll also work side-by-side with writers and strategists to consider messaging and tactics as inspiration takes over. This thoughtful approach combined with the latest technology—and a whole lot of imagination—can bring your brand to a whole new level.</p>"
 
 service_overview:
-  subhead_small: DESIGN SERVICES
+  subhead_small: Design Services
   subhead: Let’s show the world your vision.
   description: From marketing campaigns to digital ads and print collateral, our design team brings strong educational backgrounds, decades of working experience and eclectic style to ensure your marketing is striking, cohesive and true to your brand.
 
 services:
   service_focus:
     - heading: Branding
-      subhead: <span class="text-tertiary"><em>Develop creative that feels like your organization.</em></span>
+      subhead: <span class="text-tertiary"><em>Develop creative that <span class="text-underline">feels</span> like your organization.</em></span>
       description: Our design team considers typography, color theory, photography and more to develop a brand that reflects your organization, then empowers you to share that brand with the world in an easy-to-use toolkit.
       service_list: mood boards • logos • brand standards • corporate identity • photography • typography • creative campaigns • traditional media • digital media • brand mascots • illustration • signage • business cards • letterhead
 
