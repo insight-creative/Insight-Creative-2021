@@ -1,7 +1,7 @@
 .post-wrapper {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   border-top: 1px solid $dark-black;
 
   .blog-card {
@@ -14,10 +14,12 @@
     }
   }
 }
+
 .categories-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 100%;
 
   @include breakpoint(lg) {
     justify-content: space-between;

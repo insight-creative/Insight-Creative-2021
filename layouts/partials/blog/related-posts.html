@@ -1,6 +1,6 @@
 {{ $related := .Site.RegularPages.RelatedIndices . "categories" | first 3 }}
 {{ with $related }}
-<div class="wrapper-wide related-posts padding-top-9">
+<div class="wrapper-lg related-posts padding-top-9">
     <h3>Related Articles</h3>
     <div class="post-wrapper padding-top-2">
         {{ range . }}

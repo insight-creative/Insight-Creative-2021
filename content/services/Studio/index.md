@@ -10,7 +10,7 @@ department: "Content"
 hero_title: 'Picture <span class="emphasis-red">true</span> marketing integration.'
 
 intro: 
-    subhead: Our studio has been an integral part of our content creation services for over <span class="emphasis-red">30 years!</span>
+    subhead: Our studio has been integral to our services for over <span class="emphasis-red">30 years.</span>
     description: "<p>Sorry, you won’t find a ping pong table or a kegerator at our office. With a complete photography and video production studio under the same roof as our communications agency, we need all the space we can get. There’s also no room for smoke and mirrors. What you see is everything you get. And what you get is A LOT.</p> 
     
     <span class='g4'>Studio Features & Amenities:</span>

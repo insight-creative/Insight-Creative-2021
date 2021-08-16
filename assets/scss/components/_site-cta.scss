@@ -9,5 +9,9 @@
   
   &__inner {
     padding: 1rem;
+
+    p {
+      max-width: 100%;
+    }
   }
 }

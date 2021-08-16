@@ -10,9 +10,9 @@ Service 2:
   subservice3: Maintenance
 Service 3:
   name: Digital
-  subservice1: Media Buying
-  subservice2: Real-time Analytics
-  subservice3: Reporting
+  subservice1: Streaming Ads
+  subservice2: Display & Social
+  subservice3: Search Engine Marketing (SEM)
 Service 4:
   name: Media
   subservice1: Research

@@ -3,7 +3,7 @@
   <h1 class="no-margin">{{ .Title }}</h1>
   <h2 class="h4">Category Subtitle?</h2>
 </div>
-<div class="wrapper">
+<div class="wrapper-md">
   {{- if isset site.Taxonomies "categories" }}
   {{- if not (eq (len site.Taxonomies.categories) 0) }}
   <ul class="categories-list">
@@ -14,13 +14,13 @@
   {{- end }}
   {{- end }}
 </div>
-<div class="post-wrapper wrapper padding-top-9">
+<div class="post-wrapper wrapper-md padding-top-9">
   {{ $paginator := .Paginate ( where .Data.Pages "Type" "blog" ) }}
   {{ range $paginator.Pages }}
   {{ .Render "blog-cards-alt" }}
   {{ end }}
 </div>
-<div class="wrapper padding-bottom-9">
+<div class="wrapper-md padding-bottom-9">
   {{ partial "blog/custom-pagination.html" . }}
 </div>
 {{ end }}

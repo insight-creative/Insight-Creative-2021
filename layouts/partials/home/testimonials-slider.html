@@ -1,16 +1,16 @@
 <section class="testimonials bg-black-2 block">
-    <div class="wrapper-wide padding-top-10">
-        <div class="wrapper-narrow fade-up">
+    <div class="wrapper-lg padding-top-10">
+        <div class="wrapper-sm fade-up">
             <h3>{{ .Params.Testimonials.Subhead | markdownify }}</h3>
         </div>
-        <div class="wrapper-narrow swiper-container fade-up">
+        <div class="wrapper-sm swiper-container fade-up">
             <div class="testimonials__icon">
                 {{ partial "svg-icons/quote.svg" . }}
             </div>
             <div class="swiper-wrapper">
                 {{ with .Params.Testimonials }}
                 {{ range .Testimonial }}
-                <div class="wrapper-narrow swiper-slide">
+                <div class="wrapper-sm swiper-slide">
                     <p>
                         {{ .copy }}
                     </p>

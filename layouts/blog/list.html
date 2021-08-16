@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="wrapper block text-center">
+<div class="wrapper-md block text-center">
   <h1 class="no-margin">Insight Blog</h1>
   <h2 class="h4">Insight Blog Subtitle?</h2>
   {{- if isset site.Taxonomies "categories" }}
@@ -12,12 +12,12 @@
   {{- end }}
   {{- end }}
 </div>
-<div class="wrapper post-wrapper padding-top-9">
+<div class="wrapper-md post-wrapper padding-top-9">
   {{ range (.Paginate ( where .Site.RegularPages "Type" "blog" )).Pages }}
   {{ .Render "blog-cards-alt" }}
   {{ end }}
 </div>
-<div class="wrapper padding-bottom-9">
+<div class="wrapper-md padding-bottom-9">
   {{ partial "blog/custom-pagination.html" . }}
 </div>
 {{ end }}
