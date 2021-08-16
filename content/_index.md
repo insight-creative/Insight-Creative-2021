@@ -9,7 +9,7 @@ intro: "When it comes to communication, making a connection is paramount. The la
 
 services:
   subhead: '<span class="emphasis-red">Elevate</span> your brand with <span class="emphasis-underline">ultimate efficiency.</span>'
-  description: Insight offers all marketing services—including a large commercial video and photography studio—under one roof. Plus, you’ll gain access to a full-service team with specialized skillsets who are dedicated to making marketing an efficient, effective—and overall positive—experience.
+  description: Insight offers all marketing services including a large commercial video and photography studio under one roof. Plus, you’ll gain access to a full-service team with specialized skillsets who are dedicated to making marketing an efficient, effective—and overall positive—experience.
 
 testimonials:
   subhead: 'Hire a <span class="emphasis-red">grounded</span> agency with a <span class="emphasis-underline">proven</span>  track record.'
