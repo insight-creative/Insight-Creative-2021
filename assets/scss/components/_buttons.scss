@@ -3,7 +3,7 @@
   padding: 0.5rem 2.5rem;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: $ic-100;
+  font-size: $ic-200;
 
   @include breakpoint(md) {
     font-size: $ic-300;
@@ -45,6 +45,7 @@
 
 .btn-secondary {
   color: $primary-color;
+  
   &::before {
     background-color: $light-gray;
   }
