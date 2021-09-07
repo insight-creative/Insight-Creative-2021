@@ -445,7 +445,7 @@ function initSwiper() {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
-      })
+    })
 }
 
 function toggleMobileMenu() {
@@ -497,6 +497,7 @@ function initImageParallax() {
         });
     });
 }
+
 function initFooter() {
     // add padding to our scroll container to account for the fixed footer spacing
     // const home = window.location.pathname;
@@ -585,7 +586,6 @@ function initFooter() {
 
 function initSmoothScrollbar() {
     const breadcrumbs = select(".breadcrumbs");
-    if (width>992){
 
         // Scrollbar.init(document.querySelector('#viewport'));
         bodyScrollBar = Scrollbar.init(select('#viewport'), {damping: 0.04});
@@ -620,7 +620,6 @@ function initSmoothScrollbar() {
             footer.style.top = "calc(" + offset.y + 'px' + " - 90px )";
         });
         scroller.focus();
-    }
 }
 
 function destroySmoothScrollbar() {
