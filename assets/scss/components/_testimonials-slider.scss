@@ -103,6 +103,7 @@
   background: $secondary-color;
   transform: scale(1.3) !important;
   position: relative;
+
   &:after {
     position: absolute;
     content: "";
@@ -113,4 +114,167 @@
     top: -3px;
     left: -3px;
   }
+}
+
+.quote {
+  width: $ic-900;
+  margin: 2rem;
+}
+
+.slider {
+  display: grid;
+  grid-template-columns: 3em 50rem 3em;
+  grid-template-rows: 40vh 3em;
+  align-items: center;
+  grid-gap: 1em;
+  position: relative;
+
+  &__wrapper {
+    overflow: hidden;
+    grid-column: 2;
+    align-self: stretch;
+  }
+
+  &__content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+  }
+
+  &__slide {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+  }
+
+  // &__buttons {
+  //   position: absolute;
+  //   left: 50%;
+  //   top: 50%;
+  //   transform: translateX(-50%);
+  //   width: 100%;
+  //   height: 60px;
+  //   overflow: hidden;
+  // }
+
+  &__btn-prev,
+  &__btn-next {
+    display: grid;
+    place-items: center;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    color: $secondary-color;
+    background: none;
+    border: 1px solid $secondary-color;
+    border-radius: 50%;
+
+    svg {
+      position: relative;
+      transform: translateX(0);
+      transition: 0.3s ease;
+      stroke: $secondary-color;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 3px;
+      width: 2rem;
+      border-radius: 10px;
+      background-color: $secondary-color;
+      transform: scaleX(0);
+      transition: 0.3s ease;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    }
+
+    &:hover,
+    &:focus {
+      &::before {
+        transform: scaleX(100%);
+      }
+    }
+  }
+
+  &__btn-prev {
+    grid-column: 1;
+
+    &:hover,
+    &:focus {
+      svg {
+        transform: translateX(-10px);
+      }
+    }
+
+    &::before {
+      transform-origin: right;
+    }
+  }
+
+  &__btn-next {
+    grid-column: 3;
+
+    &:hover,
+    &:focus {
+      svg {
+        transform: translateX(10px);
+      }
+    }
+
+    &::before {
+      transform-origin: left;
+    }
+  }
+
+  &__dots {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $ic-100;
+  }
+
+  &__dot {
+    background: $secondary-color;
+    height: 12px;
+    width: 12px;
+    transform: scale(1);
+    border-radius: 50%;
+    border: none;
+    opacity: 0.5;
+    transition: 0.3s ease;
+  }
+
+  &__dot.is-selected {
+    transform: scale(1.4);
+    opacity: 1;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      border: 1px solid $secondary-color;
+      height: 18px;
+      width: 18px;
+      background: none;
+      border-radius: 50%;
+    }
+  }
+}
+
+.btn-inactive {
+  opacity: 0.3;
+  cursor: default;
 }
