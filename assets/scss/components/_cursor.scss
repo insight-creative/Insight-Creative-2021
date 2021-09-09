@@ -24,7 +24,8 @@
 }
 
 .follower {
-  position: fixed;
+  @include breakpoint(md) {
+    position: fixed;
   top: 0;
   left: 0;
   width: 10px;
@@ -45,6 +46,7 @@
 
   &__text {
     opacity: 0;
+  }
   }
 }
 

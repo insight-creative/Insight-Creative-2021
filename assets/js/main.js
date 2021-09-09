@@ -33,101 +33,109 @@ const breadcrumbs = select(".breadcrumbs__inner")
 const breadcrumbsProgressBar = select(".breadcrumbs__progress-bar-inner")
 const loader = select(".preloader")
 const loaderInner = select(".preloader__inner")
-const slider = document.querySelector('.slider')
-
 
 function initSlider () {
-    const home = window.location.pathname;
-    if(home === "/") {
-        console.log('a slider was found')
+    const slider = document.querySelector('.slider')
+    if(document.body.contains(slider)) {
         const nextButton = document.querySelector('.slider__btn-next')
-    const prevButton = document.querySelector('.slider__btn-prev')
-    const slides = document.querySelectorAll('.slider__slide')
-    const sliderContents = slider.querySelector('.slider__content')
-    const dotsContainer = slider.querySelector('.slider__dots')
-    const sliderDots = Array.from(slider.querySelectorAll('.slider__dot'))
-    const slideWidth = slides[0].getBoundingClientRect().width
+        const prevButton = document.querySelector('.slider__btn-prev')
+        const slides = document.querySelectorAll('.slider__slide')
+        const sliderContents = slider.querySelector('.slider__content')
+        const dotsContainer = slider.querySelector('.slider__dots')
+        const sliderDots = Array.from(slider.querySelectorAll('.slider__dot'))
     
+        const setSlidePositions = _ => {
+            const slideWidth = slides[0].getBoundingClientRect().width
+            slides.forEach((slide, index) => {
+                slide.style.left = slideWidth * index + 'px'
+            })
+        }
+
+        setSlidePositions()
+
       slides[0].classList.add('is-selected')
     
-      slides.forEach((slide, index) => {
-        slide.style.left = slideWidth * index + 'px'
-      })
-    
+    const switchSlide = (currentSlide, targetSlide) => {
+        const destination = getComputedStyle(targetSlide).left
+        // show next slide
+        sliderContents.style.transform = 'translateX(-' + destination + ')'
+        currentSlide.classList.remove('is-selected')
+        targetSlide.classList.add('is-selected')
+
+        // show previous slide
+        sliderContents.style.transform = 'translateX(-' + destination + ')'
+        currentSlide.classList.remove('is-selected')
+        targetSlide.classList.add('is-selected')
+        
+        if (!targetSlide.previousElementSibling) {
+            prevButton.classList.add('btn-inactive')
+            event.preventDefault()
+        } else if (!targetSlide.nextElementSibling) {
+            nextButton.classList.add('btn-inactive')
+            event.preventDefault()
+        }
+    }
+
+    const highlightDot = (currentDot, targetDot) => {
+        currentDot.classList.remove('is-selected')
+        targetDot.classList.add('is-selected')
+    }
+
+    const showHideArrows = clickedDotIndex => {
+        if (clickedDotIndex === 0) {
+            prevButton.classList.add('btn-inactive')
+            nextButton.classList.remove('btn-inactive')
+          } else if (clickedDotIndex === sliderDots.length - 1) {
+            prevButton.classList.remove('btn-inactive')
+            nextButton.classList.add('btn-inactive')
+          } else {
+            prevButton.classList.remove('btn-inactive')
+            nextButton.classList.remove('btn-inactive')
+          }
+    }
+
       nextButton.addEventListener('click', event => {
           console.log('next button clicked')
           
         const currentSlide = sliderContents.querySelector('.is-selected')
         const nextSlide = currentSlide.nextElementSibling
-        console.log(currentSlide)
-        console.log(nextSlide)
-        const destination = getComputedStyle(nextSlide).left
         const currentDot = dotsContainer.querySelector('.is-selected')
         const nextDot = currentDot.nextElementSibling
     
-        sliderContents.style.transform = 'translateX(-' + destination + ')'
-        currentSlide.classList.remove('is-selected')
-        nextSlide.classList.add('is-selected')
+        switchSlide(currentSlide, nextSlide)
+
         prevButton.classList.remove('btn-inactive')
     
-        if (!nextSlide.nextElementSibling) {
-          nextButton.classList.add('btn-inactive')
-          event.preventDefault()
-        }
-    
-        currentDot.classList.remove('is-selected')
-        nextDot.classList.add('is-selected')
+        highlightDot(currentDot, nextDot)
       })
     
       prevButton.addEventListener('click', event => {
         console.log('previous button clicked')
         const currentSlide = sliderContents.querySelector('.is-selected')
         const previousSlide = currentSlide.previousElementSibling
-        const destination = getComputedStyle(previousSlide).left
         const currentDot = dotsContainer.querySelector('.is-selected')
         const previousDot = currentDot.previousElementSibling
-    
-        sliderContents.style.transform = 'translateX(-' + destination + ')'
-        currentSlide.classList.remove('is-selected')
-        previousSlide.classList.add('is-selected')
+        
+        switchSlide(currentSlide, previousSlide)
+
         nextButton.classList.remove('btn-inactive')
     
-        if (!previousSlide.previousElementSibling) {
-          prevButton.classList.add('btn-inactive')
-          event.preventDefault()
-        }
-    
-        currentDot.classList.remove('is-selected')
-        previousDot.classList.add('is-selected')
+        highlightDot(currentDot, previousDot)
       })
     
       dotsContainer.addEventListener('click', event => {
         const dot = event.target.closest('button')
         if (!dot) return
     
+        const currentSlide = sliderContents.querySelector('.is-selected')
         const clickedDotIndex = sliderDots.findIndex(d => d === dot)
         const slideToShow = slides[clickedDotIndex]
-        const destination = getComputedStyle(slideToShow).left
+        const currentDot = dotsContainer.querySelector('.is-selected')
     
-        sliderContents.style.transform = 'translateX(-' + destination + ')'
-        slides.forEach(slide => { slide.classList.remove('is-selected') })
-        slideToShow.classList.add('is-selected')
-        sliderDots.forEach(d => { d.classList.remove('is-selected') })
-        dot.classList.add('is-selected')
-    
-        if (clickedDotIndex === 0) {
-          prevButton.classList.add('btn-inactive')
-          nextButton.classList.remove('btn-inactive')
-        } else if (clickedDotIndex === sliderDots.length - 1) {
-          prevButton.classList.remove('btn-inactive')
-          nextButton.classList.add('btn-inactive')
-        } else {
-          prevButton.classList.remove('btn-inactive')
-          nextButton.classList.remove('btn-inactive')
-        }
+        switchSlide(currentSlide, slideToShow)
+        highlightDot(currentDot, dot)
+        showHideArrows(clickedDotIndex)
       })
-    } else {
-        console.log('no slider was found')
     }
 }
 
