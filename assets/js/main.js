@@ -1,175 +1,135 @@
-import barba from '@barba/core';
-import barbaPrefetch from '@barba/prefetch';
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Swiper, { Navigation, Pagination } from 'swiper';
-Swiper.use([Navigation, Pagination]);
-import Scrollbar from 'smooth-scrollbar';
+import barba from '@barba/core'
+import barbaPrefetch from '@barba/prefetch'
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+import Swiper, { Navigation, Pagination } from 'swiper'
+Swiper.use([Navigation, Pagination])
+import Scrollbar from 'smooth-scrollbar'
 // import { pageTransitionOut, pageTransitionIn, contentAnimation, updateMenu } from './partials';
-import { updateMenu } from './partials';
+import { updateMenu } from './partials'
 
-barba.use(barbaPrefetch);
-gsap.registerPlugin(ScrollTrigger);
+barba.use(barbaPrefetch)
+gsap.registerPlugin(ScrollTrigger)
 
-let bodyScrollBar;
+let bodyScrollBar
 
-const select = (e) => document.querySelector(e);
-const selectAll = (e) => document.querySelectorAll(e);
+const select = (e) => document.querySelector(e)
+const selectAll = (e) => document.querySelectorAll(e)
 
-const menu = select(".nav-list");
-const logo = select(".site-header__logo");
-const menuItems = selectAll(".nav-item");
-const hamburger = select(".hamburger");
-const follow = select('.follower');
-const followerText = select('.follower__text');
-const siteHeader = select('.site-header');
-const primaryNav = select('.site-header__inner');
-const scroller = select('#viewport');
-const width = screen.width;
-const footer = select('.footer');
-const scrollContainer = select('.scroll-content');
-const social = select(".social");
-const breadcrumbs = select(".breadcrumbs__inner");
-const breadcrumbsProgressBar = select(".breadcrumbs__progress-bar-inner");
-const loader = select(".preloader");
-const loaderInner = select(".preloader__inner");
-
+const menu = select(".nav-list")
+const logo = select(".site-header__logo")
+const menuItems = selectAll(".nav-item")
+const hamburger = select(".hamburger")
+const follow = select('.follower')
+const followerText = select('.follower__text')
+const siteHeader = select('.site-header')
+const primaryNav = select('.site-header__inner')
+const scroller = select('#viewport')
+const width = screen.width
+const footer = select('.footer')
+const scrollContainer = select('.scroll-content')
+const social = select(".social")
+const breadcrumbs = select(".breadcrumbs__inner")
+const breadcrumbsProgressBar = select(".breadcrumbs__progress-bar-inner")
+const loader = select(".preloader")
+const loaderInner = select(".preloader__inner")
 const slider = document.querySelector('.slider')
-const nextButton = document.querySelector('.slider__btn-next')
-const prevButton = document.querySelector('.slider__btn-prev')
-const slides = document.querySelectorAll('.slider__slide')
-const sliderContents = slider.querySelector('.slider__content')
-const dotsContainer = slider.querySelector('.slider__dots')
-const sliderDots = Array.from(slider.querySelectorAll('.slider__dot'))
-const slideWidth = slides[0].getBoundingClientRect().width
-
-slides.forEach((slide, index) => {
-  slide.style.left = slideWidth * index + 'px'
-})
-
-nextButton.addEventListener('click', event => {
-  const currentSlide = sliderContents.querySelector('.is-selected')
-  const nextSlide = currentSlide.nextElementSibling
-  const destination = getComputedStyle(nextSlide).left
-  const currentDot = dotsContainer.querySelector('.is-selected')
-  const nextDot = currentDot.nextElementSibling
-
-  sliderContents.style.transform = 'translateX(-' + destination + ')'
-  currentSlide.classList.remove('is-selected')
-  nextSlide.classList.add('is-selected')
-  prevButton.classList.remove('btn-inactive')
-
-  if (!nextSlide.nextElementSibling) {
-    nextButton.classList.add('btn-inactive')
-  }
-
-  currentDot.classList.remove('is-selected')
-  nextDot.classList.add('is-selected')
-})
-
-prevButton.addEventListener('click', event => {
-  const currentSlide = sliderContents.querySelector('.is-selected')
-  const previousSlide = currentSlide.previousElementSibling
-  const destination = getComputedStyle(previousSlide).left
-  const currentDot = dotsContainer.querySelector('.is-selected')
-  const previousDot = currentDot.previousElementSibling
-
-  sliderContents.style.transform = 'translateX(-' + destination + ')'
-  currentSlide.classList.remove('is-selected')
-  previousSlide.classList.add('is-selected')
-  nextButton.classList.remove('btn-inactive')
-
-  if (!previousSlide.previousElementSibling) {
-    prevButton.classList.add('btn-inactive')
-  }
-
-  currentDot.classList.remove('is-selected')
-  previousDot.classList.add('is-selected')
-})
-
-// sliderDots.forEach(dot => {
-//     dot.addEventListener('click', event => {
-//         let clickedDotIndex
-
-//         for(let index = 0; index < sliderDots.length; index++) {
-//             if (sliderDots[index] === dot) {
-//                 clickedDotIndex = index
-//             }
-//         }
-//         const slideToShow = slides[clickedDotIndex]
-//         const destination = getComputedStyle(slideToShow).left
-//         sliderContents.style.left = '-' + destination
-//         slides.forEach(slide => { slide.classList.remove('is-selected') })
-//         slideToShow.classList.add('is-selected')
-//         sliderDots.forEach(d => { d.classList.remove('is-selected') })
-//         dot.classList.add('is-selected')
-//         if(clickedDotIndex === 0) {
-//             prevButton.classList.add('btn-inactive')
-//             nextButton.classList.remove('btn-inactive')
-//         } else if (clickedDotIndex === sliderDots.length - 1) {
-//             prevButton.classList.remove('btn-inactive')
-//             nextButton.classList.add('btn-inactive')
-//         } else {
-//             prevButton.classList.remove('btn-inactive')
-//             nextButton.classList.remove('btn-inactive')
-//         }
-//     })
-// })
-
-dotsContainer.addEventListener('click', event => {
-  const dot = event.target.closest('button')
-  if (!dot) return
-
-  const clickedDotIndex = sliderDots.findIndex(d => d === dot)
-  const slideToShow = slides[clickedDotIndex]
-  const destination = getComputedStyle(slideToShow).left
-
-  sliderContents.style.transform = 'translateX(-' + destination + ')'
-  slides.forEach(slide => { slide.classList.remove('is-selected') })
-  slideToShow.classList.add('is-selected')
-  sliderDots.forEach(d => { d.classList.remove('is-selected') })
-  dot.classList.add('is-selected')
-
-  if (clickedDotIndex === 0) {
-    prevButton.classList.add('btn-inactive')
-    nextButton.classList.remove('btn-inactive')
-  } else if (clickedDotIndex === sliderDots.length - 1) {
-    prevButton.classList.remove('btn-inactive')
-    nextButton.classList.add('btn-inactive')
-  } else {
-    prevButton.classList.remove('btn-inactive')
-    nextButton.classList.remove('btn-inactive')
-  }
-})
 
 
-// let index = 0;
-// display(index);
-// function display (index) {
-// 	slides.forEach((slide) => {
-// 		slide.style.display = 'none';
-// 	});
-// 	slides[index].style.display = 'flex';
-// }
-
-// function nextSlide () {
-// 	index++;
-// 	if (index > slides.length - 1) {
-// 		index = 0;
-// 	}
-// 	display(index);
-// }
-// function prevSlide () {
-// 	index--;
-// 	if (index < 0) {
-// 		index = slides.length - 1;
-// 	}
-// 	display(index);
-// }
-
-// next.addEventListener('click', nextSlide);
-// prev.addEventListener('click', prevSlide);
-
+function initSlider () {
+    const home = window.location.pathname;
+    if(home === "/") {
+        console.log('a slider was found')
+        const nextButton = document.querySelector('.slider__btn-next')
+    const prevButton = document.querySelector('.slider__btn-prev')
+    const slides = document.querySelectorAll('.slider__slide')
+    const sliderContents = slider.querySelector('.slider__content')
+    const dotsContainer = slider.querySelector('.slider__dots')
+    const sliderDots = Array.from(slider.querySelectorAll('.slider__dot'))
+    const slideWidth = slides[0].getBoundingClientRect().width
+    
+      slides[0].classList.add('is-selected')
+    
+      slides.forEach((slide, index) => {
+        slide.style.left = slideWidth * index + 'px'
+      })
+    
+      nextButton.addEventListener('click', event => {
+          console.log('next button clicked')
+          
+        const currentSlide = sliderContents.querySelector('.is-selected')
+        const nextSlide = currentSlide.nextElementSibling
+        console.log(currentSlide)
+        console.log(nextSlide)
+        const destination = getComputedStyle(nextSlide).left
+        const currentDot = dotsContainer.querySelector('.is-selected')
+        const nextDot = currentDot.nextElementSibling
+    
+        sliderContents.style.transform = 'translateX(-' + destination + ')'
+        currentSlide.classList.remove('is-selected')
+        nextSlide.classList.add('is-selected')
+        prevButton.classList.remove('btn-inactive')
+    
+        if (!nextSlide.nextElementSibling) {
+          nextButton.classList.add('btn-inactive')
+          event.preventDefault()
+        }
+    
+        currentDot.classList.remove('is-selected')
+        nextDot.classList.add('is-selected')
+      })
+    
+      prevButton.addEventListener('click', event => {
+        console.log('previous button clicked')
+        const currentSlide = sliderContents.querySelector('.is-selected')
+        const previousSlide = currentSlide.previousElementSibling
+        const destination = getComputedStyle(previousSlide).left
+        const currentDot = dotsContainer.querySelector('.is-selected')
+        const previousDot = currentDot.previousElementSibling
+    
+        sliderContents.style.transform = 'translateX(-' + destination + ')'
+        currentSlide.classList.remove('is-selected')
+        previousSlide.classList.add('is-selected')
+        nextButton.classList.remove('btn-inactive')
+    
+        if (!previousSlide.previousElementSibling) {
+          prevButton.classList.add('btn-inactive')
+          event.preventDefault()
+        }
+    
+        currentDot.classList.remove('is-selected')
+        previousDot.classList.add('is-selected')
+      })
+    
+      dotsContainer.addEventListener('click', event => {
+        const dot = event.target.closest('button')
+        if (!dot) return
+    
+        const clickedDotIndex = sliderDots.findIndex(d => d === dot)
+        const slideToShow = slides[clickedDotIndex]
+        const destination = getComputedStyle(slideToShow).left
+    
+        sliderContents.style.transform = 'translateX(-' + destination + ')'
+        slides.forEach(slide => { slide.classList.remove('is-selected') })
+        slideToShow.classList.add('is-selected')
+        sliderDots.forEach(d => { d.classList.remove('is-selected') })
+        dot.classList.add('is-selected')
+    
+        if (clickedDotIndex === 0) {
+          prevButton.classList.add('btn-inactive')
+          nextButton.classList.remove('btn-inactive')
+        } else if (clickedDotIndex === sliderDots.length - 1) {
+          prevButton.classList.remove('btn-inactive')
+          nextButton.classList.add('btn-inactive')
+        } else {
+          prevButton.classList.remove('btn-inactive')
+          nextButton.classList.remove('btn-inactive')
+        }
+      })
+    } else {
+        console.log('no slider was found')
+    }
+}
 
 hamburger.addEventListener("click", toggleMobileMenu);
 
@@ -862,7 +822,7 @@ function initPage() {
     initSocial();
     initContentFade();
     initImageParallax();
-    initSwiper();
+    initSlider();
     initFooter();
 }
 

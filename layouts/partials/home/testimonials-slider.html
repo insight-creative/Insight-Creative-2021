@@ -3,26 +3,33 @@
         <div class="wrapper-sm fade-up">
             <h3>{{ .Params.Testimonials.Subhead | markdownify }}</h3>
         </div>
-        <div class="wrapper-sm swiper-container fade-up">
-            <div class="testimonials__icon">
-                {{ partial "svg-icons/quote.svg" . }}
+        <div class="slider">
+            <div class="quote">
+              {{ partial "svg-icons/quote.svg" . }}
             </div>
-            <div class="swiper-wrapper">
-                {{ with .Params.Testimonials }}
-                {{ range .Testimonial }}
-                <div class="wrapper-sm swiper-slide">
+            <button class="slider__btn-prev btn-inactive">{{ partialCached "svg-icons/chevron-left.svg" . }}</button>
+            <div class="slider__wrapper">
+                <div class="slider__content">
+                    {{ with .Params.Testimonials }}
+                    {{ range .Testimonial }}
+                    <div class="slider__slide flow">
                     <p>
                         {{ .copy }}
                     </p>
                     <h4 class="h5">{{ .author }}</h4>
                     <a href="{{ .project_link }}" class="btn btn-primary">View Case Study</a>
+                    </div>
+                    {{ end }}
+                    {{ end }}
                 </div>
-                {{ end }}
-                {{ end }}
+            </div>
+            <button class="slider__btn-next">{{ partialCached "svg-icons/chevron-right.svg" . }}</button>
+            <div class="slider__dots">
+                <button class="slider__dot is-selected"></button>
+                <button class="slider__dot"></button>
+                <button class="slider__dot"></button>
+                <button class="slider__dot"></button>
             </div>
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next">{{ partialCached "svg-icons/chevron-right.svg" . }}</div>
     </div>
 </section>

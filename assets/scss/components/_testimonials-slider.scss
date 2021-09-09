@@ -118,21 +118,23 @@
 
 .quote {
   width: $ic-900;
-  margin: 2rem;
+  margin: $ic-200;
 }
 
 .slider {
-  display: grid;
-  grid-template-columns: 3em 50rem 3em;
-  grid-template-rows: 40vh 3em;
-  align-items: center;
-  grid-gap: 1em;
   position: relative;
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
 
   &__wrapper {
     overflow: hidden;
-    grid-column: 2;
-    align-self: stretch;
+    height: 45vh;
+    width: 100%;
+
+    @include breakpoint(md) {
+      height: 35vh;
+    }
   }
 
   &__content {
@@ -147,6 +149,15 @@
     position: absolute;
     width: inherit;
     height: inherit;
+    padding: $ic-100;
+
+    p {
+      font-size: $ic-200;
+
+      @include breakpoint(md) {
+        font-size: $ic-300;
+      }
+    }
   }
 
   // &__buttons {
@@ -163,32 +174,50 @@
   &__btn-next {
     display: grid;
     place-items: center;
-    width: 60px;
-    height: 60px;
-    position: absolute;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-50%);
     z-index: 1;
     color: $secondary-color;
     background: none;
     border: 1px solid $secondary-color;
     border-radius: 50%;
 
+    @include breakpoint(md) {
+      top: 40%;
+      width: 60px;
+      height: 60px;
+    }
+
     svg {
       position: relative;
+      left: -2px;
       transform: translateX(0);
       transition: 0.3s ease;
       stroke: $secondary-color;
+      width: 20px;
+      height: 20px;
+
+      @include breakpoint(md) {
+        width: 48px;
+        height: 48px;
+      }
     }
 
     &::before {
-      content: "";
-      position: absolute;
-      height: 3px;
-      width: 2rem;
-      border-radius: 10px;
-      background-color: $secondary-color;
-      transform: scaleX(0);
-      transition: 0.3s ease;
+      @include breakpoint(md) {
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 2rem;
+        border-radius: 10px;
+        background-color: $secondary-color;
+        transform: scaleX(0);
+        transition: 0.3s ease;
+      }
     }
 
     &::after {
@@ -207,41 +236,54 @@
   }
 
   &__btn-prev {
-    grid-column: 1;
+    left: 0;
 
-    &:hover,
-    &:focus {
-      svg {
-        transform: translateX(-10px);
+    @include breakpoint(md) {
+      left: -$ic-1000;
+
+      &:hover,
+      &:focus {
+        svg {
+          transform: translateX(-10px);
+        }
       }
-    }
 
-    &::before {
-      transform-origin: right;
+      &::before {
+        transform-origin: right;
+      }
     }
   }
 
   &__btn-next {
-    grid-column: 3;
+    left: $ic-500;
 
-    &:hover,
-    &:focus {
-      svg {
-        transform: translateX(10px);
+    @include breakpoint(md) {
+      right: -$ic-1000;
+      left: initial;
+
+      &:hover,
+      &:focus {
+        svg {
+          transform: translateX(10px);
+        }
       }
-    }
 
-    &::before {
-      transform-origin: left;
+      &::before {
+        transform-origin: left;
+      }
     }
   }
 
   &__dots {
-    grid-column: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: $ic-100;
+    display: none;
+
+    @include breakpoint(md) {
+      grid-column: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: $ic-100;
+    }
   }
 
   &__dot {
@@ -277,4 +319,5 @@
 .btn-inactive {
   opacity: 0.3;
   cursor: default;
+  pointer-events: none;
 }
