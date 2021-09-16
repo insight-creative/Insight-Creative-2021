@@ -7,6 +7,7 @@ seo:
   featured_image_alt: 5 Star Reviews Graphic
 date: 2015-12-14
 author: Niki Petit
+categories: ["Content", "Public Relations"]
 page_class: single-post
 ---
 

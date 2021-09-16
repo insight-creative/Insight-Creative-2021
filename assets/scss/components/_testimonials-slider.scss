@@ -21,6 +21,10 @@
     @include breakpoint(md) {
       height: 35vh;
     }
+
+    &:focus-within {
+      box-shadow: 0 0 0 0.5rem $primary-color;
+    }
   }
 
   &__content {
@@ -98,7 +102,6 @@
         content: "";
         position: absolute;
         height: 3px;
-        width: 2rem;
         border-radius: 10px;
         background-color: $secondary-color;
         transform: scaleX(0);
@@ -136,6 +139,7 @@
 
       &::before {
         transform-origin: right;
+        width: 2rem;
       }
     }
   }
@@ -156,6 +160,7 @@
 
       &::before {
         transform-origin: left;
+        width: 1.8rem;
       }
     }
   }

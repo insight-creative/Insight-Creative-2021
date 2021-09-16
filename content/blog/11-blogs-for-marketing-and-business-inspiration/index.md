@@ -7,6 +7,7 @@ seo:
   featured_image_alt:
 date: 2016-09-28
 author: Insight Creative
+categories: ["Productivity"]
 page_class: single-post
 ---
 

@@ -7,7 +7,7 @@ seo:
   featured_image_alt: Close up of remote with TV in the background
 date: 2021-03-29
 author: Molly Setzer
-categories: ["Digital"]
+categories: ["Media", "Digital"]
 page_class: single-post
 ---
 

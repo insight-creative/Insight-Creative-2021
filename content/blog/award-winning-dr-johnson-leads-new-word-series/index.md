@@ -7,7 +7,7 @@ seo:
   featured_image_alt: Word Insights with Dr. Johnson
 date: 2020-11-06
 author: Emily Morehart
-categories: ["Content"]
+categories: ["News"]
 page_class: single-post
 ---
 

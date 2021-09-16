@@ -5,7 +5,7 @@ seo:
   title: "B2B vs B2C - What You Need to Dominate Social Media"
   description: "From hundreds of articles and resources, everyone knows that sharing content on social media is key ... but what's the correct approach? Social Media Coordinator Jennifer Rogers illustrates what content is best for B2B and B2C companies."
   featured_image: b2b-vs-b2c-what-you-need-to-dominate-social-media.jpg
-  featured_image_alt: 10 Tips that Ring True Long After Graduating as a Creative
+  featured_image_alt: Social Media Coordinator Jennifer Rogers illustrates what content is best for B2B and B2C companies.
 date: 2017-05-15
 author: Insight Creative
 categories: ["Content"]

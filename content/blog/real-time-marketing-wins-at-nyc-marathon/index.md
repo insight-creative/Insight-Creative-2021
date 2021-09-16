@@ -7,6 +7,7 @@ seo:
   featured_image_alt: asic statues of first 50 marathon runners
 date: 2015-01-12
 author: Insight Creative
+categories: ["Digital", "Social Media"]
 page_class: single-post
 ---
 

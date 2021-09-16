@@ -7,6 +7,7 @@ seo:
   featured_image_alt: Fishing bobber with Insight logo sitting on the surface of water
 date: 2019-04-10
 author: Brian Brost
+categories: ["Business Strategy"]
 page_class: single-post
 ---
 

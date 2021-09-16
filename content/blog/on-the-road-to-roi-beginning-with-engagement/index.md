@@ -7,7 +7,7 @@ seo:
   featured_image_alt: "Chart from Adweek showing their Shareablee Social Scorecard: Top 25 U.S. Social Brands"
 date: 2015-11-13
 author: Andrea Lasecki
-categories: ["Content"]
+categories: ["Content", "Social Media"]
 page_class: single-post
 ---
 

@@ -7,6 +7,7 @@ seo:
   featured_image_alt: Clashing of storm clouds and sunny skies
 date: 2019-01-10
 author: Jim von Hoff
+categories: ["Business Strategy"]
 page_class: single-post
 ---
 

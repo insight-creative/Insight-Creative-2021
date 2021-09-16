@@ -7,6 +7,7 @@ seo:
   featured_image_alt: Looking at the bright side during COVID-19
 date: 2020-08-17
 author: Jay Bauer
+categories: ["Productivity"]
 page_class: single-post
 ---
 

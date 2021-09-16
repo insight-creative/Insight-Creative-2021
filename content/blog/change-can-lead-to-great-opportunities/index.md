@@ -7,6 +7,7 @@ seo:
   featured_image_alt: Change can Lead to Great Opportunities
 date: 2021-01-12
 author: Niki Petit
+categories: ["Business Strategy"]
 page_class: single-post
 ---
 

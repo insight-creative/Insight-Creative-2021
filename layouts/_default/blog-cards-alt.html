@@ -14,9 +14,8 @@
         <div class="blog-card__meta">
             <div class="blog-card__meta-inner flex">
                 <div class="blog-card__category">
-                    {{ if .Params.Categories }}
-                    <span class="categories">{{ range $index, $elements := .Params.Categories }}{{ if ne $index 0 }}{{ end }}
-                        {{ . | title }} {{ end}}</span>
+                    {{ if isset .Params "categories" }}
+                    <span class="categories">{{ index .Params.categories 0}}</span>
                     {{ end }}
                 </div>
                 <div class="blog-card__staff-image-wrapper background-circle background-circle--md">

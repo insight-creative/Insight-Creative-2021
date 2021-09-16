@@ -7,7 +7,7 @@ seo:
   featured_image_alt: Megaphone illustration with 5 star rating
 date: 2018-08-22
 author: Emily Morehart
-categories: ["Content"]
+categories: ["Content", "Public Relations"]
 page_class: single-post
 ---
 

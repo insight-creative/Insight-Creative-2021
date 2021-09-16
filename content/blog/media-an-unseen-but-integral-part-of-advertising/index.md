@@ -8,7 +8,7 @@ seo:
 date: 2020-10-30
 author: Insight Creative
 description: ""
-categories: ["Media"]
+categories: ["Media", "Digital"]
 page_class: single-post
 ---
 

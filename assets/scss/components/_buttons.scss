@@ -45,7 +45,7 @@
 
 .btn-secondary {
   color: $primary-color;
-  
+
   &::before {
     background-color: $light-gray;
   }
@@ -68,4 +68,27 @@
 
 button {
   cursor: pointer;
+}
+
+.btn-filter {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: $ic-100 0;
+  transition: 0.3s ease;
+
+  svg {
+    fill: $primary-color;
+    width: $ic-400;
+    height: $ic-400;
+    margin-right: $ic-400;
+    position: relative;
+    top: -1px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $primary-color;
+  }
 }

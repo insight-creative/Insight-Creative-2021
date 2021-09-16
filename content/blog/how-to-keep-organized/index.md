@@ -7,6 +7,7 @@ seo:
   featured_image_alt: Calendar, pencils, and phones laid out on a desk
 date: 2020-09-18
 author: Molly Setzer
+categories: ["Productivity"]
 page_class: single-post
 ---
 

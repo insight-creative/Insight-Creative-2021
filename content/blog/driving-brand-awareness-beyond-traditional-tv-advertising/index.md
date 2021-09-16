@@ -7,7 +7,7 @@ seo:
   featured_image_alt: hand holding TV remote and TV with streaming services on screen in background
 date: 2018-02-26
 author: Insight Creative
-categories: ["Media"]
+categories: ["Media", "Digital", "Branding"]
 page_class: single-post
 ---
 

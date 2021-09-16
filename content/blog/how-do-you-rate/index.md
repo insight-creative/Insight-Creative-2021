@@ -7,7 +7,7 @@ seo:
   featured_image_alt: Graph of reviews and ratings
 date: 2017-02-08
 author: Andrea Lasecki
-categories: ["Content"]
+categories: ["Content", "Public Relations"]
 page_class: single-post
 ---
 

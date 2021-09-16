@@ -7,6 +7,7 @@ seo:
   featured_image_alt: Return to Nam
 date: 2019-09-26
 author: Niki Petit
+categories: ["Content"]
 page_class: single-post
 ---
 

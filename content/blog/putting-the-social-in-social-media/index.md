@@ -7,7 +7,7 @@ seo:
   featured_image_alt: "Instagram app open on smart phone thats sitting on an open notebook"
 date: 2016-07-10
 author: Andrea Lasecki
-categories: ["Content"]
+categories: ["Content", "Social Media"]
 page_class: single-post
 ---
 

@@ -7,7 +7,7 @@ seo:
   featured_image_alt: image-placeholder.PNG
 date: 2014-07-14
 author: Emily Morehart
-categories: ["Content"]
+categories: ["Content", "Branding"]
 page_class: single-post
 ---
 

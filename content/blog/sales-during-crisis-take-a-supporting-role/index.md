@@ -7,6 +7,7 @@ seo:
   featured_image_alt: "Sales during crisis: Take a supportive role"
 date: 2020-04-27
 author: Brian Brost
+categories: ["Business Strategy"]
 page_class: single-post
 ---
 

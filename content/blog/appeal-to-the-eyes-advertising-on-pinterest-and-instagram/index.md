@@ -7,7 +7,7 @@ seo:
   featured_image_alt: Computer with Pinterest open on screen with phone sitting on table with Instagram open on screen
 date: 2017-06-19
 author: Molly Setzer
-categories: ["Media"]
+categories: ["Media", "Social Media"]
 page_class: single-post
 ---
 

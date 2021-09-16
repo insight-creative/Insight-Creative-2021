@@ -7,7 +7,7 @@ seo:
   featured_image_alt: Examples of Taco Bell's social media posts geared towards teens
 date: 2014-12-08
 author: Andrea Lasecki
-categories: ["Content"]
+categories: ["Content", "Social Media"]
 page_class: single-post
 ---
 

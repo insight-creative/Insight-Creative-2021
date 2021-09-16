@@ -1,0 +1,33 @@
+.category-wrapper {
+  position: relative;
+}
+
+.category-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 9;
+  background-color: $dark-black;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.3s ease;
+
+  @include breakpoint(md) {
+    columns: 2;
+  }
+
+  &__item {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__link {
+    padding: 0.5rem 1rem;
+    font-size: $ic-200;
+    text-decoration: none;
+  }
+}
+
+.category-list.list-open {
+  transform: scaleY(1);
+}

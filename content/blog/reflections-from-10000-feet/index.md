@@ -7,6 +7,7 @@ seo:
   featured_image_alt: Image of holy wa skywriting
 date: 2018-07-30
 author: Brian Brost
+categories: ["Business Strategy"]
 page_class: single-post
 ---
 

@@ -7,7 +7,7 @@ seo:
   featured_image_alt: PR Guidelines
 date: 2015-08-28
 author: Emily Morehart
-categories: ["Content"]
+categories: ["Content", "Public Relations"]
 page_class: single-post
 ---
 

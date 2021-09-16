@@ -7,6 +7,7 @@ seo:
   featured_image_alt: "Marketing 101: Goals, Objectives, Strategy and Tactics"
 date: 2017-04-24
 author: Insight Creative
+categories: ["Business Strategy"]
 page_class: single-post
 ---
 

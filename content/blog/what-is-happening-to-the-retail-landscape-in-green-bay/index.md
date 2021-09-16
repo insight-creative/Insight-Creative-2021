@@ -7,6 +7,7 @@ seo:
   featured_image_alt: Door to small boutique clothing store with we're open sign on front door
 date: 2019-03-21
 author: Niki Petit
+categories: ["Business Strategy"]
 page_class: single-post
 ---
 

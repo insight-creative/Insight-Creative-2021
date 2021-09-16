@@ -7,6 +7,7 @@ seo:
   featured_image_alt:
 date: 2016-05-12
 author: Molly Setzer
+categories: ["Productivity"]
 page_class: single-post
 ---
 

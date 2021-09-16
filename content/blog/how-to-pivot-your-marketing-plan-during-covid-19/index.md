@@ -7,6 +7,7 @@ seo:
   featured_image_alt: Empty shelves at store during COVID-19
 date: 2020-08-10
 author: Niki Petit
+categories: ["Business Strategy"]
 page_class: single-post
 ---
 

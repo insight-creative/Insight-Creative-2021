@@ -7,7 +7,7 @@ seo:
   featured_image_alt: It's not more content people want, it's time to take a moment to consider what people actually need
 date: 2018-12-05
 author: Insight Creative
-categories: ["Content"]
+categories: ["Content", "Social Media"]
 page_class: single-post
 ---
 

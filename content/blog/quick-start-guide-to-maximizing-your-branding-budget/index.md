@@ -7,6 +7,7 @@ seo:
   featured_image_alt: Stacks of one hundred dollar bills rapped in a band that says "Budget"
 date: 2016-03-30
 author: Insight Creative
+categories: ["Business Strategy", "Branding"]
 page_class: single-post
 ---
 

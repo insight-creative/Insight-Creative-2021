@@ -7,6 +7,7 @@ seo:
   featured_image_alt:
 date: 2018-01-07
 author: Molly Setzer
+categories: ["Branding", "Business Strategy"]
 page_class: single-post
 ---
 

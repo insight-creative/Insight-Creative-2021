@@ -7,7 +7,7 @@ seo:
   featured_image_alt: Illustration with numerous hands holding media tools such as microphones, recorders, and cameras
 date: 2017-02-23
 author: Emily Morehart
-categories: ["Media"]
+categories: ["Content", "Public Relations"]
 page_class: single-post
 ---
 

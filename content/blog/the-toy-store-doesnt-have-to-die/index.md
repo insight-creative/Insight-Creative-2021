@@ -7,6 +7,7 @@ seo:
   featured_image_alt: 10 Tips that Ring True Long After Graduating as a Creative
 date: 2018-12-14
 author: Jay Bauer
+categories: ["Business Strategy"]
 page_class: single-post
 ---
 

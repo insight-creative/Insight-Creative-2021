@@ -7,6 +7,7 @@ seo:
   featured_image_alt: Bud Lite Football Can
 date: 2015-11-30
 author: Insight Creative
+categories: ["Branding"]
 page_class: single-post
 ---
 

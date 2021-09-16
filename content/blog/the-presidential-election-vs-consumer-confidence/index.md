@@ -7,6 +7,7 @@ seo:
   featured_image_alt:
 date: 2016-06-15
 author: Niki Petit
+categories: ["Business Strategy"]
 page_class: single-post
 ---
 

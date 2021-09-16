@@ -7,6 +7,7 @@ seo:
   featured_image_alt: Cause-Sumption Risks and Reward
 date: 2018-03-26
 author: Insight Creative
+categories: ["Business Strategy", "Branding"]
 page_class: single-post
 ---
 

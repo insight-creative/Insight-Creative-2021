@@ -7,6 +7,7 @@ seo:
   featured_image_alt: Freeform, Nike, and Starbucks logos with their old logos and names blurred in background
 date: 2016-01-25
 author: Insight Creative
+categories: ["Branding"]
 page_class: single-post
 ---
 

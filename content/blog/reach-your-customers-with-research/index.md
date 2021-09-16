@@ -7,6 +7,7 @@ seo:
   featured_image_alt: Notebook with numbers, data, and charts written on its pages
 date: 2017-07-31
 author: Niki Petit
+categories: ["Business Strategy"]
 page_class: single-post
 ---
 

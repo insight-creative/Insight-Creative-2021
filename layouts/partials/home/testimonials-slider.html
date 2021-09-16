@@ -1,35 +1,54 @@
-<section class="testimonials bg-black-2 block">
+<section class="testimonials bg-black-2 block" aria-label="Testimonial Slider">
     <div class="wrapper-lg padding-top-10">
         <div class="wrapper-sm fade-up">
             <h2 class="h3">{{ .Params.Testimonials.Subhead | markdownify }}</h3>
         </div>
-        <div class="slider">
+        <div class="slider fade-up">
+            <div role="status" aria-live="assertive" class="visually-hidden"></div>
             <div class="quote">
               {{ partial "svg-icons/quote.svg" . }}
             </div>
-            <button class="slider__btn-prev btn-inactive">{{ partialCached "svg-icons/chevron-left.svg" . }}</button>
+            <button class="slider__btn-prev btn-inactive" aria-label="previous slide">{{ partialCached "svg-icons/chevron-left.svg" . }}</button>
             <div class="slider__wrapper">
                 <div class="slider__content">
-                    {{ with .Params.Testimonials }}
-                    {{ range .Testimonial }}
                     <div class="slider__slide flow">
-                    <p>
-                        {{ .copy }}
-                    </p>
-                    <h4 class="h5">{{ .author }}</h4>
-                    <a href="{{ .project_link }}" class="btn btn-primary">View Case Study</a>
+                        <p>"Slide 1. Insight Creative was instrumental in the success of our [rebranding] project. They were able to come up with a marketing plan that captured the essence of our bank and was very well received by our community and customers.”</p>
+                        <h4 class="h5">Tim Treml, Bank of Luxemburg</h4>
+                        <a href="/work/" class="btn btn-primary">View Case Study</a>
                     </div>
-                    {{ end }}
-                    {{ end }}
+                    <div class="slider__slide flow">
+                        <p>"Slide 2. Insight Creative was instrumental in the success of our [rebranding] project. They were able to come up with a marketing plan that captured the essence of our bank and was very well received by our community and customers.”</p>
+                        <h4 class="h5">Tim Treml, Bank of Luxemburg</h4>
+                        <a href="/about/" class="btn btn-primary" tabindex="-1">View Case Study</a>
+                    </div>
+                    <div class="slider__slide flow">
+                        <p>"Slide 3. Insight Creative was instrumental in the success of our [rebranding] project. They were able to come up with a marketing plan that captured the essence of our bank and was very well received by our community and customers.”</p>
+                        <h4 class="h5">Tim Treml, Bank of Luxemburg</h4>
+                        <a href="/services/" class="btn btn-primary" tabindex="-1">View Case Study</a>
+                    </div>
+                    <div class="slider__slide flow">
+                        <p>"Slide 4. Insight Creative was instrumental in the success of our [rebranding] project. They were able to come up with a marketing plan that captured the essence of our bank and was very well received by our community and customers.”</p>
+                        <h4 class="h5">Tim Treml, Bank of Luxemburg</h4>
+                        <a href="/blog/" class="btn btn-primary" tabindex="-1">View Case Study</a>
+                    </div>
+                    <div class="slider__slide flow">
+                        <p>"Slide 5. Insight Creative was instrumental in the success of our [rebranding] project. They were able to come up with a marketing plan that captured the essence of our bank and was very well received by our community and customers.”</p>
+                        <h4 class="h5">Tim Treml, Bank of Luxemburg</h4>
+                        <a href="/contact/" class="btn btn-primary" tabindex="-1">View Case Study</a>
+                    </div>
+                    <div class="slider__slide flow">
+                        <p>"Slide 6. Insight Creative was instrumental in the success of our [rebranding] project. They were able to come up with a marketing plan that captured the essence of our bank and was very well received by our community and customers.”</p>
+                        <h4 class="h5">Tim Treml, Bank of Luxemburg</h4>
+                        <a href="/work/" class="btn btn-primary" tabindex="-1">View Case Study</a>
+                    </div>
+                    <div class="slider__slide flow">
+                        <p>"Slide 7. Insight Creative was instrumental in the success of our [rebranding] project. They were able to come up with a marketing plan that captured the essence of our bank and was very well received by our community and customers.”</p>
+                        <h4 class="h5">Tim Treml, Bank of Luxemburg</h4>
+                        <a href="/work/" class="btn btn-primary" tabindex="-1">View Case Study</a>
+                    </div>
                 </div>
             </div>
-            <button class="slider__btn-next">{{ partialCached "svg-icons/chevron-right.svg" . }}</button>
-            <div class="slider__dots">
-                <button class="slider__dot is-selected"></button>
-                <button class="slider__dot"></button>
-                <button class="slider__dot"></button>
-                <button class="slider__dot"></button>
-            </div>
+            <button class="slider__btn-next" aria-lebel="next slide">{{ partialCached "svg-icons/chevron-right.svg" . }}</button>
         </div>
     </div>
 </section>
