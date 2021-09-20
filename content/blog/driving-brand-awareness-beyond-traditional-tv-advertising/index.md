@@ -21,7 +21,7 @@ With consumers shifting how and where they view TV programs, advertisers need to
 
 Cable companies haven't ignored the trend of streaming content. Viewers who pay for cable often stream shows online or from apps on their phone. Advertisers have the option to target an engaged audience wherever and whenever they watch their favorite programming.
 
-**What does this mean for marketers?**
+## What does this mean for marketers?
 
 It means a change in strategy and media allocations. You shouldn't abandon traditional TV advertising, but perhaps look at OTT devices as an opportunity to reach customers in a new way. Many OTT providers now allow for video ads to run in the middle of streaming content, just like commercial breaks on TV.
 

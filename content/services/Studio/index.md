@@ -1,11 +1,9 @@
 ---
 Title: Studio
 seo:
-  title: Advertising Services in Green Bay, WI
-  description: An advertising agency with a vision to bring complete strategic development and creative execution capabilities into one roll-up-your-sleeves, hard-working kind of ad agency.
-  featured_image: /images/background-images/Insight Services Brand Collage Gray.jpg
-
-department: "Content"
+  title: Photography and Videography Services in Green Bay, WI
+  description: With a complete photography and video production studio under the same roof as our communications agency, Insight Creative can handle all of your photography needs. Contact Insight Creative today!
+  featured_image: studio-page-featured-image.jpg
 
 hero_title: 'Picture <span class="emphasis-red">true</span> marketing integration.'
 

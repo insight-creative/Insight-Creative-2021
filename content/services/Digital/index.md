@@ -2,8 +2,8 @@
 Title: Digital
 seo:
   title: Digital Services in Green Bay, WI
-  description: An advertising agency with a vision to bring complete strategic development and creative execution capabilities into one roll-up-your-sleeves, hard-working kind of ad agency.
-  featured_logo: /images/background-images/Insight Services Brand Collage Gray.jpg
+  description: As more digital features sprout up each day, it’s vital to have a knowledgeable team to monitor ever-evolving trends and consumer behavior. Learn more about how Insight Creative can help you strategize a digital media plan for you.
+  featured_image: digital-page-featured-image.jpg
 
 hero_title: 'The possibilities online are <span class="emphasis-red">infinite.</span>'
 
@@ -51,7 +51,7 @@ services:
       subhead: <span class="text-tertiary"><em>Boost your name to the top of search rankings.</em></span>
       description: You can have the best website, but if no one can find it, it may as well not exist. Search engine marketing is essential to any digital marketing plan. Insight’s combined experience in media, copywriting and digital marketing can help your brand climb the ranks of popular search engines.
       service_list: keyword research • keyword management • reporting & analytics • ongoing communication with media representatives
-      partners: 
+      partners:
         - logo: google.png
         - logo: yahoo.png
         - logo: bing.png

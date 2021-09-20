@@ -18,7 +18,7 @@ of your own house, you’ll find that it gets old pretty quick. As important as 
 home to stay safe, keeping the same motivation you had at work may be hard to
 maintain. Below are a few surefire ways to stay motivated.
 
-### Stick to your routine.
+## Stick to your routine.
 
 To some, working from home means shrugging off getting
 up early and just rolling out of bed to the home office right when work starts.
@@ -29,7 +29,7 @@ much as I love to lounge in sweatpants, they don't get you in the same
 mindset as if you put on a pair of jeans and a sweater. Something as
 simple as what you wear can help you get into work mode.
 
-### Have a home office.
+## Have a home office.
 
 You may believe that you can be just as productive by sitting on the couch,
 but that’s wishful thinking. It’s hard not to be distracted with the TV remote
@@ -45,7 +45,7 @@ changing up the scenery, you can keep the creative juices flowing. For
 instance, I’m currently writing this on my balcony as I take in the beautiful
 spring day!
 
-### Allow yourself to take a break.
+## Allow yourself to take a break.
 
 While at work, we all take a few breaks. Whether it’s to talk to other
 coworkers or to have lunch, you should maintain this routine at home.

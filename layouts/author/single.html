@@ -5,15 +5,15 @@
             <img src="{{ (index .Site.Data.staff .Params.author).image_jpg }}" alt="headshot of Insight Creative's {{ (index .Site.Data.staff .Params.author).job_title }}, {{ (index .Site.Data.staff .Params.author).name }}" class="author__image">
         </div>
         <div class="wrapper-sm">
-            <h1 class="author__name text-center">{{ (index .Site.Data.staff .Params.author).name }}</h1>
-            <h2 class="author__job-title text-tertiary text-center shift-up g6">{{ (index .Site.Data.staff .Params.author).job_title }}</h2>
+            <h1 class="h2 author__name text-center">{{ (index .Site.Data.staff .Params.author).name }}</h1>
+            <h2 class="h4 author__job-title text-tertiary text-center shift-up">{{ (index .Site.Data.staff .Params.author).job_title }}</h2>
         </div>
         <p>{{ (index .Site.Data.staff .Params.author).bio }}</p>
     </div>
 </section>
 <section class="authors-posts">
     <h2 class="text-center">Posts by {{ (index .Site.Data.staff .Params.author).name }}</h2>
-    <div class="authors-posts__inner post-wrapper wrapper padding-top-9">
+    <div class="authors-posts__inner post-wrapper wrapper-md padding-top-9">
         {{ $pages := .Site.RegularPages }}
         {{ $blog := where $pages "Type" "blog" }}
         {{ $posts := where $blog "Params.author" (.Title | title) }}

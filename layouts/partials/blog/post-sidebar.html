@@ -6,7 +6,7 @@
                     <img src="{{ (index .Site.Data.staff .Params.author).image_jpg }}" alt="headshot of Insight Creative's {{ (index .Site.Data.staff .Params.author).job_title }}, {{ (index .Site.Data.staff .Params.author).name }}" class="staff-card__image">
                 </div>
                 <span class="staff-card__written-by text-tertiary">Written By</span>
-                <h5 class="staff-card__name g3">{{ (index .Site.Data.staff .Params.author).name }}</h5>
+                <h3 class="staff-card__name">{{ (index .Site.Data.staff .Params.author).name }}</h3>
                 {{ .ReadingTime }} min read
             </div>
         </div>

@@ -17,22 +17,23 @@ If you work in advertising or PR, you've probably heard the phrase "influencer m
 
 You may hear it often, but what exactly is "influencer marketing"? Is it best applied to large national brands and A-list celebrities? What type of businesses can benefit most from influencer marketing? Can this approach be replicated for small business? These are the questions I ask myself on behalf of our clients when a "new" marketing trend rises to the social surface. Here’s my breakdown of influencer marketing, plus the risks and rewards associated with the social media trend.
 
-**Intro to Influencer Marketing**<br />
+## Intro to Influencer Marketing
+
 It's difficult to pin-point a simple definition of influencer marketing. Instead, here's a list of what it is and what it most certainly is not.
 
-INFLUENCER MARKETING IS ...
+### Influencer Marketing Is ...
 
 - **a partnership.** A business or organization collaborates on social media with a well-known personality or "influencer" to promote a cause, product, event, brand, mission, etc. that aligns with the influencer's passion or expertise.
 - **mutually beneficial.** Both the marketer and the influencer should see benefits from the campaign. A brand gains access to a large network of loyal trusting followers and the influencer benefits from being the first to share information about new, exciting or valuable products.
 - **an on-going effort.** While some influencers carry more star power than others, it still takes time for them to build genuine interest with their audience about a certain project or product. Much like other organic social efforts, successful influencer marketing campaigns require an investment of time.
 
-INFLUENCER MARKETING IS NOT ...
+### Influencer Marketing Is Not ...
 
 - **appointing a spokesperson.** Social influencers are not always A-list celebrities. Usually they are the most passionate and most credible people in the industry. They also promote products solely on social, not traditional media.
 - **over-promotional.** The best influencers seamlessly integrate messages and photos of a product or brand right into their regular content without appearing salesy.
 - **fake.** To be successful, the influencer must have a genuine interest in the product, cause or project. Their followers are looking to them for advice, recommendations or expertise only on certain topics. The product and the audience must align.
 
-WEIGHING RISKS AND REWARDS OF INFLUENCER MARKETING …
+### Weighing Risks and Rewards of Influencer Marketing …
 
 - **Risk:** Influencers can be unpredictable. They could go off-script with your product, inadvertently make false claims or post something that affects the reputation of your product.
 

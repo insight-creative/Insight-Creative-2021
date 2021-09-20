@@ -4,22 +4,6 @@
     padding-bottom: $ic-300;
   }
 
-  h1 {
-    font-size: $ic-600;
-  }
-
-  h2 {
-    font-size: $ic-500;
-  }
-
-  h3 {
-    font-size: $ic-400;
-  }
-
-  h4 {
-    font-size: $ic-300;
-  }
-
   @include breakpoint(md) {
     width: 75%;
     margin-left: auto;
@@ -34,8 +18,7 @@
   // }
   ul,
   ol {
-    margin: 2rem 0;
-    padding-left: 2.5rem;
+    padding: 0 0 0 2.5rem;
   }
 
   ul + ol,
@@ -45,25 +28,8 @@
 
   blockquote {
     margin-left: 0;
-    border-top: 1px solid $secondary-color;
-    border-bottom: 1px solid $secondary-color;
+    border-left: 10px solid $primary-color;
     padding: 2rem;
-    margin-bottom: 2rem;
-    position: relative;
-
-    &:after {
-      position: absolute;
-      content: ' " ';
-      top: 120px;
-      left: 0;
-      font-family: "Friday Vibes";
-      font-size: 40rem;
-      color: $tertiary-color;
-    }
-
-    p {
-      margin: 6rem auto 0 auto;
-    }
   }
 
   hr {
@@ -110,6 +76,7 @@
 .related-posts {
   .post-wrapper {
     grid-template-columns: repeat(3, 1fr);
+    border-top: none;
   }
 
   .blog-card.blog-card:nth-of-type(even) {

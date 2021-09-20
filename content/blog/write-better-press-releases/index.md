@@ -8,6 +8,7 @@ seo:
 date: 2020-05-29
 author: Emily Morehart
 content: ["Content"]
+categories: ["Public Relations"]
 page_class: single-post
 ---
 

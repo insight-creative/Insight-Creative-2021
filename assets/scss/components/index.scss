@@ -1,9 +1,4 @@
-@import "blog/author";
-@import "blog/blog-cards";
-@import "blog/custom-pagination";
-@import "blog/post-navigation";
-@import "blog/post-sidebar";
-@import "blog/share-buttons";
+@import "blog";
 
 @import "breadcrumbs";
 @import "buttons";
@@ -23,3 +18,4 @@
 @import "testimonials-slider";
 @import "videos";
 @import "category-list";
+@import "web-card";

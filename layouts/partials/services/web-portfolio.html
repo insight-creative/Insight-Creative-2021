@@ -1,0 +1,30 @@
+<div class="wrapper-lg block fade-up">
+    <h3 class="text-center">Recent web design & development projects</h3>
+    <div class="auto-grid">
+        {{with .Params.web_portfolio }}
+        {{ range .portfolio_items }}
+        <a href="{{ .website_url }}" class="web-card" target="_blank" rel="noopener noreferrer">
+            <div class="web-card__image-wrap">
+                <div class="background-image">
+                    <div class="web-card__overlay">
+                    </div>
+                    <img src="/services/web/{{.image }}" alt="{{ .image_alt }}">
+                </div>
+            </div>
+            <div class="web-card__content flow">
+                <div class="web-card__lighthouse-score flex flex-justify-between">
+                    <span>Lighthouse Score</span>
+                    <div class="flex">
+                        {{ range .lighthouse_score }}
+                        <div class="background-circle lighthouse-circle">{{ .score }}</div>
+                        {{ end }}
+                    </div>
+                </div>
+                <h4 class="no-margin">{{ .title }}</h4>
+                <p class="text-tertiary">{{ .tech_stack }}</p>
+            </div>
+        </a>
+        {{ end }}
+        {{ end }}
+    </div>
+</div>

@@ -11,6 +11,9 @@
     <div class="wrapper-lg">
         {{ partial "services/service-cards" . }}
     </div>
+    {{ if eq .Title "Web"}}
+        {{ partial "services/web-portfolio" . }}
+    {{ end }}
     <div class="wrapper-lg department-feed">
         <h4 class="text-center">Get to know our {{ lower .Title }} department!</h4>
         <div class="staff-card-wrapper">

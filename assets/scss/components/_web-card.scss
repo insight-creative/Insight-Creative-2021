@@ -1,0 +1,57 @@
+.web-card {
+  text-decoration: none;
+
+  &__image-wrap {
+    position: relative;
+    min-height: 300px;
+    border-radius: $radius;
+    overflow: hidden;
+
+    img {
+      transition: 0.3s ease;
+    }
+  }
+
+  &__overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    transition: 0.3s ease;
+
+    span {
+      background-color: $white;
+      border-radius: $radius;
+      color: $dark-black;
+      padding: $ic-100 $ic-200;
+    }
+  }
+
+  &__content {
+    margin-top: $ic-100;
+
+    p {
+      margin-top: 0;
+    }
+  }
+
+  &__lighthouse-score {
+    font-size: $ic-100;
+  }
+
+  &:hover,
+  &:focus {
+    .web-card__image-wrap img {
+      transform: scale(1.1);
+    }
+    .web-card__overlay {
+      opacity: 1;
+    }
+  }
+}

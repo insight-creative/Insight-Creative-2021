@@ -18,7 +18,7 @@ page_class: single-post
 
 <br>
 
-### Next Level Photo and Video
+## Next Level Photo and Video
 
 In the world of photography and videography, drones can take your images and videos
 to the next level. Drone photography and videography can enhance a story by adding a different and dynamic viewpoint that was once only accessible in a helicopter or airplane. The present-day drones are equipped with high-quality, built-in cameras with top-notch stabilizers to get the smoothest and best resolution footage possible. Today, many movies, films, and videos have some form of aerial shot incorporated into them. It’s often used to set the scene, mood, or overall tone of the story. Storytelling and video work are also very important when it comes to advertising, marketing and providing video work for clients. The good thing about advancing video with drone footage is that now more than ever people are watching videos when it comes to ads.

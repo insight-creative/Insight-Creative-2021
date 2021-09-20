@@ -229,6 +229,8 @@ function initCursor () {
   const slide = document.querySelector('.swiper-slide')
   const slides = document.querySelectorAll('.swiper-slide')
   const footerLinks = document.querySelectorAll('.footer a')
+  const webCard = document.querySelector('.web-card')
+  const webCards = document.querySelectorAll('.web-card')
 
   gsap.set('.follower', { xPercent: -50, yPercent: -50, backgroundColor: '#8bc0c6' })
   gsap.set('.cursor', { xPercent: -50, yPercent: -50 })
@@ -364,6 +366,34 @@ function initCursor () {
     blogLinks.forEach(link => {
       link.addEventListener('mouseover', () => {
         followerText.innerHTML = 'View Post'
+        gsap.to(follow, 0.3, {
+          scale: 10,
+          backgroundColor: '#cd1f40',
+          autoAlpha: 0.9,
+          mixBlendMode: 'initial'
+        })
+        gsap.to(followerText, 0.3, {
+          autoAlpha: 1
+        })
+      })
+      link.addEventListener('mouseout', () => {
+        gsap.to(follow, 0.3, {
+          scale: 1,
+          backgroundColor: '#8bc0c6',
+          autoAlpha: 1,
+          mixBlendMode: 'exclusion'
+        })
+        gsap.to(followerText, 0.3, {
+          autoAlpha: 0
+        })
+      })
+    })
+  }
+
+  if (document.body.contains(webCard)) {
+    webCards.forEach(link => {
+      link.addEventListener('mouseover', () => {
+        followerText.innerHTML = 'View Website'
         gsap.to(follow, 0.3, {
           scale: 10,
           backgroundColor: '#cd1f40',

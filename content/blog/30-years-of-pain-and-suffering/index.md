@@ -13,9 +13,8 @@ page_class: single-post
 
 ![Clashing of storm clouds and sunny skies](30-Years-of-Pain-and-Suffering.jpg)
 
-“Nobody told me there’d be days like these.”
-<br>
-\- John Lennon
+> “Nobody told me there’d be days like these.”
+> <br> \- John Lennon
 
 Whenever friends or acquaintances tell me that they’re thinking about starting a business, they probably wonder why I look back with a blank stare. It’s because for a brief moment, my mind races over the memories of starting a business from scratch and running it for the past 30 years. These memories bring up a well of emotions including fear, frustration, excitement, anger and exhilaration.
 
@@ -29,7 +28,7 @@ The fact of the matter is that starting and running a business is a mixture of s
 
 I’ve learned over the years that you can never, ever take your foot off the accelerator and coast. Never. You must never become complacent. Thinking that you have it made just because you reached some milestone can be detrimental. That’s often the moment your business starts spiraling downward. That is vastly different from what I thought going into it. I’ve learned business is dynamic. It’s constantly changing. What worked only a few years ago may not work today. When we started we used typesetting services, our artwork was designed on boards (not Macs), we processed film in a darkroom and we sent transparencies to color separators. The internet and social media did not exist. As a business owner, you constantly need to reinvent yourself to remain relevant.
 
-**So why start a business and what defines success?**
+## So why start a business and what defines success?
 
 If you’re going into business for the money or to have more flexibility, then you may be starting a business for the wrong reason. If you’re going into business because you are passionate about your industry, thrive on challenges and are determined—regardless of how difficult things become—then you are on the right path. Basing your success strictly on reaching milestones may leave you feeling disappointed once you reach them which include financial goals, anniversary dates, number of employees and more. I discovered that success is being able to do what you are passionate about, regardless of whether or not you own a business. I’ve discovered that the challenge itself is the reward. Sure, running a business can be a roller coaster of things that you can and can’t control. But the only way to grow and keep your business relevant is to dive into the day- to-day challenges and deal with the pain that presents itself from time to time.
 
