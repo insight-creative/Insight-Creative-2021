@@ -4,7 +4,7 @@ a {
 }
 
 a:not(.nav-item):not(.site-header__logo):not(.categories):not(.staff-card):not(.share-buttons__link):not(.post-navigation__link):not(.brand-logo):not(.footer
-    a):not(.breadcrumbs a):not(.social a) {
+    a):not(.breadcrumbs a):not(.social a):not(.btn):not(.service-list__link):not(.featured-projects__link):not(.blog-card a):not(.category-list__link):not(.pagination__numbers):not(.pagination__next):not(.pagination__previous) {
   text-decoration: none;
   box-shadow: inset 0 -4px 0 rgba($primary-color, 0.7);
   transition: 0.3s cubic-bezier(0.17, 0.88, 0.5, 1.5);

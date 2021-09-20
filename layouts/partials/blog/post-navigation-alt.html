@@ -1,6 +1,6 @@
 {{ if or .PrevInSection .NextInSection }}
-    <div class="post-navigation post-navigation--alt flex">
-        <div class="post-navigation__button post-navigation__prev w-50 text-center">
+    <div class="post-navigation post-navigation--alt flex flex-column flex-row-m">
+        <div class="post-navigation__button post-navigation__prev w-100 w-50-m text-center">
             {{ with .PrevInSection }}
             <a href="{{ .Permalink }}" class="post-navigation__link flex flex-column">
                 <span class="post-navigation__label g3">Previous Article</span>
@@ -8,7 +8,7 @@
             </a>
             {{ end }}
         </div>
-        <div class="post-navigation__button post-navigation__next w-50 text-center">
+        <div class="post-navigation__button post-navigation__next w-100 w-50-m text-center">
             {{ with .NextInSection }}
             <a href="{{ .Permalink }}" class="post-navigation__link flex flex-column">
                 <span class="post-navigation__label g3">Next Article</span>

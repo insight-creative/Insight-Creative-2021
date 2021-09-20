@@ -1,7 +1,7 @@
 ---
 Title: Content
 seo:
-  title: Copywriting, Social Media, and Public Relationg Services in Green Bay, WI
+  title: Copywriting, Social Media, and Public Relations Services in Green Bay, WI
   description: Words need to mean something! Information must be valuable and relevant. At Insight, we lead with clarity to ensure your message is strategic, accurate and consistent. Contact Insight Creative in Green Bay, WI for all your copywriting, social media, and public relations needs!
   featured_image: content-page-featured-image.jpg
 

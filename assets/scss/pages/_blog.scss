@@ -1,8 +1,11 @@
 .post-wrapper {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   border-top: 1px solid $dark-black;
+
+  @include breakpoint(sm) {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  }
 
   .blog-card {
     width: 100%;

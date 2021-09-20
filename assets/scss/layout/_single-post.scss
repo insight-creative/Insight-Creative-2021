@@ -18,7 +18,9 @@
   // }
   ul,
   ol {
-    padding: 0 0 0 2.5rem;
+    @include breakpoint(md) {
+      padding: 0 0 0 2.5rem;
+    }
   }
 
   ul + ol,
@@ -75,8 +77,10 @@
 
 .related-posts {
   .post-wrapper {
-    grid-template-columns: repeat(3, 1fr);
-    border-top: none;
+    @include breakpoint(md) {
+      grid-template-columns: repeat(3, 1fr);
+      border-top: none;
+    }
   }
 
   .blog-card.blog-card:nth-of-type(even) {

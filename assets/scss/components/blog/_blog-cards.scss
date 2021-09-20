@@ -47,6 +47,14 @@
     padding: 0 $ic-300;
   }
 
+  .categories + .categories {
+    display: none;
+
+    @include breakpoint(sm) {
+      display: initial;
+    }
+  }
+
   &__staff-image-wrapper {
     margin-bottom: $ic-200;
   }

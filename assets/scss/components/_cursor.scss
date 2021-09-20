@@ -13,36 +13,40 @@
 //   mix-blend-mode: exclusion;
 // }
 .cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  user-select: none;
-  pointer-events: none;
+  @include breakpoint(md) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    user-select: none;
+    pointer-events: none;
+  }
 }
 
 .follower {
+  display: none;
+
   @include breakpoint(md) {
     position: fixed;
-  top: 0;
-  left: 0;
-  width: 10px;
-  height: 10px;
-  margin: 0;
-  padding: 1px;
-  background-color: $tertiary-color;
-  border-radius: 50%;
-  z-index: 9;
-  display: grid;
-  place-items: center;
-  text-align: center;
-  font-size: 2px;
-  line-height: 1;
-  mix-blend-mode: exclusion;
-  user-select: none;
-  pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    margin: 0;
+    padding: 1px;
+    background-color: $tertiary-color;
+    border-radius: 50%;
+    z-index: 9;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font-size: 2px;
+    line-height: 1;
+    mix-blend-mode: exclusion;
+    user-select: none;
+    pointer-events: none;
 
   &__text {
     opacity: 0;

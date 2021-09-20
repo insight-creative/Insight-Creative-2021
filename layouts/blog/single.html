@@ -11,7 +11,7 @@
                     <h1>{{ .Params.seo.title | markdownify }}</h1>
                     {{ .Content }}
                 </article>
-                <div class="share-this share-this--row">
+                <div class="share-this share-this--row flex flex-column flex-row-m">
                     {{ partial "blog/share-buttons" . }}
                 </div>
                 {{ partial "blog/post-author" . }}
