@@ -14,6 +14,7 @@ author: Sam Rowe
 categories:
   - Web
   - Design
+  - Business Strategy
 page_class: single-post
 ---
 
