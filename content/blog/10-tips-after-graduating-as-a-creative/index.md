@@ -12,9 +12,7 @@ seo:
 date: 2019-06-10
 author: Sam Rowe
 categories:
-  - Web
   - Design
-  - Business Strategy
 page_class: single-post
 ---
 
