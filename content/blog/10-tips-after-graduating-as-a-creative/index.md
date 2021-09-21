@@ -10,7 +10,7 @@ seo:
   featured_image: 10-Tips-that-Ring-True-Long-After-Graduating-as-a-Creative.jpg
   featured_image_alt: 10 Tips that Ring True Long After Graduating as a Creative
 date: 2019-06-10
-author: Sam Rowe
+author: Andrea Lasecki
 categories:
   - Design
 page_class: single-post
