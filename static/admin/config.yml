@@ -48,48 +48,97 @@ collections: # A list of collections the CMS should be able to edit
                 [
                   { label: "Title", name: "title", widget: string },
                   { label: "Description", name: "description", widget: "text" },
+                  {
+                    label: "Featured Image",
+                    name: "featured_image",
+                    widget: "image",
+                  },
                 ],
             }
-          - {
-              label: "Intro",
-              name: intro,
-              widget: object,
-              fields:
-                [
-                  { label: "Heading", name: "heading", widget: string },
-                  { label: "Copy", name: "copy", widget: "text" },
-                  { label: "Button Text", name: "button_text", widget: string },
-                  { label: "Button Link", name: "button_link", widget: string },
-                ],
-            }
+          - { label: "Intro", name: intro, widget: text }
           - {
               label: "Services",
               name: services,
               widget: object,
               fields:
-                - { label: "Heading", name: "heading", widget: text }
-                - { label: "Copy", name: "copy", widget: "text" }
-                - { label: "Services Item",
-                  name: "service" ,
-                  widget: "object",
-                  fields:
-                    - {
-                      label: "Heading"
-                    }
-                  } 
+                [
+                  { label: "subhead", name: subhead, widget: text },
+                  { label: "description", name: description, widget: text },
+                ],
             }
 
-  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post" # Used in the UI, ie.: "New Post"
-    folder: "content/post" # The path to the folder where the documents are stored
+  - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Posts" # Used in the UI, ie.: "New Post"
+    folder: "content/blog" # The path to the folder where the documents are stored
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
+    editor:
+      preview: false
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "SEO",
+          name: seo,
+          widget: object,
+          fields:
+            [
+              { label: "Title", name: "title", widget: string },
+              { label: "Description", name: "description", widget: "text" },
+              {
+                label: "Featured Image",
+                name: "featured_image",
+                widget: "image",
+              },
+              {
+                label: "Featured Image Alt Text",
+                name: "featured_image_alt",
+                widget: "string",
+              },
+            ],
+        }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - {
-          label: "Cover Image",
-          name: "image",
-          widget: "image",
-          required: false,
+          label: "Author",
+          name: author,
+          widget: "select",
+          multiple: false,
+          options:
+            [
+              "Andrea Lasecki",
+              "Brian Brost",
+              "Cindy Struensee",
+              "Emily Morehart",
+              "Insight Creative",
+              "Jay Bauer",
+              "Jim von Hoff",
+              "Justin Parsons",
+              "Molly Setzer",
+              "Nicole Ehlers",
+              "Niki Petit",
+              "Sam Rowe",
+            ],
+        }
+      - {
+          label: "Categories",
+          name: "categories",
+          widget: "select",
+          multiple: true,
+          max: 3,
+          options:
+            [
+              "Branding",
+              "Business Strategy",
+              "Content",
+              "Design",
+              "Digital",
+              "Media",
+              "News",
+              "Productivity",
+              "Public Relations",
+              "Social Media",
+              "Studio",
+              "Web",
+            ],
         }
       - { label: "Body", name: "body", widget: "markdown" }

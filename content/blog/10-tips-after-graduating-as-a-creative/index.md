@@ -2,7 +2,8 @@
 layout: blog
 seo:
   title: 10 Tips That Ring True Long After Graduating as a Creative
-  description: I recently had the opportunity to be a reviewer at the Fox River Ad
+  description:
+    I recently had the opportunity to be a reviewer at the Fox River Ad
     Club Student Portfolio Review at UW-Oshkosh. Meeting fresh designers and
     answering their questions made me think about advice I received as a student
     that helps me be a better designer and understand the advertising industry
@@ -12,9 +13,7 @@ seo:
 date: 2019-06-10
 author: Sam Rowe
 categories:
-  - Web
   - Design
-  - Business Strategy
 page_class: single-post
 ---
 
