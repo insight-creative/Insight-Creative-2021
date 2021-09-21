@@ -62,6 +62,22 @@ collections: # A list of collections the CMS should be able to edit
                   { label: "Button Link", name: "button_link", widget: string },
                 ],
             }
+          - {
+              label: "Services",
+              name: services,
+              widget: object,
+              fields:
+                - { label: "Heading", name: "heading", widget: text }
+                - { label: "Copy", name: "copy", widget: "text" }
+                - { label: "Services Item",
+                  name: "service" ,
+                  widget: "object",
+                  fields:
+                    - {
+                      label: "Heading"
+                    }
+                  } 
+            }
 
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
