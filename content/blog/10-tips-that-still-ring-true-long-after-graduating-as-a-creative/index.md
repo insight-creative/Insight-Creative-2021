@@ -1,4 +1,5 @@
 ---
+layout: blog
 title: 10 Tips That Still Ring True Long After Graduating as a Creative
 seo:
   title: 10 Tips That Still Ring True Long After Graduating as a Creative
@@ -13,6 +14,7 @@ date: 2021-09-21T05:25:40.787Z
 author: Sam Rowe
 categories:
   - Design
+page_class: single-post
 ---
 ![code on screen](sai-kiran-anagani-5ntkpxqt54y-unsplash.jpg)
 
