@@ -1,11 +1,68 @@
 backend:
   name: git-gateway
   branch: main
+  repo: insight-creative/Insight-Creative-2021
 
-media_folder: "site/static/images" # Folder where user uploaded files should go
-public_folder: "images"
+logo_url: https://insight-creative-2021-dev.netlify.app/images/logo.svg
+
+media_folder: "static/images" # Folder where user uploaded files should go
+public_folder: ""
 
 collections: # A list of collections the CMS should be able to edit
+  - name: "site_info"
+    label: "Site Info"
+    media_folder: "/static/images/"
+    public_folder: "/images/"
+    editor:
+      preview: false
+    files:
+      - file: "/data/business_info.yml"
+        name: "business_info"
+        label: "Business Info"
+        fields:
+          - { label: Logo, name: logo, widget: image }
+          - { label: Business Name, name: business_name, widget: string }
+          - { label: Phone, name: phone, widget: string }
+          - { label: Email, name: email, widget: string }
+          - { label: Address, name: address, widget: text }
+          - { label: Hours, name: hours, widget: text }
+
+  - name: "pages"
+    preview_path: "layouts/index.html"
+    label: "Pages"
+    media_folder: ""
+    public_folder: ""
+    editor:
+      preview: false
+    files:
+      - file: "content/_index.md"
+        label: "Home"
+        name: "home"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - {
+              label: "SEO",
+              name: seo,
+              widget: object,
+              fields:
+                [
+                  { label: "Title", name: "title", widget: string },
+                  { label: "Description", name: "description", widget: "text" },
+                ],
+            }
+          - {
+              label: "Intro",
+              name: intro,
+              widget: object,
+              fields:
+                [
+                  { label: "Heading", name: "heading", widget: string },
+                  { label: "Copy", name: "copy", widget: "text" },
+                  { label: "Button Text", name: "button_text", widget: string },
+                  { label: "Button Link", name: "button_link", widget: string },
+                ],
+            }
+
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
     folder: "content/post" # The path to the folder where the documents are stored
