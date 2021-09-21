@@ -1,13 +1,18 @@
 ---
 layout: blog
 seo:
-  title: "10 Tips That Ring True Long After Graduating as a Creative"
-  description: "I recently had the opportunity to be a reviewer at the Fox River Ad Club Student Portfolio Review at UW-Oshkosh. Meeting fresh designers and answering their questions made me think about advice I received as a student that helps me be a better designer and understand the advertising industry to this day."
+  title: 10 Tips That Ring True Long After Graduating as a Creative
+  description: I recently had the opportunity to be a reviewer at the Fox River Ad
+    Club Student Portfolio Review at UW-Oshkosh. Meeting fresh designers and
+    answering their questions made me think about advice I received as a student
+    that helps me be a better designer and understand the advertising industry
+    to this day.
   featured_image: 10-Tips-that-Ring-True-Long-After-Graduating-as-a-Creative.jpg
   featured_image_alt: 10 Tips that Ring True Long After Graduating as a Creative
 date: 2019-06-10
 author: Sam Rowe
-categories: ["Design"]
+categories:
+  - Web
 page_class: single-post
 ---
 
