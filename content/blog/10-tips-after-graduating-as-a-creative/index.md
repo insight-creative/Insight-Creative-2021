@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: 10 Tips That Ring True Long After Graduating as a Creative
 seo:
   title: 10 Tips That Ring True Long After Graduating as a Creative
   description:
