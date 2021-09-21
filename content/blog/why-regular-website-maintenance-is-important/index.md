@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Why Regular Website Maintenance Is Important"
 seo:
   title: "Why Regular Website Maintenance Is Important"
   description: "Learn more about the importance of regular website maintenance."

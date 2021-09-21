@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Real-time Marketing Wins at NYC Marathon"
 seo:
   title: "Real-time Marketing Wins at NYC Marathon"
   description: "People run marathons for various reasons such as, to achieve a PR (personal record), lose weight or earn a finisher medal, t-shirt, or in one case, a Tiffany & Co. necklace (Nike Women’s Half Marathon, San Francisco)."

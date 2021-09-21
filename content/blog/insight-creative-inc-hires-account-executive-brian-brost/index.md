@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Insight Creative, Inc. Hires Account Executive Brian Brost"
 seo:
   title: "Insight Creative, Inc. Hires Account Executive Brian Brost"
   description: "Insight Creative, Inc. recently hired Brian Brost as account executive."

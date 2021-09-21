@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Reflections From 10,000 Feet"
 seo:
   title: "Reflections From 10,000 Feet"
   description: "Insight Creative, Inc. we can do anything, even skywriting."

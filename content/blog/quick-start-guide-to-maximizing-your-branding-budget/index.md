@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Quick Start Guide to Maximizing Your Branding Budget"
 seo:
   title: "Quick Start Guide to Maximizing Your Branding Budget"
   description: "Quick Start Guide to Maximizing Your Branding Budget"

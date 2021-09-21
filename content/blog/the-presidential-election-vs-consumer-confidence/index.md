@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "The Presidential Election vs. Consumer Confidence"
 seo:
   title: "The Presidential Election vs. Consumer Confidence"
   description: "A No-Win Situation"

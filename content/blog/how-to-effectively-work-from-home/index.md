@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "How to Effectively Work From Home"
 seo:
   title: "How to Effectively Work From Home"
   description: ""

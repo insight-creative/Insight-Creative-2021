@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Should you continue to advertise during a pandemic?"
 seo:
   title: "Should you continue to advertise during a pandemic?"
   description: "One question on everyone’s mind right now, should you continue to advertise during a pandemic? Discover five reasons why you should seriously consider it."

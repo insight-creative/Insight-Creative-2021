@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "How to Lose Your Customer's Trust and Business"
 seo:
   title: "How to Lose Your Customer's Trust and Business"
   description: "Unfortunately, versions of this incident happen frequently. So how can you prevent this? Here are three key lessons."

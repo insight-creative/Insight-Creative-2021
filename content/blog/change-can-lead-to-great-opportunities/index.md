@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Change can Lead to Great Opportunities"
 seo:
   title: "Change can Lead to Great Opportunities"
   description: "COVID-19 has taught us innovation and adaptability lead to success."

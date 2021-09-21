@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Your Website is What's for Dinner"
 seo:
   title: "Your Website is What's for Dinner"
   description: "Your Website is What's for Dinner"

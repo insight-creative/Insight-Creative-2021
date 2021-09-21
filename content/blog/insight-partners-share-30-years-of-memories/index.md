@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "A Look Back: Insight Partners Share 30 Years of Memories"
 seo:
   title: "A Look Back: Insight Partners Share 30 Years of Memories"
   description: "As a tribute to Insight's first employee and founder, we asked some of our greatest supporters to share in the celebration by offering their congratulations to Jim von Hoff and the Insight team for 30 years in business."

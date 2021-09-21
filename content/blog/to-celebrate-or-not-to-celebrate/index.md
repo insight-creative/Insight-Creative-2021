@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "To Celebrate or Not to Celebrate?"
 seo:
   title: "To Celebrate or Not to Celebrate?"
   description: "I have a milestone birthday coming up—40! Do I want it acknowledged? No! Do I want a party and big celebration? Absolutely not! Do I want to use it to my advantage in the form of a blog topic? You bet."

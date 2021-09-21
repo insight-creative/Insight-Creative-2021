@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Driving Brand Awareness Beyond Traditional TV Advertising"
 seo:
   title: "Driving Brand Awareness Beyond Traditional TV Advertising"
   description: "The number of television viewers cancelling their cable subscriptions, commonly referred to as 'cord cutters', continues to grow. TV viewers who are fed up with the cost of cable and satellite TV are opting for over-the-top (OTT) services."

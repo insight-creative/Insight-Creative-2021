@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Retarget Your Marketing Efforts"
 seo:
   title: "Retarget Your Marketing Efforts"
   description: "People run marathons for various reasons such as, to achieve a PR (personal record), lose weight or earn a finisher medal, t-shirt, or in one case, a Tiffany & Co. necklace (Nike Women’s Half Marathon, San Francisco)."

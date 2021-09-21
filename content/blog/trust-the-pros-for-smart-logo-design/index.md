@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Trust the pros for smart logo design"
 seo:
   title: "Trust the pros for smart logo design"
   description: "As easy as it may look to create a great logo, I can assure you it is not."

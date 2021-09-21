@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Sitting Pretty ..."
 seo:
   title: "Sitting Pretty ..."
   description: "I look forward to coming to work each day; I have hilarious co-workers that make it an awesome environment. Unfortunately there is a hidden terror; a silent tormentor that is slowly wrapping its twisted fingers around me... it's my posture."

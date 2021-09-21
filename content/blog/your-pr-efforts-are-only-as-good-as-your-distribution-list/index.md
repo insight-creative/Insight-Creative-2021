@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Your PR Efforts are Only as Good as Your Distribution List"
 seo:
   title: "Your PR Efforts are Only as Good as Your Distribution List"
   description: "Distributing a news release? Here are a few simple guidelines to consider when determining your audience and developing a list of quality contacts to better ensure your next message meets the masses."

@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "The Toy Store Doesn't Have to Die!"
 seo:
   title: "The Toy Store Doesn't Have to Die!"
   description: ""

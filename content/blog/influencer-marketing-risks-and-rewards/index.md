@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Influencer Marketing - Risks and Rewards"
 seo:
   title: "Influencer Marketing - Risks and Rewards"
   description: "It's difficult to pin-point a simple definition of influencer marketing. Instead, here's a list of what it is and what it most certainly is not."

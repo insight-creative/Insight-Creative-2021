@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "The Power of Asking Questions"
 seo:
   title: "The Power of Asking Questions"
   description: "'I have a question' has been my new mantra since beginning my Account Coordinator position at Insight Creative."

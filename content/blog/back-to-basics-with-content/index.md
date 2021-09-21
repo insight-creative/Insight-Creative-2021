@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Back to Basics with Content"
 seo:
   title: "Back to Basics with Content"
   description: "Back to Basics with Content"

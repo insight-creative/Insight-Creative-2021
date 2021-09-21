@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "How to Pivot Your Marketing Plan During COVID-19"
 seo:
   title: "How to Pivot Your Marketing Plan During COVID-19"
   description: "It’s critical to keep your brand top of mind, even in trying times."

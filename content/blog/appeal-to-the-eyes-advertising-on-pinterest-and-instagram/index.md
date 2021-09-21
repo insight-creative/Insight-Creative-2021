@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Appeal to the Eyes—Advertising on Pinterest and Instagram"
 seo:
   title: "Appeal to the Eyes—Advertising on Pinterest and Instagram"
   description: "Everywhere you look there is a new platform to place ads. Which ones are right for you? Here's a closer look at paid advertising on paid platforms such as Instagram and Pinterest."

@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Insight Donates Creative Support to Golden House"
 seo:
   title: "Insight Donates Creative Support to Golden House"
   description: "Insight Creative, Inc., a full service marketing communications agency in Green Bay, has donated their time and services in anticipation of the event to help further the mission of Golden House."

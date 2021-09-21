@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Five Marketing Questions to ask in a Time Crunch"
 seo:
   title: "Five Marketing Questions to ask in a Time Crunch"
   description: "Do your recent quick-turn creative projects meet this criteria?"

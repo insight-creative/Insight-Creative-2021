@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Insight Creative, Inc. Hires Nicole Ehlers as Account Executive and Promotes Molly Setzer to Media Director"
 seo:
   title: "Insight Creative, Inc. Hires Nicole Ehlers as Account Executive and Promotes Molly Setzer to Media Director"
   description: ""

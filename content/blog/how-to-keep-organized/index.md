@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "How to Keep Organized"
 seo:
   title: "How to Keep Organized"
   description: "You don't have to wait until Jan.1 to start a new habit."

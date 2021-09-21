@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Can Music Impact a Buying Decision?"
 seo:
   title: "Can Music Impact a Buying Decision?"
   description: "I am very passionate about music. Music moves me, makes me feel nostalgic and incites a lot of emotion in me—which could make me connect with a brand that uses music I like."

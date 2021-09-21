@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "There's No Place Like Home"
 seo:
   title: "There's No Place Like Home"
   description: "There's No Place Like Home"

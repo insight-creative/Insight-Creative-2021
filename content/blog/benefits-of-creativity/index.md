@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Benefits of Creativity"
 seo:
   title: "Benefits of Creativity"
   description: "There are many mental and physical health benefits of creative living."

@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "2020’s Impact on Advertising"
 seo:
   title: "2020’s Impact on Advertising"
   description: ""

@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Streaming TV: It’s Time to Get in the Game!"
 seo:
   title: "Streaming TV: It’s Time to Get in the Game!"
   description: ""

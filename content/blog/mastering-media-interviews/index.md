@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Mastering Media Interviews"
 seo:
   title: "Mastering Media Interviews"
   description: "Whether you've been asked to do an interview for radio, TV or a print publication, non-paid media exposure provides you with the rare opportunity to connect directly with your audience, outside of promotional messages, about topics that are important to you."

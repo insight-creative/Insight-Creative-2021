@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Is Your Hosting Provider Delivering?"
 seo:
   title: "Is Your Hosting Provider Delivering?"
   description: "Whether you’re just starting to create your first website or you’ve been managing your site for a long time, one of the most crucial decisions you’ll make is deciding where to host your website."

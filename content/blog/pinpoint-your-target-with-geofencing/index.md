@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Pinpoint Your Target with Geofencing"
 seo:
   title: "Pinpoint Your Target with Geofencing"
   description: "Geofencing is a location-based digital marketing tactic that lets marketers place ads targeted towards smartphone users in a defined geographic area."

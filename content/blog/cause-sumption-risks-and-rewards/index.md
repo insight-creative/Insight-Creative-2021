@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Cause-sumption—Risks and Rewards"
 seo:
   title: "Cause-sumption—Risks and Rewards"
   description: "More and more companies feel comfortable taking a public political stance."

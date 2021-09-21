@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Internet of Things - The Future is Now"
 seo:
   title: "Internet of Things - The Future is Now"
   description: "What exactly is IoT? In short, it's the interconnectedness of objects. Analysts estimate that IoT applications could have a total economic impact of up to 11 trillion dollars annually by 2025."

@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "What is Happening to the Retail Landscape in Green Bay?"
 seo:
   title: "What is Happening to the Retail Landscape in Green Bay?"
   description: "If you’re like me, you’re still shaking your head wondering what happened to Port Plaza Mall."

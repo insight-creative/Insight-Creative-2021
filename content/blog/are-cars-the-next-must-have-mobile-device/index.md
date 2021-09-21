@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Are Cars the Next Must-Have Mobile Device?"
 seo:
   title: "Are Cars the Next Must-Have Mobile Device?"
   description: "Are Cars the Next Must-Have Mobile Device?"

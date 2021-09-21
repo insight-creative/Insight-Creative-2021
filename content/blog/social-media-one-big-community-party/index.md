@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Social Media—One Big Community Party"
 seo:
   title: "Social Media—One Big Community Party"
   description: "A common marketing goal for small businesses is to grow and engage with followers on social media. Here are four ‘go-to’ social media content strategies to get you on the right track."

@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "11 Blogs for Marketing and Business Inspiration"
 seo:
   title: "11 Blogs for Marketing and Business Inspiration"
   description: "11 Blogs for Marketing and Business Inspiration"

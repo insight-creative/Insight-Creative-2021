@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Craving Good Content? Be Authentic."
 seo:
   title: "Craving Good Content? Be Authentic."
   description: ""

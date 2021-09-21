@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "The Power of Interaction"
 seo:
   title: "The Power of Interaction"
   description: "Creating better digital user experiences"

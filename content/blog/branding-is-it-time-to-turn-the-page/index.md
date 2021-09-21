@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Branding: Is it time to turn the page?"
 seo:
   title: "Branding: Is it time to turn the page?"
   description: "Rebranding is a huge step for any company. When executed successfully, a rebrand can help a business grow, boost brand recognition, and create enthusiasm. Learn more about when it may be time for a rebrand."

@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Insight Creative Hires Visual Content Designer"
 seo:
   title: "Insight Creative Hires Visual Content Designer"
   description: "Insight Creative recently hired Sam Konshak as visual content designer."

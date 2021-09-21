@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Elevate your marketing with drone footage"
 seo:
   title: "Elevate your marketing with drone footage"
   description: "When you’re talking about taking photography and videography to the next level a drone provides aerial content to capture unique and desirable looking photos and videos. Learn how drone photography and videography can enhance your marketing efforts."

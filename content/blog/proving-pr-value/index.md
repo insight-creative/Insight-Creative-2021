@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Proving PR Value"
 seo:
   title: "Proving PR Value"
   description: "A solid public relations plan can do wonders for your brand including reputation management, increased engagement, brand awareness and much more."

@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Media: An Unseen, but Integral, Part of Advertising"
 seo:
   title: "Media: An Unseen, but Integral, Part of Advertising"
   description: "Learn how building a statically generated site can make your website lightweight, secure, and fast!"

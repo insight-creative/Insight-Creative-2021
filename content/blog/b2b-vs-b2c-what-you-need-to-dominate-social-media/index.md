@@ -1,6 +1,6 @@
 ---
 layout: blog
-draft: true
+title: "B2B vs B2C - What You Need to Dominate Social Media"
 seo:
   title: "B2B vs B2C - What You Need to Dominate Social Media"
   description: "From hundreds of articles and resources, everyone knows that sharing content on social media is key ... but what's the correct approach? Social Media Coordinator Jennifer Rogers illustrates what content is best for B2B and B2C companies."

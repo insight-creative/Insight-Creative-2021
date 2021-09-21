@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Inspiring Young Minds with Design"
 seo:
   title: "Inspiring Young Minds with Design"
   description: "I always enjoy inspiring kids and showing them that they can have a career in Graphic Arts and/or Marketing"

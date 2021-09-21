@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Insight Creative Earns International Communicator Award"
 seo:
   title: "Insight Creative Earns International Communicator Award"
   description: "Insight Creative received an “Award of Distinction” from the 24th Annual Communicator Awards hosted by the Academy of Interactive and Visual Arts."

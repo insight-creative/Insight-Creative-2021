@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Insight Creative, Inc. Earns Silver Communicator Award"
 seo:
   title: "Insight Creative, Inc. Earns Silver Communicator Award"
   description: "Insight Creative was honored to receive international recognition from the Academy of Interactive and Visual Arts (AIVA) in the form of a silver 2015 Communicator Award."

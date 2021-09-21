@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "A Smart Media Buy on a Budget"
 seo:
   title: "A Smart Media Buy on a Budget"
   description: "No matter the budget, we must be smart about what we're buying. A lot of thought goes into media buys and we buy media that will best reach our target demographic."

@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Moving Targets - Find Your Audience with Social Media"
 seo:
   title: "Moving Targets - Find Your Audience with Social Media"
   description: "As a social media specialist, I'm often told by business professionals, 'I don't get Twitter' (or whatever social media platform we're discussing at the time)."

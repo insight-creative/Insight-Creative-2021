@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Six Steps to a Better Sales Strategy"
 seo:
   title: "Six Steps to a Better Sales Strategy"
   description: ""

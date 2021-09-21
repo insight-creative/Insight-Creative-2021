@@ -1,6 +1,6 @@
 ---
 layout: blog
-draft: true
+title: "Marketing to Millennials: Are You Doing It Right?"
 seo:
   title: "Marketing to Millennials: Are You Doing It Right?"
   description: "In today's world, it appears nearly every brand is trying to target a specific group of people: millennials. Well, here's Jennifer Roger's advice ... don't target millennials."

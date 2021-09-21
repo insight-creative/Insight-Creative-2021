@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Drawing is Not Dead"
 seo:
   title: "Drawing is Not Dead"
   description: "In this digital world the art of drawing is still useful to present ideas to clients. Drawing is a useful tool for a number of reasons."

@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Finding the personal reward in PR"
 seo:
   title: "Finding the personal reward in PR"
   description: "When I started my career at Insight Creative, Inc. I envisioned the opportunity to update or develop new brands, work on media campaigns and perhaps help the occasional non-profit.   Never did I think I’d have the chance to rewrite history.  That changed when a marketing colleague asked me to help Honor Flight’s Return to Nam Project."

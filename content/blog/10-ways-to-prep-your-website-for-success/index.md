@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "10 Ways to Prep Your Website for Success"
 seo:
   title: "10 Ways to Prep Your Website for Success"
   description: "There’s no better time than now to start preparing your website. Here are 10 simple tips for ways to prep your website for success."

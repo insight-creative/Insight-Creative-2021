@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Design Trends: Then & Now"
 seo:
   title: "Design Trends: Then & Now"
   description: "What I’ve witnessed in 20+ years of design and where I think we’re headed."

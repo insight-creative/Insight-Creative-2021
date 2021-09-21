@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "This post is going to be all about you."
 seo:
   title: "This post is going to be all about you."
   description: "Just as Dale Carnegie said, everyone’s favorite subject is themselves. So it’s no coincidence that many brands are personalizing themselves to get noticed. Take Coca-Cola, Snickers and Bud Light for example. They are practically setting this new trend."

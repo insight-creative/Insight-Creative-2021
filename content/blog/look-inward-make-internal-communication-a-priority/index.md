@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Look Inward: Make Internal Communications a Priority"
 seo:
   title: "Look Inward: Make Internal Communications a Priority"
   description: "If you’re on the fence regarding an internal communications plan, I can assure you there is value in a program that is executed properly. Here are five simple ideas to consider:"

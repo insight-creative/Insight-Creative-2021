@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Write Better Press Releases"
 seo:
   title: "Write Better Press Releases"
   description: "Tried-and-true tips from a seasoned PR professional."

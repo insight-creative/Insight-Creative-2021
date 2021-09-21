@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Marketing 101 - Goals, Objectives, Strategy and Tactics"
 seo:
   title: "Marketing 101 - Goals, Objectives, Strategy and Tactics"
   description: "Goals, objectives, strategies and tactics—all very specific things that build on each other and work together to help propel an enterprise forward."

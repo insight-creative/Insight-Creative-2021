@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "The Value of Shock&mdash;Advertise at Your Own Risk"
 seo:
   title: "The Value of Shock&mdash;Advertise at Your Own Risk"
   description: "A mild example of advertising that toes the line of controversy, but still prompted the question... did they take it too far? And if so, what’s the value in doing so?"

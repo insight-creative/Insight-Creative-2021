@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Inside the Millennial Mind"
 seo:
   title: "Inside the Millennial Mind"
   description: "The average millennial has access to 7.1 electronic devices and consumes content across those multiple devices."

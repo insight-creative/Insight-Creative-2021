@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Let’s Go Fishin’!"
 seo:
   title: "Let’s Go Fishin’!"
   description: "I’ve been in a sales or account management position for quite a few years now. Along the way I’ve heard the question posed"

@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Looking on the Bright Side During a Pandemic"
 seo:
   title: "Looking on the Bright Side During a Pandemic"
   description: "There's opportunity in every situation if you look for it."

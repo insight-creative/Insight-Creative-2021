@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "How Do You Rate?"
 seo:
   title: "How Do You Rate?"
   description: "Forbes' top prediction for new social media habits in 2017 is 'ratings will be everywhere.' If that's true, then it's time to look to the stars to learn about your customers and their experiences because potential customers definitely care about reviews."

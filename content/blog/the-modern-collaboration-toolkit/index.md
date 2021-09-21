@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "The Modern Collaboration Toolkit"
 seo:
   title: "The Modern Collaboration Toolkit"
   description: "Imagine a superhero. (Hopefully this means you're picturing yourself in a cape.) This superhero's power is leaping into businesses and improving their efficiency and profitability by improving their ability to collaborate. Exciting!"

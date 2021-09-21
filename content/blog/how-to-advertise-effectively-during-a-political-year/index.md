@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "How to Advertise Effectively During a Political Year"
 seo:
   title: "How to Advertise Effectively During a Political Year"
   description: "Advertising during a political year can be a very daunting task. Here are tips to help you succeed!"

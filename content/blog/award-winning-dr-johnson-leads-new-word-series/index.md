@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Award-winning Dr. Johnson Leads New Word Series"
 seo:
   title: "Award-winning Dr. Johnson Leads New Word Series"
   description: "A fun collaboration to create communication with substance."

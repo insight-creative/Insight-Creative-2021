@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Lost in the Static"
 seo:
   title: "Lost in the Static"
   description: "Learn how building a statically generated site can make your website lightweight, secure, and fast!"

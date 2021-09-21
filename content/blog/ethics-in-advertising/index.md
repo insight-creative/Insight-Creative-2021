@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Ethics in Advertising"
 seo:
   title: "Ethics in Advertising"
   description: "From 'the world's best cup of coffee' to 'satisfaction guaranteed', Director of Business Development Niki Petit shares her thoughts on claims and ethics in the advertising industry."

@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Bringing Ideas Together With Collaborative Web Design"
 seo:
   title: "Bringing Ideas Together With Collaborative Web Design"
   description: "In the ever-changing world of website design and development, staying on top of current trends and tools helps us create better websites."

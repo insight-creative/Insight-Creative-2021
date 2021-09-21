@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Insight is celebrating 30 years! How’d we do it?"
 seo:
   title: "Insight is celebrating 30 years! How’d we do it?"
   description: "2018 is a big year for Insight Creative, Inc. It’s the year we celebrate 30 years in business and while it hasn’t always been easy, it’s always been fun. Let’s turn the clock back three decades."

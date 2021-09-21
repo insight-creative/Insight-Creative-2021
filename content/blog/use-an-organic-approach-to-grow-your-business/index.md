@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Use an Organic Approach to Grow Your Business"
 seo:
   title: "Use an Organic Approach to Grow Your Business"
   description: "A recent trip to my cabin in northern Wisconsin reminded me of a very important advertising rule. We cannot create a need, but we can certainly capitalize on a need that already exists."

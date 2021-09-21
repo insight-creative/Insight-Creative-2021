@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Resolve to Use Reviews Better in the New Year"
 seo:
   title: "Resolve to Use Reviews Better in the New Year"
   description: "The marketing world has been turned upside down in recent years.  Among other changes, the explosion of social media coupled with sophisticated online targeting have forced marketers to work smarter."

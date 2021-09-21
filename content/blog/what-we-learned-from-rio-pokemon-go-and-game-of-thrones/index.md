@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "What We Learned from Rio, Pokémon Go and Game of Thrones"
 seo:
   title: "What We Learned from Rio, Pokémon Go and Game of Thrones"
   description: "What We Learned from Rio, Pokémon Go and Game of Thrones"

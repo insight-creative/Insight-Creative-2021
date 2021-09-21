@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Insight Creative, Inc. Donates $1,000 Annual Scholarship to UW-Green Bay Communications and Design Students"
 seo:
   title: "Insight Creative, Inc. Donates $1,000 Annual Scholarship to UW-Green Bay Communications and Design Students"
   description: "To mark their 30th anniversary, Insight Creative donated funds to open"

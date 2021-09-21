@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Reach Your Customers with Research"
 seo:
   title: "Reach Your Customers with Research"
   description: "Whether you have been in business for five years, 50 years or 100 years, it is important to review your customer base every few years."

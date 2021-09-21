@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Lights, Camera, Action!"
 seo:
   title: "Lights, Camera, Action!"
   description: "Lights, Camera, Action!"

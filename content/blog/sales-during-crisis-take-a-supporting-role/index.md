@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Sales during crisis: Take a supportive role"
 seo:
   title: "Sales during crisis: Take a supportive role"
   description: "There are many ways salespeople can lend support to businesses today."

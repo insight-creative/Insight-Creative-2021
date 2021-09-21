@@ -1,6 +1,6 @@
 ---
 layout: blog
-draft: true
+title: "Insight Designer Paints Golden Helmet for Super Bowl 50"
 seo:
   title: "Insight Designer Paints Golden Helmet for Super Bowl 50"
   description: "We’re so proud of Insight Designer/Programmer Zane Statz for being selected to paint Green Bay’s golden helmet in tribute to Super Bowl 50! Get a preview of the finished product before its national debut this Sunday."

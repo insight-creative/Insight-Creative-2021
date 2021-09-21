@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "30 Years of Pain and Suffering"
 seo:
   title: "30 Years of Pain and Suffering"
   description: "30 Years of Pain and Suffering"

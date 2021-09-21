@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Insight Creative Named 2018 Hermes Creative Award Gold Winner"
 seo:
   title: "Insight Creative Named 2018 Hermes Creative Award Gold Winner"
   description: "Insight Creative, Inc. was named a Gold Winner by the 2018 Hermes Creative Awards."

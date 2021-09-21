@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "What's In a Name?"
 seo:
   title: "What's In a Name?"
   description: "Nike, Yahoo, Subway, Starbucks and Pepsi. What do these companies all have in common? They were once known by different names."

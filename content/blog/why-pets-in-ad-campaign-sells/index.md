@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Why using pets in your ad campaign sells"
 seo:
   title: "Why using pets in your ad campaign sells"
   description: "During the Super Bowl, there was a plethora of ads featuring dogs, cats, horses and many other lovable creatures. Jeep even brought back the groundhog. Why are advertisers focusing on our furry friends to sell goods and services?"

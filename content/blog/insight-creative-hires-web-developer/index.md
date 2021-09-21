@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Insight Creative Hires Web Developer"
 seo:
   title: "Insight Creative Hires Web Developer"
   description: "Insight Creative recently hired Justin Parsons as web developer."

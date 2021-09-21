@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Putting the Social in Social Media"
 seo:
   title: "Putting the Social in Social Media"
   description: ""

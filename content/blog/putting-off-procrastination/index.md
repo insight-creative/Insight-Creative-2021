@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: "Are You Just Putting off Dealing with Procrastination?"
 seo:
   title: "Are You Just Putting off Dealing with Procrastination?"
   description: "According to an article in Psychology Today, twenty percent of people identify themselves as chronic procrastinators. What's more, they say procrastinators lie to themselves and say that the 'time pressure makes them more creative.'"
