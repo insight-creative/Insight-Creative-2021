@@ -6,8 +6,8 @@ seo:
     machine. Learn how Insight Creative can build a site that complements your
     communication efforts, accommodates your customers’ changing needs and
     withstands rapidly changing digital demands.
-  featured_image: sai-kiran-anagani-5ntkpxqt54y-unsplash.jpg
-  featured_image_alt: code on screen
+  featured_image: web-page-featured-image.jpg
+  featured_image_alt: Website Design and Development page hero image
 hero_title: Our sites don’t just look cool, they <span class="emphasis-red">perform.</span>
 intro:
   subhead: Our <span class="emphasis-red">fully functional</span> custom sites
@@ -37,13 +37,16 @@ services:
         trends and years of experience to ensure your site is accessible and
         usable for all—considering contrast levels, load times, various devices,
         screen sizes and more.
-      service_list: websites • landing pages • sitemap architecture • responsive web
+      service_list:
+        websites • landing pages • sitemap architecture • responsive web
         design • user interface design • user experience design • competitor
         analysis • photography • typography • illustration
     - heading: Development
-      subhead: <span class="text-tertiary"><em>Build a site with an organized, secure
+      subhead:
+        <span class="text-tertiary"><em>Build a site with an organized, secure
         and reliable foundation.</em></span>
-      description: No templates here! Our skilled web team hand crafts custom code
+      description:
+        No templates here! Our skilled web team hand crafts custom code
         using modern technologies and creative problem solving to create sites
         that are favored by search engines and easily accessed by all people and
         devices.
@@ -62,11 +65,13 @@ services:
     - heading: Maintenance
       subhead: <span class="text-tertiary"><em>Keep your website in optimal
         shape.</em></span>
-      description: You must regularly tend to your website to help it thrive. Insight
+      description:
+        You must regularly tend to your website to help it thrive. Insight
         provides ongoing maintenance to protect your investment and ensure it
         only gets better as time goes on. Plus, with monthly analytics, Insight
         will help you understand your site visitors and adjust accordingly.
-      service_list: website hosting • software updates • regular backups • website
+      service_list:
+        website hosting • software updates • regular backups • website
         audits • troubleshooting • bug fixes • performance optimizations •
         security scans • malware cleanup • analytics and reporting
 web_portfolio:

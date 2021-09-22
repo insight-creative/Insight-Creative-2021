@@ -6,9 +6,13 @@
 
 .staff-card {
   border-radius: $radius;
-  margin: $ic-300;
+  margin: $ic-100 0;
   text-decoration: none;
-  flex: 0 0 250px;
+
+  @include breakpoint(sm) {
+    margin: $ic-300;
+    flex: 0 0 250px;
+  }
 
   &:hover,
   &:focus {
@@ -54,7 +58,7 @@
   }
 }
 
-.staff-card:nth-of-type(2) {
+.staff-card:nth-of-type(even) {
   .staff-card__image-wrapper {
     &:after {
       top: 0;
@@ -62,7 +66,7 @@
   }
 }
 
-.staff-card:nth-of-type(3) {
+.staff-card:nth-of-type(odd) {
   .staff-card__image-wrapper {
     &:after {
       top: 7px;

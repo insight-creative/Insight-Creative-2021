@@ -1,3 +1,78 @@
-.test {
-  display: none;
+.about-hero {
+  background-image: url("/images/background-images/insight-front-lobby-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about {
+  .staff-card:first-of-type {
+    display: none;
+  }
+
+  .industry-list {
+    padding: 0 1.5rem;
+
+    @include breakpoint(md) {
+      columns: 2;
+    }
+  }
+
+  .w-40-m + .w-60-m {
+    margin-top: $ic-600;
+
+    @include breakpoint(md) {
+      margin-left: $ic-900;
+    }
+  }
+
+  .our-approach {
+    p:first-of-type {
+      max-width: 100%;
+    }
+    p:last-of-type {
+      margin: 1.25rem auto 0 auto;
+    }
+  }
+
+  .team-image-grid {
+    display: grid;
+    gap: $ic-200;
+
+    @include breakpoint(md) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: $ic-900;
+
+      .image-wrapper + .image-wrapper {
+        margin-top: $ic-900;
+      }
+    }
+
+    .cover-image img {
+      height: 300px;
+
+      @include breakpoint(md) {
+        height: 400px;
+      }
+    }
+  }
+
+  .memberships {
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: $ic-600;
+
+      @include breakpoint(sm) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: $ic-900;
+      }
+    }
+
+    img {
+      max-width: 175px;
+      display: grid;
+      place-self: center;
+    }
+  }
 }

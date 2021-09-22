@@ -70,7 +70,7 @@ collections: # A list of collections the CMS should be able to edit
         label: "Services"
         name: "services"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Title", name: "Title", widget: "string" }
           - {
               label: "SEO",
               name: seo,
@@ -98,11 +98,480 @@ collections: # A list of collections the CMS should be able to edit
                   { label: "Description", name: "description", widget: "text" },
                 ],
             }
+      - file: "content/services/content/index.md"
+        label: "Content"
+        name: "content"
+        fields:
+          - { label: "Title", name: "Title", widget: "string" }
+          - {
+              label: "SEO",
+              name: seo,
+              widget: object,
+              fields:
+                [
+                  { label: "Title", name: "title", widget: string },
+                  { label: "Description", name: "description", widget: "text" },
+                  {
+                    label: "Featured Image",
+                    name: "featured_image",
+                    widget: "image",
+                  },
+                  {
+                    label: "Featured Image Alt Text",
+                    name: "featured_image_alt",
+                    widget: "string",
+                  },
+                ],
+            }
+          - { label: "Hero Title", name: "hero_title", widget: "text" }
+          - {
+              label: "Intro",
+              name: "intro",
+              widget: "object",
+              fields:
+                [
+                  { label: "Subhead", name: "subhead", widget: "text" },
+                  { label: "Description", name: "description", widget: "text" },
+                ],
+            }
+          - {
+              label: "Service Overview",
+              name: "service_overview",
+              widget: "object",
+              fields:
+                [
+                  {
+                    label: "Small Subhead",
+                    name: "subhead_small",
+                    widget: "string",
+                  },
+                  { label: "Subhead", name: "subhead", widget: "string" },
+                  { label: "Description", name: "description", widget: "text" },
+                ],
+            }
+          - {
+              label: "Services",
+              name: "services",
+              widget: object,
+              fields:
+                [
+                  {
+                    label: "Service Focus",
+                    name: "service_focus",
+                    widget: list,
+                    fields:
+                      [
+                        { label: "Heading", name: "heading", widget: string },
+                        { label: "Subheading", name: "subhead", widget: text },
+                        {
+                          label: "Description",
+                          name: "description",
+                          widget: text,
+                        },
+                        {
+                          label: "Service List",
+                          name: "service_list",
+                          widget: text,
+                        },
+                      ],
+                  },
+                ],
+            }
+      - file: "content/services/media/index.md"
+        label: "Media"
+        name: "media"
+        fields:
+          - { label: "Title", name: "Title", widget: "string" }
+          - {
+              label: "SEO",
+              name: seo,
+              widget: object,
+              fields:
+                [
+                  { label: "Title", name: "title", widget: string },
+                  { label: "Description", name: "description", widget: "text" },
+                  {
+                    label: "Featured Image",
+                    name: "featured_image",
+                    widget: "image",
+                  },
+                  {
+                    label: "Featured Image Alt Text",
+                    name: "featured_image_alt",
+                    widget: "string",
+                  },
+                ],
+            }
+          - { label: "Hero Title", name: "hero_title", widget: "text" }
+          - {
+              label: "Intro",
+              name: "intro",
+              widget: "object",
+              fields:
+                [
+                  { label: "Subhead", name: "subhead", widget: "text" },
+                  { label: "Description", name: "description", widget: "text" },
+                ],
+            }
+          - {
+              label: "Service Overview",
+              name: "service_overview",
+              widget: "object",
+              fields:
+                [
+                  {
+                    label: "Small Subhead",
+                    name: "subhead_small",
+                    widget: "string",
+                  },
+                  { label: "Subhead", name: "subhead", widget: "string" },
+                  { label: "Description", name: "description", widget: "text" },
+                ],
+            }
+          - {
+              label: "Services",
+              name: "services",
+              widget: object,
+              fields:
+                [
+                  {
+                    label: "Service Focus",
+                    name: "service_focus",
+                    widget: list,
+                    fields:
+                      [
+                        { label: "Heading", name: "heading", widget: string },
+                        { label: "Subheading", name: "subhead", widget: text },
+                        {
+                          label: "Description",
+                          name: "description",
+                          widget: text,
+                        },
+                        {
+                          label: "Service List",
+                          name: "service_list",
+                          widget: text,
+                        },
+                      ],
+                  },
+                ],
+            }
       - file: "content/services/web/index.md"
         label: "Web"
         name: "web"
         fields:
-          - { label: "Title", name: Title, widget: "string" }
+          - { label: "Title", name: "Title", widget: "string" }
+          - {
+              label: "SEO",
+              name: seo,
+              widget: object,
+              fields:
+                [
+                  { label: "Title", name: "title", widget: string },
+                  { label: "Description", name: "description", widget: "text" },
+                  {
+                    label: "Featured Image",
+                    name: "featured_image",
+                    widget: "image",
+                  },
+                  {
+                    label: "Featured Image Alt Text",
+                    name: "featured_image_alt",
+                    widget: "string",
+                  },
+                ],
+            }
+          - { label: "Hero Title", name: "hero_title", widget: "text" }
+          - {
+              label: "Intro",
+              name: "intro",
+              widget: "object",
+              fields:
+                [
+                  { label: "Subhead", name: "subhead", widget: "text" },
+                  { label: "Description", name: "description", widget: "text" },
+                ],
+            }
+          - {
+              label: "Service Overview",
+              name: "service_overview",
+              widget: "object",
+              fields:
+                [
+                  {
+                    label: "Small Subhead",
+                    name: "subhead_small",
+                    widget: "string",
+                  },
+                  { label: "Subhead", name: "subhead", widget: "string" },
+                  { label: "Description", name: "description", widget: "text" },
+                ],
+            }
+          - {
+              label: "Services",
+              name: "services",
+              widget: object,
+              fields:
+                [
+                  {
+                    label: "Service Focus",
+                    name: "service_focus",
+                    widget: list,
+                    fields:
+                      [
+                        { label: "Heading", name: "heading", widget: string },
+                        { label: "Subheading", name: "subhead", widget: text },
+                        {
+                          label: "Description",
+                          name: "description",
+                          widget: text,
+                        },
+                        {
+                          label: "Service List",
+                          name: "service_list",
+                          widget: text,
+                        },
+                      ],
+                  },
+                ],
+            }
+      - file: "content/services/design/index.md"
+        label: "Design"
+        name: "design"
+        fields:
+          - { label: "Title", name: "Title", widget: "string" }
+          - {
+              label: "SEO",
+              name: seo,
+              widget: object,
+              fields:
+                [
+                  { label: "Title", name: "title", widget: string },
+                  { label: "Description", name: "description", widget: "text" },
+                  {
+                    label: "Featured Image",
+                    name: "featured_image",
+                    widget: "image",
+                  },
+                  {
+                    label: "Featured Image Alt Text",
+                    name: "featured_image_alt",
+                    widget: "string",
+                  },
+                ],
+            }
+          - { label: "Hero Title", name: "hero_title", widget: "text" }
+          - {
+              label: "Intro",
+              name: "intro",
+              widget: "object",
+              fields:
+                [
+                  { label: "Subhead", name: "subhead", widget: "text" },
+                  { label: "Description", name: "description", widget: "text" },
+                ],
+            }
+          - {
+              label: "Service Overview",
+              name: "service_overview",
+              widget: "object",
+              fields:
+                [
+                  {
+                    label: "Small Subhead",
+                    name: "subhead_small",
+                    widget: "string",
+                  },
+                  { label: "Subhead", name: "subhead", widget: "string" },
+                  { label: "Description", name: "description", widget: "text" },
+                ],
+            }
+          - {
+              label: "Services",
+              name: "services",
+              widget: object,
+              fields:
+                [
+                  {
+                    label: "Service Focus",
+                    name: "service_focus",
+                    widget: list,
+                    fields:
+                      [
+                        { label: "Heading", name: "heading", widget: string },
+                        { label: "Subheading", name: "subhead", widget: text },
+                        {
+                          label: "Description",
+                          name: "description",
+                          widget: text,
+                        },
+                        {
+                          label: "Service List",
+                          name: "service_list",
+                          widget: text,
+                        },
+                      ],
+                  },
+                ],
+            }
+      - file: "content/services/digital/index.md"
+        label: "Digital"
+        name: "digital"
+        fields:
+          - { label: "Title", name: "Title", widget: "string" }
+          - {
+              label: "SEO",
+              name: seo,
+              widget: object,
+              fields:
+                [
+                  { label: "Title", name: "title", widget: string },
+                  { label: "Description", name: "description", widget: "text" },
+                  {
+                    label: "Featured Image",
+                    name: "featured_image",
+                    widget: "image",
+                  },
+                  {
+                    label: "Featured Image Alt Text",
+                    name: "featured_image_alt",
+                    widget: "string",
+                  },
+                ],
+            }
+          - { label: "Hero Title", name: "hero_title", widget: "text" }
+          - {
+              label: "Intro",
+              name: "intro",
+              widget: "object",
+              fields:
+                [
+                  { label: "Subhead", name: "subhead", widget: "text" },
+                  { label: "Description", name: "description", widget: "text" },
+                ],
+            }
+          - {
+              label: "Service Overview",
+              name: "service_overview",
+              widget: "object",
+              fields:
+                [
+                  {
+                    label: "Small Subhead",
+                    name: "subhead_small",
+                    widget: "string",
+                  },
+                  { label: "Subhead", name: "subhead", widget: "string" },
+                  { label: "Description", name: "description", widget: "text" },
+                ],
+            }
+          - {
+              label: "Services",
+              name: "services",
+              widget: object,
+              fields:
+                [
+                  {
+                    label: "Service Focus",
+                    name: "service_focus",
+                    widget: list,
+                    fields:
+                      [
+                        { label: "Heading", name: "heading", widget: string },
+                        { label: "Subheading", name: "subhead", widget: text },
+                        {
+                          label: "Description",
+                          name: "description",
+                          widget: text,
+                        },
+                        {
+                          label: "Service List",
+                          name: "service_list",
+                          widget: text,
+                        },
+                      ],
+                  },
+                ],
+            }
+      - file: "content/services/studio/index.md"
+        label: "Studio"
+        name: "studio"
+        fields:
+          - { label: "Title", name: "Title", widget: "string" }
+          - {
+              label: "SEO",
+              name: seo,
+              widget: object,
+              fields:
+                [
+                  { label: "Title", name: "title", widget: string },
+                  { label: "Description", name: "description", widget: "text" },
+                  {
+                    label: "Featured Image",
+                    name: "featured_image",
+                    widget: "image",
+                  },
+                  {
+                    label: "Featured Image Alt Text",
+                    name: "featured_image_alt",
+                    widget: "string",
+                  },
+                ],
+            }
+          - { label: "Hero Title", name: "hero_title", widget: "text" }
+          - {
+              label: "Intro",
+              name: "intro",
+              widget: "object",
+              fields:
+                [
+                  { label: "Subhead", name: "subhead", widget: "text" },
+                  { label: "Description", name: "description", widget: "text" },
+                ],
+            }
+          - {
+              label: "Service Overview",
+              name: "service_overview",
+              widget: "object",
+              fields:
+                [
+                  {
+                    label: "Small Subhead",
+                    name: "subhead_small",
+                    widget: "string",
+                  },
+                  { label: "Subhead", name: "subhead", widget: "string" },
+                  { label: "Description", name: "description", widget: "text" },
+                ],
+            }
+          - {
+              label: "Services",
+              name: "services",
+              widget: object,
+              fields:
+                [
+                  {
+                    label: "Service Focus",
+                    name: "service_focus",
+                    widget: list,
+                    fields:
+                      [
+                        { label: "Heading", name: "heading", widget: string },
+                        { label: "Subheading", name: "subhead", widget: text },
+                        {
+                          label: "Description",
+                          name: "description",
+                          widget: text,
+                        },
+                        {
+                          label: "Service List",
+                          name: "service_list",
+                          widget: text,
+                        },
+                      ],
+                  },
+                ],
+            }
 
   - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Posts" # Used in the UI, ie.: "New Post"

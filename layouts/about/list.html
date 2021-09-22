@@ -1,15 +1,90 @@
 {{ define "main" }}
-<div class="staff-card-wrapper">
-    {{ range sort .Site.Data.staff "weight" "asc" }}
-    <a href="/about/{{ .name | urlize }}" class="staff-card bg-black">
-        <div class="staff-card__inner text-center">
+<section class="about-hero hero-lg">
+    <div class="wrapper block">
+        {{ with .Params.Hero }}
+        <h2 class="h5 text-center text-secondary shift-up">{{ .subhead }}</h2>
+        <h1 class="text-center">{{ .head | markdownify }}</h1>
+        <div class="flow">
+            {{.copy | markdownify }}
+            <a href="/services/" class="btn btn-primary">View Services</a>
+        </div>
+        {{ end }}
+    </div>
+</section>
+<section class="block wrapper-md">
+    <div class="flex flex-column flex-row-m">
+        {{ with .Params.industries }}
+        <div class="w-100 w-40-m image-wrapper">
+           <div class="cover-image">
+                <img src="{{ .image }}" alt="{{ .image_alt }}">
+           </div>
+        </div>
+        <div class="w-100 w-60-m flow">
+            <p class="h5">{{ .intro }}</p>
+            <ul class="industry-list">
+                {{ range .industries }}
+                <li>{{ .industry }}</li>
+                {{ end }}
+            </ul>
+            <a href="/work/" class="btn btn-primary">View Our Latest Work</a>
+        </div>
+        {{ end }}
+    </div>
+</section>
+<section class="our-approach wrapper-md">
+    <div class="bg-black block flow">
+        <div class="wrapper">
+            {{ with .Params.approach }}
+            <h2 class="text-center">{{ .head }}</h2>
+            <h3 class="h5 text-center">{{ .subhead | markdownify }}</h3>
+            <p class="text-center">{{.description | markdownify }}</p>
+            <p>{{ .copy }}</p>
+            {{ end }}
+        </div>
+    </div>
+</section>
+<section class="wrapper-md team-image-grid block">
+    {{ range .Params.team_images }}
+    <div class="image-wrapper">
+        <div class="cover-image">
+            <img src="{{ .image }}" alt="{{ .image_alt }}">
+        </div>
+    </div>   
+    {{ end }}
+</section>
+<section class="wrapper-md">
+    {{ with .Params.meet_the_team }}
+    <h2>{{ .heading | markdownify }}</h2>
+    <p>{{ .copy | markdownify }}</p>
+    {{ end }}
+    <div class="staff-card-wrapper block">
+        {{ range sort .Site.Data.staff "about_order" "asc" }}
+        <a href="/about/{{ .name | urlize }}" class="staff-card bg-black">
+            <div class="staff-card__inner text-center">
                 <div class="staff-card__image-wrapper background-circle background-circle--lg">
                     <img src="{{ .image_jpg }}" alt="headshot of Insight Creative's {{ .job_title }}, {{ .name }}" class="staff-card__image">
                 </div>
                 <h3 class="staff-card__name">{{ .name }}</h3>
                 <h4 class="staff-card__job-title text-tertiary shift-up">{{ .job_title }}</h4>
+            </div>
+        </a>
+        {{ end }}
+    </div>
+</section>
+<section class="memberships wrapper-md">
+    <div class="block bg-black">
+        <div class="wrapper">
+            {{ with .Params.memberships }}
+            <h2 class="text-center">{{ .heading }}</h2>
+            <p>{{ .copy }}</p>
+            <div class="memberships__grid block">
+                {{ range .organizations }}
+                <img src="{{ .logo }}" alt="">
+                {{ end }}
+            </div>
+            {{ end }}
         </div>
-    </a>
-    {{ end }}
-</div>
+    </div>
+</section>
+{{ partialCached "cta" . }}
 {{ end }}
