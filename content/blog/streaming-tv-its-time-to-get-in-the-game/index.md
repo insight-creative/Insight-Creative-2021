@@ -16,7 +16,7 @@ page_class: single-post
 
 Streaming TV has been around for awhile, and if you haven’t already included it in your media plan, you may be missing the boat. People were already streaming their favorite shows before COVID kept them chained to their homes. However, after the pandemic those numbers certainly increased, as more people were in front of devices than ever, and these audiences continue to rise!
 
-## _Let’s get started!_
+## Let’s get started!
 
 There are various ways that audiences stream programs, in case you need a refresher …
 
@@ -33,7 +33,7 @@ Examples include:
 - Apple TV
 - Smart TV
 
-## _Find your favorite shows!_
+## Find your favorite shows!
 
 Next, consumers choose their favorite streaming app. There are two main kinds available: LIVE and ON DEMAND.
 
@@ -41,7 +41,7 @@ LIVE—These are cable channels available for download (likely still something y
 
 ON DEMAND—Like Hulu, Netflix, Amazon Prime, Disney+, YouTube TV, Sling, HBO Max and a whole host of others that keep appearing every day. Some are paid; some are free. These typically carry no live content and tend to be more popular for streaming.
 
-## _Time to advertise on those streaming networks!_
+## Time to advertise on those streaming networks!
 
 Finally, here are some things to keep in mind when placing ads on streaming networks …
 
@@ -50,7 +50,7 @@ Finally, here are some things to keep in mind when placing ads on streaming netw
 3. Targeting should mimic any other online campaigns you may be running. You can adjust the geography, demographics and behaviors that best suit your target audience. This allows for the best use of your advertising dollars and results in less wasted impressions.
 4. Great news for advertisers—these ads are non-skippable! Therefore, streaming TV ads have a high completion rate. The only way to miss the ad you place is for audiences to either turn off the show entirely or leave the room … and who is going to do that during a cliffhanger moment?!
 
-## _Final Takeaways._
+## Final Takeaways.
 
 So how do streaming TV ads figure into an advertiser’s overall budget?
 

@@ -47,6 +47,15 @@
   }
 }
 
+.share-buttons__list-items:nth-of-type(odd) {
+  .background-circle--sm {
+    &::after {
+      top: 2px;
+      left: -2px;
+    }
+  }
+}
+
 ul.share-buttons li {
   display: inline;
 }

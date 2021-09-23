@@ -1,5 +1,6 @@
 ---
 Title: Studio
+url: /services/photography-videography-services/
 seo:
   title: Photography and Videography Services in Green Bay, WI
   description: With a complete photography and video production studio under the same roof as our communications agency, Insight Creative can handle all of your photography needs. Contact Insight Creative today!

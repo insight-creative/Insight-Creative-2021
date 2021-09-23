@@ -1,30 +1,36 @@
 Service 1:
   name: Content
+  url: /services/copywriting-services/
   subservice1: Copywriting
   subservice2: Public Relations
   subservice3: Social Media
 Service 2:
   name: Web
+  url: /services/web-development/
   subservice1: Design
   subservice2: Development
   subservice3: Maintenance
 Service 3:
   name: Digital
+  url: /services/digital/
   subservice1: Streaming Ads
   subservice2: Display & Social
   subservice3: Search Engine Marketing (SEM)
 Service 4:
   name: Media
+  url: /services/media/
   subservice1: Research
   subservice2: Strategy
   subservice3: Buying
 Service 5:
   name: Design
+  url: /services/graphic-design-services/
   subservice1: Branding
   subservice2: Digital
   subservice3: Print
 Service 6:
   name: Studio
+  url: /services/photography-videography-services/
   subservice1: Photography
   subservice2: Videography
   subservice3: Drone

@@ -24,6 +24,4 @@ Founded by communication professionals over two decades ago, the Communicator Aw
 
 View Insight Creative’s award-winning television commercial “The Right Tires”:
 
-<div class="aspect-ratio">
-  <iframe src="https://www.youtube.com/embed/FZgdQvtaN_c?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
+{{< youtube FZgdQvtaN_c >}}

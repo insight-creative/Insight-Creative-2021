@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div class="sitemap-content wrapper block">
+    <div class="flex flex-column flex-row-m">
+        <div class="w-100 w-30-m">
+            <h3>Pages</h3>
+            <ul class="sitemap-nav-list">
+                {{ $pages := .Site.Pages }}
+                {{ range where $pages "Type" "!=" "blog" }}
+                    <li class="sitemap-nav-list-item">
+                        <a class="sitemap-nav-item" class="sitemap-nav-item" href="{{ .URL }}"
+                            title="{{ .Name }}">{{ .Title }}</a>
+                    </li>
+                {{ end }}
+            </ul>
+        </div>
+        <div class="w-100 w-70-m">
+            <h3>Blog Posts</h3>
+            <ul class="sitemap-nav-list">
+                {{ $pages := .Site.RegularPages }}
+                {{ $blog := where $pages "Type" "blog" }}
+                {{ range $blog }}
+                <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+</div>
+{{ end }}

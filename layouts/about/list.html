@@ -53,31 +53,38 @@
     {{ end }}
 </section>
 <section class="wrapper-md">
-    {{ with .Params.meet_the_team }}
-    <h2>{{ .heading | markdownify }}</h2>
-    <p>{{ .copy | markdownify }}</p>
-    {{ end }}
-    <div class="staff-card-wrapper block">
-        {{ range sort .Site.Data.staff "about_order" "asc" }}
-        <a href="/about/{{ .name | urlize }}" class="staff-card bg-black">
-            <div class="staff-card__inner text-center">
-                <div class="staff-card__image-wrapper background-circle background-circle--lg">
-                    <img src="{{ .image_jpg }}" alt="headshot of Insight Creative's {{ .job_title }}, {{ .name }}" class="staff-card__image">
-                </div>
-                <h3 class="staff-card__name">{{ .name }}</h3>
-                <h4 class="staff-card__job-title text-tertiary shift-up">{{ .job_title }}</h4>
-            </div>
-        </a>
+    <div class="wrapper">
+        {{ with .Params.meet_the_team }}
+        <h2>{{ .heading | markdownify }}</h2>
+        <p>{{ .copy | markdownify }}</p>
         {{ end }}
+    </div>
+    <div class="block">
+        <div class="staff-card-wrapper">
+            {{ range sort .Site.Data.staff "about_order" "asc" }}
+            <a href="/about/{{ .name | urlize }}" class="staff-card bg-black">
+                <div class="staff-card__inner text-center">
+                    <div class="staff-card__image-wrapper background-circle background-circle--lg">
+                        <img src="{{ .image_jpg }}" alt="headshot of Insight Creative's {{ .job_title }}, {{ .name }}" class="staff-card__image">
+                    </div>
+                    <h3 class="staff-card__name">{{ .name }}</h3>
+                    <h4 class="staff-card__job-title text-tertiary shift-up">{{ .job_title }}</h4>
+                </div>
+            </a>
+            {{ end }}
+        </div>
+        <div class="text-center">
+            <a href="/careers/" class="btn btn-primary">Join Our Team</a>
+        </div>
     </div>
 </section>
 <section class="memberships wrapper-md">
     <div class="block bg-black">
         <div class="wrapper">
             {{ with .Params.memberships }}
-            <h2 class="text-center">{{ .heading }}</h2>
+            <h2 class="text-center">{{ .heading | markdownify }}</h2>
             <p>{{ .copy }}</p>
-            <div class="memberships__grid block">
+            <div class="memberships__grid">
                 {{ range .organizations }}
                 <img src="{{ .logo }}" alt="">
                 {{ end }}

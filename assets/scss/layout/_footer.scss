@@ -132,7 +132,22 @@
     padding: 0;
 
     li {
+      position: relative;
       list-style-type: none;
+      padding: 0 0 0 $ic-400;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        height: 5px;
+        width: 5px;
+        margin: 0 10px;
+        border-radius: 50%;
+        background-color: $light-gray;
+      }
     }
   }
 
@@ -142,7 +157,6 @@
 
   &__nav-item {
     color: $white;
-    padding: 0.5rem 0;
     transform: translateX(0);
     display: block;
 
@@ -151,13 +165,19 @@
       transform: translateX(5px);
     }
   }
+
+  &__nav-list-item + .footer__nav-list-item {
+    a {
+      padding-top: $ic-100;
+    }
+  }
 }
 
 .ghost-footer {
-  height: 675px;
+  height: 525px;
   pointer-events: none;
 
   @include breakpoint(md) {
-    height: 615px;
+    height: 575px;
   }
 }

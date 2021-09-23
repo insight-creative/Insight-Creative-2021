@@ -19,7 +19,7 @@ h6 {
   font-family: $primary-font;
   font-weight: 500;
   color: $light-gray;
-  line-height: calc(2px + 2ex + 2px);
+  line-height: 1.2;
   margin-block-end: 0.65em;
   margin-top: 0;
 }
@@ -120,7 +120,7 @@ h6,
 
 .friday-vibes-white {
   font-family: "Friday Vibes";
-  font-size: $ic-900;
+  font-size: clamp($ic-600, 4vw, $ic-900);
   margin: 0 1rem;
 }
 
@@ -206,4 +206,8 @@ h6,
 
 .text-underline {
   text-decoration: underline;
+}
+
+.text-underline--tertiary {
+  text-decoration-color: $tertiary-color;
 }

@@ -16,12 +16,17 @@
     @include breakpoint(md) {
       columns: 2;
     }
+
+    li::marker {
+      color: $secondary-color;
+    }
   }
 
   .w-40-m + .w-60-m {
     margin-top: $ic-600;
 
     @include breakpoint(md) {
+      margin-top: 0;
       margin-left: $ic-900;
     }
   }
@@ -62,6 +67,7 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: $ic-600;
+      margin-top: $ic-600;
 
       @include breakpoint(sm) {
         grid-template-columns: repeat(3, 1fr);

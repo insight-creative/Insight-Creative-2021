@@ -58,19 +58,11 @@
   }
 }
 
-.staff-card:nth-of-type(even) {
-  .staff-card__image-wrapper {
-    &:after {
-      top: 0;
-    }
-  }
-}
-
 .staff-card:nth-of-type(odd) {
   .staff-card__image-wrapper {
     &:after {
-      top: 7px;
-      left: -7px;
+      top: 5px;
+      left: -5px;
     }
   }
 }

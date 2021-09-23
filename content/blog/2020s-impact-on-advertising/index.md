@@ -20,21 +20,15 @@ On both the national and local level, advertisers leaned into the events of 2020
 
 When we live through hard times, opportunities for creativity and new ideas often become even more apparent, notably with these new “shared” (and socially distant) experiences. Apple took advantage of the “Work from Home” moment to display how their products can help make working remotely easier, especially when your home life is chaotic already.
 
-<div class="aspect-ratio">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/6_pru8U2RmM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{< youtube 6_pru8U2RmM >}}
 
 In a lighthearted response to a very dark year, other companies took a humorous approach, like Match.com employing Satan himself as a character who romantically “matched” with the year 2020.
 
-<div class="aspect-ratio">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/L4l0rCjatGI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{< youtube L4l0rCjatGI >}}
 
 Other advertisers used their platforms to spread messages of hope and resilience in the face of hard times. Nike masterfully edited together familiar clips of different sports moments that fit together so well, tugging at our heartstrings and making us yearn for a time when sports (and stands full of fans) are safe again.
 
-<div class="aspect-ratio">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/WA4dDs0T7sM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{< youtube WA4dDs0T7sM >}}
 
 Here at Insight, we’ve had to tackle many unconventional projects due to the pandemic. From lobby closures and new procedure notices at Bank of Luxemburg to implementing social distancing guidelines through environmental and social graphics at Ho-Chunk Gaming Nekoosa, we’ve been able to creatively and quickly respond to the changing needs of our clients throughout 2020.
 

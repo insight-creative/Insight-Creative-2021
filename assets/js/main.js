@@ -4,7 +4,6 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Scrollbar from 'smooth-scrollbar'
 // import { pageTransitionOut, pageTransitionIn, contentAnimation, updateMenu } from './partials';
-import { updateMenu } from './partials'
 
 barba.use(barbaPrefetch)
 gsap.registerPlugin(ScrollTrigger)
@@ -662,6 +661,24 @@ function pageTransitionOut ({ container }) {
   }, 0)
     .from(container, { y: -150 }, 0)
   return tl
+}
+
+function updateMenu() {
+  const currentLocation = location.href;
+  const menuItem = document.querySelectorAll(".nav-list .nav-item");
+  // for (let i = 0; i < menuLength; i++) {
+  //     menuItem[i].classList.remove("current");
+  //     if (menuItem[i].href === currentLocation) {
+  //         menuItem[i].classList.add("current");
+  //     }
+  // }
+  for (let menu of menuItem) {
+      menu.classList.remove("current");
+      if (menu.href === currentLocation) {
+          menu.classList.add("current");
+      }
+  }
+
 }
 
 function initPage () {

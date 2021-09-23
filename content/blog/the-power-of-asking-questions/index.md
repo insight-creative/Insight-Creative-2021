@@ -20,9 +20,7 @@ I encourage you to ask questions in all aspects of your life especially in the w
 
 The power of asking questions can be seen in every successful ad, but Kraft Mac & Cheese is my favorite example. In the past, they marketed solely to children, branding it as a kid’s food. But they shook things up in 2010 and started targeting parents in their ads. They had enough guts to ask if they were missing out on any audiences, and after quite a bit of research, they found adults love Mac & Cheese just as much as kids do … so much that they found parents actually steal the tasty treat off of their children’s plates. Kraft embraced this knowledge and applied it to their marketing strategy, making clever and effective ads. Take a look at their brilliance <a href="http://www.adweek.com/news/advertising-branding/spot-thick-thieves-140542" target="_blank" rel="noopener noreferrer">here</a>.
 
-<div class="aspect-ratio">
-  <iframe width="640" height="360" src="//www.youtube.com/embed/LSnbGhYkrWE?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
+{{< youtube LSnbGhYkrWE >}}
 
 As proven by the success of Kraft, there is reward in asking the right questions. I encourage you to consider:
 

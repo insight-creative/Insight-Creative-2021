@@ -10,7 +10,7 @@
     <div class="wrapper-lg fade-up">
       <div class="service-list__grid">
         {{ range .Site.Data.services }}
-        <a href="/services/{{ lower .name }}" class="service-list__link">
+        <a href="{{ .url }}" class="service-list__link">
           <div class="service-list__service-card flex flex-center">
             <div class="service-list__icon-wrapper w-40">
                 <div class="service-list__icon background-circle background-circle--md">
