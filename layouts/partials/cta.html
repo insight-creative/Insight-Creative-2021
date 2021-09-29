@@ -2,16 +2,16 @@
     <div class="wrapper-md">
         <div class="site-cta__content block bg-red fade-up">
             <div class="site-cta__inner flow">
-                <div class="site-cta__sales-team-wrapper">
+                <div class="sales-grid">
                     {{ range sort .Site.Data.staff "weight" "asc" }}
-                {{ if eq .department "Sales" }}
-                <div class="site-cta__sales">
-                    <div class="staff-card__image-wrapper background-circle background-circle--lg">
-                        <img src="{{ .image_jpg }}" alt="headshot of Insight Creative's {{ .job_title }}, {{ .name }}" class="staff-card__image">
-                    </div>
-                </div>
-                {{ end }}
-                {{ end }}
+                        {{ if eq .department "Sales" }}
+                        <div class="site-cta__sales">
+                            <div class="staff-card__image-wrapper background-circle background-circle--lg">
+                                <img src="{{ .image_jpg }}" alt="headshot of Insight Creative's {{ .job_title }}, {{ .name }}" class="staff-card__image">
+                            </div>
+                        </div>
+                        {{ end }}
+                    {{ end }}
                 </div>
                 <p class="h3">How can we help <span class="emphasis-underline">you?</span></p>
                 <p class="h5">Let’s talk about bringing <span class="emphasis-white">substance</span> to your brand.</p>

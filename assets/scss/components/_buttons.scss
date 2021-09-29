@@ -23,10 +23,14 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 46px;
+    width: 40px;
     border-radius: 50px;
     z-index: -1;
     transition: 0.3s ease;
+
+    @include breakpoint(md) {
+      width: 46px;
+    }
   }
 
   &:hover,
@@ -90,5 +94,25 @@ button {
   &:hover,
   &:focus {
     color: $primary-color;
+  }
+}
+
+.btn-arrow {
+  text-decoration: none;
+
+  svg {
+    width: 20px;
+    height: 20px;
+    fill: $light-gray;
+    vertical-align: middle;
+    transform: translateX(0);
+    transition: 0.3s ease;
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      transform: translateX(5px);
+    }
   }
 }

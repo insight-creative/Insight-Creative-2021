@@ -1,0 +1,42 @@
+.work-hero {
+  height: 70vh;
+  position: relative;
+
+  &__image-wrapper {
+    margin-bottom: 1rem;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+  }
+
+  &__header {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    // border-bottom: 1px solid $dark-black;
+  }
+
+  @include breakpoint(md) {
+    &__header {
+      position: relative;
+      top: -150px;
+    }
+  }
+}
+
+.work-specs {
+  margin-top: $ic-300;
+
+  @include breakpoint(md) {
+    margin-top: 9.313rem;
+    margin-top: $ic-800;
+  }
+
+  ul {
+    padding: 0;
+
+    li {
+      list-style-type: none;
+    }
+  }
+}

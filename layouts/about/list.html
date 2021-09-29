@@ -32,7 +32,7 @@
     </div>
 </section>
 <section class="our-approach wrapper-md">
-    <div class="bg-black block flow">
+    <div class="bg-black block flow fade-up">
         <div class="wrapper">
             {{ with .Params.approach }}
             <h2 class="text-center">{{ .head }}</h2>
@@ -45,7 +45,7 @@
 </section>
 <section class="wrapper-md team-image-grid block">
     {{ range .Params.team_images }}
-    <div class="image-wrapper">
+    <div class="image-wrapper fade-up">
         <div class="cover-image">
             <img src="{{ .image }}" alt="{{ .image_alt }}">
         </div>
@@ -53,14 +53,14 @@
     {{ end }}
 </section>
 <section class="wrapper-md">
-    <div class="wrapper">
+    <div class="wrapper fade-up">
         {{ with .Params.meet_the_team }}
         <h2>{{ .heading | markdownify }}</h2>
         <p>{{ .copy | markdownify }}</p>
         {{ end }}
     </div>
     <div class="block">
-        <div class="staff-card-wrapper">
+        <div class="staff-card-wrapper fade-up">
             {{ range sort .Site.Data.staff "about_order" "asc" }}
             <a href="/about/{{ .name | urlize }}" class="staff-card bg-black">
                 <div class="staff-card__inner text-center">
@@ -79,7 +79,7 @@
     </div>
 </section>
 <section class="memberships wrapper-md">
-    <div class="block bg-black">
+    <div class="block bg-black fade-up">
         <div class="wrapper">
             {{ with .Params.memberships }}
             <h2 class="text-center">{{ .heading | markdownify }}</h2>

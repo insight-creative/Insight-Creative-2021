@@ -1,17 +1,96 @@
 {{ define "main" }}
-<div class="staff-card-wrapper">
-{{ range sort .Site.Data.staff "weight" "asc" }}
-{{ if eq .department "Sales" }}
-<a href="#" class="staff-card bg-black">
-    <div class="staff-card__inner text-center">
-        <div class="staff-card__image-wrapper background-circle background-circle--lg">
-            <img src="{{ .image_jpg }}" alt="headshot of Insight Creative's {{ .job_title }}, {{ .name }}" class="staff-card__image">
+<div class="bg-black block text-center">
+    <div class="wrapper">
+        <h1 class="no-margin">(FPO)Contact Insight</h1>
+        <h2 class="h4">(FPO)Ready to start a project? Fill out the form and one of our account executives, will be in touch with you as soon as possible.</h2>
+        <div class="sales-grid">
+            {{ range sort .Site.Data.staff "weight" "asc" }}
+                {{ if eq .department "Sales" }}
+                <div class="sales-grid__sales">
+                    <div class="staff-card__image-wrapper background-circle background-circle--lg">
+                        <img src="{{ .image_jpg }}" alt="headshot of Insight Creative's {{ .job_title }}, {{ .name }}" class="staff-card__image">
+                    </div>
+                    <h3 class="staff-card__name">{{ .name }}</h3>
+                </div>
+                {{ end }}
+            {{ end }}
         </div>
-        <h3 class="staff-card__name">{{ .name }}</h3>
-        <h4 class="staff-card__job-title text-tertiary shift-up">{{ .job_title }}</h4>
     </div>
-</a>
-{{ end }}
-{{ end }}
+</div>
+<div class="block wrapper-md">
+    <div class="flex flex-column flex-row-m">
+        <div class="w-100 w-60-m">
+            <div class="contact-form">
+                <h4 class="no-margin">Send a Message</h4>
+                <div class="contact-form__wrapper">
+                    <form name="contact" netlify netlify-honeypot="bot-field" action="/thank-you">
+                        <div hidden>
+                            <label>
+                              Don’t fill this out if you're human: 
+                              <input name="bot-field" />
+                            </label>
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="name">Name*</label>
+                            <input name="name" type="name" class="contact-form__form-control" required>
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="email">Email*</label>
+                            <input name="_replyto" type="email" class="contact-form__form-control" required>
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="name">Phone</label>
+                            <input name="phone" type="tel" class="contact-form__form-control">
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="name">Company Name</label>
+                            <input name="company-name" type="name" class="contact-form__form-control">
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="email">What do you need help with?*</label>
+                            <select name="phone" type="select" class="contact-form__form-control" required>
+                                <option value="Web Design and Development">Please Select</option>
+                                <option value="Copywriting / PR / Social Media">Copywriting / PR / Social Media</option> 
+                                <option value="Media Buying">Media Buying</option> 
+                                <option value="Website Design / Website Development">Website Design / Website Development</option>
+                                <option value="Branding / Digital / Print Design">Branding / Digital / Print Design</option>
+                                <option value="Digital Marketing">Digital Marketing</option>
+                                <option value="Photography / Videography / Drone">Photography / Videography / Drone</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="message">Message*</label>
+                            <textarea name="message" class="contact-form__form-control" rows="4" required></textarea>
+                        </div>
+                        <div style="margin-bottom: 1em;" netlify-recaptcha></div>
+                        <button target="_blank" type="submit" class="contact-form__btn btn btn-primary">Send
+                            Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="contact-sidebar w-100 w-40-m">
+            <div class="contact-sidebar__info flow">
+                <h2 class="h4">Visit Insight</h2>
+                <p>
+                    {{ .Site.Params.addressSt }}<br>
+                    {{ .Site.Params.addressCity }}<br>
+                    <a href="https://goo.gl/maps/2MNcw6Dko8Qt9RNs5" target="_blank" rel="noopener noreferrer">Get Directions</a>
+                </p>
+                <p>Call Us <a href="tel:{{ .Site.Params.phone }}">{{ .Site.Params.phone }}</a></p>
+            </div>
+            <div class="contact-sidebar__work flow block">
+                <h2 class="h4">Have a project but not quite ready to contact us?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, veritatis.</p>
+                <a href="/work/" class="btn btn-primary">View Our Work</a>
+            </div>
+            <div class="contact-sidebar__cta flow block">
+                <h2 class="h4">Careers at Insight</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, veritatis.</p>
+                <a href="/careers/" class="btn btn-primary">Join Our Team</a>
+            </div>
+        </div>
+    </div>
 </div>
 {{ end }}

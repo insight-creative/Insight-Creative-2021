@@ -1,9 +1,11 @@
 {{ define "main" }}
-<div class="wrapper-md block text-center">
-  <h1 class="no-margin">Insight Blog</h1>
-  <h2 class="h4">Insight Blog Subtitle?</h2>
+<div class="bg-black block text-center">
+  <div class="wrapper">
+    <h1 class="no-margin">The Insight Blog</h1>
+    <h2 class="h3">Practical advertising tips for content marketing, branding, web design and so much more</h2>
+  </div>
 </div>
-<div class="wrapper-md">
+<div class="wrapper-md padding-top-6">
   <div class="category-wrapper">
     <button class="btn-filter">{{ partialCached "svg-icons/filter.svg" . }} Filter by Category</button>
       {{- if isset site.Taxonomies "categories" }}

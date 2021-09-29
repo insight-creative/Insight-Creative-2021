@@ -79,14 +79,11 @@ h6,
 
 .emphasis-underline {
   font-family: "Friday Vibes";
-  font-size: $ic-700;
+  font-size: clamp($ic-700, 4vw, $ic-900);
   position: relative;
-  top: 8px;
+  top: 6px;
   z-index: 1;
-
-  @include breakpoint(md) {
-    font-size: $ic-900;
-  }
+  line-height: 0.5;
 
   &::after {
     position: absolute;

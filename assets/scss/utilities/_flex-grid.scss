@@ -1,0 +1,14 @@
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $ic-300;
+  margin-top: $ic-300;
+
+  .parallax-wrapper {
+    flex: 1 1 200px;
+  }
+
+  picture {
+    flex: 1 1 200px;
+  }
+}
