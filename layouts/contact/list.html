@@ -1,8 +1,8 @@
 {{ define "main" }}
 <div class="contact-hero bg-black block text-center">
-    <div class="wrapper">
-        <h1 class="no-margin">(FPO)Contact Insight</h1>
-        <h2 class="h4">(FPO)Ready to start a project? Fill out the form and one of our account executives, will be in touch with you as soon as possible.</h2>
+    <div class="wrapper-md flow">
+        <h1 class="no-margin">{{ .Params.hero.head | markdownify }}</h1>
+        <h2 class="h4">{{ .Params.hero.copy | markdownify }}</h2>
         <div class="sales-grid">
             {{ range sort .Site.Data.staff "weight" "asc" }}
                 {{ if eq .department "Sales" }}
@@ -21,7 +21,7 @@
     <div class="flex flex-column flex-row-m">
         <div class="w-100 w-60-m">
             <div class="contact-form">
-                <h4 class="no-margin">Send a Message</h4>
+                <h4 class="no-margin">Contact Insight Creative</h4>
                 <div class="contact-form__wrapper">
                     <form name="contact" netlify netlify-honeypot="bot-field" action="/thank-you">
                         <div hidden>
@@ -72,7 +72,8 @@
         </div>
         <div class="contact-sidebar w-100 w-40-m">
             <div class="contact-sidebar__info flow">
-                <h2 class="h4">Visit Insight</h2>
+                <h2 class="h4 no-margin">Come on over</h2>
+                <p>Meet our friendly and capable in-house team. Plus, tour of our facility and studio!</p>
                 <p>
                     {{ .Site.Params.addressSt }}<br>
                     {{ .Site.Params.addressCity }}<br>
@@ -81,13 +82,13 @@
                 <p>Call Us <a href="tel:{{ .Site.Params.phone }}">{{ .Site.Params.phone }}</a></p>
             </div>
             <div class="contact-sidebar__work flow block">
-                <h2 class="h4">Have a project but not quite ready to contact us?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, veritatis.</p>
+                <h2 class="h4">Not ready to reach out?</h2>
+                <p>See how other brands benefit from our full-service approach.</p>
                 <a href="/work/" class="btn btn-primary">View Our Work</a>
             </div>
             <div class="contact-sidebar__cta flow block">
                 <h2 class="h4">Careers at Insight</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, veritatis.</p>
+                <p>Looking for a job that doesn’t feel like work?</p>
                 <a href="/careers/" class="btn btn-primary">Join Our Team</a>
             </div>
         </div>

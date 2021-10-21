@@ -1,7 +1,7 @@
 {{ define "main" }}
 <section class="about-hero hero-lg">
     <div class="wrapper block">
-        {{ with .Params.Hero }}
+        {{ with .Params.hero }}
         <h2 class="h5 text-center text-secondary shift-up">{{ .subhead }}</h2>
         <h1 class="text-center">{{ .head | markdownify }}</h1>
         <div class="flow">

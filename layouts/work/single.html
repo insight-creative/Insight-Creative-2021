@@ -57,15 +57,33 @@
     </div>
 </div>
 <div class="work-body">
-    <div class="block wrapper">
-        {{ .Params.intro }}
+    <div class="block wrapper flow">
+        {{ .Params.intro | markdownify }}
     </div>
     <div class="padding-bottom-9">
         {{ .Content }}
     </div>
 </div>
+{{ if .Params.testimonial }}
+<div class="wrapper-md padding-bottom-9">
+    <div class="block bg-black">
+        <div class="wrapper-sm flow">
+            <div class="quote">
+                {{ partial "svg-icons/quote.svg" . }}
+            </div>
+            {{ with .Params.testimonial }}
+            <p>{{ .copy }}</p>
+            <div>
+                <h3 class="h5 no-margin">{{ .author }}</h3>
+                <h4 class="h6 no-margin">{{ .client }}</h4>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}
 <div class="wrapper-lg">
-    {{ partial "blog/post-navigation" . }}
+    {{ partial "work/project-navigation" . }}
 </div>
 {{ $related := .Site.RegularPages.RelatedIndices . "tags" | first 3 }}
 {{ with $related }}

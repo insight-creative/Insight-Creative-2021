@@ -42,7 +42,17 @@
   }
 }
 
-.related-projects {
+.work-body {
+  .flex-grid:first-of-type {
+    margin-top: 0;
+  }
+
+  iframe {
+    margin-top: $ic-300;
+  }
+}
+
+.related-projects, .work {
   .blog-card__meta {
     top: 0;
   }

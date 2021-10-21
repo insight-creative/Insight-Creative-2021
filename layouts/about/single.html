@@ -6,9 +6,10 @@
         </div>
         <div class="wrapper-sm">
             <h1 class="h2 author__name text-center">{{ (index .Site.Data.staff .Params.author).name }}</h1>
-            <h2 class="h4 author__job-title text-tertiary text-center shift-up">{{ (index .Site.Data.staff .Params.author).job_title }}</h2>
+            <h2 class="h5 author__job-title text-tertiary text-center shift-up">{{ (index .Site.Data.staff .Params.author).job_title }}</h2>
         </div>
         <p>{{ (index .Site.Data.staff .Params.author).bio }}</p>
+        <a href="/about/">Back to all staff</a>
     </div>
 </section>
 <section class="authors-posts">
@@ -16,7 +17,7 @@
     <div class="authors-posts__inner post-wrapper wrapper-md padding-top-9">
         {{ $pages := .Site.RegularPages }}
         {{ $blog := where $pages "Type" "blog" }}
-        {{ $posts := where $blog "Params.author" (.Title | title) }}
+        {{ $posts := where $blog "Params.author" (.Title) }}
         {{- range $posts -}}
         {{ .Render "blog-cards" }}
         {{ end }}

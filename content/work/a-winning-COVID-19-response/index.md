@@ -17,6 +17,10 @@ provided_services:
       url: /services/graphic-design-services/
 tags:
   - Campaigns
+testimonial: 
+  copy: "Insight Creative is easy to work with, offering fun, innovative ideas. In a short amount of time, this small team of steam has impressed us with their outside-the-box thought processes based on streamlined systems."
+  author: Ericka Totzke, Director of Marketing
+  client: Ho-Chunk Gaming Nekoosa
 ---
 
 <div class="wrapper-md">
