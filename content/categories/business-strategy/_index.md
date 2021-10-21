@@ -1,4 +1,5 @@
 ---
 title: Business Strategy
-description: test business strategy category description
+category_title: Business strategy insights
+description: Spot trends, get ahead of the competition, and grow your business with tips from experienced professionals.
 ---

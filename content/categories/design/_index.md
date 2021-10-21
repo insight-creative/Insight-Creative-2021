@@ -1,4 +1,5 @@
 ---
 title: Design
-description: a design category description
+category_title: Design insights
+description: Get tips and trends from our talented artists.
 ---

@@ -68,3 +68,7 @@ div.ctct-form-embed form.ctct-form-custom .ctct-form-required:before {
     background-color: $primary-color;
   }
 }
+
+.g-recaptcha {
+  display: none !important;
+}

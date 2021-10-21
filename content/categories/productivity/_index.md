@@ -1,4 +1,5 @@
 ---
 title: Productivity
-description: a Productivity category description
+category_title: Productivity insights
+description: Work smarter, not harder with tech tips and tricks from experienced professionals.
 ---
