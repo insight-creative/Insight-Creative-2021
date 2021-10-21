@@ -16,7 +16,7 @@ provided_services:
     - service: Design
       url: /services/graphic-design-services/
 tags:
-  - Web & Digital
+  - Digital
 ---
 
 <div class="flex-grid">

@@ -9,24 +9,23 @@
   }
 
   &__next a,
-  &__prev a {
+  &__prev a,
+  &__back a {
     display: flex;
     text-decoration: none;
 
     &:hover,
     &:focus {
-      color: $secondary-color;
+      color: $primary-color;
 
       svg {
-        fill: $secondary-color;
+        stroke: $primary-color;
       }
     }
   }
 
   &__next {
-    svg {
-      margin-left: 1rem;
-    }
+    margin-left: $ic-200;
 
     &:hover,
     &:focus {
@@ -37,9 +36,7 @@
   }
 
   &__prev {
-    svg {
-      margin-right: 1rem;
-    }
+    margin-right: $ic-200;
 
     &:hover,
     &:focus {
@@ -51,7 +48,7 @@
 
   svg {
     width: 20px;
-    fill: $white;
+    stroke: $white;
     transition: 0.3s ease;
   }
 }

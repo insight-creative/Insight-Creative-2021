@@ -13,6 +13,7 @@
                     {{ end }}
                     <h1>{{ .Params.seo.title | markdownify }}</h1>
                     {{ .Content }}
+                    <hr></hr>
                 </article>
                 <div class="share-this share-this--row flex flex-column flex-row-m">
                     {{ partial "blog/share-buttons" . }}
@@ -20,7 +21,9 @@
                 {{ partial "blog/post-author" . }}
             </div>
         </div>
-        {{ partial "blog/post-navigation-alt" . }}
+        <div class="wrapper-lg">
+            {{ partial "blog/post-navigation" . }}
+        </div>
         {{ partial "blog/related-posts" . }}
     </div>
 {{ end }}

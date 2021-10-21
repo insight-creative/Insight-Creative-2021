@@ -1,0 +1,70 @@
+.ctct-form-embed.form_0 .ctct-form-defaults {
+  background-color: $dark-black !important;
+  padding: 0 !important;
+}
+
+#email_address_label_0 {
+  position: relative;
+  left: 10px;
+  color: $light-gray !important;
+}
+
+div.ctct-form-embed form.ctct-form-custom .ctct-form-required:before {
+  color: $primary-color !important;
+}
+
+.ctct-form-element {
+  background-color: $body-black !important;
+  border-radius: 0 !important;
+  border: none !important;
+}
+
+#gdpr_text {
+  display: none;
+}
+
+.ctct-form-button {
+  display: inline-block;
+  padding: 0.5rem 2.5rem !important;
+  text-align: left !important;
+  text-decoration: none;
+  text-transform: uppercase !important;
+  font-size: $ic-200 !important;
+  background-color: transparent !important;
+  border: none !important;
+
+  @include breakpoint(md) {
+    font-size: $ic-300 !important;
+  }
+}
+
+.ctct-form-button {
+  position: relative;
+  z-index: 1;
+  color: $light-gray !important;
+
+  &:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 36px;
+    border-radius: 50px;
+    z-index: -1;
+    transition: 0.3s ease;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      width: 100%;
+    }
+  }
+}
+
+.ctct-form-button {
+  &::before {
+    background-color: $primary-color;
+  }
+}

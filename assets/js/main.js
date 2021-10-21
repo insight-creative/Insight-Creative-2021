@@ -646,6 +646,14 @@ function pageTransitionIn ({ container }) {
 }
 
 function pageTransitionOut ({ container }) {
+
+  const mobileNav = document.querySelector(".nav-list");
+
+    if (mobileNav.classList.contains("nav-open")) {
+        mobileNav.classList.remove("nav-open");
+        hamburger.classList.remove("is-active");
+    }
+
   const tl = gsap.timeline({
     defaults: {
       duration: 0.9,

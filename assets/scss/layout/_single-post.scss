@@ -1,6 +1,6 @@
 .post {
   &__body {
-    border-bottom: 1px solid $dark-black;
+    // border-bottom: 1px solid $dark-black;
     padding-bottom: $ic-300;
   }
 
@@ -36,6 +36,22 @@
 
   hr {
     border: 1px solid $dark-black;
+    position: relative;
+    overflow: initial;
+    margin-block-start: $ic-600;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: url("/images/logo.svg") $body-black;
+      height: 50px;
+      width: 50px;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
 
@@ -75,7 +91,8 @@
   }
 }
 
-.related-posts {
+.related-posts,
+.related-projects {
   .post-wrapper {
     @include breakpoint(md) {
       grid-template-columns: repeat(3, 1fr);

@@ -1,11 +1,11 @@
-{{ define "content" }}
-{{ partial "blog/blog-hero" . }}
-<section class="fade-wrapper padding-top-4 padding-bottom-4">
-    <div class="container">
+{{ define "main" }}
+<section class="block">
+    <div class="wrapper">
+        <h1>404</h1>
         <article>
-            <p>The page you requested could not be found. <a href="{{ "/" | relURL }}">Go back to the homepage.</a></p>
+            <p>The page you requested could not be found. <a href="{{ "/" | relURL }}">Go back to the homepage</a> or read some of our recent posts to learn more about Insight Creative and our <a href="/services/">services</a>.</p>
         </article>
     </div>
 </section>
-{{ partial "blog-feed" . }}
+{{ partial "home/featured-posts" . }}
 {{ end }}

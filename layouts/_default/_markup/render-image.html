@@ -1,14 +1,26 @@
 {{ $image := .Page.Resources.GetMatch (printf "%s" (.Destination | safeURL)) }}
-{{ $smallwebp := $image.Resize "600x webp" }}
-{{ $mediumwebp := $image.Resize "900x webp" }}
-{{ $bigwebp := $image.Resize "1200x webp" }}
-{{ $smalljpg := $image.Resize "600x" }}
-{{ $mediumjpg := $image.Resize "900x" }}
-{{ $bigjpg := $image.Resize "1200x" }}
 {{ $alt := .PlainText | safeHTML }}
+
+{{ $webp_src_set := ""}}
+{{ $jpg_src_set := ""}}
+
+{{ $jpg_l := $image.Resize "1200x q80" }}
+{{ $jpg_m := $jpg_l.Resize "800x q80" }}
+{{ $jpg_s := $jpg_m.Resize "600x q80" }}
+{{ $jpg_xs := $jpg_m.Resize "400x q80" }}
+
+{{ $jpg_src_set = (print $jpg_xs.RelPermalink " 400w" ", " $jpg_s.RelPermalink " 600w" ", " $jpg_m.RelPermalink " 800w" ", "  $jpg_l.RelPermalink " 1200w" ", "  $jpg_l.RelPermalink " 1200w") }}
+
+{{ $webp_l := $image.Resize "1200x q80 webp" }}
+{{ $webp_m := $webp_l.Resize "800x q80 webp" }}
+{{ $webp_s := $webp_m.Resize "600x q80 webp" }}
+{{ $webp_xs := $webp_m.Resize "400x q80 webp" }}
+
+{{ $webp_src_set = (print $webp_xs.RelPermalink " 400w" ", " $webp_s.RelPermalink " 600w" ", " $webp_m.RelPermalink " 800w" ", "  $webp_l.RelPermalink " 1200w" ", "  $webp_l.RelPermalink " 1200w") }}
+
 <picture>
-    <source sizes="100vw" srcset="{{ $smallwebp.RelPermalink }} 480w, {{ $mediumwebp.RelPermalink }} 768w, {{ $bigwebp.RelPermalink }} 1024w" type="image/webp" >
-    <source sizes="100vw" srcset="{{ $smalljpg.RelPermalink }} 480w, {{ $mediumjpg.RelPermalink }} 768w, {{ $bigjpg.RelPermalink }} 1024w" type="image/jpg" >
+    <source sizes="100vw" srcset="{{ $webp_src_set }}" type="image/webp" >
+    <source sizes="100vw" srcset="{{ $jpg_src_set }}" type="image/jpg" >
     <img sizes="100vw" loading="lazy"
         src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ $alt }}">
 </picture>
