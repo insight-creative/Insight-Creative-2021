@@ -45,5 +45,17 @@
 
     {{ template "_internal/google_analytics_async.html" . }}
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+    <script type="text/javascript">
+    algoliasearchNetlify({
+        appId: '501BB72R4M',
+        apiKey: 'd54a1f948956185ff9229be92edd42ee',
+        siteId: 'af0c846f-baa7-49d0-b21b-ec7cc0066bf2',
+        branch: 'main',
+        selector: 'div#search',
+    });
+    </script>
+
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>

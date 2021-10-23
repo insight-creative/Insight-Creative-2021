@@ -4,6 +4,7 @@ seo:
   title: Rebranding an anchored identity
   description: An advertising agency with a vision to bring complete strategic development and creative execution capabilities into one roll-up-your-sleeves, hard-working kind of ad agency.
   featured_image: wif-slider-main-medium-optimized.jpg
+date: 2021-01-02
 client: Washington Island Ferry
 industries:
   industries:
@@ -32,15 +33,17 @@ testimonial:
 {{< parallax-image src="wif-main-logo-options-sm-low-optimized-2400.jpg" alt="">}}
 </div>
 <div class="flex-grid">
-{{< responsive-image src="washingtonislandnewhomepagelow-optimized-2400.jpg" alt="">}}
+{{< website-design heading="Website Home Page" src="washingtonislandnewhomepagelow-optimized-2400.jpg" alt="">}}
 </div>
 <div class="flex-grid">
-{{< responsive-image src="washingtonislandpagelow-optimized-2400.jpg" alt="">}}
+{{< website-design heading="Washington Island Page" src="washingtonislandpagelow-optimized-2400.jpg" alt="">}}
 </div>
 <div class="flex-grid">
-{{< parallax-image src="wif-brochure-medium-optimized-2400.jpg" alt="">}}
+{{< responsive-image src="wif-brochure-medium-optimized-2400.jpg" alt="">}}
 </div>
 <div class="flex-grid">
-{{< responsive-image src="wif-socialmedia-examples-medium-optimized-2400.jpg" alt="">}}
+{{< parallax-image src="wif-socialmedia-examples-1.jpg" alt="">}}
+{{< parallax-image src="wif-socialmedia-examples-2.jpg" alt="">}}
+{{< parallax-image src="wif-socialmedia-examples-3.jpg" alt="">}}
 </div>
 </div>

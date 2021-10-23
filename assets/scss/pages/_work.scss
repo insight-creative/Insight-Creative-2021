@@ -1,5 +1,5 @@
 .work-hero {
-  height: 70vh;
+  height: 40vh;
   position: relative;
 
   &__image-wrapper {
@@ -7,6 +7,10 @@
     overflow: hidden;
     position: relative;
     height: 100%;
+  }
+
+  &__image {
+    transform: scale(1.1);
   }
 
   &__header {
@@ -17,6 +21,8 @@
   }
 
   @include breakpoint(md) {
+    height: 70vh;
+
     &__header {
       position: relative;
       top: -150px;
@@ -47,12 +53,20 @@
     margin-top: 0;
   }
 
-  iframe {
+  iframe,
+  .website-design {
     margin-top: $ic-300;
   }
 }
 
-.related-projects, .work {
+.testimonial {
+  .quote {
+    top: 0;
+  }
+}
+
+.related-projects,
+.work {
   .blog-card__meta {
     top: 0;
   }

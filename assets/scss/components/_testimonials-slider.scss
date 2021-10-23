@@ -5,6 +5,8 @@
 .quote {
   width: $ic-900;
   margin: $ic-200;
+  position: relative;
+  top: 50px;
 }
 
 .slider {
@@ -15,11 +17,11 @@
 
   &__wrapper {
     overflow: hidden;
-    height: 45vh;
+    height: 45rem;
     width: 100%;
 
     @include breakpoint(md) {
-      height: 35vh;
+      height: 30rem;
     }
 
     &:focus-within {
@@ -39,7 +41,7 @@
     position: absolute;
     width: inherit;
     height: inherit;
-    padding: $ic-100;
+    padding: clamp(1.953rem, 5%, 5.96rem);
 
     p {
       font-size: $ic-200;
@@ -125,7 +127,7 @@
   }
 
   &__btn-prev {
-    left: 0;
+    left: $ic-200;
 
     @include breakpoint(md) {
       left: -$ic-1000;
@@ -145,7 +147,7 @@
   }
 
   &__btn-next {
-    left: $ic-500;
+    left: $ic-700;
 
     @include breakpoint(md) {
       right: -$ic-1000;
@@ -174,6 +176,7 @@
       justify-content: center;
       align-items: center;
       gap: $ic-100;
+      margin-top: $ic-300;
     }
   }
 

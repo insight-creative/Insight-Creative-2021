@@ -1,5 +1,6 @@
 .btn {
-  display: inline-block;
+  display: block;
+  width: fit-content;
   padding: 0.5rem 2.5rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -114,5 +115,11 @@ button {
     svg {
       transform: translateX(5px);
     }
+  }
+}
+
+.center-button {
+  .btn {
+    margin: 0 auto;
   }
 }

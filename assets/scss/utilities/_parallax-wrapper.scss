@@ -1,7 +1,7 @@
 .parallax-wrapper {
   overflow: hidden;
   position: relative;
-  height: 400px;
+  height: 200px;
 
   &__image {
     border-radius: $radius;
@@ -13,5 +13,9 @@
     object-position: center;
     will-change: transform;
     backface-visibility: hidden;
+  }
+
+  @include breakpoint(md) {
+    height: 400px;
   }
 }

@@ -7,7 +7,7 @@ a:not(.nav-item):not(.site-header__logo):not(.categories):not(.staff-card):not(.
     a):not(.breadcrumbs a):not(.social
     a):not(.btn):not(.service-list__link):not(.featured-projects__link):not(.blog-card
     a):not(.category-list__link):not(.pagination__numbers):not(.pagination__next):not(.pagination__previous):not(.web-card):not(.btn-arrow):not(.post-navigation__grid
-    a) {
+    a):not(.site-header__social-nav a) {
   text-decoration: none;
   box-shadow: inset 0 -4px 0 rgba($primary-color, 0.7);
   transition: 0.3s cubic-bezier(0.17, 0.88, 0.5, 1.5);
@@ -86,3 +86,20 @@ a:not(.nav-item):not(.site-header__logo):not(.categories):not(.staff-card):not(.
 // .link:active {
 //   transition: color 0.15s ease-in;
 // }
+.chevron-link {
+  svg {
+    width: 20px;
+    height: 20px;
+    stroke: $light-gray;
+    position: relative;
+    top: 4px;
+    transition: 0.3s ease;
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      transform: translateX(-5px);
+    }
+  }
+}

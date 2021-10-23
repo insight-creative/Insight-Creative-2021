@@ -28,8 +28,60 @@
   }
 
   &__nav {
+    position: relative;
+
     @include breakpoint(md) {
       margin-left: auto;
+    }
+  }
+
+  &__search {
+    cursor: pointer;
+
+    svg {
+      width: 16px;
+      height: 16px;
+      fill: $light-gray;
+    }
+  }
+
+  &__mobile-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: $dark-black;
+    overflow: hidden;
+    transition: 0.3s ease-out;
+
+    ul {
+      padding: 0;
+
+      li {
+        list-style-type: none;
+      }
+    }
+
+    a {
+      color: $white;
+      text-decoration: none;
+      padding-bottom: $ic-300;
+      width: 100%;
+      transition: color 0.3s ease-out;
+
+      &:hover,
+      &:focus {
+        color: $primary-color;
+      }
+    }
+  }
+
+  &__social-nav {
+    padding: $ic-300 0 !important;
+
+    svg {
+      fill: $tertiary-color;
+      height: 20px;
     }
   }
 }
@@ -110,51 +162,6 @@
   opacity: 1;
   overflow: hidden;
   visibility: visible;
-
-  .nav-list-item {
-    animation: slideIn ease-in-out 0.5s forwards 0.5s;
-    opacity: 0;
-  }
-
-  .nav-list-item:nth-child(1) {
-    animation-delay: 0.1s;
-  }
-
-  .nav-list-item:nth-child(2) {
-    animation-delay: 0.2s;
-  }
-
-  .nav-list-item:nth-child(3) {
-    animation-delay: 0.3s;
-  }
-
-  .nav-list-item:nth-child(4) {
-    animation-delay: 0.4s;
-  }
-
-  .nav-list-item:nth-child(5) {
-    animation-delay: 0.5s;
-  }
-
-  .nav-list-item:nth-child(6) {
-    animation-delay: 0.6s;
-  }
-
-  .nav-list-item:nth-child(7) {
-    animation-delay: 0.7s;
-  }
-
-  @keyframes slideIn {
-    from {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
 }
 
 .hamburger {

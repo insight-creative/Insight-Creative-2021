@@ -1,17 +1,33 @@
 {{ define "main" }}
 <div class="work-hero">
     {{ $image := (.Resources.GetMatch (index .Params.seo.featured_image)) }}
-    {{ $largewebp := $image.Resize "1600x q80 webp" }}
-    {{ $smallwebp := $image.Resize "600x q80 webp" }}
-    {{ $largejpg := $image.Resize "1600x q80" }}
-    {{ $smalljpg := $image.Resize "600x q80" }}
-    <div class="work-hero__image-wrapper with-parallax">
+
+    {{ $webp_src_set := ""}}
+    {{ $jpg_src_set := ""}}
+
+    {{ $jpg_xxl := $image.Resize "2500x q90" }}
+    {{ $jpg_xl := $jpg_xxl.Resize "1800x q90" }}
+    {{ $jpg_l := $jpg_xl.Resize "1200x q90" }}
+    {{ $jpg_m := $jpg_l.Resize "800x q90" }}
+    {{ $jpg_s := $jpg_l.Resize "600x q90" }}
+    {{ $jpg_xs := $jpg_l.Resize "400x q90" }}
+    {{ $jpg_src_set = (print $jpg_xs.RelPermalink " 400w" ", " $jpg_s.RelPermalink " 600w" ", "  $jpg_m.RelPermalink " 800w" ", "  $jpg_l.RelPermalink " 1200w" ", "  $jpg_xl.RelPermalink " 1800w" ", "  $jpg_xxl.RelPermalink " 2500w" ) }}
+
+    {{ $webp_xxl := $image.Resize "2500x q90 webp" }}
+    {{ $webp_xl := $image.Resize "1800x q90 webp" }}
+    {{ $webp_l := $image.Resize "1200x q90 webp" }}
+    {{ $webp_m := $webp_l.Resize "800x q90 webp" }}
+    {{ $webp_s := $webp_l.Resize "600x q90 webp" }}
+    {{ $webp_xs := $webp_l.Resize "400x q90 webp" }}
+
+    {{ $webp_src_set = (print $webp_xs.RelPermalink " 400w" ", " $webp_s.RelPermalink " 600w" ", "  $webp_m.RelPermalink " 800w" ", "  $webp_l.RelPermalink " 1200w" ", "  $webp_xl.RelPermalink " 1800w" ", "  $webp_xxl.RelPermalink " 2500w") }}
+  
+    <div class="work-hero__image-wrapper hero-parallax">
         <picture>
-            <source sizes="100vw" srcset="{{ $smallwebp.RelPermalink }} 500w, {{ $largewebp.RelPermalink }} 800w" type="image/webp" >
-            <source sizes="100vw" srcset="{{ $smalljpg.RelPermalink }} 500w, {{ $largejpg.RelPermalink }} 800w" type="image/jpg" >
+            <source sizes="100vw" srcset="{{ $webp_src_set }}" type="image/webp" >
+            <source sizes="100vw" srcset="{{ $jpg_src_set }}" type="image/jpg" >
             <img sizes="100vw" loading="lazy"
-                src="{{ $image.RelPermalink }}" width="1600" height="600" alt="{{ .Params.seo.featured_image_alt }}" class="blog-card__image">
-            
+                src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ .Params.seo.featured_image_alt }}" class="work-hero__image">
         </picture>
     </div>
     <div class="work-hero__header bg-black-2 wrapper-md block">
@@ -66,8 +82,8 @@
 </div>
 {{ if .Params.testimonial }}
 <div class="wrapper-md padding-bottom-9">
-    <div class="block bg-black">
-        <div class="wrapper-sm flow">
+    <div class="testimonial block bg-black">
+        <div class="wrapper-sm flow fade-up">
             <div class="quote">
                 {{ partial "svg-icons/quote.svg" . }}
             </div>
@@ -87,7 +103,7 @@
 </div>
 {{ $related := .Site.RegularPages.RelatedIndices . "tags" | first 3 }}
 {{ with $related }}
-<div class="wrapper-lg related-projects padding-top-9">
+<div class="wrapper-lg related-projects fade-up padding-top-9">
     <h3>Related Projects</h3>
     <div class="post-wrapper padding-top-2">
         {{ range . }}

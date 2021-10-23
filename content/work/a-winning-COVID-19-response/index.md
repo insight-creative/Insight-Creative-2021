@@ -4,6 +4,7 @@ seo:
   title: A Winning COVID-19 Response
   description: An advertising agency with a vision to bring complete strategic development and creative execution capabilities into one roll-up-your-sleeves, hard-working kind of ad agency.
   featured_image: Ho-Chunk-Case-Study-A-Winning-COVID-19-Response.jpg
+date: 2021-10-21
 client: Ho-Chunk Gaming Nekoosa
 industries:
   industries:
@@ -17,7 +18,7 @@ provided_services:
       url: /services/graphic-design-services/
 tags:
   - Campaigns
-testimonial: 
+testimonial:
   copy: "Insight Creative is easy to work with, offering fun, innovative ideas. In a short amount of time, this small team of steam has impressed us with their outside-the-box thought processes based on streamlined systems."
   author: Ericka Totzke, Director of Marketing
   client: Ho-Chunk Gaming Nekoosa

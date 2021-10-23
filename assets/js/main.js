@@ -27,6 +27,23 @@ const breadcrumbs = document.querySelector('.breadcrumbs__inner')
 const breadcrumbsProgressBar = document.querySelector('.breadcrumbs__progress-bar-inner')
 const loader = document.querySelector('.preloader')
 const loaderInner = document.querySelector('.preloader__inner')
+const mobileMenu = document.querySelector(".site-header__mobile-nav");
+const searchIcon = document.querySelector('.search__open')
+const searchCloseIcon = document.querySelector('.search__close')
+
+function toggleSearch () {
+  searchIcon.addEventListener('click', function() {
+    siteHeader.classList.add('has-search-open')
+  })
+  
+  searchCloseIcon.addEventListener('click', function() {
+    siteHeader.classList.remove('has-search-open')
+  })
+}
+
+const mobileMenuHeight = mobileMenu.getBoundingClientRect().height
+
+mobileMenu.style.height = 0
 
 function filterPosts () {
   const filterBtn = document.querySelector('.btn-filter')
@@ -509,17 +526,19 @@ function initSocial() {
   })
 }
 
-function toggleMobileMenu () {
-  if (menu.classList.contains('nav-open')) {
-    this.setAttribute('aria-expanded', 'false')
-    this.setAttribute('aria-label', 'open mobile menu')
-    menu.classList.remove('nav-open')
-    hamburger.classList.remove('is-active')
+function toggleMobileMenu() {
+  if(mobileMenu.classList.contains("nav-open")) {
+      this.setAttribute("aria-expanded", "false");
+      this.setAttribute("aria-label", "open mobile menu");
+      mobileMenu.classList.remove("nav-open");
+      mobileMenu.style.height = 0
+      hamburger.classList.remove("is-active");
   } else {
-    menu.classList.add('nav-open')
-    hamburger.classList.add('is-active')
-    this.setAttribute('aria-expanded', 'true')
-    this.setAttribute('aria-label', 'close mobile menu')
+      mobileMenu.classList.add("nav-open");
+      mobileMenu.style.height = mobileMenuHeight + 'px'
+      hamburger.classList.add("is-active");
+      this.setAttribute("aria-expanded","true");
+      this.setAttribute("aria-label","close mobile menu");
   }
 }
 
@@ -547,6 +566,23 @@ function initImageParallax () {
       scrollTrigger: {
         trigger: section,
         start: 'top bottom',
+        scrub: 1
+      }
+    })
+  })
+}
+
+function initHeroParallax () {
+  gsap.utils.toArray('.hero-parallax').forEach(section => {
+    const image = section.querySelector('img')
+
+    gsap.to(image, {
+      scale: 1,
+      opacity: 0,
+      ease: 'none',
+      scrollTrigger: {
+        trigger: section,
+        start: '-100px top',
         scrub: 1
       }
     })
@@ -587,7 +623,7 @@ function initSmoothScrollbar () {
     }
   })
   bodyScrollBar.addListener(({ offset }) => {
-    breadcrumbs.style.top = 'calc(' + offset.y + 'px' + ' + 82.75vh )'
+    breadcrumbs.style.top = 'calc(' + offset.y + 'px' + ' + 85vh )'
     footer.style.top = 'calc(' + offset.y + 'px' + ' - 90px )'
   })
   scroller.focus()
@@ -671,23 +707,6 @@ function pageTransitionOut ({ container }) {
   return tl
 }
 
-function updateMenu() {
-  const currentLocation = location.href;
-  const menuItem = document.querySelectorAll(".nav-list .nav-item");
-  // for (let i = 0; i < menuLength; i++) {
-  //     menuItem[i].classList.remove("current");
-  //     if (menuItem[i].href === currentLocation) {
-  //         menuItem[i].classList.add("current");
-  //     }
-  // }
-  for (let menu of menuItem) {
-      menu.classList.remove("current");
-      if (menu.href === currentLocation) {
-          menu.classList.add("current");
-      }
-  }
-
-}
 
 function initPage () {
   killScrollTriggers()
@@ -695,10 +714,12 @@ function initPage () {
   initAnimatedNav()
   initVideo()
   initCursor()
+  toggleSearch()
   initBreadcrumbs()
   initSocial()
   initContentFade()
   initImageParallax()
+  initHeroParallax()
   initSlider()
   initFooter()
   filterPosts()
@@ -714,7 +735,6 @@ function initPageTransitions () {
   // do something after the transition finishes
   barba.hooks.after(() => {
     document.querySelector('html').classList.remove('is-transitioning')
-    updateMenu()
   })
   // scroll to the top of the page
   barba.hooks.enter(() => {

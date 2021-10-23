@@ -14,9 +14,50 @@
           <a href="{{ .URL }}" class="nav-item" aria-label="{{ .Name }}" title="{{ .Name }}">{{ .Name }}</a>
         </li>
         {{ end }}
+        <li class="nav-item site-header__search"><button class="search__open">{{ partialCached "svg-icons/search.svg" . }}</button></li>
       </ul>
+      <div id="search" class="search flex flex-row-reverse flex-center">
+        <div class="search__icon-wrapper flex flex-center"><button class="search__close flex flex-center">{{ partialCached "svg-icons/close.svg" . }}</button></div>
+      </div>
     </nav>
-
+    <div class="site-header__mobile-nav">
+      <div class="site-header__mobile-nav-inner">
+        <ul  class="site-header__mobile-nav-menu">
+          {{ range .Site.Menus.main }}
+          <li class="nav-list-item">
+            <a href="{{ .URL }}" class="nav-item" aria-label="{{ .Name }}" title="{{ .Name }}">{{ .Name }}</a>
+          </li>
+          {{ end }}
+        </ul>
+        <ul class="site-header__social-nav flex flex-justify-around">
+          <li class="site-header__social-list-item">
+            <a href="{{ site.Social.facebook }}" class="site-header__social-link" aria-label="Facebook">
+                {{ partial "svg-icons/facebook.svg" . }}
+            </a>
+          </li>
+          <li class="site-header__social-list-item">
+            <a href="{{ site.Social.twitter }}" class="site-header__social-link" aria-label="Twitter">
+                {{ partial "svg-icons/twitter.svg" . }}
+            </a>
+          </li>
+          <li class="site-header__social-list-item">
+            <a href="{{ site.Social.instagram }}" class="site-header__social-link" aria-label="Instagram">
+                {{ partial "svg-icons/instagram.svg" . }}
+            </a>
+          </li>
+          <li class="site-header__social-list-item">
+            <a href="{{ site.Social.youtube }}" class="site-header__social-link" aria-label="YouTube">
+                {{ partial "svg-icons/youtube.svg" . }}
+            </a>
+          </li>
+          <li class="site-header__social-list-item">
+            <a href="{{ site.Social.linkedin }}" class="site-header__social-link" aria-label="LinkedIn">
+                {{ partial "svg-icons/linkedin.svg" . }}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <button class="hamburger hamburger--spin" type="button" aria-label="open mobile menu" aria-expanded="false">
       <span class="hamburger-box">
         <span class="hamburger-inner"></span>
