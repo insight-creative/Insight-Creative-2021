@@ -3,7 +3,6 @@ import barbaPrefetch from '@barba/prefetch'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Scrollbar from 'smooth-scrollbar'
-// import { pageTransitionOut, pageTransitionIn, contentAnimation, updateMenu } from './partials';
 
 barba.use(barbaPrefetch)
 gsap.registerPlugin(ScrollTrigger)
@@ -27,11 +26,16 @@ const breadcrumbs = document.querySelector('.breadcrumbs__inner')
 const breadcrumbsProgressBar = document.querySelector('.breadcrumbs__progress-bar-inner')
 const loader = document.querySelector('.preloader')
 const loaderInner = document.querySelector('.preloader__inner')
-const mobileMenu = document.querySelector(".site-header__mobile-nav");
+const mobileMenu = document.querySelector('.site-header__mobile-nav')
 const searchIcon = document.querySelector('.search__open')
 const searchCloseIcon = document.querySelector('.search__close')
+const search = document.querySelector('.search')
 
-function toggleSearch () {
+function initSearch () {
+  const menuHeight = menu.getBoundingClientRect().height
+
+  search.style.height = menuHeight + 'px'
+
   searchIcon.addEventListener('click', function() {
     siteHeader.classList.add('has-search-open')
   })
@@ -570,9 +574,34 @@ function initImageParallax () {
       }
     })
   })
+
+  gsap.utils.toArray('.with-zoom').forEach(section => {
+    const image = section.querySelector('img')
+
+    gsap.to(image, {
+      scale: 1,
+      ease: 'none',
+      duration: 2,
+      scrollTrigger: {
+        trigger: section,
+        start: 'top bottom',
+        toggleActions: "play complete reverse reset",
+      }
+    })
+  })
 }
 
 function initHeroParallax () {
+  const titleReveal = document.querySelector('.title-reveal')
+  const title = document.querySelector('.title-reveal__title')
+
+  gsap.to(title, {
+    top: 0,
+    delay: .3,
+    duration: 1,
+    ease: 'power4'
+  })
+
   gsap.utils.toArray('.hero-parallax').forEach(section => {
     const image = section.querySelector('img')
 
@@ -586,6 +615,17 @@ function initHeroParallax () {
         scrub: 1
       }
     })
+  })
+
+  gsap.to(titleReveal, {
+    y: -100,
+    opacity: 0,
+    ease: 'none',
+    scrollTrigger: {
+      trigger: '.work-hero',
+      start: 'top top',
+      scrub: 1
+    }
   })
 }
 
@@ -624,7 +664,7 @@ function initSmoothScrollbar () {
   })
   bodyScrollBar.addListener(({ offset }) => {
     breadcrumbs.style.top = 'calc(' + offset.y + 'px' + ' + 85vh )'
-    footer.style.top = 'calc(' + offset.y + 'px' + ' - 90px )'
+    footer.style.top = 'calc(' + offset.y + 'px' + ' - 104px )'
   })
   scroller.focus()
 }
@@ -714,7 +754,7 @@ function initPage () {
   initAnimatedNav()
   initVideo()
   initCursor()
-  toggleSearch()
+  initSearch()
   initBreadcrumbs()
   initSocial()
   initContentFade()

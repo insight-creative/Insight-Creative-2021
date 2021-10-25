@@ -8,19 +8,21 @@ date: 2021-01-02
 client: Washington Island Ferry
 industries:
   industries:
-    - industry: Banking
+    - industry: Travel & Tourism
 intro: '<p>A business that set sail in 1940, the Washington Island Ferry has been a thriving and vital conduit to island life and tourism for decades. After years of promoting the island and its sole source of transportation under a well-established brand, the Washington Island Ferry crew entrusted Insight to create a new brand that reflects their modern operations, but also respects their rich history with the Island community. A revamped logo, website, jingle and brochure—complemented by ongoing social media—launched right on the cusp of Washington Island’s busy season, providing fresh momentum for many successful voyages to come!</p>
 '
 provided_services:
   services:
-    - service: Copywriting
+    - service: Content
       url: /services/copywriting-services/
     - service: Design
       url: /services/graphic-design-services/
-    - service: Web Development
+    - service: Digital
+      url: /services/digital/
+    - service: Web
       url: /services/web-development/
 tags:
-  - Campaigns
+  - Branding
 testimonial: 
   copy: "Our multi-faceted project was carried out with the tone, theme, vision and culture we wished to convey and taken to the next level. Our business has grown beyond our imagination because of what Insight has done for us."
   author: Hoyt Purinton, President

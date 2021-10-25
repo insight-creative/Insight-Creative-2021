@@ -3,7 +3,7 @@
 {{ $smalljpg := $image.Resize "600x q80" }}
 <article class="blog-card">
     <a href="{{ .RelPermalink }}">
-        <div class="blog-card__image-wrapper with-parallax">
+        <div class="with-zoom">
             <picture>
                 <source sizes="50vw" srcset="{{ $smallwebp.RelPermalink }}" type="image/webp" >
                 <source sizes="50vw" srcset="{{ $smalljpg.RelPermalink }}" type="image/jpg" >

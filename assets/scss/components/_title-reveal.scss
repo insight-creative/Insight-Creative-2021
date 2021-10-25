@@ -1,0 +1,9 @@
+.title-reveal {
+  overflow: hidden;
+  position: relative;
+
+  &__title {
+    position: relative;
+    top: 100px;
+  }
+}

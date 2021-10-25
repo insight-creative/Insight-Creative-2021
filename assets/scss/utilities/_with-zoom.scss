@@ -1,0 +1,16 @@
+.with-zoom {
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+
+  img {
+    height: 120%;
+    position: relative;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: center;
+    transition: 3s ease-out;
+    transform: scale(1.2);
+  }
+}

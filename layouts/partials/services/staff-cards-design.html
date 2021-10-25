@@ -1,6 +1,6 @@
 {{ range sort .Site.Data.staff "weight" "desc" }}
 {{ if eq .department "Design" }}
-<a href="#" class="staff-card bg-black">
+<a href="/about/{{ .name | urlize }}/" class="staff-card bg-black">
     <div class="staff-card__inner text-center">
         <div class="staff-card__image-wrapper background-circle background-circle--lg">
             <img src="{{ .image_jpg }}" alt="headshot of Insight Creative's {{ .job_title }}, {{ .name }}" class="staff-card__image" width="100" height="100">
@@ -11,7 +11,7 @@
 </a>
 {{ end }}
 {{ if eq .department "Web" }}
-<a href="#" class="staff-card bg-black">
+<a href="/about/{{ .name | urlize }}/" class="staff-card bg-black">
     <div class="staff-card__inner text-center">
         <div class="staff-card__image-wrapper background-circle background-circle--lg">
             <img src="{{ .image_jpg }}" alt="headshot of Insight Creative's {{ .job_title }}, {{ .name }}" class="staff-card__image" width="100" height="100">

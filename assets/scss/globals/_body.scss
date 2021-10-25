@@ -54,9 +54,13 @@ body {
 
 .site-main {
   opacity: 1;
-  margin-top: $desktop-header;
+  margin-top: $mobile-header;
   // margin-bottom: 508px;
   background-color: $body-black;
+
+  @include breakpoint(md) {
+    margin-top: $desktop-header;
+  }
 }
 
 // Style highlight to match our themes colors
