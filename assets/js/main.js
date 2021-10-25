@@ -560,9 +560,11 @@ function fadeNavigation () {
 
 fadeNavigation()
 
-function initImageParallax () {
+function initImageEffects () {
   gsap.utils.toArray('.with-parallax').forEach(section => {
     const image = section.querySelector('img')
+
+    if (!document.body.contains(image)) return
 
     gsap.to(image, {
       yPercent: 20,
@@ -578,6 +580,8 @@ function initImageParallax () {
   gsap.utils.toArray('.with-zoom').forEach(section => {
     const image = section.querySelector('img')
 
+    if (!document.body.contains(image)) return
+
     gsap.to(image, {
       scale: 1,
       ease: 'none',
@@ -586,6 +590,7 @@ function initImageParallax () {
         trigger: section,
         start: 'top bottom',
         toggleActions: "play complete reverse reset",
+        // scrub: true
       }
     })
   })
@@ -595,15 +600,19 @@ function initHeroParallax () {
   const titleReveal = document.querySelector('.title-reveal')
   const title = document.querySelector('.title-reveal__title')
 
+  if (!document.body.contains(title)) return
+
   gsap.to(title, {
     top: 0,
-    delay: .3,
+    // delay: .3,
     duration: 1,
     ease: 'power4'
   })
 
   gsap.utils.toArray('.hero-parallax').forEach(section => {
     const image = section.querySelector('img')
+
+    if (!document.body.contains(image)) return
 
     gsap.to(image, {
       scale: 1,
@@ -616,6 +625,8 @@ function initHeroParallax () {
       }
     })
   })
+
+  if (!document.body.contains(titleReveal)) return
 
   gsap.to(titleReveal, {
     y: -100,
@@ -646,7 +657,8 @@ function initFooter () {
 function initSmoothScrollbar () {
   const breadcrumbs = document.querySelector('.breadcrumbs')
   // Scrollbar.init(document.querySelector('#viewport'));
-  bodyScrollBar = Scrollbar.init(document.querySelector('#viewport'), { damping: 0.04 })
+  bodyScrollBar = Scrollbar.init(document.querySelector('#viewport'), { damping: 0.05 })
+  const windowHeight = window.innerHeight
   // scrollContent.style.transform = "translate3d(0, 0, 0)";
   // remove horizontal scrollbar
   bodyScrollBar.track.xAxis.element.remove()
@@ -663,7 +675,7 @@ function initSmoothScrollbar () {
     }
   })
   bodyScrollBar.addListener(({ offset }) => {
-    breadcrumbs.style.top = 'calc(' + offset.y + 'px' + ' + 85vh )'
+    breadcrumbs.style.top = 'calc(' + offset.y + 'px' + ' + ' + windowHeight + 'px )'
     footer.style.top = 'calc(' + offset.y + 'px' + ' - 104px )'
   })
   scroller.focus()
@@ -758,7 +770,7 @@ function initPage () {
   initBreadcrumbs()
   initSocial()
   initContentFade()
-  initImageParallax()
+  initImageEffects()
   initHeroParallax()
   initSlider()
   initFooter()

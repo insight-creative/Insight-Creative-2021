@@ -14,7 +14,7 @@
           <a href="{{ .URL }}" class="nav-item" aria-label="{{ .Name }}" title="{{ .Name }}">{{ .Name }}</a>
         </li>
         {{ end }}
-        <li class="nav-item site-header__search"><button class="search__open">{{ partialCached "svg-icons/search.svg" . }}</button></li>
+        <li class="nav-list-item site-header__search"><button class="nav-item search__open">{{ partialCached "svg-icons/search.svg" . }}</button></li>
       </ul>
       <div id="search" class="search flex flex-row-reverse flex-center">
         <div class="search__icon-wrapper flex flex-center"><button class="search__close flex flex-center">{{ partialCached "svg-icons/close.svg" . }}</button></div>

@@ -15,10 +15,14 @@ intro: '<p>Embedded in the Luxemburg community since 1903, Bank of Luxemburg kne
 '
 provided_services:
   services:
-    - service: Copywriting
+    - service: Content
       url: /services/copywriting-services/
     - service: Design
       url: /services/graphic-design-services/
+    - service: Media
+      url: /services/media/
+    - service: Studio
+      url: /services/photography-videography-services/
 tags:
   - Branding
 testimonial: 

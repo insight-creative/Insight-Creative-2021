@@ -12,10 +12,12 @@ industries:
 intro: 'When the pandemic hit in spring of 2020, Ho-Chunk Gaming Nekoosa needed to communicate their reopening plan after a temporary closure. With a goal to announce that the casino was now open for gaming, but with a number of safety precautions in place, they needed a quick-turn, multi-faceted creative campaign. Billboards and exterior signage encouraged casino patrons to return, while assuring their safety with details of new guidelines. In the casino, playful and informational floor graphics, posters and digital signage reinforced that fun and games can co-exist with a pandemic when you "play it safe."'
 provided_services:
   services:
-    - service: Copywriting
+    - service: Content
       url: /services/copywriting-services/
     - service: Design
       url: /services/graphic-design-services/
+    - service: Media
+      url: /services/media/
 tags:
   - Campaigns
 testimonial:
