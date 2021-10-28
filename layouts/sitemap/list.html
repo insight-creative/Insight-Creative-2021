@@ -4,8 +4,8 @@
         <div class="w-100 w-30-m">
             <h3>Pages</h3>
             <ul class="sitemap-nav-list">
-                {{ $pages := .Site.Pages }}
-                {{ range where $pages "Type" "!=" "blog" }}
+                {{ $pages := where .Site.Pages "Type" "not in" (slice "blog" "tags" "categories") }}
+                {{ range $pages }}
                     <li class="sitemap-nav-list-item">
                         <a class="sitemap-nav-item" class="sitemap-nav-item" href="{{ .URL }}"
                             title="{{ .Name }}">{{ .Title }}</a>

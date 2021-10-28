@@ -62,10 +62,14 @@
       }
     }
 
+    .nav-list-item a {
+      display: block;
+      padding-bottom: $ic-300;
+    }
+
     a {
       color: $white;
       text-decoration: none;
-      padding-bottom: $ic-300;
       width: 100%;
       transition: color 0.3s ease-out;
 
@@ -87,16 +91,17 @@
 }
 
 .nav-list {
-  position: absolute;
-  width: 100%;
-  top: 100%;
-  left: 0;
-  transform: translateX(120%);
-  transition: 0.3s ease-in-out;
-  margin: 0;
-  padding: 0;
-  opacity: 0;
-  background-color: $dark-black;
+  display: none;
+  // position: absolute;
+  // width: 100%;
+  // top: 100%;
+  // left: 0;
+  // transform: translateX(120%);
+  // transition: 0.3s ease-in-out;
+  // margin: 0;
+  // padding: 0;
+  // opacity: 0;
+  // background-color: $dark-black;
 
   @include breakpoint(md) {
     display: flex;
@@ -106,8 +111,9 @@
     position: relative;
     top: 0;
     left: 0;
+    margin: 0;
+    padding: 0;
     transform: translateX(0);
-    opacity: 1;
   }
 }
 
