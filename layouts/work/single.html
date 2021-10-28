@@ -103,7 +103,7 @@
 <div class="wrapper-lg">
     {{ partial "work/project-navigation" . }}
 </div>
-{{ $related := .Site.RegularPages.RelatedIndices . "tags" | first 3 }}
+<!-- {{ $related := .Site.RegularPages.RelatedIndices . "tags" | first 3 }}
 {{ with $related }}
 <div class="wrapper-lg related-projects fade-up padding-top-9">
     <h3>Related Projects</h3>
@@ -113,6 +113,6 @@
         {{ end }}
     </div>
 </div>
-{{ end }}
+{{ end }} -->
 {{ partialCached "cta" . }}
 {{ end }}

@@ -1,31 +1,23 @@
 <div class="social">
-    <div class="social__inner">
-      <ul class="social__nav">
-        <li class="social__list-item">
-          <a href="{{ site.Social.facebook }}" class="social__link" aria-label="Facebook">
-              {{ partial "svg-icons/facebook.svg" . }}
-          </a>
-        </li>
-        <li class="social__list-item">
-          <a href="{{ site.Social.twitter }}" class="social__link" aria-label="Twitter">
-              {{ partial "svg-icons/twitter.svg" . }}
-          </a>
-        </li>
-        <li class="social__list-item">
-          <a href="{{ site.Social.instagram }}" class="social__link" aria-label="Instagram">
-              {{ partial "svg-icons/instagram.svg" . }}
-          </a>
-        </li>
-        <li class="social__list-item">
-          <a href="{{ site.Social.youtube }}" class="social__link" aria-label="YouTube">
-              {{ partial "svg-icons/youtube.svg" . }}
-          </a>
-        </li>
-        <li class="social__list-item">
-          <a href="{{ site.Social.linkedin }}" class="social__link" aria-label="LinkedIn">
-              {{ partial "svg-icons/linkedin.svg" . }}
-          </a>
-        </li>
-      </ul>
-    </div>
+  <div class="social__inner">
+    <ul class="social__nav">
+      {{ range .Site.Data.business_info.social_media }}
+      <li class="social__list-item">
+        <a href="{{ .social.link }}" class="social__link" aria-label="Facebook">
+            {{ if eq .social.title "Facebook" }}
+            {{ partial "svg-icons/facebook.svg" . }}
+            {{ else if eq .social.title "Twitter"}}
+            {{ partial "svg-icons/twitter.svg" . }}
+            {{ else if eq .social.title "Instagram"}}
+            {{ partial "svg-icons/instagram.svg" . }}
+            {{ else if eq .social.title "LinkedIn"}}
+            {{ partial "svg-icons/linkedin.svg" . }}
+            {{ else if eq .social.title "YouTube"}}
+            {{ partial "svg-icons/youtube.svg" . }}
+            {{ end }}
+        </a>
+      </li>
+      {{ end }}
+    </ul>
   </div>
+</div>

@@ -23,9 +23,7 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Logo, name: logo, widget: image }
           - { label: Business Name, name: business_name, widget: string }
           - { label: Phone, name: phone, widget: string }
-          - { label: Email, name: email, widget: string }
           - { label: Address, name: address, widget: text }
-          - { label: Hours, name: hours, widget: text }
 
   - name: "pages"
     preview_path: "layouts/index.html"

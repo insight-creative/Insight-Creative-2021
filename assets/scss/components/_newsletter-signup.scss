@@ -24,7 +24,7 @@ div.ctct-form-embed form.ctct-form-custom .ctct-form-required:before {
 }
 
 .ctct-form-button {
-  display: inline-block;
+  width: fit-content !important;
   padding: 0.5rem 2.5rem !important;
   text-align: left !important;
   text-decoration: none;

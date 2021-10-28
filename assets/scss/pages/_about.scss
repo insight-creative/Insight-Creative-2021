@@ -88,3 +88,17 @@
     display: none;
   }
 }
+
+.chevron-link {
+  text-decoration: none;
+  transition: .3s ease;
+
+  &:hover,
+  &:focus {
+    color: $primary-color;
+
+    svg {
+      stroke: $primary-color;
+    }
+  }
+}

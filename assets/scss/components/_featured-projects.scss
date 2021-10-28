@@ -1,4 +1,13 @@
 .featured-projects {
+  &__row {
+    display: grid;
+    gap: $ic-200;
+
+    @include breakpoint (md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
   &__link {
     text-decoration: none;
 
@@ -66,36 +75,29 @@
     transition: 0.7s ease-out;
   }
 
-  @include breakpoint(md) {
-    &__row-1 &__link:nth-of-type(1) {
-      margin: 0 0.5rem 0.5rem 0;
-    }
+  // @include breakpoint(md) {
+  //   &__row-1 &__link:nth-of-type(1) {
+  //     margin: 0 0.5rem 0.5rem 0;
+  //   }
 
-    &__row-1 &__link:nth-of-type(2) {
-      margin: 0 0 0.5rem 0.5rem;
-    }
+  //   &__row-1 &__link:nth-of-type(2) {
+  //     margin: 0 0 0.5rem 0.5rem;
+  //   }
 
-    &__row-2 &__link:nth-of-type(1) {
-      margin: 0.5rem 0.5rem 0 0;
-    }
+  //   &__row-2 &__link:nth-of-type(1) {
+  //     margin: 0.5rem 0.5rem 0 0;
+  //   }
 
-    &__row-2 &__link:nth-of-type(2) {
-      margin: 0.5rem 0 0 0.5rem;
-    }
-  }
-
-  .project-tall &__image {
-    height: 70vh;
-  }
-
-  .project-short &__image {
-    height: 45vh;
-  }
+  //   &__row-2 &__link:nth-of-type(2) {
+  //     margin: 0.5rem 0 0 0.5rem;
+  //   }
+  // }
 
   &__image {
     overflow: hidden;
     border-radius: 5px;
     position: relative;
+    height: 30vh;
 
     img {
       height: 120%;
