@@ -16,6 +16,7 @@ const hamburger = document.querySelector('.hamburger')
 const follow = document.querySelector('.follower')
 const followerText = document.querySelector('.follower__text')
 const siteHeader = document.querySelector('.site-header')
+const siteHeaderHeight = siteHeader.getBoundingClientRect().height
 const primaryNav = document.querySelector('.site-header__inner')
 const scroller = document.querySelector('#viewport')
 const width = screen.width
@@ -27,9 +28,12 @@ const breadcrumbsProgressBar = document.querySelector('.breadcrumbs__progress-ba
 const loader = document.querySelector('.preloader')
 const loaderInner = document.querySelector('.preloader__inner')
 const mobileMenu = document.querySelector('.site-header__mobile-nav')
+const mobileMenuWrapper = document.querySelector('.site-header__mobile-nav-inner')
 const searchIcon = document.querySelector('.search__open')
 const searchCloseIcon = document.querySelector('.search__close')
 const search = document.querySelector('.search')
+
+console.log(siteHeaderHeight)
 
 function initSearch () {
   const menuHeight = menu.getBoundingClientRect().height
@@ -45,9 +49,11 @@ function initSearch () {
   })
 }
 
-const mobileMenuHeight = mobileMenu.getBoundingClientRect().height
+function initMobileMenu () {
+  const mobileMenuHeight = mobileMenu.getBoundingClientRect().height
 
-mobileMenu.style.height = 0
+  mobileMenu.style.height = 0
+}
 
 function filterPosts () {
   const filterBtn = document.querySelector('.btn-filter')
@@ -183,6 +189,12 @@ function initSlider () {
 }
 
 hamburger.addEventListener('click', toggleMobileMenu);
+
+function initMain () {
+  const main = document.querySelector('.site-main')
+
+  main.style.marginTop = siteHeaderHeight + 'px'
+}
 
 function initAnimatedNav () {
   const animateNav = gsap.to(siteHeader, {
@@ -531,15 +543,20 @@ function initSocial() {
 }
 
 function toggleMobileMenu() {
+  const mobileMenuWrapperHeight = mobileMenuWrapper.getBoundingClientRect().height
+
+  mobileMenu.style.height = 0
+
   if(mobileMenu.classList.contains("nav-open")) {
-      this.setAttribute("aria-expanded", "false");
-      this.setAttribute("aria-label", "open mobile menu");
-      mobileMenu.classList.remove("nav-open");
-      mobileMenu.style.height = 0
-      hamburger.classList.remove("is-active");
+    this.setAttribute("aria-expanded", "false");
+    this.setAttribute("aria-label", "open mobile menu");
+    mobileMenu.classList.remove("nav-open");
+    mobileMenu.style.height = 0
+    hamburger.classList.remove("is-active");
   } else {
       mobileMenu.classList.add("nav-open");
-      mobileMenu.style.height = mobileMenuHeight + 'px'
+      console.log(mobileMenuWrapperHeight)
+      mobileMenu.style.height = mobileMenuWrapperHeight + 'px'
       hamburger.classList.add("is-active");
       this.setAttribute("aria-expanded","true");
       this.setAttribute("aria-label","close mobile menu");
@@ -606,7 +623,7 @@ function initHeroParallax () {
     top: 0,
     // delay: .3,
     duration: 1,
-    ease: 'power4'
+    ease: 'power1'
   })
 
   gsap.utils.toArray('.hero-parallax').forEach(section => {
@@ -656,6 +673,7 @@ function initFooter () {
 
 function initSmoothScrollbar () {
   const breadcrumbs = document.querySelector('.breadcrumbs')
+   
   // Scrollbar.init(document.querySelector('#viewport'));
   bodyScrollBar = Scrollbar.init(document.querySelector('#viewport'), { damping: 0.05 })
   const windowHeight = window.innerHeight
@@ -676,7 +694,7 @@ function initSmoothScrollbar () {
   })
   bodyScrollBar.addListener(({ offset }) => {
     breadcrumbs.style.top = 'calc(' + offset.y + 'px' + ' + ' + windowHeight + 'px )'
-    footer.style.top = 'calc(' + offset.y + 'px' + ' - 104px )'
+    footer.style.top = 'calc(' + offset.y + 'px' + ' - ' + siteHeaderHeight + 'px )'
   })
   scroller.focus()
 }
@@ -735,11 +753,12 @@ function pageTransitionIn ({ container }) {
 
 function pageTransitionOut ({ container }) {
 
-  const mobileNav = document.querySelector(".nav-list");
+  const mobileMenu = document.querySelector('.site-header__mobile-nav')
 
-    if (mobileNav.classList.contains("nav-open")) {
-        mobileNav.classList.remove("nav-open");
-        hamburger.classList.remove("is-active");
+    if (mobileMenu.classList.contains('nav-open')) {
+        mobileMenu.classList.remove('nav-open')
+        mobileMenu.style.height = 0
+        hamburger.classList.remove('is-active')
     }
 
   const tl = gsap.timeline({
@@ -765,6 +784,7 @@ function initPage () {
   initSmoothScrollbar()
   initAnimatedNav()
   initVideo()
+  initMobileMenu()
   initCursor()
   initSearch()
   initBreadcrumbs()

@@ -55,7 +55,6 @@ body {
 .site-main {
   opacity: 1;
   margin-top: $mobile-header;
-  // margin-bottom: 508px;
   background-color: $body-black;
 
   @include breakpoint(md) {
