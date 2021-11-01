@@ -14,7 +14,7 @@ featured_projects:
     project_cover_image: Ho-Chunk-Case-Study-A-Winning-COVID-19-Response.jpg
     project_cover_image_alt: A variety of COVID-19 graphics created for Ho-Chunk Gaming Nekoosa's safe reopening campaign efforts
     project_url: /work/a-winning-covid-19-response/
-    project_title: A Winning COVID-19 Response
+    project_title: A winning COVID-19 response
   project2: 
       heading: Bank of Luxemburg
       project_cover_image: BOL-Business-Cards.jpg

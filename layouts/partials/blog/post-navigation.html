@@ -3,7 +3,7 @@
         <div class="post-navigation__back flex flex-column flex-center">
             <a href="/blog/" class="post-navigation__link">Back to all posts</a>
         </div>
-        <div class="flex flex-center">
+        <div class="flex flex-center flex-justify-center">
             <div class="post-navigation__prev">
                 {{ with .PrevInSection }}
                 <a href="{{ .Permalink }}" class="post-navigation__link flex flex-center">{{ partialCached "svg-icons/chevron-left.svg" . }} Previous Post</a>

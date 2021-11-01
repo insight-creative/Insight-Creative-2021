@@ -19,6 +19,8 @@ provided_services:
       url: /services/copywriting-services/
     - service: Design
       url: /services/graphic-design-services/
+    - service: Digital
+      url: /services/digital/
     - service: Media
       url: /services/media/
     - service: Studio

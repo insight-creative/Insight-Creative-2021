@@ -58,7 +58,7 @@ As a designer, I sometimes forget that many of the terms I use on a day-to-day b
 
 **Pantone (PMS)** – Pantone Matching System, a standardized color system that matches exactly when printed professionally with special ink. Each color has its own number for a perfect color match every time.
 
-![Insight Creative Inc's Pantone Green Red and Blue Colors side by side](Pantone.jpg)
+<img src="Pantone.jpg" alt="Insight Creative Inc's Pantone Green Red and Blue Colors side by side">
 
 **Placeholder Text** – Filler text temporarily used when the actual copy isn’t available to insert into the design yet. Often made up of meaningless Greek/Latin called Lorem Ipsum.
 
@@ -76,11 +76,11 @@ As a designer, I sometimes forget that many of the terms I use on a day-to-day b
 
 **Sans Serif** – Fonts without serifs on the end of letters. Easier to read and comprehend on screens, especially with longer bodies of text.
 
-![Example of a Sans Serif font using the Proxima Nova font](Sans-Serif.jpg)
+<img src="Sans-Serif.jpg" alt="Example of a Sans Serif font using the Proxima Nova font">
 
 **Serif** – A small line that appears on the ends of letters in some fonts. Serif fonts are easier to read and comprehend in print.
 
-![Example of a Serif font using the Mrs. Eaves font](Serif.jpg)
+<img src="Serif.jpg" alt="Example of a Serif font using the Mrs. Eaves font">
 
 **V1, V2** – Version 1, version 2, etc. My labeling system to differentiate stages of drafts, documenting proofing and client changes before a project is finalized.
 

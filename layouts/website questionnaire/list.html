@@ -1,0 +1,261 @@
+{{ define "main" }}
+<div class="bg-black block text-center">
+    <div class="wrapper-md flow">
+        <h1 class="no-margin">{{ .Params.hero.head | markdownify }}</h1>
+        <h2 class="h4">{{ .Params.hero.copy | markdownify }}</h2>
+    </div>
+</div>
+<div class="block wrapper-sm">
+    <div class="flex flex-column flex-row-m">
+        <div class="w-100">
+            <div class="contact-form">
+                <div class="contact-form__wrapper">
+                    <form name="website-questionnaire" netlify netlify-honeypot="bot-field" action="/thank-you">
+                        <div hidden>
+                            <label>
+                              Don’t fill this out if you're human: 
+                              <input name="bot-field" />
+                            </label>
+                        </div>
+                        <h3 class="no-margin">Your Business</h3>
+                        <div class="contact-form__form-group">
+                            <label for="business_name">Business Name*</label>
+                            <input name="business_name" type="text" class="contact-form__form-control" required>
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="logo">Do you already have a logo and brand standards or branded materials such as business cards or stationary? <span>(We will want to make sure your website works in harmony with what you already have.)</span></label>
+                            <input name="logo" type="text" class="contact-form__form-control">
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="domain">What is your current or intended domain name?*</label>
+                            <input name="domain" type="text" class="contact-form__form-control" required>
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="hosting">Current hosting provider?</label>
+                            <input name="hosting" type="text" class="contact-form__form-control">
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="domain_registrar">Domain registrar?</label>
+                            <input name="domain_registrar" type="text" class="contact-form__form-control">
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="competitors">Who are your top 5 competitors? Please list their name and website.*</label>
+                            <textarea name="competitors" class="contact-form__form-control" required></textarea>
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="company_difference">What makes your company better/different? Why do you believe website visitors should do business with you rather than with a competitor?*</label>
+                            <textarea name="company_difference" class="contact-form__form-control" required></textarea>
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="testimonials">Do you have customer testimonials to support the above claims?</label>
+                            <input name="testimonials" type="text" class="contact-form__form-control">
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="awards">Company awards or mentions in publications?</label>
+                            <input name="awards" type="text" class="contact-form__form-control">
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="customer_value">What’s your average customer value or what is the lifetime value of a new customer?</label>
+                            <input name="customer_value" type="text" class="contact-form__form-control">
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="budget">What is your approximate allocated budget for this project?</label>
+                            <input name="budget" type="text" class="contact-form__form-control">
+                        </div>
+                        <h3 class="no-margin">Your Customers</h3>
+                        <div class="contact-form__form-group">
+                            <label for="customers">Describe your average customers. <span>ex. age, gender, industry, average income, etc ...</span></label>
+                            <textarea name="customers" class="contact-form__form-control"></textarea>
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="customers_live">Where do your customers live?</label>
+                            <select name="customers_live" type="select" class="contact-form__form-control">
+                                <option value="Please Select">Please Select</option>
+                                <option value="0 - 25 mile radius">0 - 25 mile radius</option> 
+                                <option value="25 - 50 mile radius">25 - 50 mile radius</option> 
+                                <option value="50+ mile radius">50+ mile radius</option> 
+                                <option value="Statewide">Statewide</option>
+                                <option value="National">National</option>
+                                <option value="Global">Global</option>
+                            </select>
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="ideal_customers">Who are your ideal customers?</label>
+                            <input name="ideal_customers" type="text" class="contact-form__form-control">
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="reoccuring_questions">Do your potential or existing customers have reccurring questions or needs that are brought to your attention?</label>
+                            <input name="reoccuring_questions" type="text" class="contact-form__form-control">
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="reasons_for_visiting">What are the main reasons your customers/visitors come to your website? <span>ex. to contact you, get ideas about projects, find locations, sign up for the seminar, make a purchase. Note: A customer’s reason for coming to your website may be different from why you want them to come to your website.</span></label>
+                            <input name="reasons_for_visiting" type="text" class="contact-form__form-control">
+                        </div>
+                        <h3 class="no-margin">Your Content/Assets</h3>
+                        <div class="contact-form__form-group">
+                            <label for="content">Do you have content ready for your new website?</label>
+                            <select name="content" type="select" class="contact-form__form-control">
+                                <option value="Please Select">Please Select</option>
+                                <option value="Yes, content is in documents ready to go">Yes, content is in documents ready to go</option> 
+                                <option value="Yes, start with content from my existing website">Yes, start with content from my existing website</option> 
+                                <option value="No, and I need help with it">No, and I need help with it</option>
+                            </select>
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="content_interview">If not already prepared, who is the point of contact that Insight can interview to gather content for the new website?</label>
+                            <input name="content_interview" type="text" class="contact-form__form-control">
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="images_and_video">Do you have professional photography or videography that you would like to incorporate into the new website?</label>
+                            <select name="images_and_video" type="select" class="contact-form__form-control">
+                                <option value="Please Select">Please Select</option>
+                                <option value="Yes">Yes</option> 
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="images_and_video">Do you have image assets saved to a repository that you can provide access to? <span>ex. Dropbox, Google Drive etc ...</span></label>
+                            <select name="images_and_video" type="select" class="contact-form__form-control">
+                                <option value="Please Select">Please Select</option>
+                                <option value="Yes">Yes</option> 
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="images_and_video">Do you have video hosted through a video hosting service? <span>ex. YouTube, Wistia, Vimeo etc ...</span></label>
+                            <select name="images_and_video" type="select" class="contact-form__form-control">
+                                <option value="Please Select">Please Select</option>
+                                <option value="YouTube">YouTube</option> 
+                                <option value="Wistia">Wistia</option>
+                                <option value="Vimeo">Vimeo</option>
+                                <option value="Other">Other</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="images_and_video">Do you need photography or videography work done to be used on your new website?</label>
+                            <select name="images_and_video" type="select" class="contact-form__form-control">
+                                <option value="Please Select">Please Select</option>
+                                <option value="Yes, I would like help with this">Yes, I would like help with this</option> 
+                                <option value="No, I plan to use stock photography">No, I plan to use stock photography</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <h3 class="no-margin">Your Website</h3>
+                        <div class="contact-form__form-group">
+                            <label for="new_website">What drove you at this particular time to pursue making this project a priority? <span>ex. customers have been complaining, not finding enough new customers, looking for new ways to generate leads, wanting to get ahead of the competition etc...</span></label>
+                            <textarea name="new_website" class="contact-form__form-control"></textarea>
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="problem">What is the main problem that you are looking to solve?</label>
+                            <input name="problem" type="text" class="contact-form__form-control">
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="action">What is the primary action (or actions) you want a user to take when coming to your website? <span>ex. call, email, sign up, request a quote, make a purchase, watch a webinar etc ...</span></label>
+                            <input name="action" type="text" class="contact-form__form-control">
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="outcome">What outcome will make this project successful? How will you measure success?</label>
+                            <input name="outcome" type="text" class="contact-form__form-control">
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="cms">Does your website need to have a content management system? If so, do you have specific content management system requirements or are you open to recommendations?</label>
+                            <input name="cms" type="text" class="contact-form__form-control">
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="website_updates">How often do you require updates and new articles?</label>
+                            <select name="website_updates" type="select" class="contact-form__form-control">
+                                <option value="Please Select">Please Select</option>
+                                <option value="Daily">Daily</option> 
+                                <option value="Weekly">Weekly</option>
+                                <option value="Monthly">Monthly</option>
+                                <option value="Quarterly">Quarterly</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="website_admin">Who will be responsible for maintaining the website or providing new content? Will you require a training session and documentation for using your new website?</label>
+                            <input name="website_admin" type="text" class="contact-form__form-control">
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="website_approvals">Who will be making approvals for each step of the web design process?</label>
+                            <input name="website_approvals" type="text" class="contact-form__form-control">
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="other_websites">Are there any other particular websites that you like? Why? <span>ex. specific page elements, colors, typography, photos, ease of navigation, etc ...</span></label>
+                            <textarea name="other_websites" class="contact-form__form-control"></textarea>
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="website_traffic">How do you plan to promote your website and attract traffic? <span>ex. email campaigns, promotional campaigns, search engines, email, printed literature, social media, search engines etc ...</span></label>
+                            <textarea name="website_traffic" class="contact-form__form-control"></textarea>
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="website_traffic">How do you plan to encourage repeat viewers and referrals? <span>ex. email list, a blog with regular content posting etc ...</span></label>
+                            <textarea name="website_traffic" class="contact-form__form-control"></textarea>
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="website_future">What are your future goals for the website?</label>
+                            <input name="website_future" type="text" class="contact-form__form-control">
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="website_features">Any special features that need to be included in your new website? <span>ex. registration form, search functionality, newsletter/email sign-up forms with appropriate calls to action, information/request forms, uploads/downloads, customer login, an online store/shopping cart, online payment gateway, blog, image gallery etc ...</span></label>
+                            <textarea name="website_features" class="contact-form__form-control"></textarea>
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="website_seo">How important is Search Engine Optimization for your business?</label>
+                            <select name="website_seo" type="select" class="contact-form__form-control">
+                                <option value="Please Select">Please Select</option>
+                                <option value="Not important">Not important</option> 
+                                <option value="Somewhat important">Somewhat important</option>
+                                <option value="Very important">Very important</option>
+                                <option value="Other">Other/option>
+                            </select>
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="seo_keywords">Do you have a list of keywords you’d like to target? What keywords do you expect customers to use when they search for your business online?</label>
+                            <input name="seo_keywords" type="text" class="contact-form__form-control">
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="other_software">What other software do you use? Is there existing software that your new website needs to integrate with?</label>
+                            <input name="other_software" type="text" class="contact-form__form-control">
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="website_timeline">When would you like to launch your new website?</label>
+                            <input name="website_timeline" type="text" class="contact-form__form-control">
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="project_worries">Do you have any concerns or worries about this project?</label>
+                            <textarea name="project_worries" class="contact-form__form-control"></textarea>
+                        </div>
+                        <h3 class="no-margin">Your Contact Information</h3>
+                        <div class="contact-form__form-group">
+                            <label for="email">Email*</label>
+                            <input name="_replyto" type="email" class="contact-form__form-control" required>
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="name">Phone</label>
+                            <input name="phone" type="tel" class="contact-form__form-control" required>
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="email">Is there anything else that you need help with?*</label>
+                            <select name="phone" type="select" class="contact-form__form-control" required>
+                                <option value="Web Design and Development">Please Select</option>
+                                <option value="Copywriting / PR / Social Media">Copywriting / PR / Social Media</option> 
+                                <option value="Media Buying">Media Buying</option> 
+                                <option value="Website Design / Website Development">Website Design / Website Development</option>
+                                <option value="Branding / Digital / Print Design">Branding / Digital / Print Design</option>
+                                <option value="Digital Marketing">Digital Marketing</option>
+                                <option value="Photography / Videography / Drone">Photography / Videography / Drone</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div style="margin-bottom: 1em;" netlify-recaptcha></div>
+                        <button target="_blank" type="submit" class="contact-form__btn btn btn-primary">Send
+                            Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
