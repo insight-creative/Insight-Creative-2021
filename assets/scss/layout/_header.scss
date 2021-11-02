@@ -59,6 +59,7 @@
 
       li {
         list-style-type: none;
+        padding: 0;
       }
     }
 
@@ -87,6 +88,10 @@
       fill: $tertiary-color;
       height: 20px;
     }
+  }
+
+  &__social-link {
+    padding: $ic-200;
   }
 }
 

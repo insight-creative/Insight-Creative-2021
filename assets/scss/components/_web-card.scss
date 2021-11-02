@@ -1,11 +1,28 @@
+.web-projects-grid {
+  display: grid;
+  gap: $ic-300;
+
+  @include breakpoint(sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoint(md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .web-card {
   text-decoration: none;
 
   &__image-wrap {
     position: relative;
-    min-height: 300px;
+    min-height: 200px;
     border-radius: $radius;
     overflow: hidden;
+
+    @include breakpoint(md) {
+      min-height: 300px;
+    }
 
     img {
       transition: 0.3s ease;
