@@ -13,6 +13,7 @@ function updateMenu() {
             menu.classList.add("current");
         }
     }
+    console.log('menu updated')
 
 }
 

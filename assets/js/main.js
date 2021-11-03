@@ -3,13 +3,13 @@ import barbaPrefetch from '@barba/prefetch'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Scrollbar from 'smooth-scrollbar'
+import { initSearch, toggleMobileMenu } from './partials';
 
 barba.use(barbaPrefetch)
 gsap.registerPlugin(ScrollTrigger)
 
 let bodyScrollBar
 
-const menu = document.querySelector('.nav-list')
 const logo = document.querySelector('.site-header__logo')
 const menuItems = document.querySelectorAll('.nav-item')
 const hamburger = document.querySelector('.hamburger')
@@ -27,31 +27,6 @@ const breadcrumbs = document.querySelector('.breadcrumbs__inner')
 const breadcrumbsProgressBar = document.querySelector('.breadcrumbs__progress-bar-inner')
 const loader = document.querySelector('.preloader')
 const loaderInner = document.querySelector('.preloader__inner')
-const mobileMenu = document.querySelector('.site-header__mobile-nav')
-const mobileMenuWrapper = document.querySelector('.site-header__mobile-nav-inner')
-const searchIcon = document.querySelector('.search__open')
-const searchCloseIcon = document.querySelector('.search__close')
-const search = document.querySelector('.search')
-
-function initSearch () {
-  const menuHeight = menu.getBoundingClientRect().height
-
-  search.style.height = menuHeight + 'px'
-
-  searchIcon.addEventListener('click', function() {
-    siteHeader.classList.add('has-search-open')
-  })
-  
-  searchCloseIcon.addEventListener('click', function() {
-    siteHeader.classList.remove('has-search-open')
-  })
-}
-
-function initMobileMenu () {
-  const mobileMenuHeight = mobileMenu.getBoundingClientRect().height
-
-  mobileMenu.style.height = 0
-}
 
 function filterPosts () {
   const filterBtn = document.querySelector('.btn-filter')
@@ -68,7 +43,16 @@ function initSlider () {
   const nextButton = document.querySelector('.slider__btn-next')
   const prevButton = document.querySelector('.slider__btn-prev')
   const slides = document.querySelectorAll('.slider__slide')
+  const slide = document.querySelector('.slider__slide')
   const sliderContents = slider.querySelector('.slider__content')
+  const slideHeight = slide.getBoundingClientRect().height
+
+  const setSliderHeight = () => {
+    sliderContents.style.height = slideHeight + 'px'
+  }
+
+  setSliderHeight()
+
   const setSlidePositions = _ => {
     const slideWidth = slides[0].getBoundingClientRect().width
     slides.forEach((slide, index) => {
@@ -106,13 +90,16 @@ function initSlider () {
   slider.appendChild(dotsContainer)
   const switchSlide = (currentSlide, targetSlide) => {
     const destination = getComputedStyle(targetSlide).left
+    const slideHeight = targetSlide.getBoundingClientRect().height
     // show next slide
     sliderContents.style.transform = 'translateX(-' + destination + ')'
+    // sliderContents.style.height = slideHeight + 'px'
     currentSlide.classList.remove('is-selected')
     targetSlide.classList.add('is-selected')
 
     // show previous slide
     sliderContents.style.transform = 'translateX(-' + destination + ')'
+    // sliderContents.style.height = slideHeight + 'px'
     currentSlide.classList.remove('is-selected')
     targetSlide.classList.add('is-selected')
     if (!targetSlide.previousElementSibling) {
@@ -156,7 +143,6 @@ function initSlider () {
     const currentDot = dotsContainer.querySelector('.is-selected')
     const nextDot = currentDot.nextElementSibling
     switchSlide(currentSlide, nextSlide)
-
     prevButton.classList.remove('btn-inactive')
     highlightDot(currentDot, nextDot)
     
@@ -167,7 +153,6 @@ function initSlider () {
     const currentDot = dotsContainer.querySelector('.is-selected')
     const previousDot = currentDot.previousElementSibling
     switchSlide(currentSlide, previousSlide)
-
     nextButton.classList.remove('btn-inactive')
     highlightDot(currentDot, previousDot)
     
@@ -570,27 +555,6 @@ function initSocial() {
   })
 }
 
-function toggleMobileMenu() {
-  const mobileMenuWrapperHeight = mobileMenuWrapper.getBoundingClientRect().height
-
-  mobileMenu.style.height = 0
-
-  if(mobileMenu.classList.contains("nav-open")) {
-    this.setAttribute("aria-expanded", "false");
-    this.setAttribute("aria-label", "open mobile menu");
-    mobileMenu.classList.remove("nav-open");
-    mobileMenu.style.height = 0
-    hamburger.classList.remove("is-active");
-  } else {
-      mobileMenu.classList.add("nav-open");
-      console.log(mobileMenuWrapperHeight)
-      mobileMenu.style.height = mobileMenuWrapperHeight + 'px'
-      hamburger.classList.add("is-active");
-      this.setAttribute("aria-expanded","true");
-      this.setAttribute("aria-label","close mobile menu");
-  }
-}
-
 function fadeNavigation () {
   const tl = gsap.timeline({
     defaults: {
@@ -705,6 +669,7 @@ function initSmoothScrollbar () {
   // Scrollbar.init(document.querySelector('#viewport'));
   bodyScrollBar = Scrollbar.init(document.querySelector('#viewport'), { damping: 0.05 })
   const windowHeight = window.innerHeight
+  const siteHeaderHeight = siteHeader.getBoundingClientRect().height
   // scrollContent.style.transform = "translate3d(0, 0, 0)";
   // remove horizontal scrollbar
   bodyScrollBar.track.xAxis.element.remove()
@@ -722,6 +687,8 @@ function initSmoothScrollbar () {
   })
   bodyScrollBar.addListener(({ offset }) => {
     breadcrumbs.style.top = 'calc(' + offset.y + 'px' + ' + ' + windowHeight + 'px )'
+    // footer.style.top = offset.y + 'px'
+    // footer.style.top = 'calc(' + offset.y + 'px' + ' - 90px )'
     footer.style.top = 'calc(' + offset.y + 'px' + ' - ' + siteHeaderHeight + 'px )'
   })
   scroller.focus()
