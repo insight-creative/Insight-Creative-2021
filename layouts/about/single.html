@@ -14,13 +14,16 @@
 </section>
 <section class="authors-posts">
     <h2 class="text-center">Posts by {{ (index .Site.Data.staff .Params.author).name }}</h2>
-    <div class="authors-posts__inner post-wrapper wrapper-md padding-top-9">
-        {{ $pages := .Site.RegularPages }}
-        {{ $blog := where $pages "Type" "blog" }}
-        {{ $posts := where $blog "Params.author" (.Title) }}
-        {{- range $posts -}}
-        {{ .Render "blog-cards" }}
-        {{ end }}
+    <div class="wrapper-md">
+        <hr>
+        <div class="authors-posts__inner post-wrapper padding-top-9">
+            {{ $pages := .Site.RegularPages }}
+            {{ $blog := where $pages "Type" "blog" }}
+            {{ $posts := where $blog "Params.author" (.Title) }}
+            {{- range $posts -}}
+            {{ .Render "blog-cards" }}
+            {{ end }}
+        </div>
     </div>
 </section>
 {{ end }}

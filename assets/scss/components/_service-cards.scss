@@ -31,17 +31,13 @@
   }
 
   &__icon {
-    display: grid;
-    place-items: center;
+    margin: 0 auto;
     height: 100%;
 
-    @include breakpoint(md) {
-      place-items: start;
-      justify-items: center;
-    }
-
     svg {
+      width: 100%;
       max-width: 150px;
+      height: 100%;
 
       @include breakpoint(md) {
         max-width: 250px;

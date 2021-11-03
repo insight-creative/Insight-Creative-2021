@@ -12,7 +12,8 @@ nav,
 picture,
 video,
 main,
-footer {
+footer,
+hr {
   max-width: none;
 }
 
@@ -76,4 +77,24 @@ body {
 ::-ms-selection {
   background: rgba(205, 31, 64, 0.8);
   color: $white;
+}
+
+hr {
+  border: 1px solid $dark-black;
+  position: relative;
+  overflow: initial;
+  margin-block-start: $ic-600;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: url("/images/logo-dark.svg") $body-black;
+    height: 50px;
+    width: 50px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

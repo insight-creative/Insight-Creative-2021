@@ -19,29 +19,32 @@
     height: 100%;
     text-align: center;
     font-family: $secondary-font;
-    font-size: clamp(2rem, 4vw, 5.4rem);
+    font-size: clamp(1rem, 4vw, 5.4rem);
     font-weight: 500;
     padding: 2rem;
 
+    .friday-vibes-white {
+      font-size: clamp($ic-400, 4vw, $ic-900);
+    }
+
     sup {
       font-family: $primary-font;
-      font-size: clamp(0.6rem, 2vw, 1.2rem);
+      font-size: clamp(0.3rem, 1vw, 1.2rem);
       font-weight: 400;
       position: relative;
-      right: 15px;
-      top: -10px;
+
+      @include breakpoint(md) {
+        top: -10px;
+        right: 15px;
+      }
     }
   }
 
   &__inner-content {
     width: 100%;
-    display: none;
-
-    @media (min-width: 460px) {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 

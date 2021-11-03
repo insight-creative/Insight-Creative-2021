@@ -59,6 +59,7 @@ h6,
   background: $primary-color;
   padding: 0 1rem;
   color: $white;
+  display: inline-block;
   // overflow: hidden;
   // display: inline-block;
   // position: relative;
@@ -75,6 +76,7 @@ h6,
   background-color: $light-gray;
   color: $primary-color;
   padding: 0rem 1rem;
+  display: inline-block;
 }
 
 .emphasis-underline {
@@ -122,15 +124,21 @@ h6,
 }
 
 .text-left {
-  text-align: left !important;
+  text-align: left;
 }
 
 .text-right {
-  text-align: right !important;
+  text-align: right;
 }
 
 .text-center {
-  text-align: center !important;
+  text-align: center;
+}
+
+@include breakpoint(md) {
+  .text-center-m {
+    text-align: center;
+  }
 }
 
 .i {

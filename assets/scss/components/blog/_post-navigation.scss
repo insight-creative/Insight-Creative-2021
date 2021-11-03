@@ -1,9 +1,8 @@
 .post-navigation {
-  border-top: 1px solid $dark-black;
   padding: $ic-300 0 0 0;
   display: flex;
-    justify-content: space-between;
-    flex-direction: column; 
+  justify-content: space-between;
+  flex-direction: column;
 
   @include breakpoint(sm) {
     // display: flex;

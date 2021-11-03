@@ -19,6 +19,7 @@
     overflow: hidden;
     height: 45rem;
     width: 100%;
+    border-radius: $radius;
 
     @include breakpoint(md) {
       height: 30rem;
@@ -65,7 +66,8 @@
   &__btn-prev,
   &__btn-next {
     display: grid;
-    place-items: center;
+    align-items: center;
+    justify-items: center;
     width: 30px;
     height: 30px;
     cursor: pointer;

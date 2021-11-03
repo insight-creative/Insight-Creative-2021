@@ -4,35 +4,38 @@
 {{ $haspagination__dots := or (gt $minPages 2) (gt $maxPages 2) }}
 {{ $hasMaxPages := and (ge $minPages 2) (ge $maxPages 2) }}
 
-<div class="pagination padding-top-2">
-    {{ if .Paginator.HasPrev }}
-    <a class="pagination__previous background-circle background-circle--sm" href="{{ .Paginator.Prev.URL }}"
-        role="button">{{ partial "svg-icons/arrow-left.svg" . }} <span class="screen-reader-text">Previous Page</span></a>
-    <a class="pagination__numbers background-circle background-circle--sm" href="{{ .Paginator.First.URL }}" role="button">1</a>
-    {{ end }}
-
-    {{ if eq $minPages 2 }}
-    <a class="pagination__numbers background-circle background-circle--sm" href="{{ .Paginator.Prev.URL }}" role="button">{{ sub .Paginator.PageNumber 1 }}</a>
-    {{ end }}
-
-    {{ if gt $minPages 2 }}
-    <span class="pagination__numbers pagination__dots background-circle background-circle--sm">...</span>
-    {{ end }}
-
-    <span class="pagination__numbers pagination__current background-circle background-circle--sm">{{.Paginator.PageNumber}}</span>
-
-    {{ if eq $maxPages 2 }}
-    <a class="pagination__numbers background-circle background-circle--sm" href="{{ .Paginator.Next.URL }}" role="button">{{ add .Paginator.PageNumber 1 }}</a>
-    {{ end }}
-
-    {{ if gt $maxPages 2 }}
-    <span class="pagination__numbers pagination__dots background-circle background-circle--sm">...</span>
-    {{ end -}}
-
-    {{ if .Paginator.HasNext -}}
-    <a class="pagination__numbers background-circle background-circle--sm" href="{{ .Paginator.Last.URL }}" role="button">{{ .Paginator.TotalPages }}</a>
-    <a class="pagination__next background-circle background-circle--sm" href="{{ .Paginator.Next.URL }}"
-        role="button"><span class="screen-reader-text">Next Page</span>{{ partial "svg-icons/arrow-right.svg" . }}</a>
-    {{- end }}
+<div class="wrapper-md padding-bottom-9">
+    <div class="pagination padding-top-2">
+        {{ if .Paginator.HasPrev }}
+        <a class="pagination__previous background-circle background-circle--sm" href="{{ .Paginator.Prev.URL }}"
+            role="button">{{ partial "svg-icons/arrow-left.svg" . }} <span class="screen-reader-text">Previous Page</span></a>
+        <a class="pagination__numbers background-circle background-circle--sm" href="{{ .Paginator.First.URL }}" role="button">1</a>
+        {{ end }}
+    
+        {{ if eq $minPages 2 }}
+        <a class="pagination__numbers background-circle background-circle--sm" href="{{ .Paginator.Prev.URL }}" role="button">{{ sub .Paginator.PageNumber 1 }}</a>
+        {{ end }}
+    
+        {{ if gt $minPages 2 }}
+        <span class="pagination__numbers pagination__dots background-circle background-circle--sm">...</span>
+        {{ end }}
+    
+        <span class="pagination__numbers pagination__current background-circle background-circle--sm">{{.Paginator.PageNumber}}</span>
+    
+        {{ if eq $maxPages 2 }}
+        <a class="pagination__numbers background-circle background-circle--sm" href="{{ .Paginator.Next.URL }}" role="button">{{ add .Paginator.PageNumber 1 }}</a>
+        {{ end }}
+    
+        {{ if gt $maxPages 2 }}
+        <span class="pagination__numbers pagination__dots background-circle background-circle--sm">...</span>
+        {{ end -}}
+    
+        {{ if .Paginator.HasNext -}}
+        <a class="pagination__numbers background-circle background-circle--sm" href="{{ .Paginator.Last.URL }}" role="button">{{ .Paginator.TotalPages }}</a>
+        <a class="pagination__next background-circle background-circle--sm" href="{{ .Paginator.Next.URL }}"
+            role="button"><span class="screen-reader-text">Next Page</span>{{ partial "svg-icons/arrow-right.svg" . }}</a>
+        {{- end }}
+    </div>
 </div>
+
 {{ end -}}

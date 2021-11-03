@@ -1,9 +1,13 @@
 .pagination {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: $ic-500;
   border-top: 1px solid $dark-black;
+
+  @include breakpoint(sm) {
+    justify-content: center;
+  }
 
   .pagination__next,
   .pagination__previous,
@@ -13,9 +17,6 @@
     font-weight: 700;
     text-decoration: none;
     transition: 0.3s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin: 0 10px;
     color: $primary-color;
     height: 65px;
@@ -37,10 +38,19 @@
       transition: 0.3s ease-out;
     }
   }
+
+  .pagination__next,
+  .pagination__previous {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   &__next {
     svg {
       margin-left: 5px;
     }
+
     &:hover,
     &:focus {
       svg {
@@ -48,16 +58,27 @@
       }
     }
   }
+
   &__numbers {
     padding: 1rem 2rem;
+    display: none;
+
+    @include breakpoint(sm) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
+
   &__current {
     opacity: 0.7;
   }
+
   &__previous {
     svg {
       margin-right: 5px;
     }
+
     &:hover,
     &:focus {
       svg {

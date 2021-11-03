@@ -1,0 +1,16 @@
+<div class="padding-top-6">
+  <div class="wrapper-md">
+    <div class="category-wrapper">
+      <button class="btn-filter">{{ partialCached "svg-icons/filter.svg" . }} Filter by Category</button>
+        {{- if isset site.Taxonomies "categories" }}
+        {{- if not (eq (len site.Taxonomies.categories) 0) }}
+        <ul class="category-list">
+          {{- range .Site.Taxonomies.categories }}
+          <li class="category-list__item"><a href="{{ .Page.Permalink }}" class="category category-list__link">{{ .Page.Title }}<span class="ml-2"> ({{ .Count }})</span></a></li>
+          {{- end }}
+        </ul>
+        {{- end }}
+        {{- end }}
+    </div>
+  </div>
+</div>

@@ -1,6 +1,5 @@
 .recent-posts {
-  @include breakpoint(lg) {
-
+  @include breakpoint(md) {
     .blog-card:nth-of-type(1) {
       margin-right: 1rem;
     }

@@ -1,5 +1,5 @@
 .work-hero {
-  height: 40vh;
+  height: 70vh;
   position: relative;
 
   &__image-wrapper {
@@ -17,13 +17,11 @@
 
   &__header {
     position: absolute;
-    bottom: -1px;
+    bottom: -5px;
     width: 100%;
   }
 
   @include breakpoint(md) {
-    height: 70vh;
-
     &__header {
       position: relative;
       top: -150px;
@@ -58,6 +56,7 @@
   iframe,
   .website-design {
     margin-top: $ic-300;
+    width: 100%;
   }
 }
 

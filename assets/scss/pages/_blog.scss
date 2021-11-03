@@ -7,7 +7,6 @@
 .post-wrapper {
   display: grid;
   grid-gap: 1rem;
-  border-top: 1px solid $dark-black;
 
   @include breakpoint(sm) {
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));

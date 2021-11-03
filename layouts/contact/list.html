@@ -1,12 +1,12 @@
 {{ define "main" }}
-<div class="contact-hero bg-black block text-center">
+<div class="contact-hero bg-black block">
     <div class="wrapper-md flow">
-        <h1 class="no-margin">{{ .Params.hero.head | markdownify }}</h1>
-        <h2 class="h4">{{ .Params.hero.copy | markdownify }}</h2>
+        <h1 class="no-margin text-center-m">{{ .Params.hero.head | markdownify }}</h1>
+        <h2 class="h5 text-center-m">{{ .Params.hero.copy | markdownify }}</h2>
         <div class="sales-grid">
             {{ range sort .Site.Data.staff "weight" "asc" }}
                 {{ if eq .department "Sales" }}
-                <div class="sales-grid__sales">
+                <div class="sales-grid__sales text-center">
                     <div class="staff-card__image-wrapper background-circle background-circle--lg">
                         <img src="{{ .image_jpg }}" alt="headshot of Insight Creative's {{ .job_title }}, {{ .name }}" class="staff-card__image">
                     </div>

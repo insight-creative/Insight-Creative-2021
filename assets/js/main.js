@@ -33,8 +33,6 @@ const searchIcon = document.querySelector('.search__open')
 const searchCloseIcon = document.querySelector('.search__close')
 const search = document.querySelector('.search')
 
-console.log(siteHeaderHeight)
-
 function initSearch () {
   const menuHeight = menu.getBoundingClientRect().height
 

@@ -27,7 +27,8 @@
 
   &__image-wrapper {
     // position: relative;
-    margin-bottom: $ic-200;
+    margin: 0 auto $ic-200 auto;
+    max-width: 200px;
     // background: $white;
     // border-radius: 50%;
     // &:after {

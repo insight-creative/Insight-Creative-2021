@@ -1,0 +1,8 @@
+<div class="wrapper-md">
+  <hr>
+  <div class="post-wrapper padding-top-9">
+    {{ range (.Paginate ( where .Site.RegularPages "Type" "blog" )).Pages }}
+    {{ .Render "blog-cards-alt" }}
+    {{ end }}
+  </div>
+</div>

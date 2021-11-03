@@ -1,10 +1,5 @@
 {{ define "main" }}
-<div class="bg-black block text-center">
-    <div class="wrapper-md flow">
-        <h1 class="no-margin">{{ .Params.hero.head | markdownify }}</h1>
-        <h2 class="h4">{{ .Params.hero.copy | markdownify }}</h2>
-    </div>
-</div>
+{{ partial "hero-alt" . }}
 <div class="block wrapper-sm">
     <div class="flex flex-column flex-row-m">
         <div class="w-100">

@@ -10,12 +10,20 @@
   }
 
   &__icon {
-    margin: 0 auto $ic-700 auto;
+    margin: 0 auto $ic-300 auto;
 
     svg {
-      max-width: 170px;
+      max-width: 100px;
       position: relative;
       top: 5px;
+    }
+
+    @include breakpoint(md) {
+      margin: 0 auto $ic-700 auto;
+
+      svg {
+        max-width: 170px;
+      }
     }
   }
 
@@ -26,6 +34,7 @@
     padding: 0.5rem $ic-600;
     position: relative;
     top: -10px;
+    font-size: clamp(0.8rem, 4vw, $ic-300);
   }
 
   picture {
@@ -45,8 +54,8 @@
 
   &__circle {
     background: #fff;
-    height: clamp(28rem, 80vw, 75rem);
-    width: clamp(28rem, 80vw, 75rem);
+    height: clamp(24rem, 80vw, 75rem);
+    width: clamp(24rem, 80vw, 75rem);
     border-radius: 50%;
     position: absolute;
 
@@ -54,8 +63,8 @@
       position: absolute;
       content: "";
       border: 5px solid $secondary-color;
-      height: clamp(28rem, 80vw, 75rem);
-      width: clamp(28rem, 80vw, 75rem);
+      height: clamp(24rem, 80vw, 75rem);
+      width: clamp(24rem, 80vw, 75rem);
       border-radius: 50%;
       top: -10px;
       left: 10px;
