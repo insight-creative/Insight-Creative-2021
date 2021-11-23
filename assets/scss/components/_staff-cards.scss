@@ -8,6 +8,7 @@
   border-radius: $radius;
   margin: $ic-100 0;
   text-decoration: none;
+  width: 100%;
 
   @include breakpoint(sm) {
     margin: $ic-300;
