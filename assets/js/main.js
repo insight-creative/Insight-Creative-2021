@@ -171,14 +171,6 @@ function initSlider () {
   })
 }
 
-hamburger.addEventListener('click', toggleMobileMenu);
-
-function initMain () {
-  const main = document.querySelector('.site-main')
-
-  main.style.marginTop = siteHeaderHeight + 'px'
-}
-
 function initAnimatedNav () {
   const animateNav = gsap.to(siteHeader, {
     y: '-=150',
@@ -200,17 +192,6 @@ function initAnimatedNav () {
       } else if (direction === 1 && isActive === true) {
         animateNav.play()
       }
-    }
-  })
-}
-
-function initProgress () {
-  gsap.to(breadcrumbsProgressBar, {
-    scale: 1,
-    scrollTrigger: {
-      scrub: 0.3,
-      horizontal: true,
-      scroller: scrollContainer
     }
   })
 }
@@ -594,12 +575,12 @@ function initImageEffects () {
     gsap.to(image, {
       scale: 1,
       ease: 'none',
-      duration: 2,
+      // duration: 2,
       scrollTrigger: {
         trigger: section,
         start: 'top bottom',
-        toggleActions: "play complete reverse reset",
-        // scrub: true
+        // toggleActions: "play complete reverse reset",
+        scrub: 1
       }
     })
   })
@@ -649,20 +630,6 @@ function initHeroParallax () {
   })
 }
 
-function initFooter () {
-  gsap.set('.footer__container', { yPercent: 0 })
-  const uncover = gsap.timeline({ paused: true })
-  uncover
-    .to('.footer__container', { yPercent: 0 })
-  ScrollTrigger.create({
-    trigger: '.site-main',
-    start: 'bottom bottom',
-    end: 'bottom 45%',
-    animation: uncover,
-    scrub: true
-  })
-}
-
 function initSmoothScrollbar () {
   const breadcrumbs = document.querySelector('.breadcrumbs')
    
@@ -687,9 +654,6 @@ function initSmoothScrollbar () {
   })
   bodyScrollBar.addListener(({ offset }) => {
     breadcrumbs.style.top = 'calc(' + offset.y + 'px' + ' + ' + windowHeight + 'px )'
-    // footer.style.top = offset.y + 'px'
-    // footer.style.top = 'calc(' + offset.y + 'px' + ' - 90px )'
-    footer.style.top = 'calc(' + offset.y + 'px' + ' - ' + siteHeaderHeight + 'px )'
   })
   scroller.focus()
 }
@@ -779,7 +743,6 @@ function initPage () {
   initSmoothScrollbar()
   initAnimatedNav()
   initVideo()
-  initMobileMenu()
   initCursor()
   initSearch()
   initBreadcrumbs()
@@ -788,7 +751,6 @@ function initPage () {
   initImageEffects()
   initHeroParallax()
   initSlider()
-  initFooter()
   filterPosts()
 }
 

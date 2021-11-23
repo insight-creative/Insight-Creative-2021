@@ -4,7 +4,7 @@ seo:
   title: A winning COVID-19 response
   description: An advertising agency with a vision to bring complete strategic development and creative execution capabilities into one roll-up-your-sleeves, hard-working kind of ad agency.
   featured_image: Ho-Chunk-Case-Study-A-Winning-COVID-19-Response.jpg
-date: 2021-10-21
+date: 2021-01-05
 client: Ho-Chunk Gaming Nekoosa
 industries:
   industries:

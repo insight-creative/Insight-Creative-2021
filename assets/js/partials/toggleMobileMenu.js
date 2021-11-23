@@ -1,5 +1,8 @@
+const hamburger = document.querySelector('.hamburger')
+
+hamburger.addEventListener('click', toggleMobileMenu);
+
 function toggleMobileMenu() {
-    const hamburger = document.querySelector('.hamburger')
     const mobileMenu = document.querySelector('.site-header__mobile-nav')
     const mobileMenuWrapper = document.querySelector('.site-header__mobile-nav-inner')
     const mobileMenuWrapperHeight = mobileMenuWrapper.getBoundingClientRect().height

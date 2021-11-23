@@ -71,3 +71,11 @@
     transition: 0.3s ease;
   }
 }
+
+.related-projects,
+.work,
+.tags {
+  .blog-card__meta {
+    top: 0;
+  }
+}
