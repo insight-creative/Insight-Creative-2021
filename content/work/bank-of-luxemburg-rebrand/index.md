@@ -20,7 +20,7 @@ provided_services:
     - service: Design
       url: /services/graphic-design-services/
     - service: Digital
-      url: /services/digital/
+      url: /services/digital-marketing-services/
     - service: Media
       url: /services/media/
     - service: Studio

@@ -1,6 +1,6 @@
 ---
 Title: Web
-url: /services/web-development/
+url: /services/web-design-development-services/
 seo:
   title: Website Design and Website Development Services in Green Bay, WI
   description: Your website should operate like a well-oiled and ever-evolving

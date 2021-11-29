@@ -2,17 +2,17 @@ Service 1:
   name: Content
   url: /services/copywriting-services/
   subservice1: Copywriting
-  subservice2: Public Relations
-  subservice3: Social Media
+  subservice2: Social Media
+  subservice3: Public Relations
 Service 2:
   name: Web
-  url: /services/web-development/
+  url: /services/web-design-development-services/
   subservice1: Design
   subservice2: Development
   subservice3: Maintenance
 Service 3:
   name: Digital
-  url: /services/digital/
+  url: /services/digital-marketing-services/
   subservice1: Streaming Ads
   subservice2: Display & Social
   subservice3: Search Engine Marketing (SEM)

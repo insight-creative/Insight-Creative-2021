@@ -36,7 +36,7 @@ services:
       description: A lot of planning goes into getting the perfect shot. From lighting and location to styling and creative tricks, our decades of experience ensure we’re prepared to make the best use of your time and money.
       service_list: product shots • headshots • food styling & photography • digital retouching • green screen • commercial photography • industrial photography • on-site review
 
-    - heading: Video
+    - heading: Videography
       subhead: <span class="text-tertiary"><em>Let’s see your brand in motion.</em></span>
       description: Whether in the studio or on-location, our flexible and experienced creatives can translate your brand into professional video. With an arsenal of high-end equipment—including cinematic 4K cameras—we guarantee a picture, sound and lighting that reflects the quality of your brand.
       service_list: company overviews • product promotions • social media • commercials • sales videos • testimonials • training videos • recruitment • demonstrations • editing • sound mixing

@@ -17,9 +17,9 @@ provided_services:
     - service: Design
       url: /services/graphic-design-services/
     - service: Digital
-      url: /services/digital/
+      url: /services/digital-marketing-services/
     - service: Web
-      url: /services/web-development/
+      url: /services/web-design-development-services/
 tags:
   - Branding
 testimonial:
