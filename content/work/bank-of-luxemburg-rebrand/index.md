@@ -2,7 +2,7 @@
 Title: Putting “community” in community banking
 seo:
   title: Putting “community” in community banking
-  description: An advertising agency with a vision to bring complete strategic development and creative execution capabilities into one roll-up-your-sleeves, hard-working kind of ad agency.
+  description: Insight reimagined Bank of Luxemburg’s nearly 70-year-old brand. See how voice, colors, typography and even illustrated fictional spokespeople came together.
   featured_image: BOL-Business-Cards.jpg
 date: 2021-01-03
 client: Bank of Luxemburg

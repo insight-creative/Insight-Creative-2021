@@ -2,7 +2,7 @@
 Title: Rebranding an anchored identity
 seo:
   title: Rebranding an anchored identity
-  description: An advertising agency with a vision to bring complete strategic development and creative execution capabilities into one roll-up-your-sleeves, hard-working kind of ad agency.
+  description: See how the Washington Island Ferry entrusted Insight to create a new brand that reflects their modern operations but also respects the history with the Island community.
   featured_image: wif-slider-main-medium-optimized.jpg
 date: 2021-01-02
 client: Washington Island Ferry

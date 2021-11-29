@@ -2,7 +2,7 @@
 Title: A bold brand remodel
 seo:
   title: A bold brand remodel
-  description: An advertising agency with a vision to bring complete strategic development and creative execution capabilities into one roll-up-your-sleeves, hard-working kind of ad agency.
+  description: Fox Structures, agricultural and commercial construction specialists approached Insight for a brand refresh to represent their bold and quality work.
   featured_image: fox-structures-billboard-main.jpg
 date: 2021-01-01
 client: Fox Structures

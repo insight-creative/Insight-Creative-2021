@@ -2,7 +2,7 @@
 Title: Mission “Website Redesign”
 seo:
   title: Mission “Website Redesign”
-  description: An advertising agency with a vision to bring complete strategic development and creative execution capabilities into one roll-up-your-sleeves, hard-working kind of ad agency.
+  description: Tactical vehicle manufacturer Oshkosh Defense needed an experienced team for their website redesign, learn about our mission to deliver a modern website design!
   featured_image: OshkoshDefense-MacBookMockup.jpg
 date: 2021-01-06
 client: Oshkosh Defense
