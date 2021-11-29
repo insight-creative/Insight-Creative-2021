@@ -6,7 +6,7 @@ seo:
   description: "A list to demystify technical language for non-designers."
   featured_image: pantone-color-swatches-2500.jpg
   featured_image_alt: Pantone Color swatches spread out on a table
-date: 2021-09-16
+date: 2021-09-17
 author: Sam Rowe
 categories: ["Design"]
 page_class: single-post

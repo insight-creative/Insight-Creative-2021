@@ -3,6 +3,10 @@
 }
 
 .media {
+  h1 {
+    max-width: 14ch;
+  }
+
   .service-card__partners {
     grid-template-columns: repeat(2, 1fr);
 

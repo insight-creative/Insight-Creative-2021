@@ -12,11 +12,13 @@
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   }
 
-  .blog-card {
+  .blog-card,
+  .work-card {
     width: 100%;
   }
 
-  .blog-card:nth-of-type(even) {
+  .blog-card:nth-of-type(even),
+  .work-card:nth-of-type(even) {
     @include breakpoint(md) {
       margin-top: $ic-700;
     }

@@ -1,9 +1,9 @@
 {{ $image := (.Resources.GetMatch (index .Params.seo.featured_image)) }}
 {{ $smallwebp := $image.Resize "600x q80 webp" }}
 {{ $smalljpg := $image.Resize "600x q80" }}
-<article class="blog-card">
+<article class="work-card">
     <a href="{{ .RelPermalink }}">
-        <div class="blog-card__image-wrapper with-zoom">
+        <div class="work-card__image-wrapper with-zoom">
             <picture>
                 <source sizes="50vw" srcset="{{ $smallwebp.RelPermalink }}" type="image/webp" >
                 <source sizes="50vw" srcset="{{ $smalljpg.RelPermalink }}" type="image/jpg" >
@@ -11,16 +11,8 @@
                     src="{{ $image.RelPermalink }}" width="500" height="300" alt="{{ .Params.seo.featured_image_alt }}" class="blog-card__image">
             </picture>
         </div>
-        <div class="blog-card__meta">
-            <div class="blog-card__meta-inner flex">
-                <div class="blog-card__category">
-                    {{ if .Params.Portfolio_Categories }}
-                    {{ range $index, $elements := .Params.Portfolio_Categories }}<span class="categories">{{ if ne $index 0 }}{{ end }}
-                        {{ . | title }}</span> {{ end}}
-                    {{ end }}
-                </div>
-            </div>
-            <h3 class="h5 blog-card__title">{{ .Params.seo.title | markdownify }}</h4>
+        <div class="work-card__meta">
+            <h3 class="h5 work-card__title">{{ .Params.seo.title | markdownify }}</h4>
         </div>
     </a>
 </article>

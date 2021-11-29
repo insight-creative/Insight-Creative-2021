@@ -55,11 +55,11 @@ body {
 
 .site-main {
   opacity: 1;
-  margin-top: $mobile-header;
+  padding-top: $mobile-header;
   background-color: $body-black;
 
   @include breakpoint(md) {
-    margin-top: $desktop-header;
+    padding-top: $desktop-header;
   }
 }
 

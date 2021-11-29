@@ -1,8 +1,6 @@
 {{ define "main" }}
 {{ partial "hero-alt" . }}
-{{ partial "work/tags-filter" . }}
 <div class="tags wrapper-md">
-  <hr>
   <div class="post-wrapper padding-top-9">
     {{ $paginator := .Paginate ( where .Data.Pages "Type" "work" ) }}
     {{ range $paginator.Pages }}

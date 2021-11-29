@@ -46,7 +46,7 @@
             {{ with .Params.provided_services }}
             <div>
             <h3 class="h4 no-margin">What we did</h3>
-            <ul>
+            <ul class="services-list">
                 {{ range .services }}
                 <li><a href="{{ .url }}">{{ .service }}</a></li>
                 {{ end }}

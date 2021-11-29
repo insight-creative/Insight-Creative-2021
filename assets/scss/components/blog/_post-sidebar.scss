@@ -4,10 +4,11 @@
   @include breakpoint(md) {
     display: block;
     width: 25%;
+    margin-right: $ic-300;
   }
 
   .staff-card--sidebar {
-    margin: 0 $ic-100;
+    margin: 0;
     display: block;
 
     .staff-card__inner {
@@ -20,7 +21,7 @@
 
     .staff-card__image-wrapper {
       margin: $ic-300 auto;
-      max-width: 90%;
+      max-width: 80%;
     }
 
     .staff-card__name {

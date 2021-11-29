@@ -11,6 +11,10 @@
 }
 
 .studio {
+  h1 {
+    max-width: 16ch;
+  }
+
   .department-feed {
     display: none;
   }

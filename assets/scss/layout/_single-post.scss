@@ -33,6 +33,10 @@
     border-left: 10px solid $primary-color;
     padding: 2rem;
   }
+
+  .staff-card .background-circle--xl::after {
+    border: 3px solid $secondary-color;
+  }
 }
 
 .headshot-image {
@@ -80,7 +84,8 @@
     }
   }
 
-  .blog-card.blog-card:nth-of-type(even) {
+  .blog-card.blog-card:nth-of-type(even),
+  .work-card.work-card:nth-of-type(even) {
     @include breakpoint(md) {
       margin-top: 0;
     }

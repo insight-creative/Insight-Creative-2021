@@ -6,7 +6,7 @@
 {{ $smalljpg := $image.Resize "600x" }}
 {{ $mediumjpg := $image.Resize "900x" }}
 {{ $bigjpg := $image.Resize "1200x" }}
-<div class="parallax-wrapper with-parallax">
+<div class="parallax-wrapper with-parallax fade-up">
     <picture>
         <source sizes="100vw" srcset="{{ $smallwebp.RelPermalink }} 480w, {{ $mediumwebp.RelPermalink }} 768w, {{ $bigwebp.RelPermalink }} 1024w" type="image/webp" >
         <source sizes="100vw" srcset="{{ $smalljpg.RelPermalink }} 480w, {{ $mediumjpg.RelPermalink }} 768w, {{ $bigjpg.RelPermalink }} 1024w" type="image/jpg" >

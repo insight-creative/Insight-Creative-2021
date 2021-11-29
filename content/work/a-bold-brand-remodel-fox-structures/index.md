@@ -41,5 +41,5 @@ testimonial:
 {{< responsive-image src="fox-structures-letterhead-1800.jpg" alt="">}}
 </div>
 {{< website-design heading="Website Home Page" src="foxstructuresnewhomepage-1800.jpg" alt="">}}
-{{< website-design heading="About Page Design" src="foxstructuresnewaboutpage-1800.jpg" alt="">}}
+{{< website-design heading="About Page" src="foxstructuresnewaboutpage-1800.jpg" alt="">}}
 </div>

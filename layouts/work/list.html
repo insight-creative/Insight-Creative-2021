@@ -1,13 +1,11 @@
 {{ define "main" }}
-<div class="bg-black block">
-    <div class="wrapper-md flow">
-        <h1 class="h3 no-margin text-center-m">See what happens when <span class="emphasis-red">clear communication</span> meets <span class="emphasis-underline">imagination.</span></h1>
+<div class="hero-alt bg-black block">
+    <div class="wrapper flow">
+        <h1 class="no-margin text-center-m">See what happens when <span class="emphasis-red">clear communication</span> meets <span class="emphasis-underline">imagination.</span></h1>
         <h2 class="h5">Insight has decades of experience working with a variety of clients in an array of industries and our robust portfolio reflects that. Browse our collection of creative work to see Communication with substance in action! </h2>
     </div>
 </div>
-{{ partial "work/tags-filter" . }}
 <div class="wrapper-md">
-    <hr>
     <div class="post-wrapper padding-top-9">
         {{ range .Pages }}
         {{ .Render "work-card" }}

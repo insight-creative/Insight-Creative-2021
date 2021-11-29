@@ -1,3 +1,13 @@
+.work {
+  h1 {
+    font-size: clamp($ic-400, 4vw, $ic-700);
+
+    .emphasis-underline {
+      font-size: clamp(3.052rem, 5vw, 5rem);
+    }
+  }
+}
+
 .work-hero {
   height: 70vh;
   position: relative;
@@ -39,12 +49,15 @@
 
   ul {
     padding: 0;
-    columns: 2;
 
     li {
       list-style-type: none;
       padding: 0;
     }
+  }
+
+  .services-list {
+    columns: 2;
   }
 }
 

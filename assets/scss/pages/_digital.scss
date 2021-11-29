@@ -12,6 +12,12 @@
 }
 
 .digital {
+  h1 {
+    max-width: 18ch;
+  }
+}
+
+.digital {
   .service-card:nth-of-type(3) {
     @include breakpoint(md) {
       .service-card__partners {

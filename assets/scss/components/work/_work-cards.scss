@@ -1,0 +1,41 @@
+.work-card {
+  @include breakpoint(md) {
+    width: 50%;
+  }
+
+  a {
+    text-decoration: none;
+    width: 100%;
+    height: calc(100% - 65px);
+  }
+
+  &__image-wrapper {
+    margin-bottom: 1rem;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+    height: 300px;
+  }
+
+  &__image {
+    border-radius: $radius;
+    height: 120%;
+    position: absolute;
+    top: -25%;
+    left: 0;
+    object-fit: cover;
+    object-position: center;
+    will-change: transform;
+    backface-visibility: hidden;
+  }
+
+  &__meta {
+    position: relative;
+    top: 0;
+  }
+
+  &__title {
+    font-weight: 700;
+    transition: 0.3s ease;
+  }
+}

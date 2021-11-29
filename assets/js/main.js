@@ -218,8 +218,8 @@ function initCursor () {
   const tertiaryBtns = document.querySelectorAll('.btn-tertiary')
   const projectLink = document.querySelector('.featured-projects__link')
   const projectLinks = document.querySelectorAll('.featured-projects__link')
-  const blogLink = document.querySelector('.blog-card')
-  const blogLinks = document.querySelectorAll('.blog-card a')
+  const blogCard = document.querySelector('.blog-card')
+  const blogCards = document.querySelectorAll('.blog-card a')
   const socialLink = document.querySelector('.social__link')
   const socialLinks = document.querySelectorAll('.social__link')
   const slide = document.querySelector('.swiper-slide')
@@ -229,6 +229,8 @@ function initCursor () {
   const webCards = document.querySelectorAll('.web-card')
   const staffCard = document.querySelector('.staff-card')
   const staffCards = document.querySelectorAll('.staff-card')
+  const workCard = document.querySelector('.work-card')
+  const workCards = document.querySelectorAll('.work-card')
 
   gsap.set('.follower', { xPercent: -50, yPercent: -50, backgroundColor: '#8bc0c6' })
   gsap.set('.cursor', { xPercent: -50, yPercent: -50 })
@@ -360,8 +362,36 @@ function initCursor () {
     })
   }
 
-  if (document.body.contains(blogLink)) {
-    blogLinks.forEach(link => {
+  if (document.body.contains(workCard)) {
+    workCards.forEach(link => {
+      link.addEventListener('mouseover', () => {
+        followerText.innerHTML = 'View Project'
+        gsap.to(follow, 0.3, {
+          scale: 10,
+          backgroundColor: '#cd1f40',
+          autoAlpha: 0.9,
+          mixBlendMode: 'initial'
+        })
+        gsap.to(followerText, 0.3, {
+          autoAlpha: 1
+        })
+      })
+      link.addEventListener('mouseout', () => {
+        gsap.to(follow, 0.3, {
+          scale: 1,
+          backgroundColor: '#8bc0c6',
+          autoAlpha: 1,
+          mixBlendMode: 'exclusion'
+        })
+        gsap.to(followerText, 0.3, {
+          autoAlpha: 0
+        })
+      })
+    })
+  }
+
+  if (document.body.contains(blogCard)) {
+    blogCards.forEach(link => {
       link.addEventListener('mouseover', () => {
         followerText.innerHTML = 'View Post'
         gsap.to(follow, 0.3, {
@@ -636,6 +666,7 @@ function initSmoothScrollbar () {
   // Scrollbar.init(document.querySelector('#viewport'));
   bodyScrollBar = Scrollbar.init(document.querySelector('#viewport'), { damping: 0.05 })
   const windowHeight = window.innerHeight
+  const siteHeader = document.querySelector('.site-header')
   const siteHeaderHeight = siteHeader.getBoundingClientRect().height
   // scrollContent.style.transform = "translate3d(0, 0, 0)";
   // remove horizontal scrollbar
@@ -653,7 +684,7 @@ function initSmoothScrollbar () {
     }
   })
   bodyScrollBar.addListener(({ offset }) => {
-    breadcrumbs.style.top = 'calc(' + offset.y + 'px' + ' + ' + windowHeight + 'px )'
+    breadcrumbs.style.top = 'calc(' + offset.y + 'px' + ' + ' + siteHeaderHeight + 'px' + ' - 10px ' + ' + ' + windowHeight + 'px )'
   })
   scroller.focus()
 }
@@ -666,25 +697,6 @@ function killScrollTriggers () {
   const triggers = ScrollTrigger.getAll()
   triggers.forEach(trigger => {
     trigger.kill()
-  })
-}
-
-function initPreloader() {
-  const preloader = document.querySelector('.preloader')
-  const preloaderInner = document.querySelector('.preloader__inner-content-wrapper')
-  const preloaderContent = document.querySelector('.preloader__inner-content')
-  console.log('preloader out')
-  const tl = gsap.timeline({
-    defaults: {
-      delay: 1
-    }
-  })
-  tl.to(preloaderInner, {
-    y: 0
-  })
-  tl.to(preloader, {
-    scale: 0,
-    duration: 0.1
   })
 }
 
@@ -718,6 +730,10 @@ function pageTransitionOut ({ container }) {
         mobileMenu.classList.remove('nav-open')
         mobileMenu.style.height = 0
         hamburger.classList.remove('is-active')
+    }
+
+    if (siteHeader.classList.contains('has-search-open')) {
+      siteHeader.classList.remove('has-search-open')
     }
 
   const tl = gsap.timeline({

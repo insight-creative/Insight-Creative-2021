@@ -77,10 +77,10 @@ services:
         security scans • malware cleanup • analytics and reporting
 web_portfolio:
   portfolio_items:
-    - title: Knope Heating & Air Conditioning
-      image: knope-website-preview.jpg
-      image_alt: Knope Heating & Air Conditioning Website Preview
-      website_url: https://knopehvac.com/
+    - title: Greiber Heating & Sheet Metal
+      image: greiber-heating-and-cooling-website-preview.jpg
+      image_alt: Greiber Heating & Sheet Metal Website Preview
+      website_url: https://www.greiberheating.com/
       tech_stack: Hugo | Netlify
       lighthouse_score:
         - score: "100"
