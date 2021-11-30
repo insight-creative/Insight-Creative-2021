@@ -48,8 +48,8 @@
       grid-template-columns: repeat(2, 1fr);
       gap: $ic-900;
 
-      .image-wrapper + .image-wrapper {
-        margin-top: $ic-900;
+      img + img {
+        margin-top: 200px;
       }
     }
 

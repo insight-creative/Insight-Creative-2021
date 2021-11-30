@@ -45,11 +45,7 @@
 </section>
 <section class="wrapper-md team-image-grid block">
     {{ range .Params.team_images }}
-    <div class="image-wrapper fade-up">
-        <div class="cover-image">
-            <img src="{{ .image }}" alt="{{ .image_alt }}">
-        </div>
-    </div>   
+    <img src="{{ .image }}" alt="{{ .image_alt }}">  
     {{ end }}
 </section>
 <section class="wrapper-md">

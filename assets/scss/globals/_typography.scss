@@ -75,9 +75,13 @@ h6,
   display: inline-block;
 }
 
-.emphasis-underline {
+.emphasis-underline,
+.friday-vibes-white {
   font-family: "Friday Vibes";
-  font-size: clamp($ic-700, 4vw, $ic-900);
+  font-size: clamp($ic-600, 5vw, $ic-900);
+}
+
+.emphasis-underline {
   position: relative;
   top: 6px;
   z-index: 1;
@@ -96,8 +100,6 @@ h6,
 }
 
 .friday-vibes-white {
-  font-family: "Friday Vibes";
-  font-size: clamp($ic-600, 4vw, $ic-900);
   margin: 0 1rem;
 }
 

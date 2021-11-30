@@ -5,6 +5,7 @@
   text-decoration: none;
   text-transform: uppercase;
   font-size: $ic-200;
+  letter-spacing: 1.6px;
 
   @include breakpoint(md) {
     font-size: $ic-300;
