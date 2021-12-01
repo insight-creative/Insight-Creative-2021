@@ -1,4 +1,4 @@
-name: CorHome Lighthouse Audit
+name: A to Z Machine Lighthouse Audit
 on: push
 
 jobs:
@@ -18,7 +18,7 @@ jobs:
           awsSecretAccessKey: ${{ secrets.LIGHTHOUSE_CHECK_AWS_SECRET_ACCESS_KEY }}
           branch: ${{ github.ref }}
           outputDirectory: /tmp/artifacts
-          urls: 'https://corhomedev.netlify.app/'
+          urls: 'https://a-to-z-machine.netlify.app/'
           sha: ${{ github.sha }}
           slackWebhookUrl: ${{ secrets.LIGHTHOUSE_CHECK_WEBHOOK_URL }}
       - name: Upload artifacts
