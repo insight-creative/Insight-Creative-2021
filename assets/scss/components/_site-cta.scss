@@ -22,13 +22,21 @@
       margin: $ic-300 auto 0 auto;
     }
   }
+
+  .emphasis-underline {
+    top: 8px;
+  }
 }
 
 .sales-grid {
-  max-width: 32rem;
   margin-left: auto;
   margin-right: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: $ic-200;
+
+  @include breakpoint(md) {
+    max-width: 36rem;
+    gap: $ic-600;
+  }
 }

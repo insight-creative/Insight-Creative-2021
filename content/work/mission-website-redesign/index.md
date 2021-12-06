@@ -1,7 +1,7 @@
 ---
-Title: Mission “Website Redesign”
+Title: Oshkosh Defense website design
 seo:
-  title: Mission “Website Redesign”
+  title: Oshkosh Defense website design
   description: Tactical vehicle manufacturer Oshkosh Defense needed an experienced team for their website redesign, learn about our mission to deliver a modern website design!
   featured_image: OshkoshDefense-MacBookMockup.jpg
 date: 2021-01-06
@@ -9,7 +9,9 @@ client: Oshkosh Defense
 industries:
   industries:
     - industry: Defense Vehicles
-intro: '<p>When global tactical vehicle manufacturer Oshkosh Defense needed an experienced team to lead their website redesign, we made it our mission to deliver! With a goal to modernize the design and functionality while adhering to existing brand standards, Insight created an easy-to-navigate site that showcases Oshkosh Defense’s stunning professional photography. Mobile-friendly layouts and secondary menu bars now allow viewers to seamlessly delve into Oshkosh Defense’s extensive content. From their impressive line-up of military vehicles to a new community section highlighting their significant philanthropic contributions, Oshkosh Defense’s reputable brand and honorable purpose shines through in this website redesign.</p>
+intro: 
+  heading: Mission “Website Redesign”
+  copy: '<p>When global tactical vehicle manufacturer Oshkosh Defense needed an experienced team to lead their website redesign, we made it our mission to deliver! With a goal to modernize the design and functionality while adhering to existing brand standards, Insight created an easy-to-navigate site that showcases Oshkosh Defense’s stunning professional photography. Mobile-friendly layouts and secondary menu bars now allow viewers to seamlessly delve into Oshkosh Defense’s extensive content. From their impressive line-up of military vehicles to a new community section highlighting their significant philanthropic contributions, Oshkosh Defense’s reputable brand and honorable purpose shines through in this website redesign.</p>
 <br>
 <a href="https://oshkoshdefense.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Website</a>'
 provided_services:
@@ -25,6 +27,6 @@ testimonial:
 ---
 
 <div class="wrapper-md">
-{{< website-design heading="Website Home Page" src="Oshkosh-defense-Homepage-design.jpg" alt="">}}
-{{< website-design heading="JLTV Page" src="Oshkosh-defense-JLTV-vehicle-page-design.jpg" alt="">}}
+{{< website-design heading="Website Homepage" src="Oshkosh-defense-Homepage-design.jpg" alt="">}}
+{{< website-design heading="JLTV page" src="Oshkosh-defense-JLTV-vehicle-page-design.jpg" alt="">}}
 </div>

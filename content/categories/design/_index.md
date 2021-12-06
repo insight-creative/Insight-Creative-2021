@@ -1,5 +1,5 @@
 ---
 title: Design
 category_title: Design insights
-description: Get tips and trends from our talented artists.
+description: Get tips, trends and visual inspiration from our talented artists.
 ---

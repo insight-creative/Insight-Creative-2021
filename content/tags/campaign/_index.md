@@ -1,5 +1,5 @@
 ---
-title: Campaigns
+title: Campaign
 category_title: Campaign projects
 description:
 ---

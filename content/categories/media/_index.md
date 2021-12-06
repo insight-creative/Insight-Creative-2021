@@ -1,5 +1,5 @@
 ---
 title: Media
 category_title: Media insights
-description: Peek beyond the buyer’s curtain for intel on ad options, strategy and determining campaign success.
+description: Peek beyond the buyer’s curtain for ad options, strategy and how to determine campaign success.
 ---

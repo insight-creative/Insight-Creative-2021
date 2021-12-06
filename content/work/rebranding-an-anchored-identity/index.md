@@ -1,15 +1,17 @@
 ---
-Title: Rebranding an anchored identity
+Title: Washington Island Ferry Line branding
 seo:
-  title: Rebranding an anchored identity
+  title: Washington Island Ferry Line branding
   description: See how the Washington Island Ferry entrusted Insight to create a new brand that reflects their modern operations but also respects the history with the Island community.
-  featured_image: wif-slider-main-medium-optimized.jpg
+  featured_image: washington-island-ferry-project-cover.jpg
 date: 2021-01-02
 client: Washington Island Ferry
 industries:
   industries:
     - industry: Travel & Tourism
-intro: "<p>A business that set sail in 1940, the Washington Island Ferry has been a thriving and vital conduit to island life and tourism for decades. After years of promoting the island and its sole source of transportation under a well-established brand, the Washington Island Ferry crew entrusted Insight to create a new brand that reflects their modern operations, but also respects their rich history with the Island community. A revamped logo, website, jingle and brochure—complemented by ongoing social media—launched right on the cusp of Washington Island’s busy season, providing fresh momentum for many successful voyages to come!</p>"
+intro: 
+  heading: Rebranding an anchored identity
+  copy: "<p>A business that set sail in 1940, the Washington Island Ferry has been a thriving and vital conduit to island life and tourism for decades. After years of promoting the island and its sole source of transportation under a well-established brand, the Washington Island Ferry crew entrusted Insight to create a new brand that reflects their modern operations, but also respects their rich history with the Island community. A revamped logo, website, jingle and brochure—complemented by ongoing social media—launched right on the cusp of Washington Island’s busy season, providing fresh momentum for many successful voyages to come!</p>"
 provided_services:
   services:
     - service: Content
@@ -34,10 +36,10 @@ testimonial:
 {{< parallax-image src="wif-main-logo-options-sm-low-optimized-2400.jpg" alt="">}}
 </div>
 <div class="flex-grid">
-{{< website-design heading="Website Home Page" src="washingtonislandnewhomepagelow-optimized-2400.jpg" alt="">}}
+{{< website-design heading="Website Homepage" src="washingtonislandnewhomepagelow-optimized-2400.jpg" alt="">}}
 </div>
 <div class="flex-grid">
-{{< website-design heading="Washington Island Page" src="washingtonislandpagelow-optimized-2400.jpg" alt="">}}
+{{< website-design heading="Washington Island page" src="washingtonislandpagelow-optimized-2400.jpg" alt="">}}
 </div>
 <div class="flex-grid">
 {{< responsive-image src="wif-brochure-medium-optimized-2400.jpg" alt="">}}

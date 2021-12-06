@@ -32,7 +32,7 @@ services:
 
     - heading: Display & Social
       subhead: <span class="text-tertiary"><em>Imagine your brand on the nation’s top sites.</em></span>
-      description: There’s a lot of smart features at work behind today’s digital display and social ads. With ability to target mobile users by location or retarget consumers based on their online behavior in real time, our media specialists know how to leverage the latest technology in your strategic media plan.
+      description: There’s a lot of smart features at work behind today’s digital display and social ads. With the ability to target mobile users by location or retarget consumers based on their online behavior in real time, our media specialists know how to leverage the latest technology in your strategic media plan.
       partners:
         - logo: People-Magazine.png
         - logo: weather-channel.png

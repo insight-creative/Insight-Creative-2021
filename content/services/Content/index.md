@@ -29,7 +29,7 @@ services:
     - heading: Social Media
       subhead: <span class="text-tertiary"><em>Constantly connect, engage with and build your following online.</em></span>
       description: Social media is a vital part of your overall brand strategy and should be handled by professionals. We were there when social media first broke onto the scene. For years, we’ve followed trends, tested content, enlisted helpful software and perfected our process for easy daily management.
-      service_list: content calendars • strategy • social listening • live coverage • event promotions • stories • custom graphics • videos • influencer campaigns • giveaways • audience research • targeting ads • data analysis • recruitment
+      service_list: content calendars • strategy • social listening • live coverage • event promotions • stories • custom graphics • videos • influencer campaigns • giveaways • audience research • targeted ads • data analysis • recruitment
       logos: 
       - logo: facebook
       - logo: instagram

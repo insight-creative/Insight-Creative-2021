@@ -1,15 +1,17 @@
 ---
-Title: A winning COVID-19 response
+Title: Ho-Chunk Gaming Nekoosa campaign
 seo:
-  title: A winning COVID-19 response
+  title: Ho-Chunk Gaming Nekoosa campaign
   description: When the pandemic hit in spring of 2020, Ho-Chunk Gaming Nekoosa relied on Insight to communicate their reopening plan after a temporary closure.
-  featured_image: Ho-Chunk-Case-Study-A-Winning-COVID-19-Response.jpg
+  featured_image: Ho-chunk-project-cover.jpg
 date: 2021-01-05
 client: Ho-Chunk Gaming Nekoosa
 industries:
   industries:
     - industry: Entertainment
-intro: 'When the pandemic hit in spring of 2020, Ho-Chunk Gaming Nekoosa needed to communicate their reopening plan after a temporary closure. With a goal to announce that the casino was now open for gaming, but with a number of safety precautions in place, they needed a quick-turn, multi-faceted creative campaign. Billboards and exterior signage encouraged casino patrons to return, while assuring their safety with details of new guidelines. In the casino, playful and informational floor graphics, posters and digital signage reinforced that fun and games can co-exist with a pandemic when you "play it safe."'
+intro: 
+  heading: A winning COVID-19 response
+  copy: '<p>When the pandemic hit in spring of 2020, Ho-Chunk Gaming Nekoosa needed to communicate their reopening plan after a temporary closure. With a goal to announce that the casino was now open for gaming, but with a number of safety precautions in place, they needed a quick-turn, multi-faceted creative campaign. Billboards and exterior signage encouraged casino patrons to return, while assuring their safety with details of new guidelines. In the casino, playful and informational floor graphics, posters and digital signage reinforced that fun and games can co-exist with a pandemic when you "play it safe."</p>'
 provided_services:
   services:
     - service: Content
@@ -19,7 +21,7 @@ provided_services:
     - service: Media
       url: /services/media/
 tags:
-  - Campaigns
+  - Campaign
 testimonial:
   copy: "Insight Creative is easy to work with, offering fun, innovative ideas. In a short amount of time, this small team of steam has impressed us with their outside-the-box thought processes based on streamlined systems."
   author: Ericka Totzke, Director of Marketing

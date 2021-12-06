@@ -48,7 +48,7 @@ services:
         and reliable foundation.</em></span>
       description:
         No templates here! Our skilled web team hand crafts custom code
-        using modern technologies and creative problem solving to create sites
+        using modern technologies and creative problem solving to build sites
         that are favored by search engines and easily accessed by all people and
         devices.
       service_list: custom websites • content management systems • jamstack

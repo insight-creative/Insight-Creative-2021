@@ -32,6 +32,7 @@ div.ctct-form-embed form.ctct-form-custom .ctct-form-required:before {
   font-size: $ic-200 !important;
   background-color: transparent !important;
   border: none !important;
+  letter-spacing: 1.6px !important;
 
   @include breakpoint(md) {
     font-size: $ic-300 !important;

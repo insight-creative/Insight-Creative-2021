@@ -1,15 +1,17 @@
 ---
-Title: A bold brand remodel
+Title: Fox Structures branding
 seo:
-  title: A bold brand remodel
+  title: Fox Structures branding
   description: Fox Structures, agricultural and commercial construction specialists approached Insight for a brand refresh to represent their bold and quality work.
-  featured_image: fox-structures-billboard-main.jpg
+  featured_image: fox-structures-project-cover.jpg
 date: 2021-01-01
 client: Fox Structures
 industries:
   industries:
     - industry: Construction
-intro: '<p>Fox Structures, a local full-service builder specializing in agricultural and commercial construction, has been in business since 1982. The well-established builder approached Insight for a brand refresh to better represent the bold, professional vibe of their expert team and quality work. First, the new brand rolled out internally with apparel, letterhead, business cards and various office materials. Next, they kicked off their public brand reveal at the largest industry show of the year with a fully custom tradeshow booth, also accompanied by fresh job site signs, an updated website, public relations/social media announcements and highly visible outdoor creative. </p>
+intro: 
+  heading: A bold brand remodel
+  copy: '<p>Fox Structures, a local full-service builder specializing in agricultural and commercial construction, has been in business since 1982. The well-established builder approached Insight for a brand refresh to better represent the bold, professional vibe of their expert team and quality work. First, the new brand rolled out internally with apparel, letterhead, business cards and various office materials. Next, they kicked off their public brand reveal at the largest industry show of the year with a fully custom tradeshow booth, also accompanied by fresh job site signs, an updated website, public relations/social media announcements and highly visible outdoor creative. </p>
 '
 provided_services:
   services:
@@ -40,6 +42,6 @@ testimonial:
 <div class="flex-grid">
 {{< responsive-image src="fox-structures-letterhead-1800.jpg" alt="">}}
 </div>
-{{< website-design heading="Website Home Page" src="foxstructuresnewhomepage-1800.jpg" alt="">}}
-{{< website-design heading="About Page" src="foxstructuresnewaboutpage-1800.jpg" alt="">}}
+{{< website-design heading="Website homepage" src="foxstructuresnewhomepage-1800.jpg" alt="">}}
+{{< website-design heading="About page" src="foxstructuresnewaboutpage-1800.jpg" alt="">}}
 </div>

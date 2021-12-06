@@ -76,7 +76,8 @@
 </div>
 <div class="work-body">
     <div class="block wrapper flow">
-        {{ .Params.intro | markdownify }}
+        <h2>{{ .Params.intro.heading }}</h2>
+        {{ .Params.intro.copy | markdownify }}
     </div>
     <div class="padding-bottom-9">
         {{ .Content }}
@@ -104,7 +105,7 @@
 {{ $related := .Site.RegularPages.RelatedIndices . "tags" | first 3 }}
 {{ with $related }}
 <div class="wrapper-lg related-projects fade-up padding-top-9">
-    <h3>Related Projects</h3>
+    <h3>Related projects</h3>
     <div class="post-wrapper padding-top-2">
         {{ range . }}
         {{ .Render "work-card" }}

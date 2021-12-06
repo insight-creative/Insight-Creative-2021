@@ -30,4 +30,4 @@ Getting sucked into any communication that doesn’t deliver what is promised at
 
 So, if you really don’t have a long-forgotten secret on how to become wealthier, healthier, sexier and smarter in 30 days, don’t lead your audience on a worthless journey. Make it a journey that will bring value into their lives and make them glad that they took the time to engage in what you had to say.
 
-At Insight, we call it "Communication with substance." It means that we deliver communication with value to our clients. It is the best way to build a brand based on the real needs of your customers. Timely. Useful. Meaningful.
+At Insight, we call it _**"Communication with substance."**_ It means that we deliver communication with value to our clients. It is the best way to build a brand based on the real needs of your customers. Timely. Useful. Meaningful.

@@ -2,7 +2,6 @@
 <section class="about-hero hero-lg">
     <div class="wrapper block">
         {{ with .Params.hero }}
-        <h2 class="h5 text-center text-secondary shift-up">{{ .subhead }}</h2>
         <h1 class="text-center">{{ .head | markdownify }}</h1>
         <div class="flow">
             {{.copy | markdownify }}
@@ -38,7 +37,7 @@
             <h2 class="text-center">{{ .head }}</h2>
             <h3 class="h5 text-center">{{ .subhead | markdownify }}</h3>
             <p class="text-center">{{.description | markdownify }}</p>
-            <p>{{ .copy }}</p>
+            <p>{{ .copy | markdownify }}</p>
             {{ end }}
         </div>
     </div>

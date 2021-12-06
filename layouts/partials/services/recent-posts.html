@@ -1,6 +1,6 @@
 <div class="bg-black">
   <div class="wrapper-lg block">
-    <h3 class="fade-up">Latest {{ .Title }} Articles</h3>
+    <h3 class="fade-up">Latest {{ .Title | lower }} articles</h3>
     <div class="recent-posts flex flex-column flex-row-m">
       {{ $title := .Title | lower }}
       {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}

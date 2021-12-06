@@ -15,7 +15,7 @@ page_class: single-post
 
 ![laptop sitting on desk with analytics dashboard on display](analytics-dashboard-on-laptop.jpg)
 
-You may know this story, but I think it is worth repeating. Our current president and founder Jim von Hoff had a vision over 32 years ago to build a full-service advertising agency under one roof. Today, our 12-person team helps our 80+ clients create communication with substance and uses our media resources to deliver that content to the right people at the right time.
+You may know this story, but I think it is worth repeating. Our current president and founder Jim von Hoff had a vision over 32 years ago to build a full-service advertising agency under one roof. Today, our 12-person team helps our 80+ clients create _**Communication with substance**_ and uses our media resources to deliver that content to the right people at the right time.
 
 So, yes, we talk creative a lot at Insight. The message and the look and feel of creative is very important to the effectiveness of a campaign. But our media department, including myself and Molly Setzer, really are the most important pieces of that puzzle (wink wink).
 
