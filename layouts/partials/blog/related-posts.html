@@ -1,7 +1,7 @@
 {{ $related := .Site.RegularPages.RelatedIndices . "categories" | first 3 }}
 {{ with $related }}
 <div class="wrapper-lg related-posts padding-top-9">
-    <h3>Related Articles</h3>
+    <h3>Related articles</h3>
     <div class="post-wrapper padding-top-2">
         {{ range . }}
         {{ .Render "blog-cards" }}

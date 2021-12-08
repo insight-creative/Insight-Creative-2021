@@ -1,7 +1,6 @@
 {{ define "main" }}
 <section class="author">
     <div class="author__hero wrapper block">
-        <a href="/about/" class="chevron-link">{{ partialCached "svg-icons/chevron-left.svg" . }}Back to all staff</a>
         <div class="author__image-wrapper">
             <img src="{{ (index .Site.Data.staff .Params.author).image_jpg }}" alt="headshot of Insight Creative's {{ (index .Site.Data.staff .Params.author).job_title }}, {{ (index .Site.Data.staff .Params.author).name }}" class="author__image">
         </div>

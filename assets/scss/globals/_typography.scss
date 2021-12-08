@@ -78,15 +78,14 @@ h6,
 .emphasis-underline,
 .friday-vibes-white {
   font-family: "Friday Vibes";
-  font-size: clamp($ic-600, 5vw, $ic-800);
+  font-size: clamp($ic-600, 5vw, $ic-900);
   position: relative;
   top: 6px;
   z-index: 1;
-  line-height: .5;
+  line-height: 0.5;
 }
 
 .emphasis-underline {
-
   &::after {
     position: absolute;
     content: "";
@@ -97,10 +96,6 @@ h6,
     background-color: $tertiary-color;
     z-index: -1;
   }
-}
-
-.friday-vibes-white {
-  margin: 0 1rem;
 }
 
 .text-left {

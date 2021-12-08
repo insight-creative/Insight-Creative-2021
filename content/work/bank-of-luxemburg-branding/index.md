@@ -3,7 +3,7 @@ Title: Bank of Luxemburg branding
 seo:
   title: Bank of Luxemburg branding
   description: Insight reimagined Bank of Luxemburg’s nearly 70-year-old brand. See how voice, colors, typography and even illustrated fictional spokespeople came together.
-  featured_image: BOL-Business-Cards.jpg
+  featured_image: bank-of-luxemburg-project-cover.jpg
 date: 2021-01-03
 client: Bank of Luxemburg
 industries:
