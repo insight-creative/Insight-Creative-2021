@@ -3,10 +3,9 @@
 <a class="skip-link" href="#footer" tabindex="0">Skip to footer content</a>
 <header class="site-header" role="banner">
   <div class="site-header__inner wrapper-lg">
-      <a class="site-header__logo" href="{{ site.BaseURL }}">
-        <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" class="img-responsive dim" width="200" height="70">
-      </a>
-      
+    <a class="site-header__logo" href="{{ site.BaseURL }}">
+      <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" class="img-responsive dim" width="200" height="70">
+    </a>
     <nav class="site-header__nav" role="navigation" aria-label="Primary Navigation">
       <ul class="nav-list" role="list">
         {{ range .Site.Menus.main }}
@@ -14,10 +13,10 @@
           <a href="{{ .URL }}" class="nav-item" aria-label="{{ .Name }}" title="{{ .Name }}">{{ .Name }}</a>
         </li>
         {{ end }}
-        <li class="nav-list-item site-header__search"><button class="nav-item search__open">{{ partialCached "svg-icons/search.svg" . }}</button></li>
+        <li class="nav-list-item site-header__search"><button class="nav-item search__open" aria-label="open search bar">{{ partialCached "svg-icons/search.svg" . }}</button></li>
       </ul>
       <div id="search" class="search flex-row-reverse-m flex-center-m">
-        <div class="search__icon-wrapper flex flex-center"><button class="search__close flex flex-center">{{ partialCached "svg-icons/close.svg" . }}</button></div>
+        <div class="search__icon-wrapper flex flex-center"><button class="search__close flex flex-center" aria-label="close search bar">{{ partialCached "svg-icons/close.svg" . }}</button></div>
       </div>
     </nav>
     <div class="site-header__mobile-nav">

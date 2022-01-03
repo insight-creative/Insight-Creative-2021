@@ -63,10 +63,11 @@ function initSlider () {
   setSlidePositions()
 
   slides[0].classList.add('is-selected')
+
   const createDots = _ => {
     const dotsContainer = document.createElement('div')
     dotsContainer.classList.add('slider__dots')
-    slides.forEach(slide => {
+    slides.forEach((slide, index) => {
       const a = slide.querySelector('a')
       a.addEventListener('keydown', event => {
         const { key } = event
@@ -76,6 +77,7 @@ function initSlider () {
       const dot = document.createElement('button')
       dot.classList.add('slider__dot')
       dot.setAttribute('tabindex', -1)
+      dot.setAttribute('aria-label', 'go to slide' + ' ' + (index + 1))
 
       if (slide.classList.contains('is-selected')) {
         dot.classList.add('is-selected')
@@ -85,6 +87,7 @@ function initSlider () {
     })
     return dotsContainer
   }
+
   const dotsContainer = createDots()
   const dots = [...dotsContainer.children]
   slider.appendChild(dotsContainer)
@@ -486,7 +489,7 @@ function initContentFade() {
             ease: 'Power2.in',
             scrollTrigger: {
                 trigger: fade,
-                toggleActions: 'play none none reverse',
+                toggleActions: 'play none none none',
                 start: "top bottom-=50"
             }
         })
@@ -495,12 +498,8 @@ function initContentFade() {
 
   ScrollTrigger.batch('.fade-staggered', {
       onEnter: batch => gsap.to(batch, {y: 0, autoAlpha: 1, stagger: 0.2}),
-      onLeave: batch => gsap.to(batch, {y: -50, autoAlpha: 0, stagger: 0.2}),
-      onEnterBack: batch => gsap.to(batch, {y: 0, autoAlpha: 1, stagger: 0.2}),
-      onLeaveBack: batch => gsap.to(batch, {y: 50, autoAlpha: 0, stagger: 0.2}),
     })
 
-  ScrollTrigger.addEventListener('refreshInit', () => gsap.set('.fade-staggered', {y: 0}))
   gsap.utils.toArray(fadeOut).forEach((fade) => {
     gsap.to(fade, {
       opacity: 0,

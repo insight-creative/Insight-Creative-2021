@@ -10,7 +10,7 @@ timeout = 200000
 #################### default parameters ################################
 
 [params]
-  logo = "/images/Insight-Logo-White.png"
+  logo = "/images/insight-logo-white.svg"
   # Meta data
   description = "Site Description here"
   author = "Insight Creative, Inc."

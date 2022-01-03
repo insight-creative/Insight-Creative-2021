@@ -43,7 +43,7 @@ services:
 
     - heading: Drone
       subhead: <span class="text-tertiary"><em>Take your brand to new heights in 4K.</em></span>
-      description: Our fully insured, Federal Aviation Administration (FFA) licensed drone pilot can bring a new perspective to your large-scale work, building exteriors, manufacturing floors, events and more. With extensive experience in creative development and design, our pilot blends artistic talent with technical proficiency. On the ground, our team provides everything to make the most of your footage and stills. 
+      description: Our fully insured, Federal Aviation Administration (FAA) licensed drone pilot can bring a new perspective to your large-scale work, building exteriors, manufacturing floors, events and more. With extensive experience in creative development and design, our pilot blends artistic talent with technical proficiency. On the ground, our team provides everything to make the most of your footage and stills. 
       service_list: aerial photography & video • building tours • architectural photography & video • 360 views • point-of-interest tracking • event promotions • editing • sound mixing
 
 service_cta: 

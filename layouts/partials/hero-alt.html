@@ -6,7 +6,7 @@
     {{ else if eq .Title "Website Questionnaire"}}
     <h1 class="no-margin">{{ .Params.hero.head | markdownify }}</h1>
     <h2 class="h5">{{ .Params.hero.copy | markdownify }}</h2>
-    {{ else if eq .Title "Sitemap" | eq .Title "Privacy Policy"}}
+    {{ else if eq .Title "Privacy Policy"}}
     <h1 class="no-margin">{{ .Title }}</h1>
     {{ else }}
     <h1 class="no-margin">{{ .Params.category_title }}</h1>

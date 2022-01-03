@@ -37,7 +37,7 @@ meet_the_team:
     copy: It’s the <span class="text-underline">people</span> who make Insight unique and especially capable. Each team member brings specialized skills. Together, we make marketing an efficient, effective and overall positive experience.
 memberships:
     heading: Our communication <span class="text-underline text-underline--tertiary">connections</span>
-    copy: Ongoing learning and self-improvement are top priorities at Insight. That’s why we proudly hold memberships in the following professional communities. These relationships help us keep pace with the latest ethical and technical industry standards, lend our own expertise to others and ultimately, enhance our work. 
+    copy: Ongoing learning and self-improvement are top priorities at Insight. That’s why we proudly hold memberships in the following professional communities. These relationships help us keep pace with the latest ethical and technical industry standards, lend our own expertise to others and ultimately enhance our work. 
     organizations: 
         - logo: aaf-fox-river-logo.png
         - logo: PRSA-logo.png

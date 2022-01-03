@@ -1,52 +1,52 @@
-<div class="service-list  block">
-    <div class="wrapper">
-      <div class="flow service-list__intro">
-        <h2 class="h3">{{ .Params.Services.Subhead | markdownify }}</h2>
-        <p class="h5">
-          {{ .Params.Services.Description | markdownify }}
-        </p>
-      </div>
-    </div>
-    <div class="wrapper-lg">
-      <div class="service-list__grid">
-        {{ range .Site.Data.services }}
-        <a href="{{ .url }}" class="service-list__link fade-staggered">
-          <div class="service-list__service-card flex flex-center">
-            <div class="service-list__icon-wrapper w-40">
-                <div class="service-list__icon background-circle background-circle--md">
-                  {{ if eq .name "Content" }}
-                    {{ partial "svg-icons/content-alt.svg" . }}
-                  {{ end }}
-                  {{ if eq .name "Web" }}
-                    {{ partial "svg-icons/web-alt.svg" . }}
-                  {{ end }}
-                  {{ if eq .name "Digital" }}
-                    {{ partial "svg-icons/digital-alt.svg" . }}
-                  {{ end }}
-                  {{ if eq .name "Media" }}
-                    {{ partial "svg-icons/media-alt.svg" . }}
-                  {{ end }}
-                  {{ if eq .name "Design" }}
-                    {{ partial "svg-icons/design-alt.svg" . }}
-                  {{ end }}
-                  {{ if eq .name "Studio" }}
-                    {{ partial "svg-icons/studio-alt.svg" . }}
-                  {{ end }}
-                </div>
-            </div>
-            <div class="flex flex-column w-60">
-              <h4 class="service-list__service-heading g4">
-                {{ .name }}
-              </h4>
-              <ul class="service-list__service-preview">
-                <li class="service-list__service-item">{{ .subservice1 }}</li>
-                <li class="service-list__service-item">{{ .subservice2 }}</li>
-                <li class="service-list__service-item">{{ .subservice3 }}</li>
-              </ul>
-            </div>
-          </div>
-        </a>
-        {{ end }}
-      </div>
+<section class="service-list  block">
+  <div class="wrapper">
+    <div class="flow service-list__intro">
+      <h2 class="h3">{{ .Params.Services.Subhead | markdownify }}</h2>
+      <p class="h5">
+        {{ .Params.Services.Description | markdownify }}
+      </p>
     </div>
   </div>
+  <div class="wrapper-lg">
+    <div class="service-list__grid">
+      {{ range .Site.Data.services }}
+      <a href="{{ .url }}" class="service-list__link fade-staggered">
+        <div class="service-list__service-card flex flex-center">
+          <div class="service-list__icon-wrapper w-40">
+              <div class="service-list__icon background-circle background-circle--md">
+                {{ if eq .name "Content" }}
+                  {{ partial "svg-icons/content-alt.svg" . }}
+                {{ end }}
+                {{ if eq .name "Web" }}
+                  {{ partial "svg-icons/web-alt.svg" . }}
+                {{ end }}
+                {{ if eq .name "Digital" }}
+                  {{ partial "svg-icons/digital-alt.svg" . }}
+                {{ end }}
+                {{ if eq .name "Media" }}
+                  {{ partial "svg-icons/media-alt.svg" . }}
+                {{ end }}
+                {{ if eq .name "Design" }}
+                  {{ partial "svg-icons/design-alt.svg" . }}
+                {{ end }}
+                {{ if eq .name "Studio" }}
+                  {{ partial "svg-icons/studio-alt.svg" . }}
+                {{ end }}
+              </div>
+          </div>
+          <div class="flex flex-column w-60">
+            <h3 class="service-list__service-heading h4">
+              {{ .name }}
+            </h3>
+            <ul class="service-list__service-preview">
+              <li class="service-list__service-item">{{ .subservice1 }}</li>
+              <li class="service-list__service-item">{{ .subservice2 }}</li>
+              <li class="service-list__service-item">{{ .subservice3 }}</li>
+            </ul>
+          </div>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>

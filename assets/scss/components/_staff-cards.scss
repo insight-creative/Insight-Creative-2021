@@ -9,6 +9,7 @@
   margin: $ic-100 0;
   text-decoration: none;
   width: 100%;
+  transition: none;
 
   @include breakpoint(sm) {
     margin: $ic-300;

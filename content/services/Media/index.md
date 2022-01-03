@@ -9,7 +9,7 @@ hero_title: 'It’s <span class="emphasis-red">so much more</span> than "buying.
 
 intro:
   subhead: Research and strategy make the most of <span class="emphasis-red">every</span> dollar.
-  description: "<p>Strong media plans begin with strong partnerships. Our process is simple: You teach us about you, and we’ll teach you about media. Together, we’ll assemble a comprehensive, targeted and creative plan that makes best use of your budget to meet your goals.</p>
+  description: "<p>Strong media plans begin with strong partnerships. Our process is simple: You teach us about you, and we’ll teach you about media. Together, we’ll assemble a comprehensive, targeted and creative plan that makes the best use of your budget to meet your goals.</p>
   
   <p>Not many businesses have time to explore and truly understand all their media options! That’s why Insight has full-time employees devoted to just that. From following trends of emerging media to strengthening local media relationships, Insight can handle it all.</p>"
 

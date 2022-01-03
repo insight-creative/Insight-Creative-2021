@@ -1,7 +1,7 @@
 {{ $image := (.Resources.GetMatch (index .Params.seo.featured_image)) }}
 {{ $smallwebp := $image.Resize "600x q80 webp" }}
 {{ $smalljpg := $image.Resize "600x q80" }}
-<article class="blog-card fade-staggered">
+<article class="blog-card">
     <a href="{{ .RelPermalink }}">
         <div class="blog-card__image-wrapper with-parallax">
             <picture>
@@ -20,7 +20,7 @@
                     {{ end }}
                 </div>
                 <div class="blog-card__staff-image-wrapper background-circle background-circle--md">
-                    <img src="{{ (index .Site.Data.staff .Params.author).image_jpg }}" alt="headshot of Insight Creative's {{ (index .Site.Data.staff .Params.author).job_title }}, {{ (index .Site.Data.staff .Params.author).name }}" class="blog-card__staff-image">
+                    <img src="{{ (index .Site.Data.staff .Params.author).image_jpg }}" alt="headshot of Insight Creative's {{ (index .Site.Data.staff .Params.author).job_title }}, {{ (index .Site.Data.staff .Params.author).name }}" class="blog-card__staff-image" width="100" height="100">
                 </div>
             </div>
             <h4 class="h5 blog-card__title">{{ .Params.seo.title | markdownify }}</h4>

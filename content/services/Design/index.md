@@ -32,5 +32,5 @@ services:
     - heading: Print
       subhead: <span class="text-tertiary"><em>Engage your audience with a fresh take on traditional media.</em></span>
       description: While we live in an increasingly digital world, there’s simply no replacement for creative that you can hold in your hands. From size and material to sheen, texture and fold, our designers approach each print project with careful attention to detail, keeping your brand and the user experience in mind.
-      service_list: print ads • billboards • signage • brochures • sell sheets • direct mail • cards • packaging • wall graphics • folders • press kits • posters • trade show graphics • catalogues • trade publications
+      service_list: print ads • billboards • signage • brochures • sell sheets • direct mail • cards • packaging • wall graphics • folders • press kits • posters • trade show graphics • catalogs • trade publications
 ---
