@@ -100,10 +100,17 @@
   }
 }
 
-.hero-alt {
+.hero-alt,
+.blog-hero {
   @include breakpoint(sm) {
     height: 50vh;
     display: flex;
     align-items: center;
+  }
+}
+
+.blog-hero {
+  svg {
+    max-width: $ic-1000;
   }
 }

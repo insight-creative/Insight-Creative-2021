@@ -1,0 +1,27 @@
+{{ if eq .Page.Title "Blog" }}
+{{ partial "svg-icons/team-insights-blog.svg" . }}
+{{ else if eq .Page.Title "Branding" }}
+{{ partial "svg-icons/branding-blog.svg" . }}
+{{ else if eq .Page.Title "Business Strategy" }}
+{{ partial "svg-icons/strategy-blog.svg" . }}
+{{ else if eq .Page.Title "Content" }}
+{{ partial "svg-icons/content-blog.svg" . }}
+{{ else if eq .Page.Title "Design" }}
+{{ partial "svg-icons/design-blog.svg" . }}
+{{ else if eq .Page.Title "Digital" }}
+{{ partial "svg-icons/digital-blog.svg" . }}
+{{ else if eq .Page.Title "Media" }}
+{{ partial "svg-icons/media-blog.svg" . }}
+{{ else if eq .Page.Title "News" }}
+{{ partial "svg-icons/news-blog.svg" . }}
+{{ else if eq .Page.Title "Productivity" }}
+{{ partial "svg-icons/productivity-blog.svg" . }}
+{{ else if eq .Page.Title "Public Relations" }}
+{{ partial "svg-icons/pr-blog.svg" . }}
+{{ else if eq .Page.Title "Social Media" }}
+{{ partial "svg-icons/social-media-blog.svg" . }}
+{{ else if eq .Page.Title "Studio" }}
+{{ partial "svg-icons/studio-blog.svg" . }}
+{{ else if eq .Page.Title "Web" }}
+{{ partial "svg-icons/web-blog.svg" . }}
+{{ end }}

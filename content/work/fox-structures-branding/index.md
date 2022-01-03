@@ -27,7 +27,7 @@ tags:
   - Branding
 testimonial: 
   copy: "Our sales have exploded, and it is all because of Insight Creative. When we started working with Insight, we asked how we would know if our marketing was successful. You responded that it wouldn’t be as simple as a client comment or a web measurement, but over time we would slowly see our business increase. You also warned us that it wouldn’t happen overnight. You said it would take time and we needed to be patient. Four years later, we are so busy we need to hire three office people and an entire crew. The best part is the caliber of new business we have received is outstanding. We are extremely happy with Insight!"
-  author: Mike Klarner, Co-owner/Commercial Sales Specialist
+  name: Mike Klarner, <span>Co-owner/Commercial Sales Specialist</span>
   client: Fox Structures
 ---
 

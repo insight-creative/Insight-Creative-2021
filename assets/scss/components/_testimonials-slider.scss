@@ -50,6 +50,10 @@
       font-size: $ic-200;
     }
 
+    .slider__name span {
+      font-style: italic;
+    }
+
     @include breakpoint(md) {
       padding: 5.96rem;
 

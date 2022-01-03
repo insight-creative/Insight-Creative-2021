@@ -1,10 +1,6 @@
 .work {
   h1 {
     font-size: clamp($ic-400, 4vw, $ic-700);
-
-    .emphasis-underline {
-      font-size: clamp(3.052rem, 5vw, 5rem);
-    }
   }
 }
 
@@ -77,5 +73,9 @@
 .testimonial {
   .quote {
     top: 0;
+  }
+
+  &__name span {
+    font-style: italic;
   }
 }

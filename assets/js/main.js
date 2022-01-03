@@ -479,18 +479,28 @@ function initContentFade() {
   const fadeUp = document.querySelectorAll('.fade-up')
   const fadeOut = document.querySelectorAll('.fade-out')
   gsap.utils.toArray(fadeUp).forEach((fade) => {
-    gsap.from(fade, {
-      opacity: 0,
-      y: 20,
-      duration: 0.7,
-      ease: 'none',
-      scrollTrigger: {
-        trigger: fade,
-        start: 'top bottom-=50',
-        toggleActions: 'play none none reverse'
-      }
+        gsap.to(fade, {
+            opacity: 1,
+            y: 0,
+            duration: .7,
+            ease: 'Power2.in',
+            scrollTrigger: {
+                trigger: fade,
+                toggleActions: 'play none none reverse',
+                start: "top bottom-=50"
+            }
+        })
     })
-  })
+  gsap.set('.fade-staggered', {y: 50, autoAlpha: 0})
+
+  ScrollTrigger.batch('.fade-staggered', {
+      onEnter: batch => gsap.to(batch, {y: 0, autoAlpha: 1, stagger: 0.2}),
+      onLeave: batch => gsap.to(batch, {y: -50, autoAlpha: 0, stagger: 0.2}),
+      onEnterBack: batch => gsap.to(batch, {y: 0, autoAlpha: 1, stagger: 0.2}),
+      onLeaveBack: batch => gsap.to(batch, {y: 50, autoAlpha: 0, stagger: 0.2}),
+    })
+
+  ScrollTrigger.addEventListener('refreshInit', () => gsap.set('.fade-staggered', {y: 0}))
   gsap.utils.toArray(fadeOut).forEach((fade) => {
     gsap.to(fade, {
       opacity: 0,

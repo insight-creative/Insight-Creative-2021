@@ -1,0 +1,12 @@
+<div class="blog-hero bg-black block text-center">
+  <div class="wrapper-md flow">
+    {{ partial "functions/GetBlogCategoryIcon" . }}
+    {{ if eq .Title "Blog" }}
+    <h1 class="no-margin">Team insights</h1>
+    <h2 class="h5">Get expert guidance on business strategy, branding, content marketing, web design and more! </h2>
+    {{ else }}
+    <h1 class="no-margin">{{ .Params.category_title }}</h1>
+    <h2 class="h5">{{ .Description }}</h2>
+    {{ end }}
+  </div>
+</div>

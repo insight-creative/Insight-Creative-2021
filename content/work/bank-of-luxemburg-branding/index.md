@@ -31,7 +31,7 @@ tags:
   - Branding
 testimonial: 
   copy: "Bank of Luxemburg has been extremely pleased with the results of the rebranding initiative ... I believe that Insight Creative was instrumental in the success of this project. They guided our rebranding team and made sure that it was delivered on time, within budget and answered any of our questions along the way. They were able to come up with a marketing plan that captured the essence of our bank and was very well received by our community and customers. Above all, they made the overall process very easy for me, the bank president, which allowed me to concentrate on other aspects of the bank’s strategic plan."
-  author: Tim Treml, President
+  name: Tim Treml, <span>President</span>
   client: Bank of Luxemburg
 ---
 

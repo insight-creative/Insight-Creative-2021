@@ -1,0 +1,13 @@
+{{ if eq .Page.Title "Content" }}
+{{ partial "svg-icons/content-alt.svg" . }}
+{{ else if eq .Page.Title "Studio" }}
+{{ partial "svg-icons/studio-alt.svg" . }}
+{{ else if eq .Page.Title "Design" }}
+{{ partial "svg-icons/design-alt.svg" . }}
+{{ else if eq .Page.Title "Media" }}
+{{ partial "svg-icons/media-alt.svg" . }}
+{{ else if eq .Page.Title "Digital" }}
+{{ partial "svg-icons/digital-alt.svg" . }}
+{{ else if eq .Page.Title "Web" }}
+{{ partial "svg-icons/web-alt.svg" . }}
+{{ end }}

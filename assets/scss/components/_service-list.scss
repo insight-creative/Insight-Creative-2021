@@ -36,9 +36,22 @@
     position: relative;
     z-index: 2;
     text-decoration: none;
+    transition: none;
 
     &:hover {
       cursor: pointer;
+    }
+  }
+
+  .service-list__link:nth-of-type(5) {
+    svg {
+      width: 50px;
+    }
+  }
+
+  .service-list__link:nth-of-type(6) {
+    svg {
+      width: 45px;
     }
   }
 

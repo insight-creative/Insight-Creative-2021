@@ -7,30 +7,30 @@
         </p>
       </div>
     </div>
-    <div class="wrapper-lg fade-up">
+    <div class="wrapper-lg">
       <div class="service-list__grid">
         {{ range .Site.Data.services }}
-        <a href="{{ .url }}" class="service-list__link">
+        <a href="{{ .url }}" class="service-list__link fade-staggered">
           <div class="service-list__service-card flex flex-center">
             <div class="service-list__icon-wrapper w-40">
                 <div class="service-list__icon background-circle background-circle--md">
                   {{ if eq .name "Content" }}
-                    {{ partial "svg-icons/content.svg" . }}
+                    {{ partial "svg-icons/content-alt.svg" . }}
                   {{ end }}
                   {{ if eq .name "Web" }}
-                    {{ partial "svg-icons/web.svg" . }}
+                    {{ partial "svg-icons/web-alt.svg" . }}
                   {{ end }}
                   {{ if eq .name "Digital" }}
-                    {{ partial "svg-icons/digital.svg" . }}
+                    {{ partial "svg-icons/digital-alt.svg" . }}
                   {{ end }}
                   {{ if eq .name "Media" }}
-                    {{ partial "svg-icons/media.svg" . }}
+                    {{ partial "svg-icons/media-alt.svg" . }}
                   {{ end }}
                   {{ if eq .name "Design" }}
-                    {{ partial "svg-icons/design.svg" . }}
+                    {{ partial "svg-icons/design-alt.svg" . }}
                   {{ end }}
                   {{ if eq .name "Studio" }}
-                    {{ partial "svg-icons/studio.svg" . }}
+                    {{ partial "svg-icons/studio-alt.svg" . }}
                   {{ end }}
                 </div>
             </div>

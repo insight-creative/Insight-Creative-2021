@@ -22,7 +22,7 @@ tags:
   - Design
 testimonial: 
   copy: 'When Oshkosh Defense needed a website redesign, we turned to Insight Creative, Inc. to create a more modern design with increased functionality throughout our pages and menus. Their design helped highlight primary areas of our business including our portfolio of vehicles, advanced technologies and community support, so viewers can visit the most important pages on the website first. Not only does the site look great, but the team was efficient and used weekly meetings to ensure our website was done on time and on budget!'
-  author:
+  name:
   client: Oshkosh Defense
 ---
 

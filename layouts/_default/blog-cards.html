@@ -1,7 +1,7 @@
 {{ $image := (.Resources.GetMatch (index .Params.seo.featured_image)) }}
 {{ $smallwebp := $image.Resize "600x q80 webp" }}
 {{ $smalljpg := $image.Resize "600x q80" }}
-<article class="blog-card fade-up">
+<article class="blog-card fade-staggered">
     <a href="{{ .RelPermalink }}">
         <div class="blog-card__image-wrapper with-parallax">
             <picture>

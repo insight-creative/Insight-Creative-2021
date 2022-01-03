@@ -9,7 +9,7 @@ client: Ho-Chunk Gaming Nekoosa
 industries:
   industries:
     - industry: Entertainment
-intro: 
+intro:
   heading: A winning COVID-19 response
   copy: '<p>When the pandemic hit in spring of 2020, Ho-Chunk Gaming Nekoosa needed to communicate their reopening plan after a temporary closure. With a goal to announce that the casino was now open for gaming, but with a number of safety precautions in place, they needed a quick-turn, multi-faceted creative campaign. Billboards and exterior signage encouraged casino patrons to return, while assuring their safety with details of new guidelines. In the casino, playful and informational floor graphics, posters and digital signage reinforced that fun and games can co-exist with a pandemic when you "play it safe."</p>'
 provided_services:
@@ -24,7 +24,7 @@ tags:
   - Campaign
 testimonial:
   copy: "Insight Creative is easy to work with, offering fun, innovative ideas. In a short amount of time, this small team of steam has impressed us with their outside-the-box thought processes based on streamlined systems."
-  author: Ericka Totzke, Director of Marketing
+  name: Ericka Totzke, <span>Director of Marketing</span>
   client: Ho-Chunk Gaming Nekoosa
 ---
 
