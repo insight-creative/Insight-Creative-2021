@@ -99,6 +99,7 @@
     border-radius: 5px;
     position: relative;
     height: 30vh;
+    z-index: 1;
 
     img {
       height: 120%;
@@ -108,6 +109,7 @@
       object-fit: cover;
       object-position: center;
       transition: 0.3s ease-out;
+      z-index: -1;
     }
   }
 }

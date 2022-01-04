@@ -4,7 +4,7 @@
     <div class="featured-projects padding-bottom-4">
       <div class="featured-projects__row">
         <a href="{{ .Params.featured_projects.project1.project_url }}" class="featured-projects__link fade-staggered">
-          <div class="featured-projects__project">
+          <div class="featured-projects__project flex flex-column-reverse flex-column-m">
             <h4 class="featured-projects__heading">{{ .Params.featured_projects.project1.heading }}</h4>
               <div class="zoom-image featured-projects__image with-zoom">
                 <picture>
@@ -19,7 +19,7 @@
           </div>
         </a>
         <a href="{{ .Params.featured_projects.project2.project_url }}" class="featured-projects__link fade-staggered">
-          <div class="featured-projects__project">
+          <div class="featured-projects__project flex flex-column-reverse flex-column-m">
             <h4 class="featured-projects__heading">{{ .Params.featured_projects.project2.heading }}</h4>
               <div class="zoom-image featured-projects__image with-zoom">
                 <picture>
@@ -34,7 +34,7 @@
           </div>
         </a>
         <a href="{{ .Params.featured_projects.project3.project_url }}" class="featured-projects__link fade-staggered">
-          <div class="featured-projects__project">
+          <div class="featured-projects__project flex flex-column">
             <div class="zoom-image featured-projects__image with-zoom">
               <picture>
                 {{ partial "responsive-image" (dict "Page" . "image" .Params.featured_projects.project3.project_cover_image "alt" .Params.featured_projects.project3.project_cover_image_alt "sizes" "100vw" ) }}
@@ -49,7 +49,7 @@
           </div>
         </a>
         <a href="{{ .Params.featured_projects.project4.project_url }}" class="featured-projects__link fade-staggered">
-          <div class="featured-projects__project">
+          <div class="featured-projects__project flex flex-column">
             <div class="zoom-image featured-projects__image with-zoom">
               <picture>
                 {{ partial "responsive-image" (dict "Page" . "image" .Params.featured_projects.project4.project_cover_image "alt" .Params.featured_projects.project4.project_cover_image_alt "sizes" "100vw" ) }}
