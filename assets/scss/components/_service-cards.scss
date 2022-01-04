@@ -33,11 +33,15 @@
   &__icon {
     margin: 0 auto;
     height: 100%;
+    position: relative;
+    z-index: 1;
 
     svg {
       width: 100%;
       max-width: 150px;
       height: 100%;
+      position: relative;
+      z-index: 2;
 
       @include breakpoint(md) {
         max-width: 250px;

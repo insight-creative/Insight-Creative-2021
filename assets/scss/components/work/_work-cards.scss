@@ -15,6 +15,7 @@
     border-radius: 5px;
     position: relative;
     height: 300px;
+    z-index: 1;
   }
 
   &__image {
@@ -27,6 +28,7 @@
     object-position: center;
     will-change: transform;
     backface-visibility: hidden;
+    z-index: -1;
   }
 
   &__meta {

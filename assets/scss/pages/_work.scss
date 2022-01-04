@@ -75,7 +75,15 @@
     top: 0;
   }
 
+  p {
+    font-size: $ic-200;
+  }
+
   &__name span {
     font-style: italic;
+  }
+
+  @include breakpoint(md) {
+    font-size: $ic-300;
   }
 }
