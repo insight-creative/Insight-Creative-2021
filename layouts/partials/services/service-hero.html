@@ -10,7 +10,7 @@
   <div class="service-hero__circle"></div>
   <div class="hero__inner service-hero__inner w-100">
     <div class="service-hero__icon">
-      {{ partial "functions/GetServiceIcon" . }}
+      <img src="/images/service-icons/{{ anchorize $heroClass }}-no-back.svg" alt="{{ humanize $heroClass }} icon">
       <div class="service-hero__icon-title shift-up">
         <span>{{ .Page.Title }}</span>
       </div>

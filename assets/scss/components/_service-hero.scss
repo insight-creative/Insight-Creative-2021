@@ -12,16 +12,15 @@
   &__icon {
     margin: 0 auto $ic-300 auto;
 
-    svg {
+    img {
       max-width: 100px;
-      position: relative;
-      top: 5px;
+      margin: 0 auto;
     }
 
     @include breakpoint(md) {
       margin: 0 auto $ic-700 auto;
 
-      svg {
+      img {
         max-width: 170px;
       }
     }
@@ -91,16 +90,29 @@
 
 .design-hero {
   .service-hero__icon {
-    svg {
+    img {
       max-width: 100px;
     }
   }
 }
 
-.web-hero {
+.studio-hero {
   .service-hero__icon {
-    svg {
+    img {
+      max-width: 80px;
+    }
+  }
+}
+
+.digital-hero {
+  .service-hero__icon {
+    img {
+      position: relative;
       top: -5px;
     }
   }
+}
+
+.services-hero .service-hero__icon img {
+  display: none;
 }

@@ -14,24 +14,7 @@
         <div class="service-list__service-card flex flex-center">
           <div class="service-list__icon-wrapper w-40">
               <div class="service-list__icon background-circle background-circle--md">
-                {{ if eq .name "Content" }}
-                  {{ partial "svg-icons/content-alt.svg" . }}
-                {{ end }}
-                {{ if eq .name "Web" }}
-                  {{ partial "svg-icons/web-alt.svg" . }}
-                {{ end }}
-                {{ if eq .name "Digital" }}
-                  {{ partial "svg-icons/digital-alt.svg" . }}
-                {{ end }}
-                {{ if eq .name "Media" }}
-                  {{ partial "svg-icons/media-alt.svg" . }}
-                {{ end }}
-                {{ if eq .name "Design" }}
-                  {{ partial "svg-icons/design-alt.svg" . }}
-                {{ end }}
-                {{ if eq .name "Studio" }}
-                  {{ partial "svg-icons/studio-alt.svg" . }}
-                {{ end }}
+                <img src="/images/service-icons/{{ anchorize .name }}-no-back.svg" alt="{{ .name }} icon">
               </div>
           </div>
           <div class="flex flex-column w-60">

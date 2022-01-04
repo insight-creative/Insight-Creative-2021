@@ -44,13 +44,13 @@
   }
 
   .service-list__link:nth-of-type(5) {
-    svg {
+    img {
       width: 50px;
     }
   }
 
   .service-list__link:nth-of-type(6) {
-    svg {
+    img {
       width: 45px;
     }
   }
@@ -87,7 +87,7 @@
     align-items: center;
     justify-content: center;
 
-    svg {
+    img {
       position: relative;
       z-index: 2;
       width: 70px;

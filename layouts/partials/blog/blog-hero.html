@@ -1,6 +1,7 @@
+{{ $heroClass := lower .Page.Title }}
 <div class="blog-hero bg-black block text-center">
   <div class="wrapper-md flow">
-    {{ partial "functions/GetBlogCategoryIcon" . }}
+    <img src="/images/blog-icons/{{ anchorize $heroClass }}-icon.svg" alt="{{ humanize $heroClass }} icon">
     {{ if eq .Title "Blog" }}
     <h1 class="no-margin">Team insights</h1>
     <h2 class="h5">Get expert guidance on business strategy, branding, content marketing, web design and more! </h2>
