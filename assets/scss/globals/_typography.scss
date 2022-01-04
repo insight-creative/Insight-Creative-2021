@@ -78,17 +78,22 @@ h6,
 .friday-vibes-white {
   font-family: "Friday Vibes";
   font-size: clamp($ic-600, 5vw, $ic-900);
-  position: relative;
-  top: 6px;
-  z-index: 1;
   line-height: 0.5;
+
+  @include breakpoint(md) {
+    position: relative;
+    top: 6px;
+    z-index: 1;
+  }
 }
 
 .emphasis-underline {
   position: relative;
+  z-index: 1;
 
   &::after {
     position: absolute;
+    z-index: -1;
     content: "";
     bottom: 0;
     left: 0;

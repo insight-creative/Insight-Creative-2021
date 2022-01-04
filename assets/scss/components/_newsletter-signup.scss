@@ -34,22 +34,17 @@ div.ctct-form-embed form.ctct-form-custom .ctct-form-required:before {
   background-color: transparent !important;
   border: none !important;
   letter-spacing: 1.6px !important;
-
-  @include breakpoint(md) {
-    font-size: $ic-300 !important;
-  }
-}
-
-.ctct-form-button {
   position: relative;
   z-index: 1;
   color: $light-gray !important;
+  left: -10px;
 
-  &:before {
+  &::before {
+    background-color: $primary-color;
     position: absolute;
     content: "";
     top: 0;
-    left: 0;
+    left: 10px;
     height: 100%;
     width: 36px;
     border-radius: 50px;
@@ -60,14 +55,12 @@ div.ctct-form-embed form.ctct-form-custom .ctct-form-required:before {
   &:hover,
   &:focus {
     &::before {
-      width: 100%;
+      width: 90%;
     }
   }
-}
 
-.ctct-form-button {
-  &::before {
-    background-color: $primary-color;
+  @include breakpoint(md) {
+    font-size: $ic-300 !important;
   }
 }
 

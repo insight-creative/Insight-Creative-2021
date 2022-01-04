@@ -1,7 +1,7 @@
 <div class="bg-black">
   <div class="wrapper-lg block">
     <h3 class="fade-up">From the <span class="emphasis-red">blog</span></h3>
-    <div class="recent-posts flex flex-column flex-row-m">
+    <div class="recent-posts fade-up flex flex-column flex-row-m">
       {{ $pages := .Site.RegularPages }}
       {{ $recentPosts := where $pages "Type" "blog" }}
       {{ range first 2 $recentPosts }}

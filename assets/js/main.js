@@ -480,6 +480,7 @@ function initCursor () {
 
 function initContentFade() {
   const fadeUp = document.querySelectorAll('.fade-up')
+  const fadeUpDelayed = document.querySelectorAll('.fade-up--delayed')
   const fadeOut = document.querySelectorAll('.fade-out')
   gsap.utils.toArray(fadeUp).forEach((fade) => {
         gsap.to(fade, {
@@ -494,10 +495,20 @@ function initContentFade() {
             }
         })
     })
+  gsap.utils.toArray(fadeUpDelayed).forEach((fadeDelayed) => {
+        gsap.to(fadeDelayed, {
+            opacity: 1,
+            delay: .7,
+            y: 0,
+            duration: .7,
+            ease: 'Power2.in',
+            stagger: 0.2
+        })
+    })
   gsap.set('.fade-staggered', {y: 50, autoAlpha: 0})
 
   ScrollTrigger.batch('.fade-staggered', {
-      onEnter: batch => gsap.to(batch, {y: 0, autoAlpha: 1, stagger: 0.2}),
+    onEnter: batch => gsap.to(batch, {y: 0, autoAlpha: 1, stagger: 0.2}),
     })
 
   gsap.utils.toArray(fadeOut).forEach((fade) => {

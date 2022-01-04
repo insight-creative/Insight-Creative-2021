@@ -1,21 +1,5 @@
-.fade-up {
+.fade-up,
+.fade-up--delayed {
   opacity: 0;
   transform: translateY(50px);
 }
-
-// .fade-up--delayed {
-//   opacity: 0;
-//   transform: translateY(50px);
-//   animation: delayedSlideUp .7s 1s ease-out;
-// }
-
-// @keyframes delayedSlideUp {
-//   0% {
-//     opacity: 0;
-//     transform: translateY(50px);
-//   }
-//   100% {
-//     opacity: 1;
-//     transform: translateY(0);
-//   }
-// }
