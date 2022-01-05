@@ -3,7 +3,7 @@ import barbaPrefetch from '@barba/prefetch'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Scrollbar from 'smooth-scrollbar'
-import { initSearch, toggleMobileMenu, toggleMobileDropdownMenu } from './partials';
+import { initSearch, toggleMobileMenu, toggleMobileDropdownMenu, dropdownMenu } from './partials';
 
 barba.use(barbaPrefetch)
 gsap.registerPlugin(ScrollTrigger)
@@ -234,6 +234,8 @@ function initCursor () {
   const staffCards = document.querySelectorAll('.staff-card')
   const workCard = document.querySelector('.work-card')
   const workCards = document.querySelectorAll('.work-card')
+  const subMenuLink = document.querySelector('.sub-menu__link')
+  const subMenuLinks = document.querySelectorAll('.sub-menu__link')
 
   gsap.set('.follower', { xPercent: -50, yPercent: -50, backgroundColor: '#8bc0c6' })
   gsap.set('.cursor', { xPercent: -50, yPercent: -50 })
@@ -254,6 +256,19 @@ function initCursor () {
   })
 
   menuItems.forEach(link => {
+    link.addEventListener('mouseover', () => {
+      gsap.to(follow, 0.3, {
+        scale: 6
+      })
+    })
+    link.addEventListener('mouseout', () => {
+      gsap.to(follow, 0.3, {
+        scale: 1
+      })
+    })
+  })
+
+  subMenuLinks.forEach(link => {
     link.addEventListener('mouseover', () => {
       gsap.to(follow, 0.3, {
         scale: 6
@@ -743,10 +758,10 @@ function pageTransitionIn ({ container }) {
   return tl
 }
 
-function pageTransitionOut ({ container }) {
-
+function resetNav () {
   const mobileMenu = document.querySelector('.site-header__mobile-nav')
   const hasMobileDropdown = document.querySelector('.nav-list-has-dropdown')
+  const dropdown = document.querySelector('.has-sub-menu')
 
     if (mobileMenu.classList.contains('nav-open')) {
         mobileMenu.classList.remove('nav-open')
@@ -758,9 +773,16 @@ function pageTransitionOut ({ container }) {
       hasMobileDropdown.classList.remove('active')
     }
 
+    if (dropdown.classList.contains('sub-menu-active')) {
+      dropdown.classList.remove('sub-menu-active')
+    }
+
     if (siteHeader.classList.contains('has-search-open')) {
       siteHeader.classList.remove('has-search-open')
     }
+}
+
+function pageTransitionOut ({ container }) {
 
   const tl = gsap.timeline({
     defaults: {
@@ -802,6 +824,7 @@ function initPageTransitions () {
     document.querySelector('html').classList.add('is-transitioning')
     destroySmoothScrollbar()
     // killScrollTriggers();
+    resetNav()
   })
   // do something after the transition finishes
   barba.hooks.after(() => {

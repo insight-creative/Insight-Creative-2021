@@ -8,10 +8,43 @@
     </a>
     <nav class="site-header__nav" role="navigation" aria-label="Primary Navigation">
       <ul class="nav-list" role="list">
+        {{ $url := .RelPermalink }}
         {{ range .Site.Menus.main }}
-        <li class="nav-list-item">
-          <a href="{{ .URL }}" class="nav-item" aria-label="{{ .Name }}" title="{{ .Name }}">{{ .Name }}</a>
-        </li>
+        
+        {{ $active := eq $url .URL }}
+        {{ $contact := eq "Contact Us" .Name }}
+          {{ if .HasChildren }}
+              <li class="nav-list-item has-sub-menu">
+                <a {{if $active }}class="current nav-item" {{end}} class="nav-item" href="{{ .URL }}" aria-label="{{ .Name }}">
+                  {{ .Name }}
+                  <span class="sub-menu-indicator"></span>
+                </a>
+                <div class="nav-list__sub-menu sub-menu">
+                  <ul class="sub-menu__inner">
+                    {{ range .Children }}
+                      <li class="sub-menu__item">
+                          <a class="sub-menu__link flex flex-center" href="{{ .URL }}" aria-label="{{ .Name }}">
+                            <img src="/images/blog-icons/{{ anchorize .Name }}-icon.svg" alt="{{ .Name }} icon">
+                            {{ .Name }}
+                          </a>
+                      </li>
+                    {{ end }}
+                  </ul>
+                </div>
+              </li>
+          {{ else }}
+          <li class="nav-list__item">
+            {{ if $contact }}
+            <a class="btn btn-primary" href="{{ .URL }}" aria-label="{{ .Name }}">
+              {{ .Name }}
+            </a>
+            {{ else }}
+            <a {{if $active }}class="current nav-item" {{end}} class="nav-item" href="{{ .URL }}" aria-label="{{ .Name }}">
+                {{ .Name }}
+            </a>
+            {{ end }}
+          </li>
+          {{ end }}    
         {{ end }}
         <li class="nav-list-item site-header__search"><button class="nav-item search__open" aria-label="open search bar">{{ partialCached "svg-icons/search.svg" . }}</button></li>
       </ul>
