@@ -46,11 +46,11 @@ testimonial:
 {{< parallax-image src="bol-pullupbanner-2400.jpg" alt="">}}
 {{< parallax-image src="postcard-mockup-1400.jpg" alt="">}}
 </div>
-{{< youtube 5MD-eo77rKg >}}
+{{< youtube id="5MD-eo77rKg" class="fade-up aspect-ratio" title="Bank of Luxemburg TV Spot" >}}
 <div class="flex-grid">
 {{< responsive-image src="bol-mobilewallet-480.jpg" alt="">}}
 {{< responsive-image src="bol-mobileapp-480.jpg" alt="">}}
 {{< responsive-image src="bol-heloc-480.jpg" alt="">}}
 </div>
-{{< youtube dseS9u1kzbE >}}
+{{< youtube id="dseS9u1kzbE" class="fade-up aspect-ratio" title="Bank of Luxemburg Brand Launch Video" >}}
 </div>

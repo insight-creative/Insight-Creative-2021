@@ -72,7 +72,9 @@
 
 .testimonial {
   .quote {
+    position: relative;
     top: 0;
+    margin: 0;
   }
 
   p {
@@ -84,6 +86,8 @@
   }
 
   @include breakpoint(md) {
-    font-size: $ic-300;
+    p {
+      font-size: $ic-300;
+    }
   }
 }

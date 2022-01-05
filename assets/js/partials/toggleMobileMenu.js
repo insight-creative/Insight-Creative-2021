@@ -1,11 +1,11 @@
 const hamburger = document.querySelector('.hamburger')
+const mobileMenu = document.querySelector('.site-header__mobile-nav')
+const mobileMenuWrapper = document.querySelector('.site-header__mobile-nav-inner')
+const mobileMenuWrapperHeight = mobileMenuWrapper.getBoundingClientRect().height
 
 hamburger.addEventListener('click', toggleMobileMenu)
 
 function toggleMobileMenu() {
-    const mobileMenu = document.querySelector('.site-header__mobile-nav')
-    const mobileMenuWrapper = document.querySelector('.site-header__mobile-nav-inner')
-    const mobileMenuWrapperHeight = mobileMenuWrapper.getBoundingClientRect().height
 
     mobileMenu.style.height = 0
 
@@ -17,7 +17,6 @@ function toggleMobileMenu() {
         hamburger.classList.remove('is-active')
     } else {
         mobileMenu.classList.add('nav-open')
-        console.log(mobileMenuWrapperHeight)
         mobileMenu.style.height = mobileMenuWrapperHeight + 'px'
         hamburger.classList.add('is-active')
         this.setAttribute('aria-expanded','true')

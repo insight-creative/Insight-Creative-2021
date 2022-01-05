@@ -71,6 +71,42 @@ timeout = 200000
     url = "/services/"
     weight = 3  
 
+    [[menu.main]]
+      parent = "Services"
+      name = "Content"
+      weight = 1
+      url = "/services/copywriting-services/"
+
+    [[menu.main]]
+      parent = "Services"
+      name = "Web"
+      weight = 2
+      url = "/services/web-design-development-services/"
+
+    [[menu.main]]
+      parent = "Services"
+      name = "Digital"
+      weight = 3
+      url = "/services/digital-marketing-services/"
+
+    [[menu.main]]
+      parent = "Services"
+      name = "Media"
+      weight = 4
+      url = "/services/media/"
+
+    [[menu.main]]
+      parent = "Services"
+      name = "Design"
+      weight = 5
+      url = "/services/graphic-design-services/"
+
+    [[menu.main]]
+      parent = "Services"
+      name = "Studio"
+      weight = 6
+      url = "/services/photography-videography-services/"
+
   [[menu.main]]
     name = "Blog"
     url  = "/blog/"

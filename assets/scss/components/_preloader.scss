@@ -25,7 +25,11 @@
 
     .friday-vibes-white {
       font-size: clamp($ic-400, 4vw, $ic-900);
-      padding: 0 $ic-200;
+      padding: 0 0.3rem;
+
+      @include breakpoint(md) {
+        padding: 0 $ic-200;
+      }
     }
 
     sup {

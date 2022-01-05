@@ -1,3 +1,11 @@
+.testimonials {
+  display: none;
+
+  @include breakpoint(sm) {
+    display: block;
+  }
+}
+
 .testimonials h2 {
   max-width: 30ch;
 }
@@ -5,8 +13,8 @@
 .quote {
   width: $ic-900;
   margin: $ic-200;
-  position: relative;
-  top: 50px;
+  position: absolute;
+  top: -25px;
 }
 
 .slider {
@@ -14,6 +22,7 @@
   width: 100%;
   max-width: 50rem;
   margin: 0 auto;
+  padding-top: $ic-400;
 
   &__wrapper {
     overflow: hidden;

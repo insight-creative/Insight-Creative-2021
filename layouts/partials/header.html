@@ -21,11 +21,28 @@
     </nav>
     <div class="site-header__mobile-nav">
       <div class="site-header__mobile-nav-inner">
-        <ul  class="site-header__mobile-nav-menu">
+        <ul class="site-header__mobile-nav-menu">
           {{ range .Site.Menus.main }}
+          {{ if .HasChildren }}
+            <li class="nav-list-item nav-list-has-dropdown">
+              <a class="nav-item parent" href="{{ .URL }}" aria-label="{{ .Name }}" aria-haspopup="true" aria-expanded="false"
+                title="{{ .Name }}">{{ .Name }}
+              </a>
+              <button class="toggle-mobile-dropdown" aria-label="open mobile dropdown menu"></button>
+                <ul class="nav-list-dropdown">
+                  {{ range .Children }}
+                  <li class="nav-list-item">
+                    <a class="nav-item" href="{{ .URL }}" aria-label="{{ .Name }}"
+                title="{{ .Name }}" tab-index="-1">{{ .Name }}</a>
+                  </li>
+                  {{ end }}
+                </ul>
+            </li>
+            {{ else }}
           <li class="nav-list-item">
             <a href="{{ .URL }}" class="nav-item" aria-label="{{ .Name }}" title="{{ .Name }}">{{ .Name }}</a>
           </li>
+          {{ end }}
           {{ end }}
         </ul>
         <ul class="site-header__social-nav flex flex-justify-around">

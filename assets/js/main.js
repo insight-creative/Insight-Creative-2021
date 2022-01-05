@@ -3,7 +3,7 @@ import barbaPrefetch from '@barba/prefetch'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Scrollbar from 'smooth-scrollbar'
-import { initSearch, toggleMobileMenu } from './partials';
+import { initSearch, toggleMobileMenu, toggleMobileDropdownMenu } from './partials';
 
 barba.use(barbaPrefetch)
 gsap.registerPlugin(ScrollTrigger)
@@ -638,6 +638,7 @@ function initImageEffects () {
 
 function initHeroParallax () {
   const titleReveal = document.querySelector('.title-reveal')
+  const titleRevealFadeAway = document.querySelector('.title-reveal--fade-up-away')
   const title = document.querySelector('.title-reveal__title')
 
   if (!document.body.contains(title)) return
@@ -668,7 +669,7 @@ function initHeroParallax () {
 
   if (!document.body.contains(titleReveal)) return
 
-  gsap.to(titleReveal, {
+  gsap.to(titleRevealFadeAway, {
     y: -100,
     opacity: 0,
     ease: 'none',
@@ -745,11 +746,16 @@ function pageTransitionIn ({ container }) {
 function pageTransitionOut ({ container }) {
 
   const mobileMenu = document.querySelector('.site-header__mobile-nav')
+  const hasMobileDropdown = document.querySelector('.nav-list-has-dropdown')
 
     if (mobileMenu.classList.contains('nav-open')) {
         mobileMenu.classList.remove('nav-open')
         mobileMenu.style.height = 0
         hamburger.classList.remove('is-active')
+    }
+
+    if (hasMobileDropdown.classList.contains('active')) {
+      hasMobileDropdown.classList.remove('active')
     }
 
     if (siteHeader.classList.contains('has-search-open')) {
