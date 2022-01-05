@@ -21,8 +21,9 @@
     overflow: hidden;
     border-radius: 5px;
     position: relative;
-    height: 300px;
+    padding-bottom: 50%;
     z-index: 1;
+    min-height: 225px;
   }
 
   &__image {
