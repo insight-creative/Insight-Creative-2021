@@ -1,11 +1,12 @@
 .service-intro {
   margin-top: -1px;
-  // &__desc {
-  //   h2 {
-  //     max-width: 70rem;
-  //     margin: 0 auto;
-  //   }
-  // }
+
+  &__desc {
+    h2 {
+      max-width: 26ch;
+      margin: 0 auto;
+    }
+  }
 }
 
 .service-list {
@@ -91,7 +92,6 @@
 .studio-cta {
   display: none;
 }
-
 
 .service-overview h3 {
   letter-spacing: 1.6px;

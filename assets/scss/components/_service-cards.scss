@@ -37,14 +37,13 @@
     z-index: 1;
 
     img {
-      width: 100%;
-      max-width: 150px;
+      width: 150px;
       height: auto;
       position: relative;
       z-index: 2;
 
       @include breakpoint(md) {
-        max-width: 250px;
+        width: 250px;
       }
     }
   }
