@@ -1,7 +1,7 @@
 baseURL = "https://insightcreative.com"
 languageCode = "en-us"
 title = "Insight Creative, Inc."
-googleAnalytics = " "
+googleAnalytics = "G-2B2KK3D9FE"
 enableRobotsTXT = true
 disableAliases = true
 summaryLength = 30

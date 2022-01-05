@@ -3,13 +3,13 @@
   padding: 0 !important;
 }
 
-#email_address_label_0 {
+.ctct-form-label {
   position: relative;
   left: 10px;
   color: $light-gray !important;
 }
 
-div.ctct-form-embed form.ctct-form-custom .ctct-form-required:before {
+.ctct-form-embed form.ctct-form-custom .ctct-form-required:before {
   color: $primary-color !important;
 }
 
@@ -20,7 +20,7 @@ div.ctct-form-embed form.ctct-form-custom .ctct-form-required:before {
   color: $light-gray !important;
 }
 
-#gdpr_text {
+.ctct-gdpr-text {
   display: none;
 }
 
