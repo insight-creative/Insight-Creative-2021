@@ -25,7 +25,6 @@ services:
       description: Half of our in-depth research is getting to know you. The other half is getting to know your audience’s media consumption habits. With access to many resources, our team can employ advanced targeting by demographic, geographic and behavioral traits to achieve the most effective media mix.
       partners: 
       - logo: Nielson-Logo.png
-      - logo: comscore.png
       - logo: experian.png
       - logo: BluHorn-Logo.png
 

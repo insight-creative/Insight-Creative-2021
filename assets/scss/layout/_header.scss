@@ -16,14 +16,15 @@
 
   &__logo {
     opacity: 0;
+    width: 160px;
+
+    @include breakpoint(sm) {
+      width: 100%;
+      max-width: 225px;
+    }
 
     img {
-      width: 160px;
-
-      @include breakpoint(sm) {
-        width: 100%;
-        max-width: 225px;
-      }
+      width: 100%;
     }
   }
 

@@ -1,6 +1,6 @@
 {{ $image := (.Resources.GetMatch (index .Params.seo.featured_image)) }}
-{{ $smallwebp := $image.Resize "600x q80 webp" }}
-{{ $smalljpg := $image.Resize "600x q80" }}
+{{ $smallwebp := $image.Resize "600x q90 webp" }}
+{{ $smalljpg := $image.Resize "600x q90" }}
 <article class="blog-card">
     <a href="{{ .RelPermalink }}">
         <div class="blog-card__image-wrapper with-parallax">
