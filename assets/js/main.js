@@ -5,6 +5,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Scrollbar from 'smooth-scrollbar'
 import { initSearch, toggleMobileMenu, toggleMobileDropdownMenu, dropdownMenu } from './partials';
 
+console.log('%c Crafted by Insight Creative, Inc. Coded by Justin Parsons', 'background: #1d1d1d; color: white; padding: 5px 10px;')
+
 barba.use(barbaPrefetch)
 gsap.registerPlugin(ScrollTrigger)
 
