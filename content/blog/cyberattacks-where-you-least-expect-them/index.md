@@ -10,7 +10,6 @@ date: 2022-01-05
 author: Molly Setzer
 categories: ["Media", "Digital"]
 page_class: single-post
-draft: true
 ---
 
 ![Cyberattacks where you least expect them](cyber-attacks-where-you-least-expect-them.jpg)

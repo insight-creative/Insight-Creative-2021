@@ -3,7 +3,7 @@ Title: About
 seo:
   title: About Insight
   description: As the longest standing advertising agency in Green Bay, Insight Creative, Inc. has served clients in a wide variety of industries since 1988.
-  featured_image: "Insight Services Brand Collage Gray.jpg"
+  featured_image: "images/background-images/Insight-Social-Preview.jpg"
 hero:
   subhead: About Insight
   head: Delivering Communication <span class="friday-vibes-white">with</span> <span class="emphasis-red">substance</span> since 1988.
