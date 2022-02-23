@@ -4,7 +4,7 @@ url: /services/digital-marketing-services/
 seo:
   title: Digital Services in Green Bay, WI
   description: As more digital features sprout up each day, it’s vital to have a knowledgeable team to monitor ever-evolving trends and consumer behavior. Learn more about how Insight Creative can help you strategize a digital media plan for you.
-  featured_image: digital-page-featured-image.jpg
+  featured_image: "images/background-images/Insight-Social-Preview.jpg"
 
 hero_title: 'The possibilities online are <span class="emphasis-red">infinite.</span>'
 

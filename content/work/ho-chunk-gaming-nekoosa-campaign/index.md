@@ -3,7 +3,11 @@ Title: Ho-Chunk Gaming Nekoosa campaign
 seo:
   title: Ho-Chunk Gaming Nekoosa campaign
   description: When the pandemic hit in spring of 2020, Ho-Chunk Gaming Nekoosa relied on Insight to communicate their reopening plan after a temporary closure.
-  featured_image: Ho-chunk-project-cover.jpg
+  featured_image: "images/background-images/Ho-chunk-project-cover.jpg"
+hero:
+  image:
+    image_url: Ho-chunk-project-cover.jpg
+    image_alt: Ho-Chuck Gaming Nekoosa Project cover
 date: 2021-01-05
 client: Ho-Chunk Gaming Nekoosa
 industries:

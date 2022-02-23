@@ -3,7 +3,11 @@ Title: Fox Structures branding
 seo:
   title: Fox Structures branding
   description: Fox Structures, agricultural and commercial construction specialists approached Insight for a brand refresh to represent their bold and quality work.
-  featured_image: fox-structures-project-cover.jpg
+  featured_image: "images/background-images/fox-structures-project-cover.jpg"
+hero:
+  image:
+    image_url: fox-structures-project-cover.jpg
+    image_alt: Fox Structures Project cover
 date: 2021-01-01
 client: Fox Structures
 industries:

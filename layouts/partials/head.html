@@ -9,7 +9,7 @@
     <meta property="og:title" content="{{ if .Params.seo.title }}{{ .Params.seo.title  | markdownify }}{{ else }}{{ .Title }}{{ end }} | {{ .Site.Title }}">
     <meta property="og:url" content="{{ .Permalink }}">
     <meta property="og:locale" content="en_US">
-    <meta property="og:image" content="{{ if .Params.seo.featured_image }}{{ .Permalink }}{{ .Params.seo.featured_image }}{{ else }}{{ .Site.BaseURL }}/images/background-images/Insight-Creative-Inc-Communication-With-Substance-Cover.jpg{{ end }}">
+    <meta property="og:image" content="{{ if .Params.seo.featured_image }}{{ .Site.BaseURL }}{{ .Params.seo.featured_image }}{{ else }}{{ .Site.BaseURL }}/images/background-images/Insight-Social-Preview.jpg{{ end }}">
     <meta property="og:image:width" content="1500">
     <meta property="og:image:height" content="1000">
     <meta property="og:image:alt" content="{{ if .Params.seo.featured_image_alt }}{{ .Params.seo.featured_image_alt }}{{ else }}{{ .Params.seo.title | markdownify }}{{ end }}">
@@ -20,7 +20,7 @@
     <meta name="twitter:title" content="{{ if .Params.seo.title }}{{ .Params.seo.title | markdownify }}{{ else }}{{ .Title }}{{ end }} | {{ .Site.Title }}">
     <meta name="twitter:description" content="{{ .Params.seo.description }}">
     <meta name="twitter:site" content="@insightwi">
-    <meta name="twitter:image" content="{{ if .Params.seo.featured_image }}{{ .Permalink }}{{ .Params.seo.featured_image }}{{ else }}{{ .Site.BaseURL }}/images/background-images/Insight-Creative-Inc-Communication-With-Substance-Cover.jpg{{ end }}">
+    <meta name="twitter:image" content="{{ if .Params.seo.featured_image }}{{ .Site.BaseURL }}{{ .Params.seo.featured_image }}{{ else }}{{ .Site.BaseURL }}/images/background-images/Insight-Creative-Inc-Communication-With-Substance-Cover.jpg{{ end }}">
 
     <link rel="canonical" href="{{ .Permalink }}">
 

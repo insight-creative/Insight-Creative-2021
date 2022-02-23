@@ -3,7 +3,11 @@ Title: Oshkosh Defense website design
 seo:
   title: Oshkosh Defense website design
   description: Tactical vehicle manufacturer Oshkosh Defense needed an experienced team for their website redesign, learn about our mission to deliver a modern website design!
-  featured_image: oshkosh-defense-project-cover.jpg
+  featured_image: "images/background-images/oshkosh-defense-project-cover.jpg"
+hero:
+  image:
+    image_url: oshkosh-defense-project-cover.jpg
+    image_alt: Oshkosh Defense Project cover
 date: 2021-01-06
 client: Oshkosh Defense
 industries:

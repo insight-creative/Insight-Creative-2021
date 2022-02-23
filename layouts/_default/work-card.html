@@ -1,4 +1,4 @@
-{{ $image := (.Resources.GetMatch (index .Params.seo.featured_image)) }}
+{{ $image := (.Resources.GetMatch (index .Params.hero.image.image_url)) }}
 {{ $smallwebp := $image.Resize "600x q80 webp" }}
 {{ $smalljpg := $image.Resize "600x q80" }}
 <article class="work-card">
@@ -8,7 +8,7 @@
                 <source srcset="{{ $smallwebp.RelPermalink }}" type="image/webp" >
                 <source srcset="{{ $smalljpg.RelPermalink }}" type="image/jpg" >
                 <img loading="lazy"
-                    src="{{ $image.RelPermalink }}" width="500" height="300" alt="{{ .Params.seo.featured_image_alt }}" class="blog-card__image">
+                    src="{{ $image.RelPermalink }}" width="500" height="300" alt="{{ .Params.hero.image.image_alt }}" class="blog-card__image">
             </picture>
         </div>
         <div class="work-card__meta">

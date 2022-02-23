@@ -4,7 +4,7 @@ url: /services/graphic-design-services/
 seo:
   title: Design Services in Green Bay, WI
   description: From marketing campaigns to digital ads and print collateral, our design team brings strong educational backgrounds, decades of working experience and eclectic style to ensure your marketing is striking, cohesive and true to your brand. Contact Insight Creative for all your design needs.
-  featured_image: design-page-featured-image.jpg
+  featured_image: "images/background-images/Insight-Social-Preview.jpg"
 
 hero_title: "We don’t just <span class='emphasis-red'>color</span> all day … even though we’d like to."
 

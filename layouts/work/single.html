@@ -1,6 +1,6 @@
 {{ define "main" }}
 <section id="work-hero" class="work-hero">
-    {{ $image := (.Resources.GetMatch (index .Params.seo.featured_image)) }}
+    {{ $image := (.Resources.GetMatch (index .Params.hero.image.image_url)) }}
 
     {{ $webp_src_set := ""}}
     {{ $jpg_src_set := ""}}
@@ -27,7 +27,7 @@
             <source sizes="100vw" srcset="{{ $webp_src_set }}" type="image/webp" >
             <source sizes="100vw" srcset="{{ $jpg_src_set }}" type="image/jpg" >
             <img loading="lazy"
-                src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ .Params.seo.featured_image_alt }}" class="work-hero__image">
+                src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ .Params.hero.image.image_alt }}" class="work-hero__image">
         </picture>
     </div>
     <div class="work-hero__header bg-black-2 wrapper-md block">

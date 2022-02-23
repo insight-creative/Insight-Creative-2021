@@ -3,7 +3,7 @@ Title: Media
 seo:
   title: Media Buying Services in Green Bay, WI
   description: Insight’s approach to media is methodical. We understand the value of research and strategy before buying. Plus, we learn from the infinite data we get in return, ensuring your media only gets more effective as it runs. Learn more about Insight Creative's media services.
-  featured_image: media-page-featured-image.jpg
+  featured_image: "images/background-images/Insight-Social-Preview.jpg"
 
 hero_title: 'It’s <span class="emphasis-red">so much more</span> than "buying."'
 
