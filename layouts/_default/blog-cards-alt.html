@@ -5,8 +5,8 @@
     <a href="{{ .RelPermalink }}">
         <div class="blog-card__image-wrapper with-parallax">
             <picture>
-                <source sizes="50vw" srcset="{{ $smallwebp.RelPermalink }}" type="image/webp" >
-                <source sizes="50vw" srcset="{{ $smalljpg.RelPermalink }}" type="image/jpg" >
+                <source srcset="{{ $smallwebp.RelPermalink }}" type="image/webp" >
+                <source srcset="{{ $smalljpg.RelPermalink }}" type="image/jpg" >
                 <img loading="lazy"
                     src="{{ $image.RelPermalink }}" width="500" height="300" alt="{{ .Params.seo.featured_image_alt }}" class="blog-card__image">
             </picture>
