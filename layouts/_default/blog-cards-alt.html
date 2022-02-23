@@ -7,7 +7,7 @@
             <picture>
                 <source sizes="50vw" srcset="{{ $smallwebp.RelPermalink }}" type="image/webp" >
                 <source sizes="50vw" srcset="{{ $smalljpg.RelPermalink }}" type="image/jpg" >
-                <img sizes="50vw" loading="lazy"
+                <img loading="lazy"
                     src="{{ $image.RelPermalink }}" width="500" height="300" alt="{{ .Params.seo.featured_image_alt }}" class="blog-card__image">
             </picture>
         </div>

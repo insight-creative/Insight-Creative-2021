@@ -19,6 +19,6 @@
 <picture>
     <source sizes="{{ .sizes }}" srcset="{{ $webp_src_set }}" type="image/webp" >
     <source sizes="{{ .sizes }}" srcset="{{ $jpg_src_set }}" type="image/jpg" >
-    <img sizes="{{ .sizes }}" loading="lazy"
+    <img loading="lazy"
         src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ .alt }}">
 </picture>

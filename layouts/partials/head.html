@@ -1,13 +1,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="referrer" content="no-referrer">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <title>{{ if .Params.seo.title }}{{ .Params.seo.title | markdownify }}{{ else }}{{ .Title }}{{ end }} | {{ .Site.Title }}</title>
-
-    <meta itemprop="name" content="{{ if .Params.seo.title }}{{ .Params.seo.title | markdownify }}{{ else }}{{ .Title }}{{ end }} | {{ .Site.Title }}">
-    <meta itemprop="description" content="{{ .Params.seo.description }}">
-    <meta itemprop="image" content="{{ if .Params.seo.featured_image }}{{ .Permalink }}{{ .Params.seo.featured_image }}{{ else }}{{ .Site.BaseURL }}/images/background-images/Insight-Creative-Inc-Communication-With-Substance-Cover.jpg{{ end }}">
 
     <meta property="og:site_name" content="{{ .Site.Title }}">
     <meta property="og:type" content="website">
@@ -21,13 +16,13 @@
     <meta property="og:description" content="{{ .Params.seo.description }}">
     <meta name="description" content="{{ .Params.seo.description }}">
 
-    <link rel="canonical" href="{{ .Permalink }}">
-
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="{{ if .Params.seo.title }}{{ .Params.seo.title | markdownify }}{{ else }}{{ .Title }}{{ end }} | {{ .Site.Title }}">
     <meta name="twitter:description" content="{{ .Params.seo.description }}">
     <meta name="twitter:site" content="@insightwi">
     <meta name="twitter:image" content="{{ if .Params.seo.featured_image }}{{ .Permalink }}{{ .Params.seo.featured_image }}{{ else }}{{ .Site.BaseURL }}/images/background-images/Insight-Creative-Inc-Communication-With-Substance-Cover.jpg{{ end }}">
+
+    <link rel="canonical" href="{{ .Permalink }}">
 
     {{ $scss := resources.Get "scss/main.scss" | toCSS }}
     {{ $postcss := $scss | resources.PostCSS | minify }}
