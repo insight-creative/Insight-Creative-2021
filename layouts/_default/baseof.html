@@ -16,7 +16,7 @@
   </div>
   {{ partialCached "header" . }}
   <div id="viewport" class="viewport">
-    <main id="main-content" class="site-main {{ if .Params.page_class }}{{ .Params.page_class }} {{ end }}{{ anchorize $mainClass }}" role="main" data-barba="container" data-barba-namespace="{{ anchorize $namespace }}">
+    <main id="main-content" class="site-main {{ if .Params.page_class }}{{ .Params.page_class }} {{ end }}{{ anchorize $mainClass }}" data-barba="container" data-barba-namespace="{{ anchorize $namespace }}">
       {{ block "main" . }}{{ end }}
       {{ partial "breadcrumbs" . }}
     </main>

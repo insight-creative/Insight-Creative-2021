@@ -1,4 +1,4 @@
-<footer class="footer" role="contentinfo">
+<footer class="footer">
   <div class="footer__container wrapper-lg padding-top-5">
     <div class="footer__contact footer__column">
       <a class="brand-logo" href="{{ site.BaseURL }}">
@@ -8,7 +8,7 @@
       <a href="tel:{{ site.Params.phone }}">{{ site.Params.phone }}</a>
     </div>
     <div class="footer__menu footer__column footer__column--center">
-      <nav class="footer__menu-nav" role="navigation" aria-label="Footer Navigation">
+      <nav class="footer__menu-nav" aria-label="Footer Navigation">
         <h4 class="h5">Menu</h4>
         {{ with .Site.Menus.main }}
         <ul class="footer__nav-list">
@@ -23,7 +23,7 @@
       </nav>
     </div>
     <div class="footer__services footer__column footer__column--center">
-      <nav class="footer__services-nav" role="navigation" aria-label="Services Navigation">
+      <nav class="footer__services-nav" aria-label="Services Navigation">
         <h4 class="h5">Services</h4>
         <ul class="footer__nav-list">
           <li class="footer__nav-list-item">
