@@ -1,0 +1,81 @@
+.careers-hero {
+  background-image: url("/images/background-images/insight-careers-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__icon {
+    max-width: 175px;
+    height: auto;
+    margin: 0 auto $ic-600 auto;
+  }
+}
+
+.no-opportunities .btn {
+  margin: $ic-300 auto 0 auto;
+}
+
+.current-opportunities {
+  .service-card__icon img {
+    margin: 0 auto;
+  }
+}
+
+.reasons-to-join {
+  @include breakpoint(md) {
+    columns: 2;
+  }
+}
+
+.card {
+  border-radius: $radius;
+  break-inside: avoid;
+  padding: $ic-600;
+  margin: $ic-300 0;
+
+  svg {
+    float: left;
+    margin-right: $ic-200;
+  }
+
+  &__image-wrapper {
+    max-width: 85px;
+    height: 100%;
+    margin-right: $ic-500;
+  }
+
+  &__name {
+    font-family: friday vibes;
+    font-size: $ic-600;
+  }
+
+  &__job-title {
+    font-size: $ic-200;
+    letter-spacing: 2px;
+    font-weight: 400;
+    max-width: 24ch;
+    text-align: center;
+  }
+}
+
+.card:first-of-type {
+  margin-top: 0;
+}
+
+.careers-cta {
+  &__tagline {
+    font-family: futura-pt, sans-serif;
+    font-size: clamp(1rem, 4vw, 5.4rem);
+    font-weight: 500;
+    line-height: 1;
+  }
+
+  .friday-vibes-white {
+    padding: 0 0.3rem;
+    font-size: clamp($ic-400, 4vw, $ic-1000);
+
+    @include breakpoint(md) {
+      padding: 0 $ic-200;
+    }
+  }
+}

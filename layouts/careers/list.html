@@ -1,0 +1,105 @@
+{{ define "main" }}
+<section id="careers-hero" class="careers-hero hero-lg">
+    <div class="wrapper-md block text-center">
+        <div class="careers-hero__icon">
+            <img src="/images/service-icons/research-icon.svg" alt="careers search icon">
+        </div>
+        {{ with .Params.hero }}
+        <h1 class="text-center">{{ .head | markdownify }}</h1>
+        <h2 class="h5 b">{{ .body | markdownify }}</h2>
+        {{ end }}
+    </div>
+</section>
+<section id="careers-intro" class="intro bg-black-2 block">
+    <div class="wrapper">
+        <div class="flow intro h5">
+            <p>{{ .Params.intro.body }}</p>
+        </div>
+    </div>
+</section>
+<section id="current-opportunities" class="current-opportunities fade-up">
+    <div class="wrapper">
+        <div class="flow fade-up">
+            <h3 class="h5 text-center text-secondary shift-up">Current opportunities</h3>
+        </div>
+    </div>
+    <div class="wrapper-lg">
+        {{ with .Params.current_opportunities }}
+        <div class="flex flex-column">
+            {{ if .opportunities }}
+            {{ range .opportunities }}
+            <div class="service-card bg-black fade-up">
+                <div class="service-card__inner">
+                    <div class="flex flex-column flex-row-m">
+                        <div class="service-card__icon-wrapper w-100 w-30-m flex flex-column">
+                            <div class="service-card__icon flow">
+                                <img src="/images/service-icons/{{ .icon }}-icon.svg" alt="{{ .icon }} icon">
+                                <a href="{{ .posting_url }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">See full job listing</a>
+                            </div>
+                        </div>
+                        <div class="w-100 w-70-m">
+                            <h3 class="h4 text-white no-margin">{{ .heading | markdownify }}</h3>
+                            <div class="service-card__underline"></div>
+                            <span class="text-tertiary"><em>Full time, salaried position in Green Bay, WI</em></span>
+                            <p class="service-card__desc">{{ .summary | markdownify }}</p>
+                            <p class="service-card__service-list text-dark-gray">401(k) • 401(k) matching • flexible schedule • health insurance • health savings account • life insurance • paid time off</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+            {{ else }}
+            <div class="no-opportunities bg-black block">
+                <div class="wrapper flow text-center">
+                    <h4 class="b">Sorry, we currently do not have any positions available.</h3>
+                    <h4>Please check back later, or submit a resume for us to keep on file.</h4>
+                    <a href="/contact/" class="btn btn-primary">Contact Us</a>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div> 
+</section>
+<section id="join-insight" class="join-insight padding-top-9">
+    <div class="wrapper-lg">
+        <h3 class="h2 text-center fade-up">{{ .Params.join_insight.heading | markdownify }}</h3>
+    </div>
+    <div class="reasons-to-join wrapper-lg">
+        {{ range .Params.join_insight.reasons }}
+        <div class="card bg-black flow fade-up">
+            <h4 class="b text-center text-secondary">{{ .heading }}</h4>
+            {{ if .is_testimonial }}
+            {{ partialCached "svg-icons/quote-blue.svg" . }}
+            {{ end }}
+            <p>{{ .body | markdownify }}</p>
+            {{ if .author }}
+            <div class="card__author flex flex-justify-center">
+                <div class="card__image-wrapper background-circle background-circle--md">
+                    <img src="{{ .image_url }}" alt="headshot of Insight Creative's {{ .job_title }}, {{ .author }}" class="staff-card__image">
+                </div>
+                <div class="card__details flex flex-column flex-center">
+                    <h3 class="card__name no-margin">{{ .author }}</h3>
+                    <h4 class="card__job-title text-tertiary shift-up">{{ .job_title }}</h4>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+</section>
+<section id="careers-cta" class="careers-cta bg-black-2 text-center block">
+    <div class="wrapper-lg">
+        <div class="block fade-up">
+            <div class="flow">
+                <p class="h3">Join us in our mission to deliver</p>
+                <h4 class="h5 careers-cta__tagline">Communication <span class="friday-vibes-white">with</span><span class="emphasis-red">substance.<sup>SM</sup></span></h4>
+                <div class="flex flex-justify-center">
+                    <a href="/contact/" class="btn btn-primary">Contact Us</a>
+                    <a href="/about/" class="btn btn-primary">Meet Our Team</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

@@ -196,3 +196,10 @@ h6,
 .text-underline--tertiary {
   text-decoration-color: $tertiary-color;
 }
+
+sup {
+  font-family: $primary-font;
+  font-weight: 400;
+  vertical-align: super;
+  font-size: xx-small;
+}
