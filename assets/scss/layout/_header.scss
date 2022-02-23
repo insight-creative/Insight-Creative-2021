@@ -262,12 +262,8 @@
   }
 }
 
-.nav-list-item {
+.nav-list__item {
   list-style-type: none;
-
-  @include breakpoint(md) {
-    display: inline-block;
-  }
 }
 
 .nav-item {

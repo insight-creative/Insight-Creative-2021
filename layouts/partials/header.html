@@ -14,7 +14,7 @@
         {{ $active := eq $url .URL }}
         {{ $contact := eq "Contact Us" .Name }}
           {{ if .HasChildren }}
-              <li class="nav-list-item has-sub-menu">
+              <li class="nav-list__item has-sub-menu">
                 <a {{if $active }}class="current nav-item" {{end}} class="nav-item" href="{{ .URL }}" aria-label="{{ .Name }}">
                   {{ .Name }}
                   <span class="sub-menu-indicator"></span>
@@ -46,7 +46,7 @@
           </li>
           {{ end }}    
         {{ end }}
-        <li class="nav-list-item site-header__search"><button class="nav-item search__open" aria-label="open search bar">{{ partialCached "svg-icons/search.svg" . }}</button></li>
+        <li class="nav-list__item site-header__search"><button class="nav-item search__open" aria-label="open search bar">{{ partialCached "svg-icons/search.svg" . }}</button></li>
       </ul>
       <div id="search" class="search flex-row-reverse-m flex-center-m">
         <div class="search__icon-wrapper flex flex-center"><button class="search__close flex flex-center" aria-label="close search bar">{{ partialCached "svg-icons/close.svg" . }}</button></div>
