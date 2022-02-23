@@ -113,9 +113,14 @@ timeout = 200000
     weight = 4
 
   [[menu.main]]
+    name = "Careers"
+    url  = "/careers/"
+    weight = 5
+
+  [[menu.main]]
     name = "Contact"
     url = "/contact/"
-    weight = 5
+    weight = 6
 
 [related]
   includeNewer = true

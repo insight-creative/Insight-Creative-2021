@@ -1,5 +1,5 @@
 {{ $heroClass := lower .Page.Title }}
-<section class="service-hero {{ anchorize $heroClass }}-hero">
+<section id="service-hero" class="service-hero {{ anchorize $heroClass }}-hero">
  <div class="hero-parallax w-100">
   <picture>
     <!-- <source sizes="100vw" srcset="{{ .Site.BaseURL }}images/background-images/{{ anchorize $heroClass }}-hero-600.webp 500w, {{ .Site.BaseURL }}images/background-images/{{ anchorize $heroClass }}-hero-1000.webp 800w, {{ .Site.BaseURL }}images/background-images/{{ anchorize $heroClass }}-hero-1400.webp 1200w, {{ .Site.BaseURL }}images/background-images/{{ anchorize $heroClass }}-hero-1800.webp 1600w" type="image/webp" > -->

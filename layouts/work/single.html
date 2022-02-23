@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="work-hero">
+<section id="work-hero" class="work-hero">
     {{ $image := (.Resources.GetMatch (index .Params.seo.featured_image)) }}
 
     {{ $webp_src_set := ""}}
@@ -35,8 +35,8 @@
             <h1 class="title-reveal__title text-center no-margin">{{ .Title }}</h1>
         </div>
     </div>
-</div>
-<div class="bg-black block">
+</section>
+<section id="projects-overview" class="bg-black block">
     <div class="work-specs wrapper-md auto-grid-md">
         <div>
             <h3 class="h4 no-margin">Client</h3>
@@ -73,8 +73,8 @@
             {{ end }}
         </div>
     </div>
-</div>
-<div class="work-body">
+</section>
+<section id="project-details" class="work-body">
     <div class="block wrapper flow">
         <h2>{{ .Params.intro.heading }}</h2>
         {{ .Params.intro.copy | markdownify }}
@@ -82,9 +82,9 @@
     <div class="padding-bottom-9">
         {{ .Content }}
     </div>
-</div>
+</section>
 {{ if .Params.testimonial }}
-<div class="wrapper-md padding-bottom-9">
+<section id="client-testimonial" class="wrapper-md padding-bottom-9">
     <div class="testimonial block bg-black">
         <div class="wrapper-sm flow fade-up">
             <div class="quote">
@@ -99,19 +99,19 @@
             {{ end }}
         </div>
     </div>
-</div>
+</section>
 {{ end }}
 {{ partial "work/project-navigation" . }}
 {{ $related := .Site.RegularPages.RelatedIndices . "tags" | first 3 }}
 {{ with $related }}
-<div class="wrapper-lg related-projects padding-top-9">
+<section id="related-projects" class="wrapper-lg related-projects padding-top-9">
     <h3 class="fade-up">Related projects</h3>
     <div class="post-wrapper padding-top-2 fade-up">
         {{ range . }}
         {{ .Render "work-card" }}
         {{ end }}
     </div>
-</div>
+</section>
 {{ end }}
 {{ partialCached "cta" . }}
 {{ end }}

@@ -1,16 +1,16 @@
 {{ define "main" }}
-<div class="hero-alt bg-black block">
+<section id="portfolio-hero" class="hero-alt bg-black block">
     <div class="wrapper flow">
         {{ .Params.hero.heading | markdownify }}
         {{ .Params.hero.subhead | markdownify }}
     </div>
-</div>
-<div class="wrapper-md">
+</section>
+<section id="featured-projects" class="wrapper-md">
     <div class="post-wrapper padding-top-9">
         {{ range .Pages }}
         {{ .Render "work-card" }}
         {{ end }}
     </div>
-</div>
+</section>
 {{ partialCached "cta" . }}
 {{ end }}

@@ -1,5 +1,5 @@
 {{ define "main" }}
-<section class="author">
+<section id="author" class="author">
     <div class="author__hero wrapper block">
         <div class="author__image-wrapper">
             <img src="{{ (index .Site.Data.staff .Params.author).image_jpg }}" alt="headshot of Insight Creative's {{ (index .Site.Data.staff .Params.author).job_title }}, {{ (index .Site.Data.staff .Params.author).name }}" class="author__image">
@@ -11,7 +11,7 @@
         <p>{{ (index .Site.Data.staff .Params.author).bio }}</p>
     </div>
 </section>
-<section class="authors-posts">
+<section id="author-posts" class="authors-posts">
     <h2 class="text-center">Posts by {{ (index .Site.Data.staff .Params.author).name }}</h2>
     <div class="wrapper-md">
         <hr>

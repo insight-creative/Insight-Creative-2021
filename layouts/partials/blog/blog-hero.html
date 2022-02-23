@@ -1,5 +1,5 @@
 {{ $heroClass := lower .Page.Title }}
-<div class="blog-hero bg-black block text-center">
+<section id="blog-hero" class="blog-hero bg-black block text-center">
   <div class="wrapper-md flow">
     <img src="/images/blog-icons/{{ anchorize $heroClass }}-icon.svg" alt="{{ humanize $heroClass }} icon">
     {{ if eq .Title "Blog" }}
@@ -10,4 +10,4 @@
     <h2 class="h5">{{ .Description }}</h2>
     {{ end }}
   </div>
-</div>
+</section>

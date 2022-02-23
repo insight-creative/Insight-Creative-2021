@@ -2,8 +2,8 @@
 Title: Careers
 seo:
   title: Careers At Insight
-  description: As the longest standing advertising agency in Green Bay, Insight Creative, Inc. has served clients in a wide variety of industries since 1988.
-  featured_image: "images/background-images/insight-careers-background.jpg"
+  description: Insight Creative is always seeking talented team players! Browse marketing communications jobs in digital, web, copy, design & more in Green Bay, Wisconsin.
+  featured_image: "images/background-images/Insight-Social-Preview.jpg"
 hero:
   head: We’re <span class="friday-vibes-white">always</span> seeking talented <span class="emphasis-red">team players.</span>
   body: When it comes to finding the right fit, we’re very selective. And you should be too.

@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="contact-hero bg-black block">
+<section id="contact-hero" class="contact-hero bg-black block">
     <div class="wrapper-md flow">
         <h1 class="no-margin text-center-m">{{ .Params.hero.head | markdownify }}</h1>
         <h2 class="h5 text-center-m">{{ .Params.hero.copy | markdownify }}</h2>
@@ -16,8 +16,8 @@
             {{ end }}
         </div>
     </div>
-</div>
-<div class="block wrapper-md">
+</section>
+<section id="contact-form" class="block wrapper-md">
     <div class="flex flex-column flex-row-m">
         <div class="w-100 w-60-m">
             <div class="contact-form">
@@ -86,12 +86,12 @@
                 <p>See how other brands benefit from our full-service approach.</p>
                 <a href="/work/" class="btn btn-primary">View Our Work</a>
             </div>
-            <!-- <div class="contact-sidebar__cta flow block">
+            <div class="contact-sidebar__cta flow block">
                 <h2 class="h4">Careers at Insight</h2>
                 <p>Looking for a job that doesn’t feel like work?</p>
                 <a href="/careers/" class="btn btn-primary">Join Our Team</a>
-            </div> -->
+            </div>
         </div>
     </div>
-</div>
+</section>
 {{ end }}

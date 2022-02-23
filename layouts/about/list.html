@@ -1,5 +1,5 @@
 {{ define "main" }}
-<section class="about-hero hero-lg">
+<section id="about-hero" class="about-hero hero-lg">
     <div class="wrapper block">
         {{ with .Params.hero }}
         <h1 class="text-center">{{ .head | markdownify }}</h1>
@@ -10,7 +10,7 @@
         {{ end }}
     </div>
 </section>
-<section class="block wrapper-md">
+<section id="industries-we-serve" class="block wrapper-md">
     <div class="flex flex-column flex-row-m">
         {{ with .Params.industries }}
         <div class="w-100 w-40-m image-wrapper">
@@ -30,7 +30,7 @@
         {{ end }}
     </div>
 </section>
-<section class="our-approach wrapper-md">
+<section id="our-approach" class="our-approach wrapper-md">
     <div class="bg-black block flow fade-up">
         <div class="wrapper">
             {{ with .Params.approach }}
@@ -42,12 +42,12 @@
         </div>
     </div>
 </section>
-<section class="wrapper-md team-image-grid block">
+<section id="insight-team-in-the-wild" class="wrapper-md team-image-grid block">
     {{ range .Params.team_images }}
     <img src="{{ .image }}" alt="{{ .image_alt }}" class="fade-up">  
     {{ end }}
 </section>
-<section class="wrapper-md">
+<section id="our-team" class="wrapper-md">
     <div class="wrapper fade-up">
         {{ with .Params.meet_the_team }}
         <h2>{{ .heading | markdownify }}</h2>
@@ -73,7 +73,7 @@
         </div> -->
     </div>
 </section>
-<section class="memberships wrapper-md">
+<section id="memberships" class="memberships wrapper-md">
     <div class="block bg-black fade-up">
         <div class="wrapper">
             {{ with .Params.memberships }}
