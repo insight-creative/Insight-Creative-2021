@@ -5,6 +5,7 @@
   background-position: center;
 
   &__icon {
+    width: 35%;
     max-width: 175px;
     height: auto;
     margin: 0 auto $ic-600 auto;
@@ -30,8 +31,12 @@
 .card {
   border-radius: $radius;
   break-inside: avoid;
-  padding: $ic-600;
+  padding: $ic-300;
   margin: $ic-300 0;
+
+  @include breakpoint(sm) {
+    padding: $ic-600;
+  }
 
   svg {
     float: left;
@@ -41,7 +46,11 @@
   &__image-wrapper {
     max-width: 85px;
     height: 100%;
-    margin-right: $ic-500;
+    margin-right: 0.5rem;
+
+    @include breakpoint(sm) {
+      margin-right: $ic-500;
+    }
   }
 
   &__name {
@@ -76,6 +85,14 @@
 
     @include breakpoint(md) {
       padding: 0 $ic-200;
+    }
+  }
+
+  .btn + .btn {
+    margin-top: $ic-300;
+
+    @include breakpoint(sm) {
+      margin-top: 0;
     }
   }
 }
