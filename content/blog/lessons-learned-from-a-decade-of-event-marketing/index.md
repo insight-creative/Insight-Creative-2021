@@ -4,7 +4,6 @@ title: Lessons learned from a decade of event marketing
 seo:
   title: Lessons learned from a decade of event marketing
   description:
-
   featured_image: insight-creative-event-marketing-team-fox-cities-marathon.jpg
   featured_image_alt: Insight Creative event marketing team working at the Fox Cities Marathon
 date: 2022-02-21
