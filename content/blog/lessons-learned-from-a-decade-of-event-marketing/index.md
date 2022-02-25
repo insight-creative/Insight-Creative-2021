@@ -10,9 +10,9 @@ seo:
 date: 2022-02-21
 author: Andrea Lasecki
 categories:
-  - Design
+  - Business Strategy
 page_class: single-post
-draft: true
+draft: false
 ---
 
 ![Insight Creative event marketing team working at the Fox Cities Marathon](insight-creative-event-marketing-team-fox-cities-marathon.jpg)
@@ -33,7 +33,7 @@ You are only as strong as your team. Create a master schedule months in advance 
 
 ## Prepare your toolkit.
 
-Expect the unexpected. We suggest collecting your supplies in a tote so you’re prepared for anything. Think tape, scissors, extra chargers, extra cameras, extension cords, etc. And don’t forget about layering your clothing to adapt to swift Wisconsin weather changes if your event is outdoors.
+We suggest collecting your supplies in a tote so you’re prepared for anything. Think tape, scissors, extra chargers, extra cameras, extension cords, etc. And don’t forget about layering your clothing to adapt to swift Wisconsin weather changes if your event is outdoors.
 
 ## Anticipate and automate.
 
@@ -41,12 +41,12 @@ After a decade of live social media coverage, we can anticipate certain mileston
 
 ## Expect the unexpected.
 
-Whether it’s cancellations due to weather or COVID-19, we know firsthand that event plans change on a dime. Brainstorming alternate plans beforehand is good pratice. Our flexible and fast-moving team stays calm under pressure in these scenarios by identifying appointed spokespeople and crafting a speech or social posts ready to go in case of emergency.
+Whether it’s cancellations due to weather or COVID-19, we know firsthand that event plans change on a dime. Brainstorming alternate plans beforehand is good practice. Our flexible and fast-moving team stays calm under pressure in these scenarios by identifying appointed spokespeople and crafting a speech or social posts ready to go in case of emergency.
 
 ## Have fun.
 
 ![Insight Creative event marketing team having fun outside of Lambeau field](insight-creative-event-marketing-team-having-fun-at-event.jpg)
 
-Event planning is stressful! So when the day starts and the crowds roll in, try to be present and post your social media content from the eyes of the attendees. Stop to look around and capture the small details (people hugging or shaking hands, the carefully planned out food menu, the sunrise as guests arrive, etc.) that paint the full picture of why you’re all gathered that day.
+Event planning is stressful! So when the day starts and the crowds roll in, try to be present and post your social media content from the eyes of the attendees. Stop to look around and capture the small details (people hugging or shaking hands, the carefully planned food menu, the sunrise as guests arrive, etc.) that paint the full picture of why you’re all gathered that day.
 
-There’s no one size fits all when it comes to event marketing but our hope is that with these strategic planning tips, you’ll be well-prepared for any event. If you need help planning or executing an industry event this year, please reach out to the [full-service staff at Insight Creative](/contact/).
+There’s no one-size-fits-all approach when it comes to event marketing but our hope is that with these strategic planning tips, you’ll be well-prepared for any event. If you need help planning or executing an industry event this year, please reach out to the [full-service staff at Insight Creative](/contact/).

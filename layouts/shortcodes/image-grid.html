@@ -1,0 +1,14 @@
+<div class="image-grid">
+    {{ with .Get "image1" }}
+    <img src="{{ . }}" alt="">
+    {{ end }}
+    {{ with .Get "image2" }}
+    <img src="{{ . }}" alt="">
+    {{ end }}
+    {{ with .Get "image3" }}
+    <img src="{{ . }}" alt="">
+    {{ end }}
+    {{ with .Get "image4" }}
+    <img src="{{ . }}" alt="">
+    {{ end }}
+</div>

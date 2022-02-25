@@ -1,0 +1,8 @@
+.image-grid {
+  display: grid;
+  gap: $ic-100;
+
+  @include breakpoint(sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

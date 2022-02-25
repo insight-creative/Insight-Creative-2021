@@ -23,12 +23,16 @@
             <div class="contact-form">
                 <h4 class="no-margin">Contact Insight Creative</h4>
                 <div class="contact-form__wrapper">
-                    <form name="contact" netlify netlify-honeypot="bot-field" action="/contact/thank-you/">
+                    <form name="contact" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field" action="/contact/thank-you/">
                         <div hidden>
                             <label>
                               Don’t fill this out if you're human: 
                               <input name="bot-field" />
                             </label>
+                        </div>
+                        <div class="visually-hidden">
+                            <label for="subject">New form submission from the insightcreative.com contact form</label>
+                            <input aria-label="subject" name="subject" value="New form submission from the insightcreative.com contact form" />
                         </div>
                         <div class="contact-form__form-group">
                             <label for="name">Name*</label>
@@ -63,7 +67,7 @@
                             <label for="message">Message*</label>
                             <textarea id="message" name="message" class="contact-form__form-control" rows="4" required></textarea>
                         </div>
-                        <div style="margin-bottom: 1em;" netlify-recaptcha></div>
+                        <div style="margin-bottom: 1em;" data-netlify-recaptcha="true"></div>
                         <button target="_blank" type="submit" class="contact-form__btn btn btn-primary">Send
                             Message</button>
                     </form>
