@@ -3,13 +3,15 @@ layout: blog
 title: Lessons learned from a decade of event marketing
 seo:
   title: Lessons learned from a decade of event marketing
-  description:
+  description: Event marketing tips for content planning, live social media coverage.
   featured_image: insight-creative-event-marketing-team-fox-cities-marathon.jpg
   featured_image_alt: Insight Creative event marketing team working at the Fox Cities Marathon
 date: 2022-02-21
 author: Andrea Lasecki
 categories:
   - Business Strategy
+  - Social Media
+  - Public Relations
 page_class: single-post
 draft: false
 ---

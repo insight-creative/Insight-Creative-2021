@@ -30,6 +30,13 @@ const breadcrumbsProgressBar = document.querySelector('.breadcrumbs__progress-ba
 const loader = document.querySelector('.preloader')
 const loaderInner = document.querySelector('.preloader__inner')
 
+var divisor = document.getElementById("divisor"),
+slider = document.getElementById("slider");
+function moveDivisor() { 
+  console.log('slider position moved')
+	divisor.style.width = slider.value+"%";
+}
+
 function filterPosts () {
   const filterBtn = document.querySelector('.btn-filter')
   const categoryList = document.querySelector('.category-list')

@@ -1,0 +1,79 @@
+.comparison-slider { 
+  width: 100%;
+  height: 450px;
+  max-height: 450px;
+  overflow: hidden; 
+  position: relative;
+
+  display: none;
+}
+
+.comparison-slider figure { 
+  background-image: url(/blog/branding-is-it-time-to-turn-the-page/foxstructures-oldlogo-2.jpg); 
+  background-size: cover;
+  position: relative;
+  width: 100%; 
+  height: 100%;
+  margin: 0; 
+}
+
+.comparison-slider figure > img { 
+  position: relative;
+  width: 100%;
+}
+
+.comparison-slider figure div { 
+  background-image: url(/blog/branding-is-it-time-to-turn-the-page/foxstructures-newlogo-2.jpg);
+  background-size: cover;
+  position: absolute;
+  width: 50%; 
+  box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
+  overflow: hidden;
+  bottom: 0;
+  height: 100%;
+}
+
+input[type=range] {
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  position: relative;
+  top: -2rem; left: -2%;
+  background-color: rgba($primary-color, 0.5);
+  width: 102%; 
+}
+
+input[type=range]::-moz-range-track { 
+  -moz-appearance:none;
+    height:15px;
+    width: 98%;
+    position: relative;
+    background-color: rgba($primary-color, 0.5);
+ }
+
+input[type=range]:active { 
+  border: none; 
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance:none;
+  width: 20px; height: 15px;   
+  background: $primary-color;
+  border-radius: 0;
+}
+
+input[type=range]::-moz-range-thumb {
+  -moz-appearance: none;
+  width: 20px;
+  height: 15px;
+  background: $primary-color;
+  border-radius: 0;
+} 
+
+input[type=range]:focus::-webkit-slider-thumb {
+  background: rgba($primary-color, 0.7);
+}
+
+input[type=range]:focus::-moz-range-thumb {
+  background: rgba($primary-color, 0.7);
+}
