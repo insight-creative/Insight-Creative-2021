@@ -6,19 +6,16 @@ seo:
   description:
   featured_image: simple-tips-for-good-billboard-design.jpg
   featured_image_alt: Simple Tips for Good Billboard Design
-date: 2022-02-24
+date: 2022-03-07
 author: Jay Bauer
 categories:
   - Design
 page_class: single-post
-draft: true
 ---
 
 ![Simple Tips for Good Billboard Design](simple-tips-for-good-billboard-design.jpg)
 
 When you decide to spend marketing dollars on a billboard, make sure it follows these simple guidelines for maximum effectiveness. Creating a poorly designed billboard is like throwing money away. You want your message to be read and then acted upon.
-
-{{< image-grid image1="fox-structures-we-tell-it-like-it-is-billboard-example.jpg" image2="mathews-tire-now-hiring-billboard-example.jpg" image3="PTI-billboard-example.jpg" image4="matthews-tire-getting-the-right-tires-billboard-example.jpg">}}
 
 ## Mind the 5-second rule
 
@@ -53,6 +50,8 @@ down. They will just remember the business and Google it once they are stopped. 
 
 Be sure to consider the location of your board. If it’s in the city near an intersection, people will have a longer time
 to view it because they will either be stopped or driving at a slower speed. If it’s located on the highway, they will be driving much faster and have much less time to view the board. Consider the 5-second rule as mentioned earlier if you’re on the highway.
+
+{{< image-grid image1="fox-structures-we-tell-it-like-it-is-billboard-example.jpg" image2="mathews-tire-now-hiring-billboard-example.jpg" image3="PTI-billboard-example.jpg" image4="matthews-tire-getting-the-right-tires-billboard-example.jpg">}}
 
 The billboards pictured above are examples that meet these guidelines.
 
