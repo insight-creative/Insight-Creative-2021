@@ -1,20 +1,41 @@
 .comparison-slider { 
   width: 100%;
-  height: 450px;
+  height: 250px;
   max-height: 450px;
   overflow: hidden; 
   position: relative;
 
-  display: none;
+  @include breakpoint(sm) {
+    height: 450px;
+  }
 }
 
 .comparison-slider figure { 
-  background-image: url(/blog/branding-is-it-time-to-turn-the-page/foxstructures-oldlogo-2.jpg); 
   background-size: cover;
   position: relative;
   width: 100%; 
   height: 100%;
   margin: 0; 
+
+  &::before, &::after {
+    position: absolute;
+    top: $ic-200;
+    z-index: 1;
+    background-color: $primary-color;
+    color: $white;
+    padding: .5rem;
+    font-size: $ic-200;
+  }
+
+  &::before {
+    content: "Before";
+    left: $ic-200;
+  }
+
+  &::after {
+    content: "After";
+    right: $ic-200;
+  }
 }
 
 .comparison-slider figure > img { 
@@ -23,7 +44,6 @@
 }
 
 .comparison-slider figure div { 
-  background-image: url(/blog/branding-is-it-time-to-turn-the-page/foxstructures-newlogo-2.jpg);
   background-size: cover;
   position: absolute;
   width: 50%; 
@@ -37,14 +57,15 @@ input[type=range] {
   -webkit-appearance:none;
   -moz-appearance:none;
   position: relative;
-  top: -2rem; left: -2%;
+  top: -2rem; 
+  left: -2px;
   background-color: rgba($primary-color, 0.5);
-  width: 102%; 
+  width: 100%; 
 }
 
 input[type=range]::-moz-range-track { 
   -moz-appearance:none;
-    height:15px;
+    height: 2rem;
     width: 98%;
     position: relative;
     background-color: rgba($primary-color, 0.5);
@@ -57,7 +78,8 @@ input[type=range]:active {
 
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance:none;
-  width: 20px; height: 15px;   
+  width: 20px; 
+  height: 2rem;   
   background: $primary-color;
   border-radius: 0;
 }
@@ -65,7 +87,7 @@ input[type=range]::-webkit-slider-thumb {
 input[type=range]::-moz-range-thumb {
   -moz-appearance: none;
   width: 20px;
-  height: 15px;
+  height: 2rem;
   background: $primary-color;
   border-radius: 0;
 } 
@@ -76,4 +98,28 @@ input[type=range]:focus::-webkit-slider-thumb {
 
 input[type=range]:focus::-moz-range-thumb {
   background: rgba($primary-color, 0.7);
+}
+
+#fs-comparison figure { 
+  background-image: url(/blog/branding-is-it-time-to-turn-the-page/foxstructures-oldlogo-2.jpg);
+}
+
+#fs-comparison figure div {
+  background-image: url(/blog/branding-is-it-time-to-turn-the-page/foxstructures-newlogo-2.jpg);
+}
+
+#bol-comparison figure { 
+  background-image: url(/blog/branding-is-it-time-to-turn-the-page/bol-oldlogo-2.jpg);
+}
+
+#bol-comparison figure div {
+  background-image: url(/blog/branding-is-it-time-to-turn-the-page/bol-newlogo-2.jpg);
+}
+
+#wif-comparison figure { 
+  background-image: url(/blog/branding-is-it-time-to-turn-the-page/wif-oldlogo.jpg);
+}
+
+#wif-comparison figure div {
+  background-image: url(/blog/branding-is-it-time-to-turn-the-page/wif-newlogo.jpg);
 }

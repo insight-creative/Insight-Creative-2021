@@ -11,11 +11,10 @@
         {{ $url := .RelPermalink }}
         {{ range .Site.Menus.main }}
         
-        {{ $active := eq $url .URL }}
         {{ $contact := eq "Contact Us" .Name }}
           {{ if .HasChildren }}
               <li class="nav-list__item has-sub-menu">
-                <a {{if $active }}class="current nav-item" {{end}} class="nav-item" href="{{ .URL }}" aria-label="{{ .Name }}">
+                <a class="nav-item" href="{{ .URL }}" aria-label="{{ .Name }}">
                   {{ .Name }}
                   <span class="sub-menu-indicator"></span>
                 </a>
@@ -39,7 +38,7 @@
               {{ .Name }}
             </a>
             {{ else }}
-            <a {{if $active }}class="current nav-item" {{end}} class="nav-item" href="{{ .URL }}" aria-label="{{ .Name }}">
+            <a class="nav-item" href="{{ .URL }}" aria-label="{{ .Name }}">
                 {{ .Name }}
             </a>
             {{ end }}

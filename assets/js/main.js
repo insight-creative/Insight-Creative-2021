@@ -810,6 +810,23 @@ function pageTransitionOut ({ container }) {
   return tl
 }
 
+function initComparisonSlider() {
+  const sliderControl = document.querySelector('.comparison-slider__controls')
+  const sliderControls = document.querySelectorAll('.comparison-slider__controls')
+  // 1. add event listener to run functions when the slider controls are activated
+  if(!document.body.contains(sliderControl)) return
+  sliderControls.forEach(control => {
+    control.addEventListener('input', event => {
+      // 2. check which slider is being interacted with
+      const currentControlId = control.getAttribute('id')
+      const currentControlParent = control.parentNode
+      // 3. change the divider width of just the slider that is currently beng interacted with
+      const slideDivider = currentControlParent.querySelector('.comparison-slider__divider')
+      slideDivider.style.width = control.value + '%'
+    })
+  })
+}
+
 
 function initPage () {
   killScrollTriggers()
@@ -825,6 +842,7 @@ function initPage () {
   initHeroParallax()
   initSlider()
   filterPosts()
+  initComparisonSlider()
 }
 
 function initPageTransitions () {

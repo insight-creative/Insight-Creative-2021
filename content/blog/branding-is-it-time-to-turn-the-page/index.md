@@ -16,29 +16,27 @@ page_class: single-post
 
 Throughout 2019, we’ve had the privilege of guiding several clients through exciting rebrand initiatives. These projects have ranged from a clean logo and website refresh for our friends at [Fox Structures](/work/fox-structures-branding/) to full-blown rebrands for [Washington Island Ferry](/work/washington-island-ferry-line-branding/) and [Bank of Luxemburg](/work/bank-of-luxemburg-branding/). In all of these cases, the existing brands were established within the early years of each business. Their logos and brands were no longer serving their purpose to accurately reflect the mission and personality of the businesses they represented.
 
-<div class="comparison-slider">
+<div id="fs-comparison" class="comparison-slider">
   <figure>
-    <div class="comparison-slider__divider">
+    <div id="fs-divider" class="comparison-slider__divider">
     </div>
   </figure>
-  <input type="range" min="0" max="100" value="50" class="comparison-slider__controls" oninput="moveDivisor()">
+  <input type="range" min="0" max="100" value="50" class="comparison-slider__controls">
 </div>
-<div class="comparison-slider">
+<div id="bol-comparison" class="comparison-slider">
   <figure>
-    <div class="comparison-slider__divider">
+    <div id="bol-divider" class="comparison-slider__divider">
     </div>
   </figure>
-  <input type="range" min="0" max="100" value="50" class="comparison-slider__controls" oninput="moveDivisor()">
+  <input type="range" min="0" max="100" value="50" class="comparison-slider__controls">
 </div>
-
-<script>
-const divider = document.querySelector(".comparison-slider__divider")
-const slider = document.querySelector(".comparison-slider__controls");
-function moveDivisor() { 
-  console.log(slider)
-	divider.style.width = slider.value+"%";
-}
-</script>
+<div id="wif-comparison" class="comparison-slider">
+  <figure>
+    <div id="wif-divider" class="comparison-slider__divider">
+    </div>
+  </figure>
+  <input type="range" min="0" max="100" value="50" class="comparison-slider__controls">
+</div>
 
 Rebranding is a huge step for any company. When executed successfully, a rebrand can help a business grow, boost brand recognition and create enthusiasm. On average, brands change their identities every 7-10 years. However, it is important to approach this decision thoughtfully and strategically before you go ahead with it. Every brand is different and should be assessed on an individual basis. If any of the following apply to your brand, it may be time to consider a rebrand:
 
