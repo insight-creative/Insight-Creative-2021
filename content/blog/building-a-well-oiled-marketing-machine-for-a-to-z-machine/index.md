@@ -1,17 +1,17 @@
 ---
 layout: blog
-title: Building a well-oiled marketing machine for A to Z Machine
+title: Building a well-oiled marketing machine from A to Z
 seo:
-  title: Building a well-oiled marketing machine for A to Z Machine
+  title: Building a well-oiled marketing machine from A to Z
   description: Get an in-depth overview of how Insight Creative fixed core web vitals while building a new Jamstack website for A to Z Machine.
   featured_image: a-to-z-machine-website-mockup.jpg
   featured_image_alt: A laptop sitting on a desk with the A to Z Machine website on screen
-date: 2022-03-07
+date: 2022-03-20
 author: Justin Parsons
 categories:
   - Web
 page_class: single-post
-draft: true
+draft: false
 ---
 
 ![A laptop sitting on a desk with the A to Z Machine website on screen](a-to-z-machine-website-mockup.jpg)
