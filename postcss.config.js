@@ -58,6 +58,7 @@ module.exports = {
             'g-recaptcha',
             'nicole-ehlers',
             'cindy-struensee',
+            'theresa-tebon',
           ],
     }),
   ],

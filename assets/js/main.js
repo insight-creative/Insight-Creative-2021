@@ -3,9 +3,9 @@ import barbaPrefetch from '@barba/prefetch'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Scrollbar from 'smooth-scrollbar'
-import { initSearch, toggleMobileMenu, toggleMobileDropdownMenu, dropdownMenu } from './partials';
+import { toggleMobileMenu, toggleMobileDropdownMenu, dropdownMenu } from './partials';
 
-console.log('%c Crafted by Insight Creative, Inc. Coded by Justin Parsons', 'background: #1d1d1d; color: white; padding: 5px 10px;')
+console.log('%c Crafted by Insight Creative, Inc. Developed by Justin Parsons', 'background: #1d1d1d; color: white; padding: 5px 10px;')
 
 barba.use(barbaPrefetch)
 gsap.registerPlugin(ScrollTrigger)
@@ -785,10 +785,6 @@ function resetNav () {
     if (dropdown.classList.contains('sub-menu-active')) {
       dropdown.classList.remove('sub-menu-active')
     }
-
-    if (siteHeader.classList.contains('has-search-open')) {
-      siteHeader.classList.remove('has-search-open')
-    }
 }
 
 function pageTransitionOut ({ container }) {
@@ -834,7 +830,6 @@ function initPage () {
   initAnimatedNav()
   initVideo()
   initCursor()
-  initSearch()
   initBreadcrumbs()
   initSocial()
   initContentFade()

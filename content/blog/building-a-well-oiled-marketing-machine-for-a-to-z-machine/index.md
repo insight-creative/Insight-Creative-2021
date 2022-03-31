@@ -72,7 +72,7 @@ The overall goal and by far the biggest advantage of this technology stack is si
 
 ### Performance
 
-A to Z Machine’s old Joomla website scored a 31/100 in Lighthouse tests. With our Jamstack approach, all content is prebuilt into static files at build time, not when a website visitor requests it in their browser. This means the content is available immediately, drastically reducing loading times. At the time the new website launched, we achieved a Lighthouse performance score just under 100. The new website was also recording Time to Interactive performance times of around 700ms.
+A to Z Machine’s old Joomla website scored a 31/100 in Lighthouse tests. With our Jamstack approach, all content is prebuilt into static files at build time, not when a website visitor requests it in their browser. This means the content is available immediately, drastically reducing loading times. At the time the new website launched, we achieved a Lighthouse performance score just under 100. The new website was also recording a Fully Loaded Time of around 800ms.
 
 Improving A to Z Machine’s website performance also improves SEO. It’s simple, fast page load times attract website visitors and allow them to reach their goals, not deter them. At this time, this type of performance gives A to Z Machine an SEO advantage over their competitors as no other local competitor comes close to this.
 
