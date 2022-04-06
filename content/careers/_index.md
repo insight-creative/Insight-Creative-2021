@@ -10,12 +10,11 @@ hero:
 intro:
   body: In an industry where being different is prized, we are proud to admit that working at Insight is unlike any experience you’ll have elsewhere. We embrace our individual quirks and believe it’s what fuels our creativity and balances our team. We also believe the right mixture of talents and personalities creates the best work, and ultimately, the best results for our customers. If you have something fresh to lend to our team, please contact us or browse the open positions below.
 current_opportunities:
-  heading: Current opportunities
   opportunities:
-    - heading: Digital Copywriter
-      icon: copywriting
-      summary: The Digital Copywriter is responsible for the strategy, creative concepting, copywriting and analysis of digital content on behalf of Insight’s diverse client base. Ideal candidates will possess exceptional writing portfolios, proven experience with SEO practices, unwavering creative stamina and a solid understanding of branding/marketing. Additionally, this position is responsible for collaborating with the Content Manager on various projects for creative concepting, copy (AP style), proofreading edits and other input on a continual basis.
-      posting_url: https://www.indeed.com/viewjob?t=Digital+Copywriter&c=Insight+Creative&l=Green+Bay,+WI&jk=28290474a4bd090c&rtk=1fsft75jqnppr800&from=rss
+    # - heading: Digital Copywriter
+    #   icon: copywriting
+    #   summary: The Digital Copywriter is responsible for the strategy, creative concepting, copywriting and analysis of digital content on behalf of Insight’s diverse client base. Ideal candidates will possess exceptional writing portfolios, proven experience with SEO practices, unwavering creative stamina and a solid understanding of branding/marketing. Additionally, this position is responsible for collaborating with the Content Manager on various projects for creative concepting, copy (AP style), proofreading edits and other input on a continual basis.
+    #   posting_url: https://www.indeed.com/viewjob?t=Digital+Copywriter&c=Insight+Creative&l=Green+Bay,+WI&jk=28290474a4bd090c&rtk=1fsft75jqnppr800&from=rss
 join_insight:
   heading: <span class="emphasis-red">Top reasons</span> to join the Insight team
   reasons:
