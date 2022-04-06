@@ -3,7 +3,7 @@ Title: A to Z Machine branding
 seo:
   title: A to Z Machine branding
   description: 
-  featured_image: "images/background-images/a-to-z-machine-project-cover.jpg"
+  featured_image: a-to-z-machine-project-cover.jpg
 hero:
   image:
     image_url: a-to-z-machine-project-cover.jpg
