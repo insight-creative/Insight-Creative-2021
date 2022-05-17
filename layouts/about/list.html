@@ -57,7 +57,7 @@
     <div class="block">
         <div class="staff-card-wrapper">
             {{ range sort .Site.Data.staff "about_order" "asc" }}
-            <a href="/about/{{ .name | urlize }}" class="staff-card bg-black fade-up">
+            <a href="/about/{{ .name | urlize }}/" class="staff-card bg-black fade-up">
                 <div class="staff-card__inner text-center">
                     <div class="staff-card__image-wrapper background-circle background-circle--lg">
                         <img src="{{ .image_jpg }}" alt="headshot of Insight Creative's {{ .job_title }}, {{ .name }}" class="staff-card__image">
