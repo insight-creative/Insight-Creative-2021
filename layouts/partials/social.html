@@ -3,7 +3,7 @@
     <ul class="social__nav">
       {{ range .Site.Data.business_info.social_media }}
       <li class="social__list-item">
-        <a href="{{ .social.link }}" class="social__link" aria-label="Facebook">
+        <a href="{{ .social.link }}" class="social__link" target="_blank" rel="noopener noreferrer" aria-label="{{ .social.title }}">
             {{ if eq .social.title "Facebook" }}
             {{ partial "svg-icons/facebook.svg" . }}
             {{ else if eq .social.title "Twitter"}}
