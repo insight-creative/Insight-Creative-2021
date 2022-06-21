@@ -25,7 +25,7 @@ services:
       description: No templates here! Our skilled web team handcrafts custom code using modern technologies and creative problem solving to build sites that are favored by search engines and easily accessed by all people and devices.
       service_list: custom websites • content management systems • jamstack development • wordpress development • responsive development • performance • accessibility • email marketing • landing pages • blogs • search engine optimization (SEO)
       partners:
-        - logo: netlifycms.svg
+        - logo: cloudcannon.svg
         - logo: wordpress.svg
         - logo: hugo.svg
         - logo: 11ty.svg
@@ -37,6 +37,16 @@ services:
       service_list: website hosting • software updates • regular backups • website audits • troubleshooting • bug fixes • performance optimizations • security scans • malware cleanup • analytics and reporting
 web_portfolio:
   portfolio_items:
+    - title: Baileys Harbor Schoolhouse Inn
+      image: baileys-harbor-schoolhouse-inn-website-screenshot.jpg
+      image_alt: Baileys Harbor Schoolhouse Inn Website Preview
+      website_url: https://baileysharborinn.com/
+      tech_stack: Hugo | Netlify
+      lighthouse_score:
+        - score: "100"
+        - score: "100"
+        - score: "100"
+        - score: "100"
     - title: Greiber Heating & Sheet Metal
       image: greiber-heating-and-cooling-website-preview.jpg
       image_alt: Greiber Heating & Sheet Metal Website Preview
@@ -56,16 +66,6 @@ web_portfolio:
         - score: "97"
         - score: "100"
         - score: "100"
-        - score: "100"
-    - title: LaForce
-      image: laforce-website-preview.jpg
-      image_alt: LaForce Website Preview
-      website_url: https://laforceinc.com/
-      tech_stack: WordPress
-      lighthouse_score:
-        - score: "99"
-        - score: "98"
-        - score: "87"
         - score: "100"
     - title: Lamers
       image: lamers-website-preview.jpg
