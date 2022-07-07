@@ -15,6 +15,10 @@ current_opportunities:
       icon: development
       summary: The Front-End Web Developer supports the account team in handling the day-to-day requirements of existing accounts to ensure a high level of client satisfaction. This includes responsibility for the success of assigned projects from concept through completion. The Front-End Web Developer is responsible for communication and coordination of client requests in conjunction with the Account Executives.
       posting_url: https://www.linkedin.com/jobs/view/3143211173/
+    - heading: Marketing Coordinator
+      icon: buying
+      summary: The marketing coordinator will work with an experienced team of media buyers, designers, copywriters, social media experts and account executives to place award-winning creative for a wide variety of clients. Working closely with Insight’s media director, the marketing coordinator will assist with campaign schedules on television, radio, billboard, print and digital media. The marketing coordinator will also support the media director in preparing presentation materials, media plans or full media proposals and assisting will other administrative tasks.
+      posting_url: https://www.linkedin.com/jobs/view/3141963279/
 join_insight:
   heading: <span class="emphasis-red">Top reasons</span> to join the Insight team
   reasons:
