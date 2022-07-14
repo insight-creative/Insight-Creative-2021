@@ -23,77 +23,52 @@
             <div class="contact-form">
                 <h4 class="no-margin">Contact Insight Creative</h4>
                 <div class="contact-form__wrapper">
-                    <form name="contact" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field" action="/contact/thank-you/">
+                    <form name="contact" data-netlify="true" netlify-honeypot="bot-field" action="/contact/thank-you/">
                         <div hidden>
-                            <label for="bot-field-2">
-                            Don’t fill this out if you're human: 
-                            <input name="bot-field" id="bot-field-2" />
+                            <label for="bot-field">
+                              Don’t fill this out if you're human: 
+                              <input name="bot-field" id="bot-field" />
                             </label>
                         </div>
                         <div class="visually-hidden">
-                            <label for="subject">New form submission from the baileysharborinn.com website contact form</label>
-                            <input aria-label="subject" name="subject" value="New form submission from the baileysharborinn.com website contact form" />
-                          </div>
-                        <div class="contact-form__form-row">
-                            <div class="contact-form__row-wrapper">
-                                <div class="contact-form__form-group">
-                                <label for="name">Name*</label>
-                                <input name="name" id="name" type="text" class="contact-form__form-control" required>
-                                </div>
-                                <div class="contact-form__form-group">
-                                <label for="email">Email*</label>
-                                <input name="_replyto" id="email" type="email" class="contact-form__form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contact-form__form-row">
-                            <div class="contact-form__row-wrapper">
-                                <div class="contact-form__form-group">
-                                <label for="phone">Phone*</label>
-                                <input name="phone" id="phone" type="tel" class="contact-form__form-control" required>
-                                </div>
-                            </div>
+                            <label for="subject">New form submission from the insightcreative.com contact form</label>
+                            <input aria-label="subject" name="subject" value="New form submission from the insightcreative.com contact form" />
                         </div>
                         <div class="contact-form__form-group">
-                            <label for="contact_preference">How do you prefer we get back to you?*</label>
-                            <select name="contact_preference" id="contact_preference" class="contact-form__form-control" required>
-                                <option value="">Please choose an option</option>
-                                <option value="Phone">Phone</option>
-                                <option value="Text">Text</option>
-                                <option value="Email">Email</option>
-                            </select>
+                            <label for="name">Name*</label>
+                            <input id="name" name="name" type="text" class="contact-form__form-control" required>
                         </div>
                         <div class="contact-form__form-group">
-                            <label for="new_customer">Specific room you're interested in?*</label>
-                            <select name="new_customer" id="new_customer" class="contact-form__form-control" required>
-                                <option value="">Please choose an option</option>
-                                <option value="Homestead">Homestead</option>
-                                <option value="Lighthouse">Lighthouse</option>
-                                <option value="Upper Deck">Upper Deck</option>
-                                <option value="Principal's Office">Principal's Office</option>
-                                <option value="Library">Library</option>
-                                <option value="Garden">Garden</option>
-                                <option value="No Preference">No Preference</option>
-                            </select>
+                            <label for="email">Email*</label>
+                            <input id="email" name="_replyto" type="email" class="contact-form__form-control" required>
                         </div>
-                        <div class="contact-form__form-row">
-                            <div class="contact-form__row-wrapper">
-                                <div class="contact-form__form-group">
-                                    <label for="travelers">Number of people staying*</label>
-                                    <input name="travelers" id="travelers" type="number" class="contact-form__form-control" required>
-                                </div>
-                                <div class="contact-form__form-group">
-                                    <label for="beds">Number of beds needed*</label>
-                                    <input name="beds" id="beds" type="number" class="contact-form__form-control" required>
-                                </div>
-                            </div>
+                        <div class="contact-form__form-group">
+                            <label for="phone">Phone</label>
+                            <input id="phone" name="phone" type="tel" class="contact-form__form-control">
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="company-name">Company Name</label>
+                            <input id="company-name" name="company-name" type="name" class="contact-form__form-control">
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="help">What do you need help with?*</label>
+                            <select id="help" name="help" type="select" class="contact-form__form-control" required>
+                                <option value="Web Design and Development">Please Select</option>
+                                <option value="Copywriting / PR / Social Media">Copywriting / PR / Social Media</option> 
+                                <option value="Media Buying">Media Buying</option> 
+                                <option value="Website Design / Website Development">Website Design / Website Development</option>
+                                <option value="Branding / Digital / Print Design">Branding / Digital / Print Design</option>
+                                <option value="Digital Marketing">Digital Marketing</option>
+                                <option value="Photography / Videography / Drone">Photography / Videography / Drone</option>
+                                <option value="Other">Other</option>
+                            </select>
                         </div>
                         <div class="contact-form__form-group">
                             <label for="message">Message*</label>
-                            <textarea name="message" id="message" class="contact-form__form-control" rows="4" required></textarea>
+                            <textarea id="message" name="message" class="contact-form__form-control" rows="4" required></textarea>
                         </div>
-                        <div style="margin-bottom: 1em;" data-netlify-recaptcha="true"></div>
-                        <button type="submit" class="contact-form__btn btn btn-primary">Send Request</button>
+                        <button target="_blank" type="submit" class="contact-form__btn btn btn-primary">Send
+                            Message</button>
                     </form>
                 </div>
             </div>
