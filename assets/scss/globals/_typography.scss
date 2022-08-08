@@ -87,7 +87,8 @@ h6,
   }
 }
 
-.emphasis-underline {
+.emphasis-underline, 
+.emphasis-underline--secondary {
   position: relative;
   z-index: 1;
 
@@ -100,6 +101,13 @@ h6,
     height: 4px;
     width: 100%;
     background-color: $tertiary-color;
+  }
+}
+
+.emphasis-underline--secondary {
+
+  &::after {
+    background-color: $secondary-color;
   }
 }
 

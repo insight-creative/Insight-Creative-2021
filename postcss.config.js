@@ -59,7 +59,7 @@ module.exports = {
             'nicole-ehlers',
             'cindy-struensee',
             'theresa-tebon',
-            'jordan-leon',
+            'emphasis-underline--secondary',
           ],
     }),
   ],
