@@ -169,4 +169,8 @@
       padding-top: $ic-100;
     }
   }
+
+  .contact-form .contact-form__form-group input {
+    background-color: $body-black;
+  }
 }

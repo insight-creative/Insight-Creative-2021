@@ -58,9 +58,23 @@
         <h4 class="h5 no-margin">Sign up for our newsletter</h4>
         <small>Get our quarterly Team Insights delivered directly to your inbox.</small>
       </div>
-      <!-- Begin Constant Contact Inline Form Code -->
-      <div class="ctct-inline-form" data-form-id="812d3bb9-5497-4327-89c2-b051bf1d6562"></div>
-      <!-- End Constant Contact Inline Form Code -->
+      <form name="Newsletter Subscribe" data-netlify="true" netlify-honeypot="bot-field" action="/contact/thank-you/" class="contact-form">
+        <div hidden>
+            <label for="bot-field">
+              Don’t fill this out if you're human: 
+              <input name="bot-field" id="bot-field" />
+            </label>
+        </div>
+        <div class="visually-hidden">
+            <label for="subject">New email sub from the insightcreative.com newsletter subscribe form</label>
+            <input aria-label="subject" name="subject" value="New email sub from the insightcreative.com newsletter subscribe form" />
+        </div>
+        <div class="contact-form__form-group">
+            <label for="email">Email*</label>
+            <input id="email" name="_replyto" type="email" class="contact-form__form-control" required>
+        </div>
+        <button target="_blank" type="submit" class="contact-form__btn btn btn-primary">Sign Up</button>
+    </form>
     </div>
     <div class="footer__copyright padding-top-2 padding-bottom-2">
       <p>© {{ dateFormat "2006" now }} {{ .Site.Params.author }} All Rights Reserved.</p>
