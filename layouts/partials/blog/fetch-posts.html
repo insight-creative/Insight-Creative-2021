@@ -5,7 +5,9 @@
     {{ .Render "blog-cards-alt" }}
     {{ end }}
     {{ range (.Paginate ( where .Site.RegularPages "Type" "blog" )).Pages }}
+    {{ if not (in .Params.categories "Featured") }}
     {{ .Render "blog-cards-alt" }}
+    {{ end }}
     {{ end }}
   </div>
 </section>

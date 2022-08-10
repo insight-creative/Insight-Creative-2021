@@ -7,7 +7,7 @@ seo:
   featured_image: moving-targets-find-your-audience-with-social-media-2.jpg
   featured_image_alt: Examples of Taco Bell's social media posts geared towards teens
 date: 2014-12-08
-author: Andrea Lasecki
+author: Insight Creative
 categories: ["Content", "Social Media"]
 page_class: single-post
 ---

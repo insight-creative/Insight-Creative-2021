@@ -3,16 +3,16 @@ layout: blog
 title: "Marketing in a recession is essential: here’s why and how to prepare"
 seo:
   title: "Marketing in a recession is essential: here’s why and how to prepare"
-  description:
-    Worried about marketing during a recession? The marketing experts at Insight Creative can help your business thrive, even in an economic downturn.
+  description: Worried about marketing during a recession? The marketing experts at Insight Creative can help your business thrive, even in an economic downturn.
   featured_image: marketing-during-recession.jpg
   featured_image_alt: Marketing during a recession
-draft: true
+draft: false
 date: 2022-08-08
 author: Jordan Leon
 featured: true
 categories:
   - Featured
+  - Business Strategy
 page_class: single-post
 ---
 
@@ -39,7 +39,7 @@ Learn how to prepare for and tailor your marketing during a recession to beat th
   - [B2B sales during a recession](#b2b-sales-during-a-recession)
 - [Why you shouldn’t stop marketing in a recession](#why-you-shouldnt-stop-marketing-in-a-recession)
   - [Importance of marketing during a recession](#importance-of-marketing-during-a-recession)
-- [Benefits of Marketing in a Recession](#benefits-of-marketing-in-a-recession)
+- [Benefits of marketing in a recession](#benefits-of-marketing-in-a-recession)
   - [Less competitive advertising](#less-competitive-advertising)
   - [Increased return on investment](#increased-return-on-investment)
   - [More opportunity for brand awareness growth](#more-opportunity-for-brand-awareness-growth)
@@ -56,22 +56,22 @@ Learn how to prepare for and tailor your marketing during a recession to beat th
 
 ## How does a recession affect businesses?
 
-In the simplest terms, a <a href="https://www.forbes.com/advisor/investing/what-is-a-recession/" target="_blank" rel="noopener noreferrer">recession</a> happens when there isn’t enough activity in the economy. Too little demand leads to drops in sales prices, which many businesses have to mitigate through layoffs and internal budget cuts.
+In the simplest terms, a <a href="https://www.forbes.com/advisor/investing/what-is-a-recession/" target="_blank" rel="noopener noreferrer">recession</a> happens when there isn’t enough activity in the economy. Too little demand leads to drops in prices, which many businesses have to mitigate through layoffs and internal budget cuts.
 
 It’s not a guarantee that your business will struggle during a recession, however. In fact, many businesses and industries have record-breaking earning quarters during times of economic struggle.
 
-### Business sectors that do well in a recession
+### Business sectors that do well in a recession:
 
-- Grocery stores and fast food chains.
-- Streaming services and other at-home entertainment.
-- Hospitals, clinics and pharmaceutical companies.
-- Large discount retailers and big-box stores.
-- Software, digital security, It and tech companies.
-- Electricians, plumbers, mechanics and other general contractors.
+- Grocery stores and fast food chains
+- Streaming services and other at-home entertainment
+- Hospitals, clinics and pharmaceutical companies
+- Large discount retailers and big-box stores
+- Software, digital security, IT and tech companies
+- Electricians, plumbers, mechanics and other general contractors
 
 On the other hand, not everyone can reap the benefits of an economic downturn.
 
-### Businesses most affected in a recession
+### Businesses most affected in a recession:
 
 - Independent retailers
 - Sit-down restaurants, bars and coffee shops
@@ -80,11 +80,13 @@ On the other hand, not everyone can reap the benefits of an economic downturn.
 
 Regardless of industry, all businesses will have to prepare to make strategic marketing moves in a recession. You can begin to do this by understanding and preparing for the changes most likely to occur in an economic downturn.
 
-### Actions consumers tend to take in a recession
+### Actions consumers tend to take in a recession:
 
 - Cut unnecessary spending.
 - <a href="https://www.chicagobooth.edu/review/how-the-great-recession-changed-us-shopping-habits#:~:text=Research%20shows%20that%20during%20the,cheaper%20retailers%20including%20warehouse%20clubs." target="_blank" rel="noopener noreferrer">Leave top and mid-tier brands</a> to opt for budget retailers and big-box stores.
 - Seek out deals for the products they continue to purchase.
+
+Learn more about [consumer spending habits in a recession and how to respond](/blog/respond-to-consumer-shopping-habits-in-a-recession/).
 
 ### Actions businesses tend to take in a recession:
 
@@ -93,7 +95,6 @@ Regardless of industry, all businesses will have to prepare to make strategic ma
 - Stop making or drastically cut back on new investments.
 
 ### Your business can still thrive in a recession.
-
 
 We know—none of that sounds very hopeful for business owners or marketing specialists. But remember this: the success of your business during a recession isn’t up to chance.
 
@@ -107,7 +108,7 @@ B2B businesses will have to go above and beyond in proving the value and worth o
 
 This means taking steps like narrowing their marketing segment, targeting high-quality leads, adjusting their positioning and messaging accordingly and focusing on value-driven marketing.
 
-**Spoiler alert**: these are the key steps any business should follow to thrive in a recession—not just B2B businesses. 
+**Spoiler alert**: these are the key steps any business should follow to thrive in a recession—not just B2B businesses.
 
 The success of your business will depend on how you <a href="https://www.supplychainquarterly.com/articles/2052-how-to-respond-faster-to-changing-customer-needs" target="_blank" rel="noopener noreferrer">respond to the changing market and consumer needs</a>. The best way to do that? Invest in your marketing.
 
@@ -121,7 +122,7 @@ After all, <a href="https://www.emerald.com/insight/content/doi/10.1108/APJBA-06
 
 <a href="https://www.sciencedirect.com/science/article/abs/pii/S0167811605000108" target="_blank" rel="noopener noreferrer">Brands that maintain or increase their marketing budget</a> during a recession are the most likely to flourish. That’s in part because consumers need clear communication and value propositions more than ever during a recession. You can’t do that without marketing.
 
-## Benefits of Marketing in a Recession
+## Benefits of marketing in a recession
 
 Consumers' needs, fears and buying habits change during a recession. To stay competitive, you’ll have to adjust your marketing accordingly … but we know that’s easier said than done.
 
@@ -199,7 +200,7 @@ In a recession, businesses simply can’t afford to waste money on subpar market
 - Position monitoring
 - Real-time responses to the changing market and consumer needs
 
-A full-service marketing agency like Insight Creative makes this easier than ever. By managing all of your marketing under one roof, you will have access to the expertise of SEM strategists, media specialists, content writers, web developers, graphic designers and more, all for one competitive rate. 
+A full-service marketing agency like Insight Creative makes this easier than ever. By managing all of your marketing under one roof, you will have access to the expertise of SEM strategists, media specialists, content writers, web developers, graphic designers and more, all for one competitive rate.
 
 ## Ensure your business thrives in any economy
 

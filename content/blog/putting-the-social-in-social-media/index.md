@@ -7,7 +7,7 @@ seo:
   featured_image: Putting-the-Social-in-Social-Media-1.jpg
   featured_image_alt: "Instagram app open on smart phone thats sitting on an open notebook"
 date: 2016-07-10
-author: Andrea Lasecki
+author: Insight Creative
 categories: ["Content", "Social Media"]
 page_class: single-post
 ---

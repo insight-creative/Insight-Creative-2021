@@ -7,7 +7,7 @@ seo:
   featured_image: On-the-Road-to-ROI-Beginning-with-Engagement.jpg
   featured_image_alt: "Chart from Adweek showing their Shareablee Social Scorecard: Top 25 U.S. Social Brands"
 date: 2015-11-13
-author: Andrea Lasecki
+author: Insight Creative
 categories: ["Content", "Social Media"]
 page_class: single-post
 ---
