@@ -15,7 +15,7 @@
     <h2 class="text-center">Posts by {{ (index .Site.Data.staff .Params.author).name }}</h2>
     <div class="wrapper-md">
         <hr>
-        <div class="authors-posts__inner post-wrapper padding-top-9">
+        <div class="authors-posts__inner post-wrapper pt-9">
             {{ $pages := .Site.RegularPages }}
             {{ $blog := where $pages "Type" "blog" }}
             {{ $posts := where $blog "Params.author" (.Title) }}

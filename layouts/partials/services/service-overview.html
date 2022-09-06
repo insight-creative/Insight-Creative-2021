@@ -1,5 +1,5 @@
 <section id="service-overview" class="service-overview fade-up">
-    <div class="wrapper padding-top-9">
+    <div class="wrapper pt-9">
         <div class="flow fade-up">
             <h3 class="h5 text-center text-secondary shift-up">{{ .Params.service_overview.subhead_small | markdownify }}</h3>
             <h3 class="text-center">{{ .Params.service_overview.subhead | markdownify }}</h3>
@@ -29,11 +29,11 @@
             {{ partialCached "services/staff-cards-design" . }}
         {{ end }}
         </div>
-        <div class="center-button margin-top-2">
+        <div class="center-button mt-2">
             <a href="/about/" class="btn btn-tertiary">Meet the team</a>
         </div>
     </div>
-    <div class="wrapper studio-cta padding-top-9">
+    <div class="wrapper studio-cta pt-9">
         {{ with .Params.service_cta }}
         <h4 class="text-center fade-up">{{ .heading }}</h4>
         {{ end }}

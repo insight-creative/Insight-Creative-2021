@@ -79,12 +79,12 @@
         <h2>{{ .Params.intro.heading }}</h2>
         {{ .Params.intro.copy | markdownify }}
     </div>
-    <div class="padding-bottom-9">
+    <div class="pb-9">
         {{ .Content }}
     </div>
 </section>
 {{ if .Params.testimonial }}
-<section id="client-testimonial" class="wrapper-md padding-bottom-9">
+<section id="client-testimonial" class="wrapper-md pb-9">
     <div class="testimonial block bg-black">
         <div class="wrapper-sm flow fade-up">
             <div class="quote">
@@ -104,9 +104,9 @@
 {{ partial "work/project-navigation" . }}
 {{ $related := .Site.RegularPages.RelatedIndices . "tags" | first 3 }}
 {{ with $related }}
-<section id="related-projects" class="wrapper-lg related-projects padding-top-9">
+<section id="related-projects" class="wrapper-lg related-projects pt-9">
     <h3 class="fade-up">Related projects</h3>
-    <div class="post-wrapper padding-top-2 fade-up">
+    <div class="post-wrapper pt-2 fade-up">
         {{ range . }}
         {{ .Render "work-card" }}
         {{ end }}

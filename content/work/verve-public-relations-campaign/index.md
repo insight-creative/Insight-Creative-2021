@@ -2,7 +2,7 @@
 Title: Verve Public Relations Campaign
 seo:
   title: Verve Public Relations Campaign
-  description: 
+  description:
   featured_image: fraud-squad-cover-image.jpg
 hero:
   image:
@@ -14,9 +14,9 @@ industries:
   industries:
     - industry: Banking & Finance
     - industry: Non-Profit
-intro: 
+intro:
   heading: Fighting crime, one news segment at a time
-  copy: '<p>When local law enforcement approached Verve, a Credit Union to join their battle against online scammers, they were all in. But to make a real impact, Verve knew a community collaboration would be essential. As a result, the Fraud Squad was born and Insight Creative joined as public relations and media specialists. Leveraging local connections across Northeast Wisconsin, Insight Creative hoisted Verve’s Fraud Squad further into the spotlight with extensive TV, Radio, print and online coverage.</p>'
+  copy: "<p>When local law enforcement approached Verve, a Credit Union to join their battle against online scammers, they were all in. But to make a real impact, Verve knew a community collaboration would be essential. As a result, the Fraud Squad was born and Insight Creative joined as public relations and media specialists. Leveraging local connections across Northeast Wisconsin, Insight Creative hoisted Verve’s Fraud Squad further into the spotlight with extensive TV, Radio, print and online coverage.</p>"
 provided_services:
   services:
     - service: Content
@@ -25,21 +25,22 @@ provided_services:
       url: /services/media/
 tags:
   - Public Relations
-testimonial: 
-  copy: ''
+testimonial:
+  copy: ""
   name:
   client:
 draft: true
 ---
+
 <div class="wrapper flow">
   <h3>Results</h3>
 
   <div class="grid-3">
-    <p><span class="h3">1.9 Million</span><br>
+    <p><span class="h3 text-tertiary">1.9 Million</span><br>
     people reached</p>
-    <p><span class="h3">$7,000</span><br>
+    <p><span class="h3 text-tertiary">$7,000</span><br>
     in earned publicity</p>
-    <p><span class="h3">$97,000</span><br>
+    <p><span class="h3 text-tertiary">$97,000</span><br>
     in non-charge ads</p>
   </div>
 </div>

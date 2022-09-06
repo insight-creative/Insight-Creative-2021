@@ -3,8 +3,9 @@
 {{ block "head" . }}{{ partial "head" . }}{{ end }}
 {{ $namespace := lower .Page.Title }}
 {{ $mainClass := lower .Page.Title }}
+{{ $pageParent := lower .CurrentSection.Title }}
 
-<body class="site-wrap" data-barba="wrapper">
+<body class="site-wrap{{ if $pageParent }} parent-page-{{ $pageParent | urlize }}{{ end }}" data-barba="wrapper">
   <div class="cursor"></div>
   <div class="follower">
     <span class="follower__text">View Project</span>

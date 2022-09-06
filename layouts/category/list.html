@@ -3,7 +3,7 @@
 {{ partial "blog/category-filter" . }}
 <div class="wrapper-md">
   <hr>
-  <div class="post-wrapper padding-top-9">
+  <div class="post-wrapper pt-9">
     {{ $paginator := .Paginate ( where .Data.Pages "Type" "blog" ) }}
     {{ range $paginator.Pages }}
     {{ .Render "blog-cards-alt" }}

@@ -60,6 +60,8 @@ module.exports = {
             'cindy-struensee',
             'theresa-tebon',
             'emphasis-underline--secondary',
+            'new-zoo--adventure-park-canopy-tour-signage',
+            'verve-public-relations-campaign',
           ],
     }),
   ],

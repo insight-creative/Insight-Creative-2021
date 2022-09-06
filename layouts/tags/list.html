@@ -1,14 +1,14 @@
 {{ define "main" }}
 {{ partial "hero-alt" . }}
 <div class="tags wrapper-md">
-  <div class="post-wrapper padding-top-9">
+  <div class="post-wrapper pt-9">
     {{ $paginator := .Paginate ( where .Data.Pages "Type" "work" ) }}
     {{ range $paginator.Pages }}
     {{ .Render "work-card" }}
     {{ end }}
   </div>
 </div>
-<div class="wrapper-md padding-bottom-9">
+<div class="wrapper-md pb-9">
   {{ partial "blog/custom-pagination.html" . }}
 </div>
 {{ end }}

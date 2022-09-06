@@ -1,6 +1,6 @@
 <section id="posts-feed" class="wrapper-md">
   <hr>
-  <div class="post-wrapper padding-top-9">
+  <div class="post-wrapper pt-9">
     {{ range where (where .Pages "Section" "blog" ) "Params.featured" "=" true }}
     {{ .Render "blog-cards-alt" }}
     {{ end }}
