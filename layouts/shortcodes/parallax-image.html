@@ -10,8 +10,7 @@
     <picture>
         <source sizes="100vw" srcset="{{ $smallwebp.RelPermalink }} 480w, {{ $mediumwebp.RelPermalink }} 768w, {{ $bigwebp.RelPermalink }} 1024w" type="image/webp" >
         <source sizes="100vw" srcset="{{ $smalljpg.RelPermalink }} 480w, {{ $mediumjpg.RelPermalink }} 768w, {{ $bigjpg.RelPermalink }} 1024w" type="image/jpg" >
-        <img loading="lazy"
-            src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ .Get "alt" }}" class="parallax-wrapper__image">
+        <img loading="lazy" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ .Get "alt" }}" class="parallax-wrapper__image">
     </picture>
 </div>
 {{ end }}

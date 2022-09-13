@@ -11,7 +11,7 @@ author: Theresa Tebon
 categories:
   - Social Media
 page_class: single-post
-draft: true
+draft: false
 ---
 
 ![Social media apps on phone screen](social-media-apps-on-phone.jpg)
@@ -26,11 +26,15 @@ _I know what you’re thinking: If there are pain points for me as a business ow
 
 As the [social media specialist at Insight](/about/theresa-tebon/), I know first-hand the stresses of social media, but I’ve also seen its immense benefits for various clients. There truly is no limit to what you can do with social media marketing, which means businesses in any industry can make it their own to get the specific engagement and results they are looking for.
 
+## Benefits of social media for small businesses
+
 When executed properly, there are many benefits of social media that business owners can and should be taking advantage of. Some of the benefits of social media marketing that I find most valuable are the ability to engage directly with your audience, increase brand awareness and easily share content.
 
 ### Engage directly with your audience.
 
-Social media engagement should be your top priority. This is your opportunity to connect with your audience. Not only does this allow your audience to feel heard but it shows them that you value their comments and opinions. In turn, you receive feedback regarding your content through comments, likes, shares and other methods of engagement.
+Social media engagement should be your top priority. This is your opportunity to connect with your audience. Not only does this allow your audience to feel heard but it shows them that you value their comments and opinions.
+
+In turn, you receive feedback regarding your content through comments, likes, shares and other methods of engagement.
 
 ### Increase brand awareness.
 
@@ -44,7 +48,7 @@ One of the biggest pros of social media is how easily you can share content on n
 
 So, even if you aren’t familiar with social media _yet_, the barrier to entry is low. It’s worth trying out just to see how advantageous the tools can be to boost your marketing, awareness and sales.
 
-## Can social media hurt small businesses?
+## Don't make these social media mistakes.
 
 With all the benefits of social media, there _are_ things about it that can hinder your business. Over the course of my work with clients, I’ve seen just about every mistake businesses can make on social media.
 
@@ -52,7 +56,9 @@ Three of the most common mistakes I see businesses making with their social medi
 
 ### Don’t: forget to identify your social media marketing goals.
 
-I’ve lost track of how many clients have come to me for social media management without having a clear goal in mind. This is a big mistake because you’ll never know if your social media efforts are working if you don’t have a specific goal you’re hoping to achieve. Make sure you set these goals ahead of time so that you don’t burn out before seeing the real value of your efforts.
+I’ve lost track of how many clients have come to me for social media management without having a clear goal in mind. This is a big mistake because you’ll never know if your social media efforts are working if you don’t have a specific goal you’re hoping to achieve.
+
+Make sure you set these goals ahead of time so that you don’t burn out before seeing the real value of your efforts.
 
 ### Don’t: jump in without a strategic plan.
 
@@ -66,7 +72,7 @@ Finally, and most importantly, don’t let these challenges keep you from partic
 
 ## 5 of the most common social media pain points for small businesses
 
-Social media marketing is a powerful business tool, but it isn’t easy, especially when you’re running your business or other marketing efforts at the same time. To ensure you are prepared, make sure you are ready to combat these common social media pain points for small businesses.
+Social media marketing is a powerful business tool, but it isn’t easy, especially when you’re running your business or other marketing efforts at the same time. To ensure you are prepared, make sure you are ready to combat these common social media challenges for small businesses.
 
 ### 1. Maintaining a consistent post schedule
 
@@ -82,7 +88,7 @@ Measuring ROI is always tricky, but it can be especially difficult to measure th
 
 Social media is about growing and engaging with your audience, rather than solely focusing on making sales and getting clicks. Business owners and marketing professionals need to adjust their thinking when it comes to social media ROI and realize that value is being created, even if it isn’t a large monetary return.
 
-**Solution:** Rather than focus on monetary return, focus on the less tangible value social media provides for your business. Are you seeing an increase in website traffic? Are you gaining more followers and post-engagement? Have your leads been increasing? This is the real ROI you can expect from your social media marketing efforts.
+**Solution:** Rather than focus on monetary return, focus on the less tangible value social media provides for your business. Are you seeing an increase in website traffic? Are you gaining more followers and post engagement? Have your leads been increasing? This is the real ROI you can expect from your social media marketing efforts.
 
 ### 3. Discovering and curating content
 

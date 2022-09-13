@@ -26,14 +26,14 @@ tags:
   - Branding
   - Outdoor Signage
 testimonial:
-  copy: "Working with the team at Insight has been an absolute pleasure. They are creative, responsive, dedicated and take deadlines seriously. I’ve been continually impressed by their work and by their work ethic—and it’s been so much fun to see this project come together! I can wholeheartedly recommend them to anyone looking for professional marketing and design. Insight Creative really can do it all!"
-  name:
-  client:
-draft: true
+  copy: "Working with the team at Insight has been an absolute pleasure. They are creative, responsive, dedicated and take deadlines seriously. I’ve been continually impressed by their work and by their work ethic—it’s been so much fun to see this project come together! I can wholeheartedly recommend them to anyone looking for professional marketing and design. Insight Creative really can do it all!"
+  name: Angela Kawski-Kroening
+  client: NEW Zoo & Adventure Park
+draft: false
 ---
 
 <div class="wrapper flow">
-  <h3>Results</h3>
+  <h3>Outcomes</h3>
 
   <div class="grid-3">
     <p><span class="h3 text-tertiary">28</span><br>
@@ -47,21 +47,21 @@ draft: true
 
 <div class="wrapper-md mt-9">
   <div class="flex-grid">
-    {{< parallax-image src="new-zoo-canopy-tour-sign.jpg" alt="ho chunk's hot streaks are for slots only campaign graphic">}}
-    {{< parallax-image src="new-zoo-canopy-tour-sign-2.jpg" alt="ho chunk's We put the odds in your favor campaign graphic">}}
+    {{< parallax-image src="new-zoo-canopy-tour-sign.jpg" alt="NEW Zoo Canopy Tour Rules and Etiquette sign">}}
+    {{< parallax-image src="new-zoo-canopy-tour-sign-2.jpg" alt="NEW Zoo Canopy Tour About the Canopy Tour sign">}}
   </div>
 
   <div class="flex-grid">
-    {{< parallax-image src="new-zoo-canopy-tour-sign-3.jpg" alt="ho chunk's we don't press our luck with safety campaign graphic">}}
+    {{< parallax-image src="new-zoo-canopy-tour-sign-3.jpg" alt="NEW Zoo Canopy Tour Historical Journey signs">}}
   </div>
 
   <div class="flex-grid">
-    {{< parallax-image src="new-zoo-canopy-tour-sign-4.jpg" alt="ho chunk's hot streaks are for slots only campaign graphic">}}
-    {{< parallax-image src="new-zoo-canopy-tour-sign-5.jpg" alt="ho chunk's We put the odds in your favor campaign graphic">}}
+    {{< parallax-image src="new-zoo-canopy-tour-sign-4.jpg" alt="NEW Zoo Canopy Tour Nature Journey | Part 7 sign">}}
+    {{< parallax-image src="new-zoo-canopy-tour-sign-5.jpg" alt="NEW Zoo Canopy Tour Nature Journey | Part 8 sign">}}
   </div>
 
   <div class="flex-grid">
-    {{< parallax-image src="new-zoo-canopy-tour-sign-6.jpg" alt="ho chunk's hot streaks are for slots only campaign graphic">}}
-    {{< parallax-image src="new-zoo-canopy-tour-sign-7.jpg" alt="ho chunk's We put the odds in your favor campaign graphic">}}
+    {{< parallax-image src="new-zoo-canopy-tour-sign-6.jpg" alt="NEW Zoo Canopy Tour Nature Journey | Part 11 sign">}}
+    {{< parallax-image src="new-zoo-canopy-tour-sign-7.jpg" alt="Snow Monkey hanging on cage walls">}}
   </div>
 </div>
