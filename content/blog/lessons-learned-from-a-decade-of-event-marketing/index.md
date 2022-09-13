@@ -11,7 +11,6 @@ author: Insight Creative
 categories:
   - Business Strategy
   - Social Media
-  - Public Relations
 page_class: single-post
 draft: false
 ---

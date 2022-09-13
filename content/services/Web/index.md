@@ -25,18 +25,28 @@ services:
       description: No templates here! Our skilled web team handcrafts custom code using modern technologies and creative problem solving to build sites that are favored by search engines and easily accessed by all people and devices.
       service_list: custom websites • content management systems • jamstack development • wordpress development • responsive development • performance • accessibility • email marketing • landing pages • blogs • search engine optimization (SEO)
       partners:
-        - logo: cloudcannon.svg
-        - logo: wordpress.svg
         - logo: hugo.svg
         - logo: 11ty.svg
         - logo: jekyll.svg
+        - logo: cloudcannon.svg
         - logo: netlify.svg
+        - logo: wordpress.svg
     - heading: Maintenance
       subhead: <span class="text-tertiary"><em>Keep your website in optimal shape.</em></span>
       description: You must regularly tend to your website to help it thrive. Insight provides ongoing maintenance to protect your investment and ensure it only gets better as time goes on. Plus, with monthly analytics, Insight will help you understand your site visitors and adjust accordingly.
       service_list: website hosting • software updates • regular backups • website audits • troubleshooting • bug fixes • performance optimizations • security scans • malware cleanup • analytics and reporting
 web_portfolio:
   portfolio_items:
+    - title: Law Firm of Conway, Olejniczak & Jerry, S.C.
+      image: lcojlaw-website-screenshot.jpg
+      image_alt: Law Firm of Conway, Olejniczak & Jerry, S.C. Website Preview
+      website_url: https://www.lcojlaw.com/
+      tech_stack: Hugo | CloudCannon
+      lighthouse_score:
+        - score: "99"
+        - score: "100"
+        - score: "100"
+        - score: "100"
     - title: Baileys Harbor Schoolhouse Inn
       image: baileys-harbor-schoolhouse-inn-website-screenshot.jpg
       image_alt: Baileys Harbor Schoolhouse Inn Website Preview
@@ -47,16 +57,16 @@ web_portfolio:
         - score: "100"
         - score: "100"
         - score: "100"
-    - title: Greiber Heating & Sheet Metal
-      image: greiber-heating-and-cooling-website-preview.jpg
-      image_alt: Greiber Heating & Sheet Metal Website Preview
-      website_url: https://www.greiberheating.com/
-      tech_stack: Hugo | Netlify
-      lighthouse_score:
-        - score: "100"
-        - score: "100"
-        - score: "100"
-        - score: "100"
+    # - title: Greiber Heating & Sheet Metal
+    #   image: greiber-heating-and-cooling-website-preview.jpg
+    #   image_alt: Greiber Heating & Sheet Metal Website Preview
+    #   website_url: https://www.greiberheating.com/
+    #   tech_stack: Hugo | Netlify
+    #   lighthouse_score:
+    #     - score: "100"
+    #     - score: "100"
+    #     - score: "100"
+    #     - score: "100"
     - title: A to Z Machine
       image: atozmachine-website-preview.jpg
       image_alt: A to Z Machine website preview

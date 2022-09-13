@@ -8,7 +8,7 @@
             <div class="post">
                 <article role="article" class="post__body flow">
                     {{ if .Params.Categories }}
-                    {{ range $index, $elements := .Params.Categories }}<a href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}" class="categories categories__link">{{ if ne $index 0 }}{{ end }}
+                    {{ range $index, $elements := .Params.Categories }}<a href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/" class="categories categories__link">{{ if ne $index 0 }}{{ end }}
                         {{ . | title }}</a> {{ end}}
                     {{ end }}
                     <h1>{{ .Params.seo.title | markdownify }}</h1>
