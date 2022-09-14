@@ -6,7 +6,7 @@
         {{- if not (eq (len site.Taxonomies.categories) 0) }}
         <ul class="category-list">
           {{- range .Site.Taxonomies.categories }}
-          <li class="category-list__item"><a href="{{ .Page.Permalink }}" class="category category-list__link">{{ .Page.Title }}<span class="ml-2"> ({{ .Count }})</span></a></li>
+          <li class="category-list__item"><a href="{{ .Page.Permalink }}" class="category category-list__link">{{ .Page.Title }}<span> ({{ .Count }})</span></a></li>
           {{- end }}
         </ul>
         {{- end }}
