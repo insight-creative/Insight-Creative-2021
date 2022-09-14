@@ -1,7 +1,26 @@
 name: Sam Rowe
+first_name: Sam
 job_title: Associate Creative Director
-bio: "Sam brings thoughtful logic, sharp attention to detail and diverse artistic talents to her role as associate creative director. With a passion for typography and a knack for creative problem solving, Sam’s smart design elevates the overall message on both traditional and digital projects for Insight’s clients. She got her start as an art director at a marketing communications agency and holds a bachelor’s degree in design arts from UW-Green Bay. "
+bio: >-
+  Meet Sam, Insight’s resident creative visionary and eco advocate. 
+
+
+  As our associate creative director, Sam works closely with clients and the entire creative team to brainstorm both big and small-picture branding and campaign ideas that she brings to life through clever, strategic visual design.
+communication_with_substance_block: 
+  enabled: true
+  body: Sam embodies communication with substance by distilling complex ideas and content into easily digestible information that she conveys through meaningful, visually appealing logos, advertisements, infographics and more.
+history_block:
+  heading: How she got here
+  body: >-
+    Sam’s love of design was fostered during her freshman year at Carroll University, where she designed flyers and other visual materials for her residence hall. From there, she transferred to UW-Green Bay where she earned her bachelor’s degree in design arts with a minor in art. She spent two years post-graduation honing her design skills and applying them to client projects at a local agency before joining the Insight team.
+quote:
+  body: Working with a team of creative, collaborative and judgment-free individuals who approach every project with the right mindset to create amazing content for our clients. It’s also very rewarding to work with a variety of clients and see the large impact Insight has in our community and beyond.
+fun_fact: 
+  enabled: true
+  body: Sam is passionate about sustainability. As a self-proclaimed plant lady, she cares for all the leafy beings here in the office and even has an entire room dedicated to her plants at home! She also established an in-office composting program at Insight and helps our entire team be more eco-friendly.
+marketing_tip:
+  body: <p>Less is more when it comes to design. <em>Never</em> underestimate the power of strategic whitespace. Keep content as simple, straightforward and enjoyable as possible for your intended audience.</p>
 image_jpg: /images/staff/Sam-Rowe.jpg
-department: Design
+department: "Design"
 weight: "3"
 about_order: 5

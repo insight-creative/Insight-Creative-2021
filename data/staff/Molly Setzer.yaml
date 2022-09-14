@@ -1,6 +1,28 @@
-name: "Molly Setzer"
+name: Molly Setzer
+first_name: Molly
 job_title: Media Director
-bio: "Molly brings years of TV station, video production and creative copywriting experience to her media role at Insight. With wide-ranging broadcast knowledge, and an impressive gift for organization, Molly ensures every detail is accounted for in our clients’ media buys. A UW-Green Bay graduate, Molly’s professional talents are well complemented by her outgoing personality and upbeat attitude."
+bio: >-
+  Meet Molly, Insight’s resident media pro and health and wellness fiend. 
+
+
+  As our media director, Molly helps our clients navigate the ever-changing marketing landscape to develop and manage an effective media marketing strategy for their brand and budget.
+communication_with_substance_block: 
+  enabled: true
+  body: Molly embodies communication with substance by breaking down complex technical jargon, data and concepts into easily digestible information so that our clients can understand and feel confident about their media marketing.
+history_block:
+  heading: How she got here
+  body: >-
+    Molly dreamed of being on the big screen as a child, which later lead her to obtain her bachelor’s degree in communication processes with an emphasis in electronic media from UW-Green Bay. After graduation, she pursued a position at a local news station with the intention of working up to a reporter role. Instead, her interest was sparked by the behind-the-scenes world she discovered while working in the promotions department.
+
+
+    From there, Molly joined the Insight team as a copywriter and video producer for multiple years before transitioning to media in 2013. With her diverse background in media marketing, Molly quickly took on her current media director role.
+quote:
+  body: Working with a truly brilliant team of people. I am always flabbergasted by how intelligent our team is, and how willing everyone is to share information and ideas so we can all be informed on the latest in marketing and provide the best results for our clients.
+fun_fact: 
+  enabled: true
+  body: Molly is the health and wellness fanatic here at Insight. In fact, Molly is up and off to complete her morning run before most of us have gotten out of bed for the day. You may find her taking a quick walk around the office to get her steps in and she always has great health tidbits to share with the team.
+marketing_tip:
+  body: Optimize your website to be mobile-friendly or you are essentially irrelevant. Over half of online searches and web visits are now made from mobile devices.
 image_jpg: /images/staff/Molly-Setzer.jpg
 department: "Media"
 weight: "1"

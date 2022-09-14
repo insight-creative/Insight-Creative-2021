@@ -1,22 +1,27 @@
 name: Brian Brost
+first_name: Brian
 job_title: Account Executive
 bio: >-
   Meet Brian, Insight’s resident client guru and family man.
 
 
   As one of our account executives, Brian works closely to build and maintain strong working relationships with our clients to understand their needs and determine which services will best help them achieve their business goals. He also works closely with the entire Insight team to convey client needs and ensure each project is completed on time and within budget.
-communication_with_substance_block: Brian embodies communication with substance by relaying each client’s questions, needs and concerns to the Insight media and creative teams in the most simple and effective way possible.
-history_block: >-
-  Brian has always had a passion for working with a diverse range of people to meet their needs, which lead him to obtain his bachelor’s degree in hospitality and tourism management from UW-Stout. Though he worked in the hospitality industry in Chicago directly out of college, he quickly transitioned to a company closer to the Green Bay area, where he worked in various positions until ultimately becoming a large-group account executive. 
+communication_with_substance_block: 
+  enabled: true
+  body: Brian embodies communication with substance by relaying each client’s questions, needs and concerns to the Insight media and creative teams in the most simple and effective way possible.
+history_block: 
+  heading: How he got here
+  body: >-
+    Brian has always had a passion for working with a diverse range of people to meet their needs, which lead him to obtain his bachelor’s degree in hospitality and tourism management from UW-Stout. Though he worked in the hospitality industry in Chicago directly out of college, he quickly transitioned to a company closer to the Green Bay area, where he worked in various positions until ultimately becoming a large-group account executive. 
 
 
-  Brian stayed within this position for 13 years before transitioning to media sales and account management. After seven years at two local television stations, Brian sought an account executive position where he could provide his clients with a full range of marketing services. This brought him to Insight, where he utilizes his invaluable sales, marketing and customer relations skills to help his clients and their businesses thrive.
+    Brian stayed within this position for 13 years before transitioning to media sales and account management. After seven years at two local television stations, Brian sought an account executive position where he could provide his clients with a full range of marketing services. This brought him to Insight, where he utilizes his invaluable sales, marketing and customer relations skills to help his clients and their businesses thrive.
 quote:
-  heading: To Brian, working at Insight means…
   body: Working with a strong, diverse team. Everyone here is extremely capable and fit for their positions and I always enjoy our daily interactions.
-fun_fact: Brian is a true family man and loves taking every opportunity to spend quality time with them, especially at their campsite in Eagle River. Always along for the ride, his dogs Sophie and Crosby frequently tag along with Brian to the Insight office. The two love to put in a hard day’s work receiving copious amounts of pets and treats before returning home to cuddle up with (or mildly annoy) Lewy, the family cat.
+fun_fact: 
+  enabled: true
+  body: Brian is a true family man and loves taking every opportunity to spend quality time with them, especially at their campsite in Eagle River. Always along for the ride, his dogs Sophie and Crosby frequently tag along with Brian to the Insight office. The two love to put in a hard day’s work receiving copious amounts of pets and treats before returning home to cuddle up with (or mildly annoy) Lewy, the family cat.
 marketing_tip:
-  heading: "Brian’s #1 marketing tip"
   body: Be consistent and provide a cohesive brand experience for your customers and audience.
 image_jpg: /images/staff/Brian-Brost.jpg
 department: "Sales"

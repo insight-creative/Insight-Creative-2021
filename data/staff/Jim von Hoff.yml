@@ -5,3 +5,27 @@ image_jpg: /images/staff/Jim-von-Hoff.jpg
 department: "Content"
 weight: "1"
 about_order: 1
+
+# name: Jim von Hoff
+# first_name: Jim
+# job_title: President
+# bio: >-
+
+# communication_with_substance_block: 
+#   enabled: true
+#   body: 
+# history_block: 
+#   heading: How he got here
+#     body: >-
+
+# quote:
+#   body: 
+# fun_fact: 
+#   enabled: false
+#   body: 
+# marketing_tip:
+#   body: 
+# image_jpg: /images/staff/Jim-von-Hoff.jpg
+# department: "Content"
+# weight: "1"
+# about_order: 

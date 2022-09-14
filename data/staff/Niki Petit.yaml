@@ -1,6 +1,28 @@
 name: Niki Petit
-job_title: Director of Business Development
-bio: "Niki brings a strong background in business, radio and media negotiation, as well as practical marketing savvy, to her account management role. Clients rely on Niki for an honest assessment of their needs and expert strategic direction. A graduate of the University of Wisconsin, her never-ending drive and commitment to her clients makes her a leader and an integral part of Insight’s success."
+first_name: Niki
+job_title: Account Executive
+bio: >-
+  Meet Niki, Insight’s resident budget maximizer and horse wrangler.
+
+
+  As our director of business development, Niki ensures that every dollar in our clients’ budgets is spent strategically and efficiently. She has played a vital role in helping to grow Insight into the agency it is today and currently manages the account executive department.
+communication_with_substance_block: 
+  enabled: true
+  body: Niki embodies communication with substance by avoiding fancy marketing lingo or turning to past awards to impart Insight’s value. Instead, she breaks down what our services will mean for clients and the success of their businesses.
+history_block:
+  heading: How she got here
+  body: >-
+    After obtaining her bachelor’s degree in economics and political science from UW-Madison, Niki began working for a local radio station where she helped launch 95.9 KISS FM. Though she enjoyed her work and remained in radio for nine years, Niki began to dream of a position where she could use her passion and marketing expertise to help businesses beyond radio marketing.
+
+
+    She had worked with just about every agency in town during her time in radio and was impressed with the leadership and results that Insight provided. She came on board in 2005 and has been helping to grow Insight and our clients’ businesses ever since.
+quote:
+  body: Every single day is different. In all my time at Insight, I have never been bored. I always feel challenged by the variety of work and appreciated by my team.
+fun_fact: 
+  enabled: true
+  body: Niki has loved horses her whole life and always dreamed of retiring on a horse ranch. Luckily, she didn’t have to wait that long! She currently lives on her horse ranch with her husband, son and two horses—Epona and Frank.
+marketing_tip:
+  body: Frequency is king and cliches suck!
 image_jpg: /images/staff/Niki-Petit.jpg
 department: "Sales"
 weight: "4"

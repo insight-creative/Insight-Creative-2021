@@ -12,36 +12,40 @@
             {{ (index .Site.Data.staff .Params.author).bio | markdownify }}
         </div>
     </div>
+    {{ if (index .Site.Data.staff .Params.author).communication_with_substance_block.enabled }}
     <div class="block bg-black">
         <div class="wrapper-md flex flex-column flex-row-m">
             <div class="w-100 w-60-m flow">
                 <h2>Communication <span class="friday-vibes-white">with</span> <span class="emphasis-red">substance.<sup>SM</sup></span></h2>
-                {{ (index .Site.Data.staff .Params.author).communication_with_substance_block | markdownify }}
-                <h2>How he got here</h2>
-                {{ (index .Site.Data.staff .Params.author).history_block | markdownify }}
+                {{ (index .Site.Data.staff .Params.author).communication_with_substance_block.body | markdownify }}
+                <h2> {{ (index .Site.Data.staff .Params.author).history_block.heading }} </h2>
+                {{ (index .Site.Data.staff .Params.author).history_block.body | markdownify }}
             </div>
             <div class="w-100 w-40-m flow mt-3 mt-0-m ml-3-m">
                 <div class="card bg-black-2 flow fade-up">
-                    <h2 class="h4 b text-center text-secondary" style="max-width: 300px; margin: 0 auto;">{{ (index .Site.Data.staff .Params.author).quote.heading }}</h2>
+                    <h2 class="h4 b text-center text-secondary" style="max-width: 300px; margin: 0 auto;">To {{ (index .Site.Data.staff .Params.author).first_name }}, working at Insight means...</h2>
                     {{ partialCached "svg-icons/quote-blue.svg" . }}
                     <p>{{ (index .Site.Data.staff .Params.author).quote.body }}</p>
                 </div>
                 <div class="card bg-black-2 flow fade-up">
-                    <h2 class="h4 b text-center text-secondary">{{ (index .Site.Data.staff .Params.author).marketing_tip.heading }}</h2>
+                    <h2 class="h4 b text-center text-secondary">{{ (index .Site.Data.staff .Params.author).first_name }}'s #1 marketing tip</h2>
                     {{ partialCached "svg-icons/quote-blue.svg" . }}
-                    <p>{{ (index .Site.Data.staff .Params.author).marketing_tip.body }}</p>
+                    <p>{{ (index .Site.Data.staff .Params.author).marketing_tip.body | safeHTML}}</p>
                 </div>
             </div>
         </div>
     </div>
+    {{ end }}
+    {{ if (index .Site.Data.staff .Params.author).fun_fact.enabled}}
     <div class="block">
         <div class="wrapper flow">
             <h2>Fun fact</h2>
-            <p>{{ (index .Site.Data.staff .Params.author).fun_fact }}</p>
-            <h3>Interested in working with Brian?</h3>
+            <p>{{ (index .Site.Data.staff .Params.author).fun_fact.body }}</p>
+            <h3>Interested in working with {{ (index .Site.Data.staff .Params.author).first_name }}?</h3>
             <a href="/contact/" class="btn btn-primary">Contact Us</a>
         </div>
     </div>
+    {{ end }}
 </section>
 <section id="author-posts" class="authors-posts block">
     <h2 class="text-center">Posts by {{ (index .Site.Data.staff .Params.author).name }}</h2>

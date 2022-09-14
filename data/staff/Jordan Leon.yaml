@@ -1,6 +1,25 @@
 name: Jordan Leon
-job_title: Digital Copywriter
-bio: "Jordan brings a passion for storytelling to the Insight team by helping brands tell their unique stories and grow brand awareness through thoughtful, engaging copy. Before joining the Insight team, Jordan ran her own small business as a freelance writer and created high-ranking articles and web copy. She combines her technical SEO expertise, marketing knowledge and background in creative writing to craft strategic copy that connects with her clients' audiences. She holds a bachelor's degree in English with an emphasis in creative writing from UW-Green Bay."
+first_name: Jordan
+job_title: Digital Copywriter 
+bio: >-
+  Meet Jordan, Insight’s resident wordsmith and one-woman animal rescue team.
+
+
+  As our digital copywriter, Jordan helps Insight clients tell their unique stories and grow brand awareness through thoughtful, engaging copy.
+communication_with_substance_block: 
+  enabled: true
+  body: Jordan embodies communication with substance by writing strategic copy and engaging SEO content that cuts the fluff and focuses on providing value to her client’s intended audience.
+history_block:
+  heading: How she got here
+  body: >-
+    A true multi-passionate individual, Jordan pursued many interests throughout her education, but writing is and has always been her greatest passion. After graduating from UW-Green Bay with a bachelor’s degree in English with a creative writing emphasis, she ran her own freelance writing business for two years before joining the Insight team.
+quote:
+  body: Having the opportunity to personalize our roles and utilize what makes us unique. Everyone here is treated like the expert they are. I love and appreciate that Insight is so collaborative and that our ideas and suggestions are taken seriously and contribute to the positive growth of Insight and our clients.
+fun_fact: 
+  enabled: true
+  body: Jordan once waded into a stagnant golf course pond with her husband to save a Canadian goose stuck in a muskrat trap. Said goose spent the night in their bathtub until they could bring her/him to a local avian rescue the next day. Jordan still likes to save animals—even the creepy crawlies that sometimes find their way into the office.
+marketing_tip:
+  body: Tell the truth—consumers can sniff out phony marketing almost immediately. Finding clever ways to tell the truth in your communications and letting the value of what you offer speak for itself will always go further than faking it.
 image_jpg: /images/staff/Jordan-Leon.jpg
 department: "Content"
 weight: "3"
