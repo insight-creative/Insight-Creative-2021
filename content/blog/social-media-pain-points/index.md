@@ -92,7 +92,7 @@ Social media is about growing and engaging with your audience, rather than solel
 
 ### 3. Discovering and curating content
 
-Unless you are already a highly popular brand with loads of loyal customers, you won’t gain a social media following overnight. To establish your brand’s social media presence, you will have to post consistent, high-value content targeted to your ideal customer.
+Unless you're already a highly popular brand with loads of loyal customers, you won’t gain a social media following overnight. To establish your brand’s social media presence, you will have to post consistent, high-value content targeted to your ideal customer.
 
 **Solution:** Don’t overthink this pain point too much. A lot of content is already right at your fingertips. If you have run out of ideas or simply don't know where to start, [user-generated content](https://blog.hootsuite.com/user-generated-content-ugc/) is a perfect solution.
 
