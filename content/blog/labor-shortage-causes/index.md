@@ -12,7 +12,7 @@ author: Emily Morehart
 categories:
   - Business Strategy
 page_class: single-post
-draft: false
+draft: true
 ---
 
 ![Labor Shortage Causes](Labor-Shortage-Causes.jpg)
@@ -91,8 +91,6 @@ You’ll have to prove right away that your brand offers competitive benefits an
 ### Improve your employer branding.
 
 Branding isn’t just useful for helping consumers identify your company and products. You can and should invest in your employer branding to show potential candidates the unique characteristics that set your work environment apart from the competition.
-
-[Learn all about employer branding and how to attract quality candidates in our guide]().
 
 ### Invest in recruitment resources
 
