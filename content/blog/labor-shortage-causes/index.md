@@ -92,8 +92,6 @@ You’ll have to prove right away that your brand offers competitive benefits an
 
 Branding isn’t just useful for helping consumers identify your company and products. You can and should invest in your employer branding to show potential candidates the unique characteristics that set your work environment apart from the competition.
 
-[Learn all about employer branding and how to attract quality candidates in our guide]().
-
 ### Invest in recruitment resources
 
 The demands of creating and running a successful recruitment campaign are even more difficult than in recent years. You’ll need a professional team like the experts here at Insight to get the most reward out of your recruitment efforts.
