@@ -12,7 +12,7 @@ author: Emily Morehart
 categories:
   - Business Strategy
 page_class: single-post
-draft: false
+draft: true
 ---
 
 ![Labor Shortage Causes](Labor-Shortage-Causes.jpg)
