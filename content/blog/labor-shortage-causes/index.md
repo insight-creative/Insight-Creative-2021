@@ -12,7 +12,7 @@ author: Emily Morehart
 categories:
   - Business Strategy
 page_class: single-post
-draft: true
+draft: false
 ---
 
 ![Labor Shortage Causes](Labor-Shortage-Causes.jpg)
@@ -92,11 +92,11 @@ You’ll have to prove right away that your brand offers competitive benefits an
 
 Branding isn’t just useful for helping consumers identify your company and products. You can and should invest in your employer branding to show potential candidates the unique characteristics that set your work environment apart from the competition.
 
-### Invest in recruitment resources
+### Invest in recruitment resources.
 
 The demands of creating and running a successful recruitment campaign are even more difficult than in recent years. You’ll need a professional team like the experts here at Insight to get the most reward out of your recruitment efforts.
 
-## Find quality candidates, even in a labor shortage
+## Find quality candidates, even in a labor shortage.
 
 More access to remote work, higher employee standards and a change in values has made hiring in 2022 even more challenging for businesses. If your brand has positions to fill, you’ll need to step up your recruiting efforts.
 
