@@ -6,12 +6,11 @@ seo:
   description: Is Jamstack web architecture right for your website? Learn about the biggest Jamstack myths and the truth about this powerful tool.
   featured_image: html-on-screen.jpg
   featured_image_alt: HTML markup on screen
-date: 2022-09-13
+date: 2022-09-27
 author: Justin Parsons
 categories:
   - Web
 page_class: single-post
-draft: true
 ---
 
 ![HTML markup on screen](html-on-screen.jpg)
@@ -36,11 +35,11 @@ The Jamstack architecture allows us to have full control of a site’s source co
 
 ## Main benefits of Jamstack
 
-Jamstack’s unique web architecture provides many benefits that our clients have been able to take advantage of with their Jamstack sites. Of these benefits, those that I believe are most important are the faster performance, security, scalability and maintainability of Jamstack sites.
+Jamstack’s unique web architecture provides many benefits that our clients have been able to take advantage of with their Jamstack sites. Of these benefits, those that I believe are most important are the faster performance, security, scalability and maintenance of Jamstack sites.
 
 ### Faster performance
 
-Jamstack static sites serve site assets over a CDN (content delivery network) rather than having to communicate with a server every time data needs to be displayed. This means your site will take less time to load, increasing the performance of your entire site. Some inital results of one of our latest Jamstack development projects for [Law Firm of Conway, Olejniczak & Jerry S.C.](https://www.lcojlaw.com/) can be found below.
+Jamstack static sites serve site assets over a CDN (content delivery network) rather than having to communicate with a server every time data needs to be displayed. This means your site will take less time to load, increasing the performance of your entire site. Some inital results of one of our latest Jamstack development projects for the [Law Firm of Conway, Olejniczak & Jerry S.C.](https://www.lcojlaw.com/) can be found below.
 
 #### GTmetrix Report
 
@@ -58,7 +57,7 @@ Jamstack websites are pre-built static HTML files and are hosted on CDNs (conten
 
 When too many users navigate to a WordPress site, the server can become overwhelmed and crash the entire site. If your Jamstack website, on the other hand, suddenly goes viral and has many active users, the CDN seamlessly compensates.
 
-### Maintainability
+### Maintenance
 
 WordPress can be great, however, it is not free from defects, as every user will undoubtedly admit. One common oversight when building a WordPress website is that WordPress requires constant security and plugin updates. These updates are difficult to keep up with and are often buggy and can break your entire website. Websites built on a simplified Jamstack architecture remove plugins, servers and database from the equation and regular maintenance is no longer needed.
 
