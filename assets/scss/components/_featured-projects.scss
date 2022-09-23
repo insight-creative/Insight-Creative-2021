@@ -77,3 +77,10 @@
     }
   }
 }
+
+.featured-projects__link:nth-of-type(3),
+.featured-projects__link:nth-of-type(4) {
+  .featured-projects__heading {
+    order: 2;
+  }
+}
