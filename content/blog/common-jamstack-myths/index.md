@@ -11,6 +11,7 @@ author: Justin Parsons
 categories:
   - Web
 page_class: single-post
+draft: true
 ---
 
 ![HTML markup on screen](html-on-screen.jpg)
