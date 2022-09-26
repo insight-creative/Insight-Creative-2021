@@ -37,6 +37,16 @@ services:
       service_list: website hosting • software updates • regular backups • website audits • troubleshooting • bug fixes • performance optimizations • security scans • malware cleanup • analytics and reporting
 web_portfolio:
   portfolio_items:
+    - title: Matthews Tire
+      image: matthews-tire-website-screenshot.jpg
+      image_alt: Matthews Tire Website Preview
+      website_url: https://www.matthewstire.com/
+      tech_stack: Hugo | CloudCannon
+      lighthouse_score:
+        - score: "100"
+        - score: "100"
+        - score: "100"
+        - score: "100"
     - title: Law Firm of Conway, Olejniczak & Jerry, S.C.
       image: lcojlaw-website-screenshot.jpg
       image_alt: Law Firm of Conway, Olejniczak & Jerry, S.C. Website Preview
@@ -47,16 +57,16 @@ web_portfolio:
         - score: "100"
         - score: "100"
         - score: "100"
-    - title: Baileys Harbor Schoolhouse Inn
-      image: baileys-harbor-schoolhouse-inn-website-screenshot.jpg
-      image_alt: Baileys Harbor Schoolhouse Inn Website Preview
-      website_url: https://baileysharborinn.com/
-      tech_stack: Hugo | Netlify
-      lighthouse_score:
-        - score: "100"
-        - score: "100"
-        - score: "100"
-        - score: "100"
+    # - title: Baileys Harbor Schoolhouse Inn
+    #   image: baileys-harbor-schoolhouse-inn-website-screenshot.jpg
+    #   image_alt: Baileys Harbor Schoolhouse Inn Website Preview
+    #   website_url: https://baileysharborinn.com/
+    #   tech_stack: Hugo | Netlify
+    #   lighthouse_score:
+    #     - score: "100"
+    #     - score: "100"
+    #     - score: "100"
+    #     - score: "100"
     # - title: Greiber Heating & Sheet Metal
     #   image: greiber-heating-and-cooling-website-preview.jpg
     #   image_alt: Greiber Heating & Sheet Metal Website Preview

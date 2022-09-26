@@ -3,11 +3,11 @@ Title: Verve Public Relations Campaign
 seo:
   title: Verve Public Relations Campaign
   description:
-  featured_image: fraud-squad-cover-image.jpg
+  featured_image: fraud-squad-on-tv.jpg
 featured_project: false
 hero:
   image:
-    image_url: fraud-squad-cover-image.jpg
+    image_url: fraud-squad-on-tv.jpg
     image_alt: Fraud Squad promotion cover image
 date: 2022-08-29
 client: Verve

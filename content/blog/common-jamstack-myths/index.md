@@ -6,7 +6,7 @@ seo:
   description: Is Jamstack web architecture right for your website? Learn about the biggest Jamstack myths and the truth about this powerful tool.
   featured_image: html-on-screen.jpg
   featured_image_alt: HTML markup on screen
-date: 2022-09-27
+date: 2022-09-26
 author: Justin Parsons
 categories:
   - Web
