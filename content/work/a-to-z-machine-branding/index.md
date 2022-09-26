@@ -4,6 +4,8 @@ seo:
   title: A to Z Machine branding
   description: When A to Z Machine of Appleton needed full - service marketing expertise, Insight Creative lent expert branding, design, writing, photography and a new website!
   featured_image: a-to-z-machine-project-cover.jpg
+featured_project: true
+short_description:
 hero:
   image:
     image_url: a-to-z-machine-project-cover.jpg

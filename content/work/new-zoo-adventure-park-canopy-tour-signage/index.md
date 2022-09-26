@@ -4,6 +4,8 @@ seo:
   title: NEW Zoo & Adventure Park canopy tour signage
   description:
   featured_image: new-zoo-project-cover.jpg
+featured_project: true
+short_description:
 hero:
   image:
     image_url: new-zoo-project-cover.jpg
