@@ -5,7 +5,6 @@ seo:
   description: Insight reimagined Bank of Luxemburg’s nearly 70-year-old brand. See how voice, colors, typography and even illustrated fictional spokespeople came together.
   featured_image: bank-of-luxemburg-project-cover.jpg
 featured_project: true
-short_description: Putting “community” in community banking
 hero:
   image:
     image_url: bank-of-luxemburg-project-cover.jpg

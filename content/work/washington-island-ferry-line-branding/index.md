@@ -5,7 +5,6 @@ seo:
   description: See how the Washington Island Ferry entrusted Insight to create a new brand that reflects their modern operations but also respects the history with the Island community.
   featured_image: washington-island-ferry-project-cover.jpg
 featured_project: true
-short_description: Rebranding an anchored identity
 hero:
   image:
     image_url: washington-island-ferry-project-cover.jpg

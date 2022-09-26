@@ -10,7 +10,7 @@
                 <div class="zoom-image featured-projects__image with-zoom">
                     {{ partial "responsive-image" (dict "Page" . "image" .Params.hero.image.image_url "alt" .Params.hero.image.image_alt "sizes" "100vw" ) }}
                   <div class="featured-projects__overlay">
-                    <div class="featured-projects__desc h5">{{ .Params.short_description }}</div>
+                    <div class="featured-projects__desc h5">{{ .Params.intro.heading }}</div>
                   </div>
                 </div>
             </div>

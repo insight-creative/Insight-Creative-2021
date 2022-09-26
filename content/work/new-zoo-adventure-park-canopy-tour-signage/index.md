@@ -5,7 +5,6 @@ seo:
   description:
   featured_image: new-zoo-project-cover.jpg
 featured_project: true
-short_description:
 hero:
   image:
     image_url: new-zoo-project-cover.jpg

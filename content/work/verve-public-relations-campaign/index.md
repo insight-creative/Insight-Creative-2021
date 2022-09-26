@@ -5,7 +5,6 @@ seo:
   description:
   featured_image: fraud-squad-cover-image.jpg
 featured_project: false
-short_description:
 hero:
   image:
     image_url: fraud-squad-cover-image.jpg
