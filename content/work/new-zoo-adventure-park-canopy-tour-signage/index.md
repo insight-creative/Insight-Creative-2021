@@ -2,7 +2,7 @@
 Title: NEW Zoo & Adventure Park canopy tour signage
 seo:
   title: NEW Zoo & Adventure Park canopy tour signage
-  description:
+  description: When the NEW Zoo needed creative signage for the launch of their new Canopy Tour, Insight lent design and writing expertise to enhance the zoo’s existing brand!
   featured_image: new-zoo-project-cover.jpg
 featured_project: true
 hero:
