@@ -59,6 +59,8 @@ module.exports = {
             'nicole-ehlers',
             'cindy-struensee',
             'theresa-tebon',
+            'olivia-biskobing',
+            'chue-vang',
             'emphasis-underline--secondary',
             'new-zoo--adventure-park-canopy-tour-signage',
             'verve-public-relations-campaign',
