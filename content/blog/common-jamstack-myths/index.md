@@ -6,12 +6,12 @@ seo:
   description: Is Jamstack web architecture right for your website? Learn about the biggest Jamstack myths and the truth about this powerful tool.
   featured_image: html-on-screen.jpg
   featured_image_alt: HTML markup on screen
-date: 2022-09-26
+date: 2022-10-07
 author: Justin Parsons
 categories:
   - Web
 page_class: single-post
-draft: true
+draft: false
 ---
 
 ![HTML markup on screen](html-on-screen.jpg)
@@ -110,7 +110,7 @@ Because some CMSs like WordPress have SEO plugins available, some business owner
 
 ### The truth: Building a Jamstack website can help you achieve higher search rankings faster.
 
-Search engines like Google actually prefer static web pages. They’re fast, lightweight and easy to scan. Jamstack’s static architecture allows your pages to load faster and generally gives you a competitive edge and results in more [organic web traffic](https://insightcreative.com/blog/increase-organic-traffic/), quality leads and sales.
+Search engines like Google actually prefer static web pages. They’re fast, lightweight and easy to scan. Jamstack’s static architecture allows your pages to load faster and generally gives you a competitive edge and results in more [organic web traffic](/blog/increase-organic-traffic/), quality leads and sales.
 
 Jamstack also allows complete control over your site’s content and structure. You can boost your site’s SEO and ranking performance by properly optimizing all content. Adding custom metadata like page titles, meta descriptions and alt text is simple on Jamstack and all help to boost your search ranking across various platforms.
 
@@ -144,4 +144,4 @@ The Jamstack web architecture may _sound_ intimidating compared to sites like Wo
 
 Plus, you don’t have to be a tech wizard to understand! There are plenty of site templates and integrations that make it as easy to use as any other site.
 
-Ready to learn more about Jamstack and how Insight can help build a high-performing website for your business? [Contact us today](https://insightcreative.com/contact/) to tell us about your needs—we can’t wait to build your dream website.
+Ready to learn more about Jamstack and how Insight can help build a high-performing website for your business? [Contact us today](/contact/) to tell us about your needs—we can’t wait to build your dream website.
