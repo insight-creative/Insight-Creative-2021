@@ -8,7 +8,7 @@ seo:
   featured_image_alt: "Marketing Goals, Objectives, Strategy and Tactics"
 draft: true
 date: 2022-10-12
-author: Jordan Leon
+author: Insight Creative
 categories: ["Business Strategy"]
 page_class: single-post
 ---
@@ -23,9 +23,9 @@ If you’ve ever tried to develop a marketing strategy, you’ve no doubt encoun
 
 Why define marketing goals, objectives, strategies and tactics? These terms may seem basic, but they’re thrown around so often, they’ve begun to lose meaning. 
 
-Many business owners and marketers use the terms goals, objectives, strategies and tactics incorrectly—to the detriment of their marketing efforts and business overall. We’re here to ensure you don’t make the same mistake when developing your marketing strategy. 
+Many business owners and marketers use the terms __goals__, __objectives__, __strategies__ and __tactics__ incorrectly—to the detriment of their marketing efforts and business overall. We’re here to ensure you don’t make the same mistake when developing your strategy. 
 
-As a full-service agency, [Insight Creative](https://insightcreative.com/services/) has helped countless clients understand these essential marketing terms. Read on to learn their true definitions before you get started developing your strategy.
+Get a complete understanding of these essential marketing terms below.
 
 ## Goals
 
@@ -33,23 +33,21 @@ Marketing goals are the broad statements that cover what your business hopes to 
 
 Think of your goals as the final destination or end result of your overall marketing strategy. For example, you may want to get more organic website traffic, make more online sales or introduce new products.
 
-Marketing goals can be short-term or long-term, but each goal should be clearly defined and supported by measurable objectives. To make this process easier, use the SMART goal structure to develop effective marketing goals.
+Marketing goals can be short-term or long-term, but each goal should be clearly defined and supported by measurable objectives. To make this process easier, we recommend using the SMART goal structure.
 
 ### SMART goal structure
-
-The SMART goal structure ensures you include all the vital details you’ll need to develop effective marketing goals.  
 
 Each letter in the SMART acronym stands for a different characteristic of effective marketing goals. This ensures each of your goals are __specific__, __measurable__, __attainable__, __relevant__ and __timely__.
 
 ## Objectives
 
-Objectives are the __quantifiable__ elements of your strategic marketing plan and goals. Rather than describing your end goal like goals, strategies and tactics, objectives are a measuring tool that helps track your progress.
+Objectives are the __quantifiable__ elements of your strategic marketing plan and goals. Rather than describing your end goal objectives are measuring tools that helps track your progress.
 
-### Marketing objective examples
+### Effective marketing objective examples
 
-Your marketing objectives should be directly related to your marketing goals. 
+Your marketing objectives should be directly related to your marketing goals, making them more specific and measurable. 
 
-For example, if your goal is to get more online sales, an appropriate objective could be to increase organic website traffic by 15%.
+If your goal is to get more online sales, an appropriate objective could be to increase organic website traffic by 15%.  This sets a measurable objective to track your performance.
 
 Other examples of effective marketing objectives include:
 * Obtain 200 more Facebook subscribers over the next 30 days. 
@@ -69,6 +67,8 @@ Strategies _don’t_ describe specific activities—those are __tactics__. Strat
 * Content marketing
 * Social media marketing
 
+No matter which marketing channels you need to achieve your goals, we recommend developing a strategy for each one. This way, you'll always have a clear guide and a way to track your progress.
+
 ## Tactic
 
 Marketing tactics are the actions or specific ways you’ll do things in order to execute your overall marketing strategy and achieve your goals and objectives.
@@ -79,6 +79,10 @@ Tactics include the concrete actions you’ll undertake, as well as the physical
 * Write engaging blog posts. 
 * Engage with commenters and followers on social media. 
 * Provide valuable downloadable [gated content](https://blog.hubspot.com/marketing/ungated-content-free).
+
+It's normal to start generating ideas for your social media accounts, blog and other digital channels before you get to the tactic generation stage. Just don't get invested in any one idea too early.
+
+__Our tip__: Write down any specific tactics that come up throughout your planning so you can come back to them later and see if they still fit with your developed goals.
 
 ## Create an effective marketing strategy
 
