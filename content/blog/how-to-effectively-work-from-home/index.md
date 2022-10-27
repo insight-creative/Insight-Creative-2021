@@ -7,7 +7,7 @@ seo:
   featured_image: how-to-effectively-work-from-home-2500.jpg
   featured_image_alt: How to Effectively Work From Home
 date: 2020-05-19
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["Productivity"]
 page_class: single-post
 ---

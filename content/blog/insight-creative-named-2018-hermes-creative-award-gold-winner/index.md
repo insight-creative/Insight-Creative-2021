@@ -7,7 +7,7 @@ seo:
   featured_image: insight-creative-inc-named-2018-hermes-creative-award-gold-winner.jpg
   featured_image_alt: Image of Hermes award and creative cake piece
 date: 2018-07-05
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["News"]
 page_class: single-post
 ---

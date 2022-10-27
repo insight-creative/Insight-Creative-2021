@@ -7,7 +7,7 @@ seo:
   featured_image: real-time-marketing-wins-at-nyc-marathon-1.jpg
   featured_image_alt: asic statues of first 50 marathon runners
 date: 2015-01-12
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["Digital", "Social Media"]
 page_class: single-post
 ---

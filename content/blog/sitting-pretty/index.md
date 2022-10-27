@@ -7,7 +7,7 @@ seo:
   featured_image: Sitting-Pretty.jpg
   featured_image_alt: Man with bad posture sitting in chair hunched over laptop
 date: 2016-02-29
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["Productivity"]
 page_class: single-post
 ---

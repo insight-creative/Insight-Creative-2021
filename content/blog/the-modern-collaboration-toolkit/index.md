@@ -7,7 +7,7 @@ seo:
   featured_image: The-Modern-Collaboration-Toolkit.jpg
   featured_image_alt: Superhero illustration with logos for various collaboration tools such as BaseCamp and Asana
 date: 2015-10-13
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["Productivity"]
 page_class: single-post
 ---

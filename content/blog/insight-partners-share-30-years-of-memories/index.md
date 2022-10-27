@@ -7,7 +7,7 @@ seo:
   featured_image: insight-partners-share-30-years-of-memories.jpg
   featured_image_alt: 10 Tips that Ring True Long After Graduating as a Creative
 date: 2018-06-05
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["News"]
 page_class: single-post
 ---

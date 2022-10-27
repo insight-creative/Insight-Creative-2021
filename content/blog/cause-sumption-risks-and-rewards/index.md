@@ -7,7 +7,7 @@ seo:
   featured_image: cause-sumption-risks-and-rewards-cover.jpg
   featured_image_alt: Cause-Sumption Risks and Reward
 date: 2018-03-26
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["Business Strategy", "Branding"]
 page_class: single-post
 ---

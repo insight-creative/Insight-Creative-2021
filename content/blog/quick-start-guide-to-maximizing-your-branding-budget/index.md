@@ -7,7 +7,7 @@ seo:
   featured_image: Quick-Start-Guide-to-Maximizing-Your-Branding-Budget.jpg
   featured_image_alt: Stacks of one hundred dollar bills rapped in a band that says "Budget"
 date: 2016-03-30
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["Business Strategy", "Branding"]
 page_class: single-post
 ---

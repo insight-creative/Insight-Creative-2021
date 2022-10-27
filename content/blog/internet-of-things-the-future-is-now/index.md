@@ -7,7 +7,7 @@ seo:
   featured_image: internet-of-things.jpg
   featured_image_alt: Woman brewing a cup of coffee from her phone
 date: 2017-09-17
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["Business Strategy"]
 page_class: single-post
 ---

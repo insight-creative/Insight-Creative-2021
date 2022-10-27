@@ -7,7 +7,7 @@ seo:
   featured_image: microphone-with-crowd-in-background.jpg
   featured_image_alt: microphone with a crowd in the background
 date: 2021-09-16
-author: Emily Morehart
+author: Insight Creative, Inc.
 categories: ["Public Relations"]
 page_class: single-post
 ---

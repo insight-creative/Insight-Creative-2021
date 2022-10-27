@@ -7,7 +7,7 @@ seo:
   featured_image: b2b-vs-b2c-what-you-need-to-dominate-social-media.jpg
   featured_image_alt: Social Media Coordinator Jennifer Rogers illustrates what content is best for B2B and B2C companies.
 date: 2017-05-15
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["Content"]
 page_class: single-post
 ---

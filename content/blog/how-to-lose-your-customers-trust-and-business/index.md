@@ -7,7 +7,7 @@ seo:
   featured_image: How-to-Lose-Your-Customers-Trust-and-Business.jpg
   featured_image_alt: Happy, indifferent and sad faces
 date: 2015-08-07
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["Business Strategy"]
 page_class: single-post
 ---

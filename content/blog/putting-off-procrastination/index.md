@@ -7,7 +7,7 @@ seo:
   featured_image: dealing-with-procrastination.jpg
   featured_image_alt: Chalkboard with two options to choose, Now and Later
 date: 2017-01-18
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["Content"]
 page_class: single-post
 ---

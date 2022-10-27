@@ -7,7 +7,7 @@ seo:
   featured_image: Insight-News-2500.jpg
   featured_image_alt: Nicole Ehlers Headshot
 date: 2021-03-18
-author: Insight Creative
+author: Insight Creative, Inc.
 image: Insight-News-2500.jpg
 categories: ["News"]
 page_class: single-post

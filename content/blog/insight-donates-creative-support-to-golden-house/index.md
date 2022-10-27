@@ -7,7 +7,7 @@ seo:
   featured_image: Insight-Donates-Creative-Support-to-Golden-House.jpg
   featured_image_alt: Golden House All That Glitters event graphic
 date: 2015-10-01
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["News"]
 page_class: single-post
 ---

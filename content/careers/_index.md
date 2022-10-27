@@ -40,18 +40,12 @@ join_insight:
       body: With an ever-expanding list of clients in a variety of industries, you’ll have plenty of opportunities to flex your creativity each day. Outsiders are often shocked to see the volume of projects our team creates on an ongoing basis.
     - heading: Stability
       body: As the longest-standing agency in Green Bay, Insight hasn’t succeeded on outstanding creative work alone. The strong, sensible business strategy behind every decision has kept the work, staff and overall growth steady.
-    - heading: Great people
-      is_testimonial: true
-      body: Hands down, the best part about working at Insight is the people. I enjoy working with a kind and talented team who not only respect each other but have a lot of fun together too. That type of environment cultivates the best ideas and it shows in our work.”
-      author: Emily Morehart
-      job_title: PR/Content Manager
-      image_url: /images/staff/Emily-Morehart.jpg
-    - heading: Competitive pay
-      body: As part of the Second Wind Network, we research what other local agencies offer and do our best to provide staff with fair pay that both rewards hard work and emphasizes value.
     - heading: Team approach
       is_testimonial: true
       body: The collaboration amongst team members, everyone's willingness to contribute and the scope of what we can accomplish together are what make Insight stand out.”
       author: Brian Brost
       job_title: Account Executive
       image_url: /images/staff/Brian-Brost.jpg
+    - heading: Competitive pay
+      body: As part of the Second Wind Network, we research what other local agencies offer and do our best to provide staff with fair pay that both rewards hard work and emphasizes value.
 ---

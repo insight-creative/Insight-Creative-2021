@@ -7,7 +7,7 @@ seo:
   featured_image: the-power-of-asking-questions.jpg
   featured_image_alt: Retro comic style graphic of a question mark
 date: 2014-11-11
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["Business Strategy", "Branding"]
 page_class: single-post
 ---

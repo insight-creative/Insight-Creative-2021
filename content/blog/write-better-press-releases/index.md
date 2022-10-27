@@ -7,7 +7,7 @@ seo:
   featured_image: write-better-press-releases-2500.jpg
   featured_image_alt: Typewriter with Do's and Don'ts title typed out on a piece of paper
 date: 2020-05-29
-author: Emily Morehart
+author: Insight Creative, Inc.
 content: ["Content"]
 categories: ["Public Relations"]
 page_class: single-post

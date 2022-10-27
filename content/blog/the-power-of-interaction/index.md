@@ -7,7 +7,7 @@ seo:
   featured_image: google-microphone-icon.jpg
   featured_image_alt: Google's multicolored microphone icon
 date: 2016-07-27
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["Web"]
 page_class: single-post
 ---

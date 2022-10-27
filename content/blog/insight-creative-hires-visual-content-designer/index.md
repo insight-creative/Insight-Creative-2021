@@ -7,7 +7,7 @@ seo:
   featured_image: Sam_Intro-Web-001.jpg
   featured_image_alt: Headshot of Insight Creatives new visual content designer Sam Rowe
 date: 2018-10-23
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["News"]
 page_class: single-post
 ---

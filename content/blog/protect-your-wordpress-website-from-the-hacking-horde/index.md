@@ -7,7 +7,7 @@ seo:
   featured_image: Protect-Your-Wordpress-Website-From-the-Hacking-Horde.jpg
   featured_image_alt: WordPress logo on a double door with zombie hands between doors
 date: 2015-06-29
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["Web"]
 page_class: single-post
 ---

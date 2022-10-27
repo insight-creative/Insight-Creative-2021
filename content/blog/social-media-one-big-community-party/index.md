@@ -7,7 +7,7 @@ seo:
   featured_image: social-media-one-big-community-party.jpg
   featured_image_alt: "Social media: one big community party"
 date: 2019-06-24
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["Content"]
 page_class: single-post
 ---

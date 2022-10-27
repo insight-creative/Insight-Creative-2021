@@ -7,7 +7,7 @@ seo:
   featured_image: 11-Blogs-for-Marketing-and-Business-Inspiration-1.jpg
   featured_image_alt:
 date: 2016-09-28
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["Productivity"]
 page_class: single-post
 ---

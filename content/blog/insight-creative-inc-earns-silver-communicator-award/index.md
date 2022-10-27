@@ -7,7 +7,7 @@ seo:
   featured_image: Insight-Creative-Inc-Earns-Silver-Communicator-Award.jpg
   featured_image_alt: Communicator Award
 date: 2015-06-01
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["News"]
 page_class: single-post
 ---

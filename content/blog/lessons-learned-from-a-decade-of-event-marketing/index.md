@@ -7,7 +7,7 @@ seo:
   featured_image: insight-creative-event-marketing-team-fox-cities-marathon.jpg
   featured_image_alt: Insight Creative event marketing team working at the Fox Cities Marathon
 date: 2022-02-21
-author: Insight Creative
+author: Insight Creative, Inc.
 categories:
   - Business Strategy
   - Social Media

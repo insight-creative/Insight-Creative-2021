@@ -7,7 +7,7 @@ seo:
   featured_image: The-Podcast-Surge-2400.jpg
   featured_image_alt: A podcast production style setup with microphone and headphones on a table
 date: 2019-11-14
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["Content"]
 page_class: single-post
 ---

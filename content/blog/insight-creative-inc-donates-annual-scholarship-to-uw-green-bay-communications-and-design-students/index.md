@@ -7,7 +7,7 @@ seo:
   featured_image: insight-Scholarship-Check.jpg
   featured_image_alt: UW-Green Bay Communications and Design Students Scholarship
 date: 2018-08-21
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["News"]
 page_class: single-post
 ---

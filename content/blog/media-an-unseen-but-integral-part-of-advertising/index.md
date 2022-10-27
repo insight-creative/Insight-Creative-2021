@@ -7,7 +7,7 @@ seo:
   featured_image: analytics-dashboard-on-laptop.jpg
   featured_image_alt: laptop sitting on desk with analytics dashboard on display
 date: 2020-10-30
-author: Insight Creative
+author: Insight Creative, Inc.
 description: ""
 categories: ["Media", "Digital"]
 page_class: single-post

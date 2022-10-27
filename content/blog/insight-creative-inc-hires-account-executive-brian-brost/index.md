@@ -7,7 +7,7 @@ seo:
   featured_image: brian-brost.jpg
   featured_image_alt: Headshot of Account Executive Brian Brost
 date: 2017-10-04
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["News"]
 page_class: single-post
 ---

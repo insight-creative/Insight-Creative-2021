@@ -7,7 +7,7 @@ seo:
   featured_image: Back-to-Basics-with-Content.jpg
   featured_image_alt: Hand on laptop keyboard with notebook, pen, and phone sitting on desk
 date: 2016-07-15
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["Content"]
 page_class: single-post
 ---

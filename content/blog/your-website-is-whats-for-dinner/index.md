@@ -7,7 +7,7 @@ seo:
   featured_image: Your-Website-is-Whats-for-Dinner-1.jpg
   featured_image_alt: Warning! message
 date: 2016-03-31
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["Web"]
 page_class: single-post
 ---

@@ -7,7 +7,7 @@ seo:
   featured_image: influencer-marketing-risks-and-rewards.jpg
   featured_image_alt: 10 Tips that Ring True Long After Graduating as a Creative
 date: 2017-09-07
-author: Emily Morehart
+author: Insight Creative, Inc.
 categories: ["Content", "Social Media"]
 page_class: single-post
 ---

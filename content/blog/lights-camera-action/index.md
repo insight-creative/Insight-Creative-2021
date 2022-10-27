@@ -7,7 +7,7 @@ seo:
   featured_image: lights-camera-action.jpg
   featured_image_alt: Close up of video camera while recording a subject
 date: 2016-05-02
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["Studio"]
 page_class: single-post
 ---

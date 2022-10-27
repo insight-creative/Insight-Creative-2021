@@ -7,7 +7,7 @@ seo:
   featured_image: is-your-hosting-provider-delivering.jpg
   featured_image_alt: Room full of server hardware
 date: 2018-06-26
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["Web"]
 page_class: single-post
 ---

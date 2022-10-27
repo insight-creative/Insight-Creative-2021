@@ -7,7 +7,7 @@ seo:
   featured_image: how-do-you-rate.jpg
   featured_image_alt: Graph of reviews and ratings
 date: 2017-02-08
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["Content", "Public Relations"]
 page_class: single-post
 ---

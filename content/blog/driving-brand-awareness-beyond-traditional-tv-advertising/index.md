@@ -7,7 +7,7 @@ seo:
   featured_image: driving-brand-awareness-beyond-traditional-tv-advertising-cover.jpg
   featured_image_alt: hand holding TV remote and TV with streaming services on screen in background
 date: 2018-02-26
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["Media", "Digital", "Branding"]
 page_class: single-post
 ---

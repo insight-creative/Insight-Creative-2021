@@ -3,27 +3,27 @@ layout: blog
 title: 5 marketing terms you need to know to develop an effective strategy
 seo:
   title: 5 marketing terms you need to know to develop an effective strategy
-  description: What do marketing goals, objectives, strategies and tactics really mean? Learn the definitions of these commonly misused marketing terms. 
+  description: What do marketing goals, objectives, strategies and tactics really mean? Learn the definitions of these commonly misused marketing terms.
   featured_image: marketing-101-goals-objectives-strategy-and-tactics.jpg
   featured_image_alt: "Marketing Goals, Objectives, Strategy and Tactics"
-draft: true
+draft: false
 date: 2022-10-12
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["Business Strategy"]
 page_class: single-post
 ---
 
 ![Marketing Goals, Objectives, Strategy and Tactics](marketing-101-goals-objectives-strategy-and-tactics.jpg)
 
-*“We help develop __strategy__!” … Tell me your __objective__? … What are your advertising __goals__? … Here’s a list of __tactics__ you can use.”*
+_“We help develop __strategy__!” … Tell me your __objective__? … What are your advertising __goals__? … Here’s a list of __tactics__ you can use.”_
 
 If you’ve ever tried to develop a marketing strategy, you’ve no doubt encountered the common marketing terms above. But do you really know what they mean?
 
-## Defining commonly misused marketing terms 
+## Defining commonly misused marketing terms
 
-Why define marketing goals, objectives, strategies and tactics? These terms may seem basic, but they’re thrown around so often, they’ve begun to lose meaning. 
+Why define marketing goals, objectives, strategies and tactics? These terms may seem basic, but they’re thrown around so often, they’ve begun to lose meaning.
 
-Many business owners and marketers use the terms __goals__, __objectives__, __strategies__ and __tactics__ incorrectly—to the detriment of their marketing efforts and business overall. We’re here to ensure you don’t make the same mistake when developing your strategy. 
+Many business owners and marketers use the terms __goals__, __objectives__, __strategies__ and __tactics__ incorrectly—to the detriment of their marketing efforts and business overall. We’re here to ensure you don’t make the same mistake when developing your strategy.
 
 Get a complete understanding of these essential marketing terms below.
 
@@ -45,14 +45,15 @@ Objectives are the __quantifiable__ elements of your strategic marketing plan an
 
 ### Effective marketing objective examples
 
-Your marketing objectives should be directly related to your marketing goals, making them more specific and measurable. 
+Your marketing objectives should be directly related to your marketing goals, making them more specific and measurable.
 
-If your goal is to get more online sales, an appropriate objective could be to increase organic website traffic by 15%.  This sets a measurable objective to track your performance.
+If your goal is to get more online sales, an appropriate objective could be to increase organic website traffic by 15%. This sets a measurable objective to track your performance.
 
 Other examples of effective marketing objectives include:
-* Obtain 200 more Facebook subscribers over the next 30 days. 
-* Get 300 newsletter subscribers by January 1st. 
-* Rank among the top ten results for our target keywords.
+
+- Obtain 200 more Facebook subscribers over the next 30 days.
+- Get 300 newsletter subscribers by January 1st.
+- Rank among the top ten results for our target keywords.
 
 ## Strategy
 
@@ -62,10 +63,10 @@ Strategies _don’t_ describe specific activities—those are __tactics__. Strat
 
 ### Marketing strategy examples
 
-* Business-to-business (B2B) marketing 
-* Direct marketing 
-* Content marketing
-* Social media marketing
+- Business-to-business (B2B) marketing
+- Direct marketing
+- Content marketing
+- Social media marketing
 
 No matter which marketing channels you need to achieve your goals, we recommend developing a strategy for each one. This way, you'll always have a clear guide and a way to track your progress.
 
@@ -76,9 +77,10 @@ Marketing tactics are the actions or specific ways you’ll do things in order t
 Tactics include the concrete actions you’ll undertake, as well as the physical pieces you’ll create or the connections you’ll make within your marketing strategy.
 
 ### Marketing tactic examples
-* Write engaging blog posts. 
-* Engage with commenters and followers on social media. 
-* Provide valuable downloadable [gated content](https://blog.hubspot.com/marketing/ungated-content-free).
+
+- Write engaging blog posts.
+- Engage with commenters and followers on social media.
+- Provide valuable downloadable [gated content](https://blog.hubspot.com/marketing/ungated-content-free).
 
 It's normal to start generating ideas for your social media accounts, blog and other digital channels before you get to the tactic generation stage. Just don't get invested in any one idea too early.
 

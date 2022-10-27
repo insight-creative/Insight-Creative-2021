@@ -7,7 +7,7 @@ seo:
   featured_image: drone-shot-cover-low.jpg
   featured_image_alt: Drone shot of downtown Green Bay, WI
 date: 2019-10-14
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["Studio"]
 page_class: single-post
 ---

@@ -7,7 +7,7 @@ seo:
   featured_image: Insight-Designer-Paints-Golden-Helmet-for-Super-Bowl-50.jpg
   featured_image_alt:
 date: 2016-02-04
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["News"]
 page_class: single-post
 ---

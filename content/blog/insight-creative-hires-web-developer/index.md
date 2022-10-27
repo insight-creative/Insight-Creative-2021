@@ -7,7 +7,7 @@ seo:
   featured_image: Justin_Parsons_Full.jpg
   featured_image_alt: Headshot of Insight Creatives new web developer Justin Parsons
 date: 2018-09-19
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["News"]
 page_class: single-post
 ---

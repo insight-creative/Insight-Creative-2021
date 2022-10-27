@@ -7,7 +7,7 @@ seo:
   featured_image: beyonce-new-facebook-profile-preview.jpg
   featured_image_alt: Beyonces Facebook profile
 date: 2021-06-02
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["Social Media"]
 page_class: single-post
 ---

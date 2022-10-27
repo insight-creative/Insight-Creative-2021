@@ -7,7 +7,7 @@ seo:
   featured_image: fueling-my-addiction.jpg
   featured_image_alt: Person with phone in one hand and a cup of coffee in the other hand
 date: 2015-07-14
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["Business Strategy", "Branding"]
 page_class: single-post
 ---

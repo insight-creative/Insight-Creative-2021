@@ -7,7 +7,7 @@ seo:
   featured_image: marketing-to-millennials-are-you-doing-it-right.jpg
   featured_image_alt: 10 Tips that Ring True Long After Graduating as a Creative
 date: 2018-05-14
-author: Insight Creative
+author: Insight Creative, Inc.
 categories: ["Content"]
 page_class: single-post
 ---
