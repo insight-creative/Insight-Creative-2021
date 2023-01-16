@@ -28,8 +28,8 @@ approach:
     description: "noun | sub<span class='separator separator--red'></span> stance | <span class='text-tertiary'>/ ’sub stəns/:</span> the quality of being <span class='text-secondary'>important</span> or <span class='text-secondary'>significant</span>."
     copy: We firmly believe that—for communication to be effective and easy to understand—we must provide substance. Too often, marketers rely on over-inflated language and fancy designs to “wow” their audiences. By using <strong><em>Communication with substance</em></strong>, we commit to meaningful dialogue. Every message Insight creates leads with the significant information audiences need to act. We believe that clear communication leads to effective communication, and effective communication leads to results!
 team_images: 
-    - image: insight-team-outing-at-ledgestone-winery.jpg 
-      image_alt: The Insight Creative Team outing at Ledgestone Winery
+    - image: christmas_group2022.jpg
+      image_alt: The Insight Creative Team gathering around for a Christmas party
     - image: insight-team-cookout.jpg
       image_alt: The Insight Creative Team gathering around for a summer cookout
 meet_the_team: 
