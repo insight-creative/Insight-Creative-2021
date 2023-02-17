@@ -11,10 +11,10 @@ intro:
   body: In an industry where being different is prized, we are proud to admit that working at Insight is unlike any experience you’ll have elsewhere. We embrace our individual quirks and believe it’s what fuels our creativity and balances our team. We also believe the right mixture of talents and personalities creates the best work, and ultimately, the best results for our customers. If you have something fresh to lend to our team, please contact us or browse the open positions below.
 current_opportunities:
   opportunities:
-    - heading: Content Copywriter
-      icon: copywriting
-      summary: The Copywriter is responsible for the strategy, creative concepting, copywriting and creating content on behalf of Insight’s diverse client base. Ideal candidates will possess exceptional writing portfolios, proven experience with SEO practices, unwavering creative stamina and a solid understanding of branding/marketing. Additionally, this position is responsible for collaborating with the Creative Director on various projects for creative concepting, copy (AP style), proofreading edits and other input on a continual basis.
-      posting_url: https://www.linkedin.com/jobs/view/copywriter-at-insight-creative-inc-3269391909/
+    # - heading: Content Copywriter
+    #   icon: copywriting
+    #   summary: The Copywriter is responsible for the strategy, creative concepting, copywriting and creating content on behalf of Insight’s diverse client base. Ideal candidates will possess exceptional writing portfolios, proven experience with SEO practices, unwavering creative stamina and a solid understanding of branding/marketing. Additionally, this position is responsible for collaborating with the Creative Director on various projects for creative concepting, copy (AP style), proofreading edits and other input on a continual basis.
+    #   posting_url: https://www.linkedin.com/jobs/view/copywriter-at-insight-creative-inc-3269391909/
     # - heading: Marketing Coordinator
     #   icon: buying
     #   summary: The marketing coordinator will work with an experienced team of media buyers, designers, copywriters, social media experts and account executives to place award-winning creative for a wide variety of clients. Working closely with Insight’s media director, the marketing coordinator will assist with campaign schedules on television, radio, billboard, print and digital media. The marketing coordinator will also support the media director in preparing presentation materials, media plans or full media proposals and assisting will other administrative tasks.
