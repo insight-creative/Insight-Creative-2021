@@ -61,6 +61,7 @@ module.exports = {
             'theresa-tebon',
             'olivia-biskobing',
             'chue-vang',
+            'melissa-gorzelanczyk',
             'emphasis-underline--secondary',
             'new-zoo--adventure-park-canopy-tour-signage',
             'verve-public-relations-campaign',
