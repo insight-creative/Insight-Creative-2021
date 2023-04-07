@@ -65,6 +65,7 @@ module.exports = {
             'emphasis-underline--secondary',
             'new-zoo--adventure-park-canopy-tour-signage',
             'verve-public-relations-campaign',
+            'insight-promotes-niki-petit-to-vice-president-and-adds-melissa-gorzelanczyk-to-creative-team'
           ],
     }),
   ],
