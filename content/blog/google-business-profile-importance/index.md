@@ -8,7 +8,7 @@ seo:
   featured_image_alt: Business business
 draft: false
 date: 2023-01-13
-author: Jordan Leon
+author: Insight Creative, Inc.
 categories:
   - Business Strategy
 page_class: single-post

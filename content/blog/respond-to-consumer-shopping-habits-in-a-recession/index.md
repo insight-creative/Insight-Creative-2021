@@ -8,7 +8,7 @@ seo:
   featured_image_alt: People shopping at a large mall
 draft: false
 date: 2022-08-08
-author: Jordan Leon
+author: Insight Creative, Inc.
 featured: true
 categories:
   - Featured

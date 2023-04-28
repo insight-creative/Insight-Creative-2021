@@ -14,7 +14,7 @@ page_class: single-post
 
 ![Insight News Banner](Insight-News-2500.jpg)
 
-Insight Creative, Inc. recently expanded its content creation team with two new team members. [**Theresa Tebon**](/about/theresa-tebon/) was hired as social media specialist and [**Jordan Leon**](/about/jordan-leon/) was hired as digital copywriter.
+Insight Creative, Inc. recently expanded its content creation team with two new team members. [**Theresa Tebon**](/about/theresa-tebon/) was hired as social media specialist and **Jordan Leon** was hired as digital copywriter.
 
 ![Theresa Tebon Headshot](theresa-tebon-full.jpg)
 
