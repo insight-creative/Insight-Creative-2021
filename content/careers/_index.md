@@ -34,7 +34,7 @@ join_insight:
       is_testimonial: true
       body: Working at Insight is NEVER boring! We have big personalities, the clients keep it challenging (in a good way), and the work is always creative. I can’t imagine working anywhere else.”
       author: Niki Petit
-      job_title: Director of Business Development
+      job_title: Vice President
       image_url: /images/staff/Niki-Petit.jpg
     - heading: Creative satisfaction
       body: With an ever-expanding list of clients in a variety of industries, you’ll have plenty of opportunities to flex your creativity each day. Outsiders are often shocked to see the volume of projects our team creates on an ongoing basis.
