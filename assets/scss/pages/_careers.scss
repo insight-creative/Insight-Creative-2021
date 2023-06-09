@@ -96,3 +96,10 @@
     }
   }
 }
+
+.careers-post ul,
+.careers-post ol {
+  @include breakpoint(md) {
+    padding: 0 0 0 2.5rem;
+  }
+}

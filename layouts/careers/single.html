@@ -1,0 +1,35 @@
+{{ define "main" }}
+<section class="blog-hero bg-black block text-center">
+  <div class="wrapper-md flow">
+    <img src="/images/blog-icons/{{ .Params.hero.icon }}" alt="{{ .Title }} icon">
+    <h1>{{ .Title | markdownify }}</h1>
+    <h2 class="h3 text-center">{{ .Params.hero.subhead | markdownify }}</h2>
+  </div>
+</section>
+<div class="careers-post post-content block">
+    <div class="wrapper">
+        <div class="wrapper-md auto-grid-md">
+            <div>
+                <h3 class="h5 no-margin">Office Location</h3>
+                <p>Green Bay, WI</p>
+            </div>
+            <div>
+                <h3 class="h5 no-margin">Years of Experience</h3>
+                <p>{{ .Params.years_of_experience }}</p>
+            </div>
+            <div>
+                <a href="/apply-now/" class="btn-arrow">Apply Now {{ partialCached "svg-icons/arrow-circle-right.svg" . }}</a>
+            </div>
+        </div>
+        <hr>
+        <article role="article" class="post__body flow pt-6">
+            {{ .Content | markdownify }}
+            <a href="/apply-now/" class="btn btn-primary">Apply Now</a>
+            <div class="share-this share-this--row flex flex-column flex-row-m">
+                {{ partial "blog/share-buttons" . }}
+            </div>
+        </article>
+    </div>
+</div>
+<div id="apply-now" class="apply"></div>
+{{ end }}

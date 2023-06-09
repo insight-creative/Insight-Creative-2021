@@ -1,0 +1,61 @@
+{{ define "main" }}
+<div class="block">
+    <div class="wrapper">
+      <div class="contact-form">
+        <h4 class="no-margin">Applicant Information</h4>
+        <div class="contact-form__wrapper">
+          <form name="Job Application Form" method="POST" data-netlify-recaptcha="true" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field" action="/contact/thank-you/">
+            <div hidden>
+              <label for="bot-field">
+                Don’t fill this out if you're human: 
+                <input name="bot-field" id="bot-field" />
+              </label>
+            </div>
+            <div class="visually-hidden">
+              <label for="subject">New form submission from the insightcreative.com job application form</label>
+              <input aria-label="subject" name="subject" value="New form submission from the insightcreative.com job application form" />
+            </div>
+            <div class="contact-form__form-group">
+              <label for="help">Position applying for?*</label>
+              <select id="help" name="help" type="select" class="contact-form__form-control" required>
+                <option value="Please Select">Please Select</option>
+                <option value="Copywriter">Copywriter</option> 
+                <option value="Marketing Coordinator">Marketing Coordinator</option>
+              </select>
+            </div>
+            <div class="contact-form__form-group">
+              <label for="name">Name*</label>
+              <input id="name" name="name" type="text" class="contact-form__form-control" required>
+            </div>
+            <div class="contact-form__form-group">
+              <label for="email">Email*</label>
+              <input id="email" name="_replyto" type="email" class="contact-form__form-control" required>
+            </div>
+            <div class="contact-form__form-group">
+              <label for="phone">Phone*</label>
+              <input id="phone" name="phone" type="tel" class="contact-form__form-control" required>
+            </div>
+            <div class="contact-form__form-group">
+              <label for="website">Website or LinkedIn URL*</label>
+              <input id="website" name="website" type="text" class="contact-form__form-control" required>
+            </div>
+            <div class="contact-form__form-group">
+              <label for="resume">Resume*</label>
+              <input id="resume" name="resume" type="file" class="contact-form__form-control" required>
+            </div>
+            <div class="contact-form__form-group">
+              <label for="cover_letter">Cover letter</label>
+              <input id="cover_letter" name="cover_letter" type="file" class="contact-form__form-control">
+            </div>
+            <div class="contact-form__form-group">
+              <label for="message">Message*</label>
+              <textarea id="message" name="message" class="contact-form__form-control" rows="4" required></textarea>
+            </div>
+            <div data-netlify-recaptcha="true"></div>
+            <button target="_blank" type="submit" class="contact-form__btn btn btn-primary">Send Application</button>
+          </form>
+        </div>
+      </div>
+    </div>
+</div>
+{{ end }}

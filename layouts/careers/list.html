@@ -24,39 +24,35 @@
         </div>
     </div>
     <div class="wrapper-lg">
-        {{ with .Params.current_opportunities }}
-        <div class="flex flex-column">
-            {{ if .opportunities }}
-            {{ range .opportunities }}
+        {{ if .Pages }}
+            {{ range .Pages }}
             <div class="service-card bg-black fade-up">
                 <div class="service-card__inner">
                     <div class="flex flex-column flex-row-m">
                         <div class="service-card__icon-wrapper w-100 w-30-m flex flex-column">
                             <div class="service-card__icon flow">
-                                <img src="/images/service-icons/{{ .icon }}-icon.svg" alt="{{ .icon }} icon">
-                                <a href="{{ .posting_url }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">See full job listing</a>
+                                <img src="/images/blog-icons/{{ .Params.hero.icon }}" alt="{{ .Title }} icon">
+                                <a href="{{ .Permalink }}" class="btn btn-primary">See full job listing</a>
                             </div>
                         </div>
                         <div class="w-100 w-70-m">
-                            <h3 class="h4 text-white no-margin">{{ .heading | markdownify }}</h3>
+                            <h3 class="h4 text-white no-margin">{{ .Title | markdownify }}</h3>
                             <div class="service-card__underline"></div>
                             <span class="text-tertiary"><em>Full time, salaried position in Green Bay, WI</em></span>
-                            <p class="service-card__desc">{{ .summary | markdownify }}</p>
+                            <p class="service-card__desc">{{ .Params.summary | markdownify }}</p>
                             <p class="service-card__service-list text-dark-gray">401(k) • 401(k) matching • flexible schedule • health insurance • health savings account • life insurance • paid time off</p>
                         </div>
                     </div>
                 </div>
             </div>
             {{ end }}
-            {{ else }}
-            <div class="no-opportunities bg-black block">
-                <div class="wrapper flow text-center">
-                    <h4 class="b">Sorry, we currently do not have any positions available.</h4>
-                    <h4>Please check back later, or submit a resume for us to keep on file.</h4>
-                    <a href="/contact/" class="btn btn-primary">Contact Us</a>
-                </div>
+        {{ else }}
+        <div class="no-opportunities bg-black block">
+            <div class="wrapper flow text-center">
+                <h4 class="b">Sorry, we currently do not have any positions available.</h4>
+                <h4>Please check back later, or submit a resume for us to keep on file.</h4>
+                <a href="/contact/" class="btn btn-primary">Contact Us</a>
             </div>
-            {{ end }}
         </div>
         {{ end }}
     </div> 
