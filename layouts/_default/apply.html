@@ -4,7 +4,7 @@
       <div class="contact-form">
         <h4 class="no-margin">Applicant Information</h4>
         <div class="contact-form__wrapper">
-          <form name="Job Application Form" method="POST" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field">
+          <form name="Job Application Form" method="POST" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field" action="/contact/thank-you/">
             <div hidden>
               <label for="bot-field">
                 Don’t fill this out if you're human: 
@@ -38,6 +38,14 @@
             <div class="contact-form__form-group">
               <label for="website">Website or LinkedIn URL*</label>
               <input id="website" name="website" type="text" class="contact-form__form-control" required>
+            </div>
+            <div class="contact-form__form-group">
+              <label for="resume">Resume*</label>
+              <input id="resume" name="resume" type="file" class="contact-form__form-control" required>
+            </div>
+            <div class="contact-form__form-group">
+              <label for="cover_letter">Cover letter</label>
+              <input id="cover_letter" name="cover_letter" type="file" class="contact-form__form-control">
             </div>
             <div class="contact-form__form-group">
               <label for="message">Message*</label>
