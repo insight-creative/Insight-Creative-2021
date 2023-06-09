@@ -4,8 +4,7 @@
       <div class="contact-form">
         <h4 class="no-margin">Applicant Information</h4>
         <div class="contact-form__wrapper">
-          <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-          <form name="Job Application Form" method="POST" data-netlify-recaptcha="true" data-netlify="true" netlify-honeypot="bot-field">
+          <form name="Job Application Form" method="POST" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field">
             <div hidden>
               <label for="bot-field">
                 Don’t fill this out if you're human: 
@@ -44,7 +43,6 @@
               <label for="message">Message*</label>
               <textarea id="message" name="message" class="contact-form__form-control" rows="4" required></textarea>
             </div>
-            <div data-netlify-recaptcha="true"></div>
             <button target="_blank" type="submit" class="contact-form__btn btn btn-primary">Send Application</button>
           </form>
         </div>
