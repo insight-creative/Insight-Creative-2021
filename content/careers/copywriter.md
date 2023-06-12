@@ -9,7 +9,7 @@ hero:
   subhead: Let's put <span class="emphasis-red">words</span> to work!
   icon: content-icon.svg
 years_of_experience: 3+ Years
-summary: We are currently seeking an experienced copywriter who aspires to work in an agency setting. This is a part or full-time position working from our office in Green Bay, WI, and not a work-from-home or telecommute opportunity.  In this role, you will create engaging, compelling messages for a wide variety of clients in a wide variety of industries. The ideal candidate is skilled in crafting both long-form and short-form content for distribution through multiple communication channels.
+summary: We are currently seeking an experienced copywriter who aspires to work in an agency setting. This is a part- or full-time position working from our office in Green Bay, WI, and not a work-from-home or telecommute opportunity.  In this role, you will create engaging, compelling messages for a wide variety of clients in a wide variety of industries. The ideal candidate is skilled in crafting both long-form and short-form content for distribution through multiple communication channels.
 ---
 ## About Us
 
@@ -24,7 +24,7 @@ Our agency is home to a group of bright, seasoned marketing professionals who in
 
 ## Job Description
 
-We are currently seeking an experienced copywriter who aspires to work in an agency setting. This is a part or full-time position working from our office in Green Bay, WI, and not a work-from-home or telecommute opportunity.  In this role, you will create engaging, compelling messages for a wide variety of clients in a wide variety of industries. The ideal candidate is skilled in crafting both long-form and short-form content for distribution through multiple communication channels.
+We are currently seeking an experienced copywriter who aspires to work in an agency setting. This is a part- or full-time position working from our office in Green Bay, WI, and not a work-from-home or telecommute opportunity.  In this role, you will create engaging, compelling messages for a wide variety of clients in a wide variety of industries. The ideal candidate is skilled in crafting both long-form and short-form content for distribution through multiple communication channels.
 
 Having knowledge of general marketing principles and experience with evolving marketing tactics such as SEO is a plus. Above all, we’re seeking people with a passion for the written word, a willingness to learn and grow and the ability to thrive in a team environment.
 
