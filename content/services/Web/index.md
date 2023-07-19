@@ -57,26 +57,6 @@ web_portfolio:
         - score: "100"
         - score: "100"
         - score: "100"
-    # - title: Baileys Harbor Schoolhouse Inn
-    #   image: baileys-harbor-schoolhouse-inn-website-screenshot.jpg
-    #   image_alt: Baileys Harbor Schoolhouse Inn Website Preview
-    #   website_url: https://baileysharborinn.com/
-    #   tech_stack: Hugo | Netlify
-    #   lighthouse_score:
-    #     - score: "100"
-    #     - score: "100"
-    #     - score: "100"
-    #     - score: "100"
-    # - title: Greiber Heating & Sheet Metal
-    #   image: greiber-heating-and-cooling-website-preview.jpg
-    #   image_alt: Greiber Heating & Sheet Metal Website Preview
-    #   website_url: https://www.greiberheating.com/
-    #   tech_stack: Hugo | Netlify
-    #   lighthouse_score:
-    #     - score: "100"
-    #     - score: "100"
-    #     - score: "100"
-    #     - score: "100"
     - title: A to Z Machine
       image: atozmachine-website-preview.jpg
       image_alt: A to Z Machine website preview
@@ -84,6 +64,56 @@ web_portfolio:
       tech_stack: Hugo | Netlify
       lighthouse_score:
         - score: "97"
+        - score: "100"
+        - score: "100"
+        - score: "100"
+    - title: Stadium Bike
+      image: stadium-bike-website-preview.jpg
+      image_alt: Stadium Bike website preview
+      website_url: https://www.stadiumbike.com/
+      tech_stack: Hugo | Cloudcannon
+      lighthouse_score:
+        - score: "92"
+        - score: "100"
+        - score: "92"
+        - score: "100"
+    - title: Fox Structures
+      image: fox-structures-website-preview.jpg
+      image_alt: Fox Structures website preview
+      website_url: https://foxstructures.com/
+      tech_stack: Hugo | Cloudcannon
+      lighthouse_score:
+        - score: "94"
+        - score: "100"
+        - score: "92"
+        - score: "92"
+    - title: Mind Team
+      image: mind-team-website-preview.jpg
+      image_alt: Mind Team website preview
+      website_url: https://www.mymindteam.com/
+      tech_stack: Hugo | Cloudcannon
+      lighthouse_score:
+        - score: "94"
+        - score: "100"
+        - score: "92"
+        - score: "100"
+    - title: Milk Source
+      image: milksource-website-preview.jpg
+      image_alt: Milk Source website preview
+      website_url: https://www.milksource.com/
+      tech_stack: Hugo | Cloudcannon
+      lighthouse_score:
+        - score: "95"
+        - score: "100"
+        - score: "92"
+        - score: "100"
+    - title: Baileys Harbor Schoolhouse Inn
+      image: baileys-harbor-schoolhouse-inn-website-screenshot.jpg
+      image_alt: Baileys Harbor Schoolhouse Inn Website Preview
+      website_url: https://baileysharborinn.com/
+      tech_stack: Hugo | Netlify
+      lighthouse_score:
+        - score: "100"
         - score: "100"
         - score: "100"
         - score: "100"
