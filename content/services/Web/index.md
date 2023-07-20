@@ -41,7 +41,7 @@ web_portfolio:
       image: matthews-tire-website-screenshot.jpg
       image_alt: Matthews Tire Website Preview
       website_url: https://www.matthewstire.com/
-      tech_stack: Hugo | CloudCannon
+      tech_stack: Hugo | CloudCannon | Imgix
       lighthouse_score:
         - score: "100"
         - score: "100"
@@ -51,7 +51,7 @@ web_portfolio:
       image: lcojlaw-website-screenshot.jpg
       image_alt: Law Firm of Conway, Olejniczak & Jerry, S.C. Website Preview
       website_url: https://www.lcojlaw.com/
-      tech_stack: Hugo | CloudCannon
+      tech_stack: Hugo | CloudCannon | Imgix
       lighthouse_score:
         - score: "99"
         - score: "100"
@@ -71,17 +71,17 @@ web_portfolio:
       image: stadium-bike-website-preview.jpg
       image_alt: Stadium Bike website preview
       website_url: https://www.stadiumbike.com/
-      tech_stack: Hugo | Cloudcannon
+      tech_stack: Hugo | Cloudcannon | Mapbox | Imgix
       lighthouse_score:
-        - score: "92"
+        - score: "98"
         - score: "100"
-        - score: "92"
+        - score: "100"
         - score: "100"
     - title: Fox Structures
       image: fox-structures-website-preview.jpg
       image_alt: Fox Structures website preview
       website_url: https://foxstructures.com/
-      tech_stack: Hugo | Cloudcannon
+      tech_stack: Hugo | Cloudcannon | Cloudinary
       lighthouse_score:
         - score: "94"
         - score: "100"
@@ -91,27 +91,27 @@ web_portfolio:
       image: mind-team-website-preview.jpg
       image_alt: Mind Team website preview
       website_url: https://www.mymindteam.com/
-      tech_stack: Hugo | Cloudcannon
+      tech_stack: Hugo | Cloudcannon | Imagekit
       lighthouse_score:
-        - score: "94"
+        - score: "99"
         - score: "100"
-        - score: "92"
+        - score: "100"
         - score: "100"
     - title: Milk Source
       image: milksource-website-preview.jpg
       image_alt: Milk Source website preview
       website_url: https://www.milksource.com/
-      tech_stack: Hugo | Cloudcannon
+      tech_stack: Hugo | Cloudcannon | Imgix
       lighthouse_score:
-        - score: "95"
+        - score: "99"
         - score: "100"
-        - score: "92"
+        - score: "100"
         - score: "100"
     - title: Baileys Harbor Schoolhouse Inn
       image: baileys-harbor-schoolhouse-inn-website-screenshot.jpg
       image_alt: Baileys Harbor Schoolhouse Inn Website Preview
       website_url: https://baileysharborinn.com/
-      tech_stack: Hugo | Netlify
+      tech_stack: Hugo | Netlify | Imgix
       lighthouse_score:
         - score: "100"
         - score: "100"
