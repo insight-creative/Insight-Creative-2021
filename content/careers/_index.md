@@ -44,7 +44,7 @@ join_insight:
       is_testimonial: true
       body: The collaboration amongst team members, everyone's willingness to contribute and the scope of what we can accomplish together are what make Insight stand out.”
       author: Brian Brost
-      job_title: Account Executive
+      job_title: Director of Business Development
       image_url: /images/staff/Brian-Brost.jpg
     - heading: Competitive pay
       body: As part of the Second Wind Network, we research what other local agencies offer and do our best to provide staff with fair pay that both rewards hard work and emphasizes value.
