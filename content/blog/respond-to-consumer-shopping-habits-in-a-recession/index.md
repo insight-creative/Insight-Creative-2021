@@ -9,9 +9,8 @@ seo:
 draft: false
 date: 2022-08-08
 author: Insight Creative, Inc.
-featured: true
+featured: false
 categories:
-  - Featured
   - Business Strategy
 page_class: single-post
 ---
