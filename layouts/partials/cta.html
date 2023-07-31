@@ -4,7 +4,7 @@
             <div class="site-cta__inner flow">
                 <div class="sales-grid">
                     {{ range sort .Site.Data.staff "weight" "asc" }}
-                        {{ if eq .department "Sales" }}
+                        {{ if and (eq .department "Sales") (ne .name "McKenzie Kalscheuer") }}
                         <div class="site-cta__sales">
                             <div class="staff-card__image-wrapper background-circle background-circle--lg">
                                 <img src="{{ .image_jpg }}" alt="headshot of Insight Creative's {{ .job_title }}, {{ .name }}" class="staff-card__image" width="160" height="160">
