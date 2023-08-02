@@ -5,7 +5,7 @@
         <h2 class="h5 text-center-m">{{ .Params.hero.copy | markdownify }}</h2>
         <div class="sales-grid">
             {{ range sort .Site.Data.staff "weight" "asc" }}
-                {{ if eq .department "Sales" }}
+                {{ if and (eq .department "Sales") (ne .name "McKenzie Kalscheuer") }}
                 <div class="sales-grid__sales text-center">
                     <div class="staff-card__image-wrapper background-circle background-circle--lg">
                         <img src="{{ .image_jpg }}" alt="headshot of Insight Creative's {{ .job_title }}, {{ .name }}" class="staff-card__image">
