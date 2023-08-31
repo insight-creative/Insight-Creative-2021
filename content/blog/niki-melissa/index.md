@@ -16,7 +16,7 @@ page_class: single-post
 
 ![Insight News Banner](Insight-News-2500.jpg)
 
-Insight Creative, Inc. recently promoted [Niki Petit](https://insightcreative.com/about/niki-petit/) to vice president and hired [Melissa Gorzelanczyk](https://insightcreative.com/about/melissa-gorzelanczyk/) as content creator.
+Insight Creative, Inc. recently promoted [Niki Petit](/about/niki-petit/) to vice president and hired [Melissa Gorzelanczyk](/about/melissa-gorzelanczyk/) as content creator.
 
 <img src="niki-full-size.jpg">
 
@@ -26,4 +26,4 @@ Insight Creative, Inc. recently promoted [Niki Petit](https://insightcreative.co
 
 In addition to promoting Petit, Insight Creative has also hired Melissa Gorzelanczyk as a content creator to expand its creative team. **Gorzelanczyk**, who holds a master’s degree in writing from Vermont College of Fine Arts, specializes in storytelling, writing, and editing for Insight's diverse client base. With over two decades of professional writing experience, including as executive editor of several lifestyle magazines and author of her own novel, Gorzelanczyk is passionate about applying her creativity to marketing communications. “If you want your customers to remember something, tell them a story,” Gorzelanczyk said.
 
-Since 1988, Insight Creative, Inc. has delivered *Communication with substance* to consumer, business and industrial brands. For ultimate efficiency, Insight Creative houses all services—including web, creative, digital, media, PR and a full-service video/photo studio—under one roof in Green Bay, Wisconsin. [Learn more about Insight.](https://insightcreative.com/about/)
+Since 1988, Insight Creative, Inc. has delivered *Communication with substance* to consumer, business and industrial brands. For ultimate efficiency, Insight Creative houses all services—including web, creative, digital, media, PR and a full-service video/photo studio—under one roof in Green Bay, Wisconsin. [Learn more about Insight.](/about/)
