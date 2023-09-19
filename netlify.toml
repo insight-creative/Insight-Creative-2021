@@ -3,3 +3,7 @@
 
 [context.deploy-preview.environment]
   HUGO_VERSION = "0.83.1"
+
+[[redirects]]
+  from = "/blog/marketing-agency-reasons/"
+  to = "/blog/why-hiring-a-marketing-agency-is-the-smart-move/"

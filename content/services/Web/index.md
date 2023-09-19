@@ -71,7 +71,7 @@ web_portfolio:
       image: stadium-bike-website-preview.jpg
       image_alt: Stadium Bike website preview
       website_url: https://www.stadiumbike.com/
-      tech_stack: Hugo | Cloudcannon | Mapbox | Imgix
+      tech_stack: Hugo | CloudCannon | Mapbox | Imgix
       lighthouse_score:
         - score: "98"
         - score: "100"
@@ -81,7 +81,7 @@ web_portfolio:
       image: fox-structures-website-preview.jpg
       image_alt: Fox Structures website preview
       website_url: https://foxstructures.com/
-      tech_stack: Hugo | Cloudcannon | Cloudinary
+      tech_stack: Hugo | CloudCannon | Cloudinary
       lighthouse_score:
         - score: "94"
         - score: "100"
@@ -91,7 +91,7 @@ web_portfolio:
       image: mind-team-website-preview.jpg
       image_alt: Mind Team website preview
       website_url: https://www.mymindteam.com/
-      tech_stack: Hugo | Cloudcannon | Imagekit
+      tech_stack: Hugo | CloudCannon | Imagekit
       lighthouse_score:
         - score: "99"
         - score: "100"
@@ -101,7 +101,7 @@ web_portfolio:
       image: milksource-website-preview.jpg
       image_alt: Milk Source website preview
       website_url: https://www.milksource.com/
-      tech_stack: Hugo | Cloudcannon | Imgix
+      tech_stack: Hugo | CloudCannon | Imgix
       lighthouse_score:
         - score: "99"
         - score: "100"
