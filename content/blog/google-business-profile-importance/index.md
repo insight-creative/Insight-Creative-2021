@@ -18,8 +18,6 @@ page_class: single-post
 
 <img src="google-business101.jpg">
 
-# Google Business: why every business needs to use this effective tool
-
 [Google Business](https://www.google.com/business/) is a free, Google-run marketing tool that helps businesses share information, build an online presence and gather testimonials. If you own a business and have yet to create and optimize your Google Business Profile, *now* is the time!
 
 You’re missing out on loads of potential customers if you don’t take advantage of this powerful tool. Here’s the good news: Google Business is free to use, easy to set up and requires very basic upkeep to provide results.
