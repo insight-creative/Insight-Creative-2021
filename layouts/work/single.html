@@ -58,8 +58,9 @@
         <div>
             <h3 class="h4 no-margin">Project type</h3>
             {{ if .Params.tags }}
-            {{ range $index, $elements := .Params.tags }}<a href="{{ `tags/` | relLangURL }}{{ . | urlize | lower }}">{{ if ne $index 0 }}{{ end }}
-                {{ . | title }}</a> {{ end}}
+                {{ range (.GetTerms "tags") }}
+                    <a href="{{ .Permalink }}" aria-label="View all {{ .Page.Title }} posts">{{ .LinkTitle }}</a>
+                {{ end }}
             {{ end }}
         </div>
         <div>

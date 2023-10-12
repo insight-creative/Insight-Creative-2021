@@ -15,8 +15,9 @@
             <div class="blog-card__meta-inner flex">
                 <div class="blog-card__category">
                     {{ if .Params.Categories }}
-                    {{ range $index, $elements := .Params.Categories }}<span class="categories">{{ if ne $index 0 }}{{ end }}
-                        {{ . | title }}</span> {{ end}}
+                        {{ range (.GetTerms "categories") }}
+                            <a href="{{ .Permalink }}" class="categories" aria-label="View all {{ .Page.Title }} posts">{{ .LinkTitle }}</a>
+                        {{ end }}
                     {{ end }}
                 </div>
                 <div class="blog-card__staff-image-wrapper background-circle background-circle--md">

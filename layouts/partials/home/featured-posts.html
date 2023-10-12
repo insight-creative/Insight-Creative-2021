@@ -5,7 +5,7 @@
       {{ $pages := .Site.RegularPages }}
       {{ $recentPosts := where $pages "Type" "blog" }}
       {{ range first 2 $recentPosts }}
-      {{ .Render "blog-cards" }}
+      {{ .Render "blog-cards-alt" }}
       {{ end }}
     </div>
     <div class="flex flex-justify-end">

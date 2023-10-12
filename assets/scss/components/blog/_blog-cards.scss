@@ -1,4 +1,6 @@
 .blog-card {
+  position: relative;
+
   @include breakpoint(md) {
     width: 50%;
   }
@@ -15,65 +17,88 @@
       }
     }
   }
+}
 
-  &__image-wrapper {
-    margin-bottom: 1rem;
-    overflow: hidden;
-    border-radius: 5px;
-    position: relative;
-    padding-bottom: 50%;
-    z-index: 1;
-    min-height: 225px;
+.blog-card__body {
+  margin-bottom: -60px;
+}
+
+.blog-card__image-wrapper {
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  height: 300px;
+}
+
+.blog-card__image {
+  height: 120%;
+  position: absolute;
+  top: -25%;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  will-change: transform;
+  backface-visibility: hidden;
+  z-index: -1;
+}
+
+.blog-card__meta {
+  position: relative;
+  bottom: 60px;
+}
+
+.blog-card__meta-inner {
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 $ic-300;
+}
+
+.blog-card__category,
+.blog-card__staff-image-wrapper {
+  position: relative;
+}
+
+.blog-card__category {
+  z-index: 3;
+}
+
+.blog-card__staff-image-wrapper {
+  z-index: 2;
+}
+
+.blog-card .categories + .categories {
+  display: none;
+
+  @include breakpoint(sm) {
+    display: initial;
   }
+}
 
-  &__image {
-    border-radius: $radius;
-    height: 120%;
-    position: absolute;
-    top: -25%;
-    left: 0;
-    object-fit: cover;
-    object-position: center;
-    will-change: transform;
-    backface-visibility: hidden;
-    z-index: -1;
-  }
+.blog-card__staff-image-wrapper {
+  margin-bottom: $ic-200;
+}
 
-  &__meta {
-    position: relative;
-    top: -75px;
-    z-index: 2;
-  }
+.blog-card__staff-image {
+  max-width: 100px;
+  border-radius: 50%;
+  filter: grayscale(1);
+  transition: 0.3s ease-out;
+}
 
-  &__meta-inner {
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 $ic-300;
-  }
+.blog-card__title {
+  font-weight: 700;
+  transition: 0.3s ease;
+}
 
-  .categories + .categories {
-    display: none;
-
-    @include breakpoint(sm) {
-      display: initial;
-    }
-  }
-
-  &__staff-image-wrapper {
-    margin-bottom: $ic-200;
-  }
-
-  &__staff-image {
-    max-width: 100px;
-    border-radius: 50%;
-    filter: grayscale(1);
-    transition: 0.3s ease-out;
-  }
-
-  &__title {
-    font-weight: 700;
-    transition: 0.3s ease;
-  }
+.blog-card__title a::after {
+  content: "";
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  block-size: 100%;
+  inline-size: 100%;
+  z-index: 2;
 }
 
 .related-projects,

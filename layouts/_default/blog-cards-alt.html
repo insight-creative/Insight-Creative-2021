@@ -2,7 +2,7 @@
 {{ $smallwebp := $image.Resize "600x q90 webp" }}
 {{ $smalljpg := $image.Resize "600x q90" }}
 <article class="blog-card">
-    <a href="{{ .RelPermalink }}">
+    <div class="blog-card__body">
         <div class="blog-card__image-wrapper with-parallax">
             <picture>
                 <source srcset="{{ $smallwebp.RelPermalink }}" type="image/webp" >
@@ -15,15 +15,16 @@
             <div class="blog-card__meta-inner flex">
                 <div class="blog-card__category">
                     {{ if .Params.Categories }}
-                    {{ range $index, $elements := .Params.Categories }}<span class="categories">{{ if ne $index 0 }}{{ end }}
-                        {{ . | title }}</span> {{ end}}
+                        {{ range (.GetTerms "categories") }}
+                            <a href="{{ .Permalink }}" class="categories" aria-label="View all {{ .Page.Title }} posts">{{ .LinkTitle }}</a>
+                        {{ end }}
                     {{ end }}
                 </div>
                 <div class="blog-card__staff-image-wrapper background-circle background-circle--md">
                     <img src="{{ (index .Site.Data.staff .Params.author).image_jpg }}" alt="headshot of Insight Creative's {{ (index .Site.Data.staff .Params.author).job_title }}, {{ (index .Site.Data.staff .Params.author).name }}" class="blog-card__staff-image" width="100" height="100">
                 </div>
             </div>
-            <h4 class="h5 blog-card__title">{{ .Params.seo.title | markdownify }}</h4>
         </div>
-    </a>
+    </div>
+    <h3 class="h5 blog-card__title"><a href="{{ .Permalink }}">{{ .Params.seo.title | markdownify }}</a></h3>
 </article>

@@ -35,6 +35,10 @@
   }
 }
 
+.work-hero h1 {
+  font-size: clamp($ic-400, 4vw, $ic-700);
+}
+
 .work-specs {
   margin-top: $ic-300;
 
