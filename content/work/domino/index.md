@@ -39,7 +39,7 @@ testimonial:
 draft: false
 ---
 
-<div class="wrapper-md">
+<div class="wrapper-md flow">
   <div class="flex-grid">
     {{< responsive-image src="domino-trade-show-booth-mockup.jpg" alt="Domino trade show booth">}}
   </div>
@@ -57,7 +57,6 @@ draft: false
   </div>
 
   <div class="flex-grid">
-    {{< parallax-image src="domino-packaging-world-ads.jpg" alt="Domino packaging world ads">}}
-    {{< parallax-image src="drink-learn-coaster-layout.jpg" alt="Domino drink and learn coaster">}}
+    {{< responsive-image src="domino-packing-world-ads-drink-learn-coaster.jpg" alt="Domino box">}}
   </div>
 </div>

@@ -277,12 +277,6 @@
     width: auto;
   }
 }
-.col {
-  flex-basis: 0;
-  flex-grow: 1;
-  max-width: 100%;
-  margin: 0 10px;
-}
 .col-20 {
   width: 100%;
   @include breakpoint(lg) {
