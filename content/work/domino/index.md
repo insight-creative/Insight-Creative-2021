@@ -36,7 +36,7 @@ testimonial:
   copy: “The team from Insight Creative has been a huge support and extension of our brand over the years. It’s no coincidence that ‘creative’ is in their name, and that is what they deliver on all counts. We’ve used larger agencies in the past, but none compare to the level of professionalism and creative strength the Insight team provides.”
   name: Tara Abbott
   client: Domino Global Events Marketing Manager
-draft: true
+draft: false
 ---
 
 <div class="wrapper-md">
