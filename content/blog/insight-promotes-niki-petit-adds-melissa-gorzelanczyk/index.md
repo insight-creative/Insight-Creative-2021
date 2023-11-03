@@ -8,7 +8,7 @@ seo:
   featured_image_alt: Insight-News-2500.jpg
 draft: false
 date: 2023-04-07
-author: Melissa Gorzelanczyk
+author: Insight Creative, Inc.
 categories:
   - News
 page_class: single-post
