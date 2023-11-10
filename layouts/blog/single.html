@@ -12,7 +12,7 @@
                             <a href="{{ .Permalink }}" class="categories categories__link" aria-label="View all {{ .Page.Title }} posts">{{ .LinkTitle }}</a>
                         {{ end }}
                     {{ end }}
-                    <h1>{{ .Params.seo.title | markdownify }}</h1>
+                    <h1>{{ .Title | markdownify }}</h1>
                     {{ .Content }}
                 </article>
                 <div class="share-this share-this--row flex flex-column flex-row-m">

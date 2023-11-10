@@ -10,6 +10,7 @@
   }
 
   h1 {
+    font-size: clamp($ic-400, 4vw, $ic-700);
     line-height: 1;
   }
 
