@@ -40,27 +40,27 @@
     }
   }
 
-  .team-image-grid {
-    display: grid;
-    gap: $ic-200;
+  // .team-image-grid {
+  //   display: grid;
+  //   gap: $ic-200;
 
-    @include breakpoint(md) {
-      grid-template-columns: repeat(2, 1fr);
-      gap: $ic-900;
+  //   @include breakpoint(md) {
+  //     grid-template-columns: repeat(2, 1fr);
+  //     gap: $ic-900;
 
-      img + img {
-        margin-top: 200px;
-      }
-    }
+  //     img + img {
+  //       margin-top: 200px;
+  //     }
+  //   }
 
-    .cover-image img {
-      height: 300px;
+  //   .cover-image img {
+  //     height: 300px;
 
-      @include breakpoint(md) {
-        height: 400px;
-      }
-    }
-  }
+  //     @include breakpoint(md) {
+  //       height: 400px;
+  //     }
+  //   }
+  // }
 
   .memberships {
     &__grid {
@@ -81,6 +81,63 @@
       place-self: center;
     }
   }
+}
+
+.team-image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: $ic-200;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Image-1 Image-1 Image-2 Image-2"
+    "Image-1 Image-1 Image-3 Image-3"
+    "Image-4 Image-4 Image-6 Image-6"
+    "Image-5 Image-5 Image-6 Image-6";
+}
+
+.team-image-grid img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.team-image-grid img:nth-of-type(2), 
+.team-image-grid img:nth-of-type(3), 
+.team-image-grid img:nth-of-type(4), 
+.team-image-grid img:nth-of-type(5) {
+  max-height: 400px;
+}
+
+.team-image-grid img:nth-of-type(2),
+.team-image-grid img:nth-of-type(3),
+.team-image-grid img:nth-of-type(5) {
+  object-position: top;
+}
+
+.team-image-grid img:nth-of-type(1) { 
+  grid-area: Image-1; 
+}
+
+.team-image-grid img:nth-of-type(2) { 
+  grid-area: Image-2; 
+  max-height: 300px;
+}
+
+.team-image-grid img:nth-of-type(3) { 
+  grid-area: Image-3; 
+}
+
+.team-image-grid img:nth-of-type(4) { 
+  grid-area: Image-4; 
+}
+
+.team-image-grid img:nth-of-type(5) { 
+  grid-area: Image-5; 
+  max-height: 330px;
+}
+
+.team-image-grid img:nth-of-type(6) { 
+  grid-area: Image-6; 
 }
 
 .cindy-struensee,
