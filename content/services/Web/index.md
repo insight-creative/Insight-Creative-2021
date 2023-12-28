@@ -87,26 +87,6 @@ web_portfolio:
         - score: "100"
         - score: "92"
         - score: "92"
-    - title: Mind Team
-      image: mind-team-website-preview.jpg
-      image_alt: Mind Team website preview
-      website_url: https://www.mymindteam.com/
-      tech_stack: Hugo | CloudCannon | Imagekit
-      lighthouse_score:
-        - score: "99"
-        - score: "100"
-        - score: "100"
-        - score: "100"
-    - title: Milk Source
-      image: milksource-website-preview.jpg
-      image_alt: Milk Source website preview
-      website_url: https://www.milksource.com/
-      tech_stack: Hugo | CloudCannon | Imgix
-      lighthouse_score:
-        - score: "99"
-        - score: "100"
-        - score: "100"
-        - score: "100"
     - title: Baileys Harbor Schoolhouse Inn
       image: baileys-harbor-schoolhouse-inn-website-screenshot.jpg
       image_alt: Baileys Harbor Schoolhouse Inn Website Preview
