@@ -29,17 +29,17 @@ approach:
     copy: We firmly believe that—for communication to be effective and easy to understand—we must provide substance. Too often, marketers rely on over-inflated language and fancy designs to “wow” their audiences. By using <strong><em>Communication with substance</em></strong>, we commit to meaningful dialogue. Every message Insight creates leads with the significant information audiences need to act. We believe that clear communication leads to effective communication, and effective communication leads to results!
 team_images: 
     - image: insight-halloween.jpg
-      image_alt: The Insight Creative Team gathering around for a Christmas party
+      image_alt: The Insight Creative Team gathered in Halloween costumes
     - image: insight-team-cookout.jpg
       image_alt: The Insight Creative Team gathering around for a summer cookout
-    - image: christmas_group2022.jpg
-      image_alt: The Insight Creative Team gathering around for a summer cookout
+    - image: insight-2023-christmas.jpg
+      image_alt: The Insight Creative Team gathering for Christmas
     - image: insight-zippin-pippin.jpg
-      image_alt: The Insight Creative Team gathering around for a summer cookout
+      image_alt: The Insight Creative Team at Bay Beach riding the Zippin Pippin
     - image: insight-advertising-board-game.jpg
-      image_alt: The Insight Creative Team gathering around for a summer cookout
+      image_alt: The Insight Creative Team playing the advertising board game
     - image: insight-packers.jpg
-      image_alt: The Insight Creative Team gathering around for a summer cookout
+      image_alt: The Insight Creative Team before a Packer game
 meet_the_team: 
     heading: Meet our marketing <span class="emphasis-red">experts</span>
     copy: It’s the <span class="text-underline">people</span> who make Insight unique and especially capable. Each team member brings specialized skills. Together, we make marketing an efficient, effective and overall positive experience.
