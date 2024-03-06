@@ -4,7 +4,7 @@ seo:
   title: Law Firm of Conway, Olejniczak & Jerry, S.C.
   description: When Law Firm of Conway, Olejniczak & Jerry, S.C. needed marketing assistance and a new website, Insight stepped in to assist with a strategic approach.
   featured_image: lcoj-cover-image.jpg
-featured_project: true
+featured_project: false
 hero:
   image:
     image_url: lcoj-cover-image.jpg
