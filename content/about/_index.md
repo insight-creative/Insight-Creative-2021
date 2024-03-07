@@ -11,7 +11,7 @@ hero:
 
   <p>What began as an agency of two, has since grown to a full-service team of talented employees each offering specialized skillsets. From the very beginning, Jim’s vision was to bring all services—design, media, writing, photography and more—under one roof. That’s still a defining characteristic of the agency today.</p>"
 industries: 
-    image: pr-content-manager-emily-and-director-of-business-development-niki-petit.jpg
+    image: theresa-olivia-mckenzie-insight-creative.jpg
     image_alt: PR/Content Manager Emily Morehart and Director of Business Development Niki Petit holding a copy of the press gazette
     intro: "After decades in business, there isn’t an industry we haven’t touched. But there are some we have extensive experience in, such as:"
     industries: 
