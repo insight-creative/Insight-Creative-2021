@@ -47,6 +47,16 @@ web_portfolio:
         - score: "100"
         - score: "100"
         - score: "100"
+    - title: Washington Island Ferry
+      image: wisferry-website-preview.jpg
+      image_alt: Washington Island Ferry website preview
+      website_url: https://wisferry.com/
+      tech_stack: Hugo | CloudCannon | Imgix
+      lighthouse_score:
+        - score: "97"
+        - score: "100"
+        - score: "100"
+        - score: "100"
     - title: Law Firm of Conway, Olejniczak & Jerry, S.C.
       image: lcojlaw-website-screenshot.jpg
       image_alt: Law Firm of Conway, Olejniczak & Jerry, S.C. Website Preview
@@ -54,26 +64,6 @@ web_portfolio:
       tech_stack: Hugo | CloudCannon | Imgix
       lighthouse_score:
         - score: "99"
-        - score: "100"
-        - score: "100"
-        - score: "100"
-    - title: A to Z Machine
-      image: atozmachine-website-preview.jpg
-      image_alt: A to Z Machine website preview
-      website_url: https://www.atozmachine.com/
-      tech_stack: Hugo | Netlify
-      lighthouse_score:
-        - score: "97"
-        - score: "100"
-        - score: "100"
-        - score: "100"
-    - title: Stadium Bike
-      image: stadium-bike-website-preview.jpg
-      image_alt: Stadium Bike website preview
-      website_url: https://www.stadiumbike.com/
-      tech_stack: Hugo | CloudCannon | Mapbox | Imgix
-      lighthouse_score:
-        - score: "98"
         - score: "100"
         - score: "100"
         - score: "100"
@@ -87,6 +77,26 @@ web_portfolio:
         - score: "100"
         - score: "92"
         - score: "92"
+    - title: Stadium Bike
+      image: stadium-bike-website-preview.jpg
+      image_alt: Stadium Bike website preview
+      website_url: https://www.stadiumbike.com/
+      tech_stack: Hugo | CloudCannon | Mapbox | Imgix
+      lighthouse_score:
+        - score: "98"
+        - score: "100"
+        - score: "100"
+        - score: "100"
+    - title: A to Z Machine
+      image: atozmachine-website-preview.jpg
+      image_alt: A to Z Machine website preview
+      website_url: https://www.atozmachine.com/
+      tech_stack: Hugo | Netlify
+      lighthouse_score:
+        - score: "97"
+        - score: "100"
+        - score: "100"
+        - score: "100"
     - title: Baileys Harbor Schoolhouse Inn
       image: baileys-harbor-schoolhouse-inn-website-screenshot.jpg
       image_alt: Baileys Harbor Schoolhouse Inn Website Preview
@@ -97,14 +107,14 @@ web_portfolio:
         - score: "100"
         - score: "100"
         - score: "100"
-    - title: Lamers
-      image: lamers-website-preview.jpg
-      image_alt: Lamers Website Preview
-      website_url: https://www.golamers.com/
-      tech_stack: WordPress
+    - title: Hurckman Mechanical Industries
+      image: hurckman-website-screenshot.jpg
+      image_alt: Hurckman Website Preview
+      website_url: https://www.hurckman.com/
+      tech_stack: Hugo | CloudCannon | Cloudinary
       lighthouse_score:
-        - score: "92"
-        - score: "93"
+        - score: "85"
+        - score: "95"
         - score: "100"
         - score: "100"
     - title: LeMense Quality Homes
@@ -116,15 +126,5 @@ web_portfolio:
         - score: "99"
         - score: "100"
         - score: "93"
-        - score: "100"
-    - title: Washington Island Ferry
-      image: wisferry-website-preview.jpg
-      image_alt: Washington Island Ferry website preview
-      website_url: https://wisferry.com/
-      tech_stack: WordPress
-      lighthouse_score:
-        - score: "95"
-        - score: "95"
-        - score: "83"
         - score: "100"
 ---
