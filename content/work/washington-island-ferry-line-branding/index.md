@@ -37,21 +37,21 @@ testimonial:
 
 <div class="wrapper-md">
 <div class="flex-grid">
-{{< parallax-image src="wif-main-logo-spaced-sm-medium-optimized-2400.jpg" alt="">}}
-{{< parallax-image src="wif-main-logo-options-sm-low-optimized-2400.jpg" alt="">}}
+{{< parallax-image src="wif-main-logo-spaced-sm-medium-optimized-2400.jpg" alt="Custom logo design for Washington Island Ferry Line">}}
+{{< parallax-image src="wif-main-logo-options-sm-low-optimized-2400.jpg" alt="Custom logo design options for Washington Island Ferry Line">}}
 </div>
 <div class="flex-grid">
-{{< website-design heading="Website Homepage" src="washingtonislandnewhomepagelow-optimized-2400.jpg" alt="">}}
+{{< website-design heading="Website Homepage" src="washingtonislandnewhomepagelow-optimized-2400.jpg" alt="Homepage for a custom website design and development project for Washington Island Ferry Line">}}
 </div>
 <div class="flex-grid">
-{{< website-design heading="Washington Island page" src="washingtonislandpagelow-optimized-2400.jpg" alt="">}}
+{{< website-design heading="Washington Island page" src="washingtonislandpagelow-optimized-2400.jpg" alt="Interior page for a custom website design and development project for Washington Island Ferry Line">}}
 </div>
 <div class="flex-grid">
-{{< responsive-image src="wif-brochure-medium-optimized-2400.jpg" alt="">}}
+{{< responsive-image src="wif-brochure-medium-optimized-2400.jpg" alt="Custom travel brochure design for Washington Island Ferry Line">}}
 </div>
 <div class="flex-grid">
-{{< parallax-image src="wif-socialmedia-examples-1.jpg" alt="">}}
-{{< parallax-image src="wif-socialmedia-examples-2.jpg" alt="">}}
-{{< parallax-image src="wif-socialmedia-examples-3.jpg" alt="">}}
+{{< parallax-image src="wif-socialmedia-examples-1.jpg" alt="Thank you crew, custom graphic design for social media posts for Washington Island Ferry Line">}}
+{{< parallax-image src="wif-socialmedia-examples-2.jpg" alt="New website coming soon, custom graphic design for social media posts for Washington Island Ferry Line">}}
+{{< parallax-image src="wif-socialmedia-examples-3.jpg" alt="Custom graphic design for social media posts for Washington Island Ferry Line">}}
 </div>
 </div>

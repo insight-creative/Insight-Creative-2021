@@ -41,15 +41,15 @@ testimonial:
 
 <div class="wrapper-md">
 <div class="flex-grid">
-  {{< responsive-image src="lcoj-community-commitment-ad-3.jpg" alt="">}}
-  {{< responsive-image src="lcoj-community-commitment-ad-2.jpg" alt="">}}
+  {{< responsive-image src="lcoj-community-commitment-ad-3.jpg" alt="Custom graphic design work for social media posts for Law Firm of Conway, Olejniczak & Jerry, S.C.">}}
+  {{< responsive-image src="lcoj-community-commitment-ad-2.jpg" alt="Custom graphic design work for social media posts for Law Firm of Conway, Olejniczak & Jerry, S.C.">}}
 </div>
 <div class="flex-grid">
     <picture class="fade-up">
-        <img loading="lazy" src="lcoj-community-commitment-ad.jpg" width="600" height="600" alt="Conway Commitment to Community ad">
+        <img loading="lazy" src="lcoj-community-commitment-ad.jpg" width="600" height="600" alt="Conway Commitment to Community custom digital ad">
     </picture>
     <picture class="fade-up">
-        <img loading="lazy" src="lcoj-now-hiring-ad.jpg" width="600" height="600" alt="Conway Now Hiring ad">
+        <img loading="lazy" src="lcoj-now-hiring-ad.jpg" width="600" height="600" alt="Conway Now Hiring custom digital ad">
     </picture>
 </div>
 <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe style="height:100%;" src="https://fast.wistia.net/embed/iframe/qclv2rnm7w?seo=true&videoFoam=true" title="LCOJ Thank You Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" msallowfullscreen width="100%" height="100%"></iframe></div></div>

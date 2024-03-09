@@ -45,8 +45,7 @@ testimonial:
 {{<  responsive-image src="fox-structures-tradeshow-1800.jpg" alt="">}}
 </div>
 <div class="flex-grid">
-{{< responsive-image src="fox-structures-letterhead-1800.jpg" alt="">}}
+{{< responsive-image src="fox-structures-letterhead-1800.jpg" alt="Fox Structures custom business card designs, custom envelope designs and custom letterhead designs">}}
 </div>
-{{< website-design heading="Website homepage" src="foxstructuresnewhomepage-1800.jpg" alt="">}}
-{{< website-design heading="About page" src="foxstructuresnewaboutpage-1800.jpg" alt="">}}
+{{< website-design heading="Website homepage" src="fox-structures-2023-homepage.jpg" alt="Fox Structures website homepage">}}
 </div>

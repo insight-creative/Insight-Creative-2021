@@ -38,17 +38,17 @@ testimonial:
 
 <div class="wrapper-md">
 <div class="flex-grid">
-{{< responsive-image src="a-to-z-machine-brochure-cover.jpg" alt="">}}
-{{< responsive-image src="a-to-z-machine-new-logo.jpg" alt="">}}
+{{< responsive-image src="a-to-z-machine-brochure-cover.jpg" alt="Cover of a custom brochure design for A to Z Machine">}}
+{{< responsive-image src="a-to-z-machine-new-logo.jpg" alt="Custom logo design for A to Z Machine 25 year anniversary">}}
 </div>
 <div class="flex-grid">
-{{< responsive-image src="a-to-z-machine-brochure-inside.jpg" alt="">}}
+{{< responsive-image src="a-to-z-machine-brochure-inside.jpg" alt="Interior pages of a custom brochure design for A to Z Machine">}}
 </div>
 <div class="flex-grid">
-{{< responsive-image src="a-to-z-machine-letterhead-2.jpg" alt="">}}
-{{< responsive-image src="a-to-z-machine-brochure-back-with-business-cards.jpg" alt="">}}
+{{< responsive-image src="a-to-z-machine-letterhead-2.jpg" alt="Custom letterhead design for A to Z Machine">}}
+{{< responsive-image src="a-to-z-machine-brochure-back-with-business-cards.jpg" alt="Back cover of a custom brochure design and custom business card designs for A to Z Machine">}}
 </div>
 <div class="flex-grid">
-{{< responsive-image src="a-to-z-website-mockup.jpg" alt="">}}
+{{< responsive-image src="a-to-z-website-mockup.jpg" alt="Custom website design and development for A to Z Machine">}}
 </div>
 </div>

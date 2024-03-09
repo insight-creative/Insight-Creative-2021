@@ -42,20 +42,20 @@ testimonial:
 
 <div class="wrapper-md">
 <div class="flex-grid">
-{{< parallax-image src="bol-billboard-1400.jpg" alt="">}}
+{{< parallax-image src="bol-billboard-1400.jpg" alt="Custom billboard design for Bank of Luxemburg">}}
 </div>
 <div class="flex-grid">
-{{< responsive-image src="bol-printad-2400.jpg" alt="">}}
+{{< responsive-image src="bol-printad-2400.jpg" alt="Custom print advertisement for Bank of Luxemburg">}}
 </div>
 <div class="flex-grid">
-{{< parallax-image src="bol-pullupbanner-2400.jpg" alt="">}}
-{{< parallax-image src="postcard-mockup-1400.jpg" alt="">}}
+{{< parallax-image src="bol-pullupbanner-2400.jpg" alt="Custom pull-up banner design for Bank of Luxemburg">}}
+{{< parallax-image src="postcard-mockup-1400.jpg" alt=" Custom postcard design for Bank of Luxemburg">}}
 </div>
 {{< youtube id="5MD-eo77rKg" class="fade-up aspect-ratio" title="Bank of Luxemburg TV Spot" >}}
 <div class="flex-grid">
-{{< responsive-image src="bol-mobilewallet-480.jpg" alt="">}}
-{{< responsive-image src="bol-mobileapp-480.jpg" alt="">}}
-{{< responsive-image src="bol-heloc-480.jpg" alt="">}}
+{{< responsive-image src="bol-mobilewallet-480.jpg" alt="Mobile wallet custom digital ad design for Bank of Luxemburg">}}
+{{< responsive-image src="bol-mobileapp-480.jpg" alt="Download our mobile app, custom digital ad design for Bank of Luxemburg">}}
+{{< responsive-image src="bol-heloc-480.jpg" alt="Home improvement loan, custom digital ad design for Bank of Luxemburg">}}
 </div>
 {{< youtube id="dseS9u1kzbE" class="fade-up aspect-ratio" title="Bank of Luxemburg Brand Launch Video" >}}
 </div>
