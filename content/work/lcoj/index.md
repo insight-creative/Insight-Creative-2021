@@ -41,8 +41,8 @@ testimonial:
 
 <div class="wrapper-md">
 <div class="flex-grid">
-{{< responsive-image src="lcoj-community-commitment-ad-3.jpg" alt="">}}
-{{< responsive-image src="lcoj-community-commitment-ad-2.jpg" alt="">}}
+  {{< responsive-image src="lcoj-community-commitment-ad-3.jpg" alt="">}}
+  {{< responsive-image src="lcoj-community-commitment-ad-2.jpg" alt="">}}
 </div>
 <div class="flex-grid">
     <picture class="fade-up">
@@ -52,4 +52,10 @@ testimonial:
         <img loading="lazy" src="lcoj-now-hiring-ad.jpg" width="600" height="600" alt="Conway Now Hiring ad">
     </picture>
 </div>
+<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe style="height:100%;" src="https://fast.wistia.net/embed/iframe/qclv2rnm7w?seo=true&videoFoam=true" title="LCOJ Thank You Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" msallowfullscreen width="100%" height="100%"></iframe></div></div>
+<script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>
+
+<div class="wistia_responsive_padding" style="margin-block-start:1.25rem;padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe style="height:100%;" src="https://fast.wistia.net/embed/iframe/vyi43k7bgp?seo=true&videoFoam=true" title="Why work at LCOJ 2 Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" msallowfullscreen width="100%" height="100%"></iframe></div></div>
+<script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>
+
 </div>
