@@ -6,7 +6,7 @@
   <div class="post-wrapper pt-9">
     {{ $paginator := .Paginate ( where .Data.Pages "Type" "blog" ) }}
     {{ range $paginator.Pages }}
-    {{ .Render "blog-cards-alt" }}
+    {{ .Render "blog-cards" }}
     {{ end }}
   </div>
 </div>

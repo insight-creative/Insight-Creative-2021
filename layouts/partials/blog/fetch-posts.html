@@ -2,11 +2,11 @@
   <hr>
   <div class="post-wrapper pt-9">
     {{ range where (where .Pages "Section" "blog" ) "Params.featured" "=" true }}
-    {{ .Render "blog-cards-alt" }}
+    {{ .Render "blog-cards" }}
     {{ end }}
     {{ range (.Paginate ( where .Site.RegularPages "Type" "blog" )).Pages }}
     {{ if not (in .Params.categories "Featured") }}
-    {{ .Render "blog-cards-alt" }}
+    {{ .Render "blog-cards" }}
     {{ end }}
     {{ end }}
   </div>
