@@ -20,7 +20,7 @@
     {{ $webp_s := $webp_l.Resize "600x q90 webp" }}
     {{ $webp_xs := $webp_l.Resize "400x q90 webp" }}
 
-    {{ $webp_src_set = (print $webp_xs.RelPermalink " 400w" ", " $webp_s.RelPermalink " 600w" ", "  $webp_m.RelPermalink " 800w" ", "  $webp_l.RelPermalink " 1200w" ", "  $webp_xl.RelPermalink " 1800w" ", "  $webp_xxl.RelPermalink " 2500w") }}
+    {{ $webp_src_set = (print $webp_xs.RelPermalink " 400w" ", " $webp_s.RelPermalink " 600w" ", "  $webp_m.RelPermalink " 800w" ", "  $webp_l.RelPermalink " 1200w" ", "  $webp_xl.RelPermalink " 1800w") }}
   
     <div class="work-hero__image-wrapper hero-parallax">
         <picture>
@@ -76,10 +76,6 @@
     </div>
 </section>
 <section id="project-details" class="work-body">
-    <div class="block wrapper flow">
-        <h2>{{ .Params.intro.heading }}</h2>
-        {{ .Params.intro.copy | markdownify }}
-    </div>
     <div class="pb-9">
         {{ .Content }}
     </div>

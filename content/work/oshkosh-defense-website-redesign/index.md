@@ -14,11 +14,6 @@ client: Oshkosh Defense
 industries:
   industries:
     - industry: Defense Vehicles
-intro: 
-  heading: Mission “Website Redesign”
-  copy: '<p>When global tactical vehicle manufacturer Oshkosh Defense needed an experienced team to lead their website redesign, we made it our mission to deliver! With a goal to modernize the design and functionality while adhering to existing brand standards, Insight created an easy-to-navigate site that showcases Oshkosh Defense’s stunning professional photography. Mobile-friendly layouts and secondary menu bars now allow viewers to seamlessly delve into Oshkosh Defense’s extensive content. From their impressive line-up of military vehicles to a new community section highlighting their significant philanthropic contributions, Oshkosh Defense’s reputable brand and honorable purpose shines through in this website redesign.</p>
-<br>
-<a href="https://oshkoshdefense.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Website</a>'
 provided_services:
   services:
     - service: Design
@@ -30,6 +25,17 @@ testimonial:
   name:
   client: Oshkosh Defense
 ---
+
+<div class="block">
+  <div class="wrapper flow">
+
+  ## Mission “Website Redesign”
+
+  When global tactical vehicle manufacturer Oshkosh Defense needed an experienced team to lead their website redesign, we made it our mission to deliver! With a goal to modernize the design and functionality while adhering to existing brand standards, Insight created an easy-to-navigate site that showcases Oshkosh Defense’s stunning professional photography. Mobile-friendly layouts and secondary menu bars now allow viewers to seamlessly delve into Oshkosh Defense’s extensive content. From their impressive line-up of military vehicles to a new community section highlighting their significant philanthropic contributions, Oshkosh Defense’s reputable brand and honorable purpose shines through in this website redesign.
+
+  <a href="https://oshkoshdefense.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Website</a>
+  </div>
+</div>
 
 <div class="wrapper-md">
 {{< website-design heading="Website Homepage" src="Oshkosh-defense-Homepage-design.jpg" alt="">}}

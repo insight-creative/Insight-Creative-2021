@@ -15,9 +15,6 @@ industries:
   industries:
     - industry: Banking & Finance
     - industry: Non-Profit
-intro:
-  heading: Fighting crime, one news segment at a time
-  copy: "<p>When local law enforcement approached Verve, a Credit Union to join their battle against online scammers, they were all in. But to make a real impact, Verve knew a community collaboration would be essential. As a result, the Fraud Squad was born and Insight Creative joined as public relations and media specialists. Leveraging local connections across Northeast Wisconsin, Insight Creative hoisted Verve’s Fraud Squad further into the spotlight with extensive TV, Radio, print and online coverage.</p>"
 provided_services:
   services:
     - service: Content
@@ -32,6 +29,15 @@ testimonial:
   client:
 draft: true
 ---
+
+<div class="block">
+  <div class="wrapper flow">
+
+  ## Fighting crime, one news segment at a time
+
+  When local law enforcement approached Verve, a Credit Union to join their battle against online scammers, they were all in. But to make a real impact, Verve knew a community collaboration would be essential. As a result, the Fraud Squad was born and Insight Creative joined as public relations and media specialists. Leveraging local connections across Northeast Wisconsin, Insight Creative hoisted Verve’s Fraud Squad further into the spotlight with extensive TV, Radio, print and online coverage.
+  </div>
+</div>
 
 <div class="wrapper flow">
   <h3>Results</h3>

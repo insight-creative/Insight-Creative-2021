@@ -14,12 +14,6 @@ client: Bank of Luxemburg
 industries:
   industries:
     - industry: Banking
-intro: 
-  heading: Putting “community” in community banking
-  copy: '<p>Embedded in the Luxemburg community since 1903, Bank of Luxemburg knew their nearly 70-year-old brand needed a drastic update in order to grow. They also knew maintaining their community roots and relationship-based approach would be paramount to success. While considering both objectives, the Insight team reimagined Bank of Luxemburg’s brand beginning with a vibrant orange logo and tagline “Your Life. Your Community. Your Bank.” Additional brand attributes such as voice, colors, typography and even illustrated fictional spokespeople were carefully crafted to support the overall look and feel.</p>
-
-<p>After establishing a solid brand, a comprehensive rollout plan was developed and quickly put into action. The new brand came to life externally on TV, radio (with a custom jingle), billboards, print ads and outdoor signage. Internally, the brand was introduced on employee apparel, lobby signage, office materials and even custom wallpaper! To ensure a smooth transition for Bank of Luxemburg’s many long-term customers, Insight led a multi-touchpoint campaign (postcards, letters and social media posts) that not only communicated the change but also generated excitement for the future of the bank and its communities.</p>
-'
 provided_services:
   services:
     - service: Content
@@ -39,6 +33,17 @@ testimonial:
   name: Tim Treml, <span>President</span>
   client: Bank of Luxemburg
 ---
+
+<div class="block">
+  <div class="wrapper flow">
+
+  ## Putting “community” in community banking
+
+  Embedded in the Luxemburg community since 1903, Bank of Luxemburg knew their nearly 70-year-old brand needed a drastic update in order to grow. They also knew maintaining their community roots and relationship-based approach would be paramount to success. While considering both objectives, the Insight team reimagined Bank of Luxemburg’s brand beginning with a vibrant orange logo and tagline “Your Life. Your Community. Your Bank.” Additional brand attributes such as voice, colors, typography and even illustrated fictional spokespeople were carefully crafted to support the overall look and feel.
+
+  After establishing a solid brand, a comprehensive rollout plan was developed and quickly put into action. The new brand came to life externally on TV, radio (with a custom jingle), billboards, print ads and outdoor signage. Internally, the brand was introduced on employee apparel, lobby signage, office materials and even custom wallpaper! To ensure a smooth transition for Bank of Luxemburg’s many long-term customers, Insight led a multi-touchpoint campaign (postcards, letters and social media posts) that not only communicated the change but also generated excitement for the future of the bank and its communities.
+  </div>
+</div>
 
 <div class="wrapper-md">
 <div class="flex-grid">

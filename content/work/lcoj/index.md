@@ -14,11 +14,6 @@ client: Law Firm of Conway, Olejniczak & Jerry, S.C.
 industries:
   industries:
     - industry: Legal
-intro: 
-  heading: Spotlighting COJ’s legal legacy with strategic branding
-  copy: '<p>Providing comprehensive legal guidance since 1976, Law Firm of Conway, Olejniczak & Jerry, S.C. (COJ) recognized the need to partner with an established marketing agency to support its growth ambitions. COJ hired Insight Creative, Inc. on a retainer to promote its services and share its history as a pillar in the Green Bay community. In addition, the firm wanted to establish a second location in Door County. Finally, COJ needed help recruiting junior attorneys to expand its team.</p>
-
-<p>Our first step was to modernize COJ’s look while preserving its core values and community-centric approach. From this brand foundation, a new website, engaging social media campaigns, public relations and targeted paid media amplified COJ’s local presence. The results were outstanding, with increased website engagement, positive community reception and successful recruitment of new attorneys. Most importantly, the legal team at COJ can spend their time working on cases rather than marketing.</p>'
 provided_services:
   services:
     - service: Design
@@ -38,6 +33,17 @@ testimonial:
   name: Jodi Labs, <span>Attorney</span>
   client: Law Firm of Conway, Olejniczak & Jerry, S.C.
 ---
+
+<div class="block">
+  <div class="wrapper flow">
+
+  ## Spotlighting COJ’s legal legacy with strategic branding
+
+  Providing comprehensive legal guidance since 1976, Law Firm of Conway, Olejniczak & Jerry, S.C. (COJ) recognized the need to partner with an established marketing agency to support its growth ambitions. COJ hired Insight Creative, Inc. on a retainer to promote its services and share its history as a pillar in the Green Bay community. In addition, the firm wanted to establish a second location in Door County. Finally, COJ needed help recruiting junior attorneys to expand its team.
+
+  Our first step was to modernize COJ’s look while preserving its core values and community-centric approach. From this brand foundation, a new website, engaging social media campaigns, public relations and targeted paid media amplified COJ’s local presence. The results were outstanding, with increased website engagement, positive community reception and successful recruitment of new attorneys. Most importantly, the legal team at COJ can spend their time working on cases rather than marketing.
+  </div>
+</div>
 
 <div class="wrapper-md">
 <div class="flex-grid">

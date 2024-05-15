@@ -14,9 +14,6 @@ client: NEW Zoo & Adventure Park
 industries:
   industries:
     - industry: Entertainment & Tourism
-intro:
-  heading: Creative signage at new heights
-  copy: "<p>When Suamico’s NEW Zoo & Adventure Park envisioned a self-guided tour for their new 16-foot elevated zoo exhibit, they needed a creative partner to bring it to life with practical and entertaining signage fit for a walk on the wild side. As avid supporters of animals and Northeast Wisconsin non-profits, Insight didn’t hesitate to donate services to this longstanding community cause.</p><p>The creative team designed an engaging experience for The Neil Anderson Canopy Tour beginning with a logo and updated color palette to complement the zoo's existing brand. With catchy headlines, historical timelines, animal photos and fun zoo facts, our team created over 30 custom signs to seamlessly guide guests on a journey above the zoo and into the organization’s history. The tour concludes with an interactive social media frame for photo ops and a four-foot donor sign thanking those who made the project possible.</p>"
 provided_services:
   services:
     - service: Design
@@ -32,6 +29,17 @@ testimonial:
   client: NEW Zoo & Adventure Park
 draft: false
 ---
+
+<div class="block">
+  <div class="wrapper flow">
+
+  ## Creative signage at new heights
+
+  When Suamico’s NEW Zoo & Adventure Park envisioned a self-guided tour for their new 16-foot elevated zoo exhibit, they needed a creative partner to bring it to life with practical and entertaining signage fit for a walk on the wild side. As avid supporters of animals and Northeast Wisconsin non-profits, Insight didn’t hesitate to donate services to this longstanding community cause.
+  
+  The creative team designed an engaging experience for The Neil Anderson Canopy Tour beginning with a logo and updated color palette to complement the zoo's existing brand. With catchy headlines, historical timelines, animal photos and fun zoo facts, our team created over 30 custom signs to seamlessly guide guests on a journey above the zoo and into the organization’s history. The tour concludes with an interactive social media frame for photo ops and a four-foot donor sign thanking those who made the project possible.
+  </div>
+</div>
 
 <div class="wrapper flow">
   <h3>Outcomes</h3>
