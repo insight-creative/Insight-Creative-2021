@@ -7,7 +7,7 @@ seo:
   featured_image: social-media-apps-on-phone.jpg
   featured_image_alt: Social media apps on phone screen
 date: 2022-08-29
-author: Theresa Tebon
+author: Theresa Sawall
 categories:
   - Social Media
 page_class: single-post
@@ -24,7 +24,7 @@ If your business hasn’t taken part in social media, or your current efforts ar
 
 _I know what you’re thinking: If there are pain points for me as a business owner, why should I even take the time to do social media?_
 
-As the [social media specialist at Insight](/about/theresa-tebon/), I know first-hand the stresses of social media, but I’ve also seen its immense benefits for various clients. There truly is no limit to what you can do with social media marketing, which means businesses in any industry can make it their own to get the specific engagement and results they are looking for.
+As the [social media specialist at Insight](/about/theresa-sawall/), I know first-hand the stresses of social media, but I’ve also seen its immense benefits for various clients. There truly is no limit to what you can do with social media marketing, which means businesses in any industry can make it their own to get the specific engagement and results they are looking for.
 
 ## Benefits of social media for small businesses
 

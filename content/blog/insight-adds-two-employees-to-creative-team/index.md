@@ -14,11 +14,11 @@ page_class: single-post
 
 ![Insight News Banner](Insight-News-2500.jpg)
 
-Insight Creative, Inc. recently expanded its content creation team with two new team members. [**Theresa Tebon**](/about/theresa-tebon/) was hired as social media specialist and **Jordan Leon** was hired as digital copywriter.
+Insight Creative, Inc. recently expanded its content creation team with two new team members. [**Theresa Sawall**](/about/theresa-sawall/) was hired as social media specialist and **Jordan Leon** was hired as digital copywriter.
 
-![Theresa Tebon Headshot](theresa-tebon-full.jpg)
+![Theresa Sawall Headshot](theresa-tebon-full.jpg)
 
-As social media specialist, **Tebon** manages all social media efforts for Insight’s diverse client base. She previously gained versatile experience—in social media, writing, design and digital strategy—as the content marketing coordinator for a local homebuilder. She holds a bachelor’s degree in graphic design from UW-Green Bay.
+As social media specialist, **Sawall** manages all social media efforts for Insight’s diverse client base. She previously gained versatile experience—in social media, writing, design and digital strategy—as the content marketing coordinator for a local homebuilder. She holds a bachelor’s degree in graphic design from UW-Green Bay.
 
 ![Jordan Leon Headshot](jordan-leon-full.jpg)
 
