@@ -5,8 +5,8 @@ seo:
   title: How Green Bay businesses can score big with a 2025 Draft marketing plan
   description:
     With the 2025 Draft in Green Bay, Wisconsin, quickly approaching, now is the time to put together your 2025 Draft marketing plan.
-  featured_image: social-media-apps-on-phone.jpg
-  featured_image_alt: Social media icons on phone
+  featured_image: lambeau-field-1.jpg
+  featured_image_alt: Lambeau field during a Packers game
 date: 2024-11-13
 author: McKenzie Kalscheuer
 categories:
