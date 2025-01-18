@@ -64,6 +64,7 @@ module.exports = {
             'chue-vang',
             'melissa-gorzelanczyk',
             'mckenzie-kalscheuer',
+            'lauren-aleknavicius',
             'emphasis-underline--secondary',
             'new-zoo--adventure-park-canopy-tour-signage',
             'verve-public-relations-campaign',
