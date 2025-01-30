@@ -24,6 +24,6 @@ fun_fact:
 marketing_tip:
   body: Your first impression means everything, and you only have one chance to make it.
 image_jpg: /images/staff/Lauren-Aleknavicius.jpg
-department: "Sales"
+department:
 weight: "1"
 about_order: 15
