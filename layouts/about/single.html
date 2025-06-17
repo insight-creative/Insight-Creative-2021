@@ -40,7 +40,7 @@
     <div class="block">
         <div class="wrapper flow">
             <h2>Fun fact</h2>
-            <p>{{ (index .Site.Data.staff .Params.author).fun_fact.body }}</p>
+            <p>{{ (index .Site.Data.staff .Params.author).fun_fact.body | markdownify }}</p>
             <h3>Interested in working with {{ (index .Site.Data.staff .Params.author).first_name }}?</h3>
             <a href="/contact/" class="btn btn-primary">Contact Us</a>
         </div>

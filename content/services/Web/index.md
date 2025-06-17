@@ -57,13 +57,23 @@ web_portfolio:
         - score: "100"
         - score: "100"
         - score: "100"
-    - title: Law Firm of Conway, Olejniczak & Jerry, S.C.
-      image: lcojlaw-website-screenshot.jpg
-      image_alt: Law Firm of Conway, Olejniczak & Jerry, S.C. Website Preview
-      website_url: https://www.lcojlaw.com/
-      tech_stack: Hugo | CloudCannon | Imgix
+    - title: Hurckman Mechanical Industries
+      image: hurckman-website-screenshot.jpg
+      image_alt: Hurckman Website Preview
+      website_url: https://www.hurckman.com/
+      tech_stack: Hugo | CloudCannon | Cloudinary
       lighthouse_score:
-        - score: "99"
+        - score: "85"
+        - score: "95"
+        - score: "100"
+        - score: "100"
+    - title: MetalStorm Inc.
+      image: metalstorm-website-screenshot.jpg
+      image_alt: MetalStorm Website Preview
+      website_url: https://metalstorminc.com/
+      tech_stack: Hugo | CloudCannon | Cloudinary
+      lighthouse_score:
+        - score: "100"
         - score: "100"
         - score: "100"
         - score: "100"
@@ -77,16 +87,6 @@ web_portfolio:
         - score: "100"
         - score: "92"
         - score: "92"
-    - title: Stadium Bike
-      image: stadium-bike-website-preview.jpg
-      image_alt: Stadium Bike website preview
-      website_url: https://www.stadiumbike.com/
-      tech_stack: Hugo | CloudCannon | Mapbox | Imgix
-      lighthouse_score:
-        - score: "98"
-        - score: "100"
-        - score: "100"
-        - score: "100"
     - title: A to Z Machine
       image: atozmachine-website-preview.jpg
       image_alt: A to Z Machine website preview
@@ -94,6 +94,26 @@ web_portfolio:
       tech_stack: Hugo | Netlify
       lighthouse_score:
         - score: "97"
+        - score: "100"
+        - score: "100"
+        - score: "100"
+    - title: Law Firm of Conway, Olejniczak & Jerry, S.C.
+      image: lcojlaw-website-screenshot.jpg
+      image_alt: Law Firm of Conway, Olejniczak & Jerry, S.C. Website Preview
+      website_url: https://www.lcojlaw.com/
+      tech_stack: Hugo | CloudCannon | Imgix
+      lighthouse_score:
+        - score: "99"
+        - score: "100"
+        - score: "100"
+        - score: "100"
+    - title: Freedom House Ministries
+      image: freedom-house-website-screenshot.jpg
+      image_alt: Freedom House Ministries Website Preview
+      website_url: https://www.freedomhousegb.org/
+      tech_stack: Hugo | CloudCannon | Cloudinary
+      lighthouse_score:
+        - score: "100"
         - score: "100"
         - score: "100"
         - score: "100"
@@ -106,25 +126,5 @@ web_portfolio:
         - score: "100"
         - score: "100"
         - score: "100"
-        - score: "100"
-    - title: Hurckman Mechanical Industries
-      image: hurckman-website-screenshot.jpg
-      image_alt: Hurckman Website Preview
-      website_url: https://www.hurckman.com/
-      tech_stack: Hugo | CloudCannon | Cloudinary
-      lighthouse_score:
-        - score: "85"
-        - score: "95"
-        - score: "100"
-        - score: "100"
-    - title: LeMense Quality Homes
-      image: lemense-website-preview.jpg
-      image_alt: LeMense website preview
-      website_url: https://lemensequalityhomes.com/
-      tech_stack: WordPress
-      lighthouse_score:
-        - score: "99"
-        - score: "100"
-        - score: "93"
         - score: "100"
 ---
