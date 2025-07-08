@@ -14,7 +14,7 @@ seo:
 date: 2025-07-02
 author: Olivia Biskobing 
 categories:
-  - Design
+  - Social Media
 page_class: single-post
 ---
 
