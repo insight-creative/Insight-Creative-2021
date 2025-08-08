@@ -44,7 +44,7 @@ testimonial:
 
   Next, we built a website to introduce people to Keynecta’s unique process. The site focused on its four key service areas: compliance training, data collection, behavior changes and leadership training. A central feature was the Safety Culture Evaluation, designed to help visitors assess whether the software could benefit them.
 
-  Beyond the website, we produced a sell sheet to be mailed or emailed to potential clients, wrote blog posts to boost SEO and created a two-minute video explaining the Safety Scoring Tool to encourage prospective calls. We also created letterhead and business cards. 
+  Beyond the website, we produced a sell sheet to be mailed or emailed to potential clients and created a two-minute video explaining the Safety Scoring Tool to encourage prospective calls. We also created letterhead and business cards. 
 
   As Keynecta emerges with a new name and brand identity, early results show positive engagement. The software’s unique scoring system is resonating, and the new brand accurately represents its mission and capabilities. Since launching in 2024, the website has seen over 800 new users, with a combination being direct, organic search and referral traffic. The average engagement rate of users visiting from organic search is more than 70%, indicating a high level of interest. We’ve seen an overall positive response to the content on the website, especially for those who are actively searching for a business solution like the one Keynecta offers.  
   </div>
