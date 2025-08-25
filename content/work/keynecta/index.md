@@ -4,7 +4,7 @@ seo:
   title: Keynecta
   description: Discover how Green Bay marketing agency Insight Creative, Inc. rebranded Keynecta with a fresh name, logo and website. 
   featured_image: keynecta-featured-image.jpg
-featured_project: true
+featured_project: false
 hero:
   image:
     image_url: keynecta-featured-image.jpg
