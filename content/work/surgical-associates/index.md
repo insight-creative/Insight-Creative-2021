@@ -1,6 +1,6 @@
 ---
 Title: Vasectomy Clinic Campaign
-draft: false
+draft: true
 seo:
   title: Vasectomy Clinic Campaign
   description: See how top Green Bay marketing agency Insight Creative, Inc., launched a new marketing campaign for Surgical Associates in Wausau, WI.
