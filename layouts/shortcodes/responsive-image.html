@@ -1,11 +1,11 @@
 {{ if .IsNamedParams }}
 {{ $image := .Page.Resources.GetMatch (printf "%s" (.Get "src")) }}
 {{ $smallwebp := $image.Resize "600x webp" }}
-{{ $mediumwebp := $image.Resize "900x webp" }}
-{{ $bigwebp := $image.Resize "1200x webp" }}
+{{ $mediumwebp := $image.Resize "1200x webp" }}
+{{ $bigwebp := $image.Resize "1600x webp" }}
 {{ $smalljpg := $image.Resize "600x" }}
-{{ $mediumjpg := $image.Resize "900x" }}
-{{ $bigjpg := $image.Resize "1200x" }}
+{{ $mediumjpg := $image.Resize "1200x" }}
+{{ $bigjpg := $image.Resize "1600x" }}
 <picture class="fade-up">
     <source sizes="100vw" srcset="{{ $smallwebp.RelPermalink }} 480w, {{ $mediumwebp.RelPermalink }} 768w, {{ $bigwebp.RelPermalink }} 1024w" type="image/webp" >
     <source sizes="100vw" srcset="{{ $smalljpg.RelPermalink }} 480w, {{ $mediumjpg.RelPermalink }} 768w, {{ $bigjpg.RelPermalink }} 1024w" type="image/jpg" >
