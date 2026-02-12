@@ -1,0 +1,14 @@
+{{ define "main" }}
+{{ partial "hero-alt" . }}
+<div class="block wrapper-sm">
+    <div class="flex flex-column flex-row-m">
+        <div class="w-100">
+            <div class="contact-form">
+                <div class="contact-form__wrapper">
+                    {{ partial "forms/seo-intake-form" . }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}

@@ -12,7 +12,7 @@
     margin: 0;
   }
 
-  .contact-form__form-group input,
+  .contact-form__form-group input:not([type="checkbox"]),
   .contact-form__form-group select,
   .contact-form__form-group textarea {
     background-color: $dark-black;
@@ -34,6 +34,11 @@
     border: none;
     background: none;
   }
+}
+
+.contact-form__form-group [type="checkbox"] {
+  block-size: $ic-200;
+  inline-size: $ic-200;
 }
 
 .contact-sidebar {
