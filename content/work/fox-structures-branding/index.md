@@ -37,7 +37,11 @@ testimonial:
 
   ## A bold brand remodel
 
-  Fox Structures, a local full-service builder specializing in agricultural and commercial construction, has been in business since 1982. The well-established builder approached Insight for a brand refresh to better represent the bold, professional vibe of their expert team and quality work. First, the new brand rolled out internally with apparel, letterhead, business cards and various office materials. Next, they kicked off their public brand reveal at the largest industry show of the year with a fully custom tradeshow booth, also accompanied by fresh job site signs, an updated website, public relations/social media announcements and highly visible outdoor creative.
+  Fox Structures, a local full-service builder specializing in agricultural and commercial construction, has been in business since 1982. The well-established builder approached Insight for a brand refresh to better represent the bold, professional vibe of their expert team and quality work. 
+  
+  First, the new brand rolled out internally with apparel, letterhead, business cards and various office materials. 
+  
+  Next, they kicked off their public brand reveal at the largest industry show of the year with a fully custom tradeshow booth, also accompanied by fresh job site signs, an updated website, public relations/social media announcements and highly visible outdoor creative.
   </div>
 </div>
 

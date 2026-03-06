@@ -30,7 +30,7 @@ tags:
   - Digital
   - Media
 testimonial:
-  copy: “The team from Insight Creative has been a huge support and extension of our brand over the years. It’s no coincidence that ‘creative’ is in their name, and that is what they deliver on all counts. We’ve used larger agencies in the past, but none compare to the level of professionalism and creative strength the Insight team provides.”
+  copy: The team from Insight Creative has been a huge support and extension of our brand over the years. It’s no coincidence that ‘creative’ is in their name, and that is what they deliver on all counts. We’ve used larger agencies in the past, but none compare to the level of professionalism and creative strength the Insight team provides.
   name: Tara Abbott
   client: Domino Global Events Marketing Manager
 draft: false
@@ -41,7 +41,11 @@ draft: false
 
   ## Elevating Domino’s brand at PACK EXPO, InterPACK and Labelexpo Europe
 
-  For more than a decade, Domino has relied on Insight Creative to help them command notice at packaging and processing trade shows such as PACK EXPO, InterPACK and Labelexpo Europe. Our team created eye-catching graphics for their trade show walls that incorporated QR codes for engagement. We also designed branded plant coasters—coasters with seeds that germinate if planted in soil—to align with Domino’s sustainability message. Our innovative VIP video mailer invited select people to Domino’s PACK EXPO booth with key messaging on eliminating human errors through automation. We showcased Domino’s printing capabilities through a unique pizza box “sell sheet.” During the pandemic, we helped Domino adapt by designing a virtual trade show booth. Finally, our strategic geo-fencing campaigns during PACK EXPO consistently drove booth engagement, while our social media management cultivated a thriving online community for Domino to engage with its audience pre- and post-show.
+  For more than a decade, Domino has relied on Insight Creative to help them command notice at packaging and processing trade shows such as PACK EXPO, InterPACK and Labelexpo Europe. Our team created eye-catching graphics for their trade show walls that incorporated QR codes for engagement. We also designed branded plant coasters—coasters with seeds that germinate if planted in soil—to align with Domino’s sustainability message. 
+  
+  Our innovative VIP video mailer invited select people to Domino’s PACK EXPO booth with key messaging on eliminating human errors through automation. We showcased Domino’s printing capabilities through a unique pizza box “sell sheet.” 
+  
+  During the pandemic, we helped Domino adapt by designing a virtual trade show booth. Finally, our strategic geo-fencing campaigns during PACK EXPO consistently drove booth engagement, while our social media management cultivated a thriving online community for Domino to engage with its audience pre- and post-show.
   
   As a result of our collaborative efforts, Domino continues to shine as a prominent figure in the printing manufacturing industry. We look forward to further elevating their brand and market presence for years to come.
   </div>

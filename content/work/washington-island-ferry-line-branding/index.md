@@ -37,7 +37,9 @@ testimonial:
 
   ## Rebranding an anchored identity
 
-  A business that set sail in 1940, the Washington Island Ferry has been a thriving and vital conduit to island life and tourism for decades. After years of promoting the island and its sole source of transportation under a well-established brand, the Washington Island Ferry crew entrusted Insight to create a new brand that reflects their modern operations but also respects their rich history with the Island community. A revamped logo, website, jingle and brochure—complemented by ongoing social media—launched right on the cusp of Washington Island’s busy season, providing fresh momentum for many successful voyages to come!
+  A business that set sail in 1940, the Washington Island Ferry has been a thriving and vital conduit to island life and tourism for decades. After years of promoting the island and its sole source of transportation under a well-established brand, the Washington Island Ferry crew entrusted Insight to create a new brand that reflects their modern operations but also respects their rich history with the Island community. 
+  
+  A revamped logo, website, jingle and brochure—complemented by ongoing social media—launched right on the cusp of Washington Island’s busy season, providing fresh momentum for many successful voyages to come!
   </div>
 </div>
 
