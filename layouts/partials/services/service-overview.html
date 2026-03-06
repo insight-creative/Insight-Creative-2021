@@ -16,7 +16,7 @@
     {{ end }}
     <div class="wrapper-lg block department-feed fade-up">
         <h4 class="text-center">Get to know our {{ lower .Title }} department!</h4>
-        <div class="staff-card-wrapper">
+        <div class="staff-card-wrapper gap-sm">
         {{ if eq .Title "Content" }}
             {{ partialCached "services/staff-cards-content" . }}
         {{ else if eq .Title "Web"}}

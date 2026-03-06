@@ -4,12 +4,12 @@ draft: true
 seo:
   title: Hurckman Mechanical Industries (HMI)
   description: See how top Green Bay marketing agency Insight Creative, Inc., created a new website for Hurckman Mechanical Industries, Inc. in Green Bay, WI.  
-  featured_image: oshkosh-defense-project-cover.jpg
+  featured_image: hmi-project-cover.jpg
 featured_project: false
 hero:
   image:
-    image_url: oshkosh-defense-project-cover.jpg
-    image_alt: Oshkosh Defense Project cover
+    image_url: hmi-project-cover.jpg
+    image_alt: HMI project cover
 date: 2025-10-24
 client: Hurckman Mechanical Industries (HMI) 
 industries:

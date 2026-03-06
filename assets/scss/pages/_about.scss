@@ -6,9 +6,6 @@
 }
 
 .about {
-  .staff-card:first-of-type {
-    display: none;
-  }
 
   .industry-list {
     padding: 0 1.5rem;
@@ -141,7 +138,8 @@
 }
 
 .kelsey-tointon,
-.cindy-ossmann {
+.cindy-ossmann,
+.amanda-giannunzio {
   .authors-posts {
     display: none;
   }
