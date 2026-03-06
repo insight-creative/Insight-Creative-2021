@@ -24,9 +24,9 @@
 
     <link rel="canonical" href="{{ .Permalink }}">
 
-    {{ $scss := resources.Get "scss/main.scss" | toCSS }}
-    {{ $postcss := $scss | resources.PostCSS | minify }}
-    <link rel="stylesheet" href="{{ $postcss.Permalink }}" media="screen">
+    {{ with resources.Get "scss/main.scss" | toCSS | css.PostCSS | minify }}
+      <style>{{ .Content | safeCSS }}</style>
+    {{ end }}
 
     <link rel="preconnect" href="https://www.google-analytics.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">

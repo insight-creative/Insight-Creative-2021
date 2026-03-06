@@ -65,6 +65,7 @@ module.exports = {
             'cindy-ossmann',
             'melissa-gorzelanczyk',
             'mckenzie-kalscheuer',
+            'amanda-giannunzio',
             'emphasis-underline--secondary',
             'new-zoo--adventure-park-canopy-tour-signage',
             'verve-public-relations-campaign',

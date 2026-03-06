@@ -47,6 +47,36 @@ web_portfolio:
         - score: "100"
         - score: "100"
         - score: "100"
+    - title: Wisconsin Homes
+      image: wisconsin-homes-website-screenshot.jpg
+      image_alt: Wisconsin Homes Website Preview
+      website_url: https://www.wisconsinhomesinc.com/
+      tech_stack: Hugo | CloudCannon | Cloudinary
+      lighthouse_score:
+        - score: "100"
+        - score: "100"
+        - score: "100"
+        - score: "100"
+    - title: New Zoo
+      image: new-zoo-website-screenshot.jpg
+      image_alt: New Zoo website preview
+      website_url: https://newzoo.org/
+      tech_stack: WordPress
+      lighthouse_score:
+        - score: "98"
+        - score: "97"
+        - score: "96"
+        - score: "85"
+    - title: Stadium Bike
+      image: stadium-bike-website-screenshot.jpg
+      image_alt: Stadium Bike website preview
+      website_url: https://www.stadiumbike.com/
+      tech_stack: Hugo | CloudCannon | Imgix
+      lighthouse_score:
+        - score: "99"
+        - score: "100"
+        - score: "100"
+        - score: "100"
     - title: Washington Island Ferry
       image: wisferry-website-preview.jpg
       image_alt: Washington Island Ferry website preview
@@ -75,6 +105,26 @@ web_portfolio:
       lighthouse_score:
         - score: "100"
         - score: "100"
+        - score: "100"
+        - score: "100"
+    - title: The Collective
+      image: the-collective-website-screenshot.jpg
+      image_alt: The Collective Website Preview
+      website_url: https://thecollectivebeautysalon.com/
+      tech_stack: Hugo | CloudCannon | Cloudinary
+      lighthouse_score:
+        - score: "98"
+        - score: "100"
+        - score: "100"
+        - score: "100"
+    - title: Kantola Closets
+      image: kantola-closets-website-preview.jpg
+      image_alt: Kantola Closets Website Preview
+      website_url: https://kantolaclosets.com/
+      tech_stack: Hugo | CloudCannon | Cloudinary
+      lighthouse_score:
+        - score: "98"
+        - score: "92"
         - score: "100"
         - score: "100"
     - title: Fox Structures
@@ -117,11 +167,21 @@ web_portfolio:
         - score: "100"
         - score: "100"
         - score: "100"
-    - title: Baileys Harbor Schoolhouse Inn
-      image: baileys-harbor-schoolhouse-inn-website-screenshot.jpg
-      image_alt: Baileys Harbor Schoolhouse Inn Website Preview
-      website_url: https://baileysharborinn.com/
-      tech_stack: Hugo | Netlify | Imgix
+    - title: Zhang and Eisenheim, Inc.
+      image: z-and-e-law-website-screenshot.jpg
+      image_alt: Zhang and Eisenheim Website Preview
+      website_url: https://zandelaw.org/
+      tech_stack: Hugo | CloudCannon | Cloudinary
+      lighthouse_score:
+        - score: "98"
+        - score: "96"
+        - score: "100"
+        - score: "100"
+    - title: Powers Paper
+      image: powers-paper-website-screenshot.jpg
+      image_alt: Powers Paper Website Preview
+      website_url: https://powerspaper.com/
+      tech_stack: Hugo | CloudCannon | Cloudinary
       lighthouse_score:
         - score: "100"
         - score: "100"
