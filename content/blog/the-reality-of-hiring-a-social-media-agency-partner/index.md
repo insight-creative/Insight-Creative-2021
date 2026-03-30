@@ -4,11 +4,7 @@ title: The Reality of Hiring a Social Media Agency Partner
 seo:
   title: The Reality of Hiring a Social Media Agency Partner
   description:
-    I recently had the opportunity to be a reviewer at the Fox River Ad
-    Club Student Portfolio Review at UW-Oshkosh. Meeting fresh designers and
-    answering their questions made me think about advice I received as a student
-    that helps me be a better designer and understand the advertising industry
-    to this day.
+    Between shifting algorithms, new trends and the pressure to consistently create engaging content, many businesses find themselves asking the same important questions before investing in support from a marketing agency.
   featured_image: biggest-misconceptions-social-media-edition.png
   featured_image_alt: The Reality of Hiring a Social Media Agency Partner
 draft: false
