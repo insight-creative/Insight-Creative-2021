@@ -9,9 +9,7 @@ seo:
 draft: false
 date: 2023-05-05
 author: Melissa Gorzelanczyk
-featured: true
 categories: 
-  - Featured
   - Business Strategy
 page_class: single-post
 ---
