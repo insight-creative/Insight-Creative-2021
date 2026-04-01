@@ -75,6 +75,7 @@ Now let’s clear up some of the biggest social media misconceptions we see and 
 * Trust building
 * Nurturing leads
 * Community development
+
 It’s part of a **longer customer journey**, not always a direct-response channel.
 
 
@@ -88,6 +89,7 @@ It’s part of a **longer customer journey**, not always a direct-response chann
 * Consumer psychology
 * Platform trends
 * Strategic media buying
+
 This is why it’s so beneficial to hire a marketing agency like Insight Creative. We have many team members who specialize in copywriting, design, strategy, analytics and more!
 
 
@@ -99,3 +101,5 @@ This is why it’s so beneficial to hire a marketing agency like Insight Creativ
 Doing well on social media doesn’t mean posting nonstop or following every trend. It means having a clear strategy and sticking to it. Insight Creative helps by bringing knowledge of the platforms, the numbers and your brand’s bigger goals.
 
 By using both organic posts and paid ads, social media can help you build brand awareness and trust — two vital components to grow your business.
+
+<a class="btn btn-primary" href="/contact/">Contact us to upgrade your social media</a>
