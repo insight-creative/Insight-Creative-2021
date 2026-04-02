@@ -43,7 +43,7 @@ testimonial:
 
   ## Building Trust and Traffic for Wisconsin’s First Full-Service MEP 
 
-  Peyton Daul from Hurckman Mechanical Industries (HMI) reached out to us at Insight Creative, Inc., in fall 2023 for a new website. HMI’s old site was outdated and hard to navigate, and its marketing materials didn’t reflect the strength of its growing business. The company was in the midst of making industry moves, like becoming the first full-service mechanical, electrical and plumbing (MEP) company in Northeast Wisconsin. HMI needed its brand to stand out. After finding us through a Google search, Peyton brought us in to help. 
+  Hurckman Mechanical Industries (HMI) reached out to us at Insight Creative, Inc., in fall 2023 for a new website. HMI’s old site was outdated and hard to navigate, and its marketing materials didn’t reflect the strength of its growing business. The company was in the midst of making industry moves, like becoming the first full-service mechanical, electrical and plumbing (MEP) company in Northeast Wisconsin. HMI needed its brand to stand out. After finding us through a Google search, HMI brought us in to help. 
 
   We started with a discovery session to dig into who HMI is and how they wanted to show up for customers. From there, we worked on a full website overhaul—more than 75 pages in all—focusing on clarity, user experience and search performance. At the same time, we launched a digital media campaign to start driving traffic to the site. This grew into a full search engine marketing (SEM) strategy designed to bring in high-quality clicks. 
 
