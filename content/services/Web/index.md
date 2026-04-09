@@ -107,16 +107,6 @@ web_portfolio:
         - score: "100"
         - score: "100"
         - score: "100"
-    - title: The Collective
-      image: the-collective-website-screenshot.jpg
-      image_alt: The Collective Website Preview
-      website_url: https://thecollectivebeautysalon.com/
-      tech_stack: Hugo | CloudCannon | Cloudinary
-      lighthouse_score:
-        - score: "98"
-        - score: "100"
-        - score: "100"
-        - score: "100"
     - title: Kantola Closets
       image: kantola-closets-website-preview.jpg
       image_alt: Kantola Closets Website Preview

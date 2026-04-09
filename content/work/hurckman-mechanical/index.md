@@ -34,7 +34,7 @@ tags:
   - Branding
 testimonial: 
   copy: 'I’m very happy with the work Insight Creative has done. They did a fantastic job creating our website–including design, development, SEO, everything! Our partnership continues to be successful as we work to build out our brand.'
-  name: Peyton Daul, _Marketing Coordinator_
+  name:
   client: Hurckman Mechanical Industries
 ---
 
