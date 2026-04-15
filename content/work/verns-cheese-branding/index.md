@@ -1,8 +1,8 @@
 ---
-Title: Vern’s Cheese branding
+Title: Vern’s Cheese Branding
 draft: false
 seo:
-  title: Vern’s Cheese branding
+  title: Vern’s Cheese Branding
   description: See how best Green Bay marketing agency, Insight Creative, Inc., created a new logo and website for Vern’s Cheese.
   featured_image: verns-project-cover.jpg
 featured_project: true
@@ -14,7 +14,7 @@ date: 2026-01-19
 client: Vern’s Cheese
 industries:
   industries:
-    - industry: Cheese
+    - industry: Retail & Wholesale
 provided_services:
   services:
     - service: Content
@@ -58,8 +58,8 @@ testimonial:
 
 <div class="wrapper-md mt-9">
   <div class="flex-grid">
-    {{< responsive-image src="verns-logo-animation.gif" alt="Vern's Cheese logo evolution">}}
-    {{< responsive-image src="verns-logo.webp" alt="Vern's Cheese final logo">}}
+    {{< responsive-image-caption heading="Concepted Logos" src="verns-logo-animation.gif" alt="Vern's Cheese logo evolution">}}
+    {{< responsive-image-caption heading="Final Logo" src="verns-logo.webp" alt="Vern's Cheese final logo">}}
   </div>
   <div class="flex-grid">
     {{< responsive-image src="verns-resch-digital-ad.jpg" alt="Vern's Cheese digital ad">}}
