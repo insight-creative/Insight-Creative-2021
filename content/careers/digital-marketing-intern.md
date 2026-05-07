@@ -57,6 +57,8 @@ Insight Creative, Inc. is seeking a dynamic and motivated Digital Marketing Inte
 
 Pay: $14.00 per hour
 
+Hours: 30 - 40 hours per week
+
 Work Location: In person
 
 * 401(k)
