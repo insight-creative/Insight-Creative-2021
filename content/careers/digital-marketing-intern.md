@@ -10,7 +10,7 @@ hero:
   subhead:
   icon: digital-icon.svg
 position_type: Full-time
-years_of_experience: 1+ Years
+years_of_experience: 1 - 2 Years
 summary: The Digital Marketing Intern supports the development and execution of online campaigns, assist with content creation, and analyze digital performance metrics.
 ---
 ## Digital Marketing Intern

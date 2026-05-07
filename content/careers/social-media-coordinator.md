@@ -10,7 +10,7 @@ hero:
   subhead:
   icon: social-media-icon.svg
 position_type: Full-time
-years_of_experience: 1-2 Years
+years_of_experience: 1 - 2 Years
 summary: The Social Media Coordinator supports the account team in handling our diverse client base by executing social media strategy, creating engaging content, managing platforms, and delivering analytical insights
 ---
 ## Social Media Coordinator
