@@ -37,16 +37,6 @@ services:
       service_list: website hosting • software updates • regular backups • website audits • troubleshooting • bug fixes • performance optimizations • security scans • malware cleanup • analytics and reporting
 web_portfolio:
   portfolio_items:
-    - title: Matthews Tire
-      image: matthews-tire-website-screenshot.jpg
-      image_alt: Matthews Tire Website Preview
-      website_url: https://www.matthewstire.com/
-      tech_stack: Hugo | CloudCannon | Imgix
-      lighthouse_score:
-        - score: "100"
-        - score: "100"
-        - score: "100"
-        - score: "100"
     - title: Wisconsin Homes
       image: wisconsin-homes-website-screenshot.jpg
       image_alt: Wisconsin Homes Website Preview
@@ -170,6 +160,16 @@ web_portfolio:
     - title: Powers Paper
       image: powers-paper-website-screenshot.jpg
       image_alt: Powers Paper Website Preview
+      website_url: https://powerspaper.com/
+      tech_stack: Hugo | CloudCannon | Cloudinary
+      lighthouse_score:
+        - score: "100"
+        - score: "100"
+        - score: "100"
+        - score: "100"
+    - title: Bille's Heating & Air Conditioning
+      image: billes-hvac-website-screenshot-2.jpg
+      image_alt: Bille's Heating & Air Conditioning Website Preview
       website_url: https://powerspaper.com/
       tech_stack: Hugo | CloudCannon | Cloudinary
       lighthouse_score:
