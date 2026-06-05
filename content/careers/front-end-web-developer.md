@@ -1,14 +1,15 @@
 ---
 Title: Front-End Web Developer
-draft: true
+draft: false
 seo:
   title: Front-End Web Developer Careers At Insight Creative, Inc.
   description: Insight Creative is always seeking talented team players! Browse marketing communications jobs in digital, web, copy, design & more in Green Bay, Wisconsin.
   featured_image: "images/background-images/Insight-Social-Preview.jpg"
 hero:
-  head: Bookkeeper
+  head: Front-End Web Developer
   subhead:
   icon: web-icon.svg
+position_type: Full-time
 years_of_experience: 2 - 3 Years
 summary: The Front-End Web Developer is responsible for communicating and coordinating client requests in conjunction with the Account Executives.
 ---
@@ -74,13 +75,25 @@ The Front-End Web Developer supports the account team in handling the day-to-day
 
 * Strong verbal and written communication skills.
 
-## Benefits:
+## Compensations & Benefits:
+
+Job Types: Full-time, Permanent
+
+Pay: $50,000.00 - $55,000.00 per year
+
+Work Location: In person
 
 * 401(k)
 
 * 401(k) matching
 
 * Flexible schedule
+
+* Health insurance
+
+* Health savings account
+
+* Life insurance
 
 * Paid time off
 

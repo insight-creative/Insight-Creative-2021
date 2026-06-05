@@ -1,0 +1,22 @@
+<div class="image-with-caption bg-black block-full fade-up">
+    <h3>{{ .Get "heading" }}</h3>
+    {{ if .IsNamedParams }}
+    {{ $image := .Page.Resources.GetMatch (printf "%s" (.Get "src")) }}
+    {{ $smallwebp := $image.Resize "600x webp" }}
+    {{ $mediumwebp := $image.Resize "1200x webp" }}
+    {{ $bigwebp := $image.Resize "1600x webp" }}
+    {{ $smalljpg := $image.Resize "600x" }}
+    {{ $mediumjpg := $image.Resize "1200x" }}
+    {{ $bigjpg := $image.Resize "1600x" }}
+    <picture class="fade-up">
+        <source sizes="100vw"
+            srcset="{{ $smallwebp.RelPermalink }} 480w, {{ $mediumwebp.RelPermalink }} 768w, {{ $bigwebp.RelPermalink }} 1024w"
+            type="image/webp">
+        <source sizes="100vw"
+            srcset="{{ $smalljpg.RelPermalink }} 480w, {{ $mediumjpg.RelPermalink }} 768w, {{ $bigjpg.RelPermalink }} 1024w"
+            type="image/jpg">
+        <img loading="lazy" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}"
+            alt="{{ .Get " alt" }}">
+    </picture>
+    {{ end }}
+</div>
