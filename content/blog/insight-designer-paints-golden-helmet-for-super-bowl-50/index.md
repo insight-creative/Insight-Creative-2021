@@ -6,6 +6,7 @@ seo:
   description: "We’re so proud of Insight Designer/Programmer Zane Statz for being selected to paint Green Bay’s golden helmet in tribute to Super Bowl 50! Get a preview of the finished product before its national debut this Sunday."
   featured_image: Insight-Designer-Paints-Golden-Helmet-for-Super-Bowl-50.jpg
   featured_image_alt:
+draft: true
 date: 2016-02-04
 author: Insight Creative, Inc.
 categories: ["News"]

@@ -6,7 +6,7 @@ seo:
   description: Read more about Insight Creative, Inc. hiring McKenzie Kalscheuer as marketing coordinator.
   featured_image: Insight-News-2500.jpg
   featured_image_alt: Insight-News-2500.jpg
-draft: false
+draft: true
 date: 2023-08-30
 author: Insight Creative, Inc.
 categories:

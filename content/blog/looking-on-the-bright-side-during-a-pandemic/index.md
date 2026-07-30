@@ -6,6 +6,7 @@ seo:
   description: "There's opportunity in every situation if you look for it."
   featured_image: looking-on-the-bright-side-2400.jpg
   featured_image_alt: Looking at the bright side during COVID-19
+draft: true
 date: 2020-08-17
 author: Jay Bauer
 categories: ["Productivity"]

@@ -6,6 +6,7 @@ seo:
   description: "Insight Creative, Inc. recently hired Brian Brost as account executive."
   featured_image: brian-brost.jpg
   featured_image_alt: Headshot of Account Executive Brian Brost
+draft: true
 date: 2017-10-04
 author: Insight Creative, Inc.
 categories: ["News"]

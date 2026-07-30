@@ -6,6 +6,7 @@ seo:
   description: "Sometimes we focus too much on what we can give away, rather than simply making a customer more comfortable, satisfied or happier."
   featured_image: fueling-my-addiction.jpg
   featured_image_alt: Person with phone in one hand and a cup of coffee in the other hand
+draft: true
 date: 2015-07-14
 author: Insight Creative, Inc.
 categories: ["Business Strategy", "Branding"]

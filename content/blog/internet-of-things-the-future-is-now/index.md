@@ -6,6 +6,7 @@ seo:
   description: "What exactly is IoT? In short, it's the interconnectedness of objects. Analysts estimate that IoT applications could have a total economic impact of up to 11 trillion dollars annually by 2025."
   featured_image: internet-of-things.jpg
   featured_image_alt: Woman brewing a cup of coffee from her phone
+draft: true
 date: 2017-09-17
 author: Insight Creative, Inc.
 categories: ["Business Strategy"]

@@ -6,6 +6,7 @@ seo:
   description: ""
   featured_image: Insight-News-2500.jpg
   featured_image_alt: Insight News Banner
+draft: true
 date: 2021-09-07
 author: Insight Creative, Inc.
 categories: ["News"]

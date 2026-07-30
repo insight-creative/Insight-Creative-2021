@@ -6,6 +6,7 @@ seo:
   description: "Imagine a superhero. (Hopefully this means you're picturing yourself in a cape.) This superhero's power is leaping into businesses and improving their efficiency and profitability by improving their ability to collaborate. Exciting!"
   featured_image: The-Modern-Collaboration-Toolkit.jpg
   featured_image_alt: Superhero illustration with logos for various collaboration tools such as BaseCamp and Asana
+draft: true
 date: 2015-10-13
 author: Insight Creative, Inc.
 categories: ["Productivity"]
