@@ -4,7 +4,7 @@ seo:
   title: Washington Island Ferry Line branding
   description: See how the Washington Island Ferry entrusted Insight to create a new brand that reflects their modern operations but also respects the history with the Island community.
   featured_image: washington-island-ferry-project-cover.jpg
-featured_project: true
+featured_project: false
 hero:
   image:
     image_url: washington-island-ferry-project-cover.jpg

@@ -11,7 +11,7 @@
         {{ $url := .RelPermalink }}
         {{ range .Site.Menus.main }}
         
-        {{ $contact := eq "Contact Us" .Name }}
+        {{ $contact := eq "Start a Conversation" .Name }}
           {{ if .HasChildren }}
               <li class="nav-list__item has-sub-menu">
                 <a class="nav-item" href="{{ .URL }}" aria-label="{{ .Name }}">

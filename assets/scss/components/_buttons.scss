@@ -5,11 +5,12 @@
   text-decoration: none;
   text-transform: uppercase;
   font-size: $ic-200;
-  letter-spacing: 1.6px;
+  letter-spacing: 1px;
+  transition: background-color 300ms ease;
 
-  @include breakpoint(md) {
-    font-size: $ic-300;
-  }
+  // @include breakpoint(md) {
+  //   font-size: $ic-300;
+  // }
 }
 
 .btn-primary,
@@ -18,57 +19,35 @@
   position: relative;
   z-index: 1;
   color: $light-gray;
-
-  &:before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 40px;
-    border-radius: 50px;
-    z-index: -1;
-    transition: 0.3s ease;
-
-    @include breakpoint(md) {
-      width: 46px;
-    }
-  }
+  border-radius: 50px;
 
   &:hover,
   &:focus {
-    &::before {
-      width: 100%;
-    }
+    
   }
 }
 
 .btn-primary {
-  &::before {
-    background-color: $primary-color;
+  background-color: $primary-color;
+  &:hover,
+  &:focus {
+    background-color: #a71833;
   }
 }
 
 .btn-secondary {
   color: $primary-color;
+  background-color: $light-gray;
 
-  &::before {
-    background-color: $light-gray;
-  }
 }
 
 .btn-tertiary {
-  &::before {
-    background-color: $tertiary-color;
-  }
+  background-color: $tertiary-color;
+  color: $body-black;
 
   &:hover,
   &:focus {
-    color: $body-black;
-
-    &::before {
-      width: 100%;
-    }
+    
   }
 }
 
