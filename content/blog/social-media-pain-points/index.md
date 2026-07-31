@@ -7,7 +7,7 @@ seo:
   featured_image: social-media-apps-on-phone.jpg
   featured_image_alt: Social media apps on phone screen
 date: 2022-08-29
-author: Theresa Sawall
+author: Insight Creative, Inc.
 categories:
   - Social Media
 page_class: single-post
@@ -16,7 +16,7 @@ draft: false
 
 ![Social media apps on phone screen](social-media-apps-on-phone.jpg)
 
-As a social media specialist, I’ve seen first-hand how common social media pain points can affect small businesses. I’ve also seen how these businesses can thrive when they develop a social media strategy that works for their brand. The consensus? Social media marketing is far too valuable to ignore, and the challenges can be avoided if you prepare.
+As a social media specialist, I’ve seen firsthand how common social media pain points can affect small businesses. I’ve also seen how these businesses can thrive when they develop a [social media strategy](/services/copywriting-services/) that works for their brand. The consensus? Social media marketing is far too valuable to ignore, and many of its challenges can be avoided with the right preparation.
 
 If your business hasn’t taken part in social media, or your current efforts are falling flat, I’m here to share the info you need to succeed. Keep reading to learn more about social media marketing, common pain points small businesses encounter and how you can prepare for them.
 
@@ -24,7 +24,7 @@ If your business hasn’t taken part in social media, or your current efforts ar
 
 _I know what you’re thinking: If there are pain points for me as a business owner, why should I even take the time to do social media?_
 
-As the [social media specialist at Insight](/about/theresa-sawall/), I know first-hand the stresses of social media, but I’ve also seen its immense benefits for various clients. There truly is no limit to what you can do with social media marketing, which means businesses in any industry can make it their own to get the specific engagement and results they are looking for.
+As the social media specialist at Insight, I know first-hand the stresses of social media, but I’ve also seen its immense benefits for various clients. There truly is no limit to what you can do with social media marketing, which means businesses in any industry can make it their own to get the specific engagement and results they are looking for.
 
 ## Benefits of social media for small businesses
 

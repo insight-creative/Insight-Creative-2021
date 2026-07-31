@@ -16,7 +16,7 @@ draft: false
 
 ![Person sitting at desk and reviewing website analytics on a computer screen](person-reviewing-analytics-on-computer-screen.jpg)
 
-It can be disappointing to discover the brand new site you put so much work into isn’t drawing in the amount of traffic you need. After all, you likely spent a good deal of time, money and resources building a quality brand website. Here’s the good news: you can improve your website traffic and we’re here to break down the top SEO tips to help you do just that.
+It can be disappointing to discover that the new site you put so much work into isn’t drawing the traffic you need. After all, you likely invested a good deal of time, money, and resources into professional [website design and development](/services/web-design-development-services/). Here’s the good news: you can improve your website traffic, and we’re here to break down five SEO tips to help you do just that.
 
 At Insight Creative, we are constantly implementing optimization strategies to help our clients boost their web traffic, and we’re here for you, too! Get the essential information and expert SEO tips you need to optimize your brand website, outrank your competitors and boost your web traffic.
 
@@ -153,4 +153,4 @@ You don’t have to settle for low website traffic. By implementing these SEO ti
 
 When you need to improve your brand site’s SEO and increase your web traffic, Insight Creative is here to help! Our expert web development and copywriting teams have both the SEO skills and expertise necessary to take your website to the next level.
 
-[Contact us today](/contact-us/) to learn how we can help boost your website traffic.
+[Contact us today](/contact/) to learn how we can help boost your website traffic.

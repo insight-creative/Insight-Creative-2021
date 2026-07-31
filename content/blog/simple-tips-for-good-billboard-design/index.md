@@ -15,7 +15,7 @@ page_class: single-post
 
 ![Simple Tips for Good Billboard Design](simple-tips-for-good-billboard-design.jpg)
 
-When you decide to spend marketing dollars on a billboard, make sure it follows these simple guidelines for maximum effectiveness. Creating a poorly designed billboard is like throwing money away. You want your message to be read and then acted upon.
+When you decide to spend marketing dollars on a billboard, make sure the [billboard design](/services/graphic-design-services/) follows a few simple guidelines for maximum effectiveness. A poorly designed billboard can feel like throwing money away. Your message should be easy to read, understand and act on.
 
 ## Mind the 5-second rule
 

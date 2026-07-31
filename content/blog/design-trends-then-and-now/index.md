@@ -18,7 +18,7 @@ page_class: single-post
 
 I started designing professionally in 1992 and have witnessed a great deal of change in the industry over the years. First off, there was no internet and that certainly changed things.
 
-When it comes to initial web design back in the ‘90s, people would pack everything they could into a website, as you can see in examples below. Cardinal rules were to put everything above the fold, pack everything on to one page and avoid making visitors scroll if possible. Yikes! It makes my head hurt.
+When it comes to early web design in the ‘90s, people would pack everything they could into a website, as you can see in the examples below. Many of the [graphic design principles](/services/graphic-design-services/) we now use to create clear, organized layouts were often overlooked. The cardinal rules were to put everything above the fold, fit everything onto one page, and avoid making visitors scroll whenever possible. Yikes! It makes my head hurt.
 
 ![Outdated website design examples](old-website-design-examples-2500.jpg)
 
