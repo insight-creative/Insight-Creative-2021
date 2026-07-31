@@ -1,0 +1,45 @@
+{{ define "main" }}
+<section id="contact-form" class="block wrapper-md">
+    <div class="flex flex-column flex-row-m">
+        <div class="w-100">
+            <div class="contact-form">
+                <h4>Sign Up for SMS Text Messages</h4>
+                <div class="contact-form__wrapper">
+                    <form method="post" name="contact" data-netlify="true" netlify-honeypot="bot-field"
+                        action="/sms-sign-up/thank-you/">
+                        <div hidden>
+                            <label for="bot-field">
+                                Don’t fill this out if you're human:
+                                <input name="bot-field" id="bot-field" />
+                            </label>
+                        </div>
+                        <div class="visually-hidden">
+                            <label for="subject">New form submission from the insightcreative.com SMS sign up form</label>
+                            <input aria-label="subject" name="subject"
+                                value="New form submission from the insightcreative.com sms sign up form" />
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="first_name">First Name*</label>
+                            <input id="first_name" name="first_name" type="text" class="contact-form__form-control" required>
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="last_name">Last Name*</label>
+                            <input id="last_name" name="last_name" type="text" class="contact-form__form-control" required>
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="phone">Phone*</label>
+                            <input id="phone" name="phone" type="tel" class="contact-form__form-control" required>
+                        </div>
+                        <div class="contact-form__form-group opt-in">
+                            <input id="opt-in" name="opt-in" type="checkbox">
+                            <label for="opt-in">I agree to receive conversational SMS text messages from Insight Creative, Inc. regarding project coordination, scheduling, appointment or service reminders, job-site updates, customer support, and responses to my inquiries. Message frequency varies. Message and data rates may apply. Reply STOP to unsubscribe or HELP for help. Consent is not a condition of purchasing goods or services. Mobile opt-in information will not be shared with third parties for marketing purposes. View our <a href="https://insightcreative.com/privacy-policy/">Privacy Policy</a> and <a href="https://insightcreative.com/sms-terms-and-conditions/">SMS Terms and Conditions</a>.</label>
+                        </div>
+                        <button target="_blank" type="submit" class="contact-form__btn btn btn-primary">Send
+                            Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
