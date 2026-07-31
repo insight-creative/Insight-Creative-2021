@@ -1,13 +1,14 @@
 ---
 Title: Media
 seo:
-  title: Media Buying Services in Green Bay, WI
-  description: Insight’s approach to media is methodical. We understand the value of research and strategy before buying. Plus, we learn from the infinite data we get in return, ensuring your media only gets more effective as it runs. Learn more about Insight Creative's media services.
+  title: Media Buying Agency in Green Bay, WI – Strategic Media Planning, Digital Ad Placement, TV, Radio, Streaming, and Paid Social Campaigns for Businesses Across Green Bay, Wisconsin
+  description: Partner with a media buying agency in Green Bay, WI to reach the right audience through research, strategy and smarter ad placement. Get started today.
   featured_image: "images/background-images/Insight-Social-Preview.jpg"
 
 hero_title: 'It’s <span class="emphasis-red">so much more</span> than "buying."'
-
+hero_h1: Media Buying Agency in Green Bay, WI
 intro:
+  prehead: Green Bay Media Buying Agency
   subhead: Research and strategy make the most of <span class="emphasis-red">every</span> dollar.
   description: "<p>Strong media plans begin with strong partnerships. Our process is simple: You teach us about you, and we’ll teach you about media. Together, we’ll assemble a comprehensive, targeted and creative plan that makes the best use of your budget to meet your goals.</p>
   

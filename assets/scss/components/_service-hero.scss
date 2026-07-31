@@ -86,6 +86,14 @@
     line-height: 1.2;
     margin: 0 auto;
   }
+  h1 {
+    margin-block-end: $ic-700;
+    // max-width: 36ch;
+    // opacity: 0;
+    @include breakpoint(md) {
+      max-width: 36ch;
+    }
+  }
 }
 
 .design-hero {

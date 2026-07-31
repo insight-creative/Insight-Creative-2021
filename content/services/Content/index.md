@@ -2,13 +2,14 @@
 Title: Content
 url: /services/copywriting-services/
 seo:
-  title: Copywriting, Social Media, and PR Services in Green Bay, WI
-  description: Words need to mean something! Information must be valuable and relevant. Learn more today about how at Insight, we lead with clarity to ensure your message is strategic, accurate and consistent.
+  title: Content Marketing Services in Green Bay, WI – Grow Your Audience with Blog Writing, SEO Copywriting, Content Planning, Social Media Campaigns, and Conversion-Focused Marketing Content
+  description: Strengthen your brand with content marketing in Green Bay, WI. Get strategic copy, social media and PR that connect and convert. Put your words to work today.
   featured_image: "images/background-images/Insight-Social-Preview.jpg"
 
 hero_title: 'Clarity over creative … <span class="emphasis-red">GASP,</span> we said it.'
-
+hero_h1: Content Marketing Services in Green Bay, WI
 intro: 
+    prehead: Green Bay Content Marketing Services
     subhead: Strategic and meaningful copy <span class="emphasis-red">jumpstarts</span> successful creative.
     description: "<p>Clear communication gets results. No matter how creative something is, if the message gets lost, it’s destined to fail. We’re never creative for the sake of trying to be clever, cute or obscure. Words need to mean something! Information must be valuable and relevant. That’s why our writers research, ask questions and then ask more questions before our hands hit the keyboard.</p>
 

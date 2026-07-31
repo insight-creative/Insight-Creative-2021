@@ -2,12 +2,14 @@
 Title: Web
 url: /services/web-design-development-services/
 seo:
-  title: Website Design and Website Development Services in Green Bay, WI
-  description: Your website should operate like a well-oiled and ever-evolving machine. Learn how Insight Creative can build a site that complements your communication efforts, accommodates your customers’ changing needs and withstands rapidly changing digital demands.
+  title: Web Design in Green Bay, WI – Grow Your Business with Custom Website Design, Responsive Web Development, Local SEO, and Conversion-Focused Website Designs for Companies Across Green Bay, Wisconsin
+  description: Get custom Web Design in Green Bay, WI, built for accessibility, security and performance. Create a website that works for your business. Get started today.
   featured_image: "images/background-images/Insight-Social-Preview.jpg"
   featured_image_alt: Website Design and Development page hero image
 hero_title: Our websites don’t just look great, they <span class="emphasis-red">perform.</span>
+hero_h1: Website Design and Website Development Services in Green Bay, WI
 intro:
+  prehead: Green Bay Website Design
   subhead: <span class="emphasis-red">Custom built websites</span> tailored to you and your business goals.
   description: <p>Creating a website doesn’t have to be intimidating or over-complicated. As with all communication tactics, strategy is at the core of your website’s success. Our full-service team of experts—including web, copy and design experts—help you define your goals, strategy and messaging to ensure your site is on-brand and serves the needs of your audience. You’ll appreciate our thoughtful and thorough approach, especially on the areas you can’t see. With Insight, you can trust the back end of your site is custom built with a focus on accessibility, security and performance.</p>
 service_overview:

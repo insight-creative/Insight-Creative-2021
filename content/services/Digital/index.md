@@ -2,13 +2,14 @@
 Title: Digital
 url: /services/digital-marketing-services/
 seo:
-  title: Digital Services in Green Bay, WI
-  description: As more digital features sprout up each day, it’s vital to have a knowledgeable team to monitor ever-evolving trends and consumer behavior. Learn more about how Insight Creative can help you strategize a digital media plan for you.
+  title: Digital Marketing in Green Bay, WI – Grow Your Business with SEO Services, Paid Search Advertising, Social Media Campaigns, Email Marketing, and Conversion-Focused Digital Strategy
+  description: Drive results with digital marketing in Green Bay, WI. Reach your audience through streaming, social, display and search ads. Learn more today.
   featured_image: "images/background-images/Insight-Social-Preview.jpg"
 
 hero_title: 'The possibilities online are <span class="emphasis-red">infinite.</span>'
-
+hero_h1: Digital Marketing Services in Green Bay, WI
 intro:
+  prehead: Green Bay Digital Marketing
   subhead: '<span class="emphasis-red">Don’t worry.</span> We keep up, so you don’t have to.'
   description: "<p>It seems almost everyone remotely associated with marketing sells some form of digital advertising. Choosing the right path can be intimidating and overwhelming. At Insight, our digital experts not only teach you about the latest options, they also share instant, ongoing and in-depth performance updates while collaborating on creative that complements and contributes to your overall marketing plan.</p>"
 

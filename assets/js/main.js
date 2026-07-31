@@ -663,7 +663,8 @@ function initImageEffects () {
 function initHeroParallax () {
   const titleReveal = document.querySelector('.title-reveal')
   const titleRevealFadeAway = document.querySelector('.title-reveal--fade-up-away')
-  const title = document.querySelector('.title-reveal__title')
+  const title = document.querySelector('h2.title-reveal__title')
+  const subtitle = document.querySelector('h1.title-reveal__title')
 
   if (!document.body.contains(title)) return
 
@@ -672,6 +673,16 @@ function initHeroParallax () {
     // delay: .3,
     duration: 1,
     ease: 'power1'
+  })
+
+  if (!document.body.contains(subtitle)) return
+
+  gsap.to(subtitle, {
+    top: 0,
+    // delay: .3,
+    duration: 1,
+    ease: 'power1',
+    opacity: 1
   })
 
   gsap.utils.toArray('.hero-parallax').forEach(section => {

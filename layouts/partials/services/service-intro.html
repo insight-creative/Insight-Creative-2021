@@ -3,6 +3,7 @@
     <div class="wrapper block">
         <div class="service-intro__desc flow fade-up--delayed">
             <div class="text-center">
+                <h3 class="h5 text-center text-secondary shift-up">{{ .Params.intro.prehead | markdownify }}</h3>
                 <h2>{{ .Params.intro.subhead | markdownify }}</h2>
             </div>
             <div class="h5 flow">{{ .Params.intro.description | markdownify }}</div>

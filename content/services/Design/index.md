@@ -2,13 +2,14 @@
 Title: Design
 url: /services/graphic-design-services/
 seo:
-  title: Design Services in Green Bay, WI
-  description: From marketing campaigns to digital ads and print collateral, our design team brings strong educational backgrounds, decades of working experience and eclectic style to ensure your marketing is striking, cohesive and true to your brand. Contact Insight Creative for all your design needs.
+  title: Graphic Design Agency in Green Bay, WI – Build a Stronger Brand with Custom Logos, Packaging Design, Print Marketing, and Digital Design Services from Local Green Bay Creative Professionals
+  description: Grow your brand with a graphic design agency in Green Bay, WI. Get creative logos, print materials, and digital designs. Request a free quote today.
   featured_image: "images/background-images/Insight-Social-Preview.jpg"
 
 hero_title: "We don’t just <span class='emphasis-red'>color</span> all day … even though we’d like to."
-
+hero_h1: Graphic Design Agency in Green Bay, WI
 intro:
+  prehead: Green Bay Graphic Design Agency
   subhead: Our designs are rooted in thoughtful strategy for <span class="emphasis-red">maximum</span> impact.
   description: "<p>Effective creative comes from strong ideas. And the strongest ideas come from quality information and collaboration. That’s why our talented artists will visit your company, meet your people and learn all about your operation—inside and out—before putting pencil to paper. They’ll also work side-by-side with writers and strategists to consider messaging and tactics as inspiration takes over. This thoughtful approach combined with the latest technology—and a whole lot of imagination—can bring your brand to a whole new level.</p>"
 
