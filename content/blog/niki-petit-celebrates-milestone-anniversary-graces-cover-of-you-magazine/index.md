@@ -7,7 +7,7 @@ seo:
   featured_image: Niki-Petit-Celebrates-Milestone-Anniversary-Graces-Cover-of-You-magazine.jpg
   featured_image_alt: Niki Petit You Magazine Cover
 date: 2015-09-01
-author: Insight Creative, Inc.
+author: Insight Creative
 categories: ["News"]
 page_class: single-post
 ---

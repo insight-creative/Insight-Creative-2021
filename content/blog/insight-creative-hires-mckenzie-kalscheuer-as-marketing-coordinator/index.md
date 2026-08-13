@@ -8,7 +8,7 @@ seo:
   featured_image_alt: Insight-News-2500.jpg
 draft: true
 date: 2023-08-30
-author: Insight Creative, Inc.
+author: Insight Creative
 categories:
   - News
 page_class: single-post

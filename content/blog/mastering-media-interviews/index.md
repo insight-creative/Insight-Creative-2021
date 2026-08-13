@@ -7,7 +7,7 @@ seo:
   featured_image: mastering-media-interviews.jpg
   featured_image_alt: Illustration with numerous hands holding media tools such as microphones, recorders, and cameras
 date: 2017-02-23
-author: Insight Creative, Inc.
+author: Insight Creative
 categories: ["Content", "Public Relations"]
 page_class: single-post
 ---

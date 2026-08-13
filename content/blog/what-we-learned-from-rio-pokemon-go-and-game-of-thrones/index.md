@@ -7,7 +7,7 @@ seo:
   featured_image: What-We-Learned-from-Rio-1.jpg
   featured_image_alt: Combined graphic showing phone playing Pokemon Go, Game of Thrones, and Rio 2016 logo
 date: 2016-10-26
-author: Insight Creative, Inc.
+author: Insight Creative
 categories: ["Content"]
 page_class: single-post
 ---

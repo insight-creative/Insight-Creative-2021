@@ -8,7 +8,7 @@ seo:
   featured_image_alt: Marketing during a recession
 draft: false
 date: 2022-08-08
-author: Insight Creative, Inc.
+author: Insight Creative
 featured: false
 categories:
   - Business Strategy

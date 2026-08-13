@@ -8,7 +8,7 @@ seo:
   featured_image_alt: Insight News Banner
 draft: true
 date: 2022-05-31
-author: Insight Creative, Inc.
+author: Insight Creative
 categories: ["News"]
 page_class: single-post
 ---

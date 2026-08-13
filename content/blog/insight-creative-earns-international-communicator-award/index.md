@@ -7,7 +7,7 @@ seo:
   featured_image: insight-creative-earns-international-communicator-award.jpg
   featured_image_alt: Image of Award of Distinction
 date: 2018-06-11
-author: Insight Creative, Inc.
+author: Insight Creative
 categories: ["News"]
 page_class: single-post
 ---

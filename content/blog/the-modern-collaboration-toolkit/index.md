@@ -8,7 +8,7 @@ seo:
   featured_image_alt: Superhero illustration with logos for various collaboration tools such as BaseCamp and Asana
 draft: true
 date: 2015-10-13
-author: Insight Creative, Inc.
+author: Insight Creative
 categories: ["Productivity"]
 page_class: single-post
 ---

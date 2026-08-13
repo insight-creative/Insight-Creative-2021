@@ -7,7 +7,7 @@ seo:
   featured_image: social-media-apps-on-phone.jpg
   featured_image_alt: Social media apps on phone screen
 date: 2022-08-29
-author: Insight Creative, Inc.
+author: Insight Creative
 categories:
   - Social Media
 page_class: single-post

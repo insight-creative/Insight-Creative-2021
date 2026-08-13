@@ -1,4 +1,4 @@
 ---
 Title: Insight Creative
-author: Insight Creative, Inc.
+author: Insight Creative
 ---

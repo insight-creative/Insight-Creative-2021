@@ -7,7 +7,7 @@ seo:
   featured_image: viddy-award-on-insight-lobby-floor.jpg
   featured_image_alt: Communicator Award
 date: 2022-01-05
-author: Insight Creative, Inc.
+author: Insight Creative
 categories: ["News", "Studio"]
 page_class: single-post
 ---

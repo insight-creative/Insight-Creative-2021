@@ -7,7 +7,7 @@ seo:
   featured_image: image-placeholder.PNG
   featured_image_alt: image-placeholder.PNG
 date: 2014-07-14
-author: Insight Creative, Inc.
+author: Insight Creative
 categories: ["Content", "Branding"]
 page_class: single-post
 ---

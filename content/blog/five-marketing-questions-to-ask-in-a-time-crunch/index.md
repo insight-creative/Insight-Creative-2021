@@ -7,7 +7,7 @@ seo:
   featured_image: hourglass-with-time-running-out-2500.jpg
   featured_image_alt: Hourglass sitting on white marble counter with time running out
 date: 2021-01-25
-author: Insight Creative, Inc.
+author: Insight Creative
 categories: ["Content"]
 page_class: single-post
 ---

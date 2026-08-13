@@ -8,7 +8,7 @@ seo:
   featured_image: Labor-Shortage-Causes.jpg
   featured_image_alt: Labor Shortage Causes
 date: 2022-09-15
-author: Insight Creative, Inc.
+author: Insight Creative
 categories:
   - Business Strategy
 page_class: single-post

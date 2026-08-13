@@ -8,7 +8,7 @@ seo:
   featured_image: insight-celebrating-35-years.jpg
   featured_image_alt: Celebrating 35 years at Insight Creative, Inc. looking back, moving forward.
 date: 2023-11-07
-author: Insight Creative, Inc.
+author: Insight Creative
 categories: ["News"]
 page_class: single-post
 ---

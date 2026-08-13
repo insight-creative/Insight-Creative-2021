@@ -7,7 +7,7 @@ seo:
   featured_image: megaphone-with-rating.jpg
   featured_image_alt: Megaphone illustration with 5 star rating
 date: 2018-08-22
-author: Insight Creative, Inc.
+author: Insight Creative
 categories: ["Content", "Public Relations"]
 page_class: single-post
 ---

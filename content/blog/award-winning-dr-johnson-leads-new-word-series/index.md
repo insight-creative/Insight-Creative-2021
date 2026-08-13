@@ -7,7 +7,7 @@ seo:
   featured_image: Word-Insights-Cover.jpg
   featured_image_alt: Word Insights with Dr. Johnson
 date: 2020-11-06
-author: Insight Creative, Inc.
+author: Insight Creative
 categories: ["News"]
 page_class: single-post
 ---

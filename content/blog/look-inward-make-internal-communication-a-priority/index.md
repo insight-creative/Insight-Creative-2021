@@ -7,7 +7,7 @@ seo:
   featured_image: LookInwardMakeInternalCommunicationsAPriority.jpg
   featured_image_alt: Illustrative graphic of communication
 date: 2019-03-06
-author: Insight Creative, Inc.
+author: Insight Creative
 categories: ["Content", "Public Relations"]
 page_class: single-post
 ---

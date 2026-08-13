@@ -7,7 +7,7 @@ seo:
   featured_image: insight-group-collaboration.jpg
   featured_image_alt: Three Insight team members collaborating on a project
 date: 2020-01-09
-author: Insight Creative, Inc.
+author: Insight Creative
 categories: ["Content"]
 page_class: single-post
 ---

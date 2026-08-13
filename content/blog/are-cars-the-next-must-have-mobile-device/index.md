@@ -7,7 +7,7 @@ seo:
   featured_image: Are-Cars-the-Next-Must-Have-Mobile-Device.jpg
   featured_image_alt: Watch Netflix in Car
 date: 2016-08-26
-author: Insight Creative, Inc.
+author: Insight Creative
 categories: ["Media"]
 page_class: single-post
 ---

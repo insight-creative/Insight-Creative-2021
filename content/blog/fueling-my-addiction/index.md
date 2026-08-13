@@ -8,7 +8,7 @@ seo:
   featured_image_alt: Person with phone in one hand and a cup of coffee in the other hand
 draft: true
 date: 2015-07-14
-author: Insight Creative, Inc.
+author: Insight Creative
 categories: ["Business Strategy", "Branding"]
 page_class: single-post
 ---

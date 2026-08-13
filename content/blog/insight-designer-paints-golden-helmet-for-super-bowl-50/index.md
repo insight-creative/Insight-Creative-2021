@@ -8,7 +8,7 @@ seo:
   featured_image_alt:
 draft: true
 date: 2016-02-04
-author: Insight Creative, Inc.
+author: Insight Creative
 categories: ["News"]
 page_class: single-post
 ---

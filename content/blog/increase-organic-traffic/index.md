@@ -7,7 +7,7 @@ seo:
   featured_image: person-reviewing-analytics-on-computer-screen.jpg
   featured_image_alt: Person sitting at desk and reviewing website analytics on a computer screen
 date: 2022-06-30
-author: Insight Creative, Inc.
+author: Insight Creative
 categories:
   - Web
 page_class: single-post

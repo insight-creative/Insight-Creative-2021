@@ -7,7 +7,7 @@ seo:
   featured_image: Bringing-Ideas-Together-With-Collaborative-Web-Design.jpg
   featured_image_alt: Collaborative Web Design
 date: 2015-08-20
-author: Insight Creative, Inc.
+author: Insight Creative
 categories: ["Web", "Productivity"]
 page_class: single-post
 ---

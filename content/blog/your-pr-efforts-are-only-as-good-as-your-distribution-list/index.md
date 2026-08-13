@@ -7,7 +7,7 @@ seo:
   featured_image: Your-PR-Efforts-are-Only-as-Good-as-Your-Distribution-List.jpg
   featured_image_alt: PR Guidelines
 date: 2015-08-28
-author: Insight Creative, Inc.
+author: Insight Creative
 categories: ["Content", "Public Relations"]
 page_class: single-post
 ---

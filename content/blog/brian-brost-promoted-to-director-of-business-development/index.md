@@ -7,7 +7,7 @@ seo:
   featured_image: Insight-News-2500.jpg
   featured_image_alt: Headshot of Account Executive Brian Brost
 date: 2023-11-01
-author: Insight Creative, Inc.
+author: Insight Creative
 categories: ["News"]
 page_class: single-post
 ---

@@ -8,7 +8,7 @@ seo:
   featured_image_alt: "Marketing Goals, Objectives, Strategy and Tactics"
 draft: false
 date: 2022-10-12
-author: Insight Creative, Inc.
+author: Insight Creative
 categories: ["Business Strategy"]
 page_class: single-post
 ---

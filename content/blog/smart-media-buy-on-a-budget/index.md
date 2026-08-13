@@ -7,7 +7,7 @@ seo:
   featured_image: a-smart-media-buy-on-a-budget.jpg
   featured_image_alt: Illustrated pyramid containing Radio Digital and TV
 date: 2017-03-10
-author: Insight Creative, Inc.
+author: Insight Creative
 categories: ["Media"]
 page_class: single-post
 ---

@@ -8,7 +8,7 @@ seo:
   featured_image_alt: Woman brewing a cup of coffee from her phone
 draft: true
 date: 2017-09-17
-author: Insight Creative, Inc.
+author: Insight Creative
 categories: ["Business Strategy"]
 page_class: single-post
 ---

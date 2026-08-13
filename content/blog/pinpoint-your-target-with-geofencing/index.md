@@ -7,7 +7,7 @@ seo:
   featured_image: pinpoint-your-target-with-geofencing.jpg
   featured_image_alt: Pinpoint Your Target with Geofencing
 date: 2017-08-15
-author: Insight Creative, Inc.
+author: Insight Creative
 categories: ["Media", "Digital"]
 page_class: single-post
 ---

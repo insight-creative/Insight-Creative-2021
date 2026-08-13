@@ -8,7 +8,7 @@ seo:
   featured_image_alt: Business business
 draft: false
 date: 2023-01-13
-author: Insight Creative, Inc.
+author: Insight Creative
 featured: false
 categories:
   - Business Strategy

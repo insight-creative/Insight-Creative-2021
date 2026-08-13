@@ -7,7 +7,7 @@ seo:
   featured_image: inside-the-millenial-mind.jpg
   featured_image_alt: Illustration of a millennial on a phone screen surrounded by music notes and chat bubbles
 date: 2015-03-25
-author: Insight Creative, Inc.
+author: Insight Creative
 categories: ["Content"]
 page_class: single-post
 ---
