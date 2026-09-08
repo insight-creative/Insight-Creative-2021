@@ -1,6 +1,6 @@
 ---
 Title: Copywriter
-draft: true
+draft: false
 seo:
   title: Copywriter Careers At Insight Creative, Inc.
   description: Insight Creative is always seeking talented team players! Browse marketing communications jobs in digital, web, copy, design & more in Green Bay, Wisconsin.
@@ -14,20 +14,20 @@ summary: We are currently seeking an experienced copywriter who aspires to work 
 ---
 ## About Us
 
-At Insight Creative, Inc., we believe great creative content and intelligent strategy make things happen. They drive users to a website, move clients to top-of-mind awareness and make customers want to buy a product or service.
+At Insight Creative, Inc., we believe great creative content and intelligent strategy make things happen. They drive users to a website, move clients to top-of-mind awareness, and make customers want to buy a product or service.
 
 Insight Creative, Inc. is a full-service advertising agency that has been moving our clients forward since 1988. Our mission is to build our client’s businesses by delivering digital and traditional communication with substance. Our services are exclusively tailored to fit the needs and resources of each client.
 
-Insight Creative, Inc. is an agency with expertise across all disciplines, including brand strategy, advertising, digital services, social media and public relations. We are known for creating memorable campaigns that generate strong brand awareness, increased sales and leads and measurable results for our clients.
+Insight Creative, Inc. is an agency with expertise across all disciplines, including brand strategy, advertising, digital services, social media, and public relations. We are known for creating memorable campaigns that generate strong brand awareness, increased sales and leads, and measurable results for our clients.
 
-Our agency is home to a group of bright, seasoned marketing professionals who inspire each other and feel passionate about what they do. We describe our company culture as collaborative, engaging and fast-paced. We help build our client’s brands and have fun while making it happen.
+Our agency is home to a group of bright, seasoned marketing professionals who inspire each other and feel passionate about what they do. We describe our company culture as collaborative, engaging, and fast-paced. We help build our client’s brands and have fun while making it happen.
 
 
 ## Job Description
 
-We are currently seeking an experienced copywriter who aspires to work in an agency setting. This is a part- or full-time position working from our office in Green Bay, WI, and not a work-from-home or telecommute opportunity.  In this role, you will create engaging, compelling messages for a wide variety of clients in a wide variety of industries. The ideal candidate is skilled in crafting both long-form and short-form content for distribution through multiple communication channels.
+We are currently seeking an experienced copywriter who aspires to work in an agency setting. This is a part or full-time position working from our office in Green Bay, WI, and not a work-from-home or telecommute opportunity. In this role, you will create engaging, compelling messages for a wide variety of clients in a wide variety of industries. The ideal candidate is skilled in crafting both long-form and short-form content for distribution through multiple communication channels.
 
-Having knowledge of general marketing principles and experience with evolving marketing tactics such as SEO is a plus. Above all, we’re seeking people with a passion for the written word, a willingness to learn and grow and the ability to thrive in a team environment.
+Having knowledge of general marketing principles and experience with evolving marketing tactics such as SEO is a plus. Above all, we’re seeking people with a passion for the written word, a willingness to learn and grow, and the ability to thrive in a team environment.
 
 Our ideal candidate possesses at least 3 years of experience with a solid command of concept development and copywriting in both the traditional media and digital space.
 
@@ -36,17 +36,17 @@ Our ideal candidate possesses at least 3 years of experience with a solid comman
 
 * Write and produce original concepts working alone or with an art director, social or digital specialist
 
-* Create compelling concepts and copy across all aspects of our print, broadcast, and digital communications including website copy, blogs and social media
+* Create compelling concepts and copy across all aspects of our print, broadcast, and digital communications including website copy, blogs, and social media
 
-* Meet with clients to understand their brand voice, target audiences and messaging goals
+* Meet with clients to understand their brand voice, target audiences, and messaging goals
 
 * Write in a wide variety of styles and voices that are on strategy and reflect a brand’s unique personality
 
-* Create ideas that have a clear, strategic, persuasive and engaging message for all media
+* Create ideas that have a clear, strategic, persuasive, and engaging message for all media
 
 * Check all copy generated by team members and offer feedback when necessary
 
-* Collaborate with broadcast production to ensure audio and video projects are completed to our creative standards, on time and on budget
+* Collaborate with broadcast production to ensure audio and video projects are completed to our creative standards, on time, and on budget
 
 * Work with project management to ensure that all deliverables are being met from both a content and timing standpoint
 
@@ -57,21 +57,21 @@ Our ideal candidate possesses at least 3 years of experience with a solid comman
 
 ## Qualifications
 
-* Excellent writing, editing and proofreading skills (writing samples required)
+* Excellent writing, editing, and proofreading skills (writing samples required)
 
-* Bachelor’s degree in English, communications or a related field
+* Bachelor’s Degree in English, Communications, or a related field
 
-* Knowledge of SEO, keyword research and Google Analytics is a plus
+* Knowledge of SEO, keyword research, and Google Analytics is a plus
 
 * Self-motivated with a positive attitude
 
 * Previous experience in blog writing and posting, preferred
 
-* At least 3 years of copywriting experience (agency, marketing or publication experience preferred)
+* At least 3 years of copywriting experience (agency, marketing, or publication experience preferred)
 
 * Desire to remain current on industry trends and technology
 
-* Ability to brainstorm content ideas with the creative team 
+* Ability to brainstorm content ideas with the creative team
 
 * Confidence in building a rapport with clients and nurturing good working relationships
 
@@ -82,7 +82,7 @@ Please include a resume as well as samples of your best work when applying.
 
 ## Compensation & Benefits
 
-In business for over 35 years, Insight Creative offers a collaborative, fun and challenging work environment with great energy and a down-to-earth team.
+In business for over 35 years, Insight Creative offers a collaborative, fun, and challenging work environment with great energy and a down-to-earth team.
 
 We also offer an excellent benefits package. This includes:
 
@@ -112,8 +112,12 @@ We also offer an excellent benefits package. This includes:
 
 Salary will be determined based on skill sets and experience.
 
-Send a cover letter, resume and salary requirements.
+Send a cover letter, resume, and salary requirements.
 
-Work Location: One location
+Job Type: Full-time
+
+Pay: $46,000.00 - $55,000.00 per year
+
+Work Location: In person
 
 All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability or veteran status.
