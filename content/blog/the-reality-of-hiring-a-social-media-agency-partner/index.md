@@ -10,7 +10,7 @@ seo:
 draft: false
 date: 2026-03-30
 author: McKenzie Kalscheuer
-featured: false
+featured: true
 categories:
   - Featured
   - Social Media
