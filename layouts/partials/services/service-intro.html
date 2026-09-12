@@ -1,12 +1,78 @@
 {{ $introClass := lower .Page.Title }}
 <section id="service-intro" class="service-intro {{ anchorize $introClass }}-intro background-cover">
-    <div class="wrapper block">
-        <div class="service-intro__desc flow fade-up--delayed">
-            <div class="text-center">
-                <h3 class="h5 text-center text-secondary shift-up">{{ .Params.intro.prehead | markdownify }}</h3>
-                <h2>{{ .Params.intro.subhead | markdownify }}</h2>
+    <div class="wrapper-lg block flex flex-column flex-row-m gap-xxl">
+        <div class="service-intro__desc w-100 w-60-m flow fade-up--delayed">
+            <h2 class="h5 text-secondary shift-up">{{ .Params.intro.prehead | markdownify }}</h2>
+            <h3>{{ .Params.intro.subhead | markdownify }}</h3>
+            <div class="flow">{{ .Params.intro.description | markdownify }}</div>
+            <div class="flex flex-column flex-row-m flex-align-start flex-align-end-md gap-sm">
+                {{ if .Params.intro.button.enabled }}
+                    {{ with .Params.intro.button }}
+                    <a class="btn btn-{{ .button_color }}" href="{{ .button_url }}" {{ if .open_in_new_tab }}target="_blank" {{ end
+                    }}>
+                    {{ .button_text }}
+                    </a>
+                    {{ end }}
+                {{ end }}
+                {{ if .Params.intro.button_2.enabled }}
+                    {{ with .Params.intro.button_2 }}
+                    <a class="btn btn-{{ .button_color }}" href="{{ .button_url | safeURL }}" {{ if .open_in_new_tab }}target="_blank" {{ end
+                    }}>
+                    {{ .button_text }}
+                    </a>
+                    {{ end }}
+                {{ end }}
             </div>
-            <div class="h5 flow">{{ .Params.intro.description | markdownify }}</div>
+        </div>
+        <div class="w-100 w-40-m">
+            <div class="service-form contact-form">
+                <h4 class="no-margin">Tell Us About Your Project</h4>
+                <div class="contact-form__wrapper">
+                    <form method="post" name="contact" data-netlify="true" netlify-honeypot="bot-field" action="/contact/thank-you/">
+                        <div hidden>
+                            <label for="bot-field">
+                              Don’t fill this out if you're human: 
+                              <input name="bot-field" id="bot-field" />
+                            </label>
+                        </div>
+                        <div class="visually-hidden">
+                            <label for="subject">New form submission from the insightcreative.com contact form</label>
+                            <input aria-label="subject" name="subject" value="New form submission from the insightcreative.com contact form" />
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="name">Name*</label>
+                            <input id="name" name="name" type="text" class="contact-form__form-control" required>
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="email">Email*</label>
+                            <input id="email" name="_replyto" type="email" class="contact-form__form-control" required>
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="phone">Phone</label>
+                            <input id="phone" name="phone" type="tel" class="contact-form__form-control">
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="referral">Where Did You Hear About Us?*</label>
+                            <select class="contact-form__form-control" name="Where Did You Hear About Us?" id="referral" required>
+                                <option value="Please Select">Please Select</option>
+                                <option value="Internet Search">Internet Search</option>
+                                <option value="ChatGPT/AI">ChatGPT/AI</option>
+                                <option value="Digital Ad">Digital Ad</option>
+                                <option value="Insight Creative Team Member">Insight Creative Team Member</option>
+                                <option value="Insight Creative Email/Social">Insight Creative Email/Social</option>
+                                <option value="Insight Creative Blog">Insight Creative Blog</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="contact-form__form-group">
+                            <label for="message">Message*</label>
+                            <textarea id="message" name="message" class="contact-form__form-control" rows="4" required></textarea>
+                        </div>
+                        <button target="_blank" type="submit" class="contact-form__btn btn btn-primary">Send
+                            Message</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </section>
