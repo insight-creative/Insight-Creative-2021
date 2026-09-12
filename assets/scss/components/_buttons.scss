@@ -15,7 +15,8 @@
 
 .btn-primary,
 .btn-secondary,
-.btn-tertiary {
+.btn-tertiary,
+.btn-white {
   position: relative;
   z-index: 1;
   color: $light-gray;
@@ -49,6 +50,16 @@
   &:focus {
     
   }
+}
+
+.btn-white {
+    background-color: $white;
+    color: $primary-color;
+
+    &:hover,
+    &:focus {
+      background-color: rgba($white, .8);
+    }
 }
 
 button {

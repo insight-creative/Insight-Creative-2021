@@ -1,12 +1,18 @@
 .service-intro {
   margin-top: -1px;
 
-  &__desc {
-    h2 {
-      max-width: 28ch;
-      margin: 0 auto;
-    }
-  }
+  // &__desc {
+  //   h2 {
+  //     max-width: 28ch;
+  //     margin: 0 auto;
+  //   }
+  // }
+}
+
+.service-form {
+  background-color: $body-black;
+  padding: $ic-400;
+  border-radius: $radius;
 }
 
 .service-list {
