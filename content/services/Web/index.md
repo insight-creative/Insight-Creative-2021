@@ -7,15 +7,15 @@ seo:
   featured_image: "images/background-images/Insight-Social-Preview.jpg"
   featured_image_alt: Website Design and Development page hero image
 hero_title: Our websites don’t just look great, they <span class="emphasis-red">perform.</span>
-hero_h1: Website Design and Website Development Services in Green Bay, WI
+hero_h1: Website design and website development services in Green Bay, WI
 intro:
   prehead: Green Bay Website Design
-  subhead: Tired of a Website That <span class="emphasis-red">Isn’t Doing Anything</span> for Your Business?
+  subhead: Tired of a website that <span class="emphasis-red">isn’t doing anything</span> for your business?
   description: >-
     For many small businesses, the problem isn’t that you don’t have a website. It’s that the website you have isn’t helping.
 
 
-    Maybe you built it yourself years ago and it no longer reflects the quality of your business. Maybe you hired someone for a low-cost website. Or maybe your site gets visitors, but those visitors aren’t turning into calls, quote requests or new customers. Our website design services are built around solving those problems.
+    Maybe you built it yourself years ago and it no longer reflects the quality of your business. Or maybe your site gets visitors, but those visitors aren’t turning into calls, quote requests or new customers. Our website design services are built around solving those problems.
 
 
     We create custom websites for local businesses, contractors and professional service companies with strategy built into every stage. That means thinking about your customers, your search visibility, your calls to action, your content, your site speed and the overall experience people have when they visit. The goal isn’t simply to give you a newer website. It’s to give you a better foundation for growing your business online.
@@ -56,6 +56,22 @@ services:
       subhead: <span class="text-tertiary"><em>Keep your website in optimal shape.</em></span>
       description: You must regularly tend to your website to help it thrive. Insight provides ongoing maintenance to protect your investment and ensure it only gets better as time goes on. Plus, with monthly analytics, Insight will help you understand your site visitors and adjust accordingly.
       service_list: website hosting • software updates • regular backups • website audits • troubleshooting • bug fixes • performance optimizations • security scans • malware cleanup • analytics and reporting
+content_blocks:
+  - type: one_column_block
+    preheading: Custom Website Design for Green Bay Businesses
+    heading: Your Business Shouldn’t Use the Same Template as Everyone Else
+    body: >-
+      A template can get a website online quickly, but it rarely takes your business, your customers or your goals into account. We approach website design differently. Every site is designed around the way your customers actually make decisions. That means creating clear page layouts, strong calls to action, useful content, intuitive navigation and a visual style that reflects the quality of your business.
+
+      
+      For a contractor, that might mean making services, project photos, reviews and quote requests easy to find. For a professional service company, it could mean establishing credibility, explaining complex services clearly and guiding visitors toward scheduling a consultation. For a local small business, it may mean helping customers quickly understand what makes you different and why they should choose you.
+    button:
+      enabled: false
+      button_url:
+      button_text:
+      button_color: primary
+      open_in_new_tab: false
+    background_color: black
 web_portfolio:
   portfolio_items:
     - title: Wisconsin Homes
