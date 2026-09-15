@@ -4,8 +4,8 @@
       {{ partial "media-text" . }}
     {{ else if eq .type "one_column_block" }}
       {{ partial "one-column-block" . }}
-    {{ else if eq .type "full_width_cta_block" }}
-      {{ partial "content-blocks/full-width-cta-block" . }}
+    {{ else if eq .type "call_to_action" }}
+      {{ partial "call-to-action-block" . }}
     {{ else if eq .type "media_plus_details_block" }}
       {{ partial "media-plus-details" . }}
     {{ end }}

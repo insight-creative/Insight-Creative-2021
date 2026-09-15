@@ -1,8 +1,17 @@
 <section class="{{ if .background_color }} bg-{{ .background_color }}{{ end }}">
     <div class="wrapper block">
         <div class="service-intro__desc flow fade-up--delayed">
-            <h2 class="h5 text-secondary shift-up">{{ .preheading | markdownify }}</h2>
-            <h3>{{ .heading | markdownify }}</h3>
+            <header>
+                {{ if .preheading }}
+                    <h2 class="h5 text-secondary shift-up">{{ .preheading | markdownify }}</h2>
+                    <h3>{{ .heading }}</h3>
+                {{ else }}
+                    <h2 class="h3">{{ .heading }}</h2>
+                {{ end }}
+                {{ if .subheading }}
+                    <p class="hero__subheading">{{ .subheading | markdownify }}</p>
+                {{ end }}
+            </header>
             {{ if .body }}
               {{ if in .body "\n" }}
                   {{ .body | markdownify }}
