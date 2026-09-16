@@ -21,7 +21,7 @@
             {{ end }}
             {{ if .button.enabled }}
                 {{ with .button }}
-                    <a class="btn btn--{{ .button_color }}" href="{{ .button_url }}" {{ if .open_in_new_tab }}target="_blank"{{ end }}>
+                    <a class="btn btn-{{ .button_color }}" href="{{ .button_url }}" {{ if .open_in_new_tab }}target="_blank"{{ end }}>
                     {{ .button_text }}
                     </a>
                 {{ end }}
