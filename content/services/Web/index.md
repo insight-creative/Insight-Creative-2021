@@ -80,44 +80,6 @@ content_blocks:
       button_text: Tell Us About Your Project
       button_color: primary
       open_in_new_tab: false
-  - type: media_text_block
-    preheading: SEO-Focused Website Design and Development
-    heading: A Great Website Doesn’t Help if Your Customers Can’t Find It
-    body: >-
-      SEO works best when it’s considered before your website is built. That’s why local search visibility is part of our website design and development process from the beginning. We think about what your customers are searching for, how your pages are structured, how your content is organized and how search engines will understand the site.
-
-
-      That can include local keyword targeting, clear page hierarchy, semantic HTML, optimized metadata, internal linking, mobile usability and technical SEO that support a better overall user experience. If your customers are looking for a local company in the area, your website should give search engines clear signals about what you do, where you work and which services you want to be found for.
-    button:
-      enabled: false
-      button_url:
-      button_text:
-      button_color: primary
-      open_in_new_tab: false
-    image:
-      image_url: /welder-working-on-large-metal-project_un6g4u.jpg
-      image_alt: An A to Z Machine employee quality checking a custom made part sitting on a table
-    text_column_position: left
-    background_color: black
-  - type: media_text_block
-    preheading: SEO-Focused Website Design and Development
-    heading: A Great Website Doesn’t Help if Your Customers Can’t Find It
-    body: >-
-      SEO works best when it’s considered before your website is built. That’s why local search visibility is part of our website design and development process from the beginning. We think about what your customers are searching for, how your pages are structured, how your content is organized and how search engines will understand the site.
-
-
-      That can include local keyword targeting, clear page hierarchy, semantic HTML, optimized metadata, internal linking, mobile usability and technical SEO that support a better overall user experience. If your customers are looking for a local company in the area, your website should give search engines clear signals about what you do, where you work and which services you want to be found for.
-    button:
-      enabled: false
-      button_url:
-      button_text:
-      button_color: primary
-      open_in_new_tab: false
-    image:
-      image_url: /welder-working-on-large-metal-project_un6g4u.jpg
-      image_alt: An A to Z Machine employee quality checking a custom made part sitting on a table
-    text_column_position: right
-    background_color: 
 web_portfolio:
   portfolio_items:
     - title: Wisconsin Homes
