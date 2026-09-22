@@ -1,0 +1,31 @@
+<section class="{{ if .background_color }} bg-{{ .background_color }}{{ end }}">
+    <div class="wrapper block">
+        <div class="service-intro__desc flow fade-up--delayed">
+            <header>
+                {{ if .preheading }}
+                    <h2 class="h5 text-secondary shift-up">{{ .preheading | markdownify }}</h2>
+                    <h3>{{ .heading }}</h3>
+                {{ else }}
+                    <h2 class="h3">{{ .heading }}</h2>
+                {{ end }}
+                {{ if .subheading }}
+                    <p class="hero__subheading">{{ .subheading | markdownify }}</p>
+                {{ end }}
+            </header>
+            {{ if .body }}
+              {{ if in .body "\n" }}
+                  {{ .body | markdownify }}
+              {{ else }}
+                  <p>{{ .body | markdownify }}</p>
+              {{ end }}
+            {{ end }}
+            {{ if .button.enabled }}
+                {{ with .button }}
+                    <a class="btn btn-{{ .button_color }}" href="{{ .button_url }}" {{ if .open_in_new_tab }}target="_blank"{{ end }}>
+                    {{ .button_text }}
+                    </a>
+                {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</section>

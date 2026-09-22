@@ -1,0 +1,11 @@
+.service-cta {
+    overflow: hidden;
+}
+
+.service-cta__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 550px;
+}

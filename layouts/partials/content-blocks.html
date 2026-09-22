@@ -1,0 +1,13 @@
+<div class="pt-9">
+  {{ range .Params.content_blocks }}
+    {{ if eq .type "media_text_block" }}
+      {{ partial "media-text" . }}
+    {{ else if eq .type "one_column_block" }}
+      {{ partial "one-column-block" . }}
+    {{ else if eq .type "call_to_action" }}
+      {{ partial "call-to-action-block" . }}
+    {{ else if eq .type "media_plus_details_block" }}
+      {{ partial "media-plus-details" . }}
+    {{ end }}
+  {{ end }}
+</div>

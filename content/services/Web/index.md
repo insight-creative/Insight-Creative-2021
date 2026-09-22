@@ -7,18 +7,15 @@ seo:
   featured_image: "images/background-images/Insight-Social-Preview.jpg"
   featured_image_alt: Website Design and Development page hero image
 hero_title: Our websites don’t just look great, they <span class="emphasis-red">perform.</span>
-hero_h1: Website Design and Website Development Services in Green Bay, WI
+hero_h1: Website design and website development services in Green Bay, WI
 intro:
   prehead: Green Bay Website Design
-  subhead: Tired of a Website That <span class="emphasis-red">Isn’t Doing Anything</span> for Your Business?
+  subhead: Your website should help <span class="emphasis-red">grow your business</span>
   description: >-
-    For many small businesses, the problem isn’t that you don’t have a website. It’s that the website you have isn’t helping.
+    A good-looking website is only part of the job. Your website should help people find your business, quickly understand what you offer, trust what they see and know what to do next.
 
 
-    Maybe you built it yourself years ago and it no longer reflects the quality of your business. Maybe you hired someone for a low-cost website. Or maybe your site gets visitors, but those visitors aren’t turning into calls, quote requests or new customers. Our website design services are built around solving those problems.
-
-
-    We create custom websites for local businesses, contractors and professional service companies with strategy built into every stage. That means thinking about your customers, your search visibility, your calls to action, your content, your site speed and the overall experience people have when they visit. The goal isn’t simply to give you a newer website. It’s to give you a better foundation for growing your business online.
+    If you’re tired of a DIY website or a site that gets visits but rarely turns them into leads, we can help. Our Green Bay website design and development team builds custom websites around your business goals, with search visibility, speed, accessibility, security and an easy user experience considered from the start.
   button:
     enabled: true
     button_url: /contact/
@@ -56,6 +53,34 @@ services:
       subhead: <span class="text-tertiary"><em>Keep your website in optimal shape.</em></span>
       description: You must regularly tend to your website to help it thrive. Insight provides ongoing maintenance to protect your investment and ensure it only gets better as time goes on. Plus, with monthly analytics, Insight will help you understand your site visitors and adjust accordingly.
       service_list: website hosting • software updates • regular backups • website audits • troubleshooting • bug fixes • performance optimizations • security scans • malware cleanup • analytics and reporting
+content_blocks:
+  - type: one_column_block
+    preheading: Custom Website Design for Green Bay Businesses
+    heading: Your website should look and work like your business
+    body: >-
+      A website can get online quickly and still miss what makes your business different. Insight Creative designs each site around your customers, your goals and the way people actually make decisions. That means clear page layouts, strong calls to action, useful content, easy-to-use navigation and a visual style that reflects the quality of your business.
+
+
+      For a contractor, that might mean making services, project photos, reviews and quote requests easy to find. For a professional service company, it could mean building credibility, explaining complex services clearly and guiding visitors toward scheduling a consultation. For a local business, it may mean helping customers quickly understand what makes you different and why they should choose you.
+    button:
+      enabled: false
+      button_url:
+      button_text:
+      button_color: primary
+      open_in_new_tab: false
+    background_color: black
+  - type: call_to_action
+    preheading: 
+    heading: Already have a website but aren’t getting enough leads?
+    body: >-
+      The problem may be your content, search visibility, site structure, performance or conversion paths. We can help identify what’s holding your website back and build a clearer plan for improvement.
+    button:
+      enabled: true
+      button_url: /contact/
+      button_text: Tell Us About Your Project
+      button_color: primary
+      open_in_new_tab: false
+
 web_portfolio:
   portfolio_items:
     - title: Wisconsin Homes

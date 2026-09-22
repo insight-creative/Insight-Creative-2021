@@ -2,6 +2,36 @@
 {{ partial "services/service-hero" . }}
 {{ partial "services/service-intro" . }}
 {{ partial "services/service-overview" . }}
+{{ if .Params.content_blocks }}
+  {{ partial "content-blocks" . }}
+{{ end }}
+{{ if eq .Title "Web"}}
+    {{ partial "services/web-portfolio" . }}
+{{ end }}
+<div class="wrapper-lg block department-feed fade-up">
+    <h4 class="text-center">Get to know our {{ lower .Title }} department!</h4>
+    <div class="staff-card-wrapper gap-sm">
+    {{ if eq .Title "Content" }}
+        {{ partialCached "services/staff-cards-content" . }}
+    {{ else if eq .Title "Web"}}
+        {{ partialCached "services/staff-cards-web" . }}
+    {{ else if eq .Title "Digital"}}
+        {{ partialCached "services/staff-cards-media" . }}
+    {{ else if eq .Title "Media"}}
+        {{ partialCached "services/staff-cards-media" . }}
+    {{ else if eq .Title "Design"}}
+        {{ partialCached "services/staff-cards-design" . }}
+    {{ end }}
+    </div>
+    <div class="center-button mt-2">
+        <a href="/about/" class="btn btn-tertiary">Meet the team</a>
+    </div>
+</div>
+<div class="wrapper studio-cta pt-9">
+    {{ with .Params.service_cta }}
+    <h4 class="text-center fade-up">{{ .heading }}</h4>
+    {{ end }}
+</div>
 {{ partial "services/recent-posts" . }}
 {{ partialCached "cta" . }}
 {{ end }}
