@@ -1,5 +1,5 @@
 <section class="media-text{{ if eq .text_column_position "left" }} media-text-block--text-left{{ else }} media-text-block--text-right{{ end }} block{{ if .background_color }} bg-{{ .background_color }}{{ end }}{{ if .css_classes }} {{ .css_classes }}{{ end }}" {{ if .heading }}aria-labelledby="{{ .heading | urlize }}"{{ end }}>
-    <div class="wrapper-md">
+    <div class="wrapper-lg">
         <div class="flex flex-column {{ if eq .text_column_position "left" }}flex-row-m{{ else }}flex-row-reverse-m{{ end }} gap-lg">
             <div class="media-text__content w-100 w-50-m flow">
                 <header>
