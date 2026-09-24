@@ -2,6 +2,8 @@
   {{ range .Params.content_blocks }}
     {{ if eq .type "media_text_block" }}
       {{ partial "media-text" . }}
+    {{ else if eq .type "media_text_block_alt" }}
+      {{ partial "media-text-alt" . }}
     {{ else if eq .type "one_column_block" }}
       {{ partial "one-column-block" . }}
     {{ else if eq .type "call_to_action" }}
