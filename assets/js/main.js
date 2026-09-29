@@ -529,11 +529,14 @@ function initContentFade() {
             stagger: 0.2
         })
     })
-  gsap.set('.fade-staggered', {y: 50, autoAlpha: 0})
+  const fadeStaggered = document.querySelectorAll('.fade-staggered')
+  if (fadeStaggered.length) {
+    gsap.set(fadeStaggered, {y: 50, autoAlpha: 0})
 
-  ScrollTrigger.batch('.fade-staggered', {
-    onEnter: batch => gsap.to(batch, {y: 0, autoAlpha: 1, stagger: 0.2}),
+    ScrollTrigger.batch(fadeStaggered, {
+      onEnter: batch => gsap.to(batch, {y: 0, autoAlpha: 1, stagger: 0.2}),
     })
+  }
 
   gsap.utils.toArray(fadeOut).forEach((fade) => {
     gsap.to(fade, {
@@ -663,26 +666,15 @@ function initImageEffects () {
 function initHeroParallax () {
   const titleReveal = document.querySelector('.title-reveal')
   const titleRevealFadeAway = document.querySelector('.title-reveal--fade-up-away')
-  const title = document.querySelector('h2.title-reveal__title')
-  const subtitle = document.querySelector('h1.title-reveal__title')
+  const titles = document.querySelectorAll('.title-reveal__title')
 
-  if (!document.body.contains(title)) return
-
-  gsap.to(title, {
-    top: 0,
-    // delay: .3,
-    duration: 1,
-    ease: 'power1'
-  })
-
-  if (!document.body.contains(subtitle)) return
-
-  gsap.to(subtitle, {
-    top: 0,
-    // delay: .3,
-    duration: 1,
-    ease: 'power1',
-    opacity: 1
+  titles.forEach(title => {
+    gsap.to(title, {
+      top: 0,
+      // delay: .3,
+      duration: 1,
+      ease: 'power1'
+    })
   })
 
   gsap.utils.toArray('.hero-parallax').forEach(section => {
