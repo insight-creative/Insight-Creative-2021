@@ -12,10 +12,10 @@ intro:
   prehead: Green Bay Website Design
   subhead: Your website should help <span class="emphasis-red">grow your business</span>
   description: >-
-    A good-looking website is only part of the job. Your website should help people find your business, quickly understand what you offer, trust what they see and know what to do next.
+    A good-looking website is only part of the job. Your website should help people find your business, understand what you offer, trust what they see and know what to do next.
 
 
-    If you’re tired of a DIY website or a site that gets visits but rarely turns them into leads, we can help. Our Green Bay website design and development team builds custom websites around your business goals, with search visibility, speed, accessibility, security and an easy user experience considered from the start.
+    If you’re tired of a DIY website or a site that gets visits but rarely turns them into leads, we can help. We build custom websites around your business goals, with SEO, speed, accessibility, security and usability considered from the start. The end result is a website built to attract the right visitors and make it easier for them to become customers.
   button:
     enabled: true
     button_url: /contact/
@@ -56,9 +56,12 @@ services:
 content_blocks:
   - type: media_text_block_alt
     preheading: Custom Website Design for Green Bay Businesses
-    heading: Your website should look and work like your business
+    heading: Your website should look like your business and work for your customers
     body: >-
-      Insight Creative designs each site around your customers, your goals and the way people actually make decisions. That means clear page layouts, strong calls to action, useful content, easy-to-use navigation and a visual style that reflects the quality of your business.
+      Insight Creative designs each site around your customers, your goals and the way people actually make decisions. We make it easy for visitors to find what they need, understand what makes your business different and take the next step.
+
+
+      That includes clear page layouts, useful content, simple navigation, strong calls to action and a visual style that reflects the quality of your business.
 
 
       For a contractor, that might mean making services, project photos, reviews and quote requests easy to find. For a professional service company, it could mean building credibility, explaining complex services clearly and guiding visitors toward scheduling a consultation.
@@ -84,6 +87,25 @@ content_blocks:
       button_text: Tell Us About Your Project
       button_color: primary
       open_in_new_tab: false
+  - type: media_text_block_alt
+    preheading: Website Design With SEO Built In From the Start
+    heading: A Great Website Doesn’t Help if Your Customers Can’t Find It
+    body: >-
+      SEO works best when it’s considered before your website is built. That’s why local search visibility is part of our website design and development process from the beginning. We think about what your customers are searching for, which pages they need to find and how your website should be organized so both people and search engines can easily understand what you offer.
+
+
+      That means building a clear site structure, targeting the right local searches, connecting related pages and making sure the site works well on all devices. We also take care of the technical details behind the scenes, including metadata, semantic HTML and other SEO fundamentals. If someone in the Green Bay area is searching for the services you provide, your website should make it easy for Google to understand what you do, where you work and which services you want to be found for.
+    button:
+      enabled: false
+      button_url:
+      button_text:
+      button_color: primary
+      open_in_new_tab: false
+    image:
+      image_url: /hurckman-seo-case-study-results.png
+      image_alt: An A to Z Machine employee quality checking a custom made part sitting on a table
+    text_column_position: left
+    background_color: black
 web_portfolio:
   portfolio_items:
     - title: Wisconsin Homes
