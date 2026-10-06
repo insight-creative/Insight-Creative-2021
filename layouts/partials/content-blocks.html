@@ -10,6 +10,8 @@
       {{ partial "call-to-action-block" . }}
     {{ else if eq .type "media_plus_details_block" }}
       {{ partial "media-plus-details" . }}
+    {{ else if eq .type "faqs" }}
+      {{ partial "faqs" . }}
     {{ end }}
   {{ end }}
 </div>
