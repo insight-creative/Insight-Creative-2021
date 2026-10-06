@@ -248,28 +248,6 @@ content_blocks:
       image_alt: An A to Z Machine employee quality checking a custom made part sitting on a table
     text_column_position: left
     background_color: black
-  - type: media_text_block
-    preheading: High-Performance Website Development
-    heading: Your Customers Shouldn’t Have to Wait for Your Website to Load
-    body: >-
-      A slow website creates friction before a potential customer ever reads any of your content. That’s why performance is a core part of how we develop websites. Instead of relying on bloated themes, oversized page builders or unnecessary plugins, we build lean, efficient websites designed to load quickly and work well across all devices.
-
-
-      That matters because website speed affects more than convenience. A faster site creates a better user experience. It can reduce frustration and give visitors a better chance of sticking around long enough to contact you.
-
-
-      Performance is considered throughout the design and development process. We pay attention to how pages are built, how images and files load and which technologies are used behind the scenes. The result is a website that feels fast, reliable and easy to use from the moment someone lands on it.
-    button:
-      enabled: false
-      button_url:
-      button_text:
-      button_color: primary
-      open_in_new_tab: false
-    image:
-      image_url: /hurckman-seo-case-study-results.png
-      image_alt: An A to Z Machine employee quality checking a custom made part sitting on a table
-    text_column_position: right
-    background_color: dark-black
   - type: faqs
     preheading:
     heading: Common questions about website design, website development, SEO and ongoing support
