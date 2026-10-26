@@ -10,9 +10,8 @@ seo:
 draft: false
 date: 2026-03-30
 author: McKenzie Kalscheuer
-featured: true
+featured: false
 categories:
-  - Featured
   - Social Media
 page_class: single-post
 ---
