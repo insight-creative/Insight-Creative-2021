@@ -8,7 +8,7 @@ seo:
   featured_image_alt: Why choose us
 draft: false
 date: 2023-05-05
-author: Melissa Gorzelanczyk
+author: Insight Creative
 categories: 
   - Business Strategy
 page_class: single-post

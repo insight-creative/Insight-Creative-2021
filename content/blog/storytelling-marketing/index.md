@@ -8,7 +8,7 @@ seo:
   featured_image_alt: Business
 draft: false
 date: 2023-03-15
-author: Melissa Gorzelanczyk
+author: Insight Creative
 categories:
   - Business Strategy
 page_class: single-post

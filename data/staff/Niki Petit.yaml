@@ -1,6 +1,6 @@
 name: Niki Petit
 first_name: Niki
-job_title: Vice President
+job_title: President
 bio: >-
   Meet Niki, Insight’s second-in-command and avid horse wrangler.
 
@@ -26,4 +26,4 @@ marketing_tip:
 image_jpg: /images/staff/Niki-Petit.jpg
 department: "Sales"
 weight: "4"
-about_order: 5
+about_order: 1
