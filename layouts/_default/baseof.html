@@ -6,6 +6,12 @@
 {{ $pageParent := lower .CurrentSection.Title }}
 
 <body class="site-wrap{{ if $pageParent }} parent-page-{{ $pageParent | urlize }}{{ end }}" data-barba="wrapper">
+  
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="
+  ns " height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
   <div class="cursor"></div>
   <div class="follower">
     <span class="follower__text">View Project</span>

@@ -245,9 +245,23 @@ function initCursor () {
   const workCards = document.querySelectorAll('.work-card')
   const subMenuLink = document.querySelector('.sub-menu__link')
   const subMenuLinks = document.querySelectorAll('.sub-menu__link')
+  const popoutButton = document.querySelector('.cc-button')
 
   gsap.set('.follower', { xPercent: -50, yPercent: -50, backgroundColor: '#8bc0c6' })
   gsap.set('.cursor', { xPercent: -50, yPercent: -50 })
+
+  if(document.body.contains(popoutButton)) {
+    popoutButton.addEventListener('mouseover', () => {
+      gsap.to(follow, 0.3, {
+        scale: 0
+      })
+    })
+    popoutButton.addEventListener('mouseout', () => {
+      gsap.to(follow, 0.3, {
+        scale: 1
+      })
+    })
+  }
 
   window.addEventListener('mousemove', e => {
     gsap.to(follow, 0.3, { x: e.clientX, y: e.clientY })
@@ -883,3 +897,27 @@ function initPageTransitions () {
 
 // initPreloader();
 initPageTransitions()
+
+
+// const popoutButton = document.querySelector('.cc-button');
+
+// popoutButton.addEventListener('click', event => {
+//   popoutForm(popoutButton);
+// })
+
+// function popoutForm(element) {
+
+//   const popoutPanel = document.querySelector('.cc-popout');
+//   const popout = document.querySelector('.popout');
+
+//   if (element.classList.contains('open')) {
+//       element.classList.remove('open')
+//       popoutPanel.classList.remove('open')
+//       popout.classList.remove('active')
+//   } else {
+//     element.classList.add('open')
+//     popoutPanel.classList.add('open')
+//     popout.classList.add('active')
+//   }
+// }
+
